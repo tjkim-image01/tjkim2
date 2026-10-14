@@ -11,68 +11,62 @@
 | 무엇 | 소장품 8,760건을 찾고 보고 고치는 어드민 |
 | 데이터 원본 | **Google 시트 `tjkim-items`** (tjkim.image01@gmail.com 내 드라이브) |
 | 사이트 | 정적 페이지. GitHub Pages `https://tjkim-image01.github.io/tjkim2/` |
-| 서버·DB | **없음.** 브라우저가 Google 로그인 토큰으로 시트를 직접 읽고 쓴다 |
-| 로그인 | Google 계정. 시트에 **편집 권한이 있는 계정**이면 고칠 수 있고, 보기 권한이면 보기만 된다 |
-| 소스 | GitHub `tjkim-image01/tjkim2` 의 `admin001/` |
+| 백엔드 | **Google Apps Script 웹 앱** 하나. 시트에 붙어 있고 tjkim.image01 권한으로 시트를 읽고 쓴다. 별도 서버·DB 없음 |
+| 로그인 | 아이디/비밀번호 (처음값 `admin` / `admin`). 비밀번호는 설정 화면에서 바꾼다 |
+| 소스 | GitHub `tjkim-image01/tjkim2` 의 `admin001/` (화면) · `admin001/apps-script/` (백엔드) |
 
 시트 주소: <https://docs.google.com/spreadsheets/d/1ytZITjaZlP3h9T5qjJXwRaHtPw8Cz9MJWwNkw0t3mZo>
 
+흐름: 브라우저 → (JSON) → Apps Script 웹 앱 → Google 시트 / Drive. 비밀번호 검사는 Apps Script 안에서 한다.
+
 ## 2. 처음 한 번 해야 하는 설정
 
-### 2.1 Google OAuth 클라이언트 ID 만들기 (로그인용)
+### 2.1 Apps Script 웹 앱 배포 (백엔드)
 
-사이트는 Google 로그인으로 시트 권한을 빌린다. 그러려면 Google Cloud에 "이 사이트가 로그인을 요청해도 된다"는 등록(OAuth 클라이언트)이 필요하다. 비밀값이 아니라 공개돼도 되는 ID 하나다.
+Google Cloud 콘솔이 필요 없다. 시트를 열 수 있는 tjkim.image01 계정이면 된다.
 
-1. tjkim.image01@gmail.com 으로 <https://console.cloud.google.com> 접속.
-   - **2단계 인증을 켜라는 차단 화면이 나오면** 먼저 Google 계정 보안 설정에서 2단계 인증을 켠다 (2026-07-29부터 Cloud 콘솔 필수). 켠 뒤 몇 분 기다렸다 새로고침한다.
-2. 프로젝트: 이전에 Drive API 키(`tjkim-drive`)를 만든 프로젝트가 있으면 그것, 없으면 새 프로젝트 `tjkim-admin`.
-3. **API 및 서비스 → 라이브러리**에서 `Google Sheets API`, `Google Drive API` 사용 설정.
-4. **OAuth 동의 화면**(Google Auth Platform):
-   - 앱 이름 `tjkim 소장품 관리`, 지원 이메일 tjkim.image01@gmail.com
-   - 대상 **외부(External)**, 게시 상태는 **테스트(Testing)** 그대로
-   - **테스트 사용자**에 로그인할 계정들을 추가 (tjkim.image01@gmail.com, 운영자 계정). 테스트 상태에서는 여기 적힌 계정만 로그인된다. 최대 100명.
-5. **사용자 인증 정보 → 사용자 인증 정보 만들기 → OAuth 클라이언트 ID**
-   - 유형 **웹 애플리케이션**, 이름 `tjkim-admin001`
-   - 승인된 JavaScript 원본: `https://tjkim-image01.github.io` 와 `http://localhost:5173`
-   - 리디렉션 URI는 비워 둔다
-6. 만들어진 **클라이언트 ID**(`…apps.googleusercontent.com`)를 복사한다. 보안 비밀(secret)은 쓰지 않는다.
-7. ID를 넣는 곳은 둘 중 하나:
-   - 사이트의 **설정** 화면에 붙여 넣기 (그 브라우저에만 저장됨)
-   - GitHub 저장소 **Settings → Secrets and variables → Actions → Variables**에 `VITE_GOOGLE_CLIENT_ID` 로 저장 (빌드에 박혀 모든 브라우저에서 동작). 같은 곳에 `VITE_SHEET_ID` = `1ytZITjaZlP3h9T5qjJXwRaHtPw8Cz9MJWwNkw0t3mZo` 도 넣는다. 저장 후 Actions에서 워크플로를 한 번 다시 돌린다.
+1. 시트를 열고 메뉴 **확장 프로그램 → Apps Script**. 편집기가 새 탭으로 열린다. 프로젝트 이름을 `tjkim-admin-api`로.
+2. `Code.gs` 내용을 전부 지우고 [`admin001/apps-script/Code.js`](../admin001/apps-script/Code.js) 내용을 붙여 넣는다. 저장(⌘S).
+3. 왼쪽 **프로젝트 설정(톱니)** → "appsscript.json 매니페스트 파일을 편집기에 표시" 켜기 → 편집기에서 `appsscript.json`을 열고 [`admin001/apps-script/appsscript.json`](../admin001/apps-script/appsscript.json) 내용으로 바꾼다. 저장.
+4. 편집기 상단 함수 선택에서 **authorizeOnce** → **실행**. "승인 필요" 창이 뜨면 **권한 검토** → 계정 선택 → "Google에서 확인하지 않은 앱" 화면에서 **고급 → tjkim-admin-api(안전하지 않음)으로 이동** → **허용**. 실행 로그에 `ok: tjkim-items tabs=9 …`가 찍히면 성공. (자기 계정의 자기 스크립트라 "확인하지 않은 앱" 경고가 나오는 것이 정상이다.)
+5. 오른쪽 위 **배포 → 새 배포** → 유형(톱니)에서 **웹 앱** → 설명 `v1` → **다음 사용자 인증 정보로 실행: 나** → **액세스 권한이 있는 사용자: 모든 사용자** → **배포**.
+6. 나온 **웹 앱 URL**(`https://script.google.com/macros/s/…/exec`)을 복사한다. 브라우저에서 `그 주소?action=health`를 열어 `{"ok":true,…}`가 보이면 된다.
+7. URL을 넣는 곳은 둘 중 하나:
+   - 사이트 **설정** 화면 "API 주소"에 붙여 넣고 저장 (그 브라우저에만 저장됨)
+   - GitHub 저장소 **Settings → Secrets and variables → Actions → Variables**에 `VITE_API_URL`로 저장 → Actions에서 배포 워크플로를 한 번 다시 실행 (모든 브라우저에서 바로 동작)
+8. 사이트에서 `admin` / `admin`으로 로그인한 뒤 **설정 → 비밀번호 변경**으로 바꾼다. 아이디를 바꾸려면 Apps Script 편집기 **프로젝트 설정 → 스크립트 속성**에 `ADMIN_USER`를 추가한다. `ADMIN_PASS`도 같은 곳에 있다(비밀번호 변경 시 자동 생성).
 
-처음 로그인할 때 "Google에서 확인하지 않은 앱" 경고가 뜬다. 테스트 사용자이면 **계속**을 누르면 된다. 정식 심사는 받지 않는다.
+**코드를 고친 뒤 다시 배포할 때**: 편집기에 새 코드를 저장 → **배포 → 배포 관리** → 연필(수정) → 버전 **새 버전** → **배포**. URL은 그대로 유지된다. "새 배포"를 만들면 URL이 바뀌니 주의.
+
+"모든 사용자" 접근이지만 모든 요청은 로그인 토큰을 검사하므로 비밀번호 없이는 데이터를 읽을 수 없다. 토큰은 30일 뒤 만료된다.
 
 ### 2.2 GitHub Pages 켜기
 
-> 2026-10-15에 완료됨(저장소 공개, Pages 켬, `VITE_SHEET_ID` 변수 등록). 아래는 다시 해야 할 때의 절차.
+> 2026-10-15에 완료됨(저장소 공개, Pages 켬). 아래는 다시 해야 할 때의 절차.
 
 무료 플랜은 **공개 저장소**에서만 Pages를 쓸 수 있다. 소스에 비밀값이 없고 데이터는 시트에만 있으므로 공개해도 된다.
 
 ```bash
-# 저장소 공개 전환 (되돌릴 수 있다)
 gh repo edit tjkim-image01/tjkim2 --visibility public --accept-visibility-change-consequences
-# Pages를 워크플로 빌드 방식으로 켜기
 gh api -X POST repos/tjkim-image01/tjkim2/pages -f build_type=workflow
-# 배포 워크플로 다시 실행
 gh workflow run "Deploy admin001 to GitHub Pages" --repo tjkim-image01/tjkim2
 ```
 
 웹에서 하려면: 저장소 **Settings → General → Danger Zone → Change visibility → Public**, 그 다음 **Settings → Pages → Source: GitHub Actions**.
 
-배포 주소는 `https://tjkim-image01.github.io/tjkim2/`. 저장소 이름을 바꾸면 `admin001/vite.config.ts`의 `base`와 OAuth 원본도 같이 바꾼다.
+배포 주소는 `https://tjkim-image01.github.io/tjkim2/`. 저장소 이름을 바꾸면 `admin001/vite.config.ts`의 `base`도 같이 바꾼다. `main`에 push하면 자동으로 다시 배포된다.
 
 ### 2.3 시트 공유
 
-- 시트 소유자는 tjkim.image01@gmail.com.
-- 함께 고칠 사람은 시트를 **편집자**로 공유한다. 사이트에 따로 사용자 등록은 없다.
-- 보기만 할 사람은 **뷰어**로 공유하면 사이트에서도 저장이 거부된다.
+- 시트 소유자는 tjkim.image01@gmail.com. Apps Script가 이 계정 권한으로 쓰므로 **사이트 사용자에게 시트를 공유할 필요는 없다.**
+- 시트를 직접 열어 고칠 사람에게만 편집자로 공유한다.
 
 ## 3. 매일 쓰는 법
 
 ### 3.1 들어가기
-1. `https://tjkim-image01.github.io/tjkim2/` 접속 → **Google로 계속**.
-2. 상단 바의 초록 점이 "시트와 연결됨"이다. 숫자는 물건 수, 시각은 마지막 동기화.
-3. 시트 전체를 한 번 받아 브라우저에 저장하므로 처음 몇 초 걸리고, 그 뒤 검색은 즉시다. 시트가 바뀌었으면 자동으로 다시 받는다. 의심되면 **새로고침** 버튼.
+1. `https://tjkim-image01.github.io/tjkim2/` 접속 → 아이디/비밀번호.
+2. 상단 바의 초록 점이 "데이터 연결됨"이다. 숫자는 물건 수, 시각은 마지막 동기화.
+3. 시트 전체를 한 번 받아 브라우저에 저장한다(처음 3~5초). 10분 안에는 저장본을 쓰고, 그 뒤 다시 받는다. 시트를 직접 고친 직후라면 **새로고침** 버튼.
 
 ### 3.2 찾기
 - 검색창에 **Item No.**(앞부분만 쳐도 됨), 제목, 저자, 설명 일부. 키보드 `/`로 바로 검색창.
@@ -82,8 +76,8 @@ gh workflow run "Deploy admin001 to GitHub Pages" --repo tjkim-image01/tjkim2
 ### 3.3 고치기
 - 상세 화면에서 값을 **클릭**하면 바로 입력칸이 된다. Enter(긴 글은 Cmd/Ctrl+Enter) 또는 다른 곳 클릭이면 저장, Esc면 취소.
 - 저장하면 **그 셀만** 시트에 쓰이고, `수정일시`·`수정자` 열이 채워진다. 상단에 "저장됨 시각"이 뜬다.
-- 저장 실패는 빨간 글씨로 이유가 나온다. 대부분 로그인 만료(다시 로그인) 또는 편집 권한 없음.
-- 같은 물건을 시트에서 동시에 고쳐도 셀 단위라 서로 덮지 않는다.
+- 저장 실패는 빨간 글씨로 이유가 나온다. 대부분 로그인 만료(다시 로그인).
+- 같은 물건을 시트에서 동시에 고쳐도 셀 단위라 서로 덮지 않는다. 서버는 쓰기 직전에 Item No.로 행을 다시 찾는다.
 
 ### 3.4 등록
 - 왼쪽 **등록** → 종류 선택 → Item No.는 비워 두면 `접두사 + 오늘 날짜(YYMMDD) + 순번`으로 제안된다. 필요한 몇 칸만 채우고 **추가**. 시트 해당 탭 맨 아래에 행이 붙는다.
@@ -95,16 +89,16 @@ gh workflow run "Deploy admin001 to GitHub Pages" --repo tjkim-image01/tjkim2
 - 새 제안을 기록할 때는 `신청` 열에 `기관명-YY-MMDD` 형식으로 쓰고, 이전 값은 `신청 (전)`으로 옮긴다 (예전 방식 그대로).
 
 ### 3.6 이미지
-- 왼쪽 **이미지** → **재색인**: 로그인 계정이 볼 수 있는 Drive 이미지를 전부 훑어 폴더명/파일명이 Item No.와 같은 것을 찾는다 (몇 만 장이면 1~2분).
+- 왼쪽 **이미지** → **재색인**: 시트 `이미지폴더` 탭의 루트들을 서버가 하나씩 순회해 폴더명/파일명이 Item No.와 같은 것을 찾는다 (루트 16개, 몇 만 장이면 몇 분).
 - "폴더명 정확 일치 건 모두 연결"을 누르면 아직 연결 안 된 물건에 `이미지폴더` 열이 채워진다. 애매한 건(파일명 일치)은 한 건씩 **연결**.
 - 상세 화면 왼쪽에 폴더의 이미지가 나오고 **대표로**를 누르면 `대표이미지` 열에 들어가 목록 썸네일이 된다.
-- 이미지는 Drive에 그대로 둔다. 폴더를 공개로 풀 필요 없다 (로그인 계정 권한으로 본다).
+- 썸네일은 Drive 주소로 직접 보여준다. 이미지 폴더가 "링크가 있는 모든 사용자" 공개이거나, 그 브라우저에서 tjkim.image01로 Google에 로그인돼 있어야 보인다.
 
 ## 4. 시트 다루는 규칙
 
 - 탭: `BOOK` `MAP` `OTHER` `PRINT` (물건) · `동의어` · `카테고리` · `시대` · `이미지폴더` · `설정`.
-- **1행 헤더 이름은 바꾸지 않는다.** 열 순서는 바꿔도 된다(사이트가 헤더로 찾는다).
-- 행은 지워도, 정렬해도 된다. 사이트는 쓰기 직전에 `Item No.` 열을 다시 읽어 행을 찾는다.
+- **1행 헤더 이름은 바꾸지 않는다.** 열 순서는 바꿔도 된다(헤더로 찾는다).
+- 행은 지워도, 정렬해도 된다. 서버는 쓰기 직전에 `Item No.` 열을 다시 읽어 행을 찾는다.
 - `Item No.`는 비우거나 중복시키지 않는다. 중복이면 첫 행만 사이트에 보인다.
 - 앞 37열은 엑셀 원문. 뒤쪽 연한 바탕 열은 사이트용: `해외보관`(Y), `연도from/to`, `시대`, `카테고리`(세미콜론 구분), `지역`, `언어`, `Shop게시`(Y), `이미지폴더`(Drive 폴더 ID), `대표이미지`(Drive 파일 ID), `이야기`, `수정일시`, `수정자`.
 - 동의어 탭: `표현`이 같은 `개념ID`끼리 묶인다. 새 말을 추가하려면 같은 개념ID로 행을 더한다. `사용`을 비우면 끈다.
@@ -115,25 +109,38 @@ gh workflow run "Deploy admin001 to GitHub Pages" --repo tjkim-image01/tjkim2
 
 | 증상 | 원인 | 조치 |
 |---|---|---|
-| 로그인 버튼이 비활성 / "OAuth 클라이언트 ID가 없습니다" | ID 미설정 | 2.1절. 설정 화면이나 저장소 Variables에 입력 |
-| 로그인 팝업에서 "access_denied" 또는 "앱이 확인되지 않음"에서 막힘 | 테스트 사용자에 없는 계정 | Cloud 콘솔 동의 화면 → 테스트 사용자에 추가 |
-| 팝업이 "origin_mismatch" | 사이트 주소가 승인된 원본에 없음 | OAuth 클라이언트의 승인된 JavaScript 원본에 현재 주소 추가 |
-| "권한이 없습니다. 시트 공유 설정을 확인하세요" | 그 계정이 시트 편집자가 아님 | 시트 공유에서 편집자로 |
-| "시트를 찾을 수 없습니다" | 시트 ID가 틀렸거나 삭제됨 | 설정 화면에 시트 URL 다시 붙여넣기 |
-| 1시간쯤 지나 저장이 "로그인이 만료" | 토큰 만료 | 다시 로그인. 보통은 조용히 자동 갱신된다 |
-| 값이 시트와 다르게 보임 | 브라우저 캐시 | 상단 새로고침, 또는 설정 → 캐시 지우고 다시 읽기 |
+| "API 주소가 설정되지 않았습니다" | 웹 앱 URL 미설정 | 2.1절 7번 |
+| "서버에 연결하지 못했습니다" | URL 오타, 배포 삭제, 네트워크 | 브라우저에서 `URL?action=health` 확인. 2.1절대로 재배포 |
+| "서버 응답을 읽지 못했습니다" | 웹 앱 액세스가 "모든 사용자"가 아님 | 배포 관리에서 액세스 권한을 모든 사용자로 |
+| 로그인이 "아이디 또는 비밀번호가 틀립니다" | 비밀번호 변경됨 | 스크립트 속성 `ADMIN_PASS` 확인·수정 |
+| 저장이 "로그인이 만료" | 토큰 30일 경과 | 다시 로그인 |
+| 저장이 "행을 찾지 못했습니다" | 시트에서 그 물건 행이 지워짐 | 새로고침 후 확인 |
+| 값이 시트와 다르게 보임 | 브라우저 캐시(10분) | 상단 새로고침, 또는 설정 → 캐시 지우고 다시 읽기 |
 | 사이트 자체가 404 | Pages 꺼짐·배포 실패 | GitHub Actions 탭에서 마지막 실행 로그, 2.2절 |
-| 이미지가 안 보임 | 그 브라우저에서 Google 로그아웃 상태, 또는 폴더 권한 없음 | 같은 브라우저에서 Google 로그인 유지. Drive에서 폴더 권한 확인 |
+| 이미지가 안 보임 | 폴더가 비공개이고 그 브라우저가 Google 로그아웃 상태 | 같은 브라우저에서 tjkim.image01 로그인, 또는 폴더를 링크 공개 |
+| 재색인이 "일부만 순회" | 루트 하나가 너무 커서 5분 제한 | 이미지폴더 탭에서 큰 루트를 하위 폴더 여러 개로 쪼개 등록 |
+| Apps Script "권한" 오류 | 승인 안 됨 | 2.1절 4번 authorizeOnce 다시 실행 |
 
 ## 6. 처음부터 다시 만들 때 (복구)
 
 1. 소스: `git clone https://github.com/tjkim-image01/tjkim2` → `admin001/`.
-2. 시트가 없어졌으면 `project/scripts/build_sheet.py`로 xlsx를 다시 만든다. 입력은 원본 엑셀(`tjkim/res/list0722.xlsx`)과 덤프에서 뽑은 JSON(`tjkim/dump/2026-07-22/`)이다. 만든 xlsx를 Drive에 올리고 **파일 → Google Sheets로 저장**으로 변환한다. 시트 버전 기록이 살아 있으면 그쪽이 더 낫다.
-3. 2.1·2.2절대로 OAuth 클라이언트와 Pages를 다시 설정한다.
-4. 로컬에서 보려면 `cd admin001 && npm install && npm run dev` → `http://localhost:5173/tjkim2/`. 설정 화면에 클라이언트 ID와 시트 ID를 넣는다.
+2. 시트가 없어졌으면 `project/scripts/build_sheet.py`로 xlsx를 다시 만든다. 입력은 원본 엑셀(`tjkim/res/list0722.xlsx`)과 덤프에서 뽑은 JSON(`tjkim/dump/2026-07-22/`)이다. 만든 xlsx를 Drive에 올리고 **파일 → Google Sheets로 저장**으로 변환한다. 시트 버전 기록이 살아 있으면 그쪽이 더 낫다. 시트 ID가 바뀌면 `Code.js`의 `SHEET_ID` 또는 스크립트 속성 `SHEET_ID`를 맞춘다.
+3. 2.1·2.2절대로 Apps Script와 Pages를 다시 설정한다.
+4. 로컬에서 보려면 `cd admin001 && npm install && npm run dev` → `http://localhost:5173/tjkim2/`. 설정 화면에 API 주소를 넣는다.
 
 ## 7. 아직 안 된 것 / 다음 할 일
 
 - `Shop게시` 열이 비어 있다. 예전 DB(Supabase)에서 한 번 뽑아 채우거나 시트에서 직접 표시한다.
 - 공개 상점(shop2)과 3D 갤러리는 아직 Supabase를 읽는다. 시트를 원본으로 바꾸려면 "공개용 JSON 내보내기"를 만들어 정적으로 전환해야 한다 (기획서 2.4절).
 - 카테고리·시대의 검수(승인/보류) 기능은 없앴다. 시트의 텍스트 열이 전부다.
+- 사용자는 한 명(admin)이다. 사람별 계정이 필요해지면 Apps Script 스크립트 속성에 사용자 목록을 두는 식으로 확장한다.
+
+## 부록 A. Google 로그인(OAuth)으로 바꾸고 싶을 때
+
+지금은 아이디/비밀번호 방식이지만, 사람마다 Google 계정으로 로그인하고 시트 공유 권한을 그대로 쓰는 방식도 가능하다. 그러려면 Google Cloud 콘솔에서 OAuth 클라이언트 ID가 필요하다.
+
+1. tjkim.image01@gmail.com 으로 <https://console.cloud.google.com> 접속. **2단계 인증을 켜라는 차단 화면이 나오면** Google 계정 보안 설정에서 2단계 인증을 켠다 (2026-07-29부터 Cloud 콘솔 필수).
+2. 프로젝트: 기존 프로젝트 또는 새 프로젝트 `tjkim-admin`. **API 및 서비스 → 라이브러리**에서 `Google Sheets API`, `Google Drive API` 사용 설정.
+3. **OAuth 동의 화면**: 앱 이름 `tjkim 소장품 관리`, 대상 외부, 게시 상태 테스트, **테스트 사용자**에 로그인할 계정 추가.
+4. **사용자 인증 정보 → OAuth 클라이언트 ID**: 웹 애플리케이션, 승인된 JavaScript 원본 `https://tjkim-image01.github.io`, `http://localhost:5173`.
+5. 앱 쪽은 2026-10-15 커밋 `8a684eb` 이전 버전의 `src/lib/google.ts`, `src/lib/sheets.ts`에 Google Identity Services 토큰 방식 구현이 있다. 그걸 되살려 `api.ts` 대신 연결하면 된다.

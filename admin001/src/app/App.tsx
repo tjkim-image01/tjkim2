@@ -37,8 +37,8 @@ function TopBar() {
         )}
         {user && (
           <button type="button" className="btn btn-ghost user-chip" onClick={signOut} title="로그아웃">
-            {user.picture ? <img src={user.picture} alt="" /> : <Icon name="user" />}
-            <span>{user.email}</span>
+            <Icon name="user" />
+            <span>{user.name}</span>
           </button>
         )}
       </div>
@@ -70,7 +70,7 @@ export default function App() {
   const { config, user } = useApp()
   const location = useLocation()
   const navigate = useNavigate()
-  const configured = Boolean(config.clientId && config.spreadsheetId)
+  const configured = Boolean(config.apiUrl)
 
   // '/' 키로 검색창 포커스
   useEffect(() => {

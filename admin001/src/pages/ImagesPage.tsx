@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useApp } from '../app/AppContext'
 import { Icon } from '../components/Icon'
 import { buildImageIndex, findCandidates, readImageIndex, type ImageIndex } from '../lib/images'
-import { thumbnailUrl } from '../lib/sheets'
+import { thumbnailUrl } from '../lib/api'
 
 export default function ImagesPage() {
   const { dataset, saveCells } = useApp()
@@ -68,7 +68,7 @@ export default function ImagesPage() {
     <section className="images-page">
       <h1>이미지 연결</h1>
       <p className="muted">
-        로그인한 계정이 볼 수 있는 Drive 이미지를 전부 색인한 뒤, 폴더명이나 파일명이 Item No.와 같은 것을 찾아 시트의 <span className="mono">이미지폴더</span> 열에 넣습니다.
+        시트의 <span className="mono">이미지폴더</span> 탭에 적힌 Drive 루트를 서버가 순회해, 폴더명이나 파일명이 Item No.와 같은 것을 찾아 물건의 <span className="mono">이미지폴더</span> 열에 넣습니다.
       </p>
       <div className="form-actions">
         <button type="button" className="btn btn-primary" onClick={() => void rebuild()} disabled={busy}>
@@ -76,7 +76,8 @@ export default function ImagesPage() {
         </button>
         {index && (
           <span className="muted small">
-            이미지 {index.fileCount.toLocaleString()}장 · 폴더 {index.folderCount.toLocaleString()}개 · {new Date(index.builtAt).toLocaleString('ko-KR')}
+            이미지 {index.fileCount.toLocaleString()}장 · 일치 가능 폴더 {index.folderCount.toLocaleString()}개 · {new Date(index.builtAt).toLocaleString('ko-KR')}
+            {index.truncatedRoots.length > 0 && ` · 일부만 순회: ${index.truncatedRoots.join(', ')}`}
           </span>
         )}
         {error && <span className="error">{error}</span>}

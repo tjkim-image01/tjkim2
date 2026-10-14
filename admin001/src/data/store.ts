@@ -1,8 +1,8 @@
 /**
  * 데이터 적재·캐시·검색 — 전부 브라우저 안에서.
  *
- * - 시트 4탭(BOOK/MAP/OTHER/PRINT)과 보조 탭(동의어·카테고리·시대·이미지폴더·설정)을 한 번에 읽는다.
- * - IndexedDB에 저장하고, Drive의 modifiedTime이 같으면 다시 받지 않는다.
+ * - Apps Script API에서 시트 4탭(BOOK/MAP/OTHER/PRINT)과 보조 탭을 한 번에 받는다.
+ * - IndexedDB에 저장하고, 시트 수정 시각이 같으면 그대로 쓴다.
  * - 검색·필터는 메모리에서 한다 (9천 행이면 수십 ms).
  */
 
@@ -20,7 +20,7 @@ import {
   type Application,
   type ImageStatus,
 } from './parse'
-import { batchGetTabs, getDriveFile, getSheetMeta } from '../lib/sheets'
+import { fetchRawDataset } from '../lib/api'
 
 export const ITEM_TABS: ItemType[] = [...ITEM_TYPES]
 export const AUX_TABS = ['동의어', '카테고리', '시대', '이미지폴더', '설정'] as const
@@ -28,7 +28,7 @@ export const AUX_TABS = ['동의어', '카테고리', '시대', '이미지폴더
 export interface Item {
   code: string
   tab: ItemType
-  row: number // 적재 당시 행 번호(1-based). 쓰기 때는 다시 찾는다
+  row: number // 적재 당시 행 번호(1-based). 쓰기 때는 서버가 다시 찾는다
   cells: Record<string, string> // 헤더 → 원문
   // 파생
   type: ItemType
@@ -73,7 +73,7 @@ export interface Dataset {
   settings: Record<string, string>
 }
 
-const CACHE_KEY = (id: string) => `admin001.dataset.${id}`
+const CACHE_KEY = 'admin001.dataset'
 
 function rowToRecord(headers: string[], row: string[]): Record<string, string> {
   const rec: Record<string, string> = {}
@@ -124,15 +124,12 @@ export function buildItem(tab: ItemType, row: number, cells: Record<string, stri
   }
 }
 
-export async function fetchDataset(spreadsheetId: string, onProgress?: (msg: string) => void): Promise<Dataset> {
-  onProgress?.('시트 정보 확인 중…')
-  const [meta, file] = await Promise.all([getSheetMeta(spreadsheetId), getDriveFile(spreadsheetId).catch(() => null)])
-  const tabNames = new Set(meta.tabs.map((t) => t.title))
-  const itemTabs = ITEM_TABS.filter((t) => tabNames.has(t))
+export async function fetchDataset(onProgress?: (msg: string) => void): Promise<Dataset> {
+  onProgress?.('시트 전체를 받는 중… (몇 초 걸립니다)')
+  const raw = await fetchRawDataset()
+  const values = raw.tabs
+  const itemTabs = ITEM_TABS.filter((t) => values[t])
   if (itemTabs.length === 0) throw new Error('시트에 BOOK/MAP/OTHER/PRINT 탭이 없습니다')
-  const auxTabs = AUX_TABS.filter((t) => tabNames.has(t))
-  onProgress?.('물건 목록 받는 중…')
-  const values = await batchGetTabs(spreadsheetId, [...itemTabs, ...auxTabs])
 
   const headers: Record<string, string[]> = {}
   const items: Item[] = []
@@ -187,9 +184,9 @@ export async function fetchDataset(spreadsheetId: string, onProgress?: (msg: str
   for (const r of aux('설정')) if (r['키']) settings[r['키']] = r['값']
 
   const dataset: Dataset = {
-    spreadsheetId,
-    title: meta.title,
-    modifiedTime: file?.modifiedTime ?? '',
+    spreadsheetId: raw.spreadsheetId,
+    title: raw.title,
+    modifiedTime: raw.modifiedTime,
     loadedAt: Date.now(),
     headers,
     items,
@@ -200,43 +197,36 @@ export async function fetchDataset(spreadsheetId: string, onProgress?: (msg: str
     settings,
   }
   try {
-    await idbSet(CACHE_KEY(spreadsheetId), dataset)
+    await idbSet(CACHE_KEY, dataset)
   } catch {
     /* 캐시 실패는 무시 */
   }
   return dataset
 }
 
-export async function readCachedDataset(spreadsheetId: string): Promise<Dataset | null> {
+export async function readCachedDataset(): Promise<Dataset | null> {
   try {
-    return ((await idbGet(CACHE_KEY(spreadsheetId))) as Dataset | undefined) ?? null
+    return ((await idbGet(CACHE_KEY)) as Dataset | undefined) ?? null
   } catch {
     return null
   }
 }
 
-export async function clearCachedDataset(spreadsheetId: string) {
+export async function clearCachedDataset() {
   try {
-    await idbDel(CACHE_KEY(spreadsheetId))
+    await idbDel(CACHE_KEY)
   } catch {
     /* 무시 */
   }
 }
 
-/** 캐시가 있고 Drive 수정 시각이 같으면 캐시를, 아니면 새로 받는다. */
-export async function loadDataset(spreadsheetId: string, onProgress?: (msg: string) => void, force = false): Promise<Dataset> {
+/** 캐시가 10분 이내면 캐시를, 아니면 새로 받는다. 새로고침 버튼은 force. */
+export async function loadDataset(onProgress?: (msg: string) => void, force = false): Promise<Dataset> {
   if (!force) {
-    const cached = await readCachedDataset(spreadsheetId)
-    if (cached) {
-      try {
-        const file = await getDriveFile(spreadsheetId)
-        if (file.modifiedTime === cached.modifiedTime) return cached
-      } catch {
-        return cached
-      }
-    }
+    const cached = await readCachedDataset()
+    if (cached && Date.now() - cached.loadedAt < 10 * 60 * 1000) return cached
   }
-  return fetchDataset(spreadsheetId, onProgress)
+  return fetchDataset(onProgress)
 }
 
 // ---- 검색 -------------------------------------------------------------------

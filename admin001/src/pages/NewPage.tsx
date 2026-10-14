@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useApp } from '../app/AppContext'
 import { CREATE_FIELDS, FIELD_BY_KEY, ITEM_TYPES, KEY_FIELD, TYPE_LABEL, type ItemType } from '../data/fields'
 import { parseNumber, suggestItemCode } from '../data/parse'
-import type { CellValue } from '../lib/sheets'
+import type { CellValue } from '../lib/api'
 
 const FALLBACK_PREFIX: Record<ItemType, string> = { BOOK: 'ABKC', MAP: 'AMKC', OTHER: 'AOKC', PRINT: 'APKC' }
 

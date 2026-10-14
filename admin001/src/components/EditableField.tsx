@@ -6,7 +6,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { FieldDef } from '../data/fields'
 import { formatMoney, isFlag, parseNumber } from '../data/parse'
-import type { CellValue } from '../lib/sheets'
+import type { CellValue } from '../lib/api'
 
 interface Props {
   field: FieldDef

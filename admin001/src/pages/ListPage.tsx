@@ -5,7 +5,7 @@ import { Icon } from '../components/Icon'
 import { ITEM_TYPES, TYPE_LABEL, type ItemType } from '../data/fields'
 import { formatMoney } from '../data/parse'
 import { EMPTY_FILTERS, searchItems, type Filters } from '../data/store'
-import { thumbnailUrl } from '../lib/sheets'
+import { thumbnailUrl } from '../lib/api'
 
 const PAGE_SIZE = 50
 

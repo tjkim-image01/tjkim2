@@ -6,7 +6,7 @@ import { Icon } from '../components/Icon'
 import { FIELD_GROUPS, TYPE_LABEL } from '../data/fields'
 import { findDuplicateApplication } from '../data/store'
 import { listFolderImages, type FolderImage } from '../lib/images'
-import { thumbnailUrl } from '../lib/sheets'
+import { thumbnailUrl } from '../lib/api'
 
 export default function DetailPage() {
   const { code = '' } = useParams()
