@@ -10,3 +10,4 @@ run/
 .DS_Store
 .playwright-mcp/
 project/scripts/*.xlsx
+project-obj/tj001/mcp.md

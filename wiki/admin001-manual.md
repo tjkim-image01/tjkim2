@@ -25,9 +25,9 @@
 
 Google Cloud 콘솔이 필요 없다. 시트를 열 수 있는 tjkim.image01 계정이면 된다.
 
-> **2026-10-15 현재 상태**: 1~3번은 끝나 있다. 프로젝트 `tjkim-admin-api`가 시트에 붙어 있고 코드·매니페스트가 저장돼 있다.
+> **2026-10-15 배포 완료.** 프로젝트 `tjkim-admin-api`(시트에 바인딩), 웹 앱 `v1` 배포됨. 웹 앱 URL은 저장소 Variables `VITE_API_URL`에 있고 사이트 빌드에 들어간다(문서에는 적지 않는다).
 > 편집기 바로가기: <https://script.google.com/u/0/home/projects/1grQyz0lGfFMF3DWwzsA7aYeVoyTYaRsh5omTXGN_cfMEHKZNgqi6DSr2/edit>
-> **남은 것은 4번(승인)부터.** 승인 클릭은 계정 소유자가 직접 해야 한다(자동화 불가).
+> 아래는 처음부터 다시 할 때의 절차.
 
 1. 시트를 열고 메뉴 **확장 프로그램 → Apps Script**. 편집기가 새 탭으로 열린다. 프로젝트 이름을 `tjkim-admin-api`로.
 2. `Code.gs` 내용을 전부 지우고 [`admin001/apps-script/Code.js`](../admin001/apps-script/Code.js) 내용을 붙여 넣는다. 저장(⌘S).
