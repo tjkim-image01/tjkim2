@@ -1,0 +1,55 @@
+# admin001을 GitHub Pages로 배포한다. main에 push하면 빌드 → Pages.
+# 비밀값은 없다. OAuth 클라이언트 ID와 시트 ID는 저장소 Variables
+# (Settings → Secrets and variables → Actions → Variables)에 VITE_GOOGLE_CLIENT_ID, VITE_SHEET_ID 로 두면
+# 빌드에 들어간다. 없으면 앱의 설정 화면에서 입력한다.
+name: Deploy admin001 to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['admin001/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: admin001
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: admin001/package-lock.json
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_BASE: /tjkim2/
+          VITE_GOOGLE_CLIENT_ID: ${{ vars.VITE_GOOGLE_CLIENT_ID }}
+          VITE_SHEET_ID: ${{ vars.VITE_SHEET_ID }}
+      # 해시 라우터라 404.html 복제가 꼭 필요하진 않지만, 직접 주소 접근 시 index를 돌려준다.
+      - run: cp dist/index.html dist/404.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: admin001/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

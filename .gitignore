@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+dist/
+logs/
+run/
+.DS_Store
+.playwright-mcp/
