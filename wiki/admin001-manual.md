@@ -25,6 +25,10 @@
 
 Google Cloud 콘솔이 필요 없다. 시트를 열 수 있는 tjkim.image01 계정이면 된다.
 
+> **2026-10-15 현재 상태**: 1~3번은 끝나 있다. 프로젝트 `tjkim-admin-api`가 시트에 붙어 있고 코드·매니페스트가 저장돼 있다.
+> 편집기 바로가기: <https://script.google.com/u/0/home/projects/1grQyz0lGfFMF3DWwzsA7aYeVoyTYaRsh5omTXGN_cfMEHKZNgqi6DSr2/edit>
+> **남은 것은 4번(승인)부터.** 승인 클릭은 계정 소유자가 직접 해야 한다(자동화 불가).
+
 1. 시트를 열고 메뉴 **확장 프로그램 → Apps Script**. 편집기가 새 탭으로 열린다. 프로젝트 이름을 `tjkim-admin-api`로.
 2. `Code.gs` 내용을 전부 지우고 [`admin001/apps-script/Code.js`](../admin001/apps-script/Code.js) 내용을 붙여 넣는다. 저장(⌘S).
 3. 왼쪽 **프로젝트 설정(톱니)** → "appsscript.json 매니페스트 파일을 편집기에 표시" 켜기 → 편집기에서 `appsscript.json`을 열고 [`admin001/apps-script/appsscript.json`](../admin001/apps-script/appsscript.json) 내용으로 바꾼다. 저장.
