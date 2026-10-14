@@ -20,3 +20,8 @@ tjkim 소장 자료(고서·고지도·판화·기록물)를 활용한 신규 �
 - DB: tjkim Supabase 프로젝트(`vkhkfgocyhkeufkmfdbg`)를 기존 사이트들과 공유한다. 상품 데이터는 **읽기 전용**으로 쓰고, 신규 테이블은 별도 접두사로 분리한다.
 - 로컬 DB: tjkim의 `claude3/bin/start.sh`로 Docker PostgreSQL(포트 54330)을 띄운다.
 - 배포: Vercel(프론트) + Render(백엔드) + Supabase(DB). 로그인은 GitHub `tjkim-image01`.
+
+## admin001 (신규 어드민)
+
+DB 없이 Google 시트를 원본으로 쓰는 정적 어드민. 소스 [admin001/](admin001/), 기획 [project/admin001](project/admin001),
+**운영 매뉴얼 [wiki/admin001-manual.md](wiki/admin001-manual.md)** (설정·사용법·문제 해결·복구).
