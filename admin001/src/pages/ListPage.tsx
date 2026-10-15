@@ -6,6 +6,7 @@ import { ITEM_TYPES, TYPE_LABEL, type ItemType } from '../data/fields'
 import { formatMoney } from '../data/parse'
 import { EMPTY_FILTERS, searchItems, type Filters } from '../data/store'
 import { thumbnailUrl } from '../lib/api'
+import { rememberListSearch } from '../lib/nav'
 
 const PAGE_SIZE = 50
 
@@ -62,8 +63,15 @@ export default function ListPage() {
     setDraft(filters)
   }, [filters])
 
+  useEffect(() => {
+    const s = params.toString()
+    rememberListSearch(s ? `?${s}` : '')
+  }, [params])
+
   const apply = (next: Partial<Filters>, resetPage = true) => {
-    setParams(paramsFromFilters({ ...filters, ...next }, resetPage ? 0 : page, excluded))
+    // 검색어가 바뀌면 이전 검색어에서 제외한 동의어는 의미가 없으므로 같이 지운다
+    const keepExcluded = next.q === undefined || next.q === filters.q
+    setParams(paramsFromFilters({ ...filters, ...next }, resetPage ? 0 : page, keepExcluded ? excluded : []))
   }
 
   const result = useMemo(() => {
@@ -123,7 +131,7 @@ export default function ListPage() {
       {result.expanded.length > 0 && (
         <div className="chips">
           <span className="muted small">함께 찾음</span>
-          {result.expanded.map((t) => (
+          {result.expanded.filter((t) => !excluded.includes(t.term.toLowerCase())).map((t) => (
             <span key={t.term} className="chip">
               {t.term}
               <button type="button" aria-label={`${t.term} 제외`} onClick={() => setParams(paramsFromFilters(filters, 0, [...excluded, t.term.toLowerCase()]))}>×</button>

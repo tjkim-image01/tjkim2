@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { lastListPath } from '../lib/nav'
 import { useApp } from '../app/AppContext'
 import EditableField from '../components/EditableField'
 import { Icon } from '../components/Icon'
@@ -7,6 +8,10 @@ import { FIELD_GROUPS, TYPE_LABEL } from '../data/fields'
 import { findDuplicateApplication } from '../data/store'
 import { listFolderImages, type FolderImage } from '../lib/images'
 import { thumbnailUrl } from '../lib/api'
+
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 export default function DetailPage() {
   const { code = '' } = useParams()
@@ -22,7 +27,7 @@ export default function DetailPage() {
     return (
       <section>
         <p className="error">Item No. <span className="mono">{decoded}</span> 를 찾지 못했습니다.</p>
-        <Link to="/" className="btn btn-ghost"><Icon name="back" /> 목록으로</Link>
+        <Link to={lastListPath()} className="btn btn-ghost"><Icon name="back" /> 목록으로</Link>
       </section>
     )
   }
@@ -33,7 +38,7 @@ export default function DetailPage() {
     <section className="detail">
       <header className="detail-head">
         <div>
-          <Link to="/" className="btn btn-ghost back"><Icon name="back" /> 목록</Link>
+          <Link to={lastListPath()} className="btn btn-ghost back"><Icon name="back" /> 목록</Link>
           <h1>
             <span className="mono code">{item.code}</span>
             <span className={`pill type-${item.type}`}>{TYPE_LABEL[item.type]}</span>
@@ -54,11 +59,12 @@ export default function DetailPage() {
         </aside>
 
         <div className="detail-fields">
+          {/* 해시 라우터라 <a href="#…">를 쓰면 경로가 바뀌어 목록으로 튕긴다. 버튼으로 스크롤만 한다. */}
           <nav className="section-nav">
             {FIELD_GROUPS.map((g) => (
-              <a key={g.title} href={`#sec-${g.title}`}>{g.title}</a>
+              <button key={g.title} type="button" onClick={() => scrollToSection(`sec-${g.title}`)}>{g.title}</button>
             ))}
-            <a href="#sec-applications">이력</a>
+            <button type="button" onClick={() => scrollToSection('sec-applications')}>이력</button>
           </nav>
 
           {FIELD_GROUPS.map((g) => (
