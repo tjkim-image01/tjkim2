@@ -1,0 +1,62 @@
+[
+ {
+  "shot": "X1-A1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "첫 장은 판화예요. 청일전쟁 때 일본에서 찍은 전쟁 판화, 니시키에. 세 장을 이어 붙인 그림이에요.",
+  "sub": "청일전쟁 · 일본 전쟁 판화(錦絵) / 세 장을 이어 붙인 그림",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X1-A1_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.65
+ },
+ {
+  "shot": "X1-A1",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "그림이 엄청 화려하네. 말 탄 군인들에 깃발에.",
+  "sub": "엄청 화려하네!",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/X1-A1_2.wav",
+  "emotion_typecast": "toneup",
+  "speech": 4.7
+ },
+ {
+  "shot": "X1-A2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "사진이 귀하던 때라, 사람들이 이런 판화를 사서 전쟁 소식을 봤어요. 실제보다 훨씬 멋있게 그렸죠.",
+  "sub": "사진 대신 판화로 전쟁 소식 / 실제보다 멋있게",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X1-A2_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.3
+ },
+ {
+  "shot": "X1-A2",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "보도사진이 아니라 홍보 포스터네.",
+  "sub": "보도가 아니라 홍보",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/X1-A2_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 2.85
+ },
+ {
+  "shot": "X1-A3",
+  "who": "태진",
+  "emotion": "낮은 톤",
+  "text": "그리고 그 판화 속 무대가 조선이에요. 남의 나라 전쟁터가 된 우리 땅을 그렇게 그려서 팔았어요.",
+  "sub": "판화 속 무대 = 조선 / 남의 전쟁터가 된 우리 땅",
+  "actor": "현준",
+  "emotion_applied": "낮은 톤",
+  "file": "태진/X1-A3_1.wav",
+  "emotion_typecast": "tonedown",
+  "speech": 7.3
+ }
+]

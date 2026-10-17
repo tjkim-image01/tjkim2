@@ -1,0 +1,98 @@
+[
+ {
+  "shot": "J-S01",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "어머, 이건 그림이네. 손으로 그린 거야?",
+  "sub": "손으로 그린 그림?",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/J-S01_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 4.45
+ },
+ {
+  "shot": "J-S02",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "삐라 원화예요. 천구백오십이 년 미군 화가가 펜으로 그린 원본. 옆에 인쇄된 삐라도 같이 있어요.",
+  "sub": "삐라 원화 · 1952 / 펜화 원본 + 인쇄본",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/J-S02_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.2
+ },
+ {
+  "shot": "J-S03",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "뭘 그린 거야?",
+  "sub": "뭘 그렸어?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/J-S03_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.0
+ },
+ {
+  "shot": "J-S04",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "유엔 깃발 앞에 거인 같은 유엔군 장교. 그 팔에 매달린 겁먹은 중공군 장교 둘. 저 멀리 저승사자가 피리를 불면서 병사들을 끌고 가고요.",
+  "sub": "거인 유엔군 장교 · 매달린 중공군 장교 둘 / 피리 부는 저승사자",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/J-S04_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 10.65
+ },
+ {
+  "shot": "J-S05",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "피리 부는 사나이네. 동화를 삐라에 넣었어.",
+  "sub": "피리 부는 사나이 — 동화를 삐라에",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/J-S05_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 3.2
+ },
+ {
+  "shot": "J-S06",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "삐라도 누가 그려야 하잖아요. 미군엔 삐라 그리는 화가 부대가 따로 있었어요. 글은 번역가가, 그림은 화가가.",
+  "sub": "삐라를 그린 화가 부대 / 글은 번역가, 그림은 화가",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/J-S06_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.65
+ },
+ {
+  "shot": "J-S07",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그럼 이건 그 화가 원본이라는 거네.",
+  "sub": "화가의 원본",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/J-S07_1.wav",
+  "emotion_typecast": null,
+  "speech": 3.45
+ },
+ {
+  "shot": "J-S08",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "네. 인쇄된 삐라는 수십억 장인데, 원화는 한 장이에요. 티제이 김 컬렉션에 있어요.",
+  "sub": "인쇄본은 수십억 장, 원화는 한 장 / TJ Kim Collection",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/J-S08_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 5.75
+ }
+]

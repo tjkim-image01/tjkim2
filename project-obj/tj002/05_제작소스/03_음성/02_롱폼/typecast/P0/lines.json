@@ -1,0 +1,74 @@
+[
+ {
+  "shot": "P0-I1",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "어머 태진아, 이거 삐라잖아! 나 이거 국민학교 때 많이 주웠는데.",
+  "sub": "이거 삐라잖아!",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/P0-I1_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 5.9
+ },
+ {
+  "shot": "P0-I1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "역시 이모. 그때 주워서 어떻게 했어요?",
+  "sub": "주워서 어떻게 했어요?",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I1_2.wav",
+  "emotion_typecast": null,
+  "speech": 3.7
+ },
+ {
+  "shot": "P0-I2",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "파출소! 갖다주면 공책 주고 연필 주고. 많이 가져가면 자도 줬어.",
+  "sub": "파출소 가면 공책 · 연필 · 자",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/P0-I2_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 5.75
+ },
+ {
+  "shot": "P0-I2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그거 진짜 경찰 규칙이었어요. 북한 불온선전물 수거 처리 규칙. 이천칠 년에 없어졌어요. 주워 오는 애가 없어서.",
+  "sub": "'북한 불온선전물 수거 처리 규칙' / 2007년 폐지 — 주워 오는 아이가 없어서",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I2_2.wav",
+  "emotion_typecast": null,
+  "speech": 6.35
+ },
+ {
+  "shot": "P0-I3",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "근데 그 종이가 대체 어디서 그렇게 떨어진 거야?",
+  "sub": "그 종이, 어디서 떨어진 거야?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/P0-I3_1.wav",
+  "emotion_typecast": null,
+  "speech": 5.3
+ },
+ {
+  "shot": "P0-I3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그 얘기 하려면 천구백오십 년, 하늘부터 봐야 돼요.",
+  "sub": "1950년, 하늘부터",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I3_2.wav",
+  "emotion_typecast": null,
+  "speech": 4.05
+ }
+]

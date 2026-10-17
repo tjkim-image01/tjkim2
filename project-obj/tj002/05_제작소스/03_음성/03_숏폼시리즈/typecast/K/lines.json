@@ -1,0 +1,98 @@
+[
+ {
+  "shot": "K-S01",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "분홍색 비둘기? 이건 예쁘네.",
+  "sub": "분홍 비둘기?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/K-S01_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.45
+ },
+ {
+  "shot": "K-S02",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "평화를 가장한 공산당 비둘기. 유엔군이 북한 쪽에 뿌린 거예요. 비둘기 몸에 낫이랑 망치가 숨어 있죠.",
+  "sub": "\"평화를 가장한 공산당 비둘기\" / 비둘기 몸에 낫과 망치",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/K-S02_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.85
+ },
+ {
+  "shot": "K-S03",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "예쁜 척하고 속은 다르다, 이 말이네.",
+  "sub": "예쁜 척, 속은 다르다",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/K-S03_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 3.3
+ },
+ {
+  "shot": "K-S04",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "뒷면엔 어린아이들만 혼자 남아서 울고 있다. 같은 시리즈가 여러 장이에요. 팔백만 북한 동포, 김일성 비판.",
+  "sub": "뒷면: \"어린아이들만 남아 울고 있다\" / 같은 시리즈 여러 장",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/K-S04_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.85
+ },
+ {
+  "shot": "K-S05",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그림으로 미워하게 만드는 거구먼.",
+  "sub": "그림으로 미워하게",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/K-S05_1.wav",
+  "emotion_typecast": null,
+  "speech": 3.1
+ },
+ {
+  "shot": "K-S06",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그게 삐라의 다른 쪽 얼굴이에요. 집 생각나게 하는 삐라가 있으면, 상대를 괴물로 그리는 삐라도 있었죠. 양쪽 다.",
+  "sub": "삐라의 두 얼굴: 향수 vs 괴물 그리기 / 양쪽 다",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/K-S06_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.5
+ },
+ {
+  "shot": "K-S07",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그래서 전쟁 끝나고도 서로 미웠겠네.",
+  "sub": "전쟁 뒤에도 서로 미운 이유",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/K-S07_1.wav",
+  "emotion_typecast": null,
+  "speech": 4.2
+ },
+ {
+  "shot": "K-S08",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이 그림들이 휴전 뒤 교과서에까지 들어갔다는 연구도 있어요. 종이 한 장이 칠십 년을 가는 거죠. 티제이 김 컬렉션, 삐라 백 장.",
+  "sub": "휴전 뒤 교과서에까지 / 종이 한 장이 70년 / TJ Kim Collection",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/K-S08_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.85
+ }
+]

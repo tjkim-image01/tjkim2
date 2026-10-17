@@ -1,0 +1,50 @@
+[
+ {
+  "shot": "P5-E1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이천 년 남북정상회담 뒤에 정부는 삐라를 멈췄어요. 이천사 년엔 장비도 치웠고요.",
+  "sub": "2000 정부 살포 중단 · 2004 장비 철거",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P5-E1_1.wav",
+  "emotion_typecast": null,
+  "speech": 5.4
+ },
+ {
+  "shot": "P5-E1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그럼 이제 끝난 거야?",
+  "sub": "그럼 끝?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/P5-E1_2.wav",
+  "emotion_typecast": null,
+  "speech": 2.2
+ },
+ {
+  "shot": "P5-E2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "민간 단체가 풍선으로 이어 갔고, 이천이십사 년엔 북쪽에서 풍선에 쓰레기를 담아 보냈죠. 오월 이십팔 일부터 며칠 만에 육백 개.",
+  "sub": "민간 풍선 → 2024-05-28 오물풍선, 며칠 만에 600개",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P5-E2_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.65
+ },
+ {
+  "shot": "P5-E2",
+  "who": "옥자",
+  "emotion": "화남",
+  "text": "아이고, 공책은 안 주고 쓰레기를 주네.",
+  "sub": "공책 대신 쓰레기",
+  "actor": "경애",
+  "emotion_applied": "화남",
+  "file": "옥자/P5-E2_2.wav",
+  "emotion_typecast": "angry",
+  "speech": 2.65
+ }
+]
