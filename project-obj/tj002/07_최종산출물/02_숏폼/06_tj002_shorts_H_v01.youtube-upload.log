@@ -1,0 +1,59 @@
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_umQQEa4X18bTKgYz
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); const t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; return await attachBrowserTab(t.targetId); }; console.log('ok')
+ok
+[ok | 21ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 48ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 831ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+ok
+[ok | 3591ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.locator('ytcp-uploads-dialog input[type=file][name=Filedata]').setInputFiles("./06_tj002_shorts_H_v01.mp4"); console.log('ok') })()
+ok
+[ok | 54ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:0
+[ok | 29ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:0
+[ok | 31ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:0
+[ok | 28ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:2
+[ok | 38ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const m=JSON.parse(await fs.readFile('./meta.json','utf8')); const eds=P.locator('ytcp-uploads-dialog [contenteditable=true]'); const put=async(i,s)=>{ const b=eds.nth(i); await b.evaluate(e=>{ e.scrollIntoView({block:'center'}); e.focus(); }); await sleep(300); await P.keyboard.press('Meta+A'); await P.keyboard.press('Backspace'); await sleep(300); await P.keyboard.insertText(s); await sleep(700); return (await b.evaluate(e=>e.innerText)).trim(); }; const T=await put(0,m.title); const D=await put(1,m.description); console.log('TOK:'+(T===m.title)); console.log('DLEN:'+D.length+'/'+m.description.length); })() })()
+TOK:true
+DLEN:223/223
+[ok | 2795ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const rs=P.locator('ytcp-uploads-dialog [role=radiogroup] [role=radio]'); await rs.nth(1).click(); await sleep(600); console.log('MFK:'+JSON.stringify(await rs.evaluateAll(es=>es.map(e=>[e.innerText.trim().slice(0,10),e.getAttribute('aria-checked')])))); })() })()
+MFK:[["예, 아동용입니다\n","false"],["아니요, 아동용이 ","true"],["예, 동영상 시청자","false"],["아니요, 동영상 시","true"]]
+[ok | 1334ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+Error: Timeout waiting for element to be ready
+    at ensurePointerActionable (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3047:221)
+    at async ci (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3083:850)
+    at async performActionAndWait (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:2979:3028)
+    at async clickElement (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3083:2103)
+    at async Cn.click (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3754:1926)
+[error | 5051ms]
+repl > 
