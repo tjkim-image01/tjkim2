@@ -1,0 +1,309 @@
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_sTvtNio5dFC3FLqg
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); console.log('URL:'+page.url()); })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 8447ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_AHiAbvig3xwdJd3D
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); console.log('URL:'+page.url()); })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 7245ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 32ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_ewpQgqWp0bzxFKXi
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); console.log('URL:'+page.url()); })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 7583ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 22ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 139ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 51ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 30ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_034LcNr4AwhmJxPG
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); const t2=(await listBrowserTabs()).find(t=>t.url.includes('UC-gAXUw8Au-q7WgW6ud_KbA')); if(t2) await attachBrowserTab(t2.targetId); await sleep(1500); console.log('URL:'+page.url()); }})()
+SyntaxError: expecting ')'
+    at repl.js:1:536
+[error | 28ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_Xs2TsK2SSUUx2WPI
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); const t2=(await listBrowserTabs()).find(t=>t.url.includes('UC-gAXUw8Au-q7WgW6ud_KbA')); if(t2) await attachBrowserTab(t2.targetId); await sleep(1500); console.log('URL:'+page.url()); })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 9482ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 22ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 22ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 22ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok')
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 35ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_AKgFBndA5RTTtGrz
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); return await attachBrowserTab(t.targetId); }; console.log('ok')
+ok
+[ok | 38ms]
+repl > 
+await (async()=>{ const t=(await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); page.on('dialog', d => d.accept().catch(()=>{})); await page.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); const t2=(await listBrowserTabs()).find(t=>t.url.includes('UC-gAXUw8Au-q7WgW6ud_KbA')); if(t2) await attachBrowserTab(t2.targetId); await sleep(1500); console.log('URL:'+page.url()); })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 9465ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 47ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 39ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 85ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Cannot find context with specified id
+    at #E (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:11507)
+    at WebSocket.<anonymous> (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:9342)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:15024:14)
+    at #onMessage (node:internal/deps/undici/undici:16341:9)
+    at Object.onMessage (node:internal/deps/undici/undici:16049:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:15028:15)
+    at node:internal/deps/undici/undici:15751:21
+    at node:internal/deps/undici/undici:15531:11
+[error | 59ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_hxmye2lAwmYptCvd
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); const t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; return await attachBrowserTab(t.targetId); }; console.log('ok')
+ok
+[ok | 29ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 89ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+ok
+[ok | 5196ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.locator('ytcp-uploads-dialog input[type=file][name=Filedata]').setInputFiles("./02_tj003_shorts_A_v01.mp4"); console.log('ok') })()
+ok
+[ok | 135ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:0
+[ok | 54ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:0
+[ok | 145ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:2
+[ok | 543ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const m=JSON.parse(await fs.readFile('./meta.json','utf8')); const eds=P.locator('ytcp-uploads-dialog [contenteditable=true]'); const put=async(i,s)=>{ const b=eds.nth(i); await b.click(); await P.keyboard.press('Meta+A'); await P.keyboard.press('Backspace'); await sleep(300); await P.keyboard.insertText(s); await sleep(700); return (await b.evaluate(e=>e.innerText)).trim(); }; const T=await put(0,m.title); const D=await put(1,m.description); console.log('TOK:'+(T===m.title)); console.log('DLEN:'+D.length+'/'+m.description.length); })() })()
+TOK:true
+DLEN:232/232
+[ok | 4293ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const rs=P.locator('ytcp-uploads-dialog [role=radiogroup] [role=radio]'); await rs.nth(1).click(); await sleep(600); console.log('MFK:'+JSON.stringify(await rs.evaluateAll(es=>es.map(e=>[e.innerText.trim().slice(0,10),e.getAttribute('aria-checked')])))); })() })()
+MFK:[["예, 아동용입니다\n","false"],["아니요, 아동용이 ","true"],["예, 동영상 시청자","false"],["아니요, 동영상 시","true"]]
+[ok | 1510ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:동영상 요소
+[ok | 2234ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:검토
+[ok | 2994ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:공개 상태
+[ok | 3048ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const v=P.locator('ytcp-uploads-dialog [role=radio]'); await v.nth(0).click(); await sleep(700); console.log('VIS:'+JSON.stringify(await v.evaluateAll(es=>es.map(e=>[e.innerText.trim().split('\n')[0],e.getAttribute('aria-checked')])))); console.log('LINK:'+await P.evaluate(()=>{ const a=[...document.querySelectorAll('ytcp-uploads-dialog a')].map(a=>a.href).find(h=>/youtu\.?be|youtube\.com\/(shorts|watch)/.test(h)); return a||''; })); })() })()
+VIS:[["비공개","true"],["일부 공개","false"],["공개","false"]]
+LINK:https://support.google.com/youtube/answer/2801999?hl=ko
+[ok | 1890ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('PROG:'+((await P.evaluate(()=>{ const t=document.querySelector('ytcp-uploads-dialog')?.innerText||''; const m=t.match(/(업로드 중|Uploading)[^\n]*/); return m?m[0]:'done'; })))) })()
+PROG:done
+[ok | 41ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const d=P.locator('ytcp-uploads-dialog #done-button'); console.log('DONE:'+(await d.innerText()).trim()); await d.click(); for(let i=0;i<20;i++){ await sleep(1000); if(!(await P.locator('ytcp-uploads-dialog [role=dialog]').count())) break; } console.log('LEFT:'+await P.locator('ytcp-uploads-dialog [role=dialog]').count()); })() })()
+DONE:저장
+LEFT:1
+[ok | 21875ms]
+repl > 

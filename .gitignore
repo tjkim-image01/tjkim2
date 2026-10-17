@@ -12,11 +12,11 @@ run/
 project/scripts/*.xlsx
 project-obj/tj001/mcp.md
 
-# GitHub 100MB limit exceeding raw master videos (kept locally)
-project-obj/tj001/07_최종산출물/03_롱폼/01_tj001_longform_v02.mp4
-project-obj/tj002/06_편집검수/02_중간본/tj002_long2_raw_v01.mp4
-project-obj/tj002/07_최종산출물/02_숏폼/thumbnail-intro-v02/01_tj002_shorts_intro1p5_v02.mp4
-project-obj/tj002/07_최종산출물/02_숏폼/thumbnail-intro-v02/15_tj002_shorts_Q_intro1p5_v02.mp4
-project-obj/tj002/07_최종산출물/03_롱폼/01_tj002_longform_v01.mp4
-project-obj/tj002/07_최종산출물/03_롱폼/02_tj002_longform2_v01.mp4
-project-obj/tj003/07_최종산출물/03_롱폼최종본/01_tj003_longform_v01.mp4
+# GitHub 100MB limit exceeding raw master videos (kept locally; split .part* files are tracked)
+**/01_tj001_longform_v02.mp4
+**/tj002_long2_raw_v01.mp4
+**/01_tj002_shorts_intro1p5_v02.mp4
+**/15_tj002_shorts_Q_intro1p5_v02.mp4
+**/01_tj002_longform_v01.mp4
+**/02_tj002_longform2_v01.mp4
+**/01_tj003_longform_v01.mp4

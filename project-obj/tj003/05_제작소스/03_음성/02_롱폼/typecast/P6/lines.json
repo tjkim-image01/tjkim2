@@ -1,0 +1,38 @@
+[
+ {
+  "shot": "P6-F1",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "앞면은 풍경인데, 뒷면은 사람이네.",
+  "sub": "앞면은 풍경, 뒷면은 사람",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P6-F1_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.65
+ },
+ {
+  "shot": "P6-F1",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "티제이 김 컬렉션에 이 앨범 사십 장이 통째로 있어. 다음엔 날지 못한 비행기 엽서, 그리고 천구백사십오 년, 내일 주소 보낼게.",
+  "sub": "TJ Kim Collection — 앨범 40장 / 다음: 날지 못한 비행기 · 1945 \"내일 주소 보낼게\"",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/P6-F1_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 8.3
+ },
+ {
+  "shot": "P6-F2",
+  "who": "하린",
+  "emotion": "기쁨",
+  "text": "뒷면 읽어 드립니다. 쇼츠로 한 장씩!",
+  "sub": "「뒷면 읽어 드립니다」 쇼츠로 계속",
+  "actor": "예나",
+  "emotion_applied": "기쁨",
+  "file": "하린/P6-F2_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 2.2
+ }
+]
