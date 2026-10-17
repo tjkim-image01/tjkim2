@@ -151,8 +151,22 @@ export default function PpiraShopPage() {
     setInqLoading(true)
     setInqNote(null)
     try {
-      const res = await call<{ ok: boolean; inquiries?: InquiryRecord[] }>('ppiraAdminData', {})
-      setInquiries(res.inquiries || [])
+      const res = await call<{ ok: boolean; inquiries?: Array<Record<string, string>> }>('ppiraAdminData', {})
+      const list: InquiryRecord[] = (res.inquiries || [])
+        .map((r) => ({
+          inquiryId: r.inquiryId || r['문의번호'] || '',
+          createdAt: r.createdAt || r['접수일시'] || '',
+          name: r.name || r['이름'] || '',
+          contact: r.contact || r['연락처'] || '',
+          codes: r.codes || r['품목코드'] || '',
+          summary: r.summary || r['품목요약'] || '',
+          totalUsd: r.totalUsd || r['합계(USD)'] || '',
+          memo: r.memo || r['고객메모'] || '',
+          status: r.status || r['처리상태'] || '접수',
+        }))
+        .filter((r) => Boolean(r.inquiryId))
+        .reverse()
+      setInquiries(list)
     } catch {
       setInqNote(
         '구글 시트에 문의함 엔드포인트(Code.js v2-ppira)가 아직 배포되지 않았거나 문의 내역이 없습니다. Apps Script에 최신 Code.js를 새 버전으로 배포하면 고객 문의가 실시간 표시됩니다.',
@@ -163,10 +177,51 @@ export default function PpiraShopPage() {
   }
 
   useEffect(() => {
+    void loadInquiries()
+  }, [])
+
+  useEffect(() => {
     if (subTab === 'inquiries') {
       void loadInquiries()
     }
   }, [subTab])
+
+  const syncDedicatedRow = (
+    r: (typeof rows)[number],
+    patch: {
+      status?: SaleStatus
+      qty?: number
+      priceUsd?: number | null
+      condition?: string
+      location?: string
+      memo?: string
+      featured?: boolean
+    },
+  ) => {
+    const nextStatus = patch.status ?? r.status
+    const nextQty = patch.qty ?? r.qty
+    const nextPrice = patch.priceUsd !== undefined ? patch.priceUsd : r.priceUsd
+    const nextFeatured = patch.featured !== undefined ? patch.featured : r.featured
+    void call('ppiraSaveItem', {
+      item: {
+        code: r.code,
+        title: r.title,
+        status: nextStatus === 'hidden' ? 'sale' : nextStatus,
+        qty: nextQty,
+        price_usd: nextPrice ?? '',
+        visible: nextStatus !== 'hidden',
+        group: r.base.group,
+        featured: nextFeatured,
+        episodes: r.episode ? [r.episode] : [],
+        year: r.base.year,
+        maker: r.base.maker,
+        size: r.base.size,
+        condition: patch.condition ?? r.condition,
+        location: patch.location ?? r.location,
+        admin_memo: patch.memo ?? r.memo,
+      },
+    }).catch(() => {})
+  }
 
   const handleStatusChange = async (r: (typeof rows)[number], nextStatus: SaleStatus) => {
     if (!r.sheetItem) return
@@ -179,6 +234,7 @@ export default function PpiraShopPage() {
       featured: r.featured,
       episode: r.episode,
     }
+    syncDedicatedRow(r, { status: nextStatus, qty: nextQty })
     await saveCells(r.sheetItem, {
       QTY: nextQty,
       Shop게시: nextVisible ? 'Y' : 'N',
@@ -197,6 +253,7 @@ export default function PpiraShopPage() {
       featured: r.featured,
       episode: r.episode,
     }
+    syncDedicatedRow(r, { status: nextStatus, qty: safeQty })
     await saveCells(r.sheetItem, {
       QTY: safeQty,
       Shop게시: nextStatus !== 'hidden' ? 'Y' : 'N',
@@ -214,6 +271,7 @@ export default function PpiraShopPage() {
       featured: nextFeatured,
       episode: r.episode,
     }
+    syncDedicatedRow(r, { featured: nextFeatured })
     await saveCells(r.sheetItem, {
       'MEMO-4': packMemo4(r.sheetItem.cells['MEMO-4'], nextMeta),
     })
@@ -228,6 +286,16 @@ export default function PpiraShopPage() {
     const prev = (r.sheetItem.cells[colName] ?? '').trim()
     const next = value.trim()
     if (prev === next) return
+    if (colName === '판매가 (US$)') {
+      const n = Number(next.replace(/[^0-9.-]/g, ''))
+      syncDedicatedRow(r, { priceUsd: next && !Number.isNaN(n) ? n : null })
+    } else if (colName === 'Condition') {
+      syncDedicatedRow(r, { condition: next })
+    } else if (colName === 'Location') {
+      syncDedicatedRow(r, { location: next })
+    } else if (colName === 'MEMO-1') {
+      syncDedicatedRow(r, { memo: next })
+    }
     await saveCells(r.sheetItem, { [colName]: next })
   }
 
@@ -614,10 +682,10 @@ export default function PpiraShopPage() {
                       <td className="small">{inq.memo || '—'}</td>
                       <td>
                         <select
-                          value={inq.status || '신규접수'}
+                          value={inq.status === '신규접수' ? '접수' : inq.status || '접수'}
                           onChange={(e) => void handleInquiryStatus(inq, e.target.value)}
                         >
-                          <option value="신규접수">신규접수</option>
+                          <option value="접수">접수 (신규)</option>
                           <option value="연락완료">연락완료</option>
                           <option value="거래완료">거래완료 (재고차감)</option>
                           <option value="취소">취소</option>
