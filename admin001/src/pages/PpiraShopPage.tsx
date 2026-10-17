@@ -231,10 +231,22 @@ export default function PpiraShopPage() {
     await saveCells(r.sheetItem, { [colName]: next })
   }
 
-  const handleInquiryStatus = async (inquiryId: string, status: string) => {
+  const handleInquiryStatus = async (inquiry: InquiryRecord, status: string) => {
     try {
-      await call('ppiraUpdateInquiry', { inquiryId, status })
-      setInquiries((prev) => prev.map((it) => (it.inquiryId === inquiryId ? { ...it, status } : it)))
+      await call('ppiraUpdateInquiry', { inquiryId: inquiry.inquiryId, status, deductStock: false })
+      setInquiries((prev) => prev.map((it) => (it.inquiryId === inquiry.inquiryId ? { ...it, status } : it)))
+      if (status === '거래완료' && inquiry.status !== '거래완료') {
+        const codes = (inquiry.codes || '')
+          .split(/[,\s]+/)
+          .map((c) => c.trim())
+          .filter(Boolean)
+        for (const code of codes) {
+          const target = rows.find((r) => r.code === code)
+          if (target && target.sheetItem) {
+            await handleQtyChange(target, Math.max(0, target.qty - 1))
+          }
+        }
+      }
     } catch (e) {
       alert(e instanceof Error ? e.message : String(e))
     }
@@ -603,11 +615,11 @@ export default function PpiraShopPage() {
                       <td>
                         <select
                           value={inq.status || '신규접수'}
-                          onChange={(e) => void handleInquiryStatus(inq.inquiryId, e.target.value)}
+                          onChange={(e) => void handleInquiryStatus(inq, e.target.value)}
                         >
                           <option value="신규접수">신규접수</option>
                           <option value="연락완료">연락완료</option>
-                          <option value="거래완료">거래완료</option>
+                          <option value="거래완료">거래완료 (재고차감)</option>
                           <option value="취소">취소</option>
                         </select>
                       </td>

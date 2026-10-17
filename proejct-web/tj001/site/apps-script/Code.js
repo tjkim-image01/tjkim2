@@ -636,7 +636,7 @@ function ppiraSubmitInquiry_(body) {
   return { ok: true, inquiryId: inquiryId, createdAt: now };
 }
 
-/** 어드민에서 구매 문의 상태·비고 수정 */
+/** 어드민에서 구매 문의 상태·비고 수정 ('완료'/'거래완료' 전환 시 품목 재고 자동 차감) */
 function ppiraUpdateInquiry_(body, user) {
   var inquiryId = String(body.inquiryId || '').trim();
   if (!inquiryId) throw new Error('문의번호가 비었습니다');
@@ -646,8 +646,13 @@ function ppiraUpdateInquiry_(body, user) {
   var rowNo = findRow_(sh, h.index['문의번호'] || 0, inquiryId);
   if (!rowNo) throw new Error('해당 문의 내역을 찾지 못했습니다: ' + inquiryId);
   var now = stamp_();
+  var prevStatus = h.index['처리상태'] !== undefined
+    ? cellToString_(sh.getRange(rowNo, h.index['처리상태'] + 1).getValue()).trim()
+    : '';
+  var nextStatus = body.status !== undefined ? String(body.status).trim() : prevStatus;
+
   if (body.status !== undefined && h.index['처리상태'] !== undefined) {
-    sh.getRange(rowNo, h.index['처리상태'] + 1).setValue(String(body.status));
+    sh.getRange(rowNo, h.index['처리상태'] + 1).setValue(nextStatus);
   }
   if (body.adminNote !== undefined && h.index['관리자비고'] !== undefined) {
     sh.getRange(rowNo, h.index['관리자비고'] + 1).setValue(String(body.adminNote));
@@ -655,8 +660,47 @@ function ppiraUpdateInquiry_(body, user) {
   if (h.index['수정일시'] !== undefined) {
     sh.getRange(rowNo, h.index['수정일시'] + 1).setValue(now + ' (' + user.name + ')');
   }
+
+  // 상태가 처음으로 '완료' 또는 '거래완료'가 되면 문의 품목들의 재고(QTY)를 1씩 자동 차감
+  var deductedCodes = [];
+  var isNowDone = (nextStatus === '완료' || nextStatus === '거래완료');
+  var wasDone = (prevStatus === '완료' || prevStatus === '거래완료');
+  if (isNowDone && !wasDone && body.deductStock !== false && h.index['품목코드'] !== undefined) {
+    var rawCodes = cellToString_(sh.getRange(rowNo, h.index['품목코드'] + 1).getValue());
+    var codeList = rawCodes.split(/[,\s]+/).map(function (s) { return s.trim(); }).filter(Boolean);
+    var printSh = ss.getSheetByName('PRINT');
+    var stockSh = ss.getSheetByName(PPIRA_STOCK_TAB);
+    codeList.forEach(function (code) {
+      if (printSh) {
+        var ph = headerIndex_(printSh);
+        var pRow = findRow_(printSh, ph.index[KEY_HEADER] || 0, code);
+        if (pRow > 0 && ph.index['QTY'] !== undefined) {
+          var curQty = parsePriceNum_(printSh.getRange(pRow, ph.index['QTY'] + 1).getValue());
+          var nextQty = Math.max(0, (curQty !== null ? curQty : 1) - 1);
+          printSh.getRange(pRow, ph.index['QTY'] + 1).setValue(nextQty);
+          if (nextQty <= 0 && ph.index['Shop게시'] !== undefined) {
+            printSh.getRange(pRow, ph.index['Shop게시'] + 1).setValue('');
+          }
+          deductedCodes.push(code);
+        }
+      }
+      if (stockSh && stockSh.getLastRow() >= 2) {
+        var shH = headerIndex_(stockSh);
+        var sRow = findRow_(stockSh, shH.index['Item No.'] || 0, code);
+        if (sRow > 0 && shH.index['수량'] !== undefined) {
+          var curS = parsePriceNum_(stockSh.getRange(sRow, shH.index['수량'] + 1).getValue());
+          var nextS = Math.max(0, (curS !== null ? curS : 1) - 1);
+          stockSh.getRange(sRow, shH.index['수량'] + 1).setValue(nextS);
+          if (nextS <= 0 && shH.index['판매상태'] !== undefined) {
+            stockSh.getRange(sRow, shH.index['판매상태'] + 1).setValue('sold');
+          }
+        }
+      }
+    });
+  }
+
   SpreadsheetApp.flush();
-  return { ok: true, inquiryId: inquiryId, updatedAt: now };
+  return { ok: true, inquiryId: inquiryId, updatedAt: now, deductedCodes: deductedCodes };
 }
 
 // ---- Drive 이미지 ------------------------------------------------------------
