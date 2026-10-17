@@ -1,0 +1,50 @@
+[
+ {
+  "shot": "P5-E1",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "근데 엽서는 진짜 재밌는 게 뒷면이야. 이거, 금강산 장안사 엽서. 뒤집어 봐.",
+  "sub": "진짜 재미는 뒷면 — 뒤집어 봐",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/P5-E1_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 5.05
+ },
+ {
+  "shot": "P5-E1",
+  "who": "하린",
+  "emotion": "높은 톤",
+  "text": "우표 있고, 도장 찍혀 있고, 진짜 누가 보낸 거야?",
+  "sub": "우표 · 소인 · 손글씨, 진짜 보낸 거야?",
+  "actor": "예나",
+  "emotion_applied": "높은 톤",
+  "file": "하린/P5-E1_2.wav",
+  "emotion_typecast": "toneup",
+  "speech": 3.7
+ },
+ {
+  "shot": "P5-E2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "응. 우표 붙이고 경성 소인 찍혀서 영국 영사관으로 실제로 간 엽서야. 누가, 어디서, 누구한테. 백 년 전 보내기 버튼.",
+  "sub": "경성 소인 · 영국 영사관으로 실제 배달 / 100년 전 '보내기' 버튼",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P5-E2_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.9
+ },
+ {
+  "shot": "P5-E2",
+  "who": "하린",
+  "emotion": "기쁨",
+  "text": "백 년 전 디엠이네. 사진 한 장에 한 줄.",
+  "sub": "100년 전 DM이네",
+  "actor": "예나",
+  "emotion_applied": "기쁨",
+  "file": "하린/P5-E2_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 2.65
+ }
+]

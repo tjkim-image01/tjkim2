@@ -1,0 +1,74 @@
+[
+ {
+  "shot": "P0-I1",
+  "who": "하린",
+  "emotion": "높은 톤",
+  "text": "야, 책상 위에 이게 다 엽서야? 몇 장이야 이게?",
+  "sub": "이게 다 엽서야? 몇 장이야?",
+  "actor": "예나",
+  "emotion_applied": "높은 톤",
+  "file": "하린/P0-I1_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 3.8
+ },
+ {
+  "shot": "P0-I1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천 장 넘어. 근데 오늘은 딱 한 장만 보여 줄게. 내가 가진 것 중에 제일 이상한 엽서.",
+  "sub": "1,000장 넘어. 오늘은 딱 한 장 — 제일 이상한 엽서",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I1_2.wav",
+  "emotion_typecast": null,
+  "speech": 5.65
+ },
+ {
+  "shot": "P0-I2",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "어, 이거 임금님 아니야? 한복 입은.",
+  "sub": "이거 임금님 아니야?",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P0-I2_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.35
+ },
+ {
+  "shot": "P0-I2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "대한제국 황제. 천구백 년쯤 거. 근데 뒷면 봐. 포스트 카드, 재팬. 그리고 비매품.",
+  "sub": "대한제국 황제 · 1900년경 / 뒷면: POST CARD, JAPAN · 비매품",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I2_2.wav",
+  "emotion_typecast": null,
+  "speech": 6.3
+ },
+ {
+  "shot": "P0-I3",
+  "who": "하린",
+  "emotion": "높은 톤",
+  "text": "잠깐, 우리 황제 얼굴을 일본에서 엽서로 찍었다고? 그것도 공짜로 뿌렸다고?",
+  "sub": "황제 얼굴을 일본에서 엽서로? 공짜로?",
+  "actor": "예나",
+  "emotion_applied": "높은 톤",
+  "file": "하린/P0-I3_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 5.25
+ },
+ {
+  "shot": "P0-I3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그게 왜 그렇게 됐는지 알려면, 천팔백육십오 년 독일 우체국부터 가야 돼.",
+  "sub": "그 이유는 1865년 독일 우체국에서 시작",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P0-I3_2.wav",
+  "emotion_typecast": null,
+  "speech": 5.15
+ }
+]
