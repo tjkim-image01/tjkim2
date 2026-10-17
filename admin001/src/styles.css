@@ -298,3 +298,126 @@ table.apps th { color: var(--ink-3); font-weight: 500; font-size: 12px; }
   .searchbar .btn-primary { display: none; }
   table.items .col-maker, table.items th:nth-child(6), table.items td:nth-child(6) { display: none; }
 }
+
+/* ---- 삐라상점 전용 관리 (PpiraShopPage) & responsive-table ---- */
+.table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  container-type: inline-size;
+}
+.ppira-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.ppira-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+}
+.ppira-table tbody th[scope="row"] {
+  position: sticky;
+  inset-inline-start: 0;
+  background: var(--bg-raised);
+  z-index: 1;
+  font-weight: 400;
+}
+.ppira-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+.ppira-kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 12px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.ppira-kpi.active {
+  border-color: var(--brass);
+  background: var(--brass-soft);
+}
+.ppira-kpi strong {
+  font-size: 18px;
+  font-family: var(--mono);
+}
+.ppira-status-group {
+  display: inline-flex;
+  gap: 3px;
+  flex-wrap: nowrap;
+}
+.ppira-st-btn {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ppira-st-btn.st-sale.active { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 600; }
+.ppira-st-btn.st-reserved.active { background: var(--warn-soft); border-color: var(--warn); color: var(--warn); font-weight: 600; }
+.ppira-st-btn.st-sold.active { background: var(--err-soft, #fde8e8); border-color: var(--err, #b42318); color: var(--err, #b42318); font-weight: 600; }
+.ppira-st-btn.st-hidden.active { background: var(--ink); border-color: var(--ink); color: var(--bg); font-weight: 600; }
+.ppira-qty-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.ppira-qty-input {
+  width: 52px;
+  text-align: center;
+  padding: 4px;
+}
+.ppira-inline-input {
+  width: 84px;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+.ppira-memo-input {
+  width: 140px;
+}
+.ppira-inline-select {
+  padding: 4px 6px;
+  font-size: 12px;
+}
+.ppira-star {
+  border: 0;
+  background: transparent;
+  color: var(--line-strong);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 2px;
+}
+.ppira-star.on {
+  color: var(--brass);
+}
+.row-muted {
+  opacity: 0.55;
+}
+@container (width < 600px) {
+  .ppira-table, .ppira-table thead, .ppira-table tbody, .ppira-table tr, .ppira-table th, .ppira-table td {
+    display: block;
+  }
+  .ppira-table thead {
+    display: none;
+  }
+  .ppira-table tr {
+    margin-block-end: 1rem;
+    border: 1px solid var(--line);
+  }
+  .ppira-table tbody th[scope="row"] {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+    background: var(--bg-sunken);
+  }
+}

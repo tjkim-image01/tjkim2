@@ -13,6 +13,7 @@ const PATHS: Record<string, string> = {
   external: 'M14 4h6v6h-2V7.4l-7.3 7.3-1.4-1.4L16.6 6H14V4zM5 6h6v2H7v9h9v-4h2v6H5V6z',
   filter: 'M3 5h18v2l-7 7v6l-4-2v-4L3 7z',
   close: 'M18.3 5.7 12 12l6.3 6.3-1.4 1.4L12 13.4l-6.3 6.3-1.4-1.4L10.6 12 4.3 5.7l1.4-1.4L12 10.6l6.3-6.3z',
+  shop: 'M4 4h16l2 5v2h-1v9h-6v-6H9v6H3v-9H2V9l2-5zm1 7v7h2v-6h10v6h2v-7H5zm.3-5-1.2 3h15.8l-1.2-3H5.3z',
 }
 
 export function Icon({ name, size = 18 }: { name: keyof typeof PATHS | string; size?: number }) {

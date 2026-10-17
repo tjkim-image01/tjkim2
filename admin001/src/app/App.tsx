@@ -8,6 +8,7 @@ import DetailPage from '../pages/DetailPage'
 import NewPage from '../pages/NewPage'
 import SettingsPage from '../pages/SettingsPage'
 import ImagesPage from '../pages/ImagesPage'
+import PpiraShopPage from '../pages/PpiraShopPage'
 import { Icon } from '../components/Icon'
 
 function TopBar() {
@@ -49,6 +50,7 @@ function TopBar() {
 function Rail() {
   const items = [
     { to: '/', icon: 'search', label: '검색' },
+    { to: '/ppira', icon: 'shop', label: '삐라상점' },
     { to: '/new', icon: 'plus', label: '등록' },
     { to: '/images', icon: 'image', label: '이미지' },
     { to: '/settings', icon: 'settings', label: '설정' },
@@ -97,6 +99,7 @@ export default function App() {
         <main className="content">
           <Routes>
             <Route path="/" element={<ListPage />} />
+            <Route path="/ppira" element={<PpiraShopPage />} />
             <Route path="/item/:code" element={<DetailPage />} />
             <Route path="/new" element={<NewPage />} />
             <Route path="/images" element={<ImagesPage />} />
