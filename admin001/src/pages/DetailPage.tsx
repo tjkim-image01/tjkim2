@@ -9,6 +9,9 @@ import { findDuplicateApplication } from '../data/store'
 import { listFolderImages, type FolderImage } from '../lib/images'
 import { thumbnailUrl } from '../lib/api'
 
+// 원가 열은 시트에 보존하고 상세 화면에서만 숨긴다.
+const HIDDEN_DETAIL_FIELDS = new Set(['한국원가', '현지구입가', '원가분석'])
+
 function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
@@ -71,7 +74,7 @@ export default function DetailPage() {
             <section key={g.title} id={`sec-${g.title}`} className="field-group">
               <h2>{g.title}</h2>
               <dl>
-                {g.fields.map((f) => (
+                {g.fields.filter((f) => !HIDDEN_DETAIL_FIELDS.has(f.key)).map((f) => (
                   <div key={f.key} className={`field-row kind-${f.kind}`}>
                     <dt>{f.key}</dt>
                     <dd>

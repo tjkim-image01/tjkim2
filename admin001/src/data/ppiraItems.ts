@@ -3,6 +3,10 @@ export interface PpiraBaseItem {
   title: string
   episode: string
   era: string
+  group?: string
+  year?: string
+  maker?: string
+  size?: string
   price_usd: number | null
   condition: string
   featured: boolean
