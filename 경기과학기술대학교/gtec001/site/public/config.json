@@ -1,0 +1,4 @@
+{
+  "_설명": "방명록 서버 주소. 구글 앱스 스크립트 웹앱 URL 을 guestbook_url 에 넣으면 모든 방문자의 글이 구글 시트에 모인다(설치법: scripts/guestbook_apps_script.gs 머리말). 비워 두면 각자 기기에만 저장.",
+  "guestbook_url": ""
+}

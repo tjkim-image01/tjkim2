@@ -1,13 +1,13 @@
-# admin001을 GitHub Pages로 배포한다. main에 push하면 빌드 → Pages.
+# admin001(루트)과 gtec001 졸업전시 가상 전시장(/gtec001/)을 한 Pages 사이트로 배포한다. main에 push하면 빌드 → Pages.
 # 비밀값은 없다. Apps Script 웹 앱 주소는 저장소 Variables
 # (Settings → Secrets and variables → Actions → Variables)에 VITE_API_URL 로 두면 빌드에 들어간다.
 # 없으면 앱의 설정 화면에서 입력한다.
-name: Deploy admin001 to GitHub Pages
+name: Deploy admin001 + gtec001 to GitHub Pages
 
 on:
   push:
     branches: [main]
-    paths: ['admin001/**', '.github/workflows/pages.yml']
+    paths: ['admin001/**', '경기과학기술대학교/gtec001/site/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:
@@ -39,6 +39,18 @@ jobs:
           VITE_API_URL: ${{ vars.VITE_API_URL }}
       # 해시 라우터라 404.html 복제가 꼭 필요하진 않지만, 직접 주소 접근 시 index를 돌려준다.
       - run: cp dist/index.html dist/404.html
+      # gtec001 — MOVE : 이소 가상 전시장. base 가 ./ 라 하위 경로 /tjkim2/gtec001/ 에서 그대로 동작한다.
+      - name: Build gtec001 gallery
+        working-directory: 경기과학기술대학교/gtec001/site
+        run: |
+          npm ci
+          npm run build
+          cp dist/index.html dist/404.html
+      - name: Merge into one Pages artifact
+        working-directory: .
+        run: |
+          mkdir -p admin001/dist/gtec001
+          cp -r 경기과학기술대학교/gtec001/site/dist/. admin001/dist/gtec001/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: admin001/dist
