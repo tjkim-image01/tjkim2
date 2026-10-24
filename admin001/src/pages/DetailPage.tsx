@@ -6,7 +6,7 @@ import EditableField from '../components/EditableField'
 import { Icon } from '../components/Icon'
 import { FIELD_GROUPS, TYPE_LABEL } from '../data/fields'
 import { findDuplicateApplication } from '../data/store'
-import { listFolderImages, type FolderImage } from '../lib/images'
+import { driveId, itemImages, imagesInLinkedFolder, listFolderImages, type FolderImage } from '../lib/images'
 import { thumbnailUrl } from '../lib/api'
 
 // 원가 열은 시트에 보존하고 상세 화면에서만 숨긴다.
@@ -58,7 +58,7 @@ export default function DetailPage() {
 
       <div className="detail-body">
         <aside className="detail-media">
-          <MediaPanel folderId={item.cells['이미지폴더']} primaryId={item.cells['대표이미지']} onSetPrimary={(id) => saveCells(item, { 대표이미지: id })} />
+          <MediaPanel code={item.code} folderId={driveId(item.cells['이미지폴더'])} primaryId={driveId(item.cells['대표이미지'])} onSetPrimary={(id) => saveCells(item, { 대표이미지: id })} />
         </aside>
 
         <div className="detail-fields">
@@ -125,22 +125,24 @@ export default function DetailPage() {
   )
 }
 
-function MediaPanel({ folderId, primaryId, onSetPrimary }: { folderId: string; primaryId: string; onSetPrimary: (id: string) => Promise<void> }) {
-  const [images, setImages] = useState<FolderImage[]>([])
+function MediaPanel({ code, folderId, primaryId, onSetPrimary }: { code: string; folderId: string; primaryId: string; onSetPrimary: (id: string) => Promise<void> }) {
+  const { imageIndex, imageLoading, imageError } = useApp()
+  const indexed = useMemo(() => itemImages(imageIndex, code), [imageIndex, code])
+  const [linked, setLinked] = useState<{ folderId: string; code: string; images: FolderImage[] } | null>(null)
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
   const [message, setMessage] = useState('')
+  const sharedFolder = useMemo(() => Object.values(imageIndex?.byFolderKey ?? {}).flat().some((folder) =>
+    folder.folderId === folderId && /^(?:AB|AM|AO|AP)(?:\d{4}|\d{2}[-_].*)$/i.test(folder.folderName),
+  ), [imageIndex, folderId])
 
   useEffect(() => {
     let alive = true
-    if (!folderId) {
-      setImages([])
-      return
-    }
+    if (!folderId) return
     setStatus('loading')
     listFolderImages(folderId)
       .then((list) => {
         if (!alive) return
-        setImages(list)
+        setLinked({ folderId, code, images: imagesInLinkedFolder(list, code, sharedFolder) })
         setStatus('idle')
       })
       .catch((e) => {
@@ -151,7 +153,10 @@ function MediaPanel({ folderId, primaryId, onSetPrimary }: { folderId: string; p
     return () => {
       alive = false
     }
-  }, [folderId])
+  }, [folderId, code, sharedFolder])
+
+  const images = linked?.folderId === folderId && linked.code === code ? linked.images : indexed
+  const folders = useMemo(() => [...new Map(indexed.map((image) => [image.folderId, image.folderName])).entries()], [indexed])
 
   const ordered = useMemo(() => {
     if (!primaryId) return images
@@ -183,14 +188,21 @@ function MediaPanel({ folderId, primaryId, onSetPrimary }: { folderId: string; p
           </figcaption>
         </figure>
       ))}
-      {!folderId && !primaryId && (
+      {!images.length && !folderId && !primaryId && !imageLoading && (
         <div className="media-empty">
           <Icon name="image" size={28} />
-          <p className="muted small">연결된 이미지 폴더가 없습니다. <Link to="/images">이미지</Link> 화면에서 재색인하면 코드가 같은 폴더를 자동으로 찾습니다.</p>
+          <p className="muted small">제품번호와 일치하는 사진을 찾지 못했습니다. <Link to="/images">이미지</Link> 화면에서 재색인할 수 있습니다.</p>
         </div>
       )}
-      {status === 'loading' && <p className="muted small">Drive 폴더를 읽는 중…</p>}
-      {status === 'error' && <p className="error small">{message}</p>}
+      {imageLoading && !images.length && <p className="muted small">이미지 목록을 읽는 중…</p>}
+      {imageError && !imageIndex && <p className="error small">{imageError}</p>}
+      {folderId && status === 'loading' && <p className="muted small">Drive 폴더를 읽는 중…</p>}
+      {folderId && status === 'error' && <p className="error small">{message}</p>}
+      {!folderId && folders.map(([id, name]) => (
+        <a key={id} className="muted small" href={`https://drive.google.com/drive/folders/${id}`} target="_blank" rel="noreferrer">
+          {name || 'Drive 폴더'} 열기 <Icon name="external" size={14} />
+        </a>
+      ))}
       {folderId && (
         <a className="muted small" href={`https://drive.google.com/drive/folders/${folderId}`} target="_blank" rel="noreferrer">
           Drive 폴더 열기 <Icon name="external" size={14} />

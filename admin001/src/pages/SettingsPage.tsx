@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { useApp } from '../app/AppContext'
 import { Icon } from '../components/Icon'
 import { changePassword, health } from '../lib/api'
+import { IMAGE_ARCHIVE_ID } from '../lib/images'
 
 export default function SettingsPage() {
-  const { config, setConfig, dataset, reload, loading, user } = useApp()
+  const { config, setConfig, dataset, reload, loading, user, imageIndex } = useApp()
   const [apiUrl, setApiUrl] = useState(config.apiUrl)
   const [saved, setSaved] = useState(false)
   const [check, setCheck] = useState<'idle' | 'checking' | 'ok' | 'fail'>('idle')
@@ -69,6 +70,8 @@ export default function SettingsPage() {
             <div><dt>카테고리</dt><dd className="mono">{dataset.categories.length}개</dd></div>
             <div><dt>시대</dt><dd className="mono">{dataset.eras.length}개</dd></div>
             <div><dt>이미지 루트</dt><dd className="mono">{dataset.imageRoots.length}개 폴더</dd></div>
+            <div><dt>이미지 보관함</dt><dd><a href={`https://drive.google.com/drive/folders/${IMAGE_ARCHIVE_ID}`} target="_blank" rel="noreferrer">Old Images26-1016 <Icon name="external" size={14} /></a></dd></div>
+            {imageIndex && <div><dt>찾은 사진</dt><dd className="mono">{imageIndex.fileCount.toLocaleString()}장 · 제품번호로 자동 연결</dd></div>}
             <div><dt>시트 수정 시각</dt><dd className="mono">{dataset.modifiedTime ? new Date(dataset.modifiedTime).toLocaleString('ko-KR') : '—'}</dd></div>
             <div><dt>마지막 적재</dt><dd className="mono">{new Date(dataset.loadedAt).toLocaleString('ko-KR')}</dd></div>
             <div><dt>로그인</dt><dd>{user?.name ?? '—'}</dd></div>

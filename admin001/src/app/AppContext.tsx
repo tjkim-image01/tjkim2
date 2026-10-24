@@ -18,6 +18,7 @@ import {
 } from '../lib/api'
 import { buildItem, clearCachedDataset, loadDataset, type Dataset, type Item } from '../data/store'
 import { KEY_FIELD, type ItemType } from '../data/fields'
+import { readImageIndex, type ImageIndex } from '../lib/images'
 
 export type SaveState = { status: 'idle' } | { status: 'saving' } | { status: 'saved'; at: number } | { status: 'error'; message: string }
 
@@ -37,6 +38,10 @@ interface AppState {
   /** 새 물건 행 추가 */
   createItem: (tab: ItemType, cells: Record<string, CellValue>) => Promise<Item>
   saveState: Record<string, SaveState> // itemCode → 상태
+  imageIndex: ImageIndex | null
+  imageLoading: boolean
+  imageError: string | null
+  setImageIndex: (index: ImageIndex) => void
 }
 
 const Ctx = createContext<AppState | null>(null)
@@ -55,12 +60,30 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [saveState, setSaveState] = useState<Record<string, SaveState>>({})
+  const [imageIndex, setImageIndex] = useState<ImageIndex | null>(null)
+  const [imageLoading, setImageLoading] = useState(false)
+  const [imageError, setImageError] = useState<string | null>(null)
   const loadingRef = useRef(false)
 
   configureApi(config.apiUrl)
   useEffect(() => {
     configureApi(config.apiUrl)
   }, [config.apiUrl])
+
+  useEffect(() => {
+    if (!user) return
+    let active = true
+    setImageLoading(true)
+    setImageError(null)
+    void readImageIndex().then((index) => {
+      if (active) setImageIndex(index)
+    }).catch((error: unknown) => {
+      if (active) setImageError(error instanceof Error ? error.message : String(error))
+    }).finally(() => {
+      if (active) setImageLoading(false)
+    })
+    return () => { active = false }
+  }, [user, config.apiUrl])
 
   const setConfig = useCallback((c: AppConfig) => {
     writeConfig(c)
@@ -151,8 +174,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   )
 
   const value = useMemo<AppState>(
-    () => ({ config, setConfig, user, signIn, signOut, dataset, loading, progress, error, reload, saveCells, createItem, saveState }),
-    [config, setConfig, user, signIn, signOut, dataset, loading, progress, error, reload, saveCells, createItem, saveState],
+    () => ({ config, setConfig, user, signIn, signOut, dataset, loading, progress, error, reload, saveCells, createItem, saveState,
+      imageIndex, imageLoading, imageError, setImageIndex }),
+    [config, setConfig, user, signIn, signOut, dataset, loading, progress, error, reload, saveCells, createItem, saveState,
+      imageIndex, imageLoading, imageError],
   )
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
