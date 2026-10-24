@@ -6,4 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: process.env.VITE_BASE ?? "./",
   build: { chunkSizeWarningLimit: 1500 },
+  // 배포마다 바뀌는 값. 이름이 같은 이미지(진행자·서명·축전·표지)가 브라우저 캐시에 남지 않도록 ?v= 로 붙인다
+  define: { __BUILD_ID__: JSON.stringify(Date.now().toString(36)) },
 });

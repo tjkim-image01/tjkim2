@@ -4,7 +4,7 @@
 //  - 텍스처는 카메라 가까운 부스만 읽고(30m) 멀어지면 버린다(45m)
 import * as THREE from "three";
 import QRCode from "qrcode";
-import { Artist, artImg, signOf, urlOfArtist, urlOfGuestbook, siteBase, EX, DEPTS, HOSTS, ENTRANCE_BUBBLES } from "../lib/data";
+import { Artist, artImg, signOf, urlOfArtist, urlOfGuestbook, siteBase, v, EX, DEPTS, HOSTS, ENTRANCE_BUBBLES } from "../lib/data";
 import { listEntries, fmtTime } from "../lib/guestbook";
 import { BOOTHS, Booth, BOOTH_D, BOOTH_H, BOOTH_W, ENTRANCE_Z, HALL_HALF, LOBBY_R, WINGS, Wing, WING_START, isWalkable, wingAt, wingLength } from "../lib/layout";
 
@@ -305,7 +305,7 @@ export class World {
       const g = new THREE.Group(); g.position.set(sx * (HALL_HALF - 0.08), 0, z); g.rotation.y = sx * -Math.PI / 2;
       const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 1.9, 10), new THREE.MeshStandardMaterial({ color: 0xC9A96E, metalness: .6, roughness: .35 })); bar.rotation.z = Math.PI / 2; bar.position.set(0, 3.55, 0.05); g.add(bar);
       for (const hx of [-0.8, 0.8]) { const s = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.45, 6), new THREE.MeshBasicMaterial({ color: 0xF6F1E7 })); s.position.set(hx, 3.8, 0.05); g.add(s); }
-      const tex = texLoader.load(`catalog/${tb.img}`, (t) => { t.colorSpace = THREE.SRGBColorSpace; });
+      const tex = texLoader.load(v(`catalog/${tb.img}`), (t) => { t.colorSpace = THREE.SRGBColorSpace; });
       const cloth = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 2.4), new THREE.MeshBasicMaterial({ map: tex })); cloth.position.set(0, 2.3, 0.06); g.add(cloth);
       const tassel = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 0.08), new THREE.MeshBasicMaterial({ color: new THREE.Color(DEPTS[i % 4].color) })); tassel.position.set(0, 1.06, 0.06); g.add(tassel);
       const label = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 0.22), new THREE.MeshBasicMaterial({ map: canvasTex(1024, 132, (ctx) => { ctx.fillStyle = "#F6F1E7"; ctx.fillRect(0, 0, 1024, 132); ctx.fillStyle = "#1B1F3B"; ctx.font = `600 58px ${F_SERIF}`; ctx.textAlign = "center"; ctx.fillText(tb.who, 512, 88); }) })); label.position.set(0, 0.82, 0.06); g.add(label);

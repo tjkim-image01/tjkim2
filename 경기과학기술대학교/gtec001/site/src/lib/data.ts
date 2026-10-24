@@ -3,6 +3,10 @@ import artistsJson from "../data/artists.json";
 import exhibitionJson from "../data/exhibition.json";
 import hostsJson from "../data/hosts.json";
 
+// 배포마다 바뀌는 버전 문자열. 같은 이름으로 교체되는 그림(진행자·서명·축전·표지)에 ?v= 로 붙여 옛 캐시가 보이지 않게 한다
+export const BUILD_ID: string = typeof __BUILD_ID__ !== "undefined" ? __BUILD_ID__ : "dev";
+export const v = (p: string) => `${p}${p.includes("?") ? "&" : "?"}v=${BUILD_ID}`;
+
 export type Img = { file: string; thumb: string; tex: string; w: number; h: number; strip?: boolean; src?: string };
 export type Palette = { base: string; accent: string; dark: string; wall: string; floor: string; mood: "dark" | "light" };
 export type Artist = {
@@ -15,11 +19,11 @@ export type Dept = { code: DeptCode; ko: string; en: string; color: string };
 export type Exhibition = typeof exhibitionJson;
 
 export const ARTISTS = artistsJson as unknown as Artist[];
-export const EX = exhibitionJson as Exhibition;
+export const EX = { ...exhibitionJson, cover: v(exhibitionJson.cover), logo: v(exhibitionJson.logo) } as Exhibition;
 export const DEPTS = EX.depts as Dept[];
 // 개회식 진행: 학과장 + 사회자. 사진은 public/hosts/*.png 교체, 대사는 src/data/hosts.json
 export type Host = { id: "dean" | "mc"; name: string; role: string; img: string; color: string };
-export const HOSTS = hostsJson.hosts as Host[];
+export const HOSTS = (hostsJson.hosts as Host[]).map((h) => ({ ...h, img: v(h.img) }));
 export const hostOf = (id: string) => HOSTS.find((h) => h.id === id)!;
 export const CEREMONY: { who: "dean" | "mc"; text: string }[] = hostsJson.ceremony.map((l) => ({
   who: l.who as "dean" | "mc",
@@ -30,11 +34,11 @@ export const deptOf = (code: string) => DEPTS.find((d) => d.code === code)!;
 export const artistById = (id?: string) => ARTISTS.find((a) => a.id === id);
 export const byDept = (code: DeptCode) => ARTISTS.filter((a) => a.dept === code);
 
-// 자산 경로 (vite base 가 ./ 이므로 상대 경로)
+// 자산 경로 (vite base 가 ./ 이므로 상대 경로). v(): 배포 때마다 바뀌는 버전을 붙여 같은 이름으로 교체된 그림이 옛 캐시로 보이지 않게 한다
 export const asset = (p: string) => p.replace(/^\//, "");
 export const artImg = (a: Artist, file: string) => `artists/${a.id}/${file}`;
 export const avatarOf = (a: Artist) => a.avatar ? artImg(a, a.avatar) : a.main ? artImg(a, a.main.thumb) : "";
-export const signOf = (a: Artist) => a.sign ? `sign/${a.sign}` : "";
+export const signOf = (a: Artist) => a.sign ? v(`sign/${a.sign}`) : "";
 
 // SNS 문자열 → 링크 목록. 예 "X : handle / Instagram : handle", "네이버블로그 : https://..."
 export function snsLinks(s: string): { label: string; href: string; handle: string }[] {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ARTISTS, EX } from "../lib/data";
+import { ARTISTS, EX, v } from "../lib/data";
 
 export default function AboutPage() {
   const [zoom, setZoom] = useState<string | null>(null);
@@ -35,7 +35,7 @@ export default function AboutPage() {
           <h2 className="h2">축전</h2>
           <p className="lead">교수님·선후배가 도록에 보낸 축전 그림입니다. 누르면 크게 봅니다.</p>
           <div className="tributes">
-            {EX.tributes.map((t) => <figure key={t.page} onClick={() => setZoom(`catalog/${t.img}`)}><img src={`catalog/${t.img}`} alt={t.who} loading="lazy" /><figcaption>{t.who}</figcaption></figure>)}
+            {EX.tributes.map((t) => <figure key={t.page} onClick={() => setZoom(v(`catalog/${t.img}`))}><img src={v(`catalog/${t.img}`)} alt={t.who} loading="lazy" /><figcaption>{t.who}</figcaption></figure>)}
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             {EX.committee.map((m) => <div className="box" key={m.name}><b>{m.name}<small>{m.role}</small></b><p>{m.text}</p></div>)}
           </div>
           <h3 className="h3">졸업생 서명 모음</h3>
-          <figure style={{ margin: 0, maxWidth: 520 }} className="tributes"><img src={`catalog/${EX.signatures_page}`} alt="졸업생 서명 모음" onClick={() => setZoom(`catalog/${EX.signatures_page}`)} style={{ cursor: "zoom-in", background: "#fff", padding: 8, border: "1px solid var(--hair)" }} /></figure>
+          <figure style={{ margin: 0, maxWidth: 520 }} className="tributes"><img src={v(`catalog/${EX.signatures_page}`)} alt="졸업생 서명 모음" onClick={() => setZoom(v(`catalog/${EX.signatures_page}`))} style={{ cursor: "zoom-in", background: "#fff", padding: 8, border: "1px solid var(--hair)" }} /></figure>
           <p className="small" style={{ marginTop: 24 }}>{EX.colophon.replace(/^\d+\s*/, "")}</p>
           <div className="row"><Link to="/gallery" className="btn primary">3D 전시장 입장 →</Link><Link to="/artists" className="btn">작가 {ARTISTS.length}명</Link></div>
         </div>
