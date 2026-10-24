@@ -145,6 +145,7 @@ def palette(im):
                 wall=hexs(mix(base, (250, 247, 240), 0.72)), floor=hexs(mix(accent, (40, 36, 34), 0.55)),
                 mood="dark" if hsv(base)[2] < 0.45 else "light")
 
+SIGN_ROTATE = {"안소희": 90}  # 2026-10-24 사용자 요청: 안소희 서명 시계 반대 방향 90°
 sign_dir = next(RAW.glob("졸업자 싸인*")) / "졸업자 싸인"
 sign_files = {p.name: p for p in sign_dir.glob("*.png")}
 
@@ -202,6 +203,7 @@ for code, ko, en, color in DEPTS:
                 s.putdata([(r, g, b, 0) if min(r, g, b) > 225 else (r, g, b, a) for r, g, b, a in s.getdata()])
             bbox = s.getbbox()
             if bbox: s = s.crop(bbox)
+            if name in SIGN_ROTATE: s = s.rotate(SIGN_ROTATE[name], expand=True)  # 세로로 제출된 서명 바로 세우기(반시계 방향 각도)
             s.thumbnail((700, 700)); s.save(PUB / "sign" / f"{aid}.png"); rec["sign"] = f"{aid}.png"
         artists.append(rec)
         print(f"{aid} {ko:5s} {name:4s} {rec['title'][:18]:20s} imgs={len(files)} sign={'O' if rec['sign'] else '-'} pdf={'O' if info else '-'}")

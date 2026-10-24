@@ -25,7 +25,6 @@ gtec001/
     public/catalog/         인사말·축전·졸준위·서명 페이지(도록) — 입구 플래카드에도 씀
     public/hosts/           학과장·사회자 초상(자리표시 → 교체)  · src/data/hosts.json 대사
     public/interviews/      작가 인터뷰 mp4·txt 자리(생기면 자동 표시)
-    public/models/          3D 도슨트 조아름 GLB(idle·wave·point, model3d m003 에서 복사)
     scripts/shots.py        Playwright 스크린샷 검수(PC·iPhone)
   video/                    인트로 영상(Remotion) — 아직 미제작, 웹 인트로(코드)로 대체 중
   wiki/                     프롬프트 기록

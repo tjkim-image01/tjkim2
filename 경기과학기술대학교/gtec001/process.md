@@ -17,7 +17,7 @@
 | 포토존 QR | 완료 | 3D 포토존 옆 QR 안내판(`#/photo?open=1`) → 휴대폰에서 포토존이 열리며 첫 화면에 「지금 사진 찍기(카메라)·앨범」 버튼. 사진 선택 후 캔버스로 자동 스크롤 | world.ts · PhotoPage.tsx · v3_photozone_qr.png · v3_photo_m_qr.png |
 | 축전 추가 | 완료 | 황지영 교수님 축전(요청 #9): 이마리 캐릭터(W_charactor_15 v2)를 누끼 처리해 A4 축전 페이지로 합성(`scripts/make_tribute_hwang.py`), 전시 소개 축전 8번째·입구 플래카드 11장째로 등록. v2 세 캐릭터·흘림체, v3 문구 "졸업은 휴재가 아니라 본격 연재의 시작입니다. 첫 화를 응원합니다." | public/catalog/tribute_hwang.jpg |
 | 방명록 | 완료(서버 연결 대기) | 요청 #10: 입구 방명록대(펼친 책 = 최근 글 8개 텍스처, 45초 갱신) + QR 판 → `#/guestbook?open=1`. 페이지는 이름·내용(300자) 작성·목록·30초 자동 갱신. 저장소는 `lib/guestbook.ts`: `config.json` 의 `guestbook_url`(구글 앱스 스크립트 웹앱, text/plain POST 로 preflight 회피) → 없으면 localStorage. 앱스 스크립트 원본 `scripts/guestbook_apps_script.gs`, 설치법 README | GuestbookPage · guestbook.ts · world.ts |
-| 3D 도슨트 | 완료 | model3d m003 조아름(TRELLIS 메시 29,798삼각형, Mixamo 33본) GLB 를 로비에 세움: 카메라 45m 안에서 지연 로딩(idle 6.4MB), 누르면 wave/point GLB(각 6.4MB)를 읽어 같은 뼈대에 적용 후 대기로 복귀, 말풍선·발밑 고리·핀스팟, 누를 때마다 안내 대사 4종 토스트. 재질은 조명 무관 MeshBasic(웹툰풍 평면). 모델 원본: `site/public/models/char003_areum_{idle,wave,point}_v001.glb` (model3d/project/m003/조아름/04 에서 복사) | world.ts loadDocent/docentWave · v8_docent_*.png |
+| 3D 도슨트 | 제거 | 14:30 에 model3d 조아름 GLB 를 로비 도슨트로 넣었다가 14:50 사용자 요청("학생들 전시에만 집중")으로 코드·모델 전부 제거. 필요하면 커밋 2681be1 에서 되살릴 수 있음 | — |
 | 인트로 영상 | 대본만 | 웹 v0(코드 7초)로 대체 중. Remotion v1 은 다음 단계 | 01.기획/02_인트로영상_대본.md |
 | 배포 | 진행 | GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://tjkim-image01.github.io/tjkim2/hwangjiyoung/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
 
@@ -29,6 +29,8 @@
 - 00:00 사이트 소스 16파일 작성, tsc 통과. 첫 스크린샷에서 표지가 책등으로 나와 히어로 깨짐 + 3D 시작 시점이 뒤(입구 벽)를 봄 → 수정. 히어로 보조 버튼 글자색 보정.
 - 00:10 재검수 통과. 문서(README·자료정리·기획서·대본·process·wiki) 작성. 00:20 사용자 미리보기 안내.
 - 01:20 휴대폰 미리보기 QR 3장(`qr/`, PC 주소 192.168.42.36:5201) 생성, 입구 QR 첨부해 사용자 메일로 링크 발송. 부하 시험(요청 #7)과 포토존 QR(요청 #8) 반영.
+- 19:45 안소희 서명이 세로로 서 있음(원본이 세로 A4 로 제출) → 시계 반대 방향 90° 회전, build_data.py 에 SIGN_ROTATE 로 고정.
+- 14:50 "조아름 3D 도슨트 설정은 빼 주세요, 학생 전시에만 집중": world.ts loadDocent/docentWave, GalleryPage 대사·토스트, public/models GLB 3개 삭제. 학과장·졸전 준비 위원장 등신대는 유지. model3d 로컬 조아름 자료는 project/m008 로 번호 변경(미푸시).
 - 14:30 요청 "이 모델로 새로 업로드해서 웹에서 보여줘": model3d 의 조아름 3D 캐릭터를 가상 전시장 로비 도슨트로 배치·배포. model3d 저장소의 m003 폴더(468MB, 미추적)는 깃허브에 올리지 않음(요청 시 blend/fbx 제외하고 올릴 수 있음).
 - 14:10 "눈 흰자가 날아갔어·와이셔츠도 흰색으로": 흰 배경 제거가 인물 안쪽 흰색(눈 흰자·셔츠)까지 지운 것이 원인 → 테두리와 이어진 흰 영역만 배경으로 판정(연결 요소)하도록 수정.
 - 14:00 요청 "학과장 등신대를 웹툰 스타일로": 같은 ChatGPT 대화에서 굵은 펜 선·2단계 셀 셰이딩으로 재생성(v2, `_src/dean_prompt2.txt`), v1 은 `_src/dean_webtoon_chatgpt_v1.png`. 입구 방명록대가 학과장 등신대를 가려 왼쪽 벽 쪽(x -3.1, z 로비+10.6)으로 옮기고 등신대 둘은 중앙 쪽으로. model3d 저장소는 git pull 결과 이미 최신(origin/main = c3b0f1d), 로컬 project/m003 은 미추적 작업분.

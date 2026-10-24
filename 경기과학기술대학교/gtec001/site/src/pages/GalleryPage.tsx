@@ -5,13 +5,6 @@ import { BOOTHS, Booth, boothOf, bounds, LOBBY_R, WINGS, Wing, wingLength, HALL_
 import { World, Hit, isMobile } from "../three/world";
 import { Intro } from "../components/Intro";
 
-// 3D 도슨트 조아름이 누를 때마다 하는 말
-const DOCENT_LINES = [
-  "안녕하세요, 도슨트 조아름이에요! 둥지를 떠나는 날, 마흔두 명의 작가가 기다리고 있어요.",
-  "왼쪽은 웹툰관, 앞쪽은 일러스트관, 오른쪽은 출판만화·애니메이션관이에요. 관 입구의 대표작을 누르면 바로 그 부스로 가요.",
-  "부스 앞 안내판의 QR을 찍으면 휴대폰에서도 이어서 볼 수 있어요.",
-  "포토존에서 작가 캐릭터와 사진도 찍어 보세요. 방명록에 한마디 남겨 주시면 작가들에게 전해 드릴게요!",
-];
 
 export default function GalleryPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -37,11 +30,9 @@ export default function GalleryPage() {
     if (h.kind === "photo") { nav("/photo"); return; }
     if (h.kind === "host") { setCeremony(true); return; }
     if (h.kind === "guestbook") { nav("/guestbook"); return; }
-    if (h.kind === "docent") { worldRef.current?.docentWave(Math.random() < 0.5 ? "wave" : "point"); setDocentSay(DOCENT_LINES[Math.floor(Math.random() * DOCENT_LINES.length)]); window.clearTimeout(docentTimer.current); docentTimer.current = window.setTimeout(() => setDocentSay(null), 6000); return; }
     setHit(h);
   }, [go, nav]);
   const [ceremony, setCeremony] = useState(false);
-  const [docentSay, setDocentSay] = useState<string | null>(null); const docentTimer = useRef(0);
   const onNear = useCallback((b: Booth | null) => setNear(b), []);
   const onWing = useCallback((w: Wing | null) => {
     window.clearTimeout(toastTimer.current); setToast(w);
@@ -105,12 +96,7 @@ export default function GalleryPage() {
         </div>
         <div className="pill" style={{ ["--c" as string]: dept?.color || "#F6F1E7" }}><span className="dot" />{near ? `${near.artist.dept_ko} · ${near.artist.name}` : toast ? toast.name : "MOVE : 이소 · 로비"}</div>
       </div>
-      {docentSay && (
-        <div className="wingtoast" style={{ ["--c" as string]: "#C86B5C", top: 64 }}>
-          <i>DOCENT · 조아름</i><b>도슨트 조아름</b><span>{docentSay}</span>
-        </div>
-      )}
-      {toast && !hit && !wingPanel && !docentSay && (
+      {toast && !hit && !wingPanel && (
         <div className="wingtoast" style={{ ["--c" as string]: toast.color }} onClick={() => setWingPanel(toast)}>
           <i>{toast.en}</i><b>{toast.name}에 들어왔습니다</b><span>{toast.desc}</span><em>누르면 이 관의 작가 목록 →</em>
         </div>
