@@ -315,7 +315,7 @@ export class World {
     });
     // 입구 게이트 안쪽: 학과장·사회자 스탠디(세워 둔 등신대) + 말풍선. 누르면 개회식 안내
     HOSTS.forEach((h, i) => {
-      const sx = h.id === "mc" ? 1 : -1; const g = new THREE.Group(); g.position.set(sx * (HALL_HALF - 1.1), 0, LOBBY_R + 3.6); g.rotation.y = sx * -0.25;
+      const sx = h.id === "mc" ? 1 : -1; const g = new THREE.Group(); g.position.set(sx * (HALL_HALF - 1.7), 0, LOBBY_R + 3.6); g.rotation.y = sx * -0.22;
       const tex = texLoader.load(h.img, (t) => { t.colorSpace = THREE.SRGBColorSpace; });
       // 등신대: 높이 2.4m(실제 키보다 조금 크게, 멀리서도 보이도록)
       const fig = new THREE.Mesh(new THREE.PlaneGeometry(1.72, 2.4), new THREE.MeshBasicMaterial({ map: tex, transparent: true, alphaTest: 0.1, side: THREE.DoubleSide })); fig.position.set(0, 1.22, 0); fig.userData = { kind: "host", index: i }; g.add(fig); this.clickables.push(fig);
@@ -332,7 +332,7 @@ export class World {
     });
     // 입구 방명록대: 게이트 안쪽 가운데 왼편. 펼친 책(최근 글이 보임) + QR 판. 누르면 방명록 페이지
     {
-      const g = new THREE.Group(); g.position.set(-1.9, 0, LOBBY_R + 7.2); g.rotation.y = 0.35;
+      const g = new THREE.Group(); g.position.set(-3.1, 0, LOBBY_R + 10.6); g.rotation.y = 0.5;  // 입구 왼쪽 벽 쪽(학과장 등신대를 가리지 않게)
       const woodMat = new THREE.MeshStandardMaterial({ color: 0x6B4A33, roughness: .7 });
       const stand = new THREE.Mesh(new THREE.BoxGeometry(0.5, 1.0, 0.5), woodMat); stand.position.y = 0.5; g.add(stand);
       const base = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.5, 0.06, 20), woodMat); base.position.y = 0.03; g.add(base);
