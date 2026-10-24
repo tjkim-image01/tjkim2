@@ -2,7 +2,7 @@
 # 비밀값은 없다. Apps Script 웹 앱 주소는 저장소 Variables
 # (Settings → Secrets and variables → Actions → Variables)에 VITE_API_URL 로 두면 빌드에 들어간다.
 # 없으면 앱의 설정 화면에서 입력한다.
-name: Deploy admin001 + gtec001 to GitHub Pages
+name: Deploy admin001 to GitHub Pages (+ gallery redirects)
 
 on:
   push:
@@ -40,20 +40,16 @@ jobs:
       # 해시 라우터라 404.html 복제가 꼭 필요하진 않지만, 직접 주소 접근 시 index를 돌려준다.
       - run: cp dist/index.html dist/404.html
       # gtec001 — MOVE : 이소 가상 전시장. base 가 ./ 라 하위 경로 /tjkim2/gtec001/ 에서 그대로 동작한다.
-      - name: Build gtec001 gallery
-        working-directory: 경기과학기술대학교/gtec001/site
-        run: |
-          npm ci
-          npm run build
-          cp dist/index.html dist/404.html
       - name: Merge into one Pages artifact
         working-directory: .
         run: |
+          # 전시장 본 주소는 교수님 계정 https://hwangjiyoung1977-ops.github.io/2026gtec/ (scripts/deploy_2026gtec.sh 로 올림).
+          # 예전 주소(/tjkim2/hwangjiyoung/, /tjkim2/gtec001/)로 들어오면 새 주소로 넘긴다(해시 경로 유지)
           mkdir -p admin001/dist/hwangjiyoung admin001/dist/gtec001
-          cp -r 경기과학기술대학교/gtec001/site/dist/. admin001/dist/hwangjiyoung/
-          # 예전 주소(/gtec001/)로 들어오면 새 주소로 넘긴다(해시 경로 유지)
-          printf '%s' '<!doctype html><meta charset="utf-8"><script>location.replace("/tjkim2/hwangjiyoung/"+location.search+location.hash)</script>' > admin001/dist/gtec001/index.html
-          cp admin001/dist/gtec001/index.html admin001/dist/gtec001/404.html
+          printf '%s' '<!doctype html><meta charset="utf-8"><title>MOVE : 이소</title><script>location.replace("https://hwangjiyoung1977-ops.github.io/2026gtec/"+location.search+location.hash)</script><p>전시장이 <a href="https://hwangjiyoung1977-ops.github.io/2026gtec/">새 주소</a>로 옮겨졌습니다.</p>' > admin001/dist/hwangjiyoung/index.html
+          cp admin001/dist/hwangjiyoung/index.html admin001/dist/hwangjiyoung/404.html
+          cp admin001/dist/hwangjiyoung/index.html admin001/dist/gtec001/index.html
+          cp admin001/dist/hwangjiyoung/index.html admin001/dist/gtec001/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: admin001/dist

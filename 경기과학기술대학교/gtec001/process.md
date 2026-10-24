@@ -19,7 +19,7 @@
 | 방명록 | 완료(서버 연결 대기) | 요청 #10: 입구 방명록대(펼친 책 = 최근 글 8개 텍스처, 45초 갱신) + QR 판 → `#/guestbook?open=1`. 페이지는 이름·내용(300자) 작성·목록·30초 자동 갱신. 저장소는 `lib/guestbook.ts`: `config.json` 의 `guestbook_url`(구글 앱스 스크립트 웹앱, text/plain POST 로 preflight 회피) → 없으면 localStorage. 앱스 스크립트 원본 `scripts/guestbook_apps_script.gs`, 설치법 README | GuestbookPage · guestbook.ts · world.ts |
 | 3D 도슨트 | 제거 | 14:30 에 model3d 조아름 GLB 를 로비 도슨트로 넣었다가 14:50 사용자 요청("학생들 전시에만 집중")으로 코드·모델 전부 제거. 필요하면 커밋 2681be1 에서 되살릴 수 있음 | — |
 | 인트로 영상 | 대본만 | 웹 v0(코드 7초)로 대체 중. Remotion v1 은 다음 단계 | 01.기획/02_인트로영상_대본.md |
-| 배포 | 진행 | GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://tjkim-image01.github.io/tjkim2/hwangjiyoung/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
+| 배포 | 완료 | **본 주소 https://hwangjiyoung1977-ops.github.io/2026gtec/** (교수님 계정 저장소, deploy_2026gtec.sh 로 dist 푸시). 이전: GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://hwangjiyoung1977-ops.github.io/2026gtec/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
 
 ## 작업 기록
 
@@ -29,6 +29,7 @@
 - 00:00 사이트 소스 16파일 작성, tsc 통과. 첫 스크린샷에서 표지가 책등으로 나와 히어로 깨짐 + 3D 시작 시점이 뒤(입구 벽)를 봄 → 수정. 히어로 보조 버튼 글자색 보정.
 - 00:10 재검수 통과. 문서(README·자료정리·기획서·대본·process·wiki) 작성. 00:20 사용자 미리보기 안내.
 - 01:20 휴대폰 미리보기 QR 3장(`qr/`, PC 주소 192.168.42.36:5201) 생성, 입구 QR 첨부해 사용자 메일로 링크 발송. 부하 시험(요청 #7)과 포토존 QR(요청 #8) 반영.
+- 20:45 공개 주소를 교수님 계정 **https://hwangjiyoung1977-ops.github.io/2026gtec/** 로 이전(요청 "tjkim2 빼고 짧게"). 저장소 2026gtec 은 교수님이 생성·tjkim-image01 협력자 초대(API 로 수락), 빌드 결과만 `scripts/deploy_2026gtec.sh` 로 main 에 푸시, Pages 는 교수님이 Settings 에서 켬. 옛 주소 둘(/tjkim2/hwangjiyoung/, /tjkim2/gtec001/)은 새 주소로 자동 이동. 앞으로 전시장 수정 = 소스 커밋 + `bash scripts/deploy_2026gtec.sh`.
 - 20:15 홈 문구 "4년의 이야기" → "3년의 이야기"(3년제), 개회식 마지막 대사도 3년으로. 호칭 "졸전 준비 위원장" → 띄어쓰기 없이 "졸전준비위원장"(데이터·화면·이름표 카드 전부). 짧은 주소용 배포 스크립트 `scripts/deploy_hwangjiyoung.sh` 추가(저장소 생성 대기).
 - 19:45 안소희 서명이 세로로 서 있음(원본이 세로 A4 로 제출) → 시계 반대 방향 90° 회전, build_data.py 에 SIGN_ROTATE 로 고정.
 - 14:50 "조아름 3D 도슨트 설정은 빼 주세요, 학생 전시에만 집중": world.ts loadDocent/docentWave, GalleryPage 대사·토스트, public/models GLB 3개 삭제. 학과장·졸전 준비 위원장 등신대는 유지. model3d 로컬 조아름 자료는 project/m008 로 번호 변경(미푸시).
