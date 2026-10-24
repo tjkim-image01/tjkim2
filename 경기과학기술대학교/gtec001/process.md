@@ -29,6 +29,7 @@
 - 00:00 사이트 소스 16파일 작성, tsc 통과. 첫 스크린샷에서 표지가 책등으로 나와 히어로 깨짐 + 3D 시작 시점이 뒤(입구 벽)를 봄 → 수정. 히어로 보조 버튼 글자색 보정.
 - 00:10 재검수 통과. 문서(README·자료정리·기획서·대본·process·wiki) 작성. 00:20 사용자 미리보기 안내.
 - 01:20 휴대폰 미리보기 QR 3장(`qr/`, PC 주소 192.168.42.36:5201) 생성, 입구 QR 첨부해 사용자 메일로 링크 발송. 부하 시험(요청 #7)과 포토존 QR(요청 #8) 반영.
+- 21:30 방명록 구글 시트(요청): 교수님 공유 폴더(drive 1yF0gQdFHmAajxp-xzVdFxXkzc6Y7CngY)에 시트 「MOVE 이소 졸업전시 방명록」(ID 1Se60j89HaCcoKXN-Dp1xFsDY9gcf9kzs5zQWhjSE0-I) 생성, 1행 머리글 작성(Aside google-sheets 스킬, 교수님 계정 u0/u/2). 독립형 앱스 스크립트 프로젝트 「MOVE 이소 방명록 웹앱」(1B3NBtU2…, `scripts/guestbook_apps_script_standalone.gs` 주입·저장·이름 변경)까지 완료. **웹앱 배포의 "액세스 승인"(구글 OAuth 허용)은 계정 소유자가 눌러야 하는 단계라 교수님께 넘김** — 승인 후 웹앱 URL 을 받으면 public/config.json 에 넣고 deploy_2026gtec.sh. u1 브라우저는 CDP 멈춤(인스타그램 탭)으로 u0 프로필의 교수님 계정 세션을 씀.
 - 20:45 공개 주소를 교수님 계정 **https://hwangjiyoung1977-ops.github.io/2026gtec/** 로 이전(요청 "tjkim2 빼고 짧게"). 저장소 2026gtec 은 교수님이 생성·tjkim-image01 협력자 초대(API 로 수락), 빌드 결과만 `scripts/deploy_2026gtec.sh` 로 main 에 푸시, Pages 는 교수님이 Settings 에서 켬. 옛 주소 둘(/tjkim2/hwangjiyoung/, /tjkim2/gtec001/)은 새 주소로 자동 이동. 앞으로 전시장 수정 = 소스 커밋 + `bash scripts/deploy_2026gtec.sh`.
 - 20:15 홈 문구 "4년의 이야기" → "3년의 이야기"(3년제), 개회식 마지막 대사도 3년으로. 호칭 "졸전 준비 위원장" → 띄어쓰기 없이 "졸전준비위원장"(데이터·화면·이름표 카드 전부). 짧은 주소용 배포 스크립트 `scripts/deploy_hwangjiyoung.sh` 추가(저장소 생성 대기).
 - 19:45 안소희 서명이 세로로 서 있음(원본이 세로 A4 로 제출) → 시계 반대 방향 90° 회전, build_data.py 에 SIGN_ROTATE 로 고정.
