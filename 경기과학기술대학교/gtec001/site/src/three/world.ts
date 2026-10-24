@@ -317,16 +317,17 @@ export class World {
     HOSTS.forEach((h, i) => {
       const sx = h.id === "mc" ? 1 : -1; const g = new THREE.Group(); g.position.set(sx * (HALL_HALF - 1.1), 0, LOBBY_R + 3.6); g.rotation.y = sx * -0.25;
       const tex = texLoader.load(h.img, (t) => { t.colorSpace = THREE.SRGBColorSpace; });
-      const fig = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.75), new THREE.MeshBasicMaterial({ map: tex, transparent: true, alphaTest: 0.1, side: THREE.DoubleSide })); fig.position.set(0, 0.9, 0); fig.userData = { kind: "host", index: i }; g.add(fig); this.clickables.push(fig);
-      const foot = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.05, 0.5), new THREE.MeshStandardMaterial({ color: 0x2B2E58 })); foot.position.set(0, 0.025, 0.05); g.add(foot);
+      // 등신대: 높이 2.4m(실제 키보다 조금 크게, 멀리서도 보이도록)
+      const fig = new THREE.Mesh(new THREE.PlaneGeometry(1.72, 2.4), new THREE.MeshBasicMaterial({ map: tex, transparent: true, alphaTest: 0.1, side: THREE.DoubleSide })); fig.position.set(0, 1.22, 0); fig.userData = { kind: "host", index: i }; g.add(fig); this.clickables.push(fig);
+      const foot = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.06, 0.6), new THREE.MeshStandardMaterial({ color: 0x2B2E58 })); foot.position.set(0, 0.03, 0.05); g.add(foot);
       const bub = canvasTex(1024, 300, (ctx) => {
         ctx.fillStyle = "#FCFAF5"; ctx.beginPath(); ctx.roundRect(8, 8, 1008, 230, 40); ctx.fill(); ctx.beginPath(); ctx.moveTo(470, 236); ctx.lineTo(512, 290); ctx.lineTo(554, 236); ctx.fill();
         ctx.fillStyle = h.color; ctx.font = `700 30px ${F_SANS}`; ctx.fillText(`${h.name} · ${h.role}`, 50, 70);
         ctx.fillStyle = "#2B2833"; ctx.font = `500 40px ${F_SANS}`; const words = ENTRANCE_BUBBLES[h.id].split(" "); let line = "", y = 135;
         for (const wd of words) { const t = line ? line + " " + wd : wd; if (ctx.measureText(t).width > 920) { ctx.fillText(line, 50, y); y += 52; line = wd; } else line = t; } if (line) ctx.fillText(line, 50, y);
       });
-      const b = new THREE.Mesh(new THREE.PlaneGeometry(1.9, 0.56), new THREE.MeshBasicMaterial({ map: bub, transparent: true })); b.position.set(0, 2.25, 0.02); b.userData = { kind: "host", index: i }; g.add(b); this.clickables.push(b);
-      g.add(spotFixture(new THREE.Vector3(0, 4.2, 1.6), new THREE.Vector3(0, 1.0, 0), 1.1, "#FFF3DC"));
+      const b = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 0.65), new THREE.MeshBasicMaterial({ map: bub, transparent: true })); b.position.set(0, 2.85, 0.02); b.userData = { kind: "host", index: i }; g.add(b); this.clickables.push(b);
+      g.add(spotFixture(new THREE.Vector3(0, 4.4, 1.8), new THREE.Vector3(0, 1.3, 0), 1.4, "#FFF3DC"));
       S.add(g);
     });
     // 입구 방명록대: 게이트 안쪽 가운데 왼편. 펼친 책(최근 글이 보임) + QR 판. 누르면 방명록 페이지
