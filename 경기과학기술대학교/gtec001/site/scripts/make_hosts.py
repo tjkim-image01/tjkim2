@@ -1,4 +1,4 @@
-"""개회식 진행 캐릭터 초상 — 학과장 고원상(본인 사진 얼굴 + 정장 몸), 졸업전시 위원장 안소희(작가 캐릭터 카드)
+"""개회식 진행 캐릭터 초상 — 학과장 고원상(본인 사진 얼굴 + 정장 몸), 졸전 준비 위원장 안소희(작가 캐릭터 카드)
 → public/hosts/dean.png · public/hosts/mc.png (600×840, 투명 배경)   실행: python -X utf8 scripts/make_hosts.py"""
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageEnhance
 import os, cv2, numpy as np
@@ -49,7 +49,7 @@ im.alpha_composite(face, (fx, fy)); d = ImageDraw.Draw(im)
 plate(d, "고원상", "웹툰일러스트학과 학과장")
 im.save(os.path.join(SITE, "public", "hosts", "dean.png")); print("dean ok, face box", box)
 
-# ---------- 졸업전시 위원장 안소희: 작가 캐릭터 카드 ----------
+# ---------- 졸전 준비 위원장 안소희: 작가 캐릭터 카드 ----------
 av = Image.open(AVATAR).convert("RGB").resize((470, 470), Image.LANCZOS)
 im2 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d2 = ImageDraw.Draw(im2)
 d2.rounded_rectangle((50, 40, 550, 640), radius=40, fill=cream)
@@ -57,5 +57,5 @@ d2.rounded_rectangle((50, 40, 550, 70), radius=14, fill=(233, 138, 168, 255))  #
 card = Image.new("RGBA", av.size, (0, 0, 0, 0)); cm = Image.new("L", av.size, 0); ImageDraw.Draw(cm).rounded_rectangle((0, 0, 469, 469), radius=30, fill=255); card.paste(av, (0, 0)); card.putalpha(cm)
 im2.alpha_composite(card, (65, 95)); d2 = ImageDraw.Draw(im2)
 d2.text((300, 605), "웹툰 「좀순愛」 작가 · 부스 WE18", font=F("malgun.ttf", 22), fill=soft, anchor="mm")
-plate(d2, "안소희", "졸업전시 위원장")
+plate(d2, "안소희", "졸전 준비 위원장")
 im2.save(os.path.join(SITE, "public", "hosts", "mc.png")); print("mc ok")

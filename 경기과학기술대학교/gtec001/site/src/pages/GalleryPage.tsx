@@ -114,7 +114,7 @@ export default function GalleryPage() {
         <div className="drawer-h"><span>부스로 바로 가기</span><button className="panel-x" onClick={() => setDrawer(false)}>✕</button></div>
         <div className="drawer-list">
           <button onClick={() => { worldRef.current?.teleportLobby(); setDrawer(false); }}><b>⌂ 로비 · 입구</b></button>
-          <button onClick={() => { setDrawer(false); setCeremony(true); }}><b>🎤 개회식 안내</b><span>학과장 · 졸업전시 위원장</span></button>
+          <button onClick={() => { setDrawer(false); setCeremony(true); }}><b>🎤 개회식 안내</b><span>학과장 · 졸전 준비 위원장</span></button>
           <button onClick={() => nav("/photo")}><b>📷 포토존</b><span>작가 캐릭터와 사진 찍기</span></button>
           <button onClick={() => nav("/guestbook")}><b>✎ 방명록</b><span>한마디 남기기</span></button>
           {DEPTS.map((d) => (
@@ -134,7 +134,7 @@ export default function GalleryPage() {
   );
 }
 
-// 개회식: 학과장과 졸업전시 위원장이 번갈아 진행. 한 줄씩 넘긴다.
+// 개회식: 학과장과 졸전 준비 위원장이 번갈아 진행. 한 줄씩 넘긴다.
 function CeremonyPanel({ onClose, onEnter }: { onClose: () => void; onEnter: () => void }) {
   const [i, setI] = useState(0);
   const cur = CEREMONY[i]; const h = hostOf(cur.who); const last = i === CEREMONY.length - 1;
@@ -149,7 +149,7 @@ function CeremonyPanel({ onClose, onEnter }: { onClose: () => void; onEnter: () 
           {!last ? <button className="btn primary small" onClick={() => setI(i + 1)}>다음 →</button> : <button className="btn primary small" onClick={onEnter}>전시장 입장 → 로비로</button>}
           <button className="btn small ghost" onClick={onEnter}>건너뛰고 입장</button>
         </div>
-        <p className="small">진행: 학과장 고원상 · 졸업전시 위원장 안소희(웹툰 「좀순愛」 작가)</p>
+        <p className="small">진행: 학과장 고원상 · 졸전 준비 위원장 안소희(웹툰 「좀순愛」 작가)</p>
       </div>
     </div>
   );

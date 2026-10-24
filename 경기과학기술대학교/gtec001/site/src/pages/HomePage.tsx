@@ -76,7 +76,7 @@ export default function HomePage() {
           <div className="hosts">{HOSTS.map((h) => <div key={h.id} className="host on"><img src={h.img} alt={h.name} /><b>{h.name}</b><span>{h.role}</span></div>)}</div>
           <div>
             <div className="eyebrow">Ceremony</div>
-            <h2 className="h2">학과장과 졸업전시 위원장이 개회식을 진행합니다</h2>
+            <h2 className="h2">학과장과 졸전 준비 위원장이 개회식을 진행합니다</h2>
             <p className="lead">전시장 입구에서 두 분이 기다립니다. 눌러서 개회식 안내를 듣고 로비로 들어가세요. 로비 왼쪽 포토존에서는 작가 캐릭터와 사진을 찍을 수 있습니다.</p>
             <div className="row"><Link to="/gallery" className="btn primary">입구에서 개회식 보기 →</Link><Link to="/photo" className="btn">📷 포토존</Link></div>
           </div>
