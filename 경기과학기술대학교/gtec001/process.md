@@ -18,7 +18,7 @@
 | 축전 추가 | 완료 | 황지영 교수님 축전(요청 #9): 이마리 캐릭터(W_charactor_15 v2)를 누끼 처리해 A4 축전 페이지로 합성(`scripts/make_tribute_hwang.py`), 전시 소개 축전 8번째·입구 플래카드 11장째로 등록. v2 세 캐릭터·흘림체, v3 문구 "졸업은 휴재가 아니라 본격 연재의 시작입니다. 첫 화를 응원합니다." | public/catalog/tribute_hwang.jpg |
 | 방명록 | 완료(서버 연결 대기) | 요청 #10: 입구 방명록대(펼친 책 = 최근 글 8개 텍스처, 45초 갱신) + QR 판 → `#/guestbook?open=1`. 페이지는 이름·내용(300자) 작성·목록·30초 자동 갱신. 저장소는 `lib/guestbook.ts`: `config.json` 의 `guestbook_url`(구글 앱스 스크립트 웹앱, text/plain POST 로 preflight 회피) → 없으면 localStorage. 앱스 스크립트 원본 `scripts/guestbook_apps_script.gs`, 설치법 README | GuestbookPage · guestbook.ts · world.ts |
 | 인트로 영상 | 대본만 | 웹 v0(코드 7초)로 대체 중. Remotion v1 은 다음 단계 | 01.기획/02_인트로영상_대본.md |
-| 배포 | 진행 | GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://tjkim-image01.github.io/tjkim2/gtec001/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
+| 배포 | 진행 | GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://tjkim-image01.github.io/tjkim2/hwangjiyoung/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
 
 ## 작업 기록
 
@@ -28,6 +28,7 @@
 - 00:00 사이트 소스 16파일 작성, tsc 통과. 첫 스크린샷에서 표지가 책등으로 나와 히어로 깨짐 + 3D 시작 시점이 뒤(입구 벽)를 봄 → 수정. 히어로 보조 버튼 글자색 보정.
 - 00:10 재검수 통과. 문서(README·자료정리·기획서·대본·process·wiki) 작성. 00:20 사용자 미리보기 안내.
 - 01:20 휴대폰 미리보기 QR 3장(`qr/`, PC 주소 192.168.42.36:5201) 생성, 입구 QR 첨부해 사용자 메일로 링크 발송. 부하 시험(요청 #7)과 포토존 QR(요청 #8) 반영.
+- 13:50 요청 #14~#16: 등신대 2.4m 로 확대, 학과장 얼굴 웹툰풍 — 필터(OpenCV stylization)로는 부족해 jhong003 의 ChatGPT 이미지 연결기(Aside u0, `--ref` 사진 첨부)로 전신 웹툰 캐릭터 생성(`site/scripts/_src/dean_webtoon_chatgpt.png`, 프롬프트 `_src/dean_prompt.txt`, 대화 chong/project/gtec001/session.json). 공개 주소를 **/tjkim2/hwangjiyoung/** 로 변경(황지영 교수님 선물용, 사용자 표기 "hwanfjiyoung" 은 오타로 보고 hwangjiyoung), 옛 /gtec001/ 은 새 주소로 자동 이동.
 - 13:30 진행자 교체(요청 #12·#13): 학과장 고원상 = 본인 증명사진(KakaoTalk_20261024_124652097.jpg, 205×273)에서 얼굴만 타원으로 잘라 정장 몸 위에(`scripts/make_hosts.py`, OpenCV 5 에 CascadeClassifier 가 없어 고정 좌표). 사회자 → **졸업전시 위원장 안소희**(작가 프로필 캐릭터 카드, 부스 WE18). hosts.json 이름·호칭·개회식 첫 대사·입구 말풍선 수정, 화면의 "사회자" 표기 전부 "졸업전시 위원장"으로.
 - 13:10 사용자 "전시장에 안 들어가져" → 공개 주소를 PC·iPhone 에뮬레이션으로 점검: 번들 200, 콘솔 오류 0, 3D 정상. 원인 후보는 배포 직후 옛 index.html 캐시(max-age 600)가 사라진 번들을 가리키는 것 → index.html 에 스크립트 로드 실패 시 1회 주소 바꿔 재요청하는 가드 추가, WebGL 생성 실패 시 안내+2D 링크 표시. 재푸시.
 - 12:45 황지영 교수님 축전 v4(요청 "포스터 v2로 해서 축전 글씨랑"): 바탕을 퓨어데이 가족 영화 포스터 v2(이마리 중심, `Pureday/M_charactor_02/images/2026-10-24/조씨 가족 영화 포스터 v1/jo_family_movie_poster_v2.png`)로 바꾸고 축전 글(Move : 이소 졸업전시를 축하합니다 / 졸업은 휴재가 아니라 본격 연재의 시작입니다 / 첫 화를 응원합니다 / 황지영 드림)을 포스터 아래 제목 여백에 배치(`scripts/make_tribute_hwang_v4.py`, 크림 밴드로 가독성 확보). v3 이미지는 `site/scripts/_prev/tribute_hwang_v3_20261024_1214.jpg` 보존.
