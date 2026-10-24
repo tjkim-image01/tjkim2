@@ -267,7 +267,7 @@ ex = dict(
 )
 # 도록에 없는 추가 축전(황지영 교수님, 2026-10-24 요청) — 이미지는 scripts/make_tribute_hwang.py 가 아니라 public/catalog/tribute_hwang.jpg 로 이미 만들어 둠
 if (PUB / "catalog" / "tribute_hwang.jpg").exists():
-    ex["tributes"].insert(7, dict(page=None, who="황지영 교수님 축전", img="tribute_hwang.jpg", src="이마리 캐릭터(W_charactor_15 v2) + 축전 문안"))
+    ex["tributes"].insert(7, dict(page=None, who="황지영 교수님 축전", img="tribute_hwang.jpg", src="퓨어데이 가족 포스터 v2(이마리·조성민·조하임) + 축전 문안"))
 json.dump(artists, open(DATA / "artists.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 json.dump(ex, open(DATA / "exhibition.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("greeting paras:", len(paras), "| committee:", [(c["role"], c["name"]) for c in committee])

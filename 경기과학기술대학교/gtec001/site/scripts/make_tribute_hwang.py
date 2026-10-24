@@ -1,4 +1,4 @@
-"""황지영 교수님 축전 페이지 합성 v2 — 이마리 + 조성민 박사 + 조하임(아들) 세 캐릭터가 함께, 글씨는 한글 흘림체(나눔 붓/펜 스크립트)
+"""황지영 교수님 축전 페이지 합성 v3 (v2 + 문구 수정 2026-10-24) — 이마리 + 조성민 박사 + 조하임(아들) 세 캐릭터가 함께, 글씨는 한글 흘림체(나눔 붓/펜 스크립트)
 → public/catalog/tribute_hwang.jpg      실행: python -X utf8 scripts/make_tribute_hwang.py
 """
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -48,8 +48,16 @@ ink = (43, 40, 51, 255); soft = (107, 102, 117, 255); accent = (200, 107, 92, 25
 d.text((W // 2, 120), "CONGRATULATIONS · 축전", font=F_K, fill=soft, anchor="mm"); d.rectangle((W // 2 - 60, 146, W // 2 + 60, 151), fill=accent)
 d.text((W // 2, 250), "Move : 이소", font=F_T, fill=ink, anchor="mm")
 d.text((W // 2, 370), "졸업전시를 축하합니다.", font=F_T, fill=ink, anchor="mm")
-d.text((W // 2, 520), "둥지를 떠나는 오늘,", font=F_B, fill=ink, anchor="mm")
-d.text((W // 2, 605), "더 높이 날아오를 내일을 응원합니다.", font=F_B, fill=ink, anchor="mm")
+# v3 (2026-10-24 문구 수정): "졸업은 휴재가 아니라 본격 연재의 시작입니다. 첫 화를 응원합니다." — 긴 줄은 폭 1060px 안에 들어가게 글자 크기 자동 축소
+def fit(text, size, max_w=1060):
+    while size > 40:
+        f = F(BR, size)
+        if d.textlength(text, font=f) <= max_w: return f
+        size -= 2
+    return F(BR, size)
+L1, L2 = "졸업은 휴재가 아니라 본격 연재의 시작입니다.", "첫 화를 응원합니다."
+d.text((W // 2, 520), L1, font=fit(L1, 70), fill=ink, anchor="mm")
+d.text((W // 2, 605), L2, font=F_B, fill=ink, anchor="mm")
 # 서명: 오른쪽 아래(캐릭터 옆)
 d.text((W - 120, 705), "황지영 드림", font=F_S, fill=ink, anchor="rm")
 d.text((110, H - 100), "경기과학기술대학교 웹툰일러스트학과 제4회 졸업전시회 · 2026. 10. 28 – 11. 02", font=F_K, fill=soft, anchor="lm")
