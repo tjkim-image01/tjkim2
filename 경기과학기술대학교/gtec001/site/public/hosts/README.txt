@@ -1,1 +1,1 @@
-학과장·사회자 초상 자리. dean.png(학과장 고원상), mc.png(사회자)를 같은 이름의 투명 배경 PNG(세로 600×840 권장, 누끼)로 바꾸면 입구 캐릭터·인트로·홈이 자동으로 바뀐다. 대사는 src/data/hosts.json.
+학과장·졸업전시 위원장 초상. scripts/make_hosts.py 가 만든다: dean.png = 고원상 학과장(경기과학기술대학교/KakaoTalk_20261024_124652097.jpg 얼굴 + 정장 몸), mc.png = 안소희 위원장(작가 프로필 캐릭터 카드). 대사는 src/data/hosts.json.
