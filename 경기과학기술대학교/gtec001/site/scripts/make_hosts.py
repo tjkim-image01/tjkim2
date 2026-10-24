@@ -19,8 +19,13 @@ def plate(d, name, role, y=680, color=cream):
     d.text((300, y + 86), role, font=F("malgun.ttf", 22), fill=soft, anchor="mm")
 
 def white_to_alpha(g, hard=238, soft_=222):
-    g = g.convert("RGBA"); a = np.array(g); mn = a[..., :3].min(axis=2).astype(np.int32)
-    alpha = np.where(mn > hard, 0, np.where(mn > soft_, (255 * (hard - mn) / (hard - soft_)).astype(np.int32), 255)).astype(np.uint8)
+    """바깥 흰 배경만 투명으로. 눈 흰자·와이셔츠처럼 인물 안쪽의 흰색은 테두리와 이어지지 않으므로 남긴다."""
+    g = g.convert("RGBA"); a = np.array(g); mn = a[..., :3].min(axis=2)
+    near = (mn > soft_).astype(np.uint8)                       # 흰색에 가까운 픽셀
+    n, lab = cv2.connectedComponents(near, connectivity=4)
+    border = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))); border.discard(0)
+    bg = np.isin(lab, list(border))                              # 테두리와 이어진 흰 영역 = 배경
+    alpha = np.where(bg & (mn > hard), 0, np.where(bg, (255 * (hard - mn.astype(np.int32)) / (hard - soft_)).astype(np.int32), 255)).astype(np.uint8)
     a[..., 3] = np.minimum(a[..., 3], alpha); return Image.fromarray(a, "RGBA")
 
 # ---------- 학과장 ----------
