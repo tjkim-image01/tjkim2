@@ -3,12 +3,13 @@
 //  - 부스: 뒷벽 대표작 + 양 옆벽 작품 + 이름표 + 서명·QR 안내판. 벽·바닥 색은 작가 대표작 팔레트
 //  - 텍스처는 카메라 가까운 부스만 읽고(30m) 멀어지면 버린다(45m)
 import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import QRCode from "qrcode";
 import { Artist, artImg, signOf, urlOfArtist, urlOfGuestbook, siteBase, EX, DEPTS, HOSTS, ENTRANCE_BUBBLES } from "../lib/data";
 import { listEntries, fmtTime } from "../lib/guestbook";
 import { BOOTHS, Booth, BOOTH_D, BOOTH_H, BOOTH_W, ENTRANCE_Z, HALL_HALF, LOBBY_R, WINGS, Wing, WING_START, isWalkable, wingAt, wingLength } from "../lib/layout";
 
-export type Hit = { kind: "main" | "work" | "plate" | "qr" | "thumb" | "wing" | "photo" | "host" | "guestbook"; booth?: Booth; wing?: Wing; index: number };
+export type Hit = { kind: "main" | "work" | "plate" | "qr" | "thumb" | "wing" | "photo" | "host" | "guestbook" | "docent"; booth?: Booth; wing?: Wing; index: number };
 export type WorldOpts = { canvas: HTMLCanvasElement; onHit: (h: Hit) => void; onNear: (b: Booth | null) => void; onWing: (w: Wing | null) => void; onReady: () => void };
 
 const DEPT_COLOR: Record<string, string> = Object.fromEntries(DEPTS.map((d) => [d.code, d.color]));
@@ -222,6 +223,9 @@ export class World {
   lastNear: Booth | null = null; lastWing: Wing | null | undefined = undefined; t0 = performance.now(); disposed = false; opts: WorldOpts; loadTimer = 0;
   spotPool: THREE.SpotLight[] = []; leds!: THREE.InstancedMesh; ledPos: THREE.Vector3[] = []; ledPhase: number[] = []; ledGlow!: THREE.Points; milky: THREE.Points[] = [];
   thumbWalls: ThumbWall[] = []; bookRefresh = 0;
+  // 3D 도슨트 조아름(model3d m003: Mixamo 리깅 33본, 대기·손 흔들기·가리키기)
+  docent: { group: THREE.Group; mixer: THREE.AnimationMixer; idle: THREE.AnimationAction; wave?: THREE.AnimationAction; point?: THREE.AnimationAction; busy: boolean } | null = null;
+  docentLoading = false;
 
   constructor(opts: WorldOpts) {
     this.opts = opts;
@@ -488,6 +492,49 @@ export class World {
     for (const b of BOOTHS) { const o = buildBooth(b, S); this.booths.push(o); this.clickables.push(...o.frames.map((f) => f.mesh), o.plate, o.qr); }
   }
 
+  // 3D 도슨트: 로비에 들어올 때(카메라 거리 40m 안) 한 번만 읽는다
+  async loadDocent() {
+    if (this.docent || this.docentLoading) return; this.docentLoading = true;
+    try {
+      const loader = new GLTFLoader();
+      const gltf = await loader.loadAsync("models/char003_areum_idle_v001.glb");
+      if (this.disposed) return;
+      const g = gltf.scene; const box = new THREE.Box3().setFromObject(g); const h = box.max.y - box.min.y || 1;
+      const s = 1.62 / h; g.scale.setScalar(s); g.position.set(-2.6, -box.min.y * s, LOBBY_R - 6.2); g.rotation.y = 0.35;
+      g.traverse((o) => {
+        const m = o as THREE.Mesh;
+        if (m.isMesh) {
+          const src = m.material as THREE.MeshStandardMaterial;
+          // 웹툰 캐릭터답게 평평하고 밝게(조명 영향 없음)
+          m.material = new THREE.MeshBasicMaterial({ map: src.map ?? null, color: 0xffffff });
+          m.frustumCulled = false; m.userData = { kind: "docent", index: 0 }; this.clickables.push(m);
+        }
+      });
+      const mixer = new THREE.AnimationMixer(g); const idle = mixer.clipAction(gltf.animations[0]); idle.play();
+      // 발밑 빛 고리 + 이름 말풍선
+      const ring = new THREE.Mesh(new THREE.RingGeometry(0.55, 0.7, 40), new THREE.MeshBasicMaterial({ color: 0xFFF4D6, transparent: true, opacity: .6 })); ring.rotation.x = -Math.PI / 2; ring.position.set(g.position.x, 0.02, g.position.z); this.scene.add(ring);
+      const bub = canvasTex(1024, 300, (ctx) => {
+        ctx.fillStyle = "#FCFAF5"; ctx.beginPath(); ctx.roundRect(8, 8, 1008, 230, 40); ctx.fill(); ctx.beginPath(); ctx.moveTo(470, 236); ctx.lineTo(512, 290); ctx.lineTo(554, 236); ctx.fill();
+        ctx.fillStyle = "#C86B5C"; ctx.font = `700 30px ${F_SANS}`; ctx.fillText("도슨트 조아름 · 퓨어데이 아트센터", 50, 70);
+        ctx.fillStyle = "#2B2833"; ctx.font = `500 40px ${F_SANS}`; ctx.fillText("안녕하세요! 저를 누르면 인사할게요.", 50, 135); ctx.fillText("왼쪽 웹툰관부터 천천히 둘러보세요.", 50, 190);
+      });
+      const b = new THREE.Mesh(new THREE.PlaneGeometry(1.9, 0.56), new THREE.MeshBasicMaterial({ map: bub, transparent: true })); b.position.set(g.position.x, 2.25, g.position.z + 0.1); b.rotation.y = g.rotation.y; b.userData = { kind: "docent", index: 1 }; this.scene.add(b); this.clickables.push(b);
+      this.scene.add(spotFixture(new THREE.Vector3(g.position.x, 4.4, g.position.z + 1.8), new THREE.Vector3(g.position.x, 1.0, g.position.z), 1.2, "#FFF3DC"));
+      this.scene.add(g); this.docent = { group: g, mixer, idle, busy: false };
+    } catch (e) { console.warn("도슨트 모델 로딩 실패", e); }
+    finally { this.docentLoading = false; }
+  }
+  // 누르면 손 흔들기(처음엔 wave GLB 를 읽어 같은 뼈대에 적용), 끝나면 대기로
+  async docentWave(kind: "wave" | "point" = "wave") {
+    const d = this.docent; if (!d || d.busy) return; d.busy = true;
+    try {
+      if (!d[kind]) { const g = await new GLTFLoader().loadAsync(`models/char003_areum_${kind}_v001.glb`); if (this.disposed) return; d[kind] = d.mixer.clipAction(g.animations[0]); d[kind]!.setLoop(THREE.LoopOnce, 1); d[kind]!.clampWhenFinished = true; }
+      const a = d[kind]!; a.reset(); a.crossFadeFrom(d.idle, 0.3, false).play();
+      const dur = a.getClip().duration * 1000;
+      window.setTimeout(() => { if (this.disposed) return; d.idle.enabled = true; d.idle.reset(); d.idle.crossFadeFrom(a, 0.3, false).play(); d.busy = false; }, Math.max(800, dur - 300));
+    } catch (e) { console.warn("도슨트 동작 실패", e); d.busy = false; }
+  }
+
   // 텍스처 지연 로딩
   async loadBooth(o: BoothObj) {
     if (o.loaded || o.loading) return; o.loading = true;
@@ -505,6 +552,7 @@ export class World {
     const sorted = this.booths.map((o) => ({ o, d: Math.hypot(o.booth.x - this.pos.x, o.booth.z - this.pos.z) })).sort((a, b) => a.d - b.d);
     let budget = 3;
     for (const { o, d } of sorted) { if (d < near && !o.loaded && !o.loading && budget-- > 0) this.loadBooth(o); else if (d > far && o.loaded) this.unloadBooth(o); }
+    if (!this.docent && Math.hypot(this.pos.x, this.pos.z - (LOBBY_R - 6)) < 45) this.loadDocent();
     // 핀스팟 풀: 가까운 부스부터 실제 조명을 붙인다
     const from = new THREE.Vector3(), to = new THREE.Vector3();
     this.spotPool.forEach((sl, i) => {
@@ -549,6 +597,7 @@ export class World {
   tick = () => {
     if (this.disposed) return;
     const now = performance.now(); const dt = Math.min(0.05, (now - this.t0) / 1000); this.t0 = now;
+    if (this.docent) this.docent.mixer.update(dt);
     // 시점
     this.yaw -= this.look.dx * 0.0032; this.pitch = Math.max(-1.1, Math.min(1.1, this.pitch - this.look.dy * 0.0028)); this.look.dx = 0; this.look.dy = 0;
     // 이동(키보드 + 조이스틱)
