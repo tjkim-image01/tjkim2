@@ -1,7 +1,7 @@
 """개회식 진행 캐릭터 초상 → public/hosts/dean.png · public/hosts/mc.png (600×840, 투명 배경). 실행: python -X utf8 scripts/make_hosts.py
 - 학과장 고원상: scripts/_src/dean_webtoon_chatgpt.png (ChatGPT 가 본인 증명사진을 보고 그린 웹툰풍 전신, 프롬프트 _src/dean_prompt.txt) 가 있으면 그걸 쓰고,
   없으면 증명사진(경기과학기술대학교/KakaoTalk_20261024_124652097.jpg)에서 얼굴만 잘라 웹툰 필터 + 정장 몸으로 만든다.
-- 졸전 준비 위원장 안소희: 작가 프로필 캐릭터(public/artists/we18/avatar.jpg) 카드.
+- 졸전준비위원장 안소희: 작가 프로필 캐릭터(public/artists/we18/avatar.jpg) 카드.
 """
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
 import os, cv2, numpy as np
@@ -53,11 +53,11 @@ else:
     fx, fy = int(300 - face.width / 2), int(395 - face.height); d.ellipse((fx - 8, fy - 8, fx + face.width + 8, fy + face.height + 8), fill=cream); im.alpha_composite(face, (fx, fy)); d = ImageDraw.Draw(im)
     plate(d, "고원상", "웹툰일러스트학과 학과장"); im.save(os.path.join(SITE, "public", "hosts", "dean.png")); print("dean ok (photo filter)")
 
-# ---------- 졸전 준비 위원장 안소희 ----------
+# ---------- 졸전준비위원장 안소희 ----------
 av = Image.open(AVATAR).convert("RGB").resize((470, 470), Image.LANCZOS)
 im2 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d2 = ImageDraw.Draw(im2)
 d2.rounded_rectangle((50, 40, 550, 640), radius=40, fill=cream); d2.rounded_rectangle((50, 40, 550, 70), radius=14, fill=(233, 138, 168, 255))
 card = Image.new("RGBA", av.size, (0, 0, 0, 0)); cm = Image.new("L", av.size, 0); ImageDraw.Draw(cm).rounded_rectangle((0, 0, 469, 469), radius=30, fill=255); card.paste(av, (0, 0)); card.putalpha(cm)
 im2.alpha_composite(card, (65, 95)); d2 = ImageDraw.Draw(im2)
 d2.text((300, 605), "웹툰 「좀순愛」 작가 · 부스 WE18", font=F("malgun.ttf", 22), fill=soft, anchor="mm")
-plate(d2, "안소희", "졸전 준비 위원장"); im2.save(os.path.join(SITE, "public", "hosts", "mc.png")); print("mc ok")
+plate(d2, "안소희", "졸전준비위원장"); im2.save(os.path.join(SITE, "public", "hosts", "mc.png")); print("mc ok")

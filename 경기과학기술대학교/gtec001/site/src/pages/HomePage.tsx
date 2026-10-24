@@ -15,7 +15,7 @@ export default function HomePage() {
           <div>
             <div className="hero-kicker">{EX.school} {EX.dept} · {EX.edition}</div>
             <h1 className="hero-title">{EX.title}<small>{EX.subtitle}</small></h1>
-            <p className="hero-sub">둥지를 떠나는 날. 졸업생 {ARTISTS.length}명이 4년의 이야기를 들고 세상으로 날아갑니다. 가상 전시장의 부스 {ARTISTS.length}개에서 웹툰·일러스트·출판만화·애니메이션을 만나 보세요.</p>
+            <p className="hero-sub">둥지를 떠나는 날. 졸업생 {ARTISTS.length}명이 3년의 이야기를 들고 세상으로 날아갑니다. 가상 전시장의 부스 {ARTISTS.length}개에서 웹툰·일러스트·출판만화·애니메이션을 만나 보세요.</p>
             <div className="hero-dates">{EX.dates}</div>
             <div className="hero-cta">
               <Link to="/gallery" className="btn primary big">3D 전시장 입장 →</Link>
@@ -76,7 +76,7 @@ export default function HomePage() {
           <div className="hosts">{HOSTS.map((h) => <div key={h.id} className="host on"><img src={h.img} alt={h.name} /><b>{h.name}</b><span>{h.role}</span></div>)}</div>
           <div>
             <div className="eyebrow">Ceremony</div>
-            <h2 className="h2">학과장과 졸전 준비 위원장이 개회식을 진행합니다</h2>
+            <h2 className="h2">학과장과 졸전준비위원장이 개회식을 진행합니다</h2>
             <p className="lead">전시장 입구에서 두 분이 기다립니다. 눌러서 개회식 안내를 듣고 로비로 들어가세요. 로비 왼쪽 포토존에서는 작가 캐릭터와 사진을 찍을 수 있습니다.</p>
             <div className="row"><Link to="/gallery" className="btn primary">입구에서 개회식 보기 →</Link><Link to="/photo" className="btn">📷 포토존</Link></div>
           </div>
