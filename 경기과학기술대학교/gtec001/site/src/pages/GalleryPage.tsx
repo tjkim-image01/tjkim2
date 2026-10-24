@@ -77,9 +77,9 @@ export default function GalleryPage() {
           <button className="pill b" onClick={() => nav("/")}>← 홈</button>
           <button className="pill b" onClick={() => setDrawer(true)}>☰ 작가 {ARTISTS.length}명</button>
           <button className="pill b" onClick={() => worldRef.current?.teleportLobby()}>⌂ 로비</button>
-          <button className="pill b" onClick={() => nav("/photo")}>📷 포토존</button>
-          <button className="pill b" onClick={() => setCeremony(true)}>🎤 개회식 안내</button>
-          <button className="pill b" onClick={() => nav("/guestbook")}>✎ 방명록</button>
+          <button className="pill b more" onClick={() => nav("/photo")}>📷 포토존</button>
+          <button className="pill b more" onClick={() => setCeremony(true)}>🎤 개회식 안내</button>
+          <button className="pill b more" onClick={() => nav("/guestbook")}>✎ 방명록</button>
         </div>
         <div className="pill" style={{ ["--c" as string]: dept?.color || "#F6F1E7" }}><span className="dot" />{near ? `${near.artist.dept_ko} · ${near.artist.name}` : toast ? toast.name : "MOVE : 이소 · 로비"}</div>
       </div>
@@ -101,7 +101,10 @@ export default function GalleryPage() {
       <div className={`drawer ${drawer ? "open" : ""}`}>
         <div className="drawer-h"><span>부스로 바로 가기</span><button className="panel-x" onClick={() => setDrawer(false)}>✕</button></div>
         <div className="drawer-list">
-          <button onClick={() => { worldRef.current?.teleportLobby(); setDrawer(false); }}><b>⌂ 로비 · 입구 · 포토존</b></button>
+          <button onClick={() => { worldRef.current?.teleportLobby(); setDrawer(false); }}><b>⌂ 로비 · 입구</b></button>
+          <button onClick={() => { setDrawer(false); setCeremony(true); }}><b>🎤 개회식 안내</b><span>학과장 · 사회자</span></button>
+          <button onClick={() => nav("/photo")}><b>📷 포토존</b><span>작가 캐릭터와 사진 찍기</span></button>
+          <button onClick={() => nav("/guestbook")}><b>✎ 방명록</b><span>한마디 남기기</span></button>
           {DEPTS.map((d) => (
             <div key={d.code}>
               <h4 style={{ color: d.color }}>{d.ko.toUpperCase()} · {d.en.toUpperCase()}</h4>

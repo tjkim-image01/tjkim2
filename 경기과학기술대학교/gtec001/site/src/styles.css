@@ -274,7 +274,7 @@ button { font: inherit; cursor: pointer; }
   .qr-grid { grid-template-columns: 1fr; } .qr-tools input { min-width: 0; width: 100%; } .hero-title { font-size: 46px; } .dept-row { grid-template-columns: 1fr 1fr; }
   .top { flex-wrap: wrap; } .nav { width: 100%; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; } .nav a { white-space: nowrap; }
   .near { bottom: 230px; left: 12px; right: 12px; transform: none; max-width: none; padding: 8px 12px; gap: 10px; } .near b { font-size: 14px; } .near span { font-size: 12px; } .near .btn { padding: 6px 10px; font-size: 12px; }
-  .hud .pill { font-size: 12px; padding: 6px 10px; }
+  .hud .pill { font-size: 12px; padding: 6px 10px; } .hud .pill.more { display: none; } .hud > .pill { max-width: 42vw; overflow: hidden; text-overflow: ellipsis; }
 }
 .hero-in > *, .ahero-in > *, .two > * { min-width: 0; } .hero-sub, .lead, .box p, .near span { overflow-wrap: anywhere; }
 .near > div { flex: 1; min-width: 0; }

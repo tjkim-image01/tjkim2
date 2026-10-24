@@ -18,7 +18,7 @@
 | 축전 추가 | 완료 | 황지영 교수님 축전(요청 #9): 이마리 캐릭터(W_charactor_15 v2)를 누끼 처리해 A4 축전 페이지로 합성(`scripts/make_tribute_hwang.py`), 전시 소개 축전 8번째·입구 플래카드 11장째로 등록 | public/catalog/tribute_hwang.jpg |
 | 방명록 | 완료(서버 연결 대기) | 요청 #10: 입구 방명록대(펼친 책 = 최근 글 8개 텍스처, 45초 갱신) + QR 판 → `#/guestbook?open=1`. 페이지는 이름·내용(300자) 작성·목록·30초 자동 갱신. 저장소는 `lib/guestbook.ts`: `config.json` 의 `guestbook_url`(구글 앱스 스크립트 웹앱, text/plain POST 로 preflight 회피) → 없으면 localStorage. 앱스 스크립트 원본 `scripts/guestbook_apps_script.gs`, 설치법 README | GuestbookPage · guestbook.ts · world.ts |
 | 인트로 영상 | 대본만 | 웹 v0(코드 7초)로 대체 중. Remotion v1 은 다음 단계 | 01.기획/02_인트로영상_대본.md |
-| 배포 | 미정 | Vercel/GitHub Pages. base ./ 이라 하위 경로도 됨. QR 은 배포 주소에서 /qr 열어 인쇄 | — |
+| 배포 | 진행 | GitHub Pages(저장소 tjkim-image01/tjkim2, 기존 admin001 워크플로에 gtec001 빌드를 합쳐 한 사이트로). 주소 **https://tjkim-image01.github.io/tjkim2/gtec001/** (admin001 은 루트 그대로). main 에 push 하면 자동 빌드·배포. 원자료(PDF·학생 폴더)는 .gitignore, 축소 이미지(110MB)만 커밋. 공개 QR 은 이 주소의 #/qr 에서 인쇄 | .github/workflows/pages.yml |
 
 ## 작업 기록
 
@@ -28,6 +28,7 @@
 - 00:00 사이트 소스 16파일 작성, tsc 통과. 첫 스크린샷에서 표지가 책등으로 나와 히어로 깨짐 + 3D 시작 시점이 뒤(입구 벽)를 봄 → 수정. 히어로 보조 버튼 글자색 보정.
 - 00:10 재검수 통과. 문서(README·자료정리·기획서·대본·process·wiki) 작성. 00:20 사용자 미리보기 안내.
 - 01:20 휴대폰 미리보기 QR 3장(`qr/`, PC 주소 192.168.42.36:5201) 생성, 입구 QR 첨부해 사용자 메일로 링크 발송. 부하 시험(요청 #7)과 포토존 QR(요청 #8) 반영.
+- 02:40 사용자: "핸드폰에서 링크했는데 다른 사람이 안 보인대" → 192.168.x 주소는 같은 와이파이에서만 열림. GitHub Pages 배포로 전환: 워크플로 수정, gtec001 커밋 a2b6c76 push(자격증명은 Windows 자격 증명 관리자의 tjkim-image01 항목, 원격 URL 에 사용자명 넣음).
 - 02:10 황지영 교수님 축전 합성(1차는 글이 캐릭터에 가려 재배치), 방명록 전 과정 구현. 방명록 서버는 사용자가 앱스 스크립트를 배포해 URL 을 넣어야 공유 저장이 시작됨.
 - 01:40 메일 QR 깨짐 → JPG 로 다시 첨부 + `site/public/qr/entrance.png` 링크 동봉. 휴대폰 포토존에서 버튼이 안 보임(캔버스가 화면을 다 차지, 오른쪽 열이 넘침) → 캔버스 최대 높이 50vh, 버튼 줄을 화면 아래 고정(sticky), 격자 min-width 0, 캔버스 하단 글자 겹침 정리.
 - 00:30~01:10 요청 #2(푯말·관 설명·썸네일→부스·은하수 LED·핀스팟), #3(포토존·사진 합성), #4(인터뷰 영상 자리), #5(입구 축전 플래카드), #6(학과장+사회자 개회식 캐릭터) 반영. Playwright 검수 스크립트(`scripts/shots.py`, `window.__world` 로 시점 지정)로 입구·게이트·관 입구·부스·포토존·인트로 확인. 푯말 긴 글자 넘침 → fitText 로 축소. 빌드 통과.
