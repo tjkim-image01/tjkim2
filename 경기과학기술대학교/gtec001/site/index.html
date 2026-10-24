@@ -14,6 +14,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- 배포 직후 옛 index.html 이 캐시에 남아 사라진 번들을 가리키면 한 번만 주소를 바꿔 새로 받는다 -->
+    <script>
+      window.addEventListener("error", function (e) {
+        var t = e && e.target; if (!t || (t.tagName !== "SCRIPT" && t.tagName !== "LINK")) return;
+        if (sessionStorage.getItem("gtec_reloaded")) return; sessionStorage.setItem("gtec_reloaded", "1");
+        location.replace(location.pathname + "?r=" + Date.now() + location.hash);
+      }, true);
+      window.addEventListener("load", function () { setTimeout(function () { if (document.getElementById("root").childElementCount) sessionStorage.removeItem("gtec_reloaded"); }, 4000); });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

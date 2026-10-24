@@ -13,6 +13,7 @@ export default function GalleryPage() {
   const boothParam = sp.get("booth");
   const [intro, setIntro] = useState(() => !boothParam && !sp.get("skipintro") && !sessionStorage.getItem("introSeen"));
   const [ready, setReady] = useState(false);
+  const [fail, setFail] = useState<string | null>(null);
   const [near, setNear] = useState<Booth | null>(null);
   const [hit, setHit] = useState<Hit | null>(null);
   const [wingPanel, setWingPanel] = useState<Wing | null>(null);
@@ -40,7 +41,12 @@ export default function GalleryPage() {
   useEffect(() => {
     if (intro) return;
     const canvas = canvasRef.current!;
-    const w = new World({ canvas, onHit, onNear, onWing, onReady: () => setReady(true) });
+    let w: World;
+    try {
+      w = new World({ canvas, onHit, onNear, onWing, onReady: () => setReady(true) });
+    } catch (err) {
+      console.error("3D 전시장을 만들지 못했습니다", err); setFail(String((err as Error)?.message || err)); return;
+    }
     worldRef.current = w;
     const b = boothParam ? boothOf(boothParam) : null;
     if (b) w.teleport(b); else w.setView(0, LOBBY_R + 18, 0);
@@ -71,7 +77,13 @@ export default function GalleryPage() {
   return (
     <div className="gal">
       <canvas ref={canvasRef} onPointerDown={pd} onPointerMove={pm} onPointerUp={pu} onPointerCancel={pu} onContextMenu={(e) => e.preventDefault()} />
-      {!ready && <div className="loading">전시장을 짓는 중<small>MOVE : 이소 · 부스 {BOOTHS.length}개</small></div>}
+      {!ready && !fail && <div className="loading">전시장을 짓는 중<small>MOVE : 이소 · 부스 {BOOTHS.length}개 · 10초 넘게 멈춰 있으면 새로고침해 주세요</small></div>}
+      {fail && (
+        <div className="loading">이 기기에서 3D 전시장을 열지 못했습니다
+          <small>{fail}</small>
+          <small style={{ marginTop: 16 }}><Link to="/artists" className="btn primary small">작가 42명 작품 보기(2D) →</Link> <button className="btn small" style={{ marginLeft: 8 }} onClick={() => location.reload()}>다시 시도</button></small>
+        </div>
+      )}
       <div className="hud">
         <div className="row" style={{ gap: 8 }}>
           <button className="pill b" onClick={() => nav("/")}>← 홈</button>
