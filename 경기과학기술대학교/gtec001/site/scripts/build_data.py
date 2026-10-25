@@ -254,7 +254,6 @@ for c in committee:
     if c["name"] in OVR.get("_committee", {}): c["text"] = OVR["_committee"][c["name"]]
 if "_greeting" in OVR: title_line, paras = OVR["_greeting"]["title"], OVR["_greeting"]["paras"]
 colophon = re.sub(r"\s*\n\s*", " ", page_text(197))
-colophon = colophon.replace("제4회", "제3회").replace("제 4회", "제3회")  # 2026-10-25 사용자 요청: 회차 표기를 제3회로(도록 원문은 제4회)
 ex = dict(
     school="경기과학기술대학교", dept="웹툰일러스트학과", edition="제3회 졸업전시회", title="MOVE : 이소",
     subtitle="여정의 끝, 그리고 또다른 시작", en="webtoon&Illustration", dates="2026. 10. 28 – 11. 02",
