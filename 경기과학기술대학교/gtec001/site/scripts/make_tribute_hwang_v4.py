@@ -45,7 +45,7 @@ d.text((W // 2, 1368), T1 + "   " + T2, font=fit(T1 + "   " + T2, 82), fill=ink,
 d.text((W // 2, 1462), L1, font=fit(L1, 58), fill=ink, anchor="mm")
 d.text((W // 2, 1536), L2, font=fit(L2, 58), fill=ink, anchor="mm")
 d.text((W - 110, 1618), "황지영 드림", font=F(BR, 66), fill=ink, anchor="rm")
-d.text((110, H - 72), "경기과학기술대학교 웹툰일러스트학과 제4회 졸업전시회 · 2026. 10. 28 – 11. 02", font=F_K, fill=soft, anchor="lm")
+d.text((110, H - 72), "경기과학기술대학교 웹툰일러스트학과 제3회 졸업전시회 · 2026. 10. 28 – 11. 02", font=F_K, fill=soft, anchor="lm")
 d.text((110, H - 42), "이마리 · 조성민 · 조하임 — 퓨어데이 캐릭터 (가족 포스터 v2)", font=F_K, fill=(140, 134, 148, 255), anchor="lm")
 # 편지 봉투 장식(하늘 양쪽)
 for (ex, ey, ang, sc) in [(70, 120, -14, 1.0), (120, 250, 16, .7), (1060, 110, 20, 1.05), (1110, 250, -10, .75)]:
