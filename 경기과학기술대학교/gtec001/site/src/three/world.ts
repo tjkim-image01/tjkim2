@@ -178,8 +178,10 @@ function buildBooth(b: Booth, scene: THREE.Scene): BoothObj {
   const frames: Frame[] = [];
   // 대표작: 뒷벽 중앙
   if (a.main) {
-    const maxW = 3.4, maxH = 2.5; const ar = a.main.w / a.main.h; let w = maxW, h = w / ar; if (h > maxH) { h = maxH; w = h * ar; }
-    const f = framed(w, h, frameColor, "main", 0, artImg(a, a.main.tex), b); f.group.position.set(0, 1.0 + h / 2 + 0.25, BOOTH_D / 2 - 0.11); f.group.rotation.y = Math.PI; g.add(f.group); frames.push(f.frame);
+    // 세로 그림은 폭이 좁아 뒤 이름표가 양옆으로 삐져나오므로, 조금 낮게 걸고 이름표 아래(3.0m)까지만 키운다
+    const ar = a.main.w / a.main.h; const tall = ar < 1; const maxW = 3.4, maxH = tall ? 2.2 : 2.5, y0 = tall ? 0.75 : 1.25;
+    let w = maxW, h = w / ar; if (h > maxH) { h = maxH; w = h * ar; }
+    const f = framed(w, h, frameColor, "main", 0, artImg(a, a.main.tex), b); f.group.position.set(0, y0 + h / 2, BOOTH_D / 2 - 0.11); f.group.rotation.y = Math.PI; g.add(f.group); frames.push(f.frame);
   }
   // 이름표: 뒷벽 위
   const plate = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.7), new THREE.MeshBasicMaterial({ map: plateTexture(a) }));

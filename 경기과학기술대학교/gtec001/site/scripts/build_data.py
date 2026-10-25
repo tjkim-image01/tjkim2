@@ -146,6 +146,7 @@ def palette(im):
                 mood="dark" if hsv(base)[2] < 0.45 else "light")
 
 SIGN_ROTATE = {"안소희": 90}  # 2026-10-24 사용자 요청: 안소희 서명 시계 반대 방향 90°
+MAIN_PICK = {"김지완": "2.png"}  # 2026-10-25 사용자 요청: 대표 그림을 1-2 대신 이 파일로(1-2 는 작품 p1 로 감)
 sign_dir = next(RAW.glob("졸업자 싸인*")) / "졸업자 싸인"
 sign_files = {p.name: p for p in sign_dir.glob("*.png")}
 
@@ -176,7 +177,7 @@ for code, ko, en, color in DEPTS:
             k = num_key(f); im = Image.open(src / f)
             if k == (1, 1):
                 save_jpg(im, out / "avatar.jpg", max_side=320); rec["avatar"] = "avatar.jpg"
-            elif k == (1, 2):
+            elif (f == MAIN_PICK[name]) if name in MAIN_PICK else k == (1, 2):
                 w, h = save_jpg(im, out / "main.jpg", max_side=1600)
                 save_jpg(im, out / "main_thumb.jpg", max_side=640, q=80)
                 save_jpg(im, out / "main_tex.jpg", max_side=1024, q=78)
@@ -270,6 +271,11 @@ ex = dict(
 # 도록에 없는 추가 축전(황지영 교수님, 2026-10-24 요청) — 이미지는 scripts/make_tribute_hwang.py 가 아니라 public/catalog/tribute_hwang.jpg 로 이미 만들어 둠
 if (PUB / "catalog" / "tribute_hwang.jpg").exists():
     ex["tributes"].insert(7, dict(page=None, who="황지영 교수님 축전", img="tribute_hwang.jpg", src="퓨어데이 가족 포스터 v2(이마리·조성민·조하임) + 축전 문안"))
+# 도록 뒤에 받은 축전(2026-10-25 요청) — 원본 PNG(경기과학기술대학교/KakaoTalk_20261025_*.png)를 1240×1754 jpg 로 줄여 public/catalog 에 둠. 선배 축전 뒤, 후배 축전 앞
+_late = [dict(page=None, who="박상빈 선배 축전", img="tribute_parksangbin.jpg", src="KakaoTalk_20261025_201148773.png, 1기 졸업생"),
+         dict(page=None, who="이예원 축전 (나서연 지인)", img="tribute_leeyewon.jpg", src="KakaoTalk_20261025_201203067.png")]
+_at = next((i for i, t in enumerate(ex["tributes"]) if "후배" in t["who"]), len(ex["tributes"]))
+ex["tributes"][_at:_at] = [t for t in _late if (PUB / "catalog" / t["img"]).exists()]
 json.dump(artists, open(DATA / "artists.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 json.dump(ex, open(DATA / "exhibition.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("greeting paras:", len(paras), "| committee:", [(c["role"], c["name"]) for c in committee])

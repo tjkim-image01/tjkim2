@@ -2172,18 +2172,18 @@
    "file": "main.jpg",
    "thumb": "main_thumb.jpg",
    "tex": "main_tex.jpg",
-   "w": 1600,
-   "h": 1493
+   "w": 1009,
+   "h": 1600
   },
   "works": [
    {
     "file": "p1.jpg",
     "thumb": "p1_thumb.jpg",
     "tex": "p1_tex.jpg",
-    "w": 1135,
-    "h": 1800,
+    "w": 1772,
+    "h": 1654,
     "strip": false,
-    "src": "2.png"
+    "src": "1-2.png"
    },
    {
     "file": "p2.jpg",
@@ -2215,11 +2215,11 @@
   ],
   "sign": null,
   "palette": {
-   "base": "#FFFFFF",
-   "accent": "#302F33",
-   "dark": "#302F33",
-   "wall": "#FBF9F4",
-   "floor": "#2C292A",
+   "base": "#5F777D",
+   "accent": "#1C2B2F",
+   "dark": "#0B0A0F",
+   "wall": "#CFD3D0",
+   "floor": "#232728",
    "mood": "light"
   }
  },

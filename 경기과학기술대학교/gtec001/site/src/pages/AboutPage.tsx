@@ -33,9 +33,9 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="eyebrow">Tributes</div>
           <h2 className="h2">축전</h2>
-          <p className="lead">교수님·선후배가 도록에 보낸 축전 그림입니다. 누르면 크게 봅니다.</p>
+          <p className="lead">교수님·선후배가 보내 주신 축전 그림입니다. 누르면 크게 봅니다.</p>
           <div className="tributes">
-            {EX.tributes.map((t) => <figure key={t.page} onClick={() => setZoom(v(`catalog/${t.img}`))}><img src={v(`catalog/${t.img}`)} alt={t.who} loading="lazy" /><figcaption>{t.who}</figcaption></figure>)}
+            {EX.tributes.map((t) => <figure key={t.img} onClick={() => setZoom(v(`catalog/${t.img}`))}><img src={v(`catalog/${t.img}`)} alt={t.who} loading="lazy" /><figcaption>{t.who}</figcaption></figure>)}
           </div>
         </div>
       </section>
