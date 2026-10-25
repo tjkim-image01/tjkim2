@@ -36,7 +36,8 @@ export const byDept = (code: DeptCode) => ARTISTS.filter((a) => a.dept === code)
 
 // 자산 경로 (vite base 가 ./ 이므로 상대 경로). v(): 배포 때마다 바뀌는 버전을 붙여 같은 이름으로 교체된 그림이 옛 캐시로 보이지 않게 한다
 export const asset = (p: string) => p.replace(/^\//, "");
-export const artImg = (a: Artist, file: string) => `artists/${a.id}/${file}`;
+// 작가 그림도 같은 이름으로 교체될 수 있어(대표작 교체 등) ?v= 를 붙인다
+export const artImg = (a: Artist, file: string) => v(`artists/${a.id}/${file}`);
 export const avatarOf = (a: Artist) => a.avatar ? artImg(a, a.avatar) : a.main ? artImg(a, a.main.thumb) : "";
 export const signOf = (a: Artist) => a.sign ? v(`sign/${a.sign}`) : "";
 
