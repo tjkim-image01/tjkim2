@@ -8,7 +8,7 @@ import { Artist, artImg, signOf, urlOfArtist, urlOfGuestbook, siteBase, v, EX, D
 import { listEntries, fmtTime } from "../lib/guestbook";
 import { BOOTHS, Booth, BOOTH_D, BOOTH_H, BOOTH_W, ENTRANCE_Z, HALL_HALF, LOBBY_R, WINGS, Wing, WING_START, isWalkable, wingAt, wingLength } from "../lib/layout";
 
-export type Hit = { kind: "main" | "work" | "plate" | "qr" | "thumb" | "wing" | "photo" | "host" | "guestbook"; booth?: Booth; wing?: Wing; index: number };
+export type Hit = { kind: "main" | "work" | "plate" | "qr" | "thumb" | "wing" | "photo" | "host" | "guestbook"; booth?: Booth; wing?: Wing; index: number; obj?: THREE.Object3D };
 export type WorldOpts = { canvas: HTMLCanvasElement; onHit: (h: Hit) => void; onNear: (b: Booth | null) => void; onWing: (w: Wing | null) => void; onReady: () => void };
 
 const DEPT_COLOR: Record<string, string> = Object.fromEntries(DEPTS.map((d) => [d.code, d.color]));
@@ -222,6 +222,10 @@ export class World {
   lastNear: Booth | null = null; lastWing: Wing | null | undefined = undefined; t0 = performance.now(); disposed = false; opts: WorldOpts; loadTimer = 0;
   spotPool: THREE.SpotLight[] = []; leds!: THREE.InstancedMesh; ledPos: THREE.Vector3[] = []; ledPhase: number[] = []; ledGlow!: THREE.Points; milky: THREE.Points[] = [];
   thumbWalls: ThumbWall[] = []; bookRefresh = 0;
+  // 작품 정면 보기: 카메라를 작품 앞으로 부드럽게 옮긴다. inset = 설명 패널이 가리는 오른쪽(px)·아래(px)
+  focus: { fx: number; fz: number; tx: number; tz: number; fy: number; ty: number; fp: number; tp: number; t0: number; dur: number } | null = null;
+  inset = { right: 0, bottom: 0 };
+  eye = 1.6; eyeTarget = 1.6;   // 눈높이: 작품 정면 보기 때는 작품 중심 높이로 맞춘다
 
   constructor(opts: WorldOpts) {
     this.opts = opts;
@@ -234,7 +238,34 @@ export class World {
     this.renderer.setAnimationLoop(this.tick); opts.onReady();
     (window as unknown as { __world?: World }).__world = this; // 검수 스크립트(scripts/shots.py)에서 시점을 잡기 위한 손잡이
   }
-  resize = () => { const w = this.opts.canvas.clientWidth || window.innerWidth, h = this.opts.canvas.clientHeight || window.innerHeight; this.renderer.setSize(w, h, false); this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); };
+  resize = () => { const w = this.opts.canvas.clientWidth || window.innerWidth, h = this.opts.canvas.clientHeight || window.innerHeight; this.renderer.setSize(w, h, false); this.camera.aspect = w / h; this.applyInset(); };
+  // 패널이 가린 만큼 화면 중심을 옮긴다(작품이 남은 영역 가운데에 오도록)
+  applyInset() {
+    const w = this.opts.canvas.clientWidth || window.innerWidth, h = this.opts.canvas.clientHeight || window.innerHeight;
+    if (this.inset.right || this.inset.bottom) this.camera.setViewOffset(w, h, this.inset.right / 2, this.inset.bottom / 2, w, h); else this.camera.clearViewOffset();
+    this.camera.updateProjectionMatrix();
+  }
+  setInset(right: number, bottom: number) { this.inset = { right, bottom }; this.applyInset(); if (!right && !bottom) this.eyeTarget = 1.6; }
+  // 부스의 특정 작품 액자(대표작 index 0 / 작품 index i)
+  frameMesh(artistId: string, kind: "main" | "work", index: number): THREE.Object3D | undefined {
+    const o = this.booths.find((x) => x.booth.artist.id === artistId); return o?.frames.find((f) => f.kind === kind && f.index === index)?.mesh;
+  }
+  focusArt(obj: THREE.Object3D) {
+    const mesh = obj as THREE.Mesh; mesh.updateWorldMatrix(true, false);
+    const c = new THREE.Vector3(); mesh.getWorldPosition(c);
+    const q = new THREE.Quaternion(); mesh.getWorldQuaternion(q); const n = new THREE.Vector3(0, 0, 1).applyQuaternion(q); n.y = 0; n.normalize();
+    const g = (mesh.geometry as THREE.PlaneGeometry).parameters || { width: 1.5, height: 1.5 }; const sc = new THREE.Vector3(); mesh.getWorldScale(sc);
+    const aw = g.width * sc.x, ah = g.height * sc.y;
+    const W = this.opts.canvas.clientWidth || window.innerWidth, H = this.opts.canvas.clientHeight || window.innerHeight;
+    const vis = Math.max(0.35, (H - this.inset.bottom) / H); const half = Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
+    const aspectAvail = Math.max(0.4, (W - this.inset.right) / Math.max(1, H - this.inset.bottom));
+    const dist = Math.max(1.2, Math.max((ah / 2) / (half * vis), (aw / 2) / (half * vis * aspectAvail)) * 1.32);
+    const tx = c.x + n.x * dist, tz = c.z + n.z * dist;
+    const ty = Math.atan2(n.x, n.z); let dy = ty - this.yaw; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+    const tp = 0; this.eyeTarget = c.y;   // 작품 중심과 같은 높이에서 수평으로 → 사다리꼴 왜곡 없는 정면
+    this.focus = { fx: this.pos.x, fz: this.pos.z, tx, tz, fy: this.yaw, ty: this.yaw + dy, fp: this.pitch, tp, t0: performance.now(), dur: 700 };
+    const ob = this.booths.find((o) => o.frames.some((f) => f.mesh === obj)); if (ob) this.loadBooth(ob);
+  }
   dispose() { this.disposed = true; this.renderer.setAnimationLoop(null); window.removeEventListener("resize", this.resize); window.clearInterval(this.bookRefresh); this.scene.traverse((o) => { const m = o as THREE.Mesh; if (m.geometry) m.geometry.dispose(); const mat = m.material as THREE.Material | THREE.Material[]; if (mat) (Array.isArray(mat) ? mat : [mat]).forEach((x) => { const mm = x as THREE.MeshBasicMaterial; mm.map?.dispose(); x.dispose(); }); }); this.renderer.dispose(); }
 
   build() {
@@ -538,7 +569,7 @@ export class World {
       const c = Math.floor(h.uv.x * tw.cols), r = Math.floor((1 - h.uv.y) * tw.rows); const i = r * tw.cols + c;
       if (i >= tw.booths.length) return null; return { kind: "thumb", booth: tw.booths[i], wing: u.wing, index: i };
     }
-    return { booth: u.booth, wing: u.wing, kind: u.kind, index: u.index };
+    return { booth: u.booth, wing: u.wing, kind: u.kind, index: u.index, obj: h.object };
   }
   nearest(): Booth | null {
     let best: Booth | null = null, bd = 7.5;
@@ -549,6 +580,11 @@ export class World {
   tick = () => {
     if (this.disposed) return;
     const now = performance.now(); const dt = Math.min(0.05, (now - this.t0) / 1000); this.t0 = now;
+    if (this.focus) {
+      const f = this.focus; const k = Math.min(1, (now - f.t0) / f.dur); const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      this.pos.x = f.fx + (f.tx - f.fx) * e; this.pos.z = f.fz + (f.tz - f.fz) * e; this.yaw = f.fy + (f.ty - f.fy) * e; this.pitch = f.fp + (f.tp - f.fp) * e;
+      this.look.dx = 0; this.look.dy = 0; this.move.x = 0; this.move.y = 0; if (k >= 1) this.focus = null;
+    }
     // 시점
     this.yaw -= this.look.dx * 0.0032; this.pitch = Math.max(-1.1, Math.min(1.1, this.pitch - this.look.dy * 0.0028)); this.look.dx = 0; this.look.dy = 0;
     // 이동(키보드 + 조이스틱)
@@ -556,11 +592,13 @@ export class World {
     if (this.keys.has("KeyW") || this.keys.has("ArrowUp")) my += 1; if (this.keys.has("KeyS") || this.keys.has("ArrowDown")) my -= 1;
     if (this.keys.has("KeyA") || this.keys.has("ArrowLeft")) mx -= 1; if (this.keys.has("KeyD") || this.keys.has("ArrowRight")) mx += 1;
     const len = Math.hypot(mx, my); if (len > 1) { mx /= len; my /= len; }
+    if (len > 0.01 && !this.focus) this.eyeTarget = 1.6;   // 걷기 시작하면 원래 눈높이로
+    this.eye += (this.eyeTarget - this.eye) * Math.min(1, dt * 6);
     const speed = (this.run || this.keys.has("ShiftLeft") ? 7.5 : 4.2) * dt;
     const fx = -Math.sin(this.yaw), fz = -Math.cos(this.yaw); const rx = Math.cos(this.yaw), rz = -Math.sin(this.yaw);
     if (len > 0.01) this.tryMove((fx * my + rx * mx) * speed, (fz * my + rz * mx) * speed);
-    this.camera.position.copy(this.pos); this.camera.position.y = 1.6 + Math.sin(now / 160) * (len > 0.01 ? 0.025 : 0);
-    const look = new THREE.Vector3(this.pos.x + fx * Math.cos(this.pitch), this.pos.y + Math.sin(this.pitch), this.pos.z + fz * Math.cos(this.pitch)); this.camera.lookAt(look);
+    this.camera.position.copy(this.pos); this.camera.position.y = this.eye + Math.sin(now / 160) * (len > 0.01 ? 0.025 : 0);
+    const look = new THREE.Vector3(this.pos.x + fx * Math.cos(this.pitch), this.eye + Math.sin(this.pitch), this.pos.z + fz * Math.cos(this.pitch)); this.camera.lookAt(look);
     // 편지 입자
     const m = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), s = new THREE.Vector3(1, 1, 1), p = new THREE.Vector3();
     const t = now / 1000;

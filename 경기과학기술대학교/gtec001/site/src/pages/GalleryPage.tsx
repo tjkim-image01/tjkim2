@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { ARTISTS, DEPTS, artImg, avatarOf, deptOf, Artist, CEREMONY, HOSTS, hostOf } from "../lib/data";
+import { ARTISTS, DEPTS, artImg, avatarOf, deptOf, signOf, Artist, CEREMONY, HOSTS, hostOf } from "../lib/data";
 import { BOOTHS, Booth, boothOf, bounds, LOBBY_R, WINGS, Wing, wingLength, HALL_HALF } from "../lib/layout";
 import { World, Hit, isMobile } from "../three/world";
 import { Intro } from "../components/Intro";
@@ -30,6 +30,7 @@ export default function GalleryPage() {
     if (h.kind === "photo") { nav("/photo"); return; }
     if (h.kind === "host") { setCeremony(true); return; }
     if (h.kind === "guestbook") { nav("/guestbook"); return; }
+    if ((h.kind === "main" || h.kind === "work") && h.obj && worldRef.current) { const ins = panelInset(); worldRef.current.setInset(ins.right, ins.bottom); worldRef.current.focusArt(h.obj); }
     setHit(h);
   }, [go, nav]);
   const [ceremony, setCeremony] = useState(false);
@@ -51,7 +52,7 @@ export default function GalleryPage() {
     worldRef.current = w;
     const b = boothParam ? boothOf(boothParam) : null;
     if (b) w.teleport(b); else w.setView(0, LOBBY_R + 18, 0);
-    const kd = (e: KeyboardEvent) => { if (e.target instanceof HTMLInputElement) return; w.keys.add(e.code); if (e.code === "Escape") { setHit(null); setDrawer(false); setWingPanel(null); } };
+    const kd = (e: KeyboardEvent) => { if (e.target instanceof HTMLInputElement) return; w.keys.add(e.code); if (e.code === "Escape") { setHit(null); setDrawer(false); setWingPanel(null); w.setInset(0, 0); } };
     const ku = (e: KeyboardEvent) => w.keys.delete(e.code);
     window.addEventListener("keydown", kd); window.addEventListener("keyup", ku);
     return () => { window.removeEventListener("keydown", kd); window.removeEventListener("keyup", ku); w.dispose(); worldRef.current = null; };
@@ -108,7 +109,7 @@ export default function GalleryPage() {
           <Link to={`/artists/${near.artist.id}`} className="btn small">작가 페이지</Link>
         </div>
       )}
-      {!isMobile && <div className="help">이동 W A S D / 방향키 · Shift 달리기 · 마우스 드래그로 둘러보기 · 작품 클릭 = 크게 보기 · 관 입구 썸네일 클릭 = 그 부스로 · 미니맵 클릭 = 순간이동</div>}
+      {!isMobile && !hit && <div className="help">이동 W A S D / 방향키 · Shift 달리기 · 마우스 드래그로 둘러보기 · 작품 클릭 = 크게 보기 · 관 입구 썸네일 클릭 = 그 부스로 · 미니맵 클릭 = 순간이동</div>}
       {isMobile && <Joystick onMove={(x, y) => { if (worldRef.current) { worldRef.current.move.x = x; worldRef.current.move.y = y; } }} />}
       <MiniMap worldRef={worldRef} near={near} onPick={go} />
       <div className={`drawer ${drawer ? "open" : ""}`}>
@@ -130,7 +131,7 @@ export default function GalleryPage() {
       </div>
       {wingPanel && <WingPanel wing={wingPanel} onClose={() => setWingPanel(null)} onJump={go} />}
       {ceremony && <CeremonyPanel onClose={() => setCeremony(false)} onEnter={() => { setCeremony(false); worldRef.current?.teleportLobby(); }} />}
-      {hit && hit.booth && <Panel hit={hit} booth={hit.booth} onClose={() => setHit(null)} onJump={go} />}
+      {hit && hit.booth && <Panel key={hit.booth.artist.id + hit.kind + hit.index} hit={hit} booth={hit.booth} onClose={() => { setHit(null); worldRef.current?.setInset(0, 0); }} onJump={(b) => { worldRef.current?.setInset(0, 0); go(b); }} onFocus={(kind, idx) => { const w = worldRef.current; const m = w?.frameMesh(hit.booth!.artist.id, kind, idx); if (w && m) { const ins = panelInset(); w.setInset(ins.right, ins.bottom); w.focusArt(m); } }} />}
     </div>
   );
 }
@@ -177,28 +178,48 @@ function WingPanel({ wing, onClose, onJump }: { wing: Wing; onClose: () => void;
   );
 }
 
-function Panel({ hit, booth, onClose, onJump }: { hit: Hit; booth: Booth; onClose: () => void; onJump: (b: Booth) => void }) {
+// 설명 패널이 가리는 영역(px): PC 는 오른쪽 세로 패널, 휴대폰은 아래쪽 시트
+function panelInset() {
+  const w = window.innerWidth, h = window.innerHeight;
+  return w < 760 ? { right: 0, bottom: Math.round(h * 0.5) } : { right: Math.min(440, Math.round(w * 0.38)), bottom: 0 };
+}
+
+// 작품을 누르면: 3D 카메라가 그 작품 정면으로 가고, 옆(휴대폰은 아래)에 작가·작품 설명이 뜬다
+function Panel({ hit, booth, onClose, onJump, onFocus }: { hit: Hit; booth: Booth; onClose: () => void; onJump: (b: Booth) => void; onFocus: (kind: "main" | "work", index: number) => void }) {
   const a: Artist = booth.artist;
-  const items = [a.main ? { ...a.main, label: "대표작" } : null, ...a.works.map((w, i) => ({ ...w, label: `작품 ${i + 1}` }))].filter(Boolean) as (typeof a.works[0] & { label: string })[];
+  const items = [a.main ? { ...a.main, label: "대표작", kind: "main" as const, idx: 0 } : null, ...a.works.map((w, i) => ({ ...w, label: `작품 ${i + 1}`, kind: "work" as const, idx: i }))].filter(Boolean) as (typeof a.works[0] & { label: string; kind: "main" | "work"; idx: number })[];
   const start = hit.kind === "work" ? hit.index + (a.main ? 1 : 0) : 0;
   const [i, setI] = useState(Math.min(start, items.length - 1));
+  const [big, setBig] = useState(false);
   const cur = items[i];
   const infoOnly = hit.kind === "plate" || hit.kind === "qr";
+  const pick = (k: number) => { const n = (k + items.length) % items.length; setI(n); onFocus(items[n].kind, items[n].idx); };
   return (
-    <div className="panel">
-      <div className="panel-h"><div><span className={`chip ${a.dept}`}>{a.dept_ko}</span> <b style={{ marginLeft: 8 }}>{a.name}</b> <span className="small">{a.name_en}</span></div><button className="panel-x" onClick={onClose}>✕</button></div>
+    <div className={`panel artside ${infoOnly ? "" : "focus"}`}>
+      <div className="panel-h">
+        <div className="who">{a.avatar && <img src={avatarOf(a)} alt="" />}<div><b>{a.name}</b> <span className="small">{a.name_en}</span><div><span className={`chip ${a.dept}`}>{a.dept_ko}</span> <span className="small">부스 {a.id.toUpperCase()}</span></div></div></div>
+        <button className="panel-x" onClick={onClose} aria-label="닫기">✕</button>
+      </div>
       <div className="panel-body">
-        {!infoOnly && cur && (cur.strip ? <div className="strip"><img src={artImg(a, cur.file)} alt="" /></div> : <img className="art" src={artImg(a, cur.file)} alt="" />)}
-        {!infoOnly && items.length > 1 && <div className="thumbs">{items.map((it, k) => <img key={k} src={artImg(a, it.thumb)} className={k === i ? "on" : ""} onClick={() => setI(k)} alt={it.label} />)}</div>}
+        {!infoOnly && cur && (
+          <div className="artnav">
+            <button className="btn small" onClick={() => pick(i - 1)} aria-label="이전 작품">←</button>
+            <span><b>{cur.label}</b> · {i + 1} / {items.length}</span>
+            <button className="btn small" onClick={() => pick(i + 1)} aria-label="다음 작품">→</button>
+          </div>
+        )}
+        {!infoOnly && items.length > 1 && <div className="thumbs">{items.map((it, k) => <img key={k} src={artImg(a, it.thumb)} className={k === i ? "on" : ""} onClick={() => pick(k)} alt={it.label} />)}</div>}
         <h2>「{a.title}」</h2>
-        <p>{a.intro}</p>
-        <p className="small">{a.note}</p>
+        <div className="say"><b>작품 소개</b><p>{a.intro}</p></div>
+        <div className="say"><b>작가의 말</b><p>{a.note}</p>{a.sign && <img className="sign" src={signOf(a)} alt={`${a.name} 서명`} />}</div>
         <div className="row">
+          {!infoOnly && cur && <button className="btn small" onClick={() => setBig(true)}>🔍 크게 보기</button>}
           <Link to={`/artists/${a.id}`} className="btn primary small">작가 페이지 →</Link>
-          <Link to={`/photo?with=${a.id}`} className="btn small">📷 이 캐릭터와 사진</Link>
-          <button className="btn small" onClick={() => onJump(booth)}>부스 정면으로</button>
+          <Link to={`/photo?with=${a.id}`} className="btn small">📷 캐릭터와 사진</Link>
+          <button className="btn small" onClick={() => onJump(booth)}>부스 전체 보기</button>
         </div>
       </div>
+      {big && cur && <div className="lightbox" onClick={() => setBig(false)}>{cur.strip ? <div className="lb-strip"><img src={artImg(a, cur.file)} alt="" /></div> : <img src={artImg(a, cur.file)} alt="" />}</div>}
     </div>
   );
 }
