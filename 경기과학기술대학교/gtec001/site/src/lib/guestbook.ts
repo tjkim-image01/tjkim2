@@ -1,7 +1,7 @@
 // 방명록 저장소. 서버 주소(구글 앱스 스크립트 웹앱)가 있으면 거기에 쓰고 읽는다. 없으면 이 기기(localStorage)에만 남긴다.
 //  주소 정하는 법(둘 중 하나):  public/config.json → { "guestbook_url": "https://script.google.com/macros/s/.../exec" }
 //                              또는 빌드 때 VITE_GUESTBOOK_URL
-export type Entry = { id: string; name: string; message: string; time: string; local?: boolean };
+export type Entry = { id: string; name: string; message: string; time: string; local?: boolean; pending?: boolean };
 const KEY = "gtec001_guestbook_local";
 let urlCache: string | null | undefined;
 
@@ -40,4 +40,5 @@ export async function postEntry(name: string, message: string): Promise<{ ok: bo
   }
   localSave([{ ...e, local: true }, ...localList()]); return { ok: true, remote: false };
 }
-export const fmtTime = (iso: string) => { const d = new Date(iso); return isNaN(d.getTime()) ? iso : `${d.getMonth() + 1}.${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
+// 시트에서 온 시각은 "Sun Oct 25 2026 11:06:06 GMT+0900 (한국 표준시)" 꼴일 수 있어 괄호를 떼고 읽는다(사파리 대비)
+export const fmtTime = (iso: string) => { const d = new Date(iso.replace(/\s*\(.*\)\s*$/, "")); return isNaN(d.getTime()) ? iso : `${d.getMonth() + 1}.${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };

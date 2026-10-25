@@ -13,11 +13,15 @@ export default function GuestbookPage() {
   useEffect(() => { load(); const t = setInterval(load, 30000); return () => clearInterval(t); }, [load]);
   const [hasUrl, setHasUrl] = useState<boolean | null>(null);
   useEffect(() => { guestbookUrl().then((u) => setHasUrl(!!u)); }, []);
+  // 앱스 스크립트는 한 번에 2~4초 걸려서, 누르는 즉시 목록 맨 위에 글을 보여 주고 저장은 뒤에서 한다. 실패하면 글을 입력칸으로 되돌린다.
   const submit = async (e: React.FormEvent) => {
-    e.preventDefault(); if (busy) return; setBusy(true); setNote("");
-    const r = await postEntry(name, msg); setBusy(false);
-    if (r.ok) { setMsg(""); setNote(r.remote ? "방명록에 남겼습니다. 고맙습니다!" : "이 기기에 저장했습니다(서버 연결 전)."); load(); }
-    else setNote(r.error || "실패했습니다.");
+    e.preventDefault(); if (busy) return;
+    const temp: Entry = { id: `pending-${Date.now()}`, name: name.trim().slice(0, 20) || "익명", message: msg.trim().slice(0, 300), time: new Date().toISOString(), pending: true };
+    if (!temp.message) { setNote("내용을 적어 주세요."); return; }
+    const sent = msg; setBusy(true); setMsg(""); setEntries((l) => [temp, ...l]); setNote("방명록에 남겼습니다. 고맙습니다!");
+    const r = await postEntry(name, sent); setBusy(false);
+    if (r.ok) { if (!r.remote) setNote("이 기기에 저장했습니다(서버 연결 전)."); load(); }
+    else { setEntries((l) => l.filter((x) => x.id !== temp.id)); setMsg(sent); setNote(r.error || "실패했습니다."); }
   };
   const fromQR = sp.get("open") === "1";
   return (
@@ -37,7 +41,7 @@ export default function GuestbookPage() {
             <label>내용 <textarea value={msg} onChange={(e) => setMsg(e.target.value)} maxLength={300} rows={4} placeholder="축하 인사, 인상 깊었던 작품, 작가에게 하고 싶은 말…" required /></label>
             <div className="row" style={{ justifyContent: "space-between" }}>
               <span className="small">{msg.length}/300</span>
-              <button className="btn primary" disabled={busy}>{busy ? "남기는 중…" : "방명록에 남기기"}</button>
+              <button className="btn primary" disabled={busy}>{busy ? "저장 중…" : "방명록에 남기기"}</button>
             </div>
             {note && <p className="small" style={{ color: "var(--accent)", marginTop: 8 }}>{note}</p>}
             {hasUrl === false && <p className="small" style={{ marginTop: 10 }}>※ 아직 방명록 서버(구글 시트)가 연결되지 않아 이 기기 안에만 저장됩니다. 연결 방법은 site/README 「방명록」 항목.</p>}
@@ -49,7 +53,7 @@ export default function GuestbookPage() {
             </div>
             {entries.length === 0 && <p className="small">아직 글이 없습니다. 첫 번째 방명록을 남겨 주세요.</p>}
             <ul className="gb-list">
-              {entries.map((e) => <li key={e.id}><b>{e.name}</b><span>{fmtTime(e.time)}</span><p>{e.message}</p></li>)}
+              {entries.map((e) => <li key={e.id}><b>{e.name}</b><span>{e.pending ? "저장 중…" : fmtTime(e.time)}</span><p>{e.message}</p></li>)}
             </ul>
           </div>
         </div>
