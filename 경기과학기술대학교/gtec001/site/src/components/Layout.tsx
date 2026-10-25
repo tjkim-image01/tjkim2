@@ -6,7 +6,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <>
       <header className="top">
         <Link to="/" className="logo">
-          <span className="logo-chip">GTEC 웹툰일러스트학과 · 제3회 졸업전시</span>
+          <span className="logo-chip">GTEC 웹툰일러스트학과 · 제4회 졸업전시</span>
           <span className="logo-title">MOVE : 이소</span>
         </Link>
         <nav className="nav">

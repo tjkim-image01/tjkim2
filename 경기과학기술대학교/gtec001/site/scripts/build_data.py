@@ -255,7 +255,7 @@ for c in committee:
 if "_greeting" in OVR: title_line, paras = OVR["_greeting"]["title"], OVR["_greeting"]["paras"]
 colophon = re.sub(r"\s*\n\s*", " ", page_text(197))
 ex = dict(
-    school="경기과학기술대학교", dept="웹툰일러스트학과", edition="제3회 졸업전시회", title="MOVE : 이소",
+    school="경기과학기술대학교", dept="웹툰일러스트학과", edition="제4회 졸업전시회", title="MOVE : 이소",
     subtitle="여정의 끝, 그리고 또다른 시작", en="webtoon&Illustration", dates="2026. 10. 28 – 11. 02",
     date_start="2026-10-28", date_end="2026-11-02", counts={c: len([a for a in artists if a["dept"] == c]) for c, *_ in DEPTS},
     depts=[dict(code=c, ko=k, en=e, color=col) for c, k, e, col in DEPTS],
