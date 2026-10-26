@@ -47,7 +47,9 @@ export default function AboutPage() {
             {EX.committee.map((m) => <div className="box" key={m.name}><b>{m.name}<small>{m.role}</small></b><p>{m.text}</p></div>)}
           </div>
           <h3 className="h3">졸업생 서명 모음</h3>
-          <figure style={{ margin: 0, maxWidth: 520 }} className="tributes"><img src={v(`catalog/${EX.signatures_page}`)} alt="졸업생 서명 모음" onClick={() => setZoom(v(`catalog/${EX.signatures_page}`))} style={{ cursor: "zoom-in", background: "#fff", padding: 8, border: "1px solid var(--hair)" }} /></figure>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
+            {(EX.signatures_pages ?? [EX.signatures_page]).map((f) => <figure key={f} style={{ margin: 0, flex: "1 1 240px", maxWidth: 320 }} className="tributes"><img src={v(`catalog/${f}`)} alt="졸업생 서명 모음" onClick={() => setZoom(v(`catalog/${f}`))} style={{ width: "100%", cursor: "zoom-in", background: "#fff", padding: 8, border: "1px solid var(--hair)" }} /></figure>)}
+          </div>
           <p className="small" style={{ marginTop: 24 }}>{EX.colophon.replace(/^\d+\s*/, "")}</p>
           <div className="row"><Link to="/gallery" className="btn primary">3D 전시장 입장 →</Link><Link to="/artists" className="btn">작가 {ARTISTS.length}명</Link></div>
         </div>

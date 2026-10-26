@@ -276,6 +276,8 @@ _late = [dict(page=None, who="박상빈 선배 축전", img="tribute_parksangbin
          dict(page=None, who="이예원 축전 (나서연 지인)", img="tribute_leeyewon.jpg", src="KakaoTalk_20261025_201203067.png")]
 _at = next((i for i, t in enumerate(ex["tributes"]) if "후배" in t["who"]), len(ex["tributes"]))
 ex["tributes"][_at:_at] = [t for t in _late if (PUB / "catalog" / t["img"]).exists()]
+# 도록 뒤에 받은 서명 199쪽(2026-10-26 요청) — 원본(수정사항/KakaoTalk_20261026_100227821.jpg)을 p198 과 같은 827×1170 으로 줄여 둠. 198쪽 옆에 나란히
+ex["signatures_pages"] = [cat_pages[198]] + [f for f in ["sign_p199.jpg"] if (PUB / "catalog" / f).exists()]
 json.dump(artists, open(DATA / "artists.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 json.dump(ex, open(DATA / "exhibition.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("greeting paras:", len(paras), "| committee:", [(c["role"], c["name"]) for c in committee])
