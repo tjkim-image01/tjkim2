@@ -268,9 +268,9 @@ ex = dict(
               dict(page=193, who="임성택 선배 축전", img=cat_pages[193]), dict(page=194, who="최지혁 후배 축전", img=cat_pages[194])],
     committee=committee, colophon=colophon, signatures_page=cat_pages[198], cover="brand/cover.jpg", logo="brand/logo_paper.jpg",
 )
-# 도록에 없는 추가 축전(황지영 교수님, 2026-10-24 요청) — 이미지는 scripts/make_tribute_hwang.py 가 아니라 public/catalog/tribute_hwang.jpg 로 이미 만들어 둠
+# 도록에 없는 추가 축전(황지영 교수님, 2026-10-24 요청, 10-26 그림 교체) — 이미지는 scripts/make_tribute_hwang_v5.py 로 public/catalog/tribute_hwang.jpg 에 만들어 둠
 if (PUB / "catalog" / "tribute_hwang.jpg").exists():
-    ex["tributes"].insert(7, dict(page=None, who="황지영 교수님 축전", img="tribute_hwang.jpg", src="퓨어데이 가족 포스터 v2(이마리·조성민·조하임) + 축전 문안"))
+    ex["tributes"].insert(7, dict(page=None, who="황지영 교수님 축전", img="tribute_hwang.jpg", src="가족 네 명 축전 그림(글씨 포함), 2026-10-26 교체 — make_tribute_hwang_v5.py"))
 # 도록 뒤에 받은 축전(2026-10-25 요청) — 원본 PNG(경기과학기술대학교/KakaoTalk_20261025_*.png)를 1240×1754 jpg 로 줄여 public/catalog 에 둠. 선배 축전 뒤, 후배 축전 앞
 _late = [dict(page=None, who="박상빈 선배 축전", img="tribute_parksangbin.jpg", src="KakaoTalk_20261025_201148773.png, 1기 졸업생"),
          dict(page=None, who="이예원 축전 (나서연 지인)", img="tribute_leeyewon.jpg", src="KakaoTalk_20261025_201203067.png")]
