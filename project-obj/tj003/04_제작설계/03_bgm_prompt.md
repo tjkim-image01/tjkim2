@@ -1,2 +1,0 @@
-# Flow Music 프롬프트 (tj003 BGM) — 주석(#) 줄은 제외되고 전송된다
-Warm, unhurried instrumental for an archive documentary about old handwritten postcards. Felt piano, soft upright bass, light brushed drums, a distant vintage string pad, occasional music-box celesta. Steady 108 BPM, gentle 4/4 pulse that a video editor can cut to, no big drops, no vocals, no lyrics. Nostalgic but hopeful, like opening a family album. About 2 minutes, loopable.

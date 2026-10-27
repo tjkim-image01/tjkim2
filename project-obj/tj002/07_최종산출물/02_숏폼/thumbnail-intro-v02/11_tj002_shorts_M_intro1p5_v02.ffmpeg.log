@@ -1,38 +1,0 @@
-Input #0, image2, from '/Users/jatu/app/tjkim2/project-obj/tj002/07_최종산출물/04_표지/thumbnail-v02/11_tj002_shorts_M_thumb_v02.jpg':
-  Duration: 00:00:00.03, start: 0.000000, bitrate: 248406 kb/s
-  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
-Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/jatu/app/tjkim2/project-obj/tj002/07_최종산출물/02_숏폼/11_tj002_shorts_M_v01.mp4':
-  Metadata:
-    major_brand     : isom
-    minor_version   : 512
-    compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf62.12.101
-    comment         : Made with Remotion 4.0.534
-  Duration: 00:00:59.90, start: 0.000000, bitrate: 7271 kb/s
-  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, unknown/bt709/iec61966-2-1, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 7077 kb/s, 30 fps, 30 tbr, 90k tbn (default)
-    Metadata:
-      handler_name    : VideoHandler
-  Stream #1:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 193 kb/s (default)
-    Metadata:
-      handler_name    : SoundHandler
-Stream mapping:
-  Stream #0:0 (mjpeg) -> scale:default
-  Stream #1:0 (h264) -> setsar:default
-  Stream #1:1 (aac) -> asetpts:default
-  concat:out:v0 -> Stream #0:0 (h264_videotoolbox)
-  adelay:default -> Stream #0:1 (aac)
-Press [q] to stop, [?] for help
-[swscaler @ 0x129038000] deprecated pixel format used, make sure you did set range correctly
-Output #0, mp4, to '/Users/jatu/app/tjkim2/project-obj/tj002/07_최종산출물/02_숏폼/thumbnail-intro-v02/11_tj002_shorts_M_intro1p5_v02.partial.mp4':
-  Metadata:
-    encoder         : Lavf62.12.101
-  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 10000 kb/s, 30 fps, 15360 tbn
-    Metadata:
-      encoder         : Lavc62.28.101 h264_videotoolbox
-  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
-    Metadata:
-      encoder         : Lavc62.28.101 aac
-frame=    8 fps=0.0 q=-0.0 size=     512KiB time=00:00:00.23 bitrate=17977.3kbits/s speed=0.462x elapsed=0:00:00.50    frame=   40 fps= 40 q=-0.0 size=    3072KiB time=00:00:01.30 bitrate=19358.6kbits/s speed=1.29x elapsed=0:00:01.00    frame=  106 fps= 70 q=-0.0 size=    3840KiB time=00:00:03.50 bitrate=8987.9kbits/s speed=2.31x elapsed=0:00:01.51    frame=  155 fps= 77 q=-0.0 size=    5120KiB time=00:00:05.13 bitrate=8170.8kbits/s speed=2.55x elapsed=0:00:02.01    frame=  205 fps= 81 q=-0.0 size=    7168KiB time=00:00:06.80 bitrate=8635.4kbits/s speed= 2.7x elapsed=0:00:02.52    frame=  253 fps= 84 q=-0.0 size=    9984KiB time=00:00:08.40 bitrate=9736.8kbits/s speed=2.78x elapsed=0:00:03.02    frame=  302 fps= 86 q=-0.0 size=   12288KiB time=00:00:10.03 bitrate=10032.9kbits/s speed=2.85x elapsed=0:00:03.52    frame=  350 fps= 87 q=-0.0 size=   14848KiB time=00:00:11.63 bitrate=10455.7kbits/s speed=2.89x elapsed=0:00:04.02    frame=  398 fps= 88 q=-0.0 size=   16896KiB time=00:00:13.23 bitrate=10459.4kbits/s speed=2.92x elapsed=0:00:04.53    frame=  446 fps= 89 q=-0.0 size=   18944KiB time=00:00:14.83 bitrate=10462.2kbits/s speed=2.94x elapsed=0:00:05.03    frame=  496 fps= 90 q=-0.0 size=   20736KiB time=00:00:16.50 bitrate=10295.1kbits/s speed=2.98x elapsed=0:00:05.54    frame=  544 fps= 90 q=-0.0 size=   22784KiB time=00:00:18.10 bitrate=10312.0kbits/s speed=2.99x elapsed=0:00:06.04    frame=  592 fps= 90 q=-0.0 size=   25088KiB time=00:00:19.70 bitrate=10432.6kbits/s speed=3.01x elapsed=0:00:06.54    frame=  643 fps= 91 q=-0.0 size=   26880KiB time=00:00:21.40 bitrate=10289.8kbits/s speed=3.03x elapsed=0:00:07.05    frame=  683 fps= 90 q=-0.0 size=   28672KiB time=00:00:22.80 bitrate=10301.8kbits/s speed=3.01x elapsed=0:00:07.56    frame=  736 fps= 91 q=-0.0 size=   30976KiB time=00:00:24.50 bitrate=10357.4kbits/s speed=3.04x elapsed=0:00:08.06    frame=  784 fps= 92 q=-0.0 size=   33024KiB time=00:00:26.10 bitrate=10365.2kbits/s speed=3.05x elapsed=0:00:08.56    frame=  834 fps= 92 q=-0.0 size=   34816KiB time=00:00:27.76 bitrate=10271.8kbits/s speed=3.06x elapsed=0:00:09.07    frame=  882 fps= 92 q=-0.0 size=   36864KiB time=00:00:29.36 bitrate=10283.4kbits/s speed=3.07x elapsed=0:00:09.57    frame=  932 fps= 92 q=-0.0 size=   38912KiB time=00:00:31.03 bitrate=10271.8kbits/s speed=3.08x elapsed=0:00:10.08    frame=  980 fps= 93 q=-0.0 size=   41216KiB time=00:00:32.63 bitrate=10346.5kbits/s speed=3.08x elapsed=0:00:10.58    frame= 1029 fps= 93 q=-0.0 size=   43264KiB time=00:00:34.26 bitrate=10343.0kbits/s speed=3.09x elapsed=0:00:11.08    frame= 1079 fps= 93 q=-0.0 size=   45312KiB time=00:00:35.93 bitrate=10330.1kbits/s speed= 3.1x elapsed=0:00:11.59    frame= 1128 fps= 93 q=-0.0 size=   47104KiB time=00:00:37.56 bitrate=10271.8kbits/s speed= 3.1x elapsed=0:00:12.09    frame= 1176 fps= 93 q=-0.0 size=   49152KiB time=00:00:39.16 bitrate=10280.5kbits/s speed=3.11x elapsed=0:00:12.59    frame= 1222 fps= 93 q=-0.0 size=   51200KiB time=00:00:40.70 bitrate=10305.4kbits/s speed=3.11x elapsed=0:00:13.10    frame= 1273 fps= 94 q=-0.0 size=   53760KiB time=00:00:42.40 bitrate=10386.8kbits/s speed=3.12x elapsed=0:00:13.60    frame= 1321 fps= 94 q=-0.0 size=   55808KiB time=00:00:44.00 bitrate=10390.4kbits/s speed=3.12x elapsed=0:00:14.10    frame= 1369 fps= 94 q=-0.0 size=   57344KiB time=00:00:45.60 bitrate=10301.8kbits/s speed=3.12x elapsed=0:00:14.61    frame= 1418 fps= 94 q=-0.0 size=   59904KiB time=00:00:47.23 bitrate=10389.6kbits/s speed=3.12x elapsed=0:00:15.11    frame= 1467 fps= 94 q=-0.0 size=   61952KiB time=00:00:48.86 bitrate=10385.6kbits/s speed=3.13x elapsed=0:00:15.62    frame= 1516 fps= 94 q=-0.0 size=   63488KiB time=00:00:50.50 bitrate=10298.9kbits/s speed=3.13x elapsed=0:00:16.12    frame= 1565 fps= 94 q=-0.0 size=   65536KiB time=00:00:52.13 bitrate=10298.0kbits/s speed=3.13x elapsed=0:00:16.63    frame= 1613 fps= 94 q=-0.0 size=   67584KiB time=00:00:53.73 bitrate=10303.6kbits/s speed=3.14x elapsed=0:00:17.13    frame= 1662 fps= 94 q=-0.0 size=   69632KiB time=00:00:55.36 bitrate=10302.7kbits/s speed=3.14x elapsed=0:00:17.63    frame= 1711 fps= 94 q=-0.0 size=   71680KiB time=00:00:57.00 bitrate=10301.8kbits/s speed=3.14x elapsed=0:00:18.13    frame= 1760 fps= 94 q=-0.0 size=   73728KiB time=00:00:58.63 bitrate=10301.0kbits/s speed=3.15x elapsed=0:00:18.64    frame= 1808 fps= 94 q=-0.0 size=   75776KiB time=00:01:00.23 bitrate=10305.9kbits/s speed=3.15x elapsed=0:00:19.14    [mp4 @ 0x11ae055a0] Starting second pass: moving the moov atom to the beginning of the file
-[out#0/mp4 @ 0x11ae05450] video:75837KiB audio:1410KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.069426%
-frame= 1840 fps= 94 q=-0.0 Lsize=   77301KiB time=00:01:01.30 bitrate=10330.4kbits/s speed=3.14x elapsed=0:00:19.53    
-[aac @ 0x11ae07c30] Qavg: 2629.448

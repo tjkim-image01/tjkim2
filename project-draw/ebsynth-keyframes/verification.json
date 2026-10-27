@@ -1,0 +1,47 @@
+{
+  "saved_at": "2026-10-27T15:25:19.605371+00:00",
+  "application": "https://ebsynth.com/app",
+  "file": "character-13-keyframes.ebs",
+  "sha256": "32915cbfb7ff31c2d68d4f3fe6e4df5ceac7c8913cdbd936308a8088570cab2e",
+  "bytes": 16764404,
+  "keyframes": [
+    0,
+    1,
+    3,
+    5,
+    7,
+    9,
+    10,
+    11,
+    13,
+    15,
+    17,
+    19,
+    20
+  ],
+  "added_keyframes": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "original_keyframes": [
+    0,
+    10,
+    20
+  ],
+  "frame_rate": 30,
+  "num_frames": 21,
+  "width": 960,
+  "height": 1440,
+  "zip_crc_ok": true,
+  "all_referenced_layers_present": true,
+  "method": "Create keyframes from current EbSynth propagation via the existing canvas UI",
+  "limitation": "Existing propagation distortions are not independently redrawn."
+}

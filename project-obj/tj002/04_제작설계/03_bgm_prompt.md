@@ -1,2 +1,0 @@
-# Flow Music 프롬프트 (tj002 BGM) — 주석(#) 줄은 제외되고 전송된다
-Playful retro Korean variety-show style instrumental, 1970s-80s TV quiz show feel. Upbeat light swing at 118 BPM with muted brass stabs, vibraphone, ukulele strums, hand claps, walking upright bass and a cheeky whistle melody. Warm, cheerful, nostalgic, a little comedic. No vocals, no lyrics. Clean loopable structure, about 2 minutes, steady energy without big drops.
