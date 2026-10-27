@@ -1,0 +1,34 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+dist/
+logs/
+run/
+.DS_Store
+.playwright-mcp/
+project/scripts/*.xlsx
+project-obj/tj001/mcp.md
+
+# GitHub 100MB limit exceeding raw master videos (kept locally; split .part* files are tracked)
+**/01_tj001_longform_v02.mp4
+**/tj002_long2_raw_v01.mp4
+**/01_tj002_shorts_intro1p5_v02.mp4
+**/15_tj002_shorts_Q_intro1p5_v02.mp4
+**/01_tj002_longform_v01.mp4
+**/02_tj002_longform2_v01.mp4
+**/01_tj003_longform_v01.mp4
+
+# gtec001 site
+경기과학기술대학교/gtec001/site/*.log
+경기과학기술대학교/gtec001/site/tsconfig.tsbuildinfo
+
+# 경기과학기술대학교 원자료(학생 제출 원본·도록 PDF 186MB)는 올리지 않는다. 사이트용 축소본은 gtec001/site/public 에 있다
+경기과학기술대학교/*.pdf
+경기과학기술대학교/*-2026*/
+경기과학기술대학교/gtec001/site/dist/
+경기과학기술대학교/gtec001/site/node_modules/
+경기과학기술대학교/gtec001/site/*.log
+경기과학기술대학교/gtec001/qr/entrance_b64.txt

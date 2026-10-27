@@ -1,0 +1,86 @@
+[
+ {
+  "shot": "P2-B1",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "삼백만? 왜 그렇게 잘 팔렸어?",
+  "sub": "왜 그렇게 잘 팔렸어?",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P2-B1_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.1
+ },
+ {
+  "shot": "P2-B1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "싸고, 빠르고, 짧으니까. 그리고 여기에 사진이 올라타.",
+  "sub": "싸다 · 빠르다 · 짧다 + 사진",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B1_2.wav",
+  "emotion_typecast": null,
+  "speech": 4.6
+ },
+ {
+  "shot": "P2-B2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이거 봐. 천구백 년 파리 만국박람회 엽서. 서른다섯 장이 세트로 있어.",
+  "sub": "1900 파리 만국박람회 엽서 35장 세트",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B2_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.45
+ },
+ {
+  "shot": "P2-B2",
+  "who": "하린",
+  "emotion": "높은 톤",
+  "text": "에펠탑! 와, 색이 아직도 이렇게 선명해?",
+  "sub": "에펠탑! 색이 아직도 선명해",
+  "actor": "예나",
+  "emotion_applied": "높은 톤",
+  "file": "하린/P2-B2_2.wav",
+  "emotion_typecast": "toneup",
+  "speech": 3.05
+ },
+ {
+  "shot": "P2-B3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천구백오 년 한 해에 전 세계에서 칠십억 장이 오갔어. 집집마다 엽서 앨범이 있었대.",
+  "sub": "1905년 한 해 70억 장 / 집집마다 엽서 앨범",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B3_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.35
+ },
+ {
+  "shot": "P2-B3",
+  "who": "하린",
+  "emotion": "기쁨",
+  "text": "그게 요즘 폰 사진첩이네.",
+  "sub": "요즘 폰 사진첩이네",
+  "actor": "예나",
+  "emotion_applied": "기쁨",
+  "file": "하린/P2-B3_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 1.9
+ },
+ {
+  "shot": "P2-B3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천구백칠 년엔 뒷면을 반으로 갈라서 왼쪽에 글, 오른쪽에 주소. 그래서 앞면이 통째로 사진이 된 거야.",
+  "sub": "1907 뒷면 분할 → 앞면 전체가 사진",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B3_3.wav",
+  "emotion_typecast": null,
+  "speech": 7.1
+ }
+]

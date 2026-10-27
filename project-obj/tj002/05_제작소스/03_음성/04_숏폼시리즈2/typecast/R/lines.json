@@ -1,0 +1,110 @@
+[
+ {
+  "shot": "R-S01",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "이건 일본어네? 휴전 성립?",
+  "sub": "日米休戦成立?",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/R-S01_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 2.5
+ },
+ {
+  "shot": "R-S02",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천구백사십오 년, 미군이 일본군한테 뿌린 삐라예요. 일미 휴전 성립! 전투를 중지하라! 뒷면엔 일본 육해군 장병과 시민에게 알린다, 제팔군 사령부.",
+  "sub": "1945 미군 → 일본군 / 「日米休戦成立! 戦闘を中止せよ!」 · 뒷면: 제8군 사령부",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/R-S02_1.wav",
+  "emotion_typecast": null,
+  "speech": 10.25
+ },
+ {
+  "shot": "R-S03",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "전쟁 끝난 걸 왜 종이로 알려?",
+  "sub": "끝난 걸 왜 종이로?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/R-S03_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.75
+ },
+ {
+  "shot": "R-S04",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "섬이나 정글에 흩어진 부대는 라디오도 신문도 없었으니까요. 이건 호주군 삐라. 앞엔 영어로, 이 사람은 저항을 멈췄다. 뒤엔 일본어로, 일본은 항복했다, 전쟁은 끝났다, 평화가 왔다.",
+  "sub": "섬 · 정글 — 소식이 안 닿는 부대 / 호주군 삐라: \"일본은 항복했다 · 전쟁은 끝났다 · 평화가 왔다\"",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/R-S04_1.wav",
+  "emotion_typecast": null,
+  "speech": 12.45
+ },
+ {
+  "shot": "R-S05",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그래서 다들 나왔어?",
+  "sub": "다들 나왔어?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/R-S05_1.wav",
+  "emotion_typecast": null,
+  "speech": 1.9
+ },
+ {
+  "shot": "R-S06",
+  "who": "태진",
+  "emotion": "낮은 톤",
+  "text": "안 믿은 사람도 있었어요. 필리핀 루방섬의 오노다 소위는 삐라를 적의 속임수라고 보고, 천구백칠십사 년까지 정글에 있었어요. 이십구 년.",
+  "sub": "오노다 소위 — 삐라를 속임수로 보고 / 1974년까지, 29년",
+  "actor": "현준",
+  "emotion_applied": "낮은 톤",
+  "file": "태진/R-S06_1.wav",
+  "emotion_typecast": "tonedown",
+  "speech": 11.4
+ },
+ {
+  "shot": "R-S07",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "이십구 년? 삐라를 안 믿어서?",
+  "sub": "29년?!",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/R-S07_1.wav",
+  "emotion_typecast": "toneup",
+  "speech": 2.9
+ },
+ {
+  "shot": "R-S08",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "종이는 왔는데 믿음이 안 온 거죠. 한국전쟁 삐라는 그로부터 오 년 뒤에 시작돼요.",
+  "sub": "종이는 왔는데 믿음은 안 왔다 / 5년 뒤, 한국전쟁 삐라",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/R-S08_1.wav",
+  "emotion_typecast": null,
+  "speech": 5.9
+ },
+ {
+  "shot": "R-S09",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "믿게 만드는 게 삐라의 일이었어요. 티제이 김 컬렉션, 삐라 백 장.",
+  "sub": "믿게 만드는 게 삐라의 일 / TJ Kim Collection 삐라 100장+",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/R-S09_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 4.5
+ }
+]

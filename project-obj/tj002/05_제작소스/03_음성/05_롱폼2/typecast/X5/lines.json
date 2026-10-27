@@ -1,0 +1,74 @@
+[
+ {
+  "shot": "X5-E1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그럼 전쟁 끝나고는?",
+  "sub": "전쟁 끝나고는?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/X5-E1_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.1
+ },
+ {
+  "shot": "X5-E1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "다시 벽으로 돌아가요. 이건 육십 년대 북한 포스터 원화. 인쇄가 아니라 붓으로 그린 거예요.",
+  "sub": "1960s 북한 포스터 — 인쇄가 아닌 손그림 원화",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X5-E1_2.wav",
+  "emotion_typecast": null,
+  "speech": 6.55
+ },
+ {
+  "shot": "X5-E2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이건 칠십 년대 중국 체육 포스터. 운동선수들이 행진하는데, 맨 앞 청년은 책을 읽고 있어요.",
+  "sub": "1970s 중국 체육 포스터 / 행진 앞에서 책 읽는 청년",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X5-E2_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.55
+ },
+ {
+  "shot": "X5-E2",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "운동하면서 공부도 하라는 거네. 우리 엄마 잔소리네.",
+  "sub": "운동하면서 공부도 = 엄마 잔소리",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/X5-E2_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 4.35
+ },
+ {
+  "shot": "X5-E3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이건 천구백육십삼 년 국제학생연맹 포스터. 지도 위에 날짜가 두 개 있어요. 천구백오십 년 유월 이십오 일, 천구백육십삼 년 유월 이십오 일.",
+  "sub": "1963 국제학생연맹(IUS) 포스터 / 1950. 6. 25 · 1963. 6. 25",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X5-E3_1.wav",
+  "emotion_typecast": null,
+  "speech": 10.65
+ },
+ {
+  "shot": "X5-E3",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "같은 육이오를 저렇게도 그렸구먼.",
+  "sub": "같은 6·25, 다른 그림",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/X5-E3_2.wav",
+  "emotion_typecast": null,
+  "speech": 2.6
+ }
+]

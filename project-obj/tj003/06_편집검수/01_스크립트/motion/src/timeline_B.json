@@ -1,0 +1,191 @@
+{
+ "fps": 30,
+ "duration": 63.43,
+ "bpm": 108,
+ "parts": [
+  {
+   "id": "B",
+   "title": null,
+   "header": "",
+   "firstLine": 0.8,
+   "start": 0.8,
+   "end": 63.43
+  }
+ ],
+ "shots": [
+  {
+   "id": "B-S01",
+   "part": "B",
+   "start": 0.8,
+   "end": 3.27
+  },
+  {
+   "id": "B-S02",
+   "part": "B",
+   "start": 3.27,
+   "end": 11.99
+  },
+  {
+   "id": "B-S03",
+   "part": "B",
+   "start": 11.99,
+   "end": 23.51
+  },
+  {
+   "id": "B-S04",
+   "part": "B",
+   "start": 23.51,
+   "end": 25.58
+  },
+  {
+   "id": "B-S05",
+   "part": "B",
+   "start": 25.58,
+   "end": 37.1
+  },
+  {
+   "id": "B-S06",
+   "part": "B",
+   "start": 37.1,
+   "end": 38.97
+  },
+  {
+   "id": "B-S07",
+   "part": "B",
+   "start": 38.97,
+   "end": 49.09
+  },
+  {
+   "id": "B-S08",
+   "part": "B",
+   "start": 49.09,
+   "end": 52.56
+  },
+  {
+   "id": "B-S09",
+   "part": "B",
+   "start": 52.56,
+   "end": 59.18
+  },
+  {
+   "id": "B-S10",
+   "part": "B",
+   "start": 59.18,
+   "end": 63.43
+  }
+ ],
+ "lines": [
+  {
+   "part": "B",
+   "shot": "B-S01",
+   "who": "하린",
+   "emotion": "높은 톤",
+   "text": "디어리스트 달링? 연애편지야?",
+   "sub": "\"Dearest Darling\"?",
+   "start": 0.8,
+   "end": 2.85,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S02",
+   "who": "태진",
+   "emotion": "일반",
+   "text": "천구백사십오 년 삼월 이십오 일, 워싱턴 타코마 소인. 일병 존 시 맥스웰이 텍사스 매캐미의 아내한테.",
+   "sub": "1945. 3. 25 Tacoma / PFC John C. Maxwell → 아내, McCamey, Texas",
+   "start": 3.27,
+   "end": 11.57,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S03",
+   "who": "태진",
+   "emotion": "일반",
+   "text": "사랑하는 당신, 교회 갈 준비 중이야. 체스터가 같이 있어. 어제 기초훈련 부대로 옮겼고, 주소는 내일 보낼게. 훈련을 얼마나 받을진 모르겠어. 사랑, 사랑, 조니.",
+   "sub": "\"About ready for church. Chester is with me. … will send you the address tomorrow. … Love, Love, Johnnie\"",
+   "start": 11.99,
+   "end": 23.09,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S04",
+   "who": "하린",
+   "emotion": "일반",
+   "text": "전쟁 얘기가 한 줄도 없네.",
+   "sub": "전쟁 얘기가 한 줄도 없다",
+   "start": 23.51,
+   "end": 25.16,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S05",
+   "who": "태진",
+   "emotion": "일반",
+   "text": "앞면은 워싱턴 유람선 그림. 소인 옆엔 적십자 전쟁기금에 기부하세요. 주 정부가 군인들한테 공짜로 나눠 준 엽서야. 전쟁 끝나고 첫 휴가는 워싱턴으로 오라고.",
+   "sub": "앞면: 워싱턴 유람선 / \"GIVE — Red Cross War Fund\" / 주 정부 무료 배포 — \"첫 전후 휴가는 워싱턴으로\"",
+   "start": 25.58,
+   "end": 36.68,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S06",
+   "who": "하린",
+   "emotion": "일반",
+   "text": "이 사람은 어디로 갔어?",
+   "sub": "이 사람은 어디로?",
+   "start": 37.1,
+   "end": 38.55,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S07",
+   "who": "태진",
+   "emotion": "낮은 톤",
+   "text": "이 묶음은 미 칠 보병사단 병사 유품이야. 한국군 모자, 일본군 인식표, 일본 지도랑 같이 왔어. 칠 사단은 천구백사십오 년 구월 팔 일 인천에 상륙했어.",
+   "sub": "미 7보병사단 병사 유품 — 한국군 모자 · 일본군 인식표 · 지도 / 1945. 9. 8 7사단 인천 상륙",
+   "start": 38.97,
+   "end": 48.67,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S08",
+   "who": "하린",
+   "emotion": "슬픔",
+   "text": "내일 주소 보낼게, 가 육 개월 뒤 인천이었네.",
+   "sub": "\"내일 주소 보낼게\" → 6개월 뒤 인천",
+   "start": 49.09,
+   "end": 52.14,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S09",
+   "who": "태진",
+   "emotion": "기쁨",
+   "text": "같은 묶음에 군대 만화 엽서도 있어. 중포 사격 연습 중. 땅콩 장수 수레.",
+   "sub": "같은 묶음: \"Practicing Heavy Shelling\" 만화 엽서",
+   "start": 52.56,
+   "end": 58.76,
+   "words": []
+  },
+  {
+   "part": "B",
+   "shot": "B-S10",
+   "who": "하린",
+   "emotion": "기쁨",
+   "text": "뒷면 읽어 드립니다, 다음 장!",
+   "sub": "「뒷면 읽어 드립니다」",
+   "start": 59.18,
+   "end": 61.23,
+   "words": []
+  }
+ ],
+ "mock": false,
+ "bgm": true
+}

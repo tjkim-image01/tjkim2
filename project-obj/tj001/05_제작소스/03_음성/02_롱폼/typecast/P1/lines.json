@@ -1,0 +1,86 @@
+[
+ {
+  "shot": "P1-A1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천팔백육십오 년, 독일 우편 관리 슈테판이 제안을 해. 편지를 봉투 없이 보내자.",
+  "sub": "1865 · 슈테판: \"봉투 없이 보내자\"",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P1-A1_1.wav",
+  "emotion_typecast": null,
+  "speech": 5.85
+ },
+ {
+  "shot": "P1-A1",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "오, 싸고 편하겠네. 당연히 통과?",
+  "sub": "싸고 편하네. 통과?",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P1-A1_2.wav",
+  "emotion_typecast": null,
+  "speech": 2.35
+ },
+ {
+  "shot": "P1-A2",
+  "who": "태진",
+  "emotion": "낮은 톤",
+  "text": "거절. 이유가 뭐였게?",
+  "sub": "거절. 이유는?",
+  "actor": "현준",
+  "emotion_applied": "낮은 톤",
+  "file": "태진/P1-A2_1.wav",
+  "emotion_typecast": "tonedown",
+  "speech": 2.05
+ },
+ {
+  "shot": "P1-A2",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "음, 종이 낭비?",
+  "sub": "종이 낭비?",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P1-A2_2.wav",
+  "emotion_typecast": null,
+  "speech": 1.25
+ },
+ {
+  "shot": "P1-A2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "아니. 남이 읽는다. 사적인 글을 남들이 다 본다, 품위가 없다.",
+  "sub": "\"남이 읽는다\" — 품위가 없다",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P1-A2_3.wav",
+  "emotion_typecast": null,
+  "speech": 4.95
+ },
+ {
+  "shot": "P1-A3",
+  "who": "하린",
+  "emotion": "기쁨",
+  "text": "아 뭐야, 그거 완전 인스타 스토리잖아. 남 보라고 올리는 건데.",
+  "sub": "완전 인스타 스토리잖아!",
+  "actor": "예나",
+  "emotion_applied": "기쁨",
+  "file": "하린/P1-A3_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 4.15
+ },
+ {
+  "shot": "P1-A3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그치. 근데 사 년 뒤 오스트리아가 받아 줘. 천팔백육십구 년 시월 일 일, 세계 최초의 엽서. 그림도 없는 누런 종이였는데 석 달 만에 삼백만 장.",
+  "sub": "1869. 10. 1 오스트리아, 세계 최초 엽서 / 석 달 만에 300만 장",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P1-A3_2.wav",
+  "emotion_typecast": null,
+  "speech": 12.1
+ }
+]

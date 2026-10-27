@@ -1,0 +1,26 @@
+[
+ {
+  "shot": "X0-I1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "태진아, 삐라 전에도 이런 게 있었어?",
+  "sub": "삐라 전에도 있었어?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/X0-I1_1.wav",
+  "emotion_typecast": null,
+  "speech": 3.25
+ },
+ {
+  "shot": "X0-I1",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "있죠. 오늘은 백 년을 한 번에 갈게요. 종이 한 장으로 사람 마음을 움직이는 법이 어떻게 바뀌었는지.",
+  "sub": "100년을 한 번에 — 종이로 마음을 움직이는 법",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/X0-I1_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 7.85
+ }
+]

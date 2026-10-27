@@ -1,0 +1,74 @@
+[
+ {
+  "shot": "P4-D1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "전쟁이 끝나니까 비행기로는 못 뿌리잖아요. 천구백오십오 년에 백령도에서 풍선 실험을 해요. 풍선 사천 개.",
+  "sub": "1955 백령도 풍선 실험 · 풍선 4,000개",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P4-D1_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.8
+ },
+ {
+  "shot": "P4-D1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그래서 우리 어릴 때 풍선 달린 삐라가 떨어졌구나.",
+  "sub": "그래서 풍선 달린 삐라가…",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/P4-D1_2.wav",
+  "emotion_typecast": null,
+  "speech": 3.95
+ },
+ {
+  "shot": "P4-D2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "남쪽도 북쪽도 서로 뿌렸어요. 팔십 년대엔 남쪽이 여배우 사진이랑 잡지, 워크맨까지 꾸러미로 보냈대요.",
+  "sub": "1980년대: 여배우 사진 · 잡지 · 워크맨 꾸러미",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P4-D2_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.25
+ },
+ {
+  "shot": "P4-D2",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "워크맨을? 그건 나도 못 가졌는데!",
+  "sub": "워크맨을?!",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/P4-D2_2.wav",
+  "emotion_typecast": "toneup",
+  "speech": 3.55
+ },
+ {
+  "shot": "P4-D3",
+  "who": "태진",
+  "emotion": "기쁨",
+  "text": "그래서 아이들이 주워 오면 공책 주고 연필 주고. 이모가 받은 공책이 그 전쟁의 마지막 조각이에요.",
+  "sub": "아이들의 공책 = 그 전쟁의 마지막 조각",
+  "actor": "현준",
+  "emotion_applied": "기쁨",
+  "file": "태진/P4-D3_1.wav",
+  "emotion_typecast": "happy",
+  "speech": 7.1
+ },
+ {
+  "shot": "P4-D3",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그러고 보니 그 공책에 받아쓰기 했네.",
+  "sub": "그 공책에 받아쓰기 했지",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/P4-D3_2.wav",
+  "emotion_typecast": null,
+  "speech": 3.3
+ }
+]

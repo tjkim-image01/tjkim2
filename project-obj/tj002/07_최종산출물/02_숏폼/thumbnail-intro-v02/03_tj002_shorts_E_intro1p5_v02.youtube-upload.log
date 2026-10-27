@@ -1,0 +1,317 @@
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-17_eCKqfNhNhFScTbY3
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t = (await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); console.log((await snapshot(page,{interactive:true})).tree); })()
+[system] popup opened: 전화 인증 - YouTube (https://www.youtube.com/verify_phone_number?f=Q0hBTk5FTF9GRUFUVVJFU19GRUFUVVJFX0NVU1RPTV9USFVNQk5BSUxT)
+         to use, explicitly access it via `tabs[0]` or switch it with `page = tabs[0];`
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e10]
+  - text: "동영상 미리보기 이미지: 삐라 주워서 공책 받아 봤어? #삐라 #한국전쟁 #티제이김컬렉션 #심리전 #625 #역사 #전쟁사\n\n\n    \n\n    \n    \n\n    \n       1:20\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n          \n             \n              내 동영상\n              \n            \n          \n          \n          \n             \n              삐라 주워서 공책 받아 봤어? #삐라 #한국전쟁 #티제이김컬렉션 #심리전 #625 #역사 #전쟁사"
+  - menu:
+    - menuitem "세부정보" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "편집기" [ref=e14]
+    - menuitem "댓글" [ref=e15]
+    - menuitem "자막" [ref=e16]
+    - menuitem "소유권 주장" [ref=e17]
+    - menuitem "클립 및 Shorts 동영상" [ref=e18]
+  - button "설정" [ref=e19]
+  - button "의견 보내기" [ref=e20]
+- main [ref=e21] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e22] [disabled]
+  - button "저장" [ref=e23] [disabled]
+  - button "옵션" [ref=e24]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e25]: "자세히 알아보기"
+  - button "업로드된 썸네일" [ref=e26]
+  - button "추천받기" [ref=e27]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e28]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e29]:
+    - button "선택" [ref=e30]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e31]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e32]: "자세히 알아보기"
+  - radiogroup [ref=e33]:
+    - radio [ref=e34]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e35]
+    - radio "아니요, 아동용이 아닙니다" [ref=e36] [checked]
+  - button "연령 제한" [ref=e37]
+  - button "고급 설정 표시" [ref=e38]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등\n     동영상 링크"
+  - link "https://youtube.com/shorts/8Vx3518-P4Y" [ref=e39]
+  - button "동영상 링크 복사" [ref=e40]
+  - text: "파일 이름 01_tj002_shorts_v01.mp4 동영상 화질"
+  - generic [ref=e41]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e42]
+  - generic [ref=e43]:
+    - text: "공개 상태\n        \n          \n            \n              \n             공개"
+    - button "동영상 공개 상태 수정" [ref=e44]
+  - button [ref=e45]:
+    - button "관련 동영상 없음" [ref=e46]
+  - button [ref=e48]:
+    - button [ref=e49]:
+      - button "자막" [ref=e50]
+- dialog "설정"
+[ok | 962ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); console.log((await snapshot(page,{selector:'[role=dialog]'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+[ok | 423ms]
+repl > 
+await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+[ok | 1183ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+[ok | 24ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e54]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e55]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e56]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e57]
+[ok | 30ms]
+repl > 
+console.log(await page.locator('input').evaluateAll(es=>es.map(e=>({type:e.type,name:e.name}))))
+[
+  { type: 'text', name: '' },
+  { type: 'file', name: '' },
+  { type: 'text', name: '' },
+  { type: 'file', name: 'Filedata' }
+]
+[ok | 126ms]
+repl > 
+await page.locator('input[type=file][name=Filedata]').setInputFiles("./03_tj002_shorts_E_intro1p5_v02.mp4"); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e54] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e55]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e56]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e57]
+[ok | 69ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e54] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e55]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e56]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e57]
+[ok | 28ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e54] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e55]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e56]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e57]
+[ok | 32ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e54] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e55]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e56]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e57]
+[ok | 37ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog [focused]:
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+[ok | 52ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/8Vx3518-P4Y/edit]
+- dialog:
+  - text: "03 tj002 shorts E intro1p5 v02\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e51]
+  - button "닫기" [ref=e52]
+  - tablist:
+    - tab "세부정보" [ref=e58] [selected]
+    - tab "동영상 요소" [ref=e59]
+    - tab "검토" [ref=e60]
+    - tab "공개 상태" [ref=e61]
+  - generic [ref=e62] [scrollable]:
+    - heading "세부정보" [level=1]
+    - button "세부정보 재사용" [ref=e63]
+    - text: "제목(필수 항목)"
+    - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e65] [focused]: "03 tj002 shorts E intro1p5 v02"
+    - status: "30/100"
+    - text: "설명"
+    - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e67]: "물건으로 읽는 역사, 티제이 김 컬렉션.\n엽서·고서·고지도·판화·기록물 속 시대와 사람들의 이야기를 전합니다.\n\n#티제이김컬렉션 #역사 #인문학"
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e68]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e69]
+    - button "동영상에서 선택" [ref=e71]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e72]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e73]:
+      - button "선택" [ref=e74]
+    - text: "시청자층 \n  아동용 동영상인가요? (필수사항)\n  \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e75]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e76]: "자세히 알아보기"
+    - radiogroup [ref=e77]:
+      - radio [ref=e78]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e79]
+      - radio "아니요, 아동용이 아닙니다" [ref=e80]
+    - button "연령 제한" [ref=e81]
+    - button "고급 설정 표시" [ref=e82]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크  파일 이름 03_tj002_shorts_E_intro1p5_v02.mp4"
+  - text: "17% 업로드 중 ... 28초 남음"
+  - button "다음" [ref=e83]
+[ok | 76ms]
+repl > 
+await (async()=>{const m=JSON.parse(await fs.readFile('./youtube-metadata.json','utf8')); await page.getByRole('textbox',{name:'동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)',exact:true}).fill(m.title); await page.getByRole('textbox',{name:'시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)',exact:true}).fill(m.description); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree);})()
+Error: Fill did not set the expected contenteditable value
+    at fillElement (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1016.1852/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3171:178)
+    at async Cn.fill (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1016.1852/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3754:2059)
+[error | 101ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-17_k0f98X9LWu9s2xj9
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); const t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; return await attachBrowserTab(t.targetId); }; console.log('ok')
+ok
+[ok | 42ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+Error: CDP command timeout: Page.enable
+    at Timeout._onTimeout (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1016.1852/Aside%20Daemon.app/Contents/MacOS/aside-daemon:947:6713)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+[error | 33048ms]
+repl > 
+Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-17_vTTfmc83wmJ41a6C
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); const t=ts.find(t=>t.active)||ts[0]; globalThis.P = await attachBrowserTab(t.targetId); console.log('ATTACHED:' + P.url()); })()
+[system] popup opened: 전화 인증 - YouTube (https://www.youtube.com/verify_phone_number?f=Q0hBTk5FTF9GRUFUVVJFU19GRUFUVVJFX0NVU1RPTV9USFVNQk5BSUxT)
+         to use, explicitly access it via `tabs[0]` or switch it with `page = tabs[0];`
+ATTACHED:https://studio.youtube.com/video/8Vx3518-P4Y/edit
+[ok | 333ms]
+repl > 
+console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count())
+ED:2
+[ok | 25ms]
+repl > 
+await (async()=>{ const m=JSON.parse(await fs.readFile('./meta.json','utf8')); const eds=P.locator('ytcp-uploads-dialog [contenteditable=true]'); const put=async(i,s)=>{ const b=eds.nth(i); await b.evaluate(e=>{ e.scrollIntoView({block:'center'}); e.focus(); }); await sleep(300); await P.keyboard.press('Meta+A'); await P.keyboard.press('Backspace'); await sleep(300); await P.keyboard.insertText(s); await sleep(700); return (await b.evaluate(e=>e.innerText)).trim(); }; const T=await put(0,m.title); const D=await put(1,m.description); console.log('TOK:'+(T===m.title)); console.log('DLEN:'+D.length+'/'+m.description.length); })()
+TOK:true
+DLEN:215/215
+[ok | 2786ms]
+repl > 
+await (async()=>{ const rs=P.locator('ytcp-uploads-dialog [role=radiogroup] [role=radio]'); await rs.nth(1).click(); await sleep(600); console.log('MFK:'+JSON.stringify(await rs.evaluateAll(es=>es.map(e=>[e.innerText.trim().slice(0,10),e.getAttribute('aria-checked')])))); })()
+MFK:[["예, 아동용입니다\n","false"],["아니요, 아동용이 ","true"],["예, 동영상 시청자","false"],["아니요, 동영상 시","true"]]
+[ok | 1296ms]
+repl > 
+await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })()
+TAB:동영상 요소
+[ok | 3121ms]
+repl > 
+await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })()
+TAB:검토
+[ok | 4253ms]
+repl > 
+await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })()
+TAB:공개 상태
+[ok | 3562ms]
+repl > 
+await (async()=>{ const v=P.locator('ytcp-uploads-dialog [role=radio]'); await v.nth(0).click(); await sleep(700); console.log('VIS:'+JSON.stringify(await v.evaluateAll(es=>es.map(e=>[e.innerText.trim().split('\n')[0],e.getAttribute('aria-checked')])))); console.log('LINK:'+await P.evaluate(()=>{ const a=[...document.querySelectorAll('ytcp-uploads-dialog a')].map(a=>a.href).find(h=>/youtube\.com\/(shorts\/|watch\?v=)|youtu\.be\//.test(h)); return a||''; })); })()
+VIS:[["비공개","true"],["일부 공개","false"],["공개","false"]]
+LINK:https://youtube.com/shorts/tkW2PEyTlKo
+[ok | 2025ms]
+repl > 
+await (async()=>{ console.log('PROG:'+((await P.evaluate(()=>{ const t=document.querySelector('ytcp-uploads-dialog')?.innerText||''; const m=t.match(/(업로드 중|Uploading)[^\n]*/); return m?m[0]:'done'; })))) })()
+PROG:done
+[ok | 22ms]
+repl > 
+await (async()=>{ const d=P.locator('ytcp-uploads-dialog #done-button'); console.log('DONE:'+(await d.innerText()).trim()); await d.click(); for(let i=0;i<20;i++){ await sleep(1000); if(!(await P.locator('ytcp-uploads-dialog [role=dialog]').count())) break; } console.log('LEFT:'+await P.locator('ytcp-uploads-dialog [role=dialog]').count()); })()
+DONE:저장
+LEFT:0
+[ok | 5824ms]
+repl > 
+await (async()=>{ const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 851ms]
+repl > 

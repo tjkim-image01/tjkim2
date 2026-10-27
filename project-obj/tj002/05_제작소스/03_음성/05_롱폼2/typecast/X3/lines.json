@@ -1,0 +1,50 @@
+[
+ {
+  "shot": "X3-C1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "그럼 그다음이 삐라야?",
+  "sub": "그다음이 삐라?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/X3-C1_1.wav",
+  "emotion_typecast": null,
+  "speech": 2.6
+ },
+ {
+  "shot": "X3-C1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "포스터는 벽에 붙이잖아요. 적의 벽엔 못 붙이니까, 하늘에서 뿌린 거죠. 천구백사십오 년 미군이 일본군한테. 일미 휴전 성립, 전투를 중지하라.",
+  "sub": "적의 벽엔 못 붙인다 → 하늘에서 뿌린다 / 1945 「日米休戦成立! 戦闘を中止せよ!」",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X3-C1_2.wav",
+  "emotion_typecast": null,
+  "speech": 10.95
+ },
+ {
+  "shot": "X3-C2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "같은 해 팔월 사 일엔 우리말 신문 조선자유보가 하늘에서 떨어졌고요.",
+  "sub": "1945. 8. 4 「조선자유보」",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X3-C2_1.wav",
+  "emotion_typecast": null,
+  "speech": 4.55
+ },
+ {
+  "shot": "X3-C2",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "포스터가 날개를 단 거네.",
+  "sub": "포스터가 날개를 달았다",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/X3-C2_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 1.9
+ }
+]

@@ -1,0 +1,183 @@
+{
+ "fps": 30,
+ "duration": 54.31,
+ "art": [
+  "CHAR_OKJA_BASE.png",
+  "CHAR_OKJA_LAUGH.png",
+  "CHAR_OKJA_POINT.png",
+  "CHAR_OKJA_SURPRISE.png",
+  "CHAR_TAEJIN_BASE.png",
+  "CHAR_TAEJIN_LAUGH.png",
+  "CHAR_TAEJIN_POINT.png",
+  "CHAR_TAEJIN_SURPRISE.png",
+  "bgm"
+ ],
+ "parts": [
+  {
+   "id": "I",
+   "title": null,
+   "header": "",
+   "firstLine": 0.8,
+   "start": 0.8,
+   "end": 54.31
+  }
+ ],
+ "shots": [
+  {
+   "id": "I-S01",
+   "part": "I",
+   "start": 0.0,
+   "end": 5.02
+  },
+  {
+   "id": "I-S02",
+   "part": "I",
+   "start": 5.02,
+   "end": 12.69
+  },
+  {
+   "id": "I-S03",
+   "part": "I",
+   "start": 12.69,
+   "end": 16.11
+  },
+  {
+   "id": "I-S04",
+   "part": "I",
+   "start": 16.11,
+   "end": 24.73
+  },
+  {
+   "id": "I-S05",
+   "part": "I",
+   "start": 24.73,
+   "end": 28.6
+  },
+  {
+   "id": "I-S06",
+   "part": "I",
+   "start": 28.6,
+   "end": 36.12
+  },
+  {
+   "id": "I-S07",
+   "part": "I",
+   "start": 36.12,
+   "end": 42.29
+  },
+  {
+   "id": "I-S08",
+   "part": "I",
+   "start": 42.29,
+   "end": 45.71
+  },
+  {
+   "id": "I-S09",
+   "part": "I",
+   "start": 45.71,
+   "end": 54.31
+  }
+ ],
+ "lines": [
+  {
+   "part": "I",
+   "shot": "I-S01",
+   "who": "옥자",
+   "emo": "일반",
+   "text": "근데 삐라가 무슨 말이야? 우리말은 아니지?",
+   "sub": "'삐라'는 무슨 말?",
+   "start": 0.8,
+   "end": 4.6,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S02",
+   "who": "태진",
+   "emo": "일반",
+   "text": "영어 빌. 전단이란 뜻이 일본을 거치면서 비라, 삐라가 됐어요. 표준어는 전단이에요.",
+   "sub": "bill → ビラ → 삐라 / 표준어: 전단",
+   "start": 5.02,
+   "end": 12.27,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S03",
+   "who": "옥자",
+   "emo": "높은 톤",
+   "text": "그럼 한국전쟁 전에도 있었어?",
+   "sub": "전쟁 전에도?",
+   "start": 12.69,
+   "end": 15.69,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S04",
+   "who": "태진",
+   "emo": "일반",
+   "text": "이게 제일 오래된 거예요. 조선자유보, 천구백사십오 년 팔월 사 일. 미군이 비행기에서 뿌린 한글 신문이에요.",
+   "sub": "조선자유보 · 1945. 8. 4 / 미군이 비행기에서 뿌린 한글 신문",
+   "start": 16.11,
+   "end": 24.31,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S05",
+   "who": "옥자",
+   "emo": "높은 톤",
+   "text": "팔월 사 일이면 해방 열하루 전이잖아!",
+   "sub": "해방 11일 전!",
+   "start": 24.73,
+   "end": 28.18,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S06",
+   "who": "태진",
+   "emo": "일반",
+   "text": "폭격 사진 두 장에 한반도 지도, 태극기까지 그려 놨어요. 곧 끝난다, 라고 하늘에서 미리 알려 준 거죠.",
+   "sub": "폭격 사진 2장 · 한반도 지도 · 태극기 / \"곧 끝난다\"를 하늘에서",
+   "start": 28.6,
+   "end": 35.7,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S07",
+   "who": "태진",
+   "emo": "일반",
+   "text": "같은 해에 일본군한테 뿌린 항복 삐라도 있어요. 이걸 들고 나오면 해치지 않는다.",
+   "sub": "1945 일본군 항복 삐라 / \"이걸 들고 나오면 해치지 않는다\"",
+   "start": 36.12,
+   "end": 41.87,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S08",
+   "who": "옥자",
+   "emo": "기쁨",
+   "text": "삐라가 전쟁보다 먼저 왔구먼.",
+   "sub": "삐라가 전쟁보다 먼저",
+   "start": 42.29,
+   "end": 45.29,
+   "words": []
+  },
+  {
+   "part": "I",
+   "shot": "I-S09",
+   "who": "태진",
+   "emo": "일반",
+   "text": "그리고 오 년 뒤에 그 수법이 한반도에 수십억 장으로 돌아왔어요. 티제이 김 컬렉션, 삐라 백 장.",
+   "sub": "5년 뒤 한반도에 수십억 장으로 / TJ Kim Collection 삐라 100장+",
+   "start": 45.71,
+   "end": 52.11,
+   "words": []
+  }
+ ],
+ "mock": false
+}

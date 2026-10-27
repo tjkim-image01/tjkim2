@@ -1,0 +1,86 @@
+[
+ {
+  "shot": "P2-B1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이게 제일 많이 뿌린 종류예요. 안전보장증서. 유엔군 사령관 이름으로, 이거 들고 오면 안전 보장한다.",
+  "sub": "안전보장증서 (Safe Conduct Pass)",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B1_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.1
+ },
+ {
+  "shot": "P2-B1",
+  "who": "옥자",
+  "emotion": "일반",
+  "text": "비행기표 같네. 이거 들고 가면 진짜 받아줬어?",
+  "sub": "이거 들고 가면 받아줘?",
+  "actor": "경애",
+  "emotion_applied": "일반",
+  "file": "옥자/P2-B1_2.wav",
+  "emotion_typecast": null,
+  "speech": 4.25
+ },
+ {
+  "shot": "P2-B2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그러려고 만든 거죠. 그리고 이런 것도 있어요. 아버지는 어데 게세요. 추석은 왔건마는 고향은 멀고멀다.",
+  "sub": "'아버지는 어데 게세요?' / '추석은 왔건마는 고향은 멀고멀다'",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B2_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.6
+ },
+ {
+  "shot": "P2-B2",
+  "who": "옥자",
+  "emotion": "슬픔",
+  "text": "아이고, 이건 좀 찡하다. 집 생각나라고 쓴 거구먼.",
+  "sub": "집 생각나라고 쓴 거구먼",
+  "actor": "경애",
+  "emotion_applied": "슬픔",
+  "file": "옥자/P2-B2_2.wav",
+  "emotion_typecast": "sad",
+  "speech": 5.15
+ },
+ {
+  "shot": "P2-B3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "분석 보고서에 그렇게 적혀 있어요. 지친 군인한텐 겁주는 것보다 향수가 잘 먹힌다고.",
+  "sub": "미군 분석: \"겁주기보다 향수가 잘 먹힌다\"",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B3_1.wav",
+  "emotion_typecast": null,
+  "speech": 5.65
+ },
+ {
+  "shot": "P2-B3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이 컬렉션 삐라들은 뒤에 미군 분석표가 붙어 있어요. 언어, 대상, 번역, 전부 영어로. 삐라마다 성적표가 있는 셈이죠.",
+  "sub": "삐라마다 미군 분석표 = 성적표",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P2-B3_2.wav",
+  "emotion_typecast": null,
+  "speech": 8.5
+ },
+ {
+  "shot": "P2-B3",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "종이 한 장에 성적표까지. 꼼꼼하네.",
+  "sub": "성적표까지!",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/P2-B3_3.wav",
+  "emotion_typecast": "happy",
+  "speech": 2.95
+ }
+]

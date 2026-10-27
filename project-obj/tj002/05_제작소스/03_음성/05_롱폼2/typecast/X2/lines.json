@@ -1,0 +1,74 @@
+[
+ {
+  "shot": "X2-B1",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "오십 년쯤 뒤, 천구백사십삼 년 미국. 이즈 유어 트립 네세서리? 그 여행 꼭 가야 합니까? 쓸데없는 여행은 전쟁을 방해한다.",
+  "sub": "1943 미국 / \"Is Your Trip Necessary?\" — 쓸데없는 여행은 전쟁을 방해한다",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X2-B1_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.65
+ },
+ {
+  "shot": "X2-B1",
+  "who": "옥자",
+  "emotion": "기쁨",
+  "text": "꽉 찬 기차 사진이네. 명절 귀성길이구먼.",
+  "sub": "꽉 찬 기차 = 명절 귀성길",
+  "actor": "경애",
+  "emotion_applied": "기쁨",
+  "file": "옥자/X2-B1_2.wav",
+  "emotion_typecast": "happy",
+  "speech": 4.1
+ },
+ {
+  "shot": "X2-B2",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "전쟁이 집 안까지 들어온 거예요. 기차 자리는 전쟁에 쓰자. 포스터가 생활을 바꾸라고 한 거죠.",
+  "sub": "전쟁이 생활 안으로 / 포스터가 생활을 바꾸라고",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X2-B2_1.wav",
+  "emotion_typecast": null,
+  "speech": 6.7
+ },
+ {
+  "shot": "X2-B3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "이건 같은 해, 유나이티드 위 아 스트롱. 대포마다 연합국 국기. 여기서 유나이티드 네이션스는 연합국이란 뜻이었어요.",
+  "sub": "\"United We Are Strong\" 1943 / 'United Nations' = 원래 연합국",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X2-B3_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.65
+ },
+ {
+  "shot": "X2-B3",
+  "who": "옥자",
+  "emotion": "높은 톤",
+  "text": "유엔이 원래 그 뜻이었어?",
+  "sub": "유엔이 그 뜻?!",
+  "actor": "경애",
+  "emotion_applied": "높은 톤",
+  "file": "옥자/X2-B3_2.wav",
+  "emotion_typecast": "toneup",
+  "speech": 2.55
+ },
+ {
+  "shot": "X2-B4",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "천구백사십이 년 연합국 공동선언 이름이 유나이티드 네이션스였어요. 전쟁 끝나고 그 이름이 국제기구가 됐고, 오 년 뒤 유엔군이 한국에 와요.",
+  "sub": "1942 연합국 공동선언 → 1945 국제연합 / 5년 뒤 한국의 유엔군",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/X2-B4_1.wav",
+  "emotion_typecast": null,
+  "speech": 8.95
+ }
+]

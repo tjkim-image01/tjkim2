@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>tj001 player</title>
+<style>
+  @font-face { font-family: "Pretendard-ExtraBold"; src: url("../../../05_제작소스/05_폰트/Pretendard-ExtraBold.otf"); }
+  @font-face { font-family: "NanumSquareRoundEB"; src: url("../../../05_제작소스/05_폰트/NanumSquareRoundEB.ttf"); }
+  @font-face { font-family: "NanumSquareRoundB"; src: url("../../../05_제작소스/05_폰트/NanumSquareRoundB.ttf"); }
+  @font-face { font-family: "NanumSquareRoundR"; src: url("../../../05_제작소스/05_폰트/NanumSquareRoundR.ttf"); }
+  @font-face { font-family: "Jua"; src: url("../../../05_제작소스/05_폰트/Jua-Regular.ttf"); }
+  html, body { margin: 0; background: #222; }
+  #stage { display: block; margin: 0 auto; max-width: 100vw; max-height: 100vh; }
+  .warm { position: absolute; left: -9999px; font-family: "Pretendard-ExtraBold"; }
+  .warm2 { font-family: "NanumSquareRoundB"; } .warm3 { font-family: "NanumSquareRoundR"; } .warm4 { font-family: "Jua"; } .warm5 { font-family: "NanumSquareRoundEB"; }
+</style>
+</head>
+<body>
+<canvas id="stage" width="1920" height="1080"></canvas>
+<span class="warm">가</span><span class="warm warm2">가</span><span class="warm warm3">가</span><span class="warm warm4">가</span><span class="warm warm5">가</span>
+<script>
+  // ?tl=long | short  →  timeline_long.js / timeline_short.js
+  const _tl = new URLSearchParams(location.search).get("tl") || "long";
+  window.TIMELINE_NAME = _tl;
+  document.write(`<script src="kit.js"><\/script><script src="timeline_${_tl}.js?${Date.now()}"><\/script>`);
+</script>
+<script src="mg.js"></script>
+</body>
+</html>

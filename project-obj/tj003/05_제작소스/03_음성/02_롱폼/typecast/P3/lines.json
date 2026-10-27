@@ -1,0 +1,110 @@
+[
+ {
+  "shot": "P3-C1",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "이건 사진 엽서 여섯 장인데, 뒷면에 영어가 빽빽해.",
+  "sub": "사진 엽서 6장 · 뒷면 영어 메모",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P3-C1_1.wav",
+  "emotion_typecast": null,
+  "speech": 3.6
+ },
+ {
+  "shot": "P3-C1",
+  "who": "태진",
+  "emotion": "낮은 톤",
+  "text": "천구백이십오 년 을축년 대홍수. 칠월 십육 일부터 십팔 일까지 육백오십 밀리. 한강이 넘쳤어. 읽어 줄게.",
+  "sub": "1925 을축년 대홍수 / 7. 16~18 · 650mm · 한강 범람",
+  "actor": "현준",
+  "emotion_applied": "낮은 톤",
+  "file": "태진/P3-C1_2.wav",
+  "emotion_typecast": "tonedown",
+  "speech": 8.7
+ },
+ {
+  "shot": "P3-C2",
+  "who": "태진",
+  "emotion": "낮은 톤",
+  "text": "조선 집 한 채가 떠내려간다. 강에서 백 피트 높이 여름 별장에서, 게일 부인은 한 시간 동안 집 이백 채가 떠내려가는 걸 셌다.",
+  "sub": "\"A Corean house floating down… Mrs. Gale counted 200 houses float past her in one hour.\"",
+  "actor": "현준",
+  "emotion_applied": "낮은 톤",
+  "file": "태진/P3-C2_1.wav",
+  "emotion_typecast": "tonedown",
+  "speech": 9.35
+ },
+ {
+  "shot": "P3-C2",
+  "who": "하린",
+  "emotion": "슬픔",
+  "text": "한 시간에 이백 채…",
+  "sub": "한 시간에 200채…",
+  "actor": "예나",
+  "emotion_applied": "슬픔",
+  "file": "하린/P3-C2_2.wav",
+  "emotion_typecast": "sad",
+  "speech": 1.5
+ },
+ {
+  "shot": "P3-C3",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "용산 거리 침수. 당신이 우리랑 자주 차 타고 영등포 가던 그 큰 용산 길. 강에서 영등포까지 전부 잠겼다. 영등포 사람들은 언덕 꼭대기로 피난했다. 마을의 집이 전부 물 아래라서.",
+  "sub": "\"Riuzan street flooded\" / \"where you had so often motored down with us on our way to Eitoho\" / 영등포 주민 언덕 피난",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P3-C3_1.wav",
+  "emotion_typecast": null,
+  "speech": 13.55
+ },
+ {
+  "shot": "P3-C3",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "당신이 우리랑 자주 다니던 길이면, 받는 사람은 서울을 떠난 사람이네.",
+  "sub": "받는 사람은 서울을 떠난 사람",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P3-C3_2.wav",
+  "emotion_typecast": null,
+  "speech": 4.3
+ },
+ {
+  "shot": "P3-C4",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "그치. 마지막 장. 지난달 홍수 뒤의 한강 철교. 피해액이 총독부 일 년 예산의 오십팔 퍼센트였어.",
+  "sub": "\"Our Railway Bridges over the Han after last month's flood.\" / 피해액 = 총독부 1년 예산의 58%",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P3-C4_1.wav",
+  "emotion_typecast": null,
+  "speech": 7.15
+ },
+ {
+  "shot": "P3-C4",
+  "who": "하린",
+  "emotion": "일반",
+  "text": "게일 부인은 누구야?",
+  "sub": "게일 부인은?",
+  "actor": "예나",
+  "emotion_applied": "일반",
+  "file": "하린/P3-C4_2.wav",
+  "emotion_typecast": null,
+  "speech": 1.35
+ },
+ {
+  "shot": "P3-C4",
+  "who": "태진",
+  "emotion": "일반",
+  "text": "성경 번역하고 한영자전 만든 제임스 게일 선교사 부인으로 보여. 게일도 천구백이십칠 년에 영국으로 갔어. 레이 집안이 떠난 해랑 같아.",
+  "sub": "제임스 게일(성서 번역 · 한영자전)의 부인으로 추정 / 1927 — 게일도, 레이 집안도 떠난 해",
+  "actor": "현준",
+  "emotion_applied": "일반",
+  "file": "태진/P3-C4_3.wav",
+  "emotion_typecast": null,
+  "speech": 9.65
+ }
+]
