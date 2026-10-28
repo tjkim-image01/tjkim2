@@ -8,3 +8,8 @@ deploy/preview/
 **/*.f32
 **/*.wav
 **/*.mov
+
+# Live process state changes while the local preview server runs.
+**/*.pid
+**/server.log
+**/*-server.log
