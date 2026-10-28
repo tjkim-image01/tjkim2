@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>MOVE : 이소 · 경기과학기술대학교 웹툰일러스트학과 제4회 졸업전시회</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1B1F3B" />
+    <meta name="description" content="여정의 끝, 그리고 또다른 시작. 경기과학기술대학교 웹툰일러스트학과 제4회 졸업전시회 MOVE : 이소 — 졸업생 42명의 웹툰·일러스트·출판만화·애니메이션을 가상 전시장에서 만납니다. 2026.10.28–11.02" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 배포 직후 옛 index.html 이 캐시에 남아 사라진 번들을 가리키면 한 번만 주소를 바꿔 새로 받는다 -->
+    <script>
+      window.addEventListener("error", function (e) {
+        var t = e && e.target; if (!t || (t.tagName !== "SCRIPT" && t.tagName !== "LINK")) return;
+        if (sessionStorage.getItem("gtec_reloaded")) return; sessionStorage.setItem("gtec_reloaded", "1");
+        location.replace(location.pathname + "?r=" + Date.now() + location.hash);
+      }, true);
+      window.addEventListener("load", function () { setTimeout(function () { if (document.getElementById("root").childElementCount) sessionStorage.removeItem("gtec_reloaded"); }, 4000); });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

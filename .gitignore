@@ -28,3 +28,14 @@ project-obj/tj003/
 # Temporary review files and compiler caches
 /tmp/
 *.tsbuildinfo
+# gtec001 site
+경기과학기술대학교/gtec001/site/*.log
+경기과학기술대학교/gtec001/site/tsconfig.tsbuildinfo
+
+# 경기과학기술대학교 원자료(학생 제출 원본·도록 PDF 186MB)는 올리지 않는다. 사이트용 축소본은 gtec001/site/public 에 있다
+경기과학기술대학교/*.pdf
+경기과학기술대학교/*-2026*/
+경기과학기술대학교/gtec001/site/dist/
+경기과학기술대학교/gtec001/site/node_modules/
+경기과학기술대학교/gtec001/site/*.log
+경기과학기술대학교/gtec001/qr/entrance_b64.txt
