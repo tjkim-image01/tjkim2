@@ -1,0 +1,87 @@
+{
+  "strokes": 482,
+  "sequence": [
+    {
+      "group": "front_man_face",
+      "start": 0.8,
+      "end": 3.4896254726608698
+    },
+    {
+      "group": "front_man_body",
+      "start": 3.4999999999999982,
+      "end": 6.791028682416644
+    },
+    {
+      "group": "front_man_legs",
+      "start": 6.799999999999998,
+      "end": 9.28961510757174
+    },
+    {
+      "group": "rear_woman_face",
+      "start": 9.299999999999995,
+      "end": 11.9937007064466
+    },
+    {
+      "group": "rear_woman_body",
+      "start": 11.999999999999995,
+      "end": 15.292472854595557
+    },
+    {
+      "group": "rear_woman_legs",
+      "start": 15.299999999999995,
+      "end": 17.774949639571375
+    },
+    {
+      "group": "rear_man_face",
+      "start": 17.799999999999994,
+      "end": 20.493608935649934
+    },
+    {
+      "group": "rear_man_body",
+      "start": 20.499999999999996,
+      "end": 23.79629742382922
+    },
+    {
+      "group": "rear_man_legs",
+      "start": 23.799999999999994,
+      "end": 26.289023666676542
+    },
+    {
+      "group": "front_woman_face",
+      "start": 26.299999999999986,
+      "end": 28.989557693238435
+    },
+    {
+      "group": "front_woman_body",
+      "start": 28.99999999999999,
+      "end": 32.2920623727954
+    },
+    {
+      "group": "front_woman_legs",
+      "start": 32.29999999999999,
+      "end": 34.79878447220931
+    },
+    {
+      "group": "objects",
+      "start": 34.79999999999998,
+      "end": 41.79175743671331
+    },
+    {
+      "group": "background",
+      "start": 41.800000000000004,
+      "end": 49.79746790018964
+    }
+  ],
+  "no_global_guides": true,
+  "other_videos": {
+    "ep03": "439192fc6fc9d605b8166a812016af0496d6457791272cef411b04b5f5821467",
+    "ep04": "e92e39fa65482824ceec2d3f06a2ace57c69d5d0c8820c55ea1f5af05f0b4f90",
+    "ep05": "64c14cf37dd737aae5955952fdee15885b95796af1e18a6791fdf7f0633612cc",
+    "ep06": "65de8530a602d49ab525553e4e191e37493ce43f09ae01b39ee1e2dfd7e150d4",
+    "ep07": "de904750a39bfd3a3e5c2324eeba401482253aa71075403b77a857604d89f17c",
+    "ep08": "51989897ff2fc28a00aba185525feaaacb3cfbc5e85200724b52ac4f516a8953",
+    "ep09": "69b23d7d6b2726307a2d99d2fe889d373359d79ff725880a3c2e0ae207498f56",
+    "ep10": "70c679c7eb79d88139ce0eff482b159208101fac12fdf7a543578c736b100088",
+    "ep11": "493e3414ae7986bde3b82cbbb54010436689a5637b3b693d2c3aa92edfd5cdfd"
+  }
+}

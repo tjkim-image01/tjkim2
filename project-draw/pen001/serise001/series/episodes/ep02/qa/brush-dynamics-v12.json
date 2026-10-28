@@ -1,0 +1,85 @@
+{
+  "motion": {
+    "slow": {
+      "pressure": 0.5,
+      "speed": 0.21099096062353842,
+      "direction": [
+        1,
+        0
+      ],
+      "pitch": 0.8931747908695248,
+      "roll": -0.10487750268246315,
+      "yaw": 0.05907746897459076,
+      "dragX": -0.21099096062353842,
+      "dragY": 0,
+      "penup": false
+    },
+    "fast": {
+      "pressure": 0.5,
+      "speed": 0.946772527376887,
+      "direction": [
+        1,
+        0
+      ],
+      "pitch": 0.50321056049025,
+      "roll": 0.5058211977228162,
+      "yaw": 0.2650963076655284,
+      "dragX": -0.946772527376887,
+      "dragY": 0,
+      "penup": false
+    },
+    "reverse": {
+      "pressure": 0.5,
+      "speed": 0.946772527376887,
+      "direction": [
+        -1,
+        0
+      ],
+      "pitch": 0.50321056049025,
+      "roll": -1.0658211977228162,
+      "yaw": -0.2650963076655284,
+      "dragX": 0.946772527376887,
+      "dragY": 0,
+      "penup": false
+    }
+  },
+  "bristles": {
+    "light": {
+      "tipWidth": 0.30686211585998535,
+      "lowest": 0,
+      "shaftRootY": 99.7102,
+      "contactPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    "heavy": {
+      "tipWidth": 14.710176467895508,
+      "lowest": 0,
+      "shaftRootY": 90.82300000000001,
+      "contactPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    "introWidth": 2.08,
+    "normalWidth": 1.36
+  },
+  "rewindDeterministic": true,
+  "performance": {
+    "frames": 275,
+    "median": 16.700000000000728
+  },
+  "bodyEffectsAbsent": true,
+  "captionSize": "60",
+  "mobile": {
+    "loaded": true,
+    "label": "488 / 488",
+    "mobileOverflow": false,
+    "allVideosUnchanged": true
+  },
+  "allVideosUnchanged": true,
+  "pass": true
+}

@@ -1,0 +1,23 @@
+{
+  "clock": "00:10 / 01:06",
+  "restart_then_play": true,
+  "status": "해설·음악 재생 중",
+  "tracks": [
+    {
+      "error": null,
+      "id": "audio",
+      "muted": false,
+      "paused": false,
+      "time": 9.943845,
+      "volume": 0.8
+    },
+    {
+      "error": null,
+      "id": "musicAudio",
+      "muted": false,
+      "paused": false,
+      "time": 14.960067,
+      "volume": 0.24200000000000005
+    }
+  ]
+}

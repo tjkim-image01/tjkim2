@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "real_mobile_touch_input": true,
+  "pinch_scale": 2.5,
+  "drag_pan_pixels": 125,
+  "swipe_next_album": 4,
+  "page_errors": []
+}

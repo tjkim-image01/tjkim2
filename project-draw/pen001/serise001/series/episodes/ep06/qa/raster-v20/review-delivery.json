@@ -1,0 +1,13 @@
+{
+  "editor": "http://127.0.0.1:5184/series/site/studio.html?ep=ep06&revision=raster-v20c",
+  "review_status": "awaiting-user",
+  "approved_image_unchanged": true,
+  "original_395_pigment_phase_order_timing_preserved": true,
+  "wash_before_ink_per_part": true,
+  "local_wash_touchups_follow_real_brush_routes": true,
+  "pen_lifts_between_disconnected_contours": true,
+  "no_SVG": true,
+  "no_MP4": true,
+  "saved_settings_unchanged": true,
+  "QA": "qa20-final.json"
+}

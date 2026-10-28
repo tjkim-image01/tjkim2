@@ -1,0 +1,49 @@
+{
+  "id": "24993b62-107e-4c3e-8b23-1a028f981c6b",
+  "author_id": "81cc767c-e719-45b2-9df1-6bc07a2addcd",
+  "op_id": "9e85e5fd-a975-57cf-b783-986b2c47c3be",
+  "op_type": "audio__create_song",
+  "duration": {
+    "status": "completed",
+    "value": "174.496"
+  },
+  "lyrics": {
+    "status": "completed",
+    "value": {
+      "id": "55161754-f78d-5b7f-9fa2-6a3cc8d6ba93",
+      "text": "[Instrumental]"
+    }
+  },
+  "lyrics_timing": {
+    "status": "not_requested"
+  },
+  "user_edited_lyrics_id": null,
+  "title": "먹빛의 장단",
+  "privacy": "unlisted",
+  "allow_public_use": true,
+  "has_vocals": null,
+  "has_cid_match": null,
+  "has_minor_vocals": null,
+  "image_id": "9e85e5fd-a975-57cf-b783-986b2c47c3be",
+  "video_id": null,
+  "song_plan_id": null,
+  "created_at": "2026-10-25T09:14:35.478316Z",
+  "deleted_at": null,
+  "operation": {
+    "op_type": "audio__create_song",
+    "conversation_id": null,
+    "sound_prompt": "contemporary cinematic GUGAK chamber soundtrack, authentic Korean janggu hourglass drum, low gung and crisp ttak, warm low buk barrel drum, restrained long jing gong resonance, sparse gayageum plucks, breathy daegeum, elegant, intriguing, rhythmic, spacious groove, acoustic, natural dynamics, clean detailed recording, 76 bpm",
+    "title": "먹빛의 장단",
+    "seed": null,
+    "lyrics_id": null
+  },
+  "is_favorite": false,
+  "preference_state": null,
+  "favorite_count": 0,
+  "play_count": 1,
+  "is_remix_eligible": true,
+  "audio_url": "https://storage.googleapis.com/producer-app-public/clips/24993b62-107e-4c3e-8b23-1a028f981c6b.m4a",
+  "wav_url": "https://storage.googleapis.com/producer-app-public/clips/24993b62-107e-4c3e-8b23-1a028f981c6b.wav",
+  "image_url": "https://storage.googleapis.com/producer-app-public/assets/9e85e5fd-a975-57cf-b783-986b2c47c3be.jpg",
+  "video_url": null
+}

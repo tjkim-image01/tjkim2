@@ -1,0 +1,242 @@
+[
+  {
+    "episode": "ep02",
+    "saved_caption_edits": {},
+    "music": "flow-playful",
+    "musicStart": 3.8,
+    "musicOffset": 10.7,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep02/audio/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep02/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 15,
+        "voice": "episodes/ep02/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep03",
+    "saved_caption_edits": {},
+    "music": "flow-calm",
+    "musicStart": 3.8,
+    "musicOffset": 9.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep03/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep03/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 14,
+        "voice": "episodes/ep03/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep04",
+    "saved_caption_edits": {},
+    "music": "flow-playful",
+    "musicStart": 3.8,
+    "musicOffset": 10.7,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep04/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep04/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 15,
+        "voice": "episodes/ep04/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep05",
+    "saved_caption_edits": {},
+    "music": "flow-night",
+    "musicStart": 3.8,
+    "musicOffset": 12.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep05/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep05/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 14,
+        "voice": "episodes/ep05/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep06",
+    "saved_caption_edits": {},
+    "music": "flow-calm",
+    "musicStart": 3.8,
+    "musicOffset": 18.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep06/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep06/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 14,
+        "voice": "episodes/ep06/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep07",
+    "saved_caption_edits": {},
+    "music": "flow-main",
+    "musicStart": 3.8,
+    "musicOffset": 10.7,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep07/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep07/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 15,
+        "voice": "episodes/ep07/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep08",
+    "saved_caption_edits": {},
+    "music": "flow-night",
+    "musicStart": 3.8,
+    "musicOffset": 18.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep08/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep08/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 15,
+        "voice": "episodes/ep08/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep09",
+    "saved_caption_edits": {},
+    "music": "flow-march",
+    "musicStart": 3.8,
+    "musicOffset": 10.7,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep09/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep09/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 14,
+        "voice": "episodes/ep09/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep10",
+    "saved_caption_edits": {},
+    "music": "flow-playful",
+    "musicStart": 3.8,
+    "musicOffset": 25.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep10/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep10/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 16,
+        "voice": "episodes/ep10/locales/ja/voice-director.m4a"
+      }
+    }
+  },
+  {
+    "episode": "ep11",
+    "saved_caption_edits": {},
+    "music": "flow-calm",
+    "musicStart": 3.8,
+    "musicOffset": 32.0,
+    "languages": {
+      "ko": {
+        "actor": "한준",
+        "max_caption": 18,
+        "voice": "episodes/ep11/locales/ko/voice-director.m4a"
+      },
+      "en": {
+        "actor": "아레스",
+        "max_caption": 18,
+        "voice": "episodes/ep11/locales/en/voice-director.m4a"
+      },
+      "ja": {
+        "actor": "이노우에 다이치",
+        "max_caption": 16,
+        "voice": "episodes/ep11/locales/ja/voice-director.m4a"
+      }
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "purpose": "single-plate extraction and border cleanup",
+  "source_album": "APKC260507306",
+  "prompt": "Edit target: archival Korean genre-painting album photograph. Select ONLY the LEFT-HAND painting: two women seated indoors beside a long plucked-string gayageum zither, paper lattice screens behind them. Omit the other page completely. Extract and straighten that one painting to a landscape 3:2 canvas. Remove black album pages, album hardware, red book binding, photographic edge, all outer borders, external handwritten inscriptions and red seals. Preserve the original scene, exact people count, faces, gestures, tools, clothing colors, architecture and composition as faithfully as possible. Do not invent details, change instruments, restyle or modernize. Keep the full scene, hands, tools and feet uncropped. Use clean warm ivory (#f8f5ea) paper for unpainted background, no rectangle border. Retain hand-painted pigment. Output one painting, no title, labels, collage or watermark. This is image cleanup for a historical painting video ending.",
+  "output": "art/original-clean.png",
+  "note": "AI-assisted cleanup edition; source album photograph is preserved separately."
+}
+

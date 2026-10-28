@@ -1,0 +1,33 @@
+{
+  "file": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/output/serise001-ep01-short-60s-v3.mp4",
+  "sha256": "7169b331bed8236842745e960396899e596f4a5b9252d6e6ccd86b88a63549a2",
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "full_decode_pass": true,
+  "blank_start": true,
+  "approved_drawing_region_mae": 0.23839741501031825,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.3846426631910502,
+    "final_difference": 35.61837514934289,
+    "original_region_mae": 2.2113772129901164,
+    "final_hold_mae": 0.5665309004018682
+  },
+  "collection_voice": [
+    {
+      "start": 0.0,
+      "end": 2.72,
+      "text": " 이 작품은 TJKIM 컬렉션 소장품입니다."
+    }
+  ],
+  "old_music_rms_dbfs": -43.23685073852539,
+  "new_music_rms_dbfs": -27.425933837890625,
+  "music_gain_db": 15.810916900634766,
+  "mix_peak_dbfs": -1.436599612236023,
+  "music_license": "CC BY 4.0",
+  "video_credit": "bottom-left at x70, y1700–1772, 18px, all 60s; title, creator, source, license URL and changes",
+  "physical_phone_test": false
+}

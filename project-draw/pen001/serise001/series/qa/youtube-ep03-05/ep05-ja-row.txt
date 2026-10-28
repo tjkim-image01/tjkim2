@@ -1,0 +1,21 @@
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/PDvSryhrE28/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e499]:
+    - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e501]
+  - cell:
+    - link [ref=e502]:
+      - image "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化"
+      - text: "1:08"
+    - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e503]
+    - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「먹빛의 밤」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国文化 #雨の日 #風俗画 #TJキムコレクション"
+  - cell:
+    - generic "—" [ref=e504]
+  - cell:
+    - generic "비공개" [ref=e505]
+  - cell "2026. 10. 26." [ref=e506]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e507]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e508]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e509]: "0"
+[ok | 26ms]
+repl > 

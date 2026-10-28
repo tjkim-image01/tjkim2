@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/scripts/qa_website_v16.py", line 18, in <module>
+    ab('fill','#search','zzzz-no-match');wait('!document.querySelector("#empty").hidden');ab('click','#clearSearch');wait('document.querySelectorAll(".story-card").length===10')
+                                                                                                                     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/scripts/qa_website_v16.py", line 12, in wait
+    raise AssertionError('Browser condition failed: '+js)
+AssertionError: Browser condition failed: document.querySelectorAll(".story-card").length===10

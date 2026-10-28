@@ -1,0 +1,281 @@
+{
+  "id": "ep10",
+  "number": 10,
+  "title": "골목에 온 단맛",
+  "hook": "들고 다니는 가게",
+  "category": "일·먹거리",
+  "album": 7,
+  "side": "left",
+  "duration": 66,
+  "byline": "운초 전칭 · TJ KIM 컬렉션",
+  "narration": [
+    "가게가 사람을 찾아왔습니다. 넓은 판을 들고 선 장수 앞에 사람들이 앉아 있습니다. 그림에 적힌 뜻과 장면은 엿을 파는 모습을 가리킵니다.",
+    "장수가 들고 다니는 판에는 먹거리가 놓였고, 손님의 손은 그쪽으로 향합니다. 요즘의 진열장 대신, 몸에 지닌 판이 작은 가게 노릇을 하는 셈입니다.",
+    "네모난 판의 테두리를 그리고, 장수의 몸을 받치는 다리를 더합니다. 앉아 쉬는 사람들과 서서 일하는 사람 사이에, 골목의 작은 거래가 생깁니다.",
+    "처음 조선을 보는 외국인에게는 무엇을 파는지, 어떻게 들고 다니는지, 사람들이 어디에서 사 먹는지가 모두 정보였을 겁니다. 길거리 장수의 그림은 한 나라의 물건이 움직이는 방식을 보여 줍니다.",
+    "그런데 그림 속 사람에게 이 모습은 구경거리가 아니라 하루의 벌이였겠지요. 옛 단맛을 상상하며, 그것을 이고 지고 다녔던 몸의 수고도 함께 떠올려 봅니다."
+  ],
+  "voice_id": "S10",
+  "voice_text": "가게가 사람을 찾아왔습니다. 넓은 판을 들고 선 장수 앞에 사람들이 앉아 있습니다. 그림에 적힌 뜻과 장면은 엿을 파는 모습을 가리킵니다. 장수가 들고 다니는 판에는 먹거리가 놓였고, 손님의 손은 그쪽으로 향합니다. 요즘의 진열장 대신, 몸에 지닌 판이 작은 가게 노릇을 하는 셈입니다. 네모난 판의 테두리를 그리고, 장수의 몸을 받치는 다리를 더합니다. 앉아 쉬는 사람들과 서서 일하는 사람 사이에, 골목의 작은 거래가 생깁니다. 처음 조선을 보는 외국인에게는 무엇을 파는지, 어떻게 들고 다니는지, 사람들이 어디에서 사 먹는지가 모두 정보였을 겁니다. 길거리 장수의 그림은 한 나라의 물건이 움직이는 방식을 보여 줍니다. 그런데 그림 속 사람에게 이 모습은 구경거리가 아니라 하루의 벌이였겠지요. 옛 단맛을 상상하며, 그것을 이고 지고 다녔던 몸의 수고도 함께 떠올려 봅니다.",
+  "voice_file": "S10.wav",
+  "video": "../episodes/ep10/output/ep10-short-60s.mp4",
+  "poster": "../episodes/ep10/art/poster.jpg",
+  "original": "../episodes/ep10/art/original-clean.png",
+  "source_photo": "../../../research/album-7.jpg",
+  "sources": [
+    {
+      "title": "기산 김준근 풍속화 소개 · 국사편찬위원회",
+      "url": "https://contents.history.go.kr/collection/level.do?levelId=mp_009_0030"
+    },
+    {
+      "title": "기산풍속도첩 · 서울역사박물관",
+      "url": "https://museum.seoul.go.kr/www/relic/RelicView.do?cdLanguage=KOR&mcseqno1=021945&mcseqno2=00000&mcsjgbnc=PS01003026001"
+    }
+  ],
+  "status": "ready",
+  "player_director": {
+    "intro_duration": 6,
+    "shots": [
+      {
+        "element": "standing_seller",
+        "start": 0.8,
+        "end": 4.956332160841083,
+        "box": [
+          491.0,
+          82.0,
+          798.0,
+          581.0
+        ]
+      },
+      {
+        "element": "standing_seller",
+        "start": 4.956332160841083,
+        "end": 13.904711902006866,
+        "box": [
+          491.0,
+          82.0,
+          798.0,
+          581.0
+        ]
+      },
+      {
+        "element": "left_seller",
+        "start": 13.904711902006866,
+        "end": 16.076324983957356,
+        "box": [
+          68.0,
+          213.0,
+          397.0,
+          562.0
+        ]
+      },
+      {
+        "element": "left_seller",
+        "start": 16.076324983957356,
+        "end": 25.819992805363356,
+        "box": [
+          68.0,
+          213.0,
+          397.0,
+          562.0
+        ]
+      },
+      {
+        "element": "rear_customer",
+        "start": 25.819992805363356,
+        "end": 28.093921544003162,
+        "box": [
+          246.0,
+          140.0,
+          551.0,
+          458.0
+        ]
+      },
+      {
+        "element": "rear_customer",
+        "start": 28.093921544003162,
+        "end": 36.8,
+        "box": [
+          246.0,
+          140.0,
+          551.0,
+          458.0
+        ]
+      },
+      {
+        "element": "objects",
+        "start": 36.8,
+        "end": 42.8,
+        "box": [
+          239.0,
+          83.0,
+          903.0,
+          482.0
+        ]
+      },
+      {
+        "element": "background",
+        "start": 42.8,
+        "end": 49.8,
+        "box": [
+          0,
+          0,
+          1000,
+          652
+        ]
+      }
+    ],
+    "brush_types": {
+      "fine": {
+        "label": "세필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "fine-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "medium": {
+        "label": "중필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "medium-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "large": {
+        "label": "대필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "large-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "flat": {
+        "label": "평붓",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "flat-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      }
+    },
+    "brush_frames": 96,
+    "viewport": [
+      0,
+      0,
+      1080,
+      1440
+    ],
+    "ink_bleed": 0.45,
+    "signature": "approved bitmap Tj v27 / angled close-up brush v29",
+    "signature_duration": 3.5,
+    "pressure_brush": {
+      "atlas": "pressure-atlas.png",
+      "width": 192,
+      "height": 288,
+      "anchor": [
+        62.4,
+        253.2
+      ],
+      "levels": 4,
+      "angles": 24
+    },
+    "caption_top": 1374,
+    "material": "fiber-height-wet-roughness-shader",
+    "caption_font_size": 60,
+    "brush_motion": "path-direction-speed-pressure-live-3d",
+    "intro_brush": "large-calligraphy-separate-tuft",
+    "intro_brush_scale": 9.04,
+    "intro_ink_bleed_multiplier": 2,
+    "brush_camera_reference": {
+      "intro": 3.6,
+      "painting": 5.14
+    },
+    "signature_canvas": [
+      1080,
+      1920
+    ],
+    "signature_approved": true,
+    "wet_ink_on_contact": true,
+    "signature_revision": 31,
+    "intro_brush_visible_from": 0
+  },
+  "player_music": {
+    "file": "../../../music/flow-playful-ready.m4a",
+    "title": "윷판의 웃음",
+    "source": "Google Flow Music original generation",
+    "hide_credit": true,
+    "effects_at": [
+      1,
+      1.35,
+      1.65,
+      1.93,
+      2.17,
+      2.38,
+      2.56,
+      2.73,
+      2.88,
+      3.02,
+      3.15,
+      3.27,
+      3.39,
+      3.5
+    ],
+    "separate_tracks": true,
+    "default_start": 5,
+    "default_offset": 0,
+    "intro_rim_file": "court-finish-v9.m4a",
+    "roll_file": "roll-v7.m4a",
+    "finish_instrument": "three-buk-inspired",
+    "gain_controls": true,
+    "finish_file": "court-finish-v9.m4a",
+    "finish_duration": 1.55,
+    "finish_at": 3.5,
+    "effects_scope": "intro-only"
+  },
+  "caption_style": "calm-myeongjo",
+  "caption_layout": {
+    "max_chars": 18,
+    "font_size": 54,
+    "top": 1374,
+    "one_line": true
+  },
+  "player_revision": "raster-v31",
+  "player_only": false,
+  "drawing_order": "각 인물 머리·얼굴 채색 → 몸 채색 → 세선 정리 → 다음 인물 → 물건 → 색별 배경",
+  "exports": {
+    "ko": "ep10-short-ko-v31-cover.mp4",
+    "en": "ep10-short-en-v31-cover.mp4",
+    "ja": "ep10-short-ja-v31-cover.mp4"
+  },
+  "cover_exports": {
+    "ko": "../episodes/ep10/art/covers-v18/ko.png",
+    "en": "../episodes/ep10/art/covers-v18/en.png",
+    "ja": "../episodes/ep10/art/covers-v18/ja.png"
+  },
+  "review_status": "approved-body-immediate-brush"
+}

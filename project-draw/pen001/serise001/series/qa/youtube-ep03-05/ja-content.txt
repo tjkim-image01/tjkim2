@@ -1,0 +1,58 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e42]:
+    - tab "동영상" [ref=e43] [selected]
+    - tab "Shorts" [ref=e44]
+    - tab "라이브" [ref=e45]
+    - tab "재생목록" [ref=e46]
+    - tab "팟캐스트" [ref=e47]
+    - tab "프로모션" [ref=e48]
+    - tab "컬래버레이션" [ref=e49]
+    - tab "아이디어" [ref=e50]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e52] [placeholder="필터"]
+      - row "전체 선택 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e53]:
+          - checkbox "전체 선택" [ref=e55]
+        - columnheader "동영상" [ref=e56]
+        - columnheader "알림" [ref=e57]
+        - columnheader "공개 상태" [ref=e58]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e59]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e60]: "조회수"
+        - columnheader "댓글" [ref=e61]
+    - text: "콘텐츠가 없습니다."
+    - button "동영상 업로드" [ref=e62]
+[ok | 93ms]
+repl > 

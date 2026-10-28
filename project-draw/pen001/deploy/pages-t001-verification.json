@@ -1,0 +1,42 @@
+{
+  "url": "https://tjkim-image01.github.io/pen001/",
+  "commit": "03be0d4f574e4115fe7b014a4c8257fb9c7bda13",
+  "workflow": 40244294830,
+  "conclusion": "success",
+  "checked_at": "2026-10-25T23:22:27.239021+00:00",
+  "files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "matches_build": true,
+      "sha256": "d463c17965b9b43be4b7233c20258adfbba9ae5afac0ae1223fe02d9931ebb07"
+    },
+    {
+      "file": "assets/index-B31Tpu47.js",
+      "status": 200,
+      "matches_build": true,
+      "sha256": "fd324c63e0441a2782907008446faa50baa89f2a599796e656ac2e7854d17bbf"
+    },
+    {
+      "file": "assets/index-BZpcCZPG.css",
+      "status": 200,
+      "matches_build": true,
+      "sha256": "4cfa33492edebba0af8cd747e8a20f369075ebf54611d24cad1a4907bb06ae78"
+    },
+    {
+      "file": "assets/yut.webp",
+      "status": 200,
+      "matches_build": true,
+      "sha256": "fc72b93648881a980d92b50e73158e69732b003526734119b9bde594a5f11265"
+    }
+  ],
+  "localized_video_opening_covers": {
+    "ko": 10,
+    "en": 10,
+    "ja": 10
+  },
+  "cover_aspect_ratio": "9:16",
+  "mobile_390_columns": 2,
+  "mobile_horizontal_overflow": false,
+  "video_duration_checked": 67.5
+}

@@ -1,0 +1,21 @@
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/fNNA6cMX7YI/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "一手を待つ時間개 선택" [ref=e54]:
+    - checkbox "一手を待つ時間개 선택" [ref=e56]
+  - cell:
+    - link [ref=e57]:
+      - image "동영상 미리보기 이미지: 一手を待つ時間"
+      - text: "1:08"
+    - link "一手を待つ時間" [ref=e58]
+    - text: "将棋を指す人なら、この集中が分かるかもしれません。 これは韓国のチャンギです。 文字のある駒を動かしますが、日本の将棋と同じではありません。 駒の種類ごとに動き方があり、次の一手を考えます。 二人の伏せた顔と、盤へ伸びる手を見てみましょう。 似た遊びを知っていれば、違いへの興味も生まれます。 文字を読めなくても、相手を待つ時間は伝わります。 絵に残るのは、勝敗よりも考える姿です。 この作品はウンチョの作と伝わります。 ティージェイキム・コレクションから、一手を待つ時間を見つめます。\n\n所蔵品: APKC260507306 · 伝・ウンチョ作の風俗画\nTJ KIM コレクション所蔵\n音楽: Flow Music「먹빛의 밤」（AI生成音楽）\n映像: 所蔵画像に基づく描画演出およびAIによる画像整理・編集"
+  - cell:
+    - generic "—" [ref=e59]
+  - cell:
+    - generic "비공개" [ref=e60]
+  - cell "2026. 10. 28." [ref=e61]: "2026. 10. 28.\n     업로드됨"
+  - cell "0" [ref=e62]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e63]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e64]: "0"
+[ok | 36ms]
+repl > 

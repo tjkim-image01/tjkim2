@@ -1,0 +1,30 @@
+{
+  "id": "ep10",
+  "title": "골목에 온 단맛",
+  "file": "episodes/ep10/output/ep10-short-60s.mp4",
+  "sha256": "70c679c7eb79d88139ce0eff482b159208101fac12fdf7a543578c736b100088",
+  "bytes": 29176310,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.7136171794871795,
+    "change": 12.696126666666666
+  },
+  "strokes": 208,
+  "asr_script_match": 0.9514563106796117,
+  "narration_end": 48.203,
+  "audio_rms_dbfs": -17.4404354095459,
+  "audio_peak_dbfs": -1.4494231958396886,
+  "music_rms_dbfs": -28.67598533630371,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

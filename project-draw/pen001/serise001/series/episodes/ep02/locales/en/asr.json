@@ -1,0 +1,686 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.6,
+    "text": " Four people. One small board. What brought them together?",
+    "words": [
+      {
+        "text": " Four",
+        "start": 0.0,
+        "end": 0.44
+      },
+      {
+        "text": " people.",
+        "start": 0.44,
+        "end": 0.9
+      },
+      {
+        "text": " One",
+        "start": 1.28,
+        "end": 1.7
+      },
+      {
+        "text": " small",
+        "start": 1.7,
+        "end": 2.2
+      },
+      {
+        "text": " board.",
+        "start": 2.2,
+        "end": 2.86
+      },
+      {
+        "text": " What",
+        "start": 3.3,
+        "end": 3.56
+      },
+      {
+        "text": " brought",
+        "start": 3.56,
+        "end": 3.9
+      },
+      {
+        "text": " them",
+        "start": 3.9,
+        "end": 4.2
+      },
+      {
+        "text": " together?",
+        "start": 4.2,
+        "end": 4.6
+      }
+    ]
+  },
+  {
+    "start": 5.18,
+    "end": 10.6,
+    "text": " This is Yudnori, a Korean game played with four wooden sticks instead of dice.",
+    "words": [
+      {
+        "text": " This",
+        "start": 5.18,
+        "end": 5.5
+      },
+      {
+        "text": " is",
+        "start": 5.5,
+        "end": 5.76
+      },
+      {
+        "text": " Yudnori,",
+        "start": 5.76,
+        "end": 6.4
+      },
+      {
+        "text": " a",
+        "start": 6.74,
+        "end": 6.84
+      },
+      {
+        "text": " Korean",
+        "start": 6.84,
+        "end": 7.2
+      },
+      {
+        "text": " game",
+        "start": 7.2,
+        "end": 7.68
+      },
+      {
+        "text": " played",
+        "start": 7.68,
+        "end": 8.04
+      },
+      {
+        "text": " with",
+        "start": 8.04,
+        "end": 8.34
+      },
+      {
+        "text": " four",
+        "start": 8.34,
+        "end": 8.72
+      },
+      {
+        "text": " wooden",
+        "start": 8.72,
+        "end": 9.04
+      },
+      {
+        "text": " sticks",
+        "start": 9.04,
+        "end": 9.56
+      },
+      {
+        "text": " instead",
+        "start": 9.56,
+        "end": 10.1
+      },
+      {
+        "text": " of",
+        "start": 10.1,
+        "end": 10.3
+      },
+      {
+        "text": " dice.",
+        "start": 10.3,
+        "end": 10.6
+      }
+    ]
+  },
+  {
+    "start": 11.1,
+    "end": 17.9,
+    "text": " Players move their pieces around a board, choosing routes, and trying to send every piece home.",
+    "words": [
+      {
+        "text": " Players",
+        "start": 11.1,
+        "end": 11.42
+      },
+      {
+        "text": " move",
+        "start": 11.42,
+        "end": 11.9
+      },
+      {
+        "text": " their",
+        "start": 11.9,
+        "end": 12.16
+      },
+      {
+        "text": " pieces",
+        "start": 12.16,
+        "end": 12.58
+      },
+      {
+        "text": " around",
+        "start": 12.58,
+        "end": 13.02
+      },
+      {
+        "text": " a",
+        "start": 13.02,
+        "end": 13.28
+      },
+      {
+        "text": " board,",
+        "start": 13.28,
+        "end": 13.6
+      },
+      {
+        "text": " choosing",
+        "start": 13.96,
+        "end": 14.36
+      },
+      {
+        "text": " routes,",
+        "start": 14.36,
+        "end": 14.9
+      },
+      {
+        "text": " and",
+        "start": 15.26,
+        "end": 15.4
+      },
+      {
+        "text": " trying",
+        "start": 15.4,
+        "end": 15.7
+      },
+      {
+        "text": " to",
+        "start": 15.7,
+        "end": 15.98
+      },
+      {
+        "text": " send",
+        "start": 15.98,
+        "end": 16.32
+      },
+      {
+        "text": " every",
+        "start": 16.32,
+        "end": 16.9
+      },
+      {
+        "text": " piece",
+        "start": 16.9,
+        "end": 17.32
+      },
+      {
+        "text": " home.",
+        "start": 17.32,
+        "end": 17.9
+      }
+    ]
+  },
+  {
+    "start": 18.7,
+    "end": 27.0,
+    "text": " A lucky throw helps, but a smart choice matters too. Traditionally played around the Lunar New Year,",
+    "words": [
+      {
+        "text": " A",
+        "start": 18.7,
+        "end": 18.94
+      },
+      {
+        "text": " lucky",
+        "start": 18.94,
+        "end": 19.26
+      },
+      {
+        "text": " throw",
+        "start": 19.26,
+        "end": 19.68
+      },
+      {
+        "text": " helps,",
+        "start": 19.68,
+        "end": 20.18
+      },
+      {
+        "text": " but",
+        "start": 20.6,
+        "end": 20.84
+      },
+      {
+        "text": " a",
+        "start": 20.84,
+        "end": 21.08
+      },
+      {
+        "text": " smart",
+        "start": 21.08,
+        "end": 21.48
+      },
+      {
+        "text": " choice",
+        "start": 21.48,
+        "end": 21.98
+      },
+      {
+        "text": " matters",
+        "start": 21.98,
+        "end": 22.5
+      },
+      {
+        "text": " too.",
+        "start": 22.5,
+        "end": 23.1
+      },
+      {
+        "text": " Traditionally",
+        "start": 23.7,
+        "end": 24.5
+      },
+      {
+        "text": " played",
+        "start": 24.5,
+        "end": 24.86
+      },
+      {
+        "text": " around",
+        "start": 24.86,
+        "end": 25.46
+      },
+      {
+        "text": " the",
+        "start": 25.46,
+        "end": 25.82
+      },
+      {
+        "text": " Lunar",
+        "start": 25.82,
+        "end": 26.28
+      },
+      {
+        "text": " New",
+        "start": 26.28,
+        "end": 26.56
+      },
+      {
+        "text": " Year,",
+        "start": 26.56,
+        "end": 27.0
+      }
+    ]
+  },
+  {
+    "start": 27.0,
+    "end": 30.26,
+    "text": " The game brings families and neighbors together.",
+    "words": [
+      {
+        "text": " The",
+        "start": 27.0,
+        "end": 27.6
+      },
+      {
+        "text": " game",
+        "start": 27.6,
+        "end": 27.94
+      },
+      {
+        "text": " brings",
+        "start": 27.94,
+        "end": 28.38
+      },
+      {
+        "text": " families",
+        "start": 28.38,
+        "end": 28.94
+      },
+      {
+        "text": " and",
+        "start": 28.94,
+        "end": 29.3
+      },
+      {
+        "text": " neighbors",
+        "start": 29.3,
+        "end": 29.66
+      },
+      {
+        "text": " together.",
+        "start": 29.66,
+        "end": 30.26
+      }
+    ]
+  },
+  {
+    "start": 30.74,
+    "end": 37.16,
+    "text": " Nineteenth-century visitors to Korea collected pictures of everyday life, work, clothing,",
+    "words": [
+      {
+        "text": " Nineteenth",
+        "start": 30.74,
+        "end": 31.32
+      },
+      {
+        "text": "-century",
+        "start": 31.32,
+        "end": 31.76
+      },
+      {
+        "text": " visitors",
+        "start": 31.76,
+        "end": 32.22
+      },
+      {
+        "text": " to",
+        "start": 32.22,
+        "end": 32.64
+      },
+      {
+        "text": " Korea",
+        "start": 32.64,
+        "end": 33.1
+      },
+      {
+        "text": " collected",
+        "start": 33.1,
+        "end": 33.82
+      },
+      {
+        "text": " pictures",
+        "start": 33.82,
+        "end": 34.4
+      },
+      {
+        "text": " of",
+        "start": 34.4,
+        "end": 34.74
+      },
+      {
+        "text": " everyday",
+        "start": 34.74,
+        "end": 35.1
+      },
+      {
+        "text": " life,",
+        "start": 35.1,
+        "end": 35.72
+      },
+      {
+        "text": " work,",
+        "start": 36.08,
+        "end": 36.42
+      },
+      {
+        "text": " clothing,",
+        "start": 36.78,
+        "end": 37.16
+      }
+    ]
+  },
+  {
+    "start": 37.7,
+    "end": 39.0,
+    "text": " and moments like this.",
+    "words": [
+      {
+        "text": " and",
+        "start": 37.7,
+        "end": 37.82
+      },
+      {
+        "text": " moments",
+        "start": 37.82,
+        "end": 38.24
+      },
+      {
+        "text": " like",
+        "start": 38.24,
+        "end": 38.58
+      },
+      {
+        "text": " this.",
+        "start": 38.58,
+        "end": 39.0
+      }
+    ]
+  },
+  {
+    "start": 39.46,
+    "end": 45.22,
+    "text": " Such a scene could introduce an unfamiliar country through something familiar, playing",
+    "words": [
+      {
+        "text": " Such",
+        "start": 39.46,
+        "end": 39.86
+      },
+      {
+        "text": " a",
+        "start": 39.86,
+        "end": 40.04
+      },
+      {
+        "text": " scene",
+        "start": 40.04,
+        "end": 40.38
+      },
+      {
+        "text": " could",
+        "start": 40.38,
+        "end": 40.74
+      },
+      {
+        "text": " introduce",
+        "start": 40.74,
+        "end": 41.42
+      },
+      {
+        "text": " an",
+        "start": 41.42,
+        "end": 41.72
+      },
+      {
+        "text": " unfamiliar",
+        "start": 41.72,
+        "end": 42.22
+      },
+      {
+        "text": " country",
+        "start": 42.22,
+        "end": 43.02
+      },
+      {
+        "text": " through",
+        "start": 43.02,
+        "end": 43.42
+      },
+      {
+        "text": " something",
+        "start": 43.42,
+        "end": 43.9
+      },
+      {
+        "text": " familiar,",
+        "start": 43.9,
+        "end": 44.62
+      },
+      {
+        "text": " playing",
+        "start": 44.94,
+        "end": 45.22
+      }
+    ]
+  },
+  {
+    "start": 45.22,
+    "end": 45.78,
+    "text": " together.",
+    "words": [
+      {
+        "text": " together.",
+        "start": 45.22,
+        "end": 45.78
+      }
+    ]
+  },
+  {
+    "start": 46.24,
+    "end": 48.58,
+    "text": " This work is attributed to Oncho.",
+    "words": [
+      {
+        "text": " This",
+        "start": 46.24,
+        "end": 46.42
+      },
+      {
+        "text": " work",
+        "start": 46.42,
+        "end": 46.78
+      },
+      {
+        "text": " is",
+        "start": 46.78,
+        "end": 47.06
+      },
+      {
+        "text": " attributed",
+        "start": 47.06,
+        "end": 47.6
+      },
+      {
+        "text": " to",
+        "start": 47.6,
+        "end": 48.0
+      },
+      {
+        "text": " Oncho.",
+        "start": 48.0,
+        "end": 48.58
+      }
+    ]
+  },
+  {
+    "start": 49.04,
+    "end": 51.92,
+    "text": " Watch the hands and the circle of players.",
+    "words": [
+      {
+        "text": " Watch",
+        "start": 49.04,
+        "end": 49.36
+      },
+      {
+        "text": " the",
+        "start": 49.36,
+        "end": 49.62
+      },
+      {
+        "text": " hands",
+        "start": 49.62,
+        "end": 50.1
+      },
+      {
+        "text": " and",
+        "start": 50.1,
+        "end": 50.56
+      },
+      {
+        "text": " the",
+        "start": 50.56,
+        "end": 50.78
+      },
+      {
+        "text": " circle",
+        "start": 50.78,
+        "end": 51.14
+      },
+      {
+        "text": " of",
+        "start": 51.14,
+        "end": 51.48
+      },
+      {
+        "text": " players.",
+        "start": 51.48,
+        "end": 51.92
+      }
+    ]
+  },
+  {
+    "start": 51.92,
+    "end": 58.08,
+    "text": " From the TJ Kim collection, a small game opens a window onto Korean life.",
+    "words": [
+      {
+        "text": " From",
+        "start": 51.92,
+        "end": 52.54
+      },
+      {
+        "text": " the",
+        "start": 52.54,
+        "end": 52.76
+      },
+      {
+        "text": " TJ",
+        "start": 52.76,
+        "end": 53.2
+      },
+      {
+        "text": " Kim",
+        "start": 53.2,
+        "end": 53.64
+      },
+      {
+        "text": " collection,",
+        "start": 53.64,
+        "end": 54.2
+      },
+      {
+        "text": " a",
+        "start": 54.72,
+        "end": 54.86
+      },
+      {
+        "text": " small",
+        "start": 54.86,
+        "end": 55.16
+      },
+      {
+        "text": " game",
+        "start": 55.16,
+        "end": 55.72
+      },
+      {
+        "text": " opens",
+        "start": 55.72,
+        "end": 56.14
+      },
+      {
+        "text": " a",
+        "start": 56.14,
+        "end": 56.36
+      },
+      {
+        "text": " window",
+        "start": 56.36,
+        "end": 56.7
+      },
+      {
+        "text": " onto",
+        "start": 56.7,
+        "end": 57.14
+      },
+      {
+        "text": " Korean",
+        "start": 57.14,
+        "end": 57.68
+      },
+      {
+        "text": " life.",
+        "start": 57.68,
+        "end": 58.08
+      }
+    ]
+  }
+]

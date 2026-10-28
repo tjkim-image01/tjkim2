@@ -1,0 +1,167 @@
+{
+  "offset": 81,
+  "jobs": [
+    {
+      "episode": "ep03",
+      "language": "ko",
+      "paragraph": 81,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep04",
+      "language": "ko",
+      "paragraph": 82,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep05",
+      "language": "ko",
+      "paragraph": 83,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep06",
+      "language": "ko",
+      "paragraph": 84,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep07",
+      "language": "ko",
+      "paragraph": 85,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep08",
+      "language": "ko",
+      "paragraph": 86,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep09",
+      "language": "ko",
+      "paragraph": 87,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep10",
+      "language": "ko",
+      "paragraph": 88,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep11",
+      "language": "ko",
+      "paragraph": 89,
+      "actor": "한준"
+    },
+    {
+      "episode": "ep03",
+      "language": "en",
+      "paragraph": 90,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep04",
+      "language": "en",
+      "paragraph": 91,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep05",
+      "language": "en",
+      "paragraph": 92,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep06",
+      "language": "en",
+      "paragraph": 93,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep07",
+      "language": "en",
+      "paragraph": 94,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep08",
+      "language": "en",
+      "paragraph": 95,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep09",
+      "language": "en",
+      "paragraph": 96,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep10",
+      "language": "en",
+      "paragraph": 97,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep11",
+      "language": "en",
+      "paragraph": 98,
+      "actor": "아레스"
+    },
+    {
+      "episode": "ep03",
+      "language": "ja",
+      "paragraph": 99,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep04",
+      "language": "ja",
+      "paragraph": 100,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep05",
+      "language": "ja",
+      "paragraph": 101,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep06",
+      "language": "ja",
+      "paragraph": 102,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep07",
+      "language": "ja",
+      "paragraph": 103,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep08",
+      "language": "ja",
+      "paragraph": 104,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep09",
+      "language": "ja",
+      "paragraph": 105,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep10",
+      "language": "ja",
+      "paragraph": 106,
+      "actor": "이노우에 다이치"
+    },
+    {
+      "episode": "ep11",
+      "language": "ja",
+      "paragraph": 107,
+      "actor": "이노우에 다이치"
+    }
+  ]
+}

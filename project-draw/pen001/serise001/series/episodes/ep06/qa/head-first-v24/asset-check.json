@@ -1,0 +1,37 @@
+{
+  "episode": "ep06",
+  "strokes": 867,
+  "single_RGB_assets_checked": 867,
+  "visible_asset_pixels": 14420286,
+  "people": [
+    {
+      "person": "left_woman",
+      "head": [
+        0.8,
+        4.9984460417283065
+      ],
+      "body": [
+        5.13,
+        11.199012751185801
+      ],
+      "end": 15.398818240407266
+    },
+    {
+      "person": "right_woman",
+      "head": [
+        15.530000000000001,
+        19.598542706036294
+      ],
+      "body": [
+        19.73,
+        25.79952908512497
+      ],
+      "end": 29.998753189934863
+    }
+  ],
+  "minimum_reload_seconds": 0.13024491196104293,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "f320e4ce87b39515784913d39c9054d4f4d5a28e5b3b69c2817a82fdfa5b3129"
+}

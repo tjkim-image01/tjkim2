@@ -1,0 +1,21 @@
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/-tCfraT_LoE/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e481]:
+    - checkbox "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e483]
+  - cell:
+    - link [ref=e484]:
+      - image "동영상 미리보기 이미지: A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory"
+      - text: "1:08"
+    - link "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory" [ref=e485]
+    - text: "Rain changes a street, but it does not stop the day.\nSome people shelter under a roof while others keep moving. Look at the broad hats and the covers over a carried load: clothing and everyday tools become ways to deal with the weather.\n\nBeyond the unfamiliar shapes are people working, resting and getting somewhere. This genre painting brings a rainy Korean street a little closer.\n\nCollection item: APKC260507306 · genre painting attributed to Uncho\nFrom the TJ Kim Collection\nMusic: Flow Music, \""
+  - cell:
+    - generic "—" [ref=e486]
+  - cell:
+    - generic "비공개" [ref=e487]
+  - cell "2026. 10. 26." [ref=e488]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e489]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e490]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e491]: "0"
+[ok | 24ms]
+repl > 

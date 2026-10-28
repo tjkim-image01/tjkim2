@@ -1,0 +1,26 @@
+{
+  "ko": {
+    "last_thumbnail_frame_mae": 2.676898148148148,
+    "first_body_frame_mae": 0.0,
+    "body_frame_mae": 0.09482253086419754,
+    "audio_correlation_at_1p5s_delay": 0.9998427106866271,
+    "thumbnail_audio_peak": 0.0,
+    "decode_errors": ""
+  },
+  "en": {
+    "last_thumbnail_frame_mae": 2.724292695473251,
+    "first_body_frame_mae": 0.0,
+    "body_frame_mae": 0.11214248971193416,
+    "audio_correlation_at_1p5s_delay": 0.9999423278816485,
+    "thumbnail_audio_peak": 4.2774985331561766e-07,
+    "decode_errors": ""
+  },
+  "ja": {
+    "last_thumbnail_frame_mae": 2.653557098765432,
+    "first_body_frame_mae": 0.0,
+    "body_frame_mae": 0.11703189300411522,
+    "audio_correlation_at_1p5s_delay": 0.9996453810352579,
+    "thumbnail_audio_peak": 5.91144328154769e-07,
+    "decode_errors": ""
+  }
+}

@@ -5,8 +5,9 @@ import { Icon } from '../components/Icon'
 import { ITEM_TYPES, TYPE_LABEL, type ItemType } from '../data/fields'
 import { formatMoney } from '../data/parse'
 import { EMPTY_FILTERS, searchItems, type Filters } from '../data/store'
-import { thumbnailUrl } from '../lib/api'
+import DriveImage from '../components/DriveImage'
 import { rememberListSearch } from '../lib/nav'
+import { driveId, itemImages } from '../lib/images'
 
 const PAGE_SIZE = 50
 
@@ -48,7 +49,7 @@ function paramsFromFilters(f: Filters, page: number, excluded: string[]): URLSea
 }
 
 export default function ListPage() {
-  const { dataset, loading, error } = useApp()
+  const { dataset, loading, error, imageIndex } = useApp()
   const [params, setParams] = useSearchParams()
   const filters = useMemo(() => filtersFromParams(params), [params])
   const page = Math.max(0, Number(params.get('page') ?? '0'))
@@ -257,12 +258,12 @@ export default function ListPage() {
               </thead>
               <tbody>
                 {rows.map((it) => {
-                  const thumb = it.cells['대표이미지']
+                  const thumb = driveId(it.cells['대표이미지']) || itemImages(imageIndex, it.code)[0]?.id
                   return (
                     <tr key={it.code}>
                       <td className="col-thumb">
                         <Link to={`/item/${encodeURIComponent(it.code)}`} tabIndex={-1}>
-                          {thumb ? <img src={thumbnailUrl(thumb, 160)} alt="" loading="lazy" /> : <span className="thumb-empty" />}
+                          {thumb ? <DriveImage fileId={thumb} width={160} alt="" loading="lazy" /> : <span className="thumb-empty" />}
                         </Link>
                       </td>
                       <td className="mono">

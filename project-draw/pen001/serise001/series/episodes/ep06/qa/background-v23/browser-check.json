@@ -1,0 +1,87 @@
+{
+  "background_strokes": 148,
+  "colors": [
+    {
+      "after": [
+        209,
+        185,
+        162,
+        11
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pigment": "window_paper",
+      "reloaded": true
+    },
+    {
+      "after": [
+        238,
+        208,
+        118,
+        108
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pigment": "wall_yellow",
+      "reloaded": true
+    },
+    {
+      "after": [
+        218,
+        150,
+        41,
+        207
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pigment": "floor_ochre",
+      "reloaded": true
+    },
+    {
+      "after": [
+        222,
+        159,
+        58,
+        185
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pigment": "wood_gold",
+      "reloaded": true
+    },
+    {
+      "after": [
+        164,
+        108,
+        48,
+        163
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pigment": "wood_brown",
+      "reloaded": true
+    }
+  ],
+  "rewind_exact": true,
+  "version": 23
+}

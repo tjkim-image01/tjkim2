@@ -1,0 +1,18 @@
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "말 한 수에 담긴 하루개 선택" [ref=e59]:
+    - checkbox "그림 속에서는 어떤 소리가 날까? | 손끝에서 흐르는 노래 #풍속화개 선택" [ref=e61]
+  - cell:
+    - link [ref=e62]:
+      - image "동영상 미리보기 이미지: 말 한 수에 담긴 하루"
+      - text: "1:08"
+    - link "말 한 수에 담긴 하루" [ref=e63]
+    - text: "두 사람이 판을 사이에 두고 마주 앉았습니다. 동그란 돌을 놓는 바둑과 달리, 글자가 있는 말을 움직이는 장기입니다.\n\n말마다 움직이는 방법이 다르고, 상대의 다음 수를 읽어야 합니다. 차와 포, 마와 상이 오가는 작은 판에는 전쟁의 진형이 놀이의 규칙으로 들어와 있지요.\n\n소장품: APKC260507306 · 운초 전칭 풍속화\nTJ KIM 컬렉션 소장품\n음악: Flow Music 「먹빛의 밤」 (AI 생성 음악)\n영상: 소장 이미지를 바탕으로 구성한 드로잉 연출 및 AI 정리 편집본"
+  - cell:
+    - generic "—" [ref=e64]
+  - cell:
+    - generic "비공개" [ref=e65]
+  - cell "2026. 10. 28." [ref=e66]: "2026. 10. 28.\n     업로드됨"
+  - cell "0" [ref=e67]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e68]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e69]: "0"

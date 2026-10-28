@@ -1,0 +1,30 @@
+{
+  "id": "ep06",
+  "title": "손끝에서 흐르는 노래",
+  "file": "episodes/ep06/output/ep06-short-60s.mp4",
+  "sha256": "65de8530a602d49ab525553e4e191e37493ce43f09ae01b39ee1e2dfd7e150d4",
+  "bytes": 27777687,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.7290876923076923,
+    "change": 12.048428717948719
+  },
+  "strokes": 230,
+  "asr_script_match": 0.9727126805778491,
+  "narration_end": 48.195438,
+  "audio_rms_dbfs": -17.562549591064453,
+  "audio_peak_dbfs": -1.191829525961255,
+  "music_rms_dbfs": -28.743059158325195,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

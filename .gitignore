@@ -10,7 +10,6 @@ run/
 .DS_Store
 .playwright-mcp/
 project/scripts/*.xlsx
-project-obj/tj001/mcp.md
 
 # GitHub 100MB limit exceeding raw master videos (kept locally; split .part* files are tracked)
 **/01_tj001_longform_v02.mp4
@@ -20,3 +19,12 @@ project-obj/tj001/mcp.md
 **/01_tj002_longform_v01.mp4
 **/02_tj002_longform2_v01.mp4
 **/01_tj003_longform_v01.mp4
+
+# Project objects
+project-obj/tj001/
+project-obj/tj002/
+project-obj/tj003/
+
+# Temporary review files and compiler caches
+/tmp/
+*.tsbuildinfo

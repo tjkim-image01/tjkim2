@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "purpose": "single-plate extraction and border cleanup",
+  "source_album": "APKC260507306",
+  "prompt": "Edit target: archival Korean genre-painting album photograph. Select ONLY the RIGHT painting: a woman in a red upper garment crouches at a stream, beating a long white cloth on a flat washing stone with a wooden laundry paddle; two more women wash in the grassy background. The LEFT candy-seller scene must be completely omitted. Extract and straighten the right-hand painting to a landscape 3:2 canvas. Remove the black album, binding and outer photo frame, external text annotations and red seals. Preserve all three original women, their gestures, the washing stone, white cloth, basin, blue water, green grass and tree, matching the exact historical clothing and colors. Do not add people, modernize or change the scene into a new cartoon. The whole selected scene must remain complete and uncropped. Unpainted paper is warm ivory #f8f5ea. One complete painting, no border, captions, collage, lettering or watermark. Archival cleanup for a drawing-video ending.",
+  "output": "art/original-clean.png",
+  "note": "AI-assisted cleanup edition; source album photograph is preserved separately."
+}
+

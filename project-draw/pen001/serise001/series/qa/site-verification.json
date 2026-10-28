@@ -1,0 +1,10 @@
+{
+  "tenCards": 10,
+  "filters": true,
+  "search": true,
+  "empty": true,
+  "themeToggle": true,
+  "viewport": false,
+  "secondVideo": "옷을 두드리던 시간",
+  "studio": true
+}

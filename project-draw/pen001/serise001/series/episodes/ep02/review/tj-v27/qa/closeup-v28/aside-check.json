@@ -1,0 +1,19 @@
+{
+  "centerline_inflections": 0,
+  "contact_samples": 76,
+  "brush_contact_in_frame": true,
+  "early_camera": {
+    "zoom": 2.1,
+    "x": -91.4461545886262,
+    "y": 260.74217941653103,
+    "mode": "closeup"
+  },
+  "final_camera": {
+    "zoom": 1,
+    "x": 0,
+    "y": 0,
+    "mode": "full"
+  },
+  "rewind_exact": true,
+  "final_pixel_difference": 0
+}

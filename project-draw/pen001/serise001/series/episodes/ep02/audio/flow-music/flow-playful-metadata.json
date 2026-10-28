@@ -1,0 +1,49 @@
+{
+  "id": "eaf8b26f-70af-4b05-b469-3721296072a3",
+  "author_id": "81cc767c-e719-45b2-9df1-6bc07a2addcd",
+  "op_id": "28d3636b-07f3-5a74-9e95-4696dbd7e81d",
+  "op_type": "audio__create_song",
+  "duration": {
+    "status": "completed",
+    "value": "180.32"
+  },
+  "lyrics": {
+    "status": "completed",
+    "value": {
+      "id": "55161754-f78d-5b7f-9fa2-6a3cc8d6ba93",
+      "text": "[Instrumental]"
+    }
+  },
+  "lyrics_timing": {
+    "status": "not_requested"
+  },
+  "user_edited_lyrics_id": null,
+  "title": "윷판의 웃음",
+  "privacy": "unlisted",
+  "allow_public_use": true,
+  "has_vocals": null,
+  "has_cid_match": null,
+  "has_minor_vocals": null,
+  "image_id": "28d3636b-07f3-5a74-9e95-4696dbd7e81d",
+  "video_id": null,
+  "song_plan_id": null,
+  "created_at": "2026-10-25T10:12:49.232868Z",
+  "deleted_at": null,
+  "operation": {
+    "op_type": "audio__create_song",
+    "conversation_id": null,
+    "sound_prompt": "Playful bright and nimble Korean folk groove, acoustic traditional Korean instruments, janggu and buk drums, gayageum answers, light piri flourishes, charming traditional village game energy, steady continuous rhythm, no silence at start, 98 bpm",
+    "title": "윷판의 웃음",
+    "seed": null,
+    "lyrics_id": null
+  },
+  "is_favorite": false,
+  "preference_state": null,
+  "favorite_count": 0,
+  "play_count": 0,
+  "is_remix_eligible": true,
+  "audio_url": "https://storage.googleapis.com/producer-app-public/clips/eaf8b26f-70af-4b05-b469-3721296072a3.m4a",
+  "wav_url": "https://storage.googleapis.com/producer-app-public/clips/eaf8b26f-70af-4b05-b469-3721296072a3.wav",
+  "image_url": "https://storage.googleapis.com/producer-app-public/assets/28d3636b-07f3-5a74-9e95-4696dbd7e81d.jpg",
+  "video_url": null
+}

@@ -1,0 +1,21 @@
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/Ah2zctI5pUY/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e86]:
+    - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e88]
+  - cell:
+    - link [ref=e89]:
+      - image "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化"
+      - text: "1:08"
+    - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e90]
+    - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「종이 위의 바람」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#タドゥミジル #韓国文化 #朝鮮時代 #風俗画 #TJキムコレクション"
+  - cell:
+    - generic "—" [ref=e91]
+  - cell:
+    - generic "비공개" [ref=e92]
+  - cell "2026. 10. 26." [ref=e93]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e94]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e95]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e96]: "0"
+[ok | 32ms]
+repl > 

@@ -1,0 +1,8 @@
+{
+  "episode": "ep02",
+  "language": "ja",
+  "prompt": "Edit this approved portrait cover by moving the entire headline and red subtitle LOWER for cropped YouTube thumbnails. Preserve all four people, all their poses, clothing, the game, hanji texture and colors. Keep rich bold display lettering. On a1080x1920 canvas leave the top250px completely free of text. Start the black headline at y270 or lower, keep its entire wording within x95..985 and y270..780, and the red subtitle directly beneath. Scale type modestly as needed. Exact headline lines \"朝鮮時代の\" / \"ボード\" / \"ゲーム\". Exact red subtitle \"ユンノリ\". Keep episode\"01\" and \"TJ KIM COLLECTION\" small at bottom. Do not add boxes, crop guides or new artwork. Portrait9:16. All main faces unobscured.",
+  "generated_file": "/Users/jatu/.codex/generated_images/01a170ca-7a5a-7622-a6a0-4da41a5bf71f/exec-ba010983-4e7d-435f-a831-201dcc9c5355.png",
+  "tool": "built-in image_gen",
+  "safe_title_top": 250
+}

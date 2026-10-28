@@ -1,0 +1,24 @@
+{
+  "url": "http://192.168.42.192:5184/series/site/?lang=ko",
+  "scope": "same Wi-Fi",
+  "checks": [
+    {
+      "path": "/series/site/?lang=ja",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": "5875"
+    },
+    {
+      "path": "/series/site/watch.html?ep=ep03&lang=en",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": "3782"
+    },
+    {
+      "path": "/series/episodes/ep03/output/ep03-short-ko-v17.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "17141577"
+    }
+  ]
+}

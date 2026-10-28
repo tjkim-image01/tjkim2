@@ -1,0 +1,10 @@
+{
+  "performance": {
+    "median_ms": 0.5,
+    "p95_ms": 2.5999999940395355,
+    "rewind_exact": true
+  },
+  "vector": {
+    "errors": []
+  }
+}

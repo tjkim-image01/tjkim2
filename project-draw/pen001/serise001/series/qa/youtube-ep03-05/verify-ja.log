@@ -1,0 +1,2127 @@
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-26_ppXsX3ivs7CxkVC7
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{const tabs=await listBrowserTabs(); const t=tabs.find(t=>t.url.startsWith('https://studio.youtube.com/')); if(!t)throw Error('No Studio tab'); await attachBrowserTab(t.targetId);})()
+[ok | 96ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 대시보드 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w]
+- text: "모든 변경사항이 저장되었습니다."
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 대시보드" [level=1]
+  - link "동영상 업로드" [ref=e22]:
+    - button "동영상 업로드" [ref=e23]
+  - link "라이브 스트리밍 시작" [ref=e24]:
+    - button "라이브 스트리밍 시작" [ref=e25]
+  - heading "최신 Shorts 동영상 실적" [level=2]
+  - text: "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 \n            106\n           \n            0\n           \n            0"
+  - button "접기" [ref=e26]
+  - group:
+    - text: "처음 9시간 16분"
+    - button "조회수 106" [ref=e27]
+    - button "평균 조회율 40.5%" [ref=e28]
+    - button "좋아요 0" [ref=e29]
+  - button "이 동영상에 관한 최신 정보 파악" [ref=e30]
+  - link [ref=e31]:
+    - button "동영상 분석으로 이동" [ref=e32]
+  - link [ref=e33]:
+    - button "댓글 보기(0)" [ref=e34]
+  - heading "채널 분석" [level=2]
+  - text: "현재 구독자 수 0 요약 지난 28일 조회수 \n              0\n            —시청 시간(단위: 시간)\n              0.0\n            —인기 콘텐츠 지난 48시간 · 조회수"
+  - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e35]
+  - link "106" [ref=e36]
+  - link [ref=e37]:
+    - button "채널 분석으로 이동" [ref=e38]
+  - link "이용약관" [ref=e39]
+  - link "개인정보처리방침" [ref=e40]
+  - link "정책 및 안전" [ref=e41]
+[ok | 62ms]
+repl > 
+await (async()=>{const links=page.getByRole('link',{name:'채널 콘텐츠',exact:true}); if(await links.count())await links.click(); else if(!page.url().includes('/content')&&!page.url().includes('/videos/short'))await page.getByRole('menuitem',{name:'콘텐츠',exact:true}).click();})()
+[ok | 2127ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 33ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1038ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e42]:
+    - tab "동영상" [ref=e43] [selected]
+    - tab "Shorts" [ref=e44]
+    - tab "라이브" [ref=e45]
+    - tab "재생목록" [ref=e46]
+    - tab "팟캐스트" [ref=e47]
+    - tab "프로모션" [ref=e48]
+    - tab "컬래버레이션" [ref=e49]
+    - tab "아이디어" [ref=e50]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e52] [placeholder="필터"]
+      - row "전체 선택 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e53]:
+          - checkbox "전체 선택" [ref=e55]
+        - columnheader "동영상" [ref=e56]
+        - columnheader "알림" [ref=e57]
+        - columnheader "공개 상태" [ref=e58]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e59]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e60]: "조회수"
+        - columnheader "댓글" [ref=e61]
+    - text: "콘텐츠가 없습니다."
+    - button "동영상 업로드" [ref=e62]
+[ok | 93ms]
+repl > 
+await (async()=>{if(!page.url().includes('/videos/short')){const b=page.getByRole('button',{name:'Shorts',exact:true}); if(await b.count())await b.click();else await page.getByRole('tab',{name:'Shorts',exact:true}).click();}})()
+[ok | 2452ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e42]:
+    - tab "동영상" [ref=e43]
+    - tab "Shorts" [ref=e44] [focused] [selected]
+    - tab "라이브" [ref=e45]
+    - tab "재생목록" [ref=e46]
+    - tab "팟캐스트" [ref=e47]
+    - tab "프로모션" [ref=e48]
+    - tab "컬래버레이션" [ref=e49]
+    - tab "아이디어" [ref=e50]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e52] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e53]:
+          - checkbox "전체 선택" [ref=e55]
+        - columnheader "Shorts 동영상" [ref=e63]
+        - columnheader "알림" [ref=e57]
+        - columnheader "공개 상태" [ref=e58]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e59]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e60]: "조회수"
+        - columnheader "댓글" [ref=e61]
+    - row:
+      - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e64]:
+        - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e66]
+      - cell:
+        - link "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化 1:08" [ref=e67]
+        - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e68]
+        - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウン…[+111 chars]"
+      - cell:
+        - generic "—" [ref=e69]
+      - cell:
+        - generic "비공개" [ref=e70]
+      - cell "2026. 10. 26." [ref=e71]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e72]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e73]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e74]: "0"
+    - row:
+      - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e75]:
+        - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e77]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史 1:08" [ref=e78]
+        - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e79]
+        - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC2…[+123 chars]"
+      - cell:
+        - generic "—" [ref=e80]
+      - cell:
+        - generic "비공개" [ref=e81]
+      - cell "2026. 10. 26." [ref=e82]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e83]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e84]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e85]: "0"
+    - row:
+      - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e86]:
+        - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e88]
+      - cell:
+        - link "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化 1:08" [ref=e89]
+        - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e90]
+        - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう…[+141 chars]"
+      - cell:
+        - generic "—" [ref=e91]
+      - cell:
+        - generic "비공개" [ref=e92]
+      - cell "2026. 10. 26." [ref=e93]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e94]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e95]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e96]: "0"
+    - row:
+      - cell "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e97]:
+        - checkbox "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e99]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 1:08" [ref=e100]
+        - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e101]
+        - text: "朝鮮時代の人々は、休みの日に何をして遊んでいたのでしょうか。\n低い盤を四人が囲んでいます。今日の主役は「ユンノリ」です。\n\nさいころの代わりに四本の木の棒を投げ、駒を進めます。近道を選んだり、仲間の駒を一緒に進めたり。運だけでなく、相談する楽しさもあるゲームです。旧正月のころ、家族や近所の人が集まって親しまれてきました…[+172 chars]"
+      - cell:
+        - generic "—" [ref=e102]
+      - cell:
+        - generic "공개" [ref=e103]
+      - cell "2026. 10. 25." [ref=e104]: "2026. 10. 25.\n     게시일"
+      - cell "104" [ref=e105]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e106]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e107]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e108]:
+      - button "30" [ref=e109]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e110] [disabled]
+    - button "이전 페이지로 이동" [ref=e111] [disabled]
+    - button "다음 페이지로 이동" [ref=e112] [disabled]
+    - button "마지막 페이지로 이동" [ref=e113] [disabled]
+[ok | 128ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/Ah2zctI5pUY/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e86]:
+    - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e88]
+  - cell:
+    - link [ref=e89]:
+      - image "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化"
+      - text: "1:08"
+    - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e90]
+    - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「종이 위의 바람」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#タドゥミジル #韓国文化 #朝鮮時代 #風俗画 #TJキムコレクション"
+  - cell:
+    - generic "—" [ref=e91]
+  - cell:
+    - generic "비공개" [ref=e92]
+  - cell "2026. 10. 26." [ref=e93]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e94]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e95]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e96]: "0"
+[ok | 32ms]
+repl > 
+await (async()=>{await page.locator("a[href=\"/video/Ah2zctI5pUY/edit\"]").first().click();})()
+[ok | 1556ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Ah2zctI5pUY/edit]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e42]:
+    - tab "동영상" [ref=e43]
+    - tab "Shorts" [ref=e44] [focused] [selected]
+    - tab "라이브" [ref=e45]
+    - tab "재생목록" [ref=e46]
+    - tab "팟캐스트" [ref=e47]
+    - tab "프로모션" [ref=e48]
+    - tab "컬래버레이션" [ref=e49]
+    - tab "아이디어" [ref=e50]
+[ok | 45ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1048ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Ah2zctI5pUY/edit]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e42]:
+    - tab "동영상" [ref=e43]
+    - tab "Shorts" [ref=e44] [focused] [selected]
+    - tab "라이브" [ref=e45]
+    - tab "재생목록" [ref=e46]
+    - tab "팟캐스트" [ref=e47]
+    - tab "프로모션" [ref=e48]
+    - tab "컬래버레이션" [ref=e49]
+    - tab "아이디어" [ref=e50]
+[ok | 52ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1020ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Ah2zctI5pUY/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]
+[ok | 35ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1034ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Ah2zctI5pUY/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e115]
+  - text: "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n       …[+290 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e117] [disabled]
+  - button "저장" [ref=e118] [disabled]
+  - button "옵션" [ref=e119]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e121]: "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化"
+  - text: "설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e123]: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「종이 위의 바람」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#タドゥミジル #韓国文化 #朝鮮時代 #風俗画 #TJキムコレクション"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e124]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e125]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e127]
+  - button "추천받기" [ref=e128]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e129]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e130]:
+    - button "선택" [ref=e131]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e132]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e133]: "자세히 알아보기"
+  - radiogroup [ref=e134]:
+    - radio [ref=e135]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e136]
+    - radio "아니요, 아동용이 아닙니다" [ref=e137] [checked]
+  - button "연령 제한" [ref=e138]
+  - button "고급 설정 표시" [ref=e139]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e140]:
+    - button "재생" [ref=e142]
+    - button "음소거" [ref=e143]
+    - slider "볼륨" [ref=e144]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e145]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/Ah2zctI5pUY" [ref=e146]
+  - button "동영상 링크 복사" [ref=e147]
+  - text: "파일 이름 ep03-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e148]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e149]
+  - generic [ref=e150]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e151]
+  - button [ref=e152]:
+    - button "관련 동영상 없음" [ref=e153]
+  - button [ref=e155]:
+    - button [ref=e156]:
+      - button "자막" [ref=e157]
+[ok | 86ms]
+repl > 
+await (async()=>{await page.getByRole('button',{name:'고급 설정 표시',exact:true}).click();})()
+[ok | 1460ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Ah2zctI5pUY/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e115]
+  - text: "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n       …[+290 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e117] [disabled]
+  - button "저장" [ref=e118] [disabled]
+  - button "옵션" [ref=e119]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e124]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e125]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e127]
+  - button "추천받기" [ref=e128]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e129]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e130]:
+    - button "선택" [ref=e131]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e132]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e133]: "자세히 알아보기"
+  - radiogroup [ref=e134]:
+    - radio [ref=e135]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e136]
+    - radio "아니요, 아동용이 아닙니다" [ref=e137] [checked]
+  - button "연령 제한" [ref=e138]
+  - button "고급 설정 숨기기" [ref=e158] [focused]: "간략히 보기"
+  - text: "유료 프로모션\n \n    동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e159]
+  - radiogroup [ref=e160]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e161]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e162]
+  - text: "브랜드 파트너십 \n      브랜드 파트너와 동영상 및 동영상 측정항목에 대한 액세스 권한을 공유하고 동영상 홍보를 허용하세요."
+  - link "자세히 알아보기" [ref=e163]
+  - button "액세스 코드 공유" [ref=e164]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e165]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e166]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e167]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e168]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e169]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e170]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e171]: "자세히 알아보기"
+  - generic [ref=e172]:
+    - checkbox "자동 챕터 허용" [ref=e173] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e174]: "자세히 알아보기"
+  - generic [ref=e175]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e176] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e177]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e178] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e179]: "자세히 알아보기"
+  - button "タドゥミジル. 수정하려면 Enter 키를 누르세요." [ref=e180]:
+    - text: "タドゥミジル"
+    - button "삭제" [ref=e181]
+  - button "タドゥミ. 수정하려면 Enter 키를 누르세요." [ref=e182]:
+    - text: "タドゥミ"
+    - button "삭제" [ref=e183]
+  - button "다듬이질. 수정하려면 Enter 키를 누르세요." [ref=e184]:
+    - text: "다듬이질"
+    - button "삭제" [ref=e185]
+  - button "砧. 수정하려면 Enter 키를 누르세요." [ref=e186]:
+    - text: "砧"
+    - button "삭제" [ref=e187]
+  - button "きぬた. 수정하려면 Enter 키를 누르세요." [ref=e188]:
+    - text: "きぬた"
+    - button "삭제" [ref=e189]
+  - button "布打ち. 수정하려면 Enter 키를 누르세요." [ref=e190]:
+    - text: "布打ち"
+    - button "삭제" [ref=e191]
+  - button "韓国の手仕事. 수정하려면 Enter 키를 누르세요." [ref=e192]:
+    - text: "韓国の手仕事"
+    - button "삭제" [ref=e193]
+  - button "衣生活. 수정하려면 Enter 키를 누르세요." [ref=e194]:
+    - text: "衣生活"
+    - button "삭제" [ref=e195]
+  - button "洗濯の歴史. 수정하려면 Enter 키를 누르세요." [ref=e196]:
+    - text: "洗濯の歴史"
+    - button "삭제" [ref=e197]
+  - button "アイロンの歴史. 수정하려면 Enter 키를 누르세요." [ref=e198]:
+    - text: "アイロンの歴史"
+    - button "삭제" [ref=e199]
+  - button "韓服. 수정하려면 Enter 키를 누르세요." [ref=e200]:
+    - text: "韓服"
+    - button "삭제" [ref=e201]
+  - button "朝鮮時代. 수정하려면 Enter 키를 누르세요." [ref=e202]:
+    - text: "朝鮮時代"
+    - button "삭제" [ref=e203]
+  - button "朝鮮王朝. 수정하려면 Enter 키를 누르세요." [ref=e204]:
+    - text: "朝鮮王朝"
+    - button "삭제" [ref=e205]
+  - button "韓国史. 수정하려면 Enter 키를 누르세요." [ref=e206]:
+    - text: "韓国史"
+    - button "삭제" [ref=e207]
+  - button "韓国文化. 수정하려면 Enter 키를 누르세요." [ref=e208]:
+    - text: "韓国文化"
+    - button "삭제" [ref=e209]
+  - button "風俗画. 수정하려면 Enter 키를 누르세요." [ref=e210]:
+    - text: "風俗画"
+    - button "삭제" [ref=e211]
+  - button "韓国美術. 수정하려면 Enter 키를 누르세요." [ref=e212]:
+    - text: "韓国美術"
+    - button "삭제" [ref=e213]
+  - button "水墨画. 수정하려면 Enter 키를 누르세요." [ref=e214]:
+    - text: "水墨画"
+    - button "삭제" [ref=e215]
+  - button "歴史ショート. 수정하려면 Enter 키를 누르세요." [ref=e216]:
+    - text: "歴史ショート"
+    - button "삭제" [ref=e217]
+  - button "TJキム・コレクション. 수정하려면 Enter 키를 누르세요." [ref=e218]:
+    - text: "TJキム・コレクション"
+    - button "삭제" [ref=e219]
+  - button "dadeumijil. 수정하려면 Enter 키를 누르세요." [ref=e220]:
+    - text: "dadeumijil"
+    - button "삭제" [ref=e221]
+  - textbox "태그" [ref=e222]
+  - button "모두 복사" [ref=e223]
+  - button "모두 삭제" [ref=e224]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      116/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e225]:
+    - button "동영상 언어 일본어" [ref=e226]
+  - button [ref=e227]:
+    - button "자막 면제 인증서 없음" [ref=e228]
+  - button [ref=e230]:
+    - button "제목 및 설명 언어 선택" [ref=e231]
+  - text: "다른 언어를 관리하려면"
+  - link "자막" [ref=e232]
+  - text: "으로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e233]:
+    - button "녹화 날짜 없음" [ref=e234]
+  - button [ref=e235]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e236] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e237]
+  - text: "에 대해 알아보세요."
+  - button [ref=e238]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e239]
+  - generic [ref=e240]:
+    - checkbox "퍼가기 허용" [ref=e241] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e243]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e244] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e245]: "자세히 알아보기"
+  - radiogroup [ref=e246]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e247] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e248]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e249]:
+    - button "교육" [ref=e250]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e251]:
+    - button "댓글 켜짐" [ref=e252]
+  - button [ref=e253]:
+    - button "검토 기본" [ref=e254]
+  - button [ref=e255]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e256]
+  - button [ref=e257]:
+    - button "정렬 기준 인기순" [ref=e258]
+  - generic [ref=e259]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e260] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e147]
+  - text: "파일 이름 ep03-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e148]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e149]
+  - generic [ref=e150]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e151]
+  - button [ref=e152]:
+    - button "관련 동영상 없음" [ref=e153]
+  - button [ref=e155]:
+    - button [ref=e156]:
+      - button "자막" [ref=e157]
+[ok | 98ms]
+repl > 
+await (async()=>{console.log('FIELDS:'+JSON.stringify(await page.locator('[contenteditable=true]').evaluateAll(es=>es.map(e=>e.innerText.trim())))); console.log('TAGS:'+JSON.stringify(await page.getByRole('textbox',{name:'태그',exact:true}).evaluate(e=>[...e.closest('ytcp-chip-bar').querySelectorAll('ytcp-chip')].map(c=>c.innerText.trim()).filter(Boolean)))); console.log('CONTENT_LINK:'+await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).getAttribute('href'));})()
+FIELDS:["アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化","アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「종이 위의 바람」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#タドゥミジル #韓国文化 #朝鮮時代 #風俗画 #TJキムコレクション"]
+TAGS:["タドゥミジル","タドゥミ","다듬이질","砧","きぬた","布打ち","韓国の手仕事","衣生活","洗濯の歴史","アイロンの歴史","韓服","朝鮮時代","朝鮮王朝","韓国史","韓国文化","風俗画","韓国美術","水墨画","歴史ショート","TJキム・コレクション","dadeumijil"]
+CONTENT_LINK:/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D
+[ok | 60ms]
+repl > 
+await (async()=>{await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).click();})()
+[ok | 2243ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e115]
+  - text: "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n       …[+290 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+[ok | 154ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1018ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 27ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1042ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e262]
+    - menuitem "오디오 보관함" [ref=e263]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e264]:
+    - tab "동영상" [ref=e265]
+    - tab "Shorts" [ref=e266] [selected]
+    - tab "라이브" [ref=e267]
+    - tab "재생목록" [ref=e268]
+    - tab "팟캐스트" [ref=e269]
+    - tab "프로모션" [ref=e270]
+    - tab "컬래버레이션" [ref=e271]
+    - tab "아이디어" [ref=e272]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e274] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e275]:
+          - checkbox "전체 선택" [ref=e277]
+        - columnheader "Shorts 동영상" [ref=e278]
+        - columnheader "알림" [ref=e279]
+        - columnheader "공개 상태" [ref=e280]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e281]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e282]: "조회수"
+        - columnheader "댓글" [ref=e283]
+    - row:
+      - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e284]:
+        - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e286]
+      - cell:
+        - link "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化 1:08" [ref=e287]
+        - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e288]
+        - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウン…[+111 chars]"
+      - cell:
+        - generic "—" [ref=e289]
+      - cell:
+        - generic "비공개" [ref=e290]
+      - cell "2026. 10. 26." [ref=e291]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e292]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e293]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e294]: "0"
+    - row:
+      - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e295]:
+        - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e297]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史 1:08" [ref=e298]
+        - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e299]
+        - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC2…[+123 chars]"
+      - cell:
+        - generic "—" [ref=e300]
+      - cell:
+        - generic "비공개" [ref=e301]
+      - cell "2026. 10. 26." [ref=e302]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e303]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e304]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e305]: "0"
+    - row:
+      - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e306]:
+        - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e308]
+      - cell:
+        - link "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化 1:08" [ref=e309]
+        - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e310]
+        - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう…[+141 chars]"
+      - cell:
+        - generic "—" [ref=e311]
+      - cell:
+        - generic "비공개" [ref=e312]
+      - cell "2026. 10. 26." [ref=e313]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e314]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e315]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e316]: "0"
+    - row:
+      - cell "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e317]:
+        - checkbox "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e319]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 1:08" [ref=e320]
+        - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e321]
+        - text: "朝鮮時代の人々は、休みの日に何をして遊んでいたのでしょうか。\n低い盤を四人が囲んでいます。今日の主役は「ユンノリ」です。\n\nさいころの代わりに四本の木の棒を投げ、駒を進めます。近道を選んだり、仲間の駒を一緒に進めたり。運だけでなく、相談する楽しさもあるゲームです。旧正月のころ、家族や近所の人が集まって親しまれてきました…[+172 chars]"
+      - cell:
+        - generic "—" [ref=e322]
+      - cell:
+        - generic "공개" [ref=e323]
+      - cell "2026. 10. 25." [ref=e324]: "2026. 10. 25.\n     게시일"
+      - cell "104" [ref=e325]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e326]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e327]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e328]:
+      - button "30" [ref=e329]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e330] [disabled]
+    - button "이전 페이지로 이동" [ref=e331] [disabled]
+    - button "다음 페이지로 이동" [ref=e332] [disabled]
+    - button "마지막 페이지로 이동" [ref=e333] [disabled]
+[ok | 179ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/Eom7d7Xw7aM/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e295]:
+    - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e297]
+  - cell:
+    - link [ref=e298]:
+      - image "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史"
+      - text: "1:08"
+    - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e299]
+    - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「윷판의 웃음」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国史 #食文化 #風俗画 #TJキムコレクション"
+  - cell:
+    - generic "—" [ref=e300]
+  - cell:
+    - generic "비공개" [ref=e301]
+  - cell "2026. 10. 26." [ref=e302]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e303]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e304]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e305]: "0"
+[ok | 37ms]
+repl > 
+await (async()=>{await page.locator("a[href=\"/video/Eom7d7Xw7aM/edit\"]").first().click();})()
+[ok | 1742ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e262]
+    - menuitem "오디오 보관함" [ref=e263]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e264]:
+    - tab "동영상" [ref=e265]
+    - tab "Shorts" [ref=e266] [selected]
+    - tab "라이브" [ref=e267]
+    - tab "재생목록" [ref=e268]
+    - tab "팟캐스트" [ref=e269]
+    - tab "프로모션" [ref=e270]
+    - tab "컬래버레이션" [ref=e271]
+    - tab "아이디어" [ref=e272]
+[ok | 68ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1028ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]
+[ok | 46ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1017ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]
+[ok | 28ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1023ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e334]
+  - text: "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n  …[+282 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e336] [disabled]
+  - button "저장" [ref=e337] [disabled]
+  - button "옵션" [ref=e338]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e340]: "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史"
+  - text: "설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e342]: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「윷판의 웃음」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国史 #食文化 #風俗画 #TJキムコレクション"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e343]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e344]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e346]
+  - button "추천받기" [ref=e347]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e348]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e349]:
+    - button "선택" [ref=e350]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e351]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e352]: "자세히 알아보기"
+  - radiogroup [ref=e353]:
+    - radio [ref=e354]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e355]
+    - radio "아니요, 아동용이 아닙니다" [ref=e356] [checked]
+  - button "연령 제한" [ref=e357]
+  - button "고급 설정 표시" [ref=e358]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e359]:
+    - button "재생" [ref=e361]
+    - button "음소거" [ref=e362]
+    - slider "볼륨" [ref=e363]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e364]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/Eom7d7Xw7aM" [ref=e365]
+  - button "동영상 링크 복사" [ref=e366]
+  - text: "파일 이름 ep04-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e367]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e368]
+  - generic [ref=e369]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e370]
+  - button [ref=e371]:
+    - button "관련 동영상 없음" [ref=e372]
+  - button [ref=e374]:
+    - button [ref=e375]:
+      - button "자막" [ref=e376]
+[ok | 81ms]
+repl > 
+await (async()=>{await page.getByRole('button',{name:'고급 설정 표시',exact:true}).click();})()
+[ok | 594ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e334]
+  - text: "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n  …[+282 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e336] [disabled]
+  - button "저장" [ref=e337] [disabled]
+  - button "옵션" [ref=e338]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e343]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e344]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e346]
+  - button "추천받기" [ref=e347]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e348]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e349]:
+    - button "선택" [ref=e350]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e351]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e352]: "자세히 알아보기"
+  - radiogroup [ref=e353]:
+    - radio [ref=e354]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e355]
+    - radio "아니요, 아동용이 아닙니다" [ref=e356] [checked]
+  - button "연령 제한" [ref=e357]
+  - button "고급 설정 숨기기" [ref=e377] [focused]: "간략히 보기"
+  - text: "유료 프로모션\n \n    동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e378]
+  - radiogroup [ref=e379]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e380]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e381]
+  - text: "브랜드 파트너십 \n      브랜드 파트너와 동영상 및 동영상 측정항목에 대한 액세스 권한을 공유하고 동영상 홍보를 허용하세요."
+  - link "자세히 알아보기" [ref=e382]
+  - button "액세스 코드 공유" [ref=e383]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e384]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e385]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e386]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e387]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e388]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e389]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e390]: "자세히 알아보기"
+  - generic [ref=e391]:
+    - checkbox "자동 챕터 허용" [ref=e392] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e393]: "자세히 알아보기"
+  - generic [ref=e394]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e395] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e396]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e397] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e398]: "자세히 알아보기"
+  - button "朝鮮時代の食事. 수정하려면 Enter 키를 누르세요." [ref=e399]:
+    - text: "朝鮮時代の食事"
+    - button "삭제" [ref=e400]
+  - button "韓国の食文化. 수정하려면 Enter 키를 누르세요." [ref=e401]:
+    - text: "韓国の食文化"
+    - button "삭제" [ref=e402]
+  - button "食の歴史. 수정하려면 Enter 키를 누르세요." [ref=e403]:
+    - text: "食の歴史"
+    - button "삭제" [ref=e404]
+  - button "食べ物の商い. 수정하려면 Enter 키를 누르세요." [ref=e405]:
+    - text: "食べ物の商い"
+    - button "삭제" [ref=e406]
+  - button "食べ物屋. 수정하려면 Enter 키를 누르세요." [ref=e407]:
+    - text: "食べ物屋"
+    - button "삭제" [ref=e408]
+  - button "草ぶき屋根. 수정하려면 Enter 키를 누르세요." [ref=e409]:
+    - text: "草ぶき屋根"
+    - button "삭제" [ref=e410]
+  - button "盆. 수정하려면 Enter 키를 누르세요." [ref=e411]:
+    - text: "盆"
+    - button "삭제" [ref=e412]
+  - button "運ぶ仕事. 수정하려면 Enter 키를 누르세요." [ref=e413]:
+    - text: "運ぶ仕事"
+    - button "삭제" [ref=e414]
+  - button "暮らしの歴史. 수정하려면 Enter 키를 누르세요." [ref=e415]:
+    - text: "暮らしの歴史"
+    - button "삭제" [ref=e416]
+  - button "朝鮮時代. 수정하려면 Enter 키를 누르세요." [ref=e417]:
+    - text: "朝鮮時代"
+    - button "삭제" [ref=e418]
+  - button "朝鮮王朝. 수정하려면 Enter 키를 누르세요." [ref=e419]:
+    - text: "朝鮮王朝"
+    - button "삭제" [ref=e420]
+  - button "韓国史. 수정하려면 Enter 키를 누르세요." [ref=e421]:
+    - text: "韓国史"
+    - button "삭제" [ref=e422]
+  - button "韓国文化. 수정하려면 Enter 키를 누르세요." [ref=e423]:
+    - text: "韓国文化"
+    - button "삭제" [ref=e424]
+  - button "風俗画. 수정하려면 Enter 키를 누르세요." [ref=e425]:
+    - text: "風俗画"
+    - button "삭제" [ref=e426]
+  - button "韓国美術. 수정하려면 Enter 키를 누르세요." [ref=e427]:
+    - text: "韓国美術"
+    - button "삭제" [ref=e428]
+  - button "水墨画. 수정하려면 Enter 키를 누르세요." [ref=e429]:
+    - text: "水墨画"
+    - button "삭제" [ref=e430]
+  - button "歴史ショート. 수정하려면 Enter 키를 누르세요." [ref=e431]:
+    - text: "歴史ショート"
+    - button "삭제" [ref=e432]
+  - button "TJキム・コレクション. 수정하려면 Enter 키를 누르세요." [ref=e433]:
+    - text: "TJキム・コレクション"
+    - button "삭제" [ref=e434]
+  - button "Korean food history. 수정하려면 Enter 키를 누르세요." [ref=e435]:
+    - text: "Korean food history"
+    - button "삭제" [ref=e436]
+  - textbox "태그" [ref=e437]
+  - button "모두 복사" [ref=e438]
+  - button "모두 삭제" [ref=e439]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      124/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e440]:
+    - button "동영상 언어 일본어" [ref=e441]
+  - button [ref=e442]:
+    - button "자막 면제 인증서 없음" [ref=e443]
+  - button [ref=e445]:
+    - button "제목 및 설명 언어 선택" [ref=e446]
+  - text: "다른 언어를 관리하려면"
+  - link "자막" [ref=e447]
+  - text: "으로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e448]:
+    - button "녹화 날짜 없음" [ref=e449]
+  - button [ref=e450]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e451] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e452]
+  - text: "에 대해 알아보세요."
+  - button [ref=e453]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e454]
+  - generic [ref=e455]:
+    - checkbox "퍼가기 허용" [ref=e456] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e458]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e459] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e460]: "자세히 알아보기"
+  - radiogroup [ref=e461]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e462] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e463]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e464]:
+    - button "교육" [ref=e465]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e466]:
+    - button "댓글 켜짐" [ref=e467]
+  - button [ref=e468]:
+    - button "검토 기본" [ref=e469]
+  - button [ref=e470]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e471]
+  - button [ref=e472]:
+    - button "정렬 기준 인기순" [ref=e473]
+  - generic [ref=e474]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e475] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e366]
+  - text: "파일 이름 ep04-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e367]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e368]
+  - generic [ref=e369]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e370]
+  - button [ref=e371]:
+    - button "관련 동영상 없음" [ref=e372]
+  - button [ref=e374]:
+    - button [ref=e375]:
+      - button "자막" [ref=e376]
+[ok | 105ms]
+repl > 
+await (async()=>{console.log('FIELDS:'+JSON.stringify(await page.locator('[contenteditable=true]').evaluateAll(es=>es.map(e=>e.innerText.trim())))); console.log('TAGS:'+JSON.stringify(await page.getByRole('textbox',{name:'태그',exact:true}).evaluate(e=>[...e.closest('ytcp-chip-bar').querySelectorAll('ytcp-chip')].map(c=>c.innerText.trim()).filter(Boolean)))); console.log('CONTENT_LINK:'+await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).getAttribute('href'));})()
+FIELDS:["朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史","旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「윷판의 웃음」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国史 #食文化 #風俗画 #TJキムコレクション"]
+TAGS:["朝鮮時代の食事","韓国の食文化","食の歴史","食べ物の商い","食べ物屋","草ぶき屋根","盆","運ぶ仕事","暮らしの歴史","朝鮮時代","朝鮮王朝","韓国史","韓国文化","風俗画","韓国美術","水墨画","歴史ショート","TJキム・コレクション","Korean food history"]
+CONTENT_LINK:/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D
+[ok | 67ms]
+repl > 
+await (async()=>{await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).click();})()
+[ok | 1821ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e334]
+  - text: "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n  …[+282 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+[ok | 37ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1016ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 36ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1018ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 23ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1017ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e477]
+    - menuitem "오디오 보관함" [ref=e478]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e479]:
+    - tab "동영상" [ref=e480]
+    - tab "Shorts" [ref=e481] [selected]
+    - tab "라이브" [ref=e482]
+    - tab "재생목록" [ref=e483]
+    - tab "팟캐스트" [ref=e484]
+    - tab "프로모션" [ref=e485]
+    - tab "컬래버레이션" [ref=e486]
+    - tab "아이디어" [ref=e487]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e489] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e490]:
+          - checkbox "전체 선택" [ref=e492]
+        - columnheader "Shorts 동영상" [ref=e493]
+        - columnheader "알림" [ref=e494]
+        - columnheader "공개 상태" [ref=e495]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e496]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e497]: "조회수"
+        - columnheader "댓글" [ref=e498]
+    - row:
+      - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e499]:
+        - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e501]
+      - cell:
+        - link "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化 1:08" [ref=e502]
+        - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e503]
+        - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウン…[+111 chars]"
+      - cell:
+        - generic "—" [ref=e504]
+      - cell:
+        - generic "비공개" [ref=e505]
+      - cell "2026. 10. 26." [ref=e506]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e507]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e508]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e509]: "0"
+    - row:
+      - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e510]:
+        - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e512]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史 1:08" [ref=e513]
+        - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e514]
+        - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC2…[+123 chars]"
+      - cell:
+        - generic "—" [ref=e515]
+      - cell:
+        - generic "비공개" [ref=e516]
+      - cell "2026. 10. 26." [ref=e517]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e518]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e519]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e520]: "0"
+    - row:
+      - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e521]:
+        - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e523]
+      - cell:
+        - link "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化 1:08" [ref=e524]
+        - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e525]
+        - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう…[+141 chars]"
+      - cell:
+        - generic "—" [ref=e526]
+      - cell:
+        - generic "비공개" [ref=e527]
+      - cell "2026. 10. 26." [ref=e528]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e529]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e530]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e531]: "0"
+    - row:
+      - cell "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e532]:
+        - checkbox "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e534]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 1:08" [ref=e535]
+        - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e536]
+        - text: "朝鮮時代の人々は、休みの日に何をして遊んでいたのでしょうか。\n低い盤を四人が囲んでいます。今日の主役は「ユンノリ」です。\n\nさいころの代わりに四本の木の棒を投げ、駒を進めます。近道を選んだり、仲間の駒を一緒に進めたり。運だけでなく、相談する楽しさもあるゲームです。旧正月のころ、家族や近所の人が集まって親しまれてきました…[+172 chars]"
+      - cell:
+        - generic "—" [ref=e537]
+      - cell:
+        - generic "공개" [ref=e538]
+      - cell "2026. 10. 25." [ref=e539]: "2026. 10. 25.\n     게시일"
+      - cell "104" [ref=e540]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e541]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e542]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e543]:
+      - button "30" [ref=e544]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e545] [disabled]
+    - button "이전 페이지로 이동" [ref=e546] [disabled]
+    - button "다음 페이지로 이동" [ref=e547] [disabled]
+    - button "마지막 페이지로 이동" [ref=e548] [disabled]
+[ok | 68ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/PDvSryhrE28/edit\"])"})).tree)})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e499]:
+    - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e501]
+  - cell:
+    - link [ref=e502]:
+      - image "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化"
+      - text: "1:08"
+    - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e503]
+    - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「먹빛의 밤」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国文化 #雨の日 #風俗画 #TJキムコレクション"
+  - cell:
+    - generic "—" [ref=e504]
+  - cell:
+    - generic "비공개" [ref=e505]
+  - cell "2026. 10. 26." [ref=e506]: "2026. 10. 26.\n     업로드됨"
+  - cell "0" [ref=e507]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e508]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e509]: "0"
+[ok | 26ms]
+repl > 
+await (async()=>{await page.locator("a[href=\"/video/PDvSryhrE28/edit\"]").first().click();})()
+[ok | 1368ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e477]
+    - menuitem "오디오 보관함" [ref=e478]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e479]:
+    - tab "동영상" [ref=e480]
+    - tab "Shorts" [ref=e481] [selected]
+    - tab "라이브" [ref=e482]
+    - tab "재생목록" [ref=e483]
+    - tab "팟캐스트" [ref=e484]
+    - tab "프로모션" [ref=e485]
+    - tab "컬래버레이션" [ref=e486]
+    - tab "아이디어" [ref=e487]
+[ok | 35ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1012ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]
+[ok | 28ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1016ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]
+[ok | 24ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1038ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e549]
+  - text: "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n      …[+292 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e551] [disabled]
+  - button "저장" [ref=e552] [disabled]
+  - button "옵션" [ref=e553]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e555]: "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化"
+  - text: "설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e557]: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「먹빛의 밤」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国文化 #雨の日 #風俗画 #TJキムコレクション"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e558]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e559]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e561]
+  - button "추천받기" [ref=e562]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e563]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e564]:
+    - button "선택" [ref=e565]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e566]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e567]: "자세히 알아보기"
+  - radiogroup [ref=e568]:
+    - radio [ref=e569]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e570]
+    - radio "아니요, 아동용이 아닙니다" [ref=e571] [checked]
+  - button "연령 제한" [ref=e572]
+  - button "고급 설정 표시" [ref=e573]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e574]:
+    - button "재생" [ref=e576]
+    - button "음소거" [ref=e577]
+    - slider "볼륨" [ref=e578]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e579]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/PDvSryhrE28" [ref=e580]
+  - button "동영상 링크 복사" [ref=e581]
+  - text: "파일 이름 ep05-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e582]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e583]
+  - generic [ref=e584]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e585]
+  - button [ref=e586]:
+    - button "관련 동영상 없음" [ref=e587]
+  - button [ref=e589]:
+    - button [ref=e590]:
+      - button "자막" [ref=e591]
+[ok | 107ms]
+repl > 
+await (async()=>{await page.getByRole('button',{name:'고급 설정 표시',exact:true}).click();})()
+[ok | 900ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e549]
+  - text: "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n      …[+292 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e551] [disabled]
+  - button "저장" [ref=e552] [disabled]
+  - button "옵션" [ref=e553]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e558]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e559]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e561]
+  - button "추천받기" [ref=e562]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e563]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e564]:
+    - button "선택" [ref=e565]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e566]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e567]: "자세히 알아보기"
+  - radiogroup [ref=e568]:
+    - radio [ref=e569]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e570]
+    - radio "아니요, 아동용이 아닙니다" [ref=e571] [checked]
+  - button "연령 제한" [ref=e572]
+  - button "고급 설정 숨기기" [ref=e592] [focused]: "간략히 보기"
+  - text: "유료 프로모션\n \n    동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e593]
+  - radiogroup [ref=e594]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e595]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e596]
+  - text: "브랜드 파트너십 \n      브랜드 파트너와 동영상 및 동영상 측정항목에 대한 액세스 권한을 공유하고 동영상 홍보를 허용하세요."
+  - link "자세히 알아보기" [ref=e597]
+  - button "액세스 코드 공유" [ref=e598]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e599]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e600]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e601]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e602]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e603]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e604]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e605]: "자세히 알아보기"
+  - generic [ref=e606]:
+    - checkbox "자동 챕터 허용" [ref=e607] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e608]: "자세히 알아보기"
+  - generic [ref=e609]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e610] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e611]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e612] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e613]: "자세히 알아보기"
+  - button "雨の日の朝鮮. 수정하려면 Enter 키를 누르세요." [ref=e614]:
+    - text: "雨の日の朝鮮"
+    - button "삭제" [ref=e615]
+  - button "朝鮮時代の暮らし. 수정하려면 Enter 키를 누르세요." [ref=e616]:
+    - text: "朝鮮時代の暮らし"
+    - button "삭제" [ref=e617]
+  - button "雨具. 수정하려면 Enter 키를 누르세요." [ref=e618]:
+    - text: "雨具"
+    - button "삭제" [ref=e619]
+  - button "雨をしのぐ知恵. 수정하려면 Enter 키를 누르세요." [ref=e620]:
+    - text: "雨をしのぐ知恵"
+    - button "삭제" [ref=e621]
+  - button "伝統の帽子. 수정하려면 Enter 키를 누르세요." [ref=e622]:
+    - text: "伝統の帽子"
+    - button "삭제" [ref=e623]
+  - button "笠. 수정하려면 Enter 키를 누르세요." [ref=e624]:
+    - text: "笠"
+    - button "삭제" [ref=e625]
+  - button "衣生活. 수정하려면 Enter 키를 누르세요." [ref=e626]:
+    - text: "衣生活"
+    - button "삭제" [ref=e627]
+  - button "韓服. 수정하려면 Enter 키를 누르세요." [ref=e628]:
+    - text: "韓服"
+    - button "삭제" [ref=e629]
+  - button "服装の歴史. 수정하려면 Enter 키를 누르세요." [ref=e630]:
+    - text: "服装の歴史"
+    - button "삭제" [ref=e631]
+  - button "天気と暮らし. 수정하려면 Enter 키를 누르세요." [ref=e632]:
+    - text: "天気と暮らし"
+    - button "삭제" [ref=e633]
+  - button "朝鮮時代. 수정하려면 Enter 키를 누르세요." [ref=e634]:
+    - text: "朝鮮時代"
+    - button "삭제" [ref=e635]
+  - button "朝鮮王朝. 수정하려면 Enter 키를 누르세요." [ref=e636]:
+    - text: "朝鮮王朝"
+    - button "삭제" [ref=e637]
+  - button "韓国史. 수정하려면 Enter 키를 누르세요." [ref=e638]:
+    - text: "韓国史"
+    - button "삭제" [ref=e639]
+  - button "韓国文化. 수정하려면 Enter 키를 누르세요." [ref=e640]:
+    - text: "韓国文化"
+    - button "삭제" [ref=e641]
+  - button "風俗画. 수정하려면 Enter 키를 누르세요." [ref=e642]:
+    - text: "風俗画"
+    - button "삭제" [ref=e643]
+  - button "韓国美術. 수정하려면 Enter 키를 누르세요." [ref=e644]:
+    - text: "韓国美術"
+    - button "삭제" [ref=e645]
+  - button "水墨画. 수정하려면 Enter 키를 누르세요." [ref=e646]:
+    - text: "水墨画"
+    - button "삭제" [ref=e647]
+  - button "歴史ショート. 수정하려면 Enter 키를 누르세요." [ref=e648]:
+    - text: "歴史ショート"
+    - button "삭제" [ref=e649]
+  - button "TJキム・コレクション. 수정하려면 Enter 키를 누르세요." [ref=e650]:
+    - text: "TJキム・コレクション"
+    - button "삭제" [ref=e651]
+  - textbox "태그" [ref=e652]
+  - button "모두 복사" [ref=e653]
+  - button "모두 삭제" [ref=e654]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      105/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e655]:
+    - button "동영상 언어 일본어" [ref=e656]
+  - button [ref=e657]:
+    - button "자막 면제 인증서 없음" [ref=e658]
+  - button [ref=e660]:
+    - button "제목 및 설명 언어 선택" [ref=e661]
+  - text: "다른 언어를 관리하려면"
+  - link "자막" [ref=e662]
+  - text: "으로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e663]:
+    - button "녹화 날짜 없음" [ref=e664]
+  - button [ref=e665]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e666] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e667]
+  - text: "에 대해 알아보세요."
+  - button [ref=e668]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e669]
+  - generic [ref=e670]:
+    - checkbox "퍼가기 허용" [ref=e671] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e673]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e674] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e675]: "자세히 알아보기"
+  - radiogroup [ref=e676]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e677] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e678]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e679]:
+    - button "교육" [ref=e680]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e681]:
+    - button "댓글 켜짐" [ref=e682]
+  - button [ref=e683]:
+    - button "검토 기본" [ref=e684]
+  - button [ref=e685]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e686]
+  - button [ref=e687]:
+    - button "정렬 기준 인기순" [ref=e688]
+  - generic [ref=e689]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e690] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e581]
+  - text: "파일 이름 ep05-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e582]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e583]
+  - generic [ref=e584]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e585]
+  - button [ref=e586]:
+    - button "관련 동영상 없음" [ref=e587]
+  - button [ref=e589]:
+    - button [ref=e590]:
+      - button "자막" [ref=e591]
+[ok | 118ms]
+repl > 
+await (async()=>{console.log('FIELDS:'+JSON.stringify(await page.locator('[contenteditable=true]').evaluateAll(es=>es.map(e=>e.innerText.trim())))); console.log('TAGS:'+JSON.stringify(await page.getByRole('textbox',{name:'태그',exact:true}).evaluate(e=>[...e.closest('ytcp-chip-bar').querySelectorAll('ytcp-chip')].map(c=>c.innerText.trim()).filter(Boolean)))); console.log('CONTENT_LINK:'+await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).getAttribute('href'));})()
+FIELDS:["雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化","雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「먹빛의 밤」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国文化 #雨の日 #風俗画 #TJキムコレクション"]
+TAGS:["雨の日の朝鮮","朝鮮時代の暮らし","雨具","雨をしのぐ知恵","伝統の帽子","笠","衣生活","韓服","服装の歴史","天気と暮らし","朝鮮時代","朝鮮王朝","韓国史","韓国文化","風俗画","韓国美術","水墨画","歴史ショート","TJキム・コレクション"]
+CONTENT_LINK:/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D
+[ok | 52ms]
+repl > 
+await (async()=>{await page.getByRole('link',{name:'채널 콘텐츠',exact:true}).click();})()
+[ok | 1678ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e549]
+  - text: "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n      …[+292 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+[ok | 33ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1020ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 37ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1016ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main
+[ok | 28ms]
+repl > 
+await (async()=>{await sleep(1000);})()
+[ok | 1017ms]
+repl > 
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e692]
+    - menuitem "오디오 보관함" [ref=e693]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e694]:
+    - tab "동영상" [ref=e695]
+    - tab "Shorts" [ref=e696] [selected]
+    - tab "라이브" [ref=e697]
+    - tab "재생목록" [ref=e698]
+    - tab "팟캐스트" [ref=e699]
+    - tab "프로모션" [ref=e700]
+    - tab "컬래버레이션" [ref=e701]
+    - tab "아이디어" [ref=e702]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e704] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e705]:
+          - checkbox "전체 선택" [ref=e707]
+        - columnheader "Shorts 동영상" [ref=e708]
+        - columnheader "알림" [ref=e709]
+        - columnheader "공개 상태" [ref=e710]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e711]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e712]: "조회수"
+        - columnheader "댓글" [ref=e713]
+    - row:
+      - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e714]:
+        - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e716]
+      - cell:
+        - link "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化 1:08" [ref=e717]
+        - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e718]
+        - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウン…[+111 chars]"
+      - cell:
+        - generic "—" [ref=e719]
+      - cell:
+        - generic "비공개" [ref=e720]
+      - cell "2026. 10. 26." [ref=e721]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e722]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e723]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e724]: "0"
+    - row:
+      - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e725]:
+        - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e727]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史 1:08" [ref=e728]
+        - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e729]
+        - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC2…[+123 chars]"
+      - cell:
+        - generic "—" [ref=e730]
+      - cell:
+        - generic "비공개" [ref=e731]
+      - cell "2026. 10. 26." [ref=e732]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e733]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e734]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e735]: "0"
+    - row:
+      - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e736]:
+        - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e738]
+      - cell:
+        - link "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化 1:08" [ref=e739]
+        - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e740]
+        - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう…[+141 chars]"
+      - cell:
+        - generic "—" [ref=e741]
+      - cell:
+        - generic "비공개" [ref=e742]
+      - cell "2026. 10. 26." [ref=e743]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e744]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e745]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e746]: "0"
+    - row:
+      - cell "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e747]:
+        - checkbox "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e749]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 1:08" [ref=e750]
+        - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e751]
+        - text: "朝鮮時代の人々は、休みの日に何をして遊んでいたのでしょうか。\n低い盤を四人が囲んでいます。今日の主役は「ユンノリ」です。\n\nさいころの代わりに四本の木の棒を投げ、駒を進めます。近道を選んだり、仲間の駒を一緒に進めたり。運だけでなく、相談する楽しさもあるゲームです。旧正月のころ、家族や近所の人が集まって親しまれてきました…[+172 chars]"
+      - cell:
+        - generic "—" [ref=e752]
+      - cell:
+        - generic "공개" [ref=e753]
+      - cell "2026. 10. 25." [ref=e754]: "2026. 10. 25.\n     게시일"
+      - cell "104" [ref=e755]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e756]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e757]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e758]:
+      - button "30" [ref=e759]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e760] [disabled]
+    - button "이전 페이지로 이동" [ref=e761] [disabled]
+    - button "다음 페이지로 이동" [ref=e762] [disabled]
+    - button "마지막 페이지로 이동" [ref=e763] [disabled]
+[ok | 77ms]
+repl > 

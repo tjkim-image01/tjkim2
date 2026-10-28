@@ -1,0 +1,37 @@
+{
+  "episode": "ep08",
+  "strokes": 544,
+  "single_RGB_assets_checked": 544,
+  "visible_asset_pixels": 9617754,
+  "people": [
+    {
+      "person": "left_man",
+      "head": [
+        0.8,
+        4.4406643003282715
+      ],
+      "body": [
+        4.571423793762977,
+        14.860362697615642
+      ],
+      "end": 18.555509932047304
+    },
+    {
+      "person": "right_man",
+      "head": [
+        18.687227066203615,
+        23.123767061643296
+      ],
+      "body": [
+        23.25485613883032,
+        31.980911427400716
+      ],
+      "end": 36.793394268256584
+    }
+  ],
+  "minimum_reload_seconds": 0.13075949343470583,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "41ec440ac8cf3798a45c5d646772869c7dab921d600c70114296be1b264a6e25"
+}

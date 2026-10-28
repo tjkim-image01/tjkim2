@@ -1,0 +1,452 @@
+{
+  "ep02-ko": {
+    "episode": "ep02",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.03484472632408142,
+    "body_audio_rms": 0.11724422127008438,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep02-en": {
+    "episode": "ep02",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.11638704687356949,
+    "body_audio_rms": 0.10239691287279129,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep02-ja": {
+    "episode": "ep02",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.13456550240516663,
+    "body_audio_rms": 0.09758812934160233,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep03-ko": {
+    "episode": "ep03",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12324894219636917,
+    "body_audio_rms": 0.09811191260814667,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep03-en": {
+    "episode": "ep03",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.14527399837970734,
+    "body_audio_rms": 0.09351559728384018,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep03-ja": {
+    "episode": "ep03",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.13105712831020355,
+    "body_audio_rms": 0.09694741666316986,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep04-ko": {
+    "episode": "ep04",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12804503738880157,
+    "body_audio_rms": 0.09121747314929962,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep04-en": {
+    "episode": "ep04",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.15830008685588837,
+    "body_audio_rms": 0.1142883226275444,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep04-ja": {
+    "episode": "ep04",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12146177887916565,
+    "body_audio_rms": 0.08114629983901978,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep05-ko": {
+    "episode": "ep05",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12594673037528992,
+    "body_audio_rms": 0.09573408216238022,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep05-en": {
+    "episode": "ep05",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.16309209167957306,
+    "body_audio_rms": 0.11837055534124374,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep05-ja": {
+    "episode": "ep05",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.10065863281488419,
+    "body_audio_rms": 0.11796415597200394,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep06-ko": {
+    "episode": "ep06",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.1302393078804016,
+    "body_audio_rms": 0.09817107021808624,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep06-en": {
+    "episode": "ep06",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12288977205753326,
+    "body_audio_rms": 0.09388229250907898,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep06-ja": {
+    "episode": "ep06",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.11996912956237793,
+    "body_audio_rms": 0.09324172139167786,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep07-ko": {
+    "episode": "ep07",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.08868949860334396,
+    "body_audio_rms": 0.07694309949874878,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep07-en": {
+    "episode": "ep07",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.1482694447040558,
+    "body_audio_rms": 0.12236304581165314,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep07-ja": {
+    "episode": "ep07",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12407240271568298,
+    "body_audio_rms": 0.10354459285736084,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep08-ko": {
+    "episode": "ep08",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.1356981098651886,
+    "body_audio_rms": 0.08270160853862762,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep08-en": {
+    "episode": "ep08",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12654344737529755,
+    "body_audio_rms": 0.12118321657180786,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep08-ja": {
+    "episode": "ep08",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12668582797050476,
+    "body_audio_rms": 0.11516062915325165,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep09-ko": {
+    "episode": "ep09",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.14288689196109772,
+    "body_audio_rms": 0.09414392709732056,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep09-en": {
+    "episode": "ep09",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.1333443820476532,
+    "body_audio_rms": 0.12516973912715912,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep09-ja": {
+    "episode": "ep09",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.09833642095327377,
+    "body_audio_rms": 0.11226986348628998,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep10-ko": {
+    "episode": "ep10",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12344246357679367,
+    "body_audio_rms": 0.10036901384592056,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep10-en": {
+    "episode": "ep10",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.13165143132209778,
+    "body_audio_rms": 0.12264105677604675,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep10-ja": {
+    "episode": "ep10",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12506580352783203,
+    "body_audio_rms": 0.10727090388536453,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep11-ko": {
+    "episode": "ep11",
+    "language": "ko",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.12107999622821808,
+    "body_audio_rms": 0.10503333061933517,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep11-en": {
+    "episode": "ep11",
+    "language": "en",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.13638532161712646,
+    "body_audio_rms": 0.10748852789402008,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  },
+  "ep11-ja": {
+    "episode": "ep11",
+    "language": "ja",
+    "cover_rms": 0.0,
+    "immediate_music_rms": 0.1148998886346817,
+    "body_audio_rms": 0.10868013650178909,
+    "frames_checked": [
+      0.5,
+      3.1,
+      13.5,
+      33.5,
+      65.5
+    ],
+    "passed": true
+  }
+}

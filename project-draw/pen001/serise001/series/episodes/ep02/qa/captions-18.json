@@ -1,0 +1,107 @@
+{
+  "revision": "figure-first-caption18-v3",
+  "count": 17,
+  "max_chars": 18,
+  "counts": [
+    {
+      "text": "조선에선 뭘 하며 놀았을까요?",
+      "chars": 16,
+      "seconds": 3.04
+    },
+    {
+      "text": "네 사람이 둘러앉았습니다.",
+      "chars": 14,
+      "seconds": 2.36
+    },
+    {
+      "text": "오늘은 윷놀이를 그립니다.",
+      "chars": 14,
+      "seconds": 1.85
+    },
+    {
+      "text": "윷을 던져 말을 옮깁니다.",
+      "chars": 14,
+      "seconds": 2.14
+    },
+    {
+      "text": "어느 길로 갈지 고민합니다.",
+      "chars": 15,
+      "seconds": 2.28
+    },
+    {
+      "text": "운만으로 끝나진 않습니다.",
+      "chars": 14,
+      "seconds": 1.66
+    },
+    {
+      "text": "작은 도구가 사람을 모읍니다.",
+      "chars": 16,
+      "seconds": 2.7
+    },
+    {
+      "text": "나무 조각이 궁금했겠지요.",
+      "chars": 14,
+      "seconds": 2.66
+    },
+    {
+      "text": "윷판의 길도 낯설었겠지요.",
+      "chars": 14,
+      "seconds": 2.52
+    },
+    {
+      "text": "옷차림만 궁금했을까요?",
+      "chars": 12,
+      "seconds": 2.17
+    },
+    {
+      "text": "놀이도 조선을 전했겠지요.",
+      "chars": 14,
+      "seconds": 2.79
+    },
+    {
+      "text": "한복과 손짓을 따라 그립니다.",
+      "chars": 16,
+      "seconds": 2.68
+    },
+    {
+      "text": "작은 판이 사람을 모읍니다.",
+      "chars": 15,
+      "seconds": 3.06
+    },
+    {
+      "text": "그림은 한순간을 보여 줍니다.",
+      "chars": 16,
+      "seconds": 2.6
+    },
+    {
+      "text": "조선 놀이의 전부는 아닙니다.",
+      "chars": 16,
+      "seconds": 3.17
+    },
+    {
+      "text": "누군가에겐 처음 본 조선입니다.",
+      "chars": 17,
+      "seconds": 4.2
+    },
+    {
+      "text": "TJ KIM 컬렉션 소장품입니다.",
+      "chars": 18,
+      "seconds": 3.0
+    }
+  ],
+  "font_size": 54,
+  "previous_size": 48,
+  "text_top": 1212,
+  "picture_bottom": 1176,
+  "other_video_hashes": {
+    "ep03": "439192fc6fc9d605b8166a812016af0496d6457791272cef411b04b5f5821467",
+    "ep04": "e92e39fa65482824ceec2d3f06a2ace57c69d5d0c8820c55ea1f5af05f0b4f90",
+    "ep05": "64c14cf37dd737aae5955952fdee15885b95796af1e18a6791fdf7f0633612cc",
+    "ep06": "65de8530a602d49ab525553e4e191e37493ce43f09ae01b39ee1e2dfd7e150d4",
+    "ep07": "de904750a39bfd3a3e5c2324eeba401482253aa71075403b77a857604d89f17c",
+    "ep08": "51989897ff2fc28a00aba185525feaaacb3cfbc5e85200724b52ac4f516a8953",
+    "ep09": "69b23d7d6b2726307a2d99d2fe889d373359d79ff725880a3c2e0ae207498f56",
+    "ep10": "70c679c7eb79d88139ce0eff482b159208101fac12fdf7a543578c736b100088",
+    "ep11": "493e3414ae7986bde3b82cbbb54010436689a5637b3b693d2c3aa92edfd5cdfd"
+  }
+}

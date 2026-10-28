@@ -1,0 +1,124 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e262]
+    - menuitem "오디오 보관함" [ref=e263]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 콘텐츠" [level=1]
+  - tablist [ref=e264]:
+    - tab "동영상" [ref=e265]
+    - tab "Shorts" [ref=e266] [selected]
+    - tab "라이브" [ref=e267]
+    - tab "재생목록" [ref=e268]
+    - tab "팟캐스트" [ref=e269]
+    - tab "프로모션" [ref=e270]
+    - tab "컬래버레이션" [ref=e271]
+    - tab "아이디어" [ref=e272]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e274] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e275]:
+          - checkbox "전체 선택" [ref=e277]
+        - columnheader "Shorts 동영상" [ref=e278]
+        - columnheader "알림" [ref=e279]
+        - columnheader "공개 상태" [ref=e280]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e281]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e282]: "조회수"
+        - columnheader "댓글" [ref=e283]
+    - row:
+      - cell "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e284]:
+        - checkbox "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化개 선택" [ref=e286]
+      - cell:
+        - link "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化 1:08" [ref=e287]
+        - link "雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化" [ref=e288]
+        - text: "雨の日、傘だけが頼りだったのでしょうか。\n軒下にいる人と雨の中を歩く人。広いつばの帽子や荷物の覆いに、雨をしのぐ工夫が見えます。\n\n服装は飾りだけでなく、天気に応じる道具でもありました。見慣れない帽子の先に、雨でも続く商いや荷運び、同じ雨の一日を生きる人々の姿をたどります。\n\n所蔵品：APKC260507306・伝ウン…[+111 chars]"
+      - cell:
+        - generic "—" [ref=e289]
+      - cell:
+        - generic "비공개" [ref=e290]
+      - cell "2026. 10. 26." [ref=e291]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e292]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e293]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e294]: "0"
+    - row:
+      - cell "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e295]:
+        - checkbox "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史개 선택" [ref=e297]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史 1:08" [ref=e298]
+        - link "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史" [ref=e299]
+        - text: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC2…[+123 chars]"
+      - cell:
+        - generic "—" [ref=e300]
+      - cell:
+        - generic "비공개" [ref=e301]
+      - cell "2026. 10. 26." [ref=e302]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e303]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e304]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e305]: "0"
+    - row:
+      - cell "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e306]:
+        - checkbox "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化개 선택" [ref=e308]
+      - cell:
+        - link "동영상 미리보기 이미지: アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化 1:08" [ref=e309]
+        - link "アイロンの前、韓国では布をどう整えた？「タドゥミジル」の手仕事 #韓国文化" [ref=e310]
+        - text: "アイロンがなかったころ、布をどう整えたのでしょうか。\n石の上に置いた布を、二人が木の棒で打っています。韓国で「タドゥミジル」と呼ばれる手仕事です。洗って糊を付けた布を打ち、しわや表面を整えました。\n\n砧という言葉を思い出す方もいるかもしれません。腕の角度や座り方をたどりながら、白い衣服を支えた日々の労働を見てみましょう…[+141 chars]"
+      - cell:
+        - generic "—" [ref=e311]
+      - cell:
+        - generic "비공개" [ref=e312]
+      - cell "2026. 10. 26." [ref=e313]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e314]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e315]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e316]: "0"
+    - row:
+      - cell "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e317]:
+        - checkbox "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化개 선택" [ref=e319]
+      - cell:
+        - link "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 1:08" [ref=e320]
+        - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e321]
+        - text: "朝鮮時代の人々は、休みの日に何をして遊んでいたのでしょうか。\n低い盤を四人が囲んでいます。今日の主役は「ユンノリ」です。\n\nさいころの代わりに四本の木の棒を投げ、駒を進めます。近道を選んだり、仲間の駒を一緒に進めたり。運だけでなく、相談する楽しさもあるゲームです。旧正月のころ、家族や近所の人が集まって親しまれてきました…[+172 chars]"
+      - cell:
+        - generic "—" [ref=e322]
+      - cell:
+        - generic "공개" [ref=e323]
+      - cell "2026. 10. 25." [ref=e324]: "2026. 10. 25.\n     게시일"
+      - cell "104" [ref=e325]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e326]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e327]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e328]:
+      - button "30" [ref=e329]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e330] [disabled]
+    - button "이전 페이지로 이동" [ref=e331] [disabled]
+    - button "다음 페이지로 이동" [ref=e332] [disabled]
+    - button "마지막 페이지로 이동" [ref=e333] [disabled]
+[ok | 179ms]
+repl > 

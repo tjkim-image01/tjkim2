@@ -1,0 +1,65 @@
+{
+  "episode": "ep10",
+  "strokes": 367,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "standing_seller_face",
+      "start": 0.8,
+      "end": 4.062142417896902
+    },
+    {
+      "key": "standing_seller_body",
+      "start": 4.066666666666669,
+      "end": 8.048819597520529
+    },
+    {
+      "key": "standing_seller_legs",
+      "start": 8.059259259259262,
+      "end": 11.070836409328054
+    },
+    {
+      "key": "left_seller_face",
+      "start": 11.083950617283953,
+      "end": 14.339406490056458
+    },
+    {
+      "key": "left_seller_body",
+      "start": 14.350617283950617,
+      "end": 18.33092020817649
+    },
+    {
+      "key": "left_seller_legs",
+      "start": 18.343209876543213,
+      "end": 21.359267155013917
+    },
+    {
+      "key": "rear_customer_face",
+      "start": 21.36790123456791,
+      "end": 24.59265703862004
+    },
+    {
+      "key": "rear_customer_body",
+      "start": 24.634567901234572,
+      "end": 28.6171468251388
+    },
+    {
+      "key": "rear_customer_legs",
+      "start": 28.627160493827176,
+      "end": 31.63981622373064
+    },
+    {
+      "key": "objects",
+      "start": 31.651851851851863,
+      "end": 40.11114829581785
+    },
+    {
+      "key": "background",
+      "start": 40.12098765432101,
+      "end": 49.79854777601855
+    }
+  ],
+  "music": "flow-playful",
+  "source_backup": "versions/before-series-v15"
+}

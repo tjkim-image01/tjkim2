@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "cases": [
+    {
+      "episode": "ep07",
+      "language": "ko",
+      "width": 1080,
+      "height": 1920,
+      "decoded": [
+        {
+          "time": 1.5,
+          "readyState": 4
+        },
+        {
+          "time": 8.3,
+          "readyState": 4
+        },
+        {
+          "time": 30,
+          "readyState": 4
+        },
+        {
+          "time": 65,
+          "readyState": 4
+        }
+      ],
+      "first_brush_mae": 1.1639904835390946
+    },
+    {
+      "episode": "ep11",
+      "language": "ja",
+      "width": 1080,
+      "height": 1920,
+      "decoded": [
+        {
+          "time": 1.5,
+          "readyState": 4
+        },
+        {
+          "time": 8.3,
+          "readyState": 4
+        },
+        {
+          "time": 30,
+          "readyState": 4
+        },
+        {
+          "time": 65,
+          "readyState": 4
+        }
+      ],
+      "first_brush_mae": 1.1639904835390946
+    },
+    {
+      "episode": "ep06",
+      "language": "ko",
+      "width": 1080,
+      "height": 1920,
+      "decoded": [
+        {
+          "time": 1.5,
+          "readyState": 4
+        },
+        {
+          "time": 8.3,
+          "readyState": 4
+        },
+        {
+          "time": 30,
+          "readyState": 4
+        },
+        {
+          "time": 65,
+          "readyState": 4
+        }
+      ],
+      "first_brush_mae": 1.058951099537037
+    }
+  ],
+  "passed": true
+}

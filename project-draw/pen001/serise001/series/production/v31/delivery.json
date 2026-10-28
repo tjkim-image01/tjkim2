@@ -1,0 +1,42 @@
+{
+  "verified_editions": 30,
+  "episodes": 10,
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "bundles": {
+    "ko": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_KO_10_v31.zip",
+      "bytes": 246176816,
+      "size_mb": 246,
+      "sha256": "65cbe91a203881ab209f6eab23c48e76fe9e2d1748584153eeae801cf01ceb76",
+      "episodes": 10,
+      "language": "ko",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "81164153912f0f9211e88bae09d27e4c7418b77e2522b9d88aec9203b4c920e9"
+    },
+    "en": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_EN_10_v31.zip",
+      "bytes": 246399796,
+      "size_mb": 246,
+      "sha256": "7cdcb781658a0e7d20a5df37ad9880297d1bee5b5d2244bcfd23a03edf1f7252",
+      "episodes": 10,
+      "language": "en",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "bfed04c71e7ee13625a33a679bd19b5bbf709cc96a4d73a63d06ebd3af7cf3e2"
+    },
+    "ja": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_JA_10_v31.zip",
+      "bytes": 248446410,
+      "size_mb": 248,
+      "sha256": "790a0bebb3e8435d5cdb388064752734308af588870270810ff7cc5c8c1f94d1",
+      "episodes": 10,
+      "language": "ja",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "75c116a8f5fc31ad36ebf2c969de95c814eccd95bc7c2240b5fc2fd04364a774"
+    }
+  },
+  "public_deploy": false
+}

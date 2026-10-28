@@ -1,0 +1,135 @@
+{
+  "episode": "ep04",
+  "strokes": 510,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "carrier_face",
+      "start": 0.8,
+      "end": 3.339296576963112
+    },
+    {
+      "key": "carrier_body",
+      "start": 3.368932038834953,
+      "end": 6.49564860822805
+    },
+    {
+      "key": "carrier_legs",
+      "start": 6.508737864077676,
+      "end": 8.86065401244268
+    },
+    {
+      "key": "front_man_face",
+      "start": 8.887378640776708,
+      "end": 11.44793537062524
+    },
+    {
+      "key": "front_man_body",
+      "start": 11.456310679611658,
+      "end": 14.590027296205095
+    },
+    {
+      "key": "front_man_legs",
+      "start": 14.596116504854379,
+      "end": 16.95590323998722
+    },
+    {
+      "key": "standing_cook_face",
+      "start": 16.97475728155341,
+      "end": 19.516562058207857
+    },
+    {
+      "key": "standing_cook_body",
+      "start": 19.543689320388356,
+      "end": 22.67802068417989
+    },
+    {
+      "key": "standing_cook_legs",
+      "start": 22.68349514563108,
+      "end": 25.04748188468074
+    },
+    {
+      "key": "butcher_face",
+      "start": 25.06213592233011,
+      "end": 25.676595617423505
+    },
+    {
+      "key": "butcher_body",
+      "start": 25.68058252427186,
+      "end": 26.628243972138545
+    },
+    {
+      "key": "rear_cook_face",
+      "start": 26.632038834951473,
+      "end": 27.245811568834004
+    },
+    {
+      "key": "rear_cook_body",
+      "start": 27.250485436893214,
+      "end": 28.195841070063704
+    },
+    {
+      "key": "rear_woman_face",
+      "start": 28.201941747572832,
+      "end": 28.81328023953835
+    },
+    {
+      "key": "rear_woman_body",
+      "start": 28.820388349514577,
+      "end": 29.764145782401048
+    },
+    {
+      "key": "rear_woman_legs",
+      "start": 29.771844660194194,
+      "end": 30.285785996913727
+    },
+    {
+      "key": "rear_hat_man_face",
+      "start": 30.29514563106798,
+      "end": 30.90917335403393
+    },
+    {
+      "key": "rear_hat_man_body",
+      "start": 30.91359223300973,
+      "end": 31.858478371743864
+    },
+    {
+      "key": "rear_beard_man_face",
+      "start": 31.865048543689344,
+      "end": 32.474685879580484
+    },
+    {
+      "key": "rear_beard_man_body",
+      "start": 32.483495145631096,
+      "end": 33.42974959836801
+    },
+    {
+      "key": "right_cook_face",
+      "start": 33.43495145631069,
+      "end": 34.047207915107165
+    },
+    {
+      "key": "right_cook_body",
+      "start": 34.05339805825245,
+      "end": 34.99921338533698
+    },
+    {
+      "key": "right_cook_legs",
+      "start": 35.004854368932065,
+      "end": 35.517115569411004
+    },
+    {
+      "key": "objects",
+      "start": 35.52815533980585,
+      "end": 42.183917557783595
+    },
+    {
+      "key": "background",
+      "start": 42.18834951456313,
+      "end": 49.79876422805903
+    }
+  ],
+  "music": "flow-playful",
+  "source_backup": "versions/before-series-v15"
+}

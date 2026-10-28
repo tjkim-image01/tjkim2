@@ -1,0 +1,49 @@
+{
+  "id": "f4da4b75-7525-490a-8212-78775042e13a",
+  "author_id": "81cc767c-e719-45b2-9df1-6bc07a2addcd",
+  "op_id": "337f4c99-d7c0-5a74-b890-20832154605f",
+  "op_type": "audio__create_song",
+  "duration": {
+    "status": "completed",
+    "value": "98.70933333333333"
+  },
+  "lyrics": {
+    "status": "completed",
+    "value": {
+      "id": "55161754-f78d-5b7f-9fa2-6a3cc8d6ba93",
+      "text": "[Instrumental]"
+    }
+  },
+  "lyrics_timing": {
+    "status": "not_requested"
+  },
+  "user_edited_lyrics_id": null,
+  "title": "먹빛 타악 효과음",
+  "privacy": "unlisted",
+  "allow_public_use": true,
+  "has_vocals": null,
+  "has_cid_match": null,
+  "has_minor_vocals": null,
+  "image_id": "337f4c99-d7c0-5a74-b890-20832154605f",
+  "video_id": null,
+  "song_plan_id": null,
+  "created_at": "2026-10-25T09:28:52.624849Z",
+  "deleted_at": null,
+  "operation": {
+    "op_type": "audio__create_song",
+    "conversation_id": null,
+    "sound_prompt": "sparse Korean traditional percussion sound effects cue, isolated authentic janggu gung and ttak double hit, low buk impact, delicate jing gong swell with long natural decay, dry close-miked acoustic attacks, plenty of silence between gestures, 76 bpm",
+    "title": "먹빛 타악 효과음",
+    "seed": null,
+    "lyrics_id": null
+  },
+  "is_favorite": false,
+  "preference_state": null,
+  "favorite_count": 0,
+  "play_count": 1,
+  "is_remix_eligible": true,
+  "audio_url": "https://storage.googleapis.com/producer-app-public/clips/f4da4b75-7525-490a-8212-78775042e13a.m4a",
+  "wav_url": "https://storage.googleapis.com/producer-app-public/clips/f4da4b75-7525-490a-8212-78775042e13a.wav",
+  "image_url": "https://storage.googleapis.com/producer-app-public/assets/337f4c99-d7c0-5a74-b890-20832154605f.jpg",
+  "video_url": null
+}

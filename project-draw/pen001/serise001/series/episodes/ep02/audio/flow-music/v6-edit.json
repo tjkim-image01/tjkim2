@@ -1,0 +1,91 @@
+{
+  "music": "Original full 174.496s music source; music start and source offset are editor parameters. No speech ducking or film-time effects baked into music.",
+  "rim": "Original modal synthesis of a wooden janggu-rim-like stage effect; not an acoustic instrument recording.",
+  "effects": [
+    {
+      "at": 1,
+      "gain": 0.17,
+      "label": "buk roll"
+    },
+    {
+      "at": 1.35,
+      "gain": 0.18666666666666668,
+      "label": "buk roll"
+    },
+    {
+      "at": 1.65,
+      "gain": 0.20333333333333334,
+      "label": "buk roll"
+    },
+    {
+      "at": 1.93,
+      "gain": 0.22000000000000003,
+      "label": "buk roll"
+    },
+    {
+      "at": 2.17,
+      "gain": 0.2366666666666667,
+      "label": "buk roll"
+    },
+    {
+      "at": 2.38,
+      "gain": 0.25333333333333335,
+      "label": "buk roll"
+    },
+    {
+      "at": 2.56,
+      "gain": 0.27,
+      "label": "buk roll"
+    },
+    {
+      "at": 2.73,
+      "gain": 0.2866666666666667,
+      "label": "buk roll"
+    },
+    {
+      "at": 2.88,
+      "gain": 0.30333333333333334,
+      "label": "buk roll"
+    },
+    {
+      "at": 3.02,
+      "gain": 0.32,
+      "label": "buk roll"
+    },
+    {
+      "at": 3.15,
+      "gain": 0.33666666666666667,
+      "label": "buk roll"
+    },
+    {
+      "at": 3.27,
+      "gain": 0.3533333333333334,
+      "label": "buk roll"
+    },
+    {
+      "at": 3.39,
+      "gain": 0.37000000000000005,
+      "label": "buk roll"
+    },
+    {
+      "at": 3.5,
+      "gain": 0.68,
+      "label": "single wooden janggu-rim-like finish"
+    },
+    {
+      "at": 20.4,
+      "gain": 0.14,
+      "label": "Flow percussion accent"
+    },
+    {
+      "at": 34.2,
+      "gain": 0.12,
+      "label": "Flow percussion accent"
+    },
+    {
+      "at": 48,
+      "gain": 0.32,
+      "label": "Flow percussion accent"
+    }
+  ]
+}

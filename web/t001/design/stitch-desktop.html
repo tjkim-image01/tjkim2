@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TJ KIM COLLECTION · 그림 속 조선 (Joseon in Frames)</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk & Noto Sans KR -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#191c1b",
+            "surface-bright": "#f9faf7",
+            "inverse-surface": "#2e312f",
+            "outline": "#75777a",
+            "primary-fixed-dim": "#c6c6c9",
+            "inverse-primary": "#c6c6c9",
+            "on-surface-variant": "#45474a",
+            "secondary-container": "#bfe9d9",
+            "secondary-fixed-dim": "#a6cfc0",
+            "on-primary-fixed": "#1a1c1e",
+            "inverse-on-surface": "#f0f1ee",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#e2e2e5",
+            "on-tertiary-fixed-variant": "#42474d",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#171c21",
+            "surface-dim": "#d9dad7",
+            "outline-variant": "#c5c6ca",
+            "tertiary-container": "#171c21",
+            "surface": "#f9faf7",
+            "secondary": "#40665a",
+            "on-secondary-fixed-variant": "#284e43",
+            "on-surface": "#191c1b",
+            "on-primary-container": "#838486",
+            "on-primary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#000000",
+            "on-secondary-fixed": "#002019",
+            "on-secondary-container": "#446a5e",
+            "on-primary-fixed-variant": "#454749",
+            "surface-container-highest": "#e2e3e0",
+            "surface-container": "#edeeeb",
+            "surface-variant": "#e2e3e0",
+            "surface-tint": "#5d5e61",
+            "error": "#ba1a1a",
+            "background": "#f9faf7",
+            "primary-container": "#1a1c1e",
+            "surface-container-high": "#e7e8e6",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#c2ebdc",
+            "tertiary-fixed-dim": "#c2c7ce",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#7f848b",
+            "tertiary-fixed": "#dee3ea",
+            "surface-container-low": "#f3f4f1",
+            "primary": "#000000"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-xl": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-lg": "2rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Noto Sans", "Noto Sans KR", "sans-serif"],
+            "headline-sm": ["Noto Sans", "Noto Sans KR", "sans-serif"],
+            "label-sm": ["Space Grotesk", "sans-serif"],
+            "display-lg": ["Space Grotesk", "sans-serif"],
+            "body-md": ["Noto Sans", "Noto Sans KR", "sans-serif"],
+            "display-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "display-xl": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Noto Sans", "Noto Sans KR", "sans-serif"],
+            "display-xl-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Noto Sans", "Noto Sans KR", "sans-serif"],
+            "label-md": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["Noto Sans", "Noto Sans KR", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "500" }],
+            "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Hairline utilities & Pure zero-radius rigidity */
+    * {
+      border-radius: 0 !important;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .hairline-b {
+      border-bottom: 1px solid #e4e6e1;
+    }
+    .hairline-t {
+      border-top: 1px solid #e4e6e1;
+    }
+    .hairline-r {
+      border-right: 1px solid #e4e6e1;
+    }
+    .hairline-l {
+      border-left: 1px solid #e4e6e1;
+    }
+    .hairline-all {
+      border: 1px solid #e4e6e1;
+    }
+    /* Pine accent tone */
+    .bg-pine {
+      background-color: #254b40;
+    }
+    .text-pine {
+      color: #254b40;
+    }
+    .border-pine {
+      border-color: #254b40;
+    }
+    .hover-bg-pine:hover {
+      background-color: #254b40;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- =========================================================================
+       1. TOP APP BAR (Shared Components: TopNavBar)
+       ========================================================================= -->
+<header class="w-full bg-surface dark:bg-background border-b border-outline-variant dark:border-outline sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-full h-16">
+<!-- Wordmark Brand Logo -->
+<div class="flex items-center space-x-6">
+<a class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-surface dark:text-inverse-on-surface focus:outline-none" href="#">
+          TJ KIM COLLECTION
+        </a>
+<span class="hidden lg:inline-block w-px h-4 bg-outline-variant"></span>
+<span class="hidden lg:inline-block font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+          Joseon in Frames · Curatorial Series
+        </span>
+</div>
+<!-- Desktop Primary Nav Links (Shared Components JSON) -->
+<nav class="hidden md:flex items-center space-x-8">
+<!-- Active Link: '홈' (mapped to current desktop home intent) -->
+<a class="text-primary dark:text-inverse-primary font-semibold border-b border-primary dark:border-inverse-primary pb-1 text-label-md font-label-md transition-colors duration-150" href="#">
+          홈
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 text-label-md font-label-md" href="#episodes">
+          영상
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 text-label-md font-label-md" href="#archive">
+          소장품
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 text-label-md font-label-md" href="#collection-about">
+          컬렉션 소개
+        </a>
+</nav>
+<!-- Trailing Controls: Language Switcher & Bookmark Action -->
+<div class="flex items-center space-x-3">
+<!-- Trailing primary action: KR / EN / JP -->
+<div class="flex items-center px-2 py-1 hairline-all bg-surface-container-lowest text-label-sm font-label-sm text-on-surface-variant space-x-1">
+<span class="text-on-surface font-bold">KR</span>
+<span class="text-outline-variant">/</span>
+<span class="hover:text-on-surface cursor-pointer">EN</span>
+<span class="text-outline-variant">/</span>
+<span class="hover:text-on-surface cursor-pointer">JP</span>
+</div>
+<!-- Trailing icon action: bookmark (44px target) -->
+<button aria-label="저장된 소장품 목록 보기" class="w-11 h-11 flex items-center justify-center hairline-all bg-surface-container-lowest hover:bg-surface-container transition-colors duration-150 text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- =========================================================================
+         2. HERO SECTION: Asymmetric Modernist Editorial Split
+         ========================================================================= -->
+<section class="w-full px-space-lg md:px-margin pt-space-lg md:pt-space-xl pb-space-xl hairline-b">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+<!-- Left Editorial Column (7 cols on desktop) -->
+<div class="md:col-span-6 flex flex-col justify-between pr-0 md:pr-space-lg py-2">
+<div>
+<!-- Monospaced Series Tag -->
+<div class="inline-flex items-center space-x-2.5 mb-6 hairline-all px-2.5 py-1 bg-surface-container-lowest">
+<span class="w-2 h-2 bg-pine inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-widest uppercase">
+                그림 속 조선 · Joseon in Frames
+              </span>
+</div>
+<!-- Massive Display Title -->
+<h1 class="font-display-xl text-display-xl text-on-background tracking-tighter leading-none mb-6 whitespace-pre-line font-bold">한 획을 따라,
+조선의 일상으로.</h1>
+<!-- Editorial Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+              그림을 그리며 만나는 사람들의 일과 놀이. 19세기 화첩의 단단한 선 속에 박제되었던 길거리, 난전, 들판의 생생한 숨결을 현대적인 시선으로 복원합니다.
+            </p>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-4 mb-10">
+<a class="inline-flex items-center justify-center px-6 h-12 bg-[#254b40] text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-[#1b372f] transition-colors duration-150 focus:outline-none" href="#episodes">
+<span class="material-symbols-outlined text-[18px] mr-2">play_arrow</span>
+                첫 이야기 보기
+              </a>
+<a class="inline-flex items-center h-12 px-4 text-on-surface font-label-md text-label-md tracking-wider border-b border-primary hover:text-pine hover:border-pine transition-colors duration-150" href="#archive">
+                소장품 둘러보기 <span class="ml-2 font-display-lg text-base">→</span>
+</a>
+</div>
+</div>
+<!-- Curatorial Metadata Footnote -->
+<div class="pt-6 hairline-t flex flex-col sm:flex-row sm:items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-2">
+<div>
+<span class="text-on-surface font-semibold">기록 번호</span> APKC260507306
+            </div>
+<div class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-outline-variant inline-block"></span>
+<span>운초 전칭 (Attributed to Uncho)</span>
+</div>
+<div class="text-outline">
+              조선 후기 풍속화첩 제1-10폭
+            </div>
+</div>
+</div>
+<!-- Right Cinematic Visual Column (6 cols on desktop with focal positioning) -->
+<div class="md:col-span-6 flex flex-col justify-start mt-8 md:mt-0">
+<div class="relative w-full bg-surface-container-lowest hairline-all p-3 flex flex-col">
+<!-- Real Album Photograph Focus Area (Yutnori Figures on the left mat) -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img alt="운초 전칭 풍속화첩 속 윷놀이를 즐기는 네 명의 조선 남성들이 멍석 주위에 둘러앉은 생생한 모습" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh4-SOgxRSld4qnnaCzmBAO7m6YsxcBrWA8XuKRl153SPMBzbDwkLJluSjW1URNsu4b16lLL3HqF9KK6D9NVBjarYyjARNzM8ponhPcO04tq692tgOwIt9seYkvcYMjXUaoTHjfS_lv81jqQz8uChlmJLA2Ig2-UHXojBzpJ1f4K4_8blkjWbjH7yxM7m2I2q8P9ZwyS0QwSdwmEupM3elE9Wks9OARDUzHmWXutYo7_IfUuZIPjZK31AHVRUD8ZEQcyJnYDtAzg" style="object-position: 22% 48%;"/>
+<!-- Live Camera / Frame Guides Overlay -->
+<div class="absolute top-3 left-3 px-2 py-0.5 bg-on-background/80 text-surface-bright font-label-sm text-label-sm uppercase tracking-widest backdrop-blur-none">
+                PLATE 01 · 4K DIGITIZED
+              </div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 bg-surface-bright/95 text-on-surface font-label-sm text-label-sm border border-outline-variant">
+                FOCUS: YUTNORI (윷놀이)
+              </div>
+</div>
+<!-- Anchored Featured Episode Card Directly on Art Frame -->
+<div class="w-full bg-surface-container-low hairline-t mt-3 p-4 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-[#254b40] text-surface-bright flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">
+                    01 윷놀이 · 1:07
+                  </div>
+<div class="font-headline-sm text-body-lg text-on-surface font-bold">
+                    네 사람이 둘러앉은 이유
+                  </div>
+</div>
+</div>
+<div class="hidden sm:block text-right font-label-sm text-label-sm text-on-surface-variant">
+<span>에피소드 재생</span>
+<span class="material-symbols-outlined text-sm align-middle ml-1">north_east</span>
+</div>
+</div>
+</div>
+<!-- Architectural Scale Reference Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1 pt-2">
+<span>SCALE RATIO: 1:1 PHYSICAL INK ARCHIVE</span>
+<span>COLOR CALIBRATION: CIE D65 VERIFIED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         3. VIDEO SERIES SECTION: "01 — EPISODES" (10-Episode Grid)
+         ========================================================================= -->
+<section class="w-full px-space-lg md:px-margin py-space-xl hairline-b bg-surface-bright" id="episodes">
+<div class="max-w-[1400px] mx-auto">
+<!-- Section Header Cluster -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-8 hairline-b mb-8">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold mb-2">
+              01 — EPISODES
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              붓끝에서 시작되는 열 가지 이야기
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-4 md:mt-0">
+            먹과 채색의 선을 따라 복원한 19세기 조선의 생생한 풍속과 생활상. 각 장면에 깃든 인물들의 시선과 동작을 마이크로 다큐멘터리 영상으로 확인하십시오.
+          </p>
+</div>
+<!-- 10-Episode Responsive Grid: 5 cols desktop, 2 cols mobile -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- EPISODE 01 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="An authentic 19th-century Korean Joseon dynasty genre painting detail of four men in traditional hanbok and gat hats sitting around a straw mat vigorously playing the traditional game of yutnori. High-key light-mode lighting reveals delicate ink and light wash color strokes on antique Korean paper. The mood is candid, communal, and historic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXPRhc6HHKz2f0s-46DidhjKWrGYZsgJEtdPOFutbN4WrAgYyi6jhlSsMEVJpXyYjBvevhjVCZOVf4sw5lesN5FpneBp9YFvEhBT70nkSh8zJ9qP_2x5wgzvZjYKKI1-CGOXLbuiJiW37NMlj4ohLoYTz2SPIxqWG4EJ0gt7fCh2BFPI2dgg_8-0TEz-b4zFRYfHXnjaVuKWGXtMe6e8MiO1B1LI_NL4zuhVGcG1ePeYQOkfssf5TItcgZ8qUriTGfhn45UzWh6g"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                01 · 1:07
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">윷놀이</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  네 사람이 둘러앉은 이유
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 01</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 02 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Joseon era Korean genre painting detail showing a traditional woman seated at a wooden weaving loom shuttle weaving cloth. High-key soft gallery light illuminates the precise ink linework and soft indigo-tinted textile details. The composition is focused, serene, and historically meticulous." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_1EEyyhXzfWhyzlMVoQ7sYCxYls7ixw-tOQ3Sv8IxNnZC69VZoaCg3ogZZSvM8azYnilhIKHzdMLvf-m9LF4TCX0l3f8MzCZguU3xMDtfBPbHs_E2Rm5V5RcJiJPrt2oOH6sGXxHsRvLiMwHnkSTNoPexPr_cA0yPldtO2KNGxHDIrOQlFXf1vE3FVQAGsJT4NbUYInueA1fnc5oVhrg5qhJ5FMJzj0rFdMm5ZIr6g5D4qkvgxbwAA43NGq1PqhUaFv189YTzzA"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                02 · 1:42
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">직조</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  베틀 앞의 하루
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 02</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 03 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Archival Korean Joseon painting plate depicting travelers and commoners stopping at an open roadside tavern jumak for a warm bowl of soup. Clear archival lighting highlights the earthen pottery bowls and earthen stoves with subtle ink wash gradients against a neutral chalk-toned background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeKhB7018e7k-2rRn9fUuJkQU6rBOcygr8N83z2FGY5wW6XlETM9kY94GTG99KbqUIZDbURH3HQEiS7yWrI_JX1-lPoC9Mx6vRBJKdteJrbwOLBmq_wsDywXsPwVdCelSim_1EAvGSajoPvRTpOkP2uNPWjZlf_z_t22vviAeJVKJV8ExSO8ExdfaO29z7tDeGiTCRxOX0NUlySzSzgxnxEdv208j5ermxlLrk1lARM70l2n7dqFJPczofEMjmvtdT9W1NXlF6zA"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                03 · 2:15
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">주막과 식사</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  따뜻한 한 끼
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 03</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 04 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up detail of 19th-century Joseon scholars wearing translucent horsehair gat hats and sweeping pale blue and white dopo robes. Pristine documentary style capture showing the delicate cross-hatching of the hat weaving and dignified postures in a clean gallery setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNzhjtKcZwr1iY16yC9uBnzSdN-lSYKQxVBSg0asf9uw_Mb8-BBUCVpS_IOedFsu8-17UwA-vSknL-KJfmftof5qxMbugolIXccEH_yjqhaMJ19iNrFkR92cNfbuY_8BLM4IuZ58wz4p_1aOl7QuLVp45E5D68zIu5FGJBYVJyvhsrAneuhCFAZWcgYK9CIlm79KD8DMmSTGN998jPEHAC65gds-GSZbJLCR6wSHEiqzr0hKxNjXma-8UY2jdIHe1QVaEbmfF_aQ"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                04 · 1:29
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">갓과 도포</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  옷차림이 들려주는 이야기
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 04</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 05 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Joseon genre painting vignette illustrating figures walking through sudden rain wearing straw capes and oiled paper umbrellas on a winding mountain road. Archival museum reproduction with high visual clarity, crisp contrast, and subtle mineral pigments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMBasHmzIFy9Tp8BnZQi8Y4BOhgdnrMhWrQ0hExJtFhq8N0_b4J_avcwKPp1tC83sQKt-IsFpFZD5x8jsajHf2Y424BDLO086fGWyVCi3z1cwMDg-O_XfnLi1BEuUvftx-XoVgLzfRJxLQmz8D7gVSXZmVpu29jIcL65ChX6bO_Pp_9Dlht8Uy3XtKn79XunG_wvfNFVXzZrzmuLT5_xWfhXLqfs8h7DK1yv0reHojiC8815AfPV5AwgAcA-GVPyF8HoTlrlTyRA"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                05 · 1:55
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">우중 나들이</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  비 오는 날의 조선
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 05</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 06 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Joseon traditional marketplace nanjeon scene depicting merchants with wooden packs selling brassware and dried fish to villagers. Detailed brushwork and authentic late Joseon dynamic figures rendered in natural earth tones and dark ink contours." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Xgc05Pr4ZzccUvXNZScmYfLInmbxhkGEmyjCTSTs6kn9m3gGgbVwS8m8nHBXDb3vZxpXEfjRhnbg-9DzL09JeYGETTz7y-5Jrn__wR8AnKRowZQkRMibEVnQLFMVrmgVGA-rP983x2aLDJuvd-ePWl4GS6hDKlp2v7UrVCedfA1sU4XbIVRpGniYOHI6uV7hiYa24PUpFSSwEW_2KCL_mYDRbdAQx75Zzym52O2e2farZ2H4hs68LzorwPNAYDSJ24JQ08OyRQ"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                06 · 2:04
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">난전 풍경</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  장터의 소리
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 06</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 07 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Genre painting frame capturing women gathered at an outdoor stone village well with clay water jars on their heads chatting in the morning light. Soft mineral colors and deliberate, expressive facial lines in the style of Uncho and Kisan genre works." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB10Y-11inUpo_D9zmkroodVe7rtI7TFcGvZhR-KZFHGRDxoYl0QL0dKmKE47492cbvzBYJorFnctggjDsBkc5sBlYbQ6nveaQ98dsI58VXwDU84QlUK0JeFpMzI_-7fgw55CcAWevryJiHzCws1WWjHVkUfXE9T5rQrCcRih3XFC7B5h4XmC1qmZJRL7SoeCODpiOejxC7d9F4AtAq2Dv_rOp2o7gdv_GzGEJ1us7vZmvxhtkTkSEgsbAzvA2DheBy-5fqCzX8zA"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                07 · 1:36
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">우물가 이야기</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  물 긷는 아침
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 07</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 08 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Interior of a traditional Korean Seodang village school with young boys sitting cross-legged reciting classical hanja texts before a strict elderly teacher with long white beard and bamboo rod. Clean museum scan with crisp edges and scholarly calm atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjOL9qnZXvW9CBIyVk8kJ2FsuhhRO19JyDKCbuug9RP2QoYtWPg0veAAYumWjfEqMp5yc_nPclDMVP0IPJa7-dtLAGyE_BFvs138SQ-N4iOVjEttk3vIIOvHEGwh5IPnBQWVIu9YniLPlROkqe9zYeLncOC3HGoJPL6BY-p43a2vjHJC44YP1WYWp-8xzrUV1TqtsMVi_9_SiwWNNKPFx5ah9g8BbZw1T0sJbVrayyiiAwHnUuoLiPzxyvxw703k9uRuZeNa974A"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                08 · 2:20
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">서당과 훈장</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  글방의 풍경
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 08</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 09 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Detail of a traditional Joseon Korean dancer holding a wide folding fan and performing an elegant solo dance step with long flowing sleeves. Dynamic ink brushstrokes create a sense of airborne movement and poetic poise in high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtv2aTqQlEc2RSawf1Q0zcUnIUEx4B2VXmNYiEXL82KTzZ7FUrx_hgdbzOh4TVCWQPe_HW0aLIiVhA5n3Qgzbyq9J3JYlv1p__Ly5T1WjCDU_fBd3EyvTEICqLM_wLN5Emn-DCUu409FwnOVb0JpAAN5LmZVICj6joYyiFeIpYZWDlMMfhcpJc2rBrXKgVJrrwKFbYEhuuH5EW2ON3OGR9ha4a7a7TE8l9eIHp-ePy-_VUkvX2OU8XFU0FcafMTVj1uOnJU0mSGg"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                09 · 1:48
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">부채와 춤</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  붓끝에 맺힌 바람
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 09</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- EPISODE 10 -->
+<div class="group cursor-pointer bg-surface-container-lowest hairline-all flex flex-col transition-all duration-150 hover:border-black">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Archival painting detail depicting travelers walking home under a crescent moon with glowing paper lanterns casting soft light onto the pathway. Atmospheric ink washes and rich charcoal shadows evoke nocturnal mystery and deep Joseon heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIhNExvtNIYsnfQH2CT-R8iD6U7cYF38ZKZo2wcM9QHkBEoIWbZYxAG7VVRFrlS48i0G5Y7jac6UjM6B0MNgY79bh5X5SuDrbDGeSKpToD8EFbuTFT5FknUUPfdg0kWbr4De5xtjFTI_5e1kNvjj7I7fcct_y-yQqMOU5qIW3zR1Rqszzxvrk-NTVSomNkJ261Pfy1Wc_eeUa3GG21YSgmMfna_MXEgyk0By2RxOyrgONLlR-1zJo80NNQk8glSQrtxhqJHW8hFg"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-[#254b40]/30 transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">play_circle</span>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 bg-black text-white font-label-sm text-label-sm tracking-wider">
+                10 · 2:10
+              </span>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-pine block mb-1">등불을 밝히고</span>
+<h3 class="font-headline-sm text-body-md font-bold text-on-surface group-hover:text-pine transition-colors">
+                  달밤의 귀가
+                </h3>
+</div>
+<div class="mt-3 pt-2 hairline-t flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>EPISODE 10</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         4. ARTWORK ARCHIVAL GALLERY: "02 — ARCHIVE"
+         ========================================================================= -->
+<section class="w-full px-space-lg md:px-margin py-space-xl hairline-b bg-background" id="archive">
+<div class="max-w-[1400px] mx-auto">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-8 hairline-b mb-10">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold mb-2">
+              02 — ARCHIVE
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              영상 속 그림을 가까이
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-4 md:mt-0">
+            영상 속에 담긴 원본 회화를 고해상도로 들여다보는 소장품 아카이브입니다. 지본채색의 섬세한 번짐과 필선의 속도를 왜곡 없이 원본 그대로 제공합니다.
+          </p>
+</div>
+<!-- 2-Column High-Resolution Archival Plate Display -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Plate A: 윷놀이도 (풍속화첩 제1폭) -->
+<article class="bg-surface-container-lowest hairline-all p-6 flex flex-col justify-between">
+<div>
+<!-- Catalog Indicator Header -->
+<div class="flex items-center justify-between pb-4 hairline-b mb-6 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">INDEX: FOLIO 01</span>
+<span>운초 전칭 (Attributed to Uncho)</span>
+<span>APKC260507306-01</span>
+</div>
+<!-- Real High-Res Picture Mat -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-low hairline-all p-4 mb-6">
+<img alt="윷놀이도 원본 화첩 사진 (풍속화첩 제1폭)" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK9LvFTEHWtWuvxOkqbGYoQGrfEgyV9NOx9O_dplCJcx2mqb5MMPPvoDYtHTedz4yeS1QVCoVMsESDc43rQSJwBvnLlTE_Y1UdM68sKl5ZXh2JsXDfoSSn8JEwyqtnjqIS87Z5HEDGD6YAQ3R4Tl4UW52R0esxiyMDKxYSh4P8ON-3XGekdOuzJqtd4fifppKToH2xvx5yKEJ5jJdWnMp25NvNgB1s1hXHw7cewK3bbAAvKnG2zVQyfEL_jogyikKlm9Bk-sRNCQ" style="object-position: 18% 50%;"/>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">
+                윷놀이도 (풍속화첩 제1폭)
+              </h3>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-4">
+                지본채색 (Ink and color on paper) · 24.5 × 32.0 cm · 19세기 후반
+              </div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                새해나 명절을 맞아 멍석 위에 윷가락을 던지며 판세를 관찰하는 인물들의 다양한 표정과 옷차림의 음영을 절제된 선묘로 포착한 대표작입니다.
+              </p>
+</div>
+<div class="pt-4 hairline-t flex items-center justify-between">
+<a class="inline-flex items-center font-label-md text-label-md text-on-surface border-b border-primary hover:text-pine hover:border-pine transition-colors pb-0.5" href="#">
+                세부 관람 및 학술 정보 <span class="ml-2 font-display-lg text-sm">→</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline">보존상태: 양호 (Clean Canvas)</span>
+</div>
+</article>
+<!-- Plate B: 베틀짜기도 (풍속화첩 제4폭) -->
+<article class="bg-surface-container-lowest hairline-all p-6 flex flex-col justify-between">
+<div>
+<!-- Catalog Indicator Header -->
+<div class="flex items-center justify-between pb-4 hairline-b mb-6 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">INDEX: FOLIO 04</span>
+<span>운초 전칭 (Attributed to Uncho)</span>
+<span>APKC260507306-04</span>
+</div>
+<!-- Real High-Res Picture Mat -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-low hairline-all p-4 mb-6">
+<img alt="베틀짜기도 원본 화첩 사진 (풍속화첩 제4폭 우측 폭)" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTtJQSl--dnj8EW81ke5veOnKyYT-4oCaytJ4tVrt70s5n0q79N9gK3ULpSXWcU0095sf0P0uKBhbmY003Uzl_DQTThz9kbIQd60Ts7uOKOaFhicI641OKDNI2h3xu366XUkFIPm1PaDGdkv_kUoIpP-xcfY5p6LB7HJmFJqjVifxrGIKaaWszKkkyDK1GECwWt9Vum-lXGuiIgtW6jDQJMklJ3KmV3GRR1mSvc2o7ze0KbPv5zO-rUp_Gr3leM971Uv7l9g1Abg" style="object-position: 82% 50%;"/>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">
+                베틀짜기도 (풍속화첩 제4폭)
+              </h3>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-4">
+                지본채색 (Ink and color on paper) · 24.5 × 32.0 cm · 19세기 후반
+              </div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                가옥 안팎의 노동과 생산 활동을 정교하게 기록한 장인의 화풍을 대변하며, 베틀의 목구조와 실을 고르는 여인의 집중된 손놀림이 사실적으로 묘사되어 있습니다.
+              </p>
+</div>
+<div class="pt-4 hairline-t flex items-center justify-between">
+<a class="inline-flex items-center font-label-md text-label-md text-on-surface border-b border-primary hover:text-pine hover:border-pine transition-colors pb-0.5" href="#">
+                세부 관람 및 학술 정보 <span class="ml-2 font-display-lg text-sm">→</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline">보존상태: 양호 (Clean Canvas)</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         5. PHYSICAL BOUND ALBUM FEATURE: Full-Width Archival Context
+         ========================================================================= -->
+<section class="w-full px-space-lg md:px-margin py-space-xl bg-surface-container-low hairline-b" id="collection-about">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Left Photography Spread -->
+<div class="md:col-span-7">
+<div class="relative hairline-all bg-surface-container-lowest p-4">
+<div class="aspect-[16/10] w-full overflow-hidden bg-black/5">
+<img alt="운초 전칭 풍속화첩 전체 양면 펼침 실물 사진 (Physical Bound Album Spread)" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2BzM8Lnitsy8yPdUz5R1eZxvHabDTl40VZ7EFFGvqlj1SZty6nrHQ77g5txrw_KOWtszX9X9cfofjHSEAmnIVXpqOugNSIKPEfUko8jjCKMlkRB1tEl7wpHM_tpcUfjsaVZwy3qMI4yLu1dReuMD8WGpPE5u_Yd1uVz_PbykfDloxe98rNt8m9nWLlmdoyNjkHU3G8n4hEj4mjrwnzZ7plzOlTvHGCkaT6m0IUsHJL-lg46z-QNleVbYtFgdxWnX5N0EHoIcepw"/>
+</div>
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>PHOTO: PHYSICAL DOUBLE-FOLIO ALBUM SPREAD</span>
+<span>DIMENSIONS: 310 × 440 MM (OPEN)</span>
+</div>
+</div>
+</div>
+<!-- Right Curatorial Narrative -->
+<div class="md:col-span-5 flex flex-col justify-center space-y-6 md:pl-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-pine font-bold">
+            ARCHIVAL CONTEXT &amp; ARTIFACT
+          </div>
+<h3 class="font-display-lg text-display-lg font-bold text-on-background tracking-tight leading-tight">
+            세월을 머금은 장정,<br/>화첩 본래의 호흡 그대로.
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            비단 배접과 닥종이의 물성이 온전히 보존된 원형 장정본입니다. 단편적인 낱폭 관람을 넘어, 화첩을 한 장씩 넘길 때마다 펼쳐지는 19세기 조선의 계절과 일상을 본래의 호흡대로 마주할 수 있습니다.
+          </p>
+<div class="p-4 hairline-all bg-surface-bright space-y-2 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">장정 형식:</span>
+<span>접철장(折帖裝) 전통 화첩 장정</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">보존 처리:</span>
+<span>2024 국립문화유산 분석 규격 준용</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">수장 위치:</span>
+<span>TJ KIM COLLECTION 수장고 A-04</span>
+</div>
+</div>
+<div>
+<button class="inline-flex items-center justify-center px-6 h-12 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-pine transition-colors duration-150 focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[18px] mr-2">menu_book</span>
+              실물 앨범 펼쳐 보기
+            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- =========================================================================
+       6. FOOTER (Shared Components: Footer & Cultural Archival Specifications)
+       ========================================================================= -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-high border-t border-outline-variant dark:border-outline px-space-lg md:px-margin py-space-lg">
+<div class="max-w-[1400px] mx-auto flex flex-col space-y-8">
+<!-- Top Row: Museum Wordmark & Formal Attributions -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-6 pb-6 hairline-b">
+<div>
+<div class="text-label-md font-label-md font-bold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase mb-2">
+            TJ KIM COLLECTION
+          </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+            소장처: TJ KIM COLLECTION · 작자: 운초 전칭 (Attributed to Uncho) · 관리번호: APKC260507306
+          </div>
+</div>
+<!-- Strict Curatorial Disclosure Statement -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl leading-relaxed">
+          본 소장품은 운초 전칭의 19세기 후반 조선 풍속화첩으로, 엄격한 보존과학 분석 및 디지털 아카이빙을 거쳐 공개됩니다. 학술 및 전시 목적의 원본 열람은 사전 심의 후 제한적으로 운영됩니다.
+        </p>
+</div>
+<!-- Bottom Row: Navigation Links & Copyright -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-2">
+<!-- Shared Components JSON Links with hover styling -->
+<nav class="flex flex-wrap items-center gap-6 font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant">
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 py-2" href="#">
+            컬렉션 규약
+          </a>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 py-2" href="#">
+            학술 연구 열람
+          </a>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 py-2" href="#">
+            보존 상태 보고서
+          </a>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 py-2" href="#">
+            이용 약관
+          </a>
+</nav>
+<!-- Copyright & Archival System Signature -->
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          © TJ KIM COLLECTION. APKC260507306. 운초 전칭 (Attributed to Uncho). All Rights Reserved. Curatorial Archival System.
+        </div>
+</div>
+</div>
+</footer>
+</body></html>

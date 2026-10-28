@@ -1,0 +1,588 @@
+[
+  {
+    "episode": "ep02",
+    "strokes": 844,
+    "single_RGB_assets_checked": 844,
+    "visible_asset_pixels": 12406134,
+    "people": [
+      {
+        "person": "front_man",
+        "head": [
+          0.8,
+          3.6363523436147878
+        ],
+        "body": [
+          3.7667157386167234,
+          7.891976379353229
+        ],
+        "end": 10.349767899760517
+      },
+      {
+        "person": "rear_woman",
+        "head": [
+          10.480725108196992,
+          13.035470580231936
+        ],
+        "body": [
+          13.16635024411525,
+          15.5726655071083
+        ],
+        "end": 17.521169350943087
+      },
+      {
+        "person": "rear_man",
+        "head": [
+          17.65273134533301,
+          20.500574137580294
+        ],
+        "body": [
+          20.63142059537134,
+          23.645987589827975
+        ],
+        "end": 25.814963595075884
+      },
+      {
+        "person": "front_woman",
+        "head": [
+          25.94759175924949,
+          28.406796698148245
+        ],
+        "body": [
+          28.5372369960053,
+          33.879824663662895
+        ],
+        "end": 36.79436147045001
+      }
+    ],
+    "minimum_reload_seconds": 0.13032654707617652,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "9e232211b9737ba1d28a9e5beaeeddf853f305c8d76dbe5cfeb8c15be517e73a"
+  },
+  {
+    "episode": "ep03",
+    "strokes": 770,
+    "single_RGB_assets_checked": 770,
+    "visible_asset_pixels": 12315688,
+    "people": [
+      {
+        "person": "left_woman",
+        "head": [
+          0.8,
+          4.988530653179984
+        ],
+        "body": [
+          5.120029357452962,
+          12.614298502936556
+        ],
+        "end": 18.515693900576963
+      },
+      {
+        "person": "right_woman",
+        "head": [
+          18.65600902385008,
+          23.091499243654958
+        ],
+        "body": [
+          23.223387693766664,
+          30.66322629297313
+        ],
+        "end": 36.79389892244557
+      }
+    ],
+    "minimum_reload_seconds": 0.1308955288055884,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "bb9715c4b241d73982b2a5806d777e07a2ef437cfd1367f44924fcacaf5fe429"
+  },
+  {
+    "episode": "ep04",
+    "strokes": 1425,
+    "single_RGB_assets_checked": 1425,
+    "visible_asset_pixels": 14404651,
+    "people": [
+      {
+        "person": "carrier",
+        "head": [
+          0.8,
+          1.9967791774992663
+        ],
+        "body": [
+          2.127500483480804,
+          4.188312258889966
+        ],
+        "end": 5.239428601629482
+      },
+      {
+        "person": "front_man",
+        "head": [
+          5.369939922337205,
+          6.55901020850662
+        ],
+        "body": [
+          6.689296723374263,
+          8.643287698998323
+        ],
+        "end": 9.882793083488187
+      },
+      {
+        "person": "standing_cook",
+        "head": [
+          10.013623941795755,
+          11.14627495259359
+        ],
+        "body": [
+          11.276586125656687,
+          13.310900514188322
+        ],
+        "end": 14.216146816412094
+      },
+      {
+        "person": "butcher",
+        "head": [
+          14.347680727532438,
+          15.481405424209628
+        ],
+        "body": [
+          15.611884021825793,
+          17.18467628769679
+        ],
+        "end": 17.996363245999973
+      },
+      {
+        "person": "rear_cook",
+        "head": [
+          18.127245012209663,
+          19.21428656999774
+        ],
+        "body": [
+          19.344656553414413,
+          20.921940243545908
+        ],
+        "end": 21.679124565009577
+      },
+      {
+        "person": "rear_woman",
+        "head": [
+          21.810255045558556,
+          22.85093766093021
+        ],
+        "body": [
+          22.98132393739318,
+          24.6024884405845
+        ],
+        "end": 25.34996904681858
+      },
+      {
+        "person": "rear_hat_man",
+        "head": [
+          25.481046187260215,
+          26.825090723452142
+        ],
+        "body": [
+          26.955487140900946,
+          28.21044069854864
+        ],
+        "end": 29.106392739167447
+      },
+      {
+        "person": "rear_beard_man",
+        "head": [
+          29.237299939136026,
+          30.54281934969302
+        ],
+        "body": [
+          30.67332209690709,
+          32.06551183630691
+        ],
+        "end": 32.78093978572889
+      },
+      {
+        "person": "right_cook",
+        "head": [
+          32.91246681958177,
+          34.033321384400345
+        ],
+        "body": [
+          34.163768208679464,
+          36.00299537715344
+        ],
+        "end": 36.79940236164515
+      }
+    ],
+    "minimum_reload_seconds": 0.13010250003240742,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "35fd8c3a05cc1e5dc070293c99af455f0f9c755eece19f346b4cd192f6e962d7"
+  },
+  {
+    "episode": "ep05",
+    "strokes": 1262,
+    "single_RGB_assets_checked": 1262,
+    "visible_asset_pixels": 13415391,
+    "people": [
+      {
+        "person": "front_carrier",
+        "head": [
+          0.8,
+          2.028470627946979
+        ],
+        "body": [
+          2.158895750868751,
+          4.797156068869841
+        ],
+        "end": 6.283430591068168
+      },
+      {
+        "person": "front_seated",
+        "head": [
+          6.4154903732828625,
+          8.644186915249632
+        ],
+        "body": [
+          8.774433649960791,
+          11.021618081231534
+        ],
+        "end": 12.372447868498407
+      },
+      {
+        "person": "front_right",
+        "head": [
+          12.502611040660476,
+          14.378270832370006
+        ],
+        "body": [
+          14.508686713172178,
+          17.331038011462436
+        ],
+        "end": 18.956263667792665
+      },
+      {
+        "person": "door_sitting",
+        "head": [
+          19.086607836946317,
+          20.233946309774947
+        ],
+        "body": [
+          20.36452625719817,
+          22.443727435774555
+        ],
+        "end": 23.941293719234466
+      },
+      {
+        "person": "door_standing",
+        "head": [
+          24.071706407218493,
+          25.31348624972157
+        ],
+        "body": [
+          25.443878974694897,
+          27.61619983139428
+        ],
+        "end": 28.96265852535877
+      },
+      {
+        "person": "rear_small",
+        "head": [
+          29.093001561473304,
+          30.182887592018865
+        ],
+        "body": [
+          30.31350832504879,
+          31.848450189300276
+        ],
+        "end": 32.48550922743219
+      },
+      {
+        "person": "rear_cloaked",
+        "head": [
+          32.61587613228213,
+          33.6484600742537
+        ],
+        "body": [
+          33.779197596894555,
+          35.837503878635296
+        ],
+        "end": 36.798919665472496
+      }
+    ],
+    "minimum_reload_seconds": 0.13016317216206907,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "3295b9491201d8c9efd14cfd254a57d74fc59c1dc2afbc072147cabf9f94ad74"
+  },
+  {
+    "episode": "ep06",
+    "strokes": 867,
+    "single_RGB_assets_checked": 867,
+    "visible_asset_pixels": 14420286,
+    "people": [
+      {
+        "person": "left_woman",
+        "head": [
+          0.8,
+          4.9984460417283065
+        ],
+        "body": [
+          5.13,
+          11.199012751185801
+        ],
+        "end": 15.398818240407266
+      },
+      {
+        "person": "right_woman",
+        "head": [
+          15.530000000000001,
+          19.598542706036294
+        ],
+        "body": [
+          19.73,
+          25.79952908512497
+        ],
+        "end": 29.998753189934863
+      }
+    ],
+    "minimum_reload_seconds": 0.13024491196104293,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "f320e4ce87b39515784913d39c9054d4f4d5a28e5b3b69c2817a82fdfa5b3129"
+  },
+  {
+    "episode": "ep07",
+    "strokes": 722,
+    "single_RGB_assets_checked": 722,
+    "visible_asset_pixels": 11305813,
+    "people": [
+      {
+        "person": "left_young",
+        "head": [
+          0.8,
+          3.290714899317524
+        ],
+        "body": [
+          3.4212045208851465,
+          10.009122481317606
+        ],
+        "end": 12.91670226592933
+      },
+      {
+        "person": "rear_woman",
+        "head": [
+          13.051305931083098,
+          16.239569899193004
+        ],
+        "body": [
+          16.37005915096768,
+          20.89915556667323
+        ],
+        "end": 23.255810841275416
+      },
+      {
+        "person": "right_man",
+        "head": [
+          23.389045049256755,
+          28.204474822738824
+        ],
+        "body": [
+          28.335154101216478,
+          34.473442310708315
+        ],
+        "end": 36.79752724684136
+      }
+    ],
+    "minimum_reload_seconds": 0.13026956022338965,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "d0f9a2654b4c59f7b8525dd5f9d9107558f12be18c51890d80a9160abe0326f9"
+  },
+  {
+    "episode": "ep08",
+    "strokes": 544,
+    "single_RGB_assets_checked": 544,
+    "visible_asset_pixels": 9617754,
+    "people": [
+      {
+        "person": "left_man",
+        "head": [
+          0.8,
+          4.4406643003282715
+        ],
+        "body": [
+          4.571423793762977,
+          14.860362697615642
+        ],
+        "end": 18.555509932047304
+      },
+      {
+        "person": "right_man",
+        "head": [
+          18.687227066203615,
+          23.123767061643296
+        ],
+        "body": [
+          23.25485613883032,
+          31.980911427400716
+        ],
+        "end": 36.793394268256584
+      }
+    ],
+    "minimum_reload_seconds": 0.13075949343470583,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "41ec440ac8cf3798a45c5d646772869c7dab921d600c70114296be1b264a6e25"
+  },
+  {
+    "episode": "ep09",
+    "strokes": 1032,
+    "single_RGB_assets_checked": 1032,
+    "visible_asset_pixels": 11905810,
+    "people": [
+      {
+        "person": "left_worker",
+        "head": [
+          0.8,
+          3.561497463535218
+        ],
+        "body": [
+          3.6924167844975555,
+          9.883349865432256
+        ],
+        "end": 13.223068753399756
+      },
+      {
+        "person": "rear_worker",
+        "head": [
+          13.355022542763896,
+          15.60593541882323
+        ],
+        "body": [
+          15.737025766496812,
+          22.67581737783477
+        ],
+        "end": 25.572000593041796
+      },
+      {
+        "person": "right_worker",
+        "head": [
+          25.70373203622694,
+          28.280437434450384
+        ],
+        "body": [
+          28.411383067149945,
+          33.870549434074256
+        ],
+        "end": 36.79683908134888
+      }
+    ],
+    "minimum_reload_seconds": 0.1301645567898433,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "a1e39eecfa1188c21d7eda9bc7a766ce91ec85346ec37bb022d9e7b8e6dbe3bc"
+  },
+  {
+    "episode": "ep10",
+    "strokes": 1016,
+    "single_RGB_assets_checked": 1016,
+    "visible_asset_pixels": 12370097,
+    "people": [
+      {
+        "person": "standing_seller",
+        "head": [
+          0.8,
+          4.825697119805893
+        ],
+        "body": [
+          4.956332160841083,
+          9.969154047816726
+        ],
+        "end": 13.90324216673789
+      },
+      {
+        "person": "left_seller",
+        "head": [
+          14.034711902006867,
+          15.945706840397545
+        ],
+        "body": [
+          16.076324983957356,
+          22.301178073162244
+        ],
+        "end": 25.81612065142977
+      },
+      {
+        "person": "rear_customer",
+        "head": [
+          25.949992805363355,
+          27.96307408765936
+        ],
+        "body": [
+          28.093921544003162,
+          33.650363622473364
+        ],
+        "end": 36.79568699016733
+      }
+    ],
+    "minimum_reload_seconds": 0.13061814355981127,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "a8b9de82146b10f5b8ad683ae72368235af3eeb84a5eb15b8d293a18f1a6d10e"
+  },
+  {
+    "episode": "ep11",
+    "strokes": 903,
+    "single_RGB_assets_checked": 903,
+    "visible_asset_pixels": 12123431,
+    "people": [
+      {
+        "person": "front_woman",
+        "head": [
+          0.8,
+          5.378531037957878
+        ],
+        "body": [
+          5.5097433862076635,
+          12.624507097069769
+        ],
+        "end": 19.527532254289092
+      },
+      {
+        "person": "rear_left",
+        "head": [
+          19.660162613847152,
+          22.240612509528898
+        ],
+        "body": [
+          22.375437573144236,
+          25.421747344965993
+        ],
+        "end": 27.548444242418775
+      },
+      {
+        "person": "rear_right",
+        "head": [
+          27.682976774489703,
+          30.44772701104225
+        ],
+        "body": [
+          30.582066355076012,
+          33.960181808469024
+        ],
+        "end": 36.79161494290108
+      }
+    ],
+    "minimum_reload_seconds": 0.130518549022419,
+    "settings_unchanged": true,
+    "no_SVG": true,
+    "no_MP4_created": true,
+    "painting_sha256": "dd1fd1b439cda33e99935f7fadbf7cb70a08f6d4563852d929dfa27aac914331"
+  }
+]

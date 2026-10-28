@@ -1,0 +1,24 @@
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "조선의 식탁에는 왜 의자가 없을까? | 낮은 상에 모인 사람들 #풍속화개 선택" [ref=e1]:
+    - checkbox "조선의 식탁에는 왜 의자가 없을까? | 낮은 상에 모인 사람들 #풍속화개 선택" [ref=e3]
+  - cell:
+    - link [ref=e4]:
+      - image "동영상 미리보기 이미지: 조선의 식탁에는 왜 의자가 없을까? | 낮은 상에 모인 사람들 #풍속화"
+      - text: "1:08"
+    - link "조선의 식탁에는 왜 의자가 없을까? | 낮은 상에 모인 사람들 #풍속화" [ref=e5]
+    - text: "큰 식탁 대신, 사람들 사이에 작고 낮은 상이 놓였습니다.\n바닥에 앉아 그릇을 대하는 세 사람과 소반을 살펴봅니다. 음식을 차리고 옮기는 작은 상은, 쓰고 난 뒤 치워 방을 여러 용도로 쓰는 생활과 어울렸습니다.\n\n상판과 손의 높이, 가까이 앉은 거리에 주목해 보세요. 이 한 장면이 모든 집의 식사 풍경을 대표하는 것은 아니지만, 작은 가구 하나가 사람의 자세와 거리를 어떻게 정하는지 보여 줍니다.\n\n소장품: APKC260507306 · 운초 전칭 풍속화\nTJ KIM 컬렉션 소장품\n음악: Flow Music 「먹빛의 장단」 (AI 생성 음악)\n영상: 소장 이미지를 바탕으로 구성한 드로잉 연출 및 AI 정리 편집본\n\n#소반 #조선시대 #풍속화 #한국문화 #TJKimCollection"
+  - cell:
+    - generic "—" [ref=e6]
+  - cell:
+    - generic "공개" [ref=e7]
+  - cell "2026. 10. 27." [ref=e8]: "2026. 10. 27.\n     게시일"
+  - cell "0" [ref=e9]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e10]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e11]: "0"
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short) 
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[2m[ok | 3379ms][0m

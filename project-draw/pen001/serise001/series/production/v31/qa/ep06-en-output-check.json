@@ -1,0 +1,15 @@
+{
+  "episode": "ep06",
+  "language": "en",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.12288977205753326,
+  "body_audio_rms": 0.09388229250907898,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

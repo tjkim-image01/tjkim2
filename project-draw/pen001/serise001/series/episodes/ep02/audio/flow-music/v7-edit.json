@@ -1,0 +1,40 @@
+{
+  "revision": "audio-balance-v7",
+  "jing": "Original Flow metallic decay plus original synthesized inharmonic gong resonance. Not an acoustic jing recording.",
+  "finish_at": 3.5,
+  "roll_at": [
+    1,
+    1.35,
+    1.65,
+    1.93,
+    2.17,
+    2.38,
+    2.56,
+    2.73,
+    2.88,
+    3.02,
+    3.15,
+    3.27,
+    3.39
+  ],
+  "middle_at": [
+    20.4,
+    34.2,
+    48
+  ],
+  "balance": "Active 300ms energy normalization; independent roll, jing and middle-accent gain controls.",
+  "tracks": {
+    "roll": {
+      "peak": 0.3398291695113349,
+      "max_300ms_rms_db": -18.377943951212274
+    },
+    "jing": {
+      "peak": 0.6008269494891396,
+      "max_300ms_rms_db": -15.39102157243452
+    },
+    "accents": {
+      "peak": 0.4325954036321805,
+      "max_300ms_rms_db": -18.244371643809153
+    }
+  }
+}

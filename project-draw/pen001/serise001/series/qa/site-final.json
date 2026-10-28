@@ -1,0 +1,29 @@
+{
+  "mobile": {
+    "viewport": 390,
+    "width": 390,
+    "cards": 10
+  },
+  "mobileCard": {
+    "width": 354,
+    "height": 236
+  },
+  "mobileWatch": {
+    "viewport": 390,
+    "width": 390,
+    "playlist": 10
+  },
+  "automaticNext": true,
+  "mobileStudio": {
+    "viewport": 390,
+    "width": 390
+  },
+  "saved": {
+    "duration": "51",
+    "camera": "front"
+  },
+  "ep01Unchanged": true,
+  "ep03Unchanged": true,
+  "errors": [],
+  "allPass": true
+}

@@ -1,0 +1,51 @@
+{
+  tracks: [
+    {
+      id: 'flow-main',
+      src: 'http://127.0.0.1:5184/series/music/flow-main-ready.m4a',
+      t: 1.453931,
+      paused: false,
+      duration: 174.5
+    },
+    {
+      id: 'flow-calm',
+      src: 'http://127.0.0.1:5184/series/music/flow-calm-ready.m4a',
+      t: 1.435633,
+      paused: false,
+      duration: 154.3
+    },
+    {
+      id: 'flow-playful',
+      src: 'http://127.0.0.1:5184/series/music/flow-playful-ready.m4a',
+      t: 1.485867,
+      paused: false,
+      duration: 179.9
+    },
+    {
+      id: 'flow-night',
+      src: 'http://127.0.0.1:5184/series/music/flow-night-ready.m4a',
+      t: 1.449311,
+      paused: false,
+      duration: 172
+    },
+    {
+      id: 'flow-march',
+      src: 'http://127.0.0.1:5184/series/music/flow-march-ready.m4a',
+      t: 1.473589,
+      paused: false,
+      duration: 160.9
+    }
+  ],
+  finish: {
+    src: 'http://127.0.0.1:5184/series/episodes/ep02/audio/court-finish-v9.m4a',
+    t: 0.136,
+    paused: false
+  },
+  at48: {
+    source: 'http://127.0.0.1:5184/series/episodes/ep02/audio/accents-v9.m4a',
+    finishPaused: true
+  },
+  noGongControls: true,
+  allTenVideosUnchanged: true,
+  pass: true
+}

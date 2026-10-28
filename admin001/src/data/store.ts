@@ -21,6 +21,7 @@ import {
   type ImageStatus,
 } from './parse'
 import { fetchRawDataset } from '../lib/api'
+import { driveId } from '../lib/image-match'
 
 export const ITEM_TABS: ItemType[] = [...ITEM_TYPES]
 export const AUX_TABS = ['동의어', '카테고리', '시대', '이미지폴더', '설정'] as const
@@ -177,9 +178,9 @@ export async function fetchDataset(onProgress?: (msg: string) => void): Promise<
   }))
   const imageRoots = aux('이미지폴더').map((r) => ({
     name: r['이름'],
-    folderId: r['폴더ID'],
+    folderId: driveId(r['폴더ID'] ?? '') || driveId(r['폴더URL'] ?? ''),
     active: r['사용'] === '' ? true : isFlag(r['사용']),
-  }))
+  })).filter((root) => root.folderId)
   const settings: Record<string, string> = {}
   for (const r of aux('설정')) if (r['키']) settings[r['키']] = r['값']
 

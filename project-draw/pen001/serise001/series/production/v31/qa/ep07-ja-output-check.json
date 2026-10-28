@@ -1,0 +1,15 @@
+{
+  "episode": "ep07",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.12407240271568298,
+  "body_audio_rms": 0.10354459285736084,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

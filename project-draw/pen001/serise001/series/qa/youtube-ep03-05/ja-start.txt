@@ -1,0 +1,57 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 대시보드 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w]
+- text: "모든 변경사항이 저장되었습니다."
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJキム・コレクション\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    …[+149 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - heading "채널 대시보드" [level=1]
+  - link "동영상 업로드" [ref=e22]:
+    - button "동영상 업로드" [ref=e23]
+  - link "라이브 스트리밍 시작" [ref=e24]:
+    - button "라이브 스트리밍 시작" [ref=e25]
+  - heading "최신 Shorts 동영상 실적" [level=2]
+  - text: "동영상 미리보기 이미지: 朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化 \n            106\n           \n            0\n           \n            0"
+  - button "접기" [ref=e26]
+  - group:
+    - text: "처음 9시간 16분"
+    - button "조회수 106" [ref=e27]
+    - button "평균 조회율 40.5%" [ref=e28]
+    - button "좋아요 0" [ref=e29]
+  - button "이 동영상에 관한 최신 정보 파악" [ref=e30]
+  - link [ref=e31]:
+    - button "동영상 분석으로 이동" [ref=e32]
+  - link [ref=e33]:
+    - button "댓글 보기(0)" [ref=e34]
+  - heading "채널 분석" [level=2]
+  - text: "현재 구독자 수 0 요약 지난 28일 조회수 \n              0\n            —시청 시간(단위: 시간)\n              0.0\n            —인기 콘텐츠 지난 48시간 · 조회수"
+  - link "朝鮮時代のボードゲーム「ユンノリ」とは？ 木の棒で遊ぶ韓国の伝統遊び #ユンノリ #韓国文化" [ref=e35]
+  - link "106" [ref=e36]
+  - link [ref=e37]:
+    - button "채널 분석으로 이동" [ref=e38]
+  - link "이용약관" [ref=e39]
+  - link "개인정보처리방침" [ref=e40]
+  - link "정책 및 안전" [ref=e41]
+[ok | 62ms]
+repl > 

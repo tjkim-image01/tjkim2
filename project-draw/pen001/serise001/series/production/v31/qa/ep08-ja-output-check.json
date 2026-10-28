@@ -1,0 +1,15 @@
+{
+  "episode": "ep08",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.12668582797050476,
+  "body_audio_rms": 0.11516062915325165,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

@@ -1,0 +1,205 @@
+{
+  "source": "before-arm-background-v31/painting.json",
+  "changed": [
+    {
+      "source_id": 101,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 4
+    },
+    {
+      "source_id": 113,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 4
+    },
+    {
+      "source_id": 131,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 59
+    },
+    {
+      "source_id": 212,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 4
+    },
+    {
+      "source_id": 222,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 6806
+    },
+    {
+      "source_id": 226,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 2675
+    },
+    {
+      "source_id": 230,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 2019
+    },
+    {
+      "source_id": 232,
+      "person": "left_woman",
+      "phase": "wash",
+      "pixels": 3447
+    },
+    {
+      "source_id": 239,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 142
+    },
+    {
+      "source_id": 244,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 1404
+    },
+    {
+      "source_id": 249,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 1391
+    },
+    {
+      "source_id": 255,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 79
+    },
+    {
+      "source_id": 293,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 369
+    },
+    {
+      "source_id": 303,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 336
+    },
+    {
+      "source_id": 304,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 270
+    },
+    {
+      "source_id": 319,
+      "person": "left_woman",
+      "phase": "ink",
+      "pixels": 323
+    },
+    {
+      "source_id": 413,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 10
+    },
+    {
+      "source_id": 417,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 10
+    },
+    {
+      "source_id": 418,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 10
+    },
+    {
+      "source_id": 422,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 10
+    },
+    {
+      "source_id": 547,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 4926
+    },
+    {
+      "source_id": 548,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 2177
+    },
+    {
+      "source_id": 556,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 3378
+    },
+    {
+      "source_id": 557,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 3441
+    },
+    {
+      "source_id": 558,
+      "person": "right_woman",
+      "phase": "wash",
+      "pixels": 178
+    },
+    {
+      "source_id": 578,
+      "person": "right_woman",
+      "phase": "ink",
+      "pixels": 143
+    },
+    {
+      "source_id": 580,
+      "person": "right_woman",
+      "phase": "ink",
+      "pixels": 2792
+    },
+    {
+      "source_id": 582,
+      "person": "right_woman",
+      "phase": "ink",
+      "pixels": 4895
+    },
+    {
+      "source_id": 585,
+      "person": "right_woman",
+      "phase": "ink",
+      "pixels": 956
+    }
+  ],
+  "moved_strokes": 29,
+  "moved_pixels": 42258,
+  "edges": {
+    "left_woman": {
+      "300.0": 321.657,
+      "310.0": 317.75,
+      "320.0": 314.169,
+      "330.0": 311.644,
+      "340.0": 303.201,
+      "350.0": 299.376,
+      "360.0": 297.093
+    },
+    "right_woman": {
+      "300.0": 653.173,
+      "310.0": 647.555,
+      "320.0": 643.093,
+      "330.0": 639.469,
+      "340.0": 636.529,
+      "350.0": 633.948,
+      "360.0": 631.231
+    }
+  },
+  "figure_and_object_timing_preserved": true,
+  "background_start": 38.8,
+  "background_ink_start": 47.5
+}
+PASS: no arm-side background pigment appears in either figure

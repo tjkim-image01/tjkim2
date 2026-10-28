@@ -1,0 +1,40 @@
+{
+  "revision": "v2",
+  "file": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/output/serise001-ep01-short-60s-v2.mp4",
+  "sha256": "996596ebf1c641d90b07bdb982c8fa1e104d9d13caaaf47b2e8da0612ab24677",
+  "bytes": 11343984,
+  "duration": 60.0,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "24/1",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "frames": "1440"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "rms_dbfs": -19.026115543156504,
+    "peak_dbfs": -1.7953854553857855
+  },
+  "full_decode_pass": true,
+  "blank_start": true,
+  "sparse_layout_strokes": 3,
+  "coverage": {
+    "0": 0.0,
+    "3": 0.0019075619747293113,
+    "12": 0.1331779557795001,
+    "27": 0.2356938861857415,
+    "40": 0.2926002141149169,
+    "50": 0.3622280291811707
+  },
+  "first_colour_fraction_at_10_percent": 0.10184449579393219,
+  "pen_lift_art_static": true,
+  "completed_art_static_last_10s": true,
+  "rewind_deterministic": true,
+  "strokes": 304,
+  "caption_timing": "estimated within measured paragraph audio; same audio as v1, ASR sanity check in speech-asr.json",
+  "physical_phone_test": false
+}

@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-25 Asia/Seoul",
+  "root_folder": "https://drive.google.com/drive/folders/1oQ55NzBeK_7ZttxFoazJD0Q16iz3fCXB",
+  "scope": "AP-Korea재고-Prints 연도별 폴더 및 AP-NJ 폴더의 초기 공개 목록에서 파일명상 같은 품목의 중복 촬영을 줄인 대표 이미지 241개를 육안 검토. Drive 초기 목록은 폴더당 최대 50개 항목이어서 전체 소장품 전수조사는 아님.",
+  "selected": [
+    {
+      "id": "1WWLjy8aS4DV85rMga7-hl3DwNuJcdG0K",
+      "name": "15.ANDY WARHOL FLOWERS 11.68.jpg Image",
+      "folder": "AP2021",
+      "n": 117,
+      "drive_url": "https://drive.google.com/file/d/1WWLjy8aS4DV85rMga7-hl3DwNuJcdG0K/view",
+      "local_preview": "previews/01-warhol-flowers.jpg"
+    },
+    {
+      "id": "18XYkGrk0DvcebGJOvc6hox-57Mm9W1OO",
+      "name": "APAC220126013.png Image",
+      "folder": "AP2022",
+      "n": 23,
+      "drive_url": "https://drive.google.com/file/d/18XYkGrk0DvcebGJOvc6hox-57Mm9W1OO/view",
+      "local_preview": "previews/02-jacoulet-monk.jpg"
+    },
+    {
+      "id": "1X7AeX_vLsEPqPfQmVFN_wQqDP8ff6XZ7",
+      "name": "APAC210803526 (1).jpg Image",
+      "folder": "AP2023",
+      "n": 3,
+      "drive_url": "https://drive.google.com/file/d/1X7AeX_vLsEPqPfQmVFN_wQqDP8ff6XZ7/view",
+      "local_preview": "previews/03-balloon-girl.jpg"
+    },
+    {
+      "id": "16aQG9CEWSqX93DyJexq0q4jkA3Zz16ep",
+      "name": "APAC230102001 (1).jpg Image",
+      "folder": "AP2023",
+      "n": 8,
+      "drive_url": "https://drive.google.com/file/d/16aQG9CEWSqX93DyJexq0q4jkA3Zz16ep/view",
+      "local_preview": "previews/04-love.jpg"
+    }
+  ]
+}

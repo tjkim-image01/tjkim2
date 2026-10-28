@@ -1,0 +1,22 @@
+{
+  "account": "u5",
+  "channel_id": "UCRREust7LSVUVouPHwfsZ7w",
+  "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-ja-v31-cover.mp4",
+  "video_id": "pUWIqwu3ZMU",
+  "url": "https://youtube.com/shorts/pUWIqwu3ZMU",
+  "visibility": "private",
+  "made_for_kids": false,
+  "title": "小さな膳がつくる距離 | 韓国のソバンと食卓のひととき #韓国文化",
+  "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/upload/ep07_youtube_ja_v31.md",
+  "tags": "",
+  "uploaded_at": "2026-10-27T09:35:34+0900",
+  "language": "ja",
+  "handle": "@tjkimcollection-jp",
+  "source_sha256": "5ea099811aac70381d01e00a487eba6c22ac8bc149793f61b3188efe35b3304c",
+  "episode": "ep07",
+  "channel_verified": true,
+  "content_row_verified": true,
+  "verified_at": "2026-10-27T09:38:23.160748+09:00",
+  "private_verified": true,
+  "verification_evidence": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/qa/youtube-v31/ja-row.txt"
+}

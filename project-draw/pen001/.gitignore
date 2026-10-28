@@ -1,0 +1,10 @@
+deploy/github-pages/
+deploy/preview/
+
+# Large rendered media and raw audio stay local; published v31 files are on Releases.
+**/*.mp4
+**/*.zip
+**/*.h264
+**/*.f32
+**/*.wav
+**/*.mov

@@ -1,0 +1,12 @@
+{
+  "completed_at": "2026-10-26T00:14:49.236707+09:00",
+  "status": "complete",
+  "episodes": 10,
+  "mp4s": 30,
+  "localized_covers": 30,
+  "language_archives": 3,
+  "duration_seconds": 67.5,
+  "minimum_title_top_px": 304,
+  "verification": "production/delivery-v18.json",
+  "workflow": "/Users/jatu/app/tjkim2/lib/com/jatu/draw/sumuk.py"
+}

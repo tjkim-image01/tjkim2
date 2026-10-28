@@ -1,0 +1,18 @@
+{
+  "editor": "http://127.0.0.1:5184/series/site/studio.html?ep=ep06&revision=raster-v19b",
+  "saved_settings_unchanged": true,
+  "assets_checked": 749,
+  "native_ai_size": [
+    1536,
+    1024
+  ],
+  "working_size": [
+    4000,
+    2608
+  ],
+  "MP4_created": false,
+  "generated_image": "art/raster-v19/imagegen-base-1536.png",
+  "imagegen_mode": "built-in edit",
+  "prompt": "art/raster-v19/imagegen-prompt.txt",
+  "awaiting_user_review": true
+}

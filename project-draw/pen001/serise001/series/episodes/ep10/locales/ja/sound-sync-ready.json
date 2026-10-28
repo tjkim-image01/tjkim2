@@ -1,0 +1,12 @@
+{
+  "episode": "ep10",
+  "language": "ja",
+  "reference": "Korean actual audible onset",
+  "korean_first_audible": 12.624937,
+  "previous_first_audible": 8.310729,
+  "first_audible": 12.628,
+  "difference": 0.003063000000000926,
+  "tempo": 1.02,
+  "narration_end": 64.081375,
+  "intro_voice_free": true
+}

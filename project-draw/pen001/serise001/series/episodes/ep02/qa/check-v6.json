@@ -1,0 +1,131 @@
+{
+  "viewportBlankTo1440": true,
+  "afterSignature": {
+    "clock": "00:03 / 01:06",
+    "t": 3.96,
+    "audio": [
+      {
+        "id": "audio",
+        "t": 3.886851,
+        "paused": false,
+        "muted": false,
+        "volume": 0.8
+      },
+      {
+        "id": "musicAudio",
+        "t": 7.058299,
+        "paused": true,
+        "muted": true,
+        "volume": 0
+      },
+      {
+        "id": "effectsAudio",
+        "t": 3.886852,
+        "paused": false,
+        "muted": false,
+        "volume": 0.8
+      }
+    ]
+  },
+  "musicStarted": {
+    "clock": "00:08 / 01:06",
+    "t": 8.26,
+    "audio": [
+      {
+        "id": "audio",
+        "t": 8.190268,
+        "paused": false,
+        "muted": false,
+        "volume": 0.8
+      },
+      {
+        "id": "musicAudio",
+        "t": 11.354294,
+        "paused": false,
+        "muted": false,
+        "volume": 0.27999999999999997
+      },
+      {
+        "id": "effectsAudio",
+        "t": 8.190266,
+        "paused": false,
+        "muted": false,
+        "volume": 0.8
+      }
+    ]
+  },
+  "paused": {
+    "clock": "00:08 / 01:06",
+    "t": 8.28,
+    "audio": [
+      {
+        "id": "audio",
+        "t": 8.205406,
+        "paused": true,
+        "muted": false,
+        "volume": 0.8
+      },
+      {
+        "id": "musicAudio",
+        "t": 11.369463,
+        "paused": true,
+        "muted": false,
+        "volume": 0.27999999999999997
+      },
+      {
+        "id": "effectsAudio",
+        "t": 8.205449,
+        "paused": true,
+        "muted": false,
+        "volume": 0.8
+      }
+    ]
+  },
+  "frames": {
+    "count": 498,
+    "median": 16.699999999999818
+  },
+  "currentTimeButton": 6,
+  "persisted": {
+    "version": 1,
+    "drawDuration": 50,
+    "playbackRate": 1,
+    "camera": "auto",
+    "zoom": 1,
+    "panX": 0,
+    "panY": 0,
+    "showBrush": true,
+    "showGuides": true,
+    "showWash": true,
+    "showInk": true,
+    "brushSize": 1,
+    "hook": "조선의 보드게임\n네 사람이 둘러앉은 이유",
+    "title": "네 사람이 둘러앉은 이유",
+    "byline": "운초 전칭 · TJ KIM 컬렉션",
+    "showCaptions": true,
+    "sound": true,
+    "loop": false,
+    "captionSize": 54,
+    "volume": 0.8,
+    "revealOriginal": true,
+    "fadeSeconds": 4,
+    "musicEnabled": true,
+    "musicVolume": 1,
+    "captionEdits": {},
+    "brushType": "auto",
+    "inkBleed": 0.45,
+    "musicStart": 6,
+    "musicOffset": 10.4,
+    "effectsEnabled": true,
+    "effectsVolume": 1
+  },
+  "postWritingSoak": {
+    "before": 74008,
+    "after": 78330
+  },
+  "mobileOverflow": false,
+  "otherEpisodeUnchanged": true,
+  "allVideosUnchanged": true,
+  "errors": [],
+  "pass": true
+}

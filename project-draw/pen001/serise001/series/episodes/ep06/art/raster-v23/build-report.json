@@ -1,0 +1,90 @@
+{
+  "background_color_passes": [
+    {
+      "pigment_id": "window_paper",
+      "name": "창호지 · 미색",
+      "rgb": [
+        214,
+        195,
+        156
+      ],
+      "start": 39.0,
+      "end": 40.78334165770819,
+      "strokes": 20
+    },
+    {
+      "pigment_id": "wall_yellow",
+      "name": "벽 · 연한 노랑",
+      "rgb": [
+        238,
+        207,
+        119
+      ],
+      "start": 40.983341657708195,
+      "end": 42.553293039115864,
+      "strokes": 19
+    },
+    {
+      "pigment_id": "floor_ochre",
+      "name": "바닥 · 황토색",
+      "rgb": [
+        218,
+        150,
+        41
+      ],
+      "start": 42.75329303911587,
+      "end": 44.813970974525425,
+      "strokes": 43
+    },
+    {
+      "pigment_id": "wood_gold",
+      "name": "창 아래 나무판 · 황금 갈색",
+      "rgb": [
+        222,
+        158,
+        58
+      ],
+      "start": 45.01397097452543,
+      "end": 46.25138073472298,
+      "strokes": 7
+    },
+    {
+      "pigment_id": "wood_brown",
+      "name": "나무틀 · 갈색",
+      "rgb": [
+        165,
+        108,
+        48
+      ],
+      "start": 46.45138073472298,
+      "end": 47.000000000000036,
+      "strokes": 2
+    }
+  ],
+  "coverage": {
+    "window_paper": {
+      "coverage": 0.9999870222848998,
+      "extra_passes": 0
+    },
+    "wall_yellow": {
+      "coverage": 0.9992458224608262,
+      "extra_passes": 0
+    },
+    "floor_ochre": {
+      "coverage": 0.9994091264118647,
+      "extra_passes": 0
+    },
+    "wood_gold": {
+      "coverage": 0.9977698548938481,
+      "extra_passes": 3
+    },
+    "wood_brown": {
+      "coverage": 1.0,
+      "extra_passes": 0
+    }
+  },
+  "strokes": 851,
+  "non_background_strokes_unchanged": true,
+  "saved_settings_sha256": "9eb6ff141b5162db21ba468112be77191dfffe6e97bf0e4306f2aa8ec82a467d",
+  "MP4_created": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ep08",
+  "title": "말 한 수에 담긴 하루",
+  "file": "episodes/ep08/output/ep08-short-60s.mp4",
+  "sha256": "51989897ff2fc28a00aba185525feaaacb3cfbc5e85200724b52ac4f516a8953",
+  "bytes": 19859221,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.2052951282051283,
+    "change": 6.965746153846154
+  },
+  "strokes": 193,
+  "asr_script_match": 0.9659863945578231,
+  "narration_end": 48.196625000000004,
+  "audio_rms_dbfs": -17.97031593322754,
+  "audio_peak_dbfs": -1.419611193656428,
+  "music_rms_dbfs": -28.41604995727539,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

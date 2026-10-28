@@ -1,139 +1,140 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useApp } from '../app/AppContext'
 import { Icon } from '../components/Icon'
-import { buildImageIndex, findCandidates, readImageIndex, type ImageIndex } from '../lib/images'
-import { thumbnailUrl } from '../lib/api'
+import { buildImageIndex, driveId, findCandidates, IMAGE_ARCHIVE_ID, itemImages, localImageRoots, saveLocalImageRoots } from '../lib/images'
+import DriveImage from '../components/DriveImage'
 
 export default function ImagesPage() {
-  const { dataset, saveCells } = useApp()
-  const [index, setIndex] = useState<ImageIndex | null>(null)
+  const { dataset, saveCells, imageIndex: index, setImageIndex, imageLoading, imageError } = useApp()
   const [progress, setProgress] = useState('')
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [onlyUnlinked, setOnlyUnlinked] = useState(true)
-  const [applying, setApplying] = useState(false)
-  const [applied, setApplied] = useState(0)
+  const [query, setQuery] = useState('')
+  const [folderUrl, setFolderUrl] = useState('')
+  const [localRoots, setLocalRoots] = useState(localImageRoots)
+  const roots = useMemo(() => [...new Map([
+    ...(dataset?.imageRoots.filter((root) => root.active).map((root) => ({ id: root.folderId, name: root.name })) ?? []),
+    ...localRoots,
+  ].map((root) => [root.id, root])).values()], [dataset, localRoots])
 
-  useEffect(() => {
-    void readImageIndex().then(setIndex)
-  }, [])
-
-  const rebuild = async () => {
+  const rebuild = async (configuredRoots = roots) => {
     setBusy(true)
     setError(null)
     try {
-      setIndex(await buildImageIndex(setProgress))
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e))
+      setImageIndex(await buildImageIndex(setProgress, configuredRoots))
+    } catch (error) {
+      setError(error instanceof Error ? error.message : String(error))
     } finally {
       setBusy(false)
       setProgress('')
     }
   }
 
-  const matches = useMemo(() => {
-    if (!index || !dataset) return []
-    const out: { code: string; title: string; linked: string; candidates: ReturnType<typeof findCandidates> }[] = []
-    for (const it of dataset.items) {
-      const linked = it.cells['이미지폴더'] ?? ''
-      if (onlyUnlinked && linked) continue
-      const candidates = findCandidates(index, it.code)
-      if (candidates.length === 0) continue
-      out.push({ code: it.code, title: it.title, linked, candidates })
+  const registerFolder = async (event: React.FormEvent) => {
+    event.preventDefault()
+    const id = driveId(folderUrl)
+    if (!id || (folderUrl.includes('://') && !/\/folders\//.test(folderUrl))) {
+      setError('Google Drive 상위 폴더의 주소를 입력해 주세요')
+      return
     }
-    return out
-  }, [index, dataset, onlyUnlinked])
-
-  const applyAll = async () => {
-    if (!dataset) return
-    const targets = matches.filter((m) => !m.linked && m.candidates.length === 1 && m.candidates[0].matchType === 'folder')
-    if (targets.length === 0) return
-    if (!window.confirm(`폴더명이 정확히 일치하는 ${targets.length}건을 시트에 연결합니다. 계속할까요?`)) return
-    setApplying(true)
-    setApplied(0)
+    if (roots.some((root) => root.id === id)) {
+      setError('이미 등록된 상위 폴더입니다. 재색인을 누르면 하위 사진을 다시 찾습니다')
+      return
+    }
+    const root = { id, name: `추가 폴더 ${localRoots.length + 1}` }
     try {
-      for (const m of targets) {
-        const item = dataset.items.find((i) => i.code === m.code)
-        if (!item) continue
-        await saveCells(item, { 이미지폴더: m.candidates[0].folderId })
-        setApplied((n) => n + 1)
-      }
-    } finally {
-      setApplying(false)
+      const next = [...localRoots, root]
+      saveLocalImageRoots(next)
+      setLocalRoots(next)
+      setFolderUrl('')
+      await rebuild([...roots, root])
+    } catch (error) {
+      setError(error instanceof Error ? error.message : String(error))
     }
   }
+
+  const removeFolder = async (id: string) => {
+    const next = localRoots.filter((root) => root.id !== id)
+    try {
+      saveLocalImageRoots(next)
+      setLocalRoots(next)
+      setError(null)
+      await rebuild(roots.filter((root) => root.id !== id))
+    } catch (error) {
+      setError(error instanceof Error ? error.message : String(error))
+    }
+  }
+
+  const matches = useMemo(() => {
+    if (!index || !dataset) return []
+    const search = query.trim().toLowerCase()
+    return dataset.items.filter((item) =>
+      (!search || `${item.code} ${item.title}`.toLowerCase().includes(search)) && itemImages(index, item.code).length > 0,
+    ).map((item) => ({ item, candidates: findCandidates(index, item.code) }))
+  }, [index, dataset, query])
 
   return (
     <section className="images-page">
       <h1>이미지 연결</h1>
-      <p className="muted">
-        시트의 <span className="mono">이미지폴더</span> 탭에 적힌 Drive 루트를 서버가 순회해, 폴더명이나 파일명이 Item No.와 같은 것을 찾아 물건의 <span className="mono">이미지폴더</span> 열에 넣습니다.
-      </p>
+      <p className="muted">등록된 상위 폴더의 하위 폴더까지 찾고, 제품번호가 같은 사진을 자동으로 보여줍니다. 연도별 폴더에 여러 제품이 함께 있어도 해당 제품의 사진만 표시합니다.</p>
+      <details className="image-roots">
+        <summary>등록된 상위 폴더 {roots.length}개</summary>
+        <ul>
+          {roots.map((root) => <li key={root.id}>
+            <a href={`https://drive.google.com/drive/folders/${root.id}`} target="_blank" rel="noreferrer">{root.name}</a>
+            {localRoots.some((local) => local.id === root.id) && <>
+              <span className="muted small"> · 이 브라우저에 추가됨</span>
+              <button type="button" className="btn btn-ghost small" disabled={busy} onClick={() => void removeFolder(root.id)}>등록 해제</button>
+            </>}
+          </li>)}
+        </ul>
+        <form className="form-actions" onSubmit={(event) => void registerFolder(event)}>
+          <input type="url" value={folderUrl} onChange={(event) => setFolderUrl(event.target.value)} placeholder="Google Drive 상위 폴더 주소" aria-label="상위 폴더 주소" required disabled={busy} />
+          <button type="submit" className="btn btn-ghost" disabled={busy || !dataset || !folderUrl.trim()}>상위 폴더 등록 · 사진 찾기</button>
+        </form>
+        <p className="muted small">추가한 폴더는 이 브라우저에 저장됩니다. 사진을 옮긴 뒤 재색인하면 하위 폴더도 다시 찾습니다.</p>
+      </details>
       <div className="form-actions">
-        <button type="button" className="btn btn-primary" onClick={() => void rebuild()} disabled={busy}>
+        <a className="btn btn-ghost" href={`https://drive.google.com/drive/folders/${IMAGE_ARCHIVE_ID}`} target="_blank" rel="noreferrer">
+          이미지 보관함 열기 <Icon name="external" size={14} />
+        </a>
+        <button type="button" className="btn btn-primary" onClick={() => void rebuild()} disabled={busy || imageLoading || !dataset}>
           <Icon name="refresh" /> {busy ? progress || '색인 중…' : '재색인'}
         </button>
-        {index && (
-          <span className="muted small">
-            이미지 {index.fileCount.toLocaleString()}장 · 일치 가능 폴더 {index.folderCount.toLocaleString()}개 · {new Date(index.builtAt).toLocaleString('ko-KR')}
-            {index.truncatedRoots.length > 0 && ` · 일부만 순회: ${index.truncatedRoots.join(', ')}`}
-          </span>
-        )}
-        {error && <span className="error">{error}</span>}
+        {index && <span className="muted small">이미지 {index.fileCount.toLocaleString()}장 · {new Date(index.builtAt).toLocaleString('ko-KR')}</span>}
+        {imageLoading && <span className="muted small">이미지 목록을 읽는 중…</span>}
+        {(error || (!index && imageError)) && <span className="error">{error || imageError}</span>}
       </div>
-
-      {index && dataset && (
-        <>
-          <div className="form-actions">
-            <label className="check">
-              <input type="checkbox" checked={onlyUnlinked} onChange={(e) => setOnlyUnlinked(e.target.checked)} /> 아직 연결 안 된 물건만
-            </label>
-            <button type="button" className="btn btn-ghost" onClick={() => void applyAll()} disabled={applying}>
-              {applying ? `연결 중… ${applied}` : '폴더명 정확 일치 건 모두 연결'}
-            </button>
-            <span className="muted small">후보 {matches.length.toLocaleString()}건</span>
-          </div>
-          <div className="table-wrap">
-            <table className="items">
-              <thead>
-                <tr><th>Item No.</th><th>제목</th><th>후보</th><th></th></tr>
-              </thead>
-              <tbody>
-                {matches.slice(0, 300).map((m) => (
-                  <tr key={m.code}>
-                    <td className="mono"><Link to={`/item/${encodeURIComponent(m.code)}`}>{m.code}</Link></td>
-                    <td className="col-title">{m.title}</td>
-                    <td>
-                      {m.candidates.map((c) => (
-                        <div key={c.folderId} className="candidate">
-                          <span className={`pill ${c.matchType === 'folder' ? 'pill-ok' : 'pill-weak'}`}>{c.matchType === 'folder' ? '폴더명' : '파일명'}</span>
-                          <span className="small">{c.path || c.folderName}</span>
-                          {c.fileIds.slice(0, 3).map((id) => <img key={id} src={thumbnailUrl(id, 120)} alt="" className="cand-thumb" loading="lazy" />)}
-                          <button
-                            type="button"
-                            className="btn btn-ghost small"
-                            disabled={m.linked === c.folderId}
-                            onClick={() => {
-                              const item = dataset.items.find((i) => i.code === m.code)
-                              if (item) void saveCells(item, { 이미지폴더: c.folderId, ...(c.fileIds[0] && !item.cells['대표이미지'] ? { 대표이미지: c.fileIds[0] } : {}) })
-                            }}
-                          >
-                            {m.linked === c.folderId ? '연결됨' : '연결'}
-                          </button>
-                        </div>
-                      ))}
-                    </td>
-                    <td></td>
-                  </tr>
-                ))}
-                {matches.length === 0 && <tr><td colSpan={4} className="muted empty-row">일치하는 후보가 없습니다.</td></tr>}
-              </tbody>
-            </table>
-            {matches.length > 300 && <p className="muted small">상위 300건만 표시합니다.</p>}
-          </div>
-        </>
-      )}
+      {index && dataset && <>
+        <div className="form-actions">
+          <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="제품번호 또는 제목으로 이미지 찾기" aria-label="이미지 찾기" />
+          <span className="muted small">사진이 연결된 물건 {matches.length.toLocaleString()}건</span>
+        </div>
+        <div className="table-wrap">
+          <table className="items">
+            <thead><tr><th>Item No.</th><th>제목</th><th>사진 · 저장 폴더</th></tr></thead>
+            <tbody>
+              {matches.slice(0, 300).map(({ item, candidates }) => <tr key={item.code}>
+                <td className="mono"><Link to={`/item/${encodeURIComponent(item.code)}`}>{item.code}</Link></td>
+                <td className="col-title">{item.title}</td>
+                <td>{candidates.map((candidate) => <div key={candidate.folderId} className="candidate">
+                  <span className="pill pill-ok">자동 연결 · {candidate.fileIds.length}장</span>
+                  <a className="small" href={`https://drive.google.com/drive/folders/${candidate.folderId}`} target="_blank" rel="noreferrer">{candidate.path || candidate.folderName}</a>
+                  {candidate.fileIds.slice(0, 3).map((id) => <DriveImage key={id} fileId={id} width={120} alt="" className="cand-thumb" loading="lazy" />)}
+                  {candidate.fileIds[0] && <button type="button" className="btn btn-ghost small"
+                    disabled={driveId(item.cells['대표이미지']) === candidate.fileIds[0]}
+                    onClick={() => { void saveCells(item, { 대표이미지: candidate.fileIds[0] }).catch((error: unknown) => setError(error instanceof Error ? error.message : String(error))) }}>
+                    {driveId(item.cells['대표이미지']) === candidate.fileIds[0] ? '대표 지정됨' : '첫 사진을 대표로'}
+                  </button>}
+                </div>)}</td>
+              </tr>)}
+              {!matches.length && <tr><td colSpan={3} className="muted empty-row">일치하는 사진이 없습니다.</td></tr>}
+            </tbody>
+          </table>
+          {matches.length > 300 && <p className="muted small">상위 300건입니다. 제품번호나 제목을 입력해 나머지 사진을 찾을 수 있습니다.</p>}
+        </div>
+      </>}
     </section>
   )
 }

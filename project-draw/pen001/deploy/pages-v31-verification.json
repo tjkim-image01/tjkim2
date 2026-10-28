@@ -1,0 +1,235 @@
+{
+  "revision": "v31",
+  "verified_at": "2026-10-27T15:05:20.238969+00:00",
+  "public_url": "https://tjkim-image01.github.io/pen001/",
+  "commit": "e9a4b6d51bf05b325898c4be3d90d3f7ae7d22e6",
+  "actions_run": 40525063284,
+  "actions_result": "success",
+  "release": "https://github.com/tjkim-image01/pen001/releases/tag/v31",
+  "release_assets": [
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep02-short-en-v31-cover.mp4",
+      "digest": "sha256:c0c07d9d2368c0b1605fbdfd199411a6a693aaf43db6cb4de8762b2bd4bdfb3f",
+      "name": "ep02-short-en-v31-cover.mp4",
+      "size": 23304276
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep02-short-ja-v31-cover.mp4",
+      "digest": "sha256:55c8482b0ce875db6218ab5f4d23937e334ee005bacb3996e7a2dbfb5a4c371d",
+      "name": "ep02-short-ja-v31-cover.mp4",
+      "size": 23614221
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep02-short-ko-v31-cover.mp4",
+      "digest": "sha256:a96967bed98da9e08210d7c95ab43fe91f9daa7433edca38f486d3f29394fcba",
+      "name": "ep02-short-ko-v31-cover.mp4",
+      "size": 23636729
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep03-short-en-v31-cover.mp4",
+      "digest": "sha256:9881a9fdd1a7fa5c3bb6cef8c874a73cab65bd654a6eb73347d5a2c4648a17f4",
+      "name": "ep03-short-en-v31-cover.mp4",
+      "size": 21237819
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep03-short-ja-v31-cover.mp4",
+      "digest": "sha256:7bda8dd69f21ba5f1a4bc531259f961eee5077897df66eeece0b556d7b0606cc",
+      "name": "ep03-short-ja-v31-cover.mp4",
+      "size": 21299449
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep03-short-ko-v31-cover.mp4",
+      "digest": "sha256:88b44014557d62441a1d1d1f0139ff8370582cb873eeec922525ceea510cb116",
+      "name": "ep03-short-ko-v31-cover.mp4",
+      "size": 21200778
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep04-short-en-v31-cover.mp4",
+      "digest": "sha256:a185a2017a00d75006aa2aa11983237bcbca87caff0926e4f7c1c2b47fa0ac96",
+      "name": "ep04-short-en-v31-cover.mp4",
+      "size": 24393244
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep04-short-ja-v31-cover.mp4",
+      "digest": "sha256:a592d95189ef4953ad1c2c49db19163507a1f99db4c20e4c843d00b92674e84d",
+      "name": "ep04-short-ja-v31-cover.mp4",
+      "size": 24597957
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep04-short-ko-v31-cover.mp4",
+      "digest": "sha256:f4f805efd5dccad73ed146b9452ff21ad0aeb4739dcf04be7ec4d19d2bd5b3b6",
+      "name": "ep04-short-ko-v31-cover.mp4",
+      "size": 24265718
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep05-short-en-v31-cover.mp4",
+      "digest": "sha256:b22b00b85a6abbaa0a4670828f35f45e70cf39ee68e2935b434e1046821bc6e7",
+      "name": "ep05-short-en-v31-cover.mp4",
+      "size": 24308921
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep05-short-ja-v31-cover.mp4",
+      "digest": "sha256:27a35df1697724dd1a640346bef203cabe1e69e78c5f584a23934b46c2bf0fee",
+      "name": "ep05-short-ja-v31-cover.mp4",
+      "size": 24550715
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep05-short-ko-v31-cover.mp4",
+      "digest": "sha256:1c2a36f9ecef24ac8f84df89ebdd76893f1f1e0215b0ce7abc37e782cf62cade",
+      "name": "ep05-short-ko-v31-cover.mp4",
+      "size": 24256875
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep06-short-en-v31-cover.mp4",
+      "digest": "sha256:5b9ab7855ede31f379eda871949feca552193ef0f85722fb44620c9e8d0914da",
+      "name": "ep06-short-en-v31-cover.mp4",
+      "size": 20920682
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep06-short-ja-v31-cover.mp4",
+      "digest": "sha256:ebcdcbbfc7b91bb35f8f057edf075e1a7b9068332e2732060d3cc21ab747ca67",
+      "name": "ep06-short-ja-v31-cover.mp4",
+      "size": 21037668
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep06-short-ko-v31-cover.mp4",
+      "digest": "sha256:5534edeaa18ff7e2cc7b41642eb32fcb44376933d29741605e3c861fb8fb546e",
+      "name": "ep06-short-ko-v31-cover.mp4",
+      "size": 20827803
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep07-short-en-v31-cover.mp4",
+      "digest": "sha256:b2464eff4f6cbbe80487945a7337f02379860428f4a1a3e905ddec8eec38b8b5",
+      "name": "ep07-short-en-v31-cover.mp4",
+      "size": 21334524
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep07-short-ja-v31-cover.mp4",
+      "digest": "sha256:5ea099811aac70381d01e00a487eba6c22ac8bc149793f61b3188efe35b3304c",
+      "name": "ep07-short-ja-v31-cover.mp4",
+      "size": 21547845
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep07-short-ko-v31-cover.mp4",
+      "digest": "sha256:87cf4cda18c071619a4a8a41958322c00b862b7d685c687a58a771e0fa6c512e",
+      "name": "ep07-short-ko-v31-cover.mp4",
+      "size": 21302359
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep08-short-en-v31-cover.mp4",
+      "digest": "sha256:b97f448911e62facc55b27d7511a2bc83351e6cdae805dd46e51d83bdd300562",
+      "name": "ep08-short-en-v31-cover.mp4",
+      "size": 19036902
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep08-short-ja-v31-cover.mp4",
+      "digest": "sha256:6324e7355e7b206e6cbaf5184f764bc12bd7cf2a6de3378a90a97e0691d4ce75",
+      "name": "ep08-short-ja-v31-cover.mp4",
+      "size": 19270629
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep08-short-ko-v31-cover.mp4",
+      "digest": "sha256:f5cdefe152e7cd4cde4fd48b43692e096f48ca818946649591840a060a341824",
+      "name": "ep08-short-ko-v31-cover.mp4",
+      "size": 19118349
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep09-short-en-v31-cover.mp4",
+      "digest": "sha256:8831827422a46b30dd9a4cfdd1ef4933983ece0b185ee3dddceba8e3e9b1af84",
+      "name": "ep09-short-en-v31-cover.mp4",
+      "size": 20446287
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep09-short-ja-v31-cover.mp4",
+      "digest": "sha256:0046227cd86c503f0c4cdc00da968609b9b57a91fb2016cdb74ff89abbf4249a",
+      "name": "ep09-short-ja-v31-cover.mp4",
+      "size": 20581026
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep09-short-ko-v31-cover.mp4",
+      "digest": "sha256:7e8a0f41a90c376f216b907f5cd1a5644830220dfab4ad83a94042eb9379b376",
+      "name": "ep09-short-ko-v31-cover.mp4",
+      "size": 20275161
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep10-short-en-v31-cover.mp4",
+      "digest": "sha256:382ad5a2123639269e79ba1fb20430789ce978025eb73159fd573a28a177ae57",
+      "name": "ep10-short-en-v31-cover.mp4",
+      "size": 21212861
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep10-short-ja-v31-cover.mp4",
+      "digest": "sha256:80fa89a1c40d8f872098767523a47af8c495cb8d87ffd32fe54508687b98941b",
+      "name": "ep10-short-ja-v31-cover.mp4",
+      "size": 21372566
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep10-short-ko-v31-cover.mp4",
+      "digest": "sha256:d80272163207a2bf23273f5ea5cf4e3de966e1134a6fdac5445fd5bebc2bf963",
+      "name": "ep10-short-ko-v31-cover.mp4",
+      "size": 21220509
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep11-short-en-v31-cover.mp4",
+      "digest": "sha256:34ddf5a121789fab5ef1a43e59b35182ecba9b1da5bf53a84381f563d01977b6",
+      "name": "ep11-short-en-v31-cover.mp4",
+      "size": 20735161
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep11-short-ja-v31-cover.mp4",
+      "digest": "sha256:e11d603ce7b979d7b9079c8672e1d020a29dbaeb6a4d69cf55afa962de831428",
+      "name": "ep11-short-ja-v31-cover.mp4",
+      "size": 20989359
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/ep11-short-ko-v31-cover.mp4",
+      "digest": "sha256:01d777deb6c8dfd5adbbbb8f955f04777c6979cc78ef535380211c73a102926d",
+      "name": "ep11-short-ko-v31-cover.mp4",
+      "size": 20616815
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/TJ_KIM_FOLK_SHORTS_EN_10_v31.zip",
+      "digest": "sha256:7cdcb781658a0e7d20a5df37ad9880297d1bee5b5d2244bcfd23a03edf1f7252",
+      "name": "TJ_KIM_FOLK_SHORTS_EN_10_v31.zip",
+      "size": 246399796
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/TJ_KIM_FOLK_SHORTS_JA_10_v31.zip",
+      "digest": "sha256:790a0bebb3e8435d5cdb388064752734308af588870270810ff7cc5c8c1f94d1",
+      "name": "TJ_KIM_FOLK_SHORTS_JA_10_v31.zip",
+      "size": 248446410
+    },
+    {
+      "browser_download_url": "https://github.com/tjkim-image01/pen001/releases/download/v31/TJ_KIM_FOLK_SHORTS_KO_10_v31.zip",
+      "digest": "sha256:65cbe91a203881ab209f6eab23c48e76fe9e2d1748584153eeae801cf01ceb76",
+      "name": "TJ_KIM_FOLK_SHORTS_KO_10_v31.zip",
+      "size": 246176816
+    }
+  ],
+  "all_33_asset_sha256_and_sizes_match": true,
+  "live_core_files_sha256_match": 8,
+  "raster_stroke_files_identical_to_source": 9410,
+  "public_editor": {
+    "episode": "ep06",
+    "ready": true,
+    "loaded_assets": "898 / 898",
+    "failed_resources": [],
+    "first_frame_dark_pixels": 45810,
+    "actual_play_button_accepted": true,
+    "audio_status": "음악 재생 중 · 해설은 8.2초부터 시작합니다."
+  },
+  "public_video": {
+    "episode": "ep02",
+    "lang": "ko",
+    "duration": 67.5,
+    "width": 1080,
+    "height": 1920,
+    "play_time": 0.665363,
+    "seek_time": 30.259822,
+    "ready_state": 4,
+    "audio_decoded_bytes": 14081
+  },
+  "frontend": "t001",
+  "jpeg_metadata_removed_without_pixel_change": true,
+  "site_megabytes": 730.6
+}

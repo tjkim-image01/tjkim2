@@ -1,0 +1,208 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/goEGlOpaSi0/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e42]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e156]
+  - text: "동영상 미리보기 이미지: Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n       …[+362 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e115] [disabled]
+  - button "저장" [ref=e116] [disabled]
+  - button "옵션" [ref=e117]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e122]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e123]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e125]
+  - button "추천받기" [ref=e126]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e127]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e128]:
+    - button "선택" [ref=e129]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e130]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e131]: "자세히 알아보기"
+  - radiogroup [ref=e132]:
+    - radio [ref=e133]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e134]
+    - radio "아니요, 아동용이 아닙니다" [ref=e135] [checked]
+  - button "연령 제한" [ref=e136]
+  - button "고급 설정 숨기기" [ref=e158] [focused]: "간략히 보기"
+  - text: "유료 프로모션\n \n    동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e159]
+  - radiogroup [ref=e160]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e161]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e162]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e163]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e164]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e165]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e166]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e167]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e168]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e169]: "자세히 알아보기"
+  - generic [ref=e170]:
+    - checkbox "자동 챕터 허용" [ref=e171] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e172]: "자세히 알아보기"
+  - generic [ref=e173]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e174] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e175]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e176] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e177]: "자세히 알아보기"
+  - button "dadeumijil. 수정하려면 Enter 키를 누르세요." [ref=e178]:
+    - text: "dadeumijil"
+    - button "삭제" [ref=e179]
+  - button "dadeumi. 수정하려면 Enter 키를 누르세요." [ref=e180]:
+    - text: "dadeumi"
+    - button "삭제" [ref=e181]
+  - button "Korean cloth beating. 수정하려면 Enter 키를 누르세요." [ref=e182]:
+    - text: "Korean cloth beating"
+    - button "삭제" [ref=e183]
+  - button "traditional ironing. 수정하려면 Enter 키를 누르세요." [ref=e184]:
+    - text: "traditional ironing"
+    - button "삭제" [ref=e185]
+  - button "laundry history. 수정하려면 Enter 키를 누르세요." [ref=e186]:
+    - text: "laundry history"
+    - button "삭제" [ref=e187]
+  - button "clothing history. 수정하려면 Enter 키를 누르세요." [ref=e188]:
+    - text: "clothing history"
+    - button "삭제" [ref=e189]
+  - button "textile history. 수정하려면 Enter 키를 누르세요." [ref=e190]:
+    - text: "textile history"
+    - button "삭제" [ref=e191]
+  - button "white hanbok. 수정하려면 Enter 키를 누르세요." [ref=e192]:
+    - text: "white hanbok"
+    - button "삭제" [ref=e193]
+  - button "hanbok. 수정하려면 Enter 키를 누르세요." [ref=e194]:
+    - text: "hanbok"
+    - button "삭제" [ref=e195]
+  - button "Joseon. 수정하려면 Enter 키를 누르세요." [ref=e196]:
+    - text: "Joseon"
+    - button "삭제" [ref=e197]
+  - button "Joseon dynasty. 수정하려면 Enter 키를 누르세요." [ref=e198]:
+    - text: "Joseon dynasty"
+    - button "삭제" [ref=e199]
+  - button "Korean history. 수정하려면 Enter 키를 누르세요." [ref=e200]:
+    - text: "Korean history"
+    - button "삭제" [ref=e201]
+  - button "Korean culture. 수정하려면 Enter 키를 누르세요." [ref=e202]:
+    - text: "Korean culture"
+    - button "삭제" [ref=e203]
+  - button "Korean genre painting. 수정하려면 Enter 키를 누르세요." [ref=e204]:
+    - text: "Korean genre painting"
+    - button "삭제" [ref=e205]
+  - button "Korean art. 수정하려면 Enter 키를 누르세요." [ref=e206]:
+    - text: "Korean art"
+    - button "삭제" [ref=e207]
+  - button "ink painting. 수정하려면 Enter 키를 누르세요." [ref=e208]:
+    - text: "ink painting"
+    - button "삭제" [ref=e209]
+  - button "everyday life. 수정하려면 Enter 키를 누르세요." [ref=e210]:
+    - text: "everyday life"
+    - button "삭제" [ref=e211]
+  - button "history shorts. 수정하려면 Enter 키를 누르세요." [ref=e212]:
+    - text: "history shorts"
+    - button "삭제" [ref=e213]
+  - button "TJ Kim Collection. 수정하려면 Enter 키를 누르세요." [ref=e214]:
+    - text: "TJ Kim Collection"
+    - button "삭제" [ref=e215]
+  - button "다듬이질. 수정하려면 Enter 키를 누르세요." [ref=e216]:
+    - text: "다듬이질"
+    - button "삭제" [ref=e217]
+  - textbox "태그" [ref=e218]
+  - button "모두 복사" [ref=e219]
+  - button "모두 삭제" [ref=e220]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      308/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e221]:
+    - button "동영상 언어 영어" [ref=e222]
+  - button [ref=e223]:
+    - button "자막 면제 인증서 없음" [ref=e224]
+  - button [ref=e226]:
+    - button "제목 및 설명 언어 선택" [ref=e227]
+  - text: "다른 언어를 관리하려면"
+  - link "자막" [ref=e228]
+  - text: "으로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e229]:
+    - button "녹화 날짜 없음" [ref=e230]
+  - button [ref=e231]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e232] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e233]
+  - text: "에 대해 알아보세요."
+  - button [ref=e234]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e235]
+  - generic [ref=e236]:
+    - checkbox "퍼가기 허용" [ref=e237] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e239]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e240] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e241]: "자세히 알아보기"
+  - radiogroup [ref=e242]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e243] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e244]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e245]:
+    - button "교육" [ref=e246]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e247]:
+    - button "댓글 켜짐" [ref=e248]
+  - button [ref=e249]:
+    - button "검토 기본" [ref=e250]
+  - button [ref=e251]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e252]
+  - button [ref=e253]:
+    - button "정렬 기준 인기순" [ref=e254]
+  - generic [ref=e255]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e256] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e145]
+  - text: "파일 이름 ep03-short-en-v18-cover.mp4 동영상 화질"
+  - generic [ref=e146]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e147]
+  - generic [ref=e148]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e149]
+  - button [ref=e150]:
+    - button "관련 동영상 없음" [ref=e151]
+  - button [ref=e153]:
+    - button [ref=e154]:
+      - button "자막" [ref=e155]
+[ok | 87ms]
+repl > 

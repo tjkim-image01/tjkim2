@@ -1,0 +1,10 @@
+{
+  "asset": "original-procession-cutout.png",
+  "crop": [49, 97, 1553, 994],
+  "placement": [116, 118, 940, 618],
+  "start_after_drawing": 2,
+  "fade_seconds": 4,
+  "description": "원본 참고 이미지의 검은 액자선, 바깥 글씨와 인장을 제거한 투명 편집본",
+  "editing_tool": "built-in imagegen",
+  "source": "base.png"
+}

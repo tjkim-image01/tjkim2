@@ -1,0 +1,19 @@
+{
+  "single_RGB_assets_checked": 851,
+  "bad_assets": [],
+  "minimum_color_lift": 0.13062566362827965,
+  "minimum_background_color_lift": 0.20000000000000284,
+  "timeline_sorted": true,
+  "non_background_strokes_unchanged": true,
+  "background_ink_unchanged": true,
+  "settings_unchanged": true,
+  "reference_unchanged": true,
+  "background_route_coverage": {
+    "window_paper": 0.99999,
+    "wall_yellow": 0.99925,
+    "floor_ochre": 0.99941,
+    "wood_gold": 0.99777,
+    "wood_brown": 1.0
+  },
+  "painting_sha256": "a25c44c01616629f6ca0e16cfa3b40ea61be5b7bf09aa41102f3fb2fbbaf3979"
+}

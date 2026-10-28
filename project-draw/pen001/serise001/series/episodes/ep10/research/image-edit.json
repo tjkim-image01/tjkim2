@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "purpose": "single-plate extraction and border cleanup",
+  "source_album": "APKC260507306",
+  "prompt": "Edit target: archival Korean genre-painting album photograph. Select ONLY the LEFT-HAND painting: a standing traveling candy/yeot seller carrying a flat wooden tray facing two seated customers outside a house. The opposite painting is unrelated: omit it entirely. Extract and straighten that one scene to landscape 3:2. Remove black album pages, hardware, red binding, photographic edge, all outer borders, external handwritten inscriptions and red seals. Preserve the exact original scene, number of people, costumes, poses, faces, tools and proportions as faithfully as possible. Keep tiny animals and architectural parts that belong to the selected painting. Do not invent, modernize, redraw as a different style or simplify into a cartoon. Keep all heads, hands, implements and feet fully inside the canvas. Unpainted background: warm ivory (#f8f5ea), no rectangle frame. One complete painting only, no captions, titles, collage or watermark. Archival cleanup for a drawing-video reveal.",
+  "output": "art/original-clean.png",
+  "note": "AI-assisted cleanup edition; source album photograph is preserved separately."
+}
+

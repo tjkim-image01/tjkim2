@@ -1,0 +1,724 @@
+{
+  "episode": "ep02",
+  "strokes": 844,
+  "people": [
+    {
+      "key": "front_man",
+      "name": "인물 1",
+      "head_start": 0.8,
+      "body_start": 3.7667157386167234,
+      "details_start": 8.025219793182831,
+      "end": 10.350725108196992
+    },
+    {
+      "key": "rear_woman",
+      "name": "인물 2",
+      "head_start": 10.480725108196992,
+      "body_start": 13.16635024411525,
+      "details_start": 15.704993767573896,
+      "end": 17.52273134533301
+    },
+    {
+      "key": "rear_man",
+      "name": "인물 3",
+      "head_start": 17.65273134533301,
+      "body_start": 20.63142059537134,
+      "details_start": 23.781050828859936,
+      "end": 25.817591759249492
+    },
+    {
+      "key": "front_woman",
+      "name": "인물 4",
+      "head_start": 25.94759175924949,
+      "body_start": 28.5372369960053,
+      "details_start": 34.01155518251197,
+      "end": 36.8
+    }
+  ],
+  "coverage": [
+    {
+      "group": "front_man",
+      "stage": "head",
+      "pigment": "paint_02",
+      "coverage": 0.99552
+    },
+    {
+      "group": "front_man",
+      "stage": "head",
+      "pigment": "paint_03",
+      "coverage": 0.99909
+    },
+    {
+      "group": "front_man",
+      "stage": "head",
+      "pigment": "paint_05",
+      "coverage": 0.98485
+    },
+    {
+      "group": "front_man",
+      "stage": "head",
+      "pigment": "paint_15",
+      "coverage": 0.98083
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_00",
+      "coverage": 0.98074
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_02",
+      "coverage": 0.99164
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 0.9976
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_05",
+      "coverage": 0.99878
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_08",
+      "coverage": 0.99685
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_10",
+      "coverage": 0.98872
+    },
+    {
+      "group": "front_man",
+      "stage": "body",
+      "pigment": "paint_12",
+      "coverage": 0.99206
+    },
+    {
+      "group": "rear_woman",
+      "stage": "head",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_woman",
+      "stage": "head",
+      "pigment": "paint_02",
+      "coverage": 0.99563
+    },
+    {
+      "group": "rear_woman",
+      "stage": "head",
+      "pigment": "paint_03",
+      "coverage": 0.9757
+    },
+    {
+      "group": "rear_woman",
+      "stage": "head",
+      "pigment": "paint_07",
+      "coverage": 0.99306
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_02",
+      "coverage": 0.97847
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 0.99858
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_05",
+      "coverage": 0.72231
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_08",
+      "coverage": 0.99532
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_12",
+      "coverage": 0.97535
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_13",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_woman",
+      "stage": "body",
+      "pigment": "paint_15",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_man",
+      "stage": "head",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_man",
+      "stage": "head",
+      "pigment": "paint_02",
+      "coverage": 0.99192
+    },
+    {
+      "group": "rear_man",
+      "stage": "head",
+      "pigment": "paint_03",
+      "coverage": 0.98562
+    },
+    {
+      "group": "rear_man",
+      "stage": "head",
+      "pigment": "paint_05",
+      "coverage": 0.99531
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 0.9996
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_02",
+      "coverage": 0.9517
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 0.98917
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_05",
+      "coverage": 0.97827
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_07",
+      "coverage": 0.99937
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_10",
+      "coverage": 0.99324
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_11",
+      "coverage": 1.0
+    },
+    {
+      "group": "rear_man",
+      "stage": "body",
+      "pigment": "paint_12",
+      "coverage": 0.99553
+    },
+    {
+      "group": "front_woman",
+      "stage": "head",
+      "pigment": "paint_01",
+      "coverage": 0.9979
+    },
+    {
+      "group": "front_woman",
+      "stage": "head",
+      "pigment": "paint_03",
+      "coverage": 1.0
+    },
+    {
+      "group": "front_woman",
+      "stage": "head",
+      "pigment": "paint_07",
+      "coverage": 0.99009
+    },
+    {
+      "group": "front_woman",
+      "stage": "head",
+      "pigment": "paint_11",
+      "coverage": 0.95363
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_00",
+      "coverage": 0.99429
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 1.0
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_09",
+      "coverage": 0.99881
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_10",
+      "coverage": 0.9936
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_12",
+      "coverage": 0.99737
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_14",
+      "coverage": 1.0
+    },
+    {
+      "group": "front_woman",
+      "stage": "body",
+      "pigment": "paint_17",
+      "coverage": 0.99932
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_01",
+      "coverage": 0.95417
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_02",
+      "coverage": 0.97864
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_03",
+      "coverage": 0.99961
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_05",
+      "coverage": 1.0
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_06",
+      "coverage": 0.99702
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_08",
+      "coverage": 0.99863
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_09",
+      "coverage": 0.70107
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_10",
+      "coverage": 0.92862
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_12",
+      "coverage": 0.99972
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_13",
+      "coverage": 1.0
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_14",
+      "coverage": 1.0
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_00",
+      "coverage": 0.99702
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_01",
+      "coverage": 0.99977
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_02",
+      "coverage": 0.99558
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_03",
+      "coverage": 0.99372
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_04",
+      "coverage": 0.99013
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_05",
+      "coverage": 0.98676
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_06",
+      "coverage": 0.99858
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_07",
+      "coverage": 0.99874
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_08",
+      "coverage": 0.99212
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_09",
+      "coverage": 0.99627
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_10",
+      "coverage": 0.99877
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_11",
+      "coverage": 0.99407
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_12",
+      "coverage": 0.99669
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_13",
+      "coverage": 0.96085
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_14",
+      "coverage": 0.93625
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_15",
+      "coverage": 0.98561
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_16",
+      "coverage": 0.98409
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_17",
+      "coverage": 0.98226
+    }
+  ],
+  "background_color_passes": [
+    {
+      "pigment_id": "paint_00",
+      "name": "미색 1",
+      "rgb": [
+        246,
+        243,
+        231
+      ],
+      "start": 43.0,
+      "end": 43.17400892528729,
+      "strokes": 17
+    },
+    {
+      "pigment_id": "paint_01",
+      "name": "나무빛 2",
+      "rgb": [
+        241,
+        233,
+        208
+      ],
+      "start": 43.37400892528729,
+      "end": 43.6024438644575,
+      "strokes": 11
+    },
+    {
+      "pigment_id": "paint_02",
+      "name": "나무빛 3",
+      "rgb": [
+        234,
+        220,
+        144
+      ],
+      "start": 43.8024438644575,
+      "end": 43.98081593144771,
+      "strokes": 12
+    },
+    {
+      "pigment_id": "paint_03",
+      "name": "나무빛 4",
+      "rgb": [
+        221,
+        214,
+        193
+      ],
+      "start": 44.18081593144771,
+      "end": 44.36357617904745,
+      "strokes": 20
+    },
+    {
+      "pigment_id": "paint_04",
+      "name": "나무빛 5",
+      "rgb": [
+        221,
+        206,
+        57
+      ],
+      "start": 44.56357617904745,
+      "end": 44.67043543129085,
+      "strokes": 10
+    },
+    {
+      "pigment_id": "paint_05",
+      "name": "나무빛 6",
+      "rgb": [
+        229,
+        191,
+        98
+      ],
+      "start": 44.87043543129085,
+      "end": 45.10576860277681,
+      "strokes": 17
+    },
+    {
+      "pigment_id": "paint_06",
+      "name": "나무빛 7",
+      "rgb": [
+        245,
+        164,
+        8
+      ],
+      "start": 45.305768602776816,
+      "end": 45.42974310363683,
+      "strokes": 5
+    },
+    {
+      "pigment_id": "paint_07",
+      "name": "풀빛 8",
+      "rgb": [
+        161,
+        172,
+        27
+      ],
+      "start": 45.629743103636834,
+      "end": 45.70039329347011,
+      "strokes": 5
+    },
+    {
+      "pigment_id": "paint_08",
+      "name": "청록빛 9",
+      "rgb": [
+        127,
+        163,
+        164
+      ],
+      "start": 45.90039329347011,
+      "end": 45.91762701574466,
+      "strokes": 2
+    },
+    {
+      "pigment_id": "paint_09",
+      "name": "주홍빛 10",
+      "rgb": [
+        249,
+        123,
+        8
+      ],
+      "start": 46.11762701574466,
+      "end": 46.17530897761743,
+      "strokes": 6
+    },
+    {
+      "pigment_id": "paint_10",
+      "name": "나무빛 11",
+      "rgb": [
+        215,
+        133,
+        8
+      ],
+      "start": 46.375308977617436,
+      "end": 46.67222970020507,
+      "strokes": 24
+    },
+    {
+      "pigment_id": "paint_11",
+      "name": "풀빛 12",
+      "rgb": [
+        119,
+        146,
+        8
+      ],
+      "start": 46.872229700205075,
+      "end": 46.91813693170589,
+      "strokes": 5
+    },
+    {
+      "pigment_id": "paint_12",
+      "name": "나무빛 13",
+      "rgb": [
+        204,
+        124,
+        8
+      ],
+      "start": 47.11813693170589,
+      "end": 47.47144022147158,
+      "strokes": 42
+    },
+    {
+      "pigment_id": "paint_13",
+      "name": "분홍빛 14",
+      "rgb": [
+        236,
+        65,
+        59
+      ],
+      "start": 47.671440221471585,
+      "end": 47.67751878188554,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_14",
+      "name": "주홍빛 15",
+      "rgb": [
+        244,
+        92,
+        8
+      ],
+      "start": 47.87751878188554,
+      "end": 47.89075487171388,
+      "strokes": 2
+    },
+    {
+      "pigment_id": "paint_15",
+      "name": "분홍빛 16",
+      "rgb": [
+        226,
+        16,
+        22
+      ],
+      "start": 48.090754871713884,
+      "end": 48.09314598081151,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_16",
+      "name": "분홍빛 17",
+      "rgb": [
+        75,
+        68,
+        66
+      ],
+      "start": 48.29314598081151,
+      "end": 48.29792820504787,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_17",
+      "name": "분홍빛 18",
+      "rgb": [
+        227,
+        55,
+        8
+      ],
+      "start": 48.49792820504787,
+      "end": 48.51885313789083,
+      "strokes": 2
+    }
+  ],
+  "source_sha256": "4e9fb7687ddd02601b8e20404fe9fa1afd334c2be803ccca447cac6e03c5ba98",
+  "settings_sha256": "7c18fb06b5bdc91e0136a96c8698261e5e3822ab60405ff9e93b1ce118b8fe4d",
+  "settings_unchanged": true,
+  "MP4_created": false
+}

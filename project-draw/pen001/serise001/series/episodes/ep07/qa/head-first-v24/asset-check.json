@@ -1,0 +1,49 @@
+{
+  "episode": "ep07",
+  "strokes": 722,
+  "single_RGB_assets_checked": 722,
+  "visible_asset_pixels": 11305813,
+  "people": [
+    {
+      "person": "left_young",
+      "head": [
+        0.8,
+        3.290714899317524
+      ],
+      "body": [
+        3.4212045208851465,
+        10.009122481317606
+      ],
+      "end": 12.91670226592933
+    },
+    {
+      "person": "rear_woman",
+      "head": [
+        13.051305931083098,
+        16.239569899193004
+      ],
+      "body": [
+        16.37005915096768,
+        20.89915556667323
+      ],
+      "end": 23.255810841275416
+    },
+    {
+      "person": "right_man",
+      "head": [
+        23.389045049256755,
+        28.204474822738824
+      ],
+      "body": [
+        28.335154101216478,
+        34.473442310708315
+      ],
+      "end": 36.79752724684136
+    }
+  ],
+  "minimum_reload_seconds": 0.13026956022338965,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "d0f9a2654b4c59f7b8525dd5f9d9107558f12be18c51890d80a9160abe0326f9"
+}

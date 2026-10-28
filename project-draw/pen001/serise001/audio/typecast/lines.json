@@ -1,0 +1,62 @@
+[
+  {
+    "id": "N01",
+    "text": "케이팝보다 먼저, 조선을 세계에 알린 그림이 있었습니다. 미술 한류의 원조라 불리는, 기산 김준근의 풍속화입니다.",
+    "file": "N01.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 6.95
+  },
+  {
+    "id": "N02",
+    "text": "그 흐름을 잇는 작가로 전해지는 운초. 이 그림에는, 한 사람의 마지막 길을 함께하는 이들이 있습니다.",
+    "file": "N02.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 5.65
+  },
+  {
+    "id": "N03",
+    "text": "짚으로 덮은 상여와 긴 멜대. 사람들은 관을 어깨에 메고, 장지로 향합니다.",
+    "file": "N03.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 4.65
+  },
+  {
+    "id": "N04",
+    "text": "낯선 조선에 온 외국인들은, 사람들의 옷차림과 생활, 의례를 궁금해했습니다. 이런 풍속화는, 그 문화를 전하는 창이었습니다.",
+    "file": "N04.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 7.9
+  },
+  {
+    "id": "N05",
+    "text": "갓 아래의 얼굴과 길게 흐르는 옷자락. 한 획씩 따라가면, 오래전 사람들의 마지막 배웅이, 오늘 우리 앞에 다시 나타납니다.",
+    "file": "N05.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 7.35
+  },
+  {
+    "id": "N06",
+    "text": "이 작품은 티제이킴 컬렉션 소장품입니다.",
+    "file": "N06.wav",
+    "actor": "한준",
+    "provider": "Typecast",
+    "temporary": false,
+    "emotion": "일반",
+    "duration": 2.55
+  }
+]

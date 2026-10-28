@@ -1,0 +1,79 @@
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_nZqvwvzmML88Emx4
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__press = async(P, sel, text)=>{ const pt = await P.evaluate(([sel,text])=>{ const e=[...document.querySelectorAll(sel)].filter(x=>{const b=x.getBoundingClientRect(); return b.width>0&&b.height>0}).find(x=>x.innerText.split('\n').map(s=>s.trim()).includes(text)); if(!e) return null; e.scrollIntoView({block:'center'}); const b=e.getBoundingClientRect(); return {x:b.x+b.width/2,y:b.y+b.height/2}; }, [sel,text]); if(!pt) return false; await P.mouse.click(pt.x, pt.y); return true; }; console.log('ok')
+ok
+[ok | 11ms]
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; let p = t ? await attachBrowserTab(t.targetId) : await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } if ((await p.title()).includes('죄송') || (await p.content()).includes('권한이 없습니다')) {   await p.goto('https://www.youtube.com/channel_switcher?next=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000);   await globalThis.__press(p, 'ytd-account-item-renderer', '@tjkimcollection'); await sleep(6000);   await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(6000); } return p; }; console.log('ok')
+ok
+[ok | 6ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+✔︎ Opened a new tab and set it active: tabs[0], page → 채널 대시보드 - YouTube Studio (https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA)
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 9552ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 5589ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.evaluate(()=>{ for (const d of document.querySelectorAll('tp-yt-paper-dialog')) { const b=[...d.querySelectorAll('ytcp-button, button')].find(x=>x.getBoundingClientRect().width&&x.innerText.trim()==='계속'); if (b) b.click(); } }); await sleep(800); console.log('CREATE:'+await globalThis.__press(P, 'ytcp-button, button', '만들기')); await sleep(1200); console.log('MENU:'+await globalThis.__press(P, 'tp-yt-paper-item, ytcp-text-menu [role=menuitem]', '동영상 업로드')); await sleep(2500) })()
+CREATE:true
+MENU:true
+[ok | 16475ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.locator('ytcp-uploads-dialog input[type=file][name=Filedata]').setInputFiles("./01_pen001_shorts_ep02_ko_v15_thumb1p5.mp4"); console.log('ok') })()
+ok
+[ok | 4894ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('ED:'+await P.locator('ytcp-uploads-dialog [contenteditable=true]').count()) })()
+ED:2
+[ok | 4816ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const m=JSON.parse(await fs.readFile('./meta.json','utf8')); const eds=P.locator('ytcp-uploads-dialog [contenteditable=true]'); const put=async(i,s)=>{ const b=eds.nth(i); await b.evaluate(e=>{ e.scrollIntoView({block:'center'}); e.focus(); }); await sleep(300); await P.keyboard.press('Meta+A'); await P.keyboard.press('Backspace'); await sleep(300); await P.keyboard.insertText(s); await sleep(700); return (await b.evaluate(e=>e.innerText)).trim(); }; const T=await put(0,m.title); const D=await put(1,m.description); console.log('TOK:'+(T===m.title)); console.log('DLEN:'+D.length+'/'+m.description.length); })() })()
+TOK:true
+DLEN:379/379
+[ok | 10908ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const rs=P.locator('ytcp-uploads-dialog [role=radiogroup] [role=radio]'); await rs.nth(1).click(); await sleep(600); console.log('MFK:'+JSON.stringify(await rs.evaluateAll(es=>es.map(e=>[e.innerText.trim().slice(0,10),e.getAttribute('aria-checked')])))); })() })()
+MFK:[["예, 아동용입니다\n","false"],["아니요, 아동용이 ","true"],["예, 동영상 시청자","false"],["아니요, 동영상 시","true"]]
+[ok | 6253ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const m=JSON.parse(await fs.readFile('./meta.json','utf8')); console.log('PREP:'+await P.evaluate(async()=>{ const d=document.querySelector('ytcp-uploads-dialog'); if(!d) return 'NO_DLG'; const more=[...d.querySelectorAll('ytcp-button, button')].find(b=>b.getBoundingClientRect().width&&/^(자세히 보기|Show more)$/.test(b.innerText.trim())); if (more) { more.scrollIntoView({block:'center'}); more.click(); await new Promise(r=>setTimeout(r,1500)); } const inp=d.querySelector('input[aria-label=\"태그\"], #tags-container input'); if(!inp) return 'NO_TAG_INPUT'; const bar=inp.closest('ytcp-chip-bar')||d; for (let k=0; k<60 && bar.querySelector('ytcp-chip #delete-icon'); k++) { bar.querySelector('ytcp-chip #delete-icon').click(); await new Promise(r=>setTimeout(r,150)); } inp.scrollIntoView({block:'center'}); inp.focus(); return 'READY:'+bar.querySelectorAll('ytcp-chip').length; })); await sleep(500); await P.keyboard.insertText(m.tags); await sleep(600); await P.keyboard.press('Enter'); await sleep(1000); console.log('TAGS_CHIPS:'+await P.evaluate(()=>{ const inp=document.querySelector('ytcp-uploads-dialog input[aria-label=\"태그\"], ytcp-uploads-dialog #tags-container input'); const bar=inp.closest('ytcp-chip-bar')||document.querySelector('ytcp-uploads-dialog'); return JSON.stringify([...bar.querySelectorAll('ytcp-chip')].map(c=>c.innerText.trim()).filter(Boolean)); })) })()
+PREP:READY:0
+TAGS_CHIPS:["윷놀이","윷","윷판","조선의 보드게임","보드게임","전통놀이","한국전통놀이","민속놀이","설날놀이","설날","조선시대","풍속화","조선 풍속화","운초","한복","한국문화","전통문화","한국사","역사이야기","역사쇼츠","티제이김컬렉션","티제이 김 컬렉션","Yutnori","KoreanCulture"]
+[ok | 10649ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:동영상 요소
+[ok | 6911ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:검토
+[ok | 6844ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ await P.locator('ytcp-uploads-dialog #next-button').click(); await sleep(1800); console.log('TAB:'+await P.evaluate(()=>[...document.querySelectorAll('ytcp-uploads-dialog [role=tab]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.innerText.trim()).join('|'))); })() })()
+TAB:공개 상태
+[ok | 7620ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const v=P.locator('ytcp-uploads-dialog [role=radio]'); await v.nth(0).click(); await sleep(700); console.log('VIS:'+JSON.stringify(await v.evaluateAll(es=>es.map(e=>[e.innerText.trim().split('\n')[0],e.getAttribute('aria-checked')])))); console.log('LINK:'+await P.evaluate(()=>{ const a=[...document.querySelectorAll('ytcp-uploads-dialog a')].map(a=>a.href).find(h=>/youtube\.com\/(shorts\/|watch\?v=)|youtu\.be\//.test(h)); return a||''; })); })() })()
+VIS:[["비공개","true"],["일부 공개","false"],["공개","false"]]
+LINK:https://youtube.com/shorts/1VNXCY6nwZE
+[ok | 5787ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('PROG:'+((await P.evaluate(()=>{ const t=document.querySelector('ytcp-uploads-dialog')?.innerText||''; const m=t.match(/(업로드 중|Uploading)[^\n]*/); return m?m[0]:'done'; })))) })()
+PROG:done
+[ok | 4948ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await (async()=>{ const d=P.locator('ytcp-uploads-dialog #done-button'); console.log('DONE:'+(await d.innerText()).trim()); await d.click(); for(let i=0;i<20;i++){ await sleep(1000); if(!(await P.locator('ytcp-uploads-dialog [role=dialog]').count())) break; } console.log('LEFT:'+await P.locator('ytcp-uploads-dialog [role=dialog]').count()); })() })()
+DONE:저장
+LEFT:0
+[ok | 8213ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 5574ms]
+repl > 

@@ -1,0 +1,369 @@
+{
+  "id": "ep05",
+  "number": 5,
+  "title": "비 오는 날의 조선",
+  "hook": "우산만 있었을까",
+  "category": "일상·살림",
+  "album": 4,
+  "side": "right",
+  "duration": 66,
+  "byline": "운초 전칭 · TJ KIM 컬렉션",
+  "narration": [
+    "비가 오면 조선 사람들은 어떻게 길을 나섰을까요? 가느다란 빗줄기 아래, 저마다 다른 차림으로 걸음을 옮깁니다.",
+    "넓은 모자는 얼굴 쪽으로 떨어지는 비를 막고, 머리에 인 짐 위에는 덮개를 씌웠습니다. 기와지붕 아래 머무는 사람과 비를 맞으며 움직이는 사람이 함께 보입니다.",
+    "먼저 지붕선을 그리고, 모자의 넓은 챙을 둥글게 이어 봅니다. 오늘날의 검은 우산 행렬과는 다른, 비를 견디는 모습이 드러납니다. 옷차림은 멋만이 아니라 날씨에 대응하는 방법이기도 했습니다.",
+    "외국인이 이 장면을 보았다면 낯선 모자부터 눈에 들어왔을 수 있습니다. 그러나 조금 더 들여다보면, 비가 와도 장사를 하고 짐을 나르던 일상이 보입니다.",
+    "한 장의 그림은 조선 사람을 특별한 옷의 주인공으로만 남기지 않습니다. 날씨와 형편에 맞춰 하루를 살아가던 사람으로 다시 만나게 합니다."
+  ],
+  "voice_id": "S05",
+  "voice_text": "비가 오면 조선 사람들은 어떻게 길을 나섰을까요? 가느다란 빗줄기 아래, 저마다 다른 차림으로 걸음을 옮깁니다. 넓은 모자는 얼굴 쪽으로 떨어지는 비를 막고, 머리에 인 짐 위에는 덮개를 씌웠습니다. 기와지붕 아래 머무는 사람과 비를 맞으며 움직이는 사람이 함께 보입니다. 먼저 지붕선을 그리고, 모자의 넓은 챙을 둥글게 이어 봅니다. 오늘날의 검은 우산 행렬과는 다른, 비를 견디는 모습이 드러납니다. 옷차림은 멋만이 아니라 날씨에 대응하는 방법이기도 했습니다. 외국인이 이 장면을 보았다면 낯선 모자부터 눈에 들어왔을 수 있습니다. 그러나 조금 더 들여다보면, 비가 와도 장사를 하고 짐을 나르던 일상이 보입니다. 한 장의 그림은 조선 사람을 특별한 옷의 주인공으로만 남기지 않습니다. 날씨와 형편에 맞춰 하루를 살아가던 사람으로 다시 만나게 합니다.",
+  "voice_file": "S05.wav",
+  "video": "../episodes/ep05/output/ep05-short-60s.mp4",
+  "poster": "../episodes/ep05/art/poster.jpg",
+  "original": "../episodes/ep05/art/original-clean.png",
+  "source_photo": "../../../research/album-4.jpg",
+  "sources": [
+    {
+      "title": "기산 김준근 풍속화 소개 · 국사편찬위원회",
+      "url": "https://contents.history.go.kr/collection/level.do?levelId=mp_009_0030"
+    },
+    {
+      "title": "기산풍속도첩 · 서울역사박물관",
+      "url": "https://museum.seoul.go.kr/www/relic/RelicView.do?cdLanguage=KOR&mcseqno1=021945&mcseqno2=00000&mcsjgbnc=PS01003026001"
+    }
+  ],
+  "status": "ready",
+  "player_director": {
+    "intro_duration": 6,
+    "shots": [
+      {
+        "element": "front_carrier",
+        "start": 0.8,
+        "end": 2.158895750868751,
+        "box": [
+          428.0,
+          393.0,
+          646.0,
+          652
+        ]
+      },
+      {
+        "element": "front_carrier",
+        "start": 2.158895750868751,
+        "end": 6.285490373282863,
+        "box": [
+          428.0,
+          393.0,
+          646.0,
+          652
+        ]
+      },
+      {
+        "element": "front_seated",
+        "start": 6.285490373282863,
+        "end": 8.774433649960791,
+        "box": [
+          548.0,
+          321.0,
+          799.0,
+          652
+        ]
+      },
+      {
+        "element": "front_seated",
+        "start": 8.774433649960791,
+        "end": 12.372611040660475,
+        "box": [
+          548.0,
+          321.0,
+          799.0,
+          652
+        ]
+      },
+      {
+        "element": "front_right",
+        "start": 12.372611040660475,
+        "end": 14.508686713172178,
+        "box": [
+          744.0,
+          265.0,
+          950.0,
+          652
+        ]
+      },
+      {
+        "element": "front_right",
+        "start": 14.508686713172178,
+        "end": 18.95660783694632,
+        "box": [
+          744.0,
+          265.0,
+          950.0,
+          652
+        ]
+      },
+      {
+        "element": "door_sitting",
+        "start": 18.95660783694632,
+        "end": 20.36452625719817,
+        "box": [
+          145.0,
+          238.0,
+          340.0,
+          467.0
+        ]
+      },
+      {
+        "element": "door_sitting",
+        "start": 20.36452625719817,
+        "end": 23.941706407218494,
+        "box": [
+          145.0,
+          238.0,
+          340.0,
+          467.0
+        ]
+      },
+      {
+        "element": "door_standing",
+        "start": 23.941706407218494,
+        "end": 25.443878974694897,
+        "box": [
+          259.0,
+          152.0,
+          455.0,
+          458.0
+        ]
+      },
+      {
+        "element": "door_standing",
+        "start": 25.443878974694897,
+        "end": 28.963001561473305,
+        "box": [
+          259.0,
+          152.0,
+          455.0,
+          458.0
+        ]
+      },
+      {
+        "element": "rear_small",
+        "start": 28.963001561473305,
+        "end": 30.31350832504879,
+        "box": [
+          646.5,
+          245.0,
+          806.5,
+          375.0
+        ]
+      },
+      {
+        "element": "rear_small",
+        "start": 30.31350832504879,
+        "end": 32.48587613228213,
+        "box": [
+          646.5,
+          245.0,
+          806.5,
+          375.0
+        ]
+      },
+      {
+        "element": "rear_cloaked",
+        "start": 32.48587613228213,
+        "end": 33.779197596894555,
+        "box": [
+          720.5,
+          158.0,
+          880.5,
+          375.0
+        ]
+      },
+      {
+        "element": "rear_cloaked",
+        "start": 33.779197596894555,
+        "end": 36.8,
+        "box": [
+          720.5,
+          158.0,
+          880.5,
+          375.0
+        ]
+      },
+      {
+        "element": "objects",
+        "start": 36.8,
+        "end": 42.8,
+        "box": [
+          424.0,
+          206.0,
+          797.0,
+          492.0
+        ]
+      },
+      {
+        "element": "background",
+        "start": 42.8,
+        "end": 49.8,
+        "box": [
+          0,
+          0,
+          1000,
+          652
+        ]
+      }
+    ],
+    "brush_types": {
+      "fine": {
+        "label": "세필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "fine-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "medium": {
+        "label": "중필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "medium-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "large": {
+        "label": "대필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "large-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "flat": {
+        "label": "평붓",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "flat-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      }
+    },
+    "brush_frames": 96,
+    "viewport": [
+      0,
+      0,
+      1080,
+      1440
+    ],
+    "ink_bleed": 0.45,
+    "signature": "approved bitmap Tj v27 / angled close-up brush v29",
+    "signature_duration": 3.5,
+    "pressure_brush": {
+      "atlas": "pressure-atlas.png",
+      "width": 192,
+      "height": 288,
+      "anchor": [
+        62.4,
+        253.2
+      ],
+      "levels": 4,
+      "angles": 24
+    },
+    "caption_top": 1374,
+    "material": "fiber-height-wet-roughness-shader",
+    "caption_font_size": 60,
+    "brush_motion": "path-direction-speed-pressure-live-3d",
+    "intro_brush": "large-calligraphy-separate-tuft",
+    "intro_brush_scale": 9.04,
+    "intro_ink_bleed_multiplier": 2,
+    "brush_camera_reference": {
+      "intro": 3.6,
+      "painting": 5.14
+    },
+    "signature_canvas": [
+      1080,
+      1920
+    ],
+    "signature_approved": true,
+    "wet_ink_on_contact": true,
+    "signature_revision": 31,
+    "intro_brush_visible_from": 0
+  },
+  "player_music": {
+    "file": "../../../music/flow-night-ready.m4a",
+    "title": "먹빛의 밤",
+    "source": "Google Flow Music original generation",
+    "hide_credit": true,
+    "effects_at": [
+      1,
+      1.35,
+      1.65,
+      1.93,
+      2.17,
+      2.38,
+      2.56,
+      2.73,
+      2.88,
+      3.02,
+      3.15,
+      3.27,
+      3.39,
+      3.5
+    ],
+    "separate_tracks": true,
+    "default_start": 5,
+    "default_offset": 0,
+    "intro_rim_file": "court-finish-v9.m4a",
+    "roll_file": "roll-v7.m4a",
+    "finish_instrument": "three-buk-inspired",
+    "gain_controls": true,
+    "finish_file": "court-finish-v9.m4a",
+    "finish_duration": 1.55,
+    "finish_at": 3.5,
+    "effects_scope": "intro-only"
+  },
+  "caption_style": "calm-myeongjo",
+  "caption_layout": {
+    "max_chars": 18,
+    "font_size": 54,
+    "top": 1374,
+    "one_line": true
+  },
+  "player_revision": "raster-v31",
+  "player_only": false,
+  "drawing_order": "각 인물 머리·얼굴 채색 → 몸 채색 → 세선 정리 → 다음 인물 → 물건 → 색별 배경",
+  "exports": {
+    "ko": "ep05-short-ko-v31-cover.mp4",
+    "en": "ep05-short-en-v31-cover.mp4",
+    "ja": "ep05-short-ja-v31-cover.mp4"
+  },
+  "cover_exports": {
+    "ko": "../episodes/ep05/art/covers-v18/ko.png",
+    "en": "../episodes/ep05/art/covers-v18/en.png",
+    "ja": "../episodes/ep05/art/covers-v18/ja.png"
+  },
+  "review_status": "approved-body-immediate-brush"
+}

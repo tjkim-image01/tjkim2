@@ -1,0 +1,12 @@
+{
+  "episode": "ep11",
+  "language": "en",
+  "reference": "Korean actual audible onset",
+  "korean_first_audible": 13.084542,
+  "previous_first_audible": 8.333,
+  "first_audible": 13.086333,
+  "difference": 0.0017909999999989878,
+  "tempo": 1.04,
+  "narration_end": 63.967104,
+  "intro_voice_free": true
+}

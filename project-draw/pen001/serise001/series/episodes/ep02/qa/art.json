@@ -1,0 +1,15 @@
+{
+  "episode": "ep02",
+  "strokes": 482,
+  "wash": 261,
+  "initial_blank": true,
+  "duration": 60,
+  "draw_end": 49.8,
+  "source_resolution": [
+    1536,
+    1024
+  ],
+  "revision": "figure-first-calm-v2",
+  "figure_first": true,
+  "global_guides": false
+}

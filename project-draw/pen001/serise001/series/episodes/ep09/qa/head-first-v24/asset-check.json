@@ -1,0 +1,49 @@
+{
+  "episode": "ep09",
+  "strokes": 1032,
+  "single_RGB_assets_checked": 1032,
+  "visible_asset_pixels": 11905810,
+  "people": [
+    {
+      "person": "left_worker",
+      "head": [
+        0.8,
+        3.561497463535218
+      ],
+      "body": [
+        3.6924167844975555,
+        9.883349865432256
+      ],
+      "end": 13.223068753399756
+    },
+    {
+      "person": "rear_worker",
+      "head": [
+        13.355022542763896,
+        15.60593541882323
+      ],
+      "body": [
+        15.737025766496812,
+        22.67581737783477
+      ],
+      "end": 25.572000593041796
+    },
+    {
+      "person": "right_worker",
+      "head": [
+        25.70373203622694,
+        28.280437434450384
+      ],
+      "body": [
+        28.411383067149945,
+        33.870549434074256
+      ],
+      "end": 36.79683908134888
+    }
+  ],
+  "minimum_reload_seconds": 0.1301645567898433,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "a1e39eecfa1188c21d7eda9bc7a766ce91ec85346ec37bb022d9e7b8e6dbe3bc"
+}

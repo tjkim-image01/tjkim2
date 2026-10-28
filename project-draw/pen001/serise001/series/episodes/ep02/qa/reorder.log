@@ -1,0 +1,73 @@
+[
+  {
+    "group": "front_man_face",
+    "start": 0.8,
+    "end": 3.4896254726608698
+  },
+  {
+    "group": "front_man_body",
+    "start": 3.4999999999999982,
+    "end": 6.791028682416644
+  },
+  {
+    "group": "front_man_legs",
+    "start": 6.799999999999998,
+    "end": 9.28961510757174
+  },
+  {
+    "group": "rear_woman_face",
+    "start": 9.299999999999995,
+    "end": 11.9937007064466
+  },
+  {
+    "group": "rear_woman_body",
+    "start": 11.999999999999995,
+    "end": 15.292472854595557
+  },
+  {
+    "group": "rear_woman_legs",
+    "start": 15.299999999999995,
+    "end": 17.774949639571375
+  },
+  {
+    "group": "rear_man_face",
+    "start": 17.799999999999994,
+    "end": 20.493608935649934
+  },
+  {
+    "group": "rear_man_body",
+    "start": 20.499999999999996,
+    "end": 23.79629742382922
+  },
+  {
+    "group": "rear_man_legs",
+    "start": 23.799999999999994,
+    "end": 26.289023666676542
+  },
+  {
+    "group": "front_woman_face",
+    "start": 26.299999999999986,
+    "end": 28.989557693238435
+  },
+  {
+    "group": "front_woman_body",
+    "start": 28.99999999999999,
+    "end": 32.2920623727954
+  },
+  {
+    "group": "front_woman_legs",
+    "start": 32.29999999999999,
+    "end": 34.79878447220931
+  },
+  {
+    "group": "objects",
+    "start": 34.79999999999998,
+    "end": 41.79175743671331
+  },
+  {
+    "group": "background",
+    "start": 41.800000000000004,
+    "end": 49.79746790018964
+  }
+]
+strokes 482

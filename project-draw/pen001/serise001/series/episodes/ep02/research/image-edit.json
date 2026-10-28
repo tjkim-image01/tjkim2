@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "purpose": "single-plate extraction and border cleanup",
+  "source_album": "APKC260507306",
+  "prompt": "Edit target: archival Korean genre-painting album photograph. Select ONLY the LEFT-HAND painting: four people seated around a low yut game board indoors, including two men and two women. The other page is unrelated and must be completely omitted. Extract and straighten that single painting to a landscape 3:2 canvas. Remove black album pages, album hardware, red book binding, photographic edge, all outer borders, external inscriptions and red seals. Preserve the actual original scene, exact number of people, poses, faces, tools, costume colors and architecture as faithfully as possible; do not invent objects or modernize, do not turn into a new cartoon. Keep the scene complete without cutting hands, tools or feet. Use clean warm ivory (#f8f5ea) paper for unpainted background, no rectangle border. Match the original composition and aged hand-painted pigment. Output one single historical painting, no labels, no collage, no title, no watermark. This is archival image cleanup for a drawing video ending.",
+  "output": "art/original-clean.png",
+  "note": "AI-assisted cleanup edition; source album photograph is preserved separately."
+}
+

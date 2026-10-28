@@ -1,0 +1,212 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Yiq5vjjn5t8/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e599]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e1056]
+  - text: "동영상 미리보기 이미지: 조선 사람들은 길에서 무엇을 먹었을까? | 길 위의 밥 한 끼 #풍속화\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n     …[+294 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "언어" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e1014] [disabled]
+  - button "저장" [ref=e1015] [disabled]
+  - button "옵션" [ref=e1016]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e1021]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e1022]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e1024]
+  - button "추천받기" [ref=e1025]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e1026]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e1027]:
+    - button "선택" [ref=e1028]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e1029]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e1030]: "자세히 알아보기"
+  - radiogroup [ref=e1031]:
+    - radio [ref=e1032]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e1033]
+    - radio "아니요, 아동용이 아닙니다" [ref=e1034] [checked]
+  - button "연령 제한" [ref=e1035]
+  - button "고급 설정 숨기기" [ref=e1058] [focused]: "간략히 보기"
+  - text: "유료 프로모션 동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e1059]
+  - radiogroup [ref=e1060]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e1061]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e1062]
+  - text: "브랜드 파트너십 \n      브랜드 파트너와 동영상 및 동영상 측정항목에 대한 액세스 권한을 공유하고 동영상 홍보를 허용하세요."
+  - link "자세히 알아보기" [ref=e1063]
+  - button "액세스 코드 공유" [ref=e1064]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e1065]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e1066]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e1067]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e1068]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e1069]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e1070]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e1071]: "자세히 알아보기"
+  - generic [ref=e1072]:
+    - checkbox "자동 챕터 허용" [ref=e1073] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e1074]: "자세히 알아보기"
+  - generic [ref=e1075]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e1076] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e1077]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e1078] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e1079]: "자세히 알아보기"
+  - button "조선 음식. 수정하려면 Enter 키를 누르세요." [ref=e1080]:
+    - text: "조선 음식"
+    - button "삭제" [ref=e1081]
+  - button "조선시대 음식. 수정하려면 Enter 키를 누르세요." [ref=e1082]:
+    - text: "조선시대 음식"
+    - button "삭제" [ref=e1083]
+  - button "음식 장사. 수정하려면 Enter 키를 누르세요." [ref=e1084]:
+    - text: "음식 장사"
+    - button "삭제" [ref=e1085]
+  - button "전통 음식점. 수정하려면 Enter 키를 누르세요." [ref=e1086]:
+    - text: "전통 음식점"
+    - button "삭제" [ref=e1087]
+  - button "음식 문화. 수정하려면 Enter 키를 누르세요." [ref=e1088]:
+    - text: "음식 문화"
+    - button "삭제" [ref=e1089]
+  - button "식문화. 수정하려면 Enter 키를 누르세요." [ref=e1090]:
+    - text: "식문화"
+    - button "삭제" [ref=e1091]
+  - button "조선 생활사. 수정하려면 Enter 키를 누르세요." [ref=e1092]:
+    - text: "조선 생활사"
+    - button "삭제" [ref=e1093]
+  - button "초가지붕. 수정하려면 Enter 키를 누르세요." [ref=e1094]:
+    - text: "초가지붕"
+    - button "삭제" [ref=e1095]
+  - button "쟁반. 수정하려면 Enter 키를 누르세요." [ref=e1096]:
+    - text: "쟁반"
+    - button "삭제" [ref=e1097]
+  - button "길 위의 밥 한 끼. 수정하려면 Enter 키를 누르세요." [ref=e1098]:
+    - text: "길 위의 밥 한 끼"
+    - button "삭제" [ref=e1099]
+  - button "조선시대. 수정하려면 Enter 키를 누르세요." [ref=e1100]:
+    - text: "조선시대"
+    - button "삭제" [ref=e1101]
+  - button "한국사. 수정하려면 Enter 키를 누르세요." [ref=e1102]:
+    - text: "한국사"
+    - button "삭제" [ref=e1103]
+  - button "한국문화. 수정하려면 Enter 키를 누르세요." [ref=e1104]:
+    - text: "한국문화"
+    - button "삭제" [ref=e1105]
+  - button "풍속화. 수정하려면 Enter 키를 누르세요." [ref=e1106]:
+    - text: "풍속화"
+    - button "삭제" [ref=e1107]
+  - button "한국미술. 수정하려면 Enter 키를 누르세요." [ref=e1108]:
+    - text: "한국미술"
+    - button "삭제" [ref=e1109]
+  - button "수묵화. 수정하려면 Enter 키를 누르세요." [ref=e1110]:
+    - text: "수묵화"
+    - button "삭제" [ref=e1111]
+  - button "운초. 수정하려면 Enter 키를 누르세요." [ref=e1112]:
+    - text: "운초"
+    - button "삭제" [ref=e1113]
+  - button "생활사. 수정하려면 Enter 키를 누르세요." [ref=e1114]:
+    - text: "생활사"
+    - button "삭제" [ref=e1115]
+  - button "티제이 김 컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e1116]:
+    - text: "티제이 김 컬렉션"
+    - button "삭제" [ref=e1117]
+  - button "TJ Kim Collection. 수정하려면 Enter 키를 누르세요." [ref=e1118]:
+    - text: "TJ Kim Collection"
+    - button "삭제" [ref=e1119]
+  - textbox "태그" [ref=e1120]
+  - button "모두 복사" [ref=e1121]
+  - button "모두 삭제" [ref=e1122]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      142/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e1123]:
+    - button "동영상 언어 한국어" [ref=e1124]
+  - button [ref=e1125]:
+    - button "자막 면제 인증서 없음" [ref=e1126]
+  - button [ref=e1128]:
+    - button "제목 및 설명 언어 선택" [ref=e1129]
+  - text: "다른 언어를 관리하려면"
+  - link "언어" [ref=e1130]
+  - text: "로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e1131]:
+    - button "녹화 날짜 없음" [ref=e1132]
+  - button [ref=e1133]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e1134] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e1135]
+  - text: "에 대해 알아보세요."
+  - button [ref=e1136]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e1137]
+  - generic [ref=e1138]:
+    - checkbox "퍼가기 허용" [ref=e1139] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e1141]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e1142] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e1143]: "자세히 알아보기"
+  - radiogroup [ref=e1144]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e1145] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e1146]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e1147]:
+    - button "교육" [ref=e1148]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e1149]:
+    - button "댓글 켜짐" [ref=e1150]
+  - button [ref=e1151]:
+    - button "검토 기본" [ref=e1152]
+  - button [ref=e1153]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e1154]
+  - button [ref=e1155]:
+    - button "정렬 기준 인기순" [ref=e1156]
+  - generic [ref=e1157]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e1158] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e1044]
+  - text: "파일 이름 동영상 화질"
+  - generic [ref=e1045]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - button "동영상에 대한 의견 받기" [ref=e1046]
+  - text: "알림"
+  - generic "—" [ref=e1047]
+  - generic [ref=e1048]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e1049]
+  - button [ref=e1050]:
+    - button "관련 동영상 없음" [ref=e1051]
+  - button [ref=e1053]:
+    - button [ref=e1054]:
+      - button "자막" [ref=e1055]
+[ok | 90ms]
+repl > 

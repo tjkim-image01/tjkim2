@@ -1,0 +1,81 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Q7w5o4GIAUo/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e599]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e642]
+  - text: "동영상 미리보기 이미지: 다리미가 없던 시절, 흰옷은 어떻게 다렸을까? | 다듬이질 #풍속화\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n       …[+290 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "언어" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e601] [disabled]
+  - button "저장" [ref=e602] [disabled]
+  - button "옵션" [ref=e603]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e605]: "다리미가 없던 시절, 흰옷은 어떻게 다렸을까? | 다듬이질 #풍속화"
+  - text: "추천 해시태그\n\n\n\n\n 설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e607]: "다리미가 없던 시절, 흰옷은 어떻게 반듯하게 만들었을까요?\n두 사람이 돌 위에 놓인 천을 나무 방망이로 두드리는 다듬이질 장면입니다. 빨고 풀을 먹인 옷감의 주름을 펴고 표면을 다듬던 손일을 따라갑니다.\n\n방망이와 다듬잇돌, 두 사람의 팔과 자세를 살펴보면 깨끗한 옷 한 벌 뒤에 숨어 있던 노동이 보입니다.\n\n소장품: APKC260507306 · 운초 전칭 풍속화\nTJ KIM 컬렉션 소장품\n음악: Flow Music 「종이 위의 바람」 (AI 생성 음악)\n영상: 소장 이미지를 바탕으로 구성한 드로잉 연출 및 AI 정리 편집본\n\n#다듬이질 #풍속화 #조선시대 #한국문화 #TJKimCollection"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e608]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e609]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e610]
+  - button "추천받기" [ref=e611]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e612]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e613]:
+    - button "선택" [ref=e614]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e615]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e616]: "자세히 알아보기"
+  - radiogroup [ref=e617]:
+    - radio [ref=e618]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e619]
+    - radio "아니요, 아동용이 아닙니다" [ref=e620] [checked]
+  - button "연령 제한" [ref=e621]
+  - button "고급 설정 표시" [ref=e622]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e623]:
+    - button "재생" [ref=e625]
+    - button "음소거" [ref=e626]
+    - slider "볼륨" [ref=e627]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e628]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/Q7w5o4GIAUo" [ref=e629]
+  - button "동영상 링크 복사" [ref=e630]
+  - text: "파일 이름 ep03-short-ko-v18-cover.mp4 동영상 화질"
+  - generic [ref=e631]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - button "동영상에 대한 의견 받기" [ref=e632]
+  - text: "알림"
+  - generic "—" [ref=e633]
+  - generic [ref=e634]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e635]
+  - button [ref=e636]:
+    - button "관련 동영상 없음" [ref=e637]
+  - button [ref=e639]:
+    - button [ref=e640]:
+      - button "자막" [ref=e641]
+[ok | 53ms]
+repl > 

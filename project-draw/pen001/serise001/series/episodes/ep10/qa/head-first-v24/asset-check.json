@@ -1,0 +1,49 @@
+{
+  "episode": "ep10",
+  "strokes": 1016,
+  "single_RGB_assets_checked": 1016,
+  "visible_asset_pixels": 12370097,
+  "people": [
+    {
+      "person": "standing_seller",
+      "head": [
+        0.8,
+        4.825697119805893
+      ],
+      "body": [
+        4.956332160841083,
+        9.969154047816726
+      ],
+      "end": 13.90324216673789
+    },
+    {
+      "person": "left_seller",
+      "head": [
+        14.034711902006867,
+        15.945706840397545
+      ],
+      "body": [
+        16.076324983957356,
+        22.301178073162244
+      ],
+      "end": 25.81612065142977
+    },
+    {
+      "person": "rear_customer",
+      "head": [
+        25.949992805363355,
+        27.96307408765936
+      ],
+      "body": [
+        28.093921544003162,
+        33.650363622473364
+      ],
+      "end": 36.79568699016733
+    }
+  ],
+  "minimum_reload_seconds": 0.13061814355981127,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "a8b9de82146b10f5b8ad683ae72368235af3eeb84a5eb15b8d293a18f1a6d10e"
+}

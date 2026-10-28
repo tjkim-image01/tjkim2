@@ -1,0 +1,49 @@
+{
+  "created_on": "2026-10-25",
+  "service": "Google Flow Music",
+  "account_display": "MidnightTrailer",
+  "session": "https://www.flowmusic.app/session/83a5a72a-9c59-4c4a-b6a1-df754e3172fe",
+  "tracks": [
+    {
+      "title": "먹빛의 장단",
+      "url": "https://www.flowmusic.app/song/24993b62-107e-4c3e-8b23-1a028f981c6b",
+      "source": "meokbit-jangdan-source.wav",
+      "sha256": "a939dc8e28493c2578056247b05a5dcf834b38306301a3fb33f660644744b133"
+    },
+    {
+      "title": "먹빛 타악 효과음",
+      "url": "https://www.flowmusic.app/song/f4da4b75-7525-490a-8212-78775042e13a",
+      "source": "percussion-cues-source.wav",
+      "sha256": "43473b61ce696a5dc6fc415448597b5b51daf099251d8f12e4566a08cbc41423"
+    }
+  ],
+  "edits": {
+    "duration": 65,
+    "music": "first 59s + last 8s, 2s crossfade, voice sidechain ducking",
+    "effects": [
+      {
+        "at": 20.4,
+        "source_start": 12.72,
+        "source_end": 14.6
+      },
+      {
+        "at": 34.2,
+        "source_start": 38.32,
+        "source_end": 40.6
+      },
+      {
+        "at": 48,
+        "source_start": 0,
+        "source_end": 5
+      }
+    ]
+  },
+  "old_cc_recording_used": false,
+  "on_screen_old_cc_credit": false,
+  "provenance": "Original AI generations requested by the account holder; not a public-domain assertion. No old Arirang source appears in this mix. Google does not claim ownership of original generated content; account/service terms still apply.",
+  "terms_sources": [
+    "https://www.flowmusic.app/privacynotice",
+    "https://policies.google.com/terms",
+    "https://blog.google/innovation-and-ai/models-and-research/google-labs/believe-flow-music-partnership/"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "fine": {
+    "label": "세필",
+    "frames": 96,
+    "unique_frames": 96,
+    "atlas": "fine-atlas.png",
+    "width": 192,
+    "height": 288,
+    "columns": 12,
+    "rows": 8,
+    "anchor": [
+      62.4,
+      253.2
+    ]
+  },
+  "medium": {
+    "label": "중필",
+    "frames": 96,
+    "unique_frames": 96,
+    "atlas": "medium-atlas.png",
+    "width": 192,
+    "height": 288,
+    "columns": 12,
+    "rows": 8,
+    "anchor": [
+      62.4,
+      253.2
+    ]
+  },
+  "large": {
+    "label": "대필",
+    "frames": 96,
+    "unique_frames": 96,
+    "atlas": "large-atlas.png",
+    "width": 192,
+    "height": 288,
+    "columns": 12,
+    "rows": 8,
+    "anchor": [
+      62.4,
+      253.2
+    ]
+  },
+  "flat": {
+    "label": "평붓",
+    "frames": 96,
+    "unique_frames": 96,
+    "atlas": "flat-atlas.png",
+    "width": 192,
+    "height": 288,
+    "columns": 12,
+    "rows": 8,
+    "anchor": [
+      62.4,
+      253.2
+    ]
+  }
+}

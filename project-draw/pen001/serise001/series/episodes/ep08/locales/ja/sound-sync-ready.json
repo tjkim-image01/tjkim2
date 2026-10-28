@@ -1,0 +1,12 @@
+{
+  "episode": "ep08",
+  "language": "ja",
+  "reference": "Korean actual audible onset",
+  "korean_first_audible": 12.936813,
+  "previous_first_audible": 8.343208,
+  "first_audible": 12.939562,
+  "difference": 0.0027489999999996684,
+  "tempo": 1.03,
+  "narration_end": 63.930604,
+  "intro_voice_free": true
+}

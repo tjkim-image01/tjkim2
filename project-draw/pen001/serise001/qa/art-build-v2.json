@@ -1,0 +1,38 @@
+{
+  "revision": "v2",
+  "strokes": 304,
+  "draw_end": 49.799999999999905,
+  "groups": {
+    "sketch": {
+      "strokes": 3,
+      "seconds": 2.2
+    },
+    "bier": {
+      "strokes": 32,
+      "seconds": 11.0
+    },
+    "rear": {
+      "strokes": 54,
+      "seconds": 4.0
+    },
+    "right": {
+      "strokes": 29,
+      "seconds": 4.0
+    },
+    "left": {
+      "strokes": 95,
+      "seconds": 13.0
+    },
+    "front": {
+      "strokes": 86,
+      "seconds": 13.3
+    },
+    "finish": {
+      "strokes": 5,
+      "seconds": 1.5
+    }
+  },
+  "initial_rgb_unique": 1,
+  "source_bitmap_in_initial": false,
+  "colour_layers_contain_ink": false
+}

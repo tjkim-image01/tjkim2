@@ -1,0 +1,18 @@
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "A quiet contest개 선택" [ref=e1]:
+    - checkbox "A quiet contest개 선택" [ref=e3]
+  - cell:
+    - link [ref=e4]:
+      - image "동영상 미리보기 이미지: A quiet contest"
+      - text: "1:08"
+    - link "A quiet contest" [ref=e5]
+    - text: "A chess player might recognize this concentration. But these lettered pieces belong to janggi, Korean chess. Each kind of piece moves by its own rules. The players must read the position and anticipate another move. Notice the lowered heads and the hands reaching toward the board. To a visitor, both the familiar contest and the unfamiliar pieces could be intriguing. You need not read every character to recognize the waiting and the thought. The picture preserves concentration rather than the fin"
+  - cell:
+    - generic "—" [ref=e6]
+  - cell:
+    - generic "비공개" [ref=e7]
+  - cell "2026. 10. 28." [ref=e8]: "2026. 10. 28.\n     업로드됨"
+  - cell "0" [ref=e9]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e10]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e11]: "0"

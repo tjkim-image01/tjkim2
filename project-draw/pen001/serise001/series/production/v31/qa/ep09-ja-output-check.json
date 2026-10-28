@@ -1,0 +1,15 @@
+{
+  "episode": "ep09",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.09833642095327377,
+  "body_audio_rms": 0.11226986348628998,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

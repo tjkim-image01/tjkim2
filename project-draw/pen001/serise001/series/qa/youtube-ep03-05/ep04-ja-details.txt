@@ -1,0 +1,80 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/Eom7d7Xw7aM/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e334]
+  - text: "동영상 미리보기 이미지: 朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n        \n  …[+282 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e336] [disabled]
+  - button "저장" [ref=e337] [disabled]
+  - button "옵션" [ref=e338]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e340]: "朝鮮時代、道の途中で何を食べた？ 食を支える人々の風俗画 #韓国史"
+  - text: "설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e342]: "旅先では、食事の場所から暮らしが見えてきます。\n草ぶきの屋根の下で食べ物を商う人々。器が並び、手前の人は頭に大きな盆を載せています。作る手と運ぶ体を順にたどってみましょう。\n\n料理の名前や店の種類は、この絵だけでは決められません。見慣れない店も、働く人には毎日の場所。食を支える仕事に目を向けます。\n\n所蔵品：APKC260507306・伝ウンチョ筆 風俗画\nTJキム・コレクション所蔵\n音楽：Flow Music「윷판의 웃음」（AI生成音楽）\n映像：所蔵画像をもとにした描画演出・AI整理編集版\n\n#朝鮮時代 #韓国史 #食文化 #風俗画 #TJキムコレクション"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e343]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e344]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e346]
+  - button "추천받기" [ref=e347]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e348]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e349]:
+    - button "선택" [ref=e350]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e351]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e352]: "자세히 알아보기"
+  - radiogroup [ref=e353]:
+    - radio [ref=e354]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e355]
+    - radio "아니요, 아동용이 아닙니다" [ref=e356] [checked]
+  - button "연령 제한" [ref=e357]
+  - button "고급 설정 표시" [ref=e358]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e359]:
+    - button "재생" [ref=e361]
+    - button "음소거" [ref=e362]
+    - slider "볼륨" [ref=e363]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e364]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/Eom7d7Xw7aM" [ref=e365]
+  - button "동영상 링크 복사" [ref=e366]
+  - text: "파일 이름 ep04-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e367]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e368]
+  - generic [ref=e369]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e370]
+  - button [ref=e371]:
+    - button "관련 동영상 없음" [ref=e372]
+  - button [ref=e374]:
+    - button [ref=e375]:
+      - button "자막" [ref=e376]
+[ok | 81ms]
+repl > 

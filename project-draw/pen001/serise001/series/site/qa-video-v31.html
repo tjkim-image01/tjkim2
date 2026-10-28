@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>완성 MP4 실제 재생 검수</title><pre id="status">준비</pre><video id="clip" muted controls width="324" height="576"></video><canvas id="check" width="1080" height="1920" hidden></canvas><script>
+const video=document.getElementById('clip'),c=document.getElementById('check'),x=c.getContext('2d',{willReadFrequently:true});window.mediaQA={complete:false,cases:[]};
+function event(name){return new Promise((resolve,reject)=>{video.addEventListener(name,resolve,{once:true});video.addEventListener('error',()=>reject(Error('Video decode error '+video.error?.code)),{once:true});setTimeout(()=>reject(Error(name+' timeout')),10000);});}
+(async()=>{try{
+const reference=new Image();await new Promise((resolve,reject)=>{reference.onload=resolve;reference.onerror=reject;reference.src='../production/v31/intro-first-frame.png';});x.drawImage(reference,0,0);const ref=x.getImageData(0,0,1080,1920).data;
+for(const [ep,lang]of [['ep07','ko'],['ep11','ja'],['ep06','ko']]){
+ const meta=event('loadedmetadata');video.src='../episodes/'+ep+'/output/'+ep+'-short-'+lang+'-v31-cover.mp4';video.load();await meta;const row={episode:ep,language:lang,width:video.videoWidth,height:video.videoHeight,decoded:[]};
+ for(const t of [1.5,8.3,30,65]){const done=event('seeked');video.currentTime=t;await done;x.drawImage(video,0,0,1080,1920);row.decoded.push({time:video.currentTime,readyState:video.readyState});if(t===1.5){const a=x.getImageData(0,0,1080,1920).data;let total=0;for(let i=0;i<a.length;i++)if(i%4!==3)total+=Math.abs(a[i]-ref[i]);row.first_brush_mae=total/(1080*1920*3);if(!window.mediaQA.preview)window.mediaQA.preview=c.toDataURL('image/jpeg',.92);if(row.first_brush_mae>6)throw Error('First post-cover frame does not show the approved brush: '+row.first_brush_mae);}}
+ if(row.width!==1080||row.height!==1920||video.error)throw Error('Invalid native video state');window.mediaQA.cases.push(row);document.getElementById('status').textContent=ep+' '+lang+' 정상';
+}
+window.mediaQA.complete=true;window.mediaQA.passed=true;
+}catch(e){window.mediaQA.complete=true;window.mediaQA.error=e.stack;document.getElementById('status').textContent=e.stack;}})();
+</script>

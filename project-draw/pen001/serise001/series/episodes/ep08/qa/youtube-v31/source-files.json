@@ -1,0 +1,44 @@
+[
+  {
+    "episode": "ep08",
+    "homepage_number": 7,
+    "language": "ko",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-ko-v31-cover.mp4",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/upload/ep08_youtube_ko_v31.md",
+    "source_sha256": "f5cdefe152e7cd4cde4fd48b43692e096f48ca818946649591840a060a341824",
+    "account": "u5",
+    "channel_id": "UC-gAXUw8Au-q7WgW6ud_KbA",
+    "handle": "@tjkimcollection",
+    "visibility": "private",
+    "thumbnail": null,
+    "duration_seconds": 67.5
+  },
+  {
+    "episode": "ep08",
+    "homepage_number": 7,
+    "language": "en",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-en-v31-cover.mp4",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/upload/ep08_youtube_en_v31.md",
+    "source_sha256": "b97f448911e62facc55b27d7511a2bc83351e6cdae805dd46e51d83bdd300562",
+    "account": "u5",
+    "channel_id": "UC_Etd3MCSdC1dPOicZ-Q7tw",
+    "handle": "@tjkimcollection-us",
+    "visibility": "private",
+    "thumbnail": null,
+    "duration_seconds": 67.5
+  },
+  {
+    "episode": "ep08",
+    "homepage_number": 7,
+    "language": "ja",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-ja-v31-cover.mp4",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/upload/ep08_youtube_ja_v31.md",
+    "source_sha256": "6324e7355e7b206e6cbaf5184f764bc12bd7cf2a6de3378a90a97e0691d4ce75",
+    "account": "u5",
+    "channel_id": "UCRREust7LSVUVouPHwfsZ7w",
+    "handle": "@tjkimcollection-jp",
+    "visibility": "private",
+    "thumbnail": null,
+    "duration_seconds": 67.5
+  }
+]

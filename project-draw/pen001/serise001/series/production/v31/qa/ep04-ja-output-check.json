@@ -1,0 +1,15 @@
+{
+  "episode": "ep04",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.12146177887916565,
+  "body_audio_rms": 0.08114629983901978,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

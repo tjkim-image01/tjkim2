@@ -1,0 +1,13 @@
+{
+  "title": "국악연주곡_경기아리랑",
+  "creator": "한국저작권위원회",
+  "source": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13263029&menuNo=200020",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ko",
+  "retrieved": "2026-10-25",
+  "source_file": "gyeonggi-arirang-source.mp3",
+  "source_duration": 51.4351,
+  "modifications": "60초에 맞춰 약 0.857배로 템포 조절(음높이 유지), 페이드와 해설 아래 볼륨 조절",
+  "sha256": "c01917ffff38a90c247bcce50dcb625645011f422532f83edb213ee39a28c29e",
+  "attribution": "국악연주곡_경기아리랑 — 한국저작권위원회, 공유마당, CC BY 4.0. 템포·음량 조절 및 일부 편집."
+}

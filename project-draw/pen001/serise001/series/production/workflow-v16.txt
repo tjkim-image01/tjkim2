@@ -1,0 +1,104 @@
+TJ KIM 수묵 드로잉 제작 방식과 재현용 실행기 (2026-10-25, portrait-intro-v14).
+
+사용 예:
+  python3 lib/com/jatu/draw/sumuk.py --describe
+  python3 lib/com/jatu/draw/sumuk.py --project project-draw/pen001/serise001/series --language ko
+  python3 lib/com/jatu/draw/sumuk.py --project project-draw/pen001/serise001/series --language en ja
+
+1. 원본/귀속: APKC260507306 앨범의 윷놀이 장면, 운초 전칭. 기산의 확정적
+   제자라는 근거가 없으므로 단정하지 않는다. 소장처 TJ KIM Collection을 넣는다.
+   원본 자료와 AI로 외곽선/주변 글씨를 정리한 편집 이미지를 구별해 보관한다.
+2. 도입: 0~1초 빈 종이. 승인된 세로 Tj 경로를 1~3.5초 단 한 획으로 쓴다.
+   붓끝을 좇다가 3.5~4.15초 전체 서명으로 당겨, 5.6초까지 스밈을 보여 주고
+   6초에 인물로 전환한다. 도입은 1080x1920 전체 화면, 제목/자막은 가리지 않는다.
+3. 본문: 작업 영역은 상단 75%(y=0~1440). 각 인물을 얼굴→몸→다리 순으로,
+   다음 물건→배경 순으로 그린다. 완성 그림을 밑그림으로 깔지 않는다.
+   482개의 안료 레이어/마스크를 경로 진행에 따라 드러낸다. 현재 채색→먹선 정리는
+   허용되는 회화 연출이며 실제 원작가의 작업 순서를 복원한 것이라고 주장하지 않는다.
+4. 붓: live-brush.js의 실제 Three.js 3D 붓. 세필/중필/대필/평붓 및 별도 큰
+   캘리그래피 붓. 방향/속도/추정 필압에 따라 자루 기울기, 회전, 털 벌어짐/휨/압축을
+   조절한다. 접촉 중심을 고정하고 카메라 투영 배율을 크기에 반영한다. 본문 기준
+   1.45*f.s/5.14, 도입 9.04*f.s/3.6. 추정 필압을 원작가의 실측으로 설명하지 않는다.
+5. 화선지: 섬유/미세 표면 재질과 위치별 접촉 시각으로 먹 번짐을 계산한다. 이미
+   닿은 곳만 약 0.05초부터 동시에 스미고 이후 번진다. 인트로 스밈은 2배로,
+   새 50%=이전 100%. 시간 함수가 결정적이므로 되감기/고정 시각 출력이 같다.
+6. 자막: 한 줄, 공백/문장부호 포함 18자 이하. 차분한 명조, y=1374. 사용자 저장값
+   54px를 사용한다(이전 기본값 60으로 되돌리지 않는다). 영어 자막은 음성을 짧게
+   요약하며 일본어는 OFL Noto Serif CJK JP. 제목/작가/소장처는 아래 25%에 둔다.
+7. 끝: 그리기 50초+도입6초. 본문52초(영상58초)부터 저장된3.5초 동안 소장 이미지
+   AI 정리 편집본으로 겹친다. 끝까지 편집 이미지라는 표시를 유지한다. 총66초.
+8. 음악: 원본 Flow 생성곡과 생성 메타데이터를 보존. 현재 '윷판의 웃음'은 영상
+   3.8초에 음원10.7초부터 재생한다. master .8 * music .55 * fixed .55 = .242,
+   시작0.28초/끝1.8초 페이드. 음원 선택과 offset은 고정값이 아니라 저장 설정을 읽는다.
+   구 CC 음악은 이 출력에 사용하지 않으므로 해당 화면 출처를 넣지 않는다.
+9. 효과음: 인트로 북 연타1~3.39초, 3.5초에 삼고무형 세 북의 짧은 맺음1.55초.
+   별도 본문 효과음/징은 없다. 실제 궁중악기의 복원 녹음으로 주장하지 않는다.
+   gain master*rollVolume, master*finishVolume. Web Audio 압축기(-5dB, knee5,
+   ratio12, attack.003, release.15)→.25gain→4x soft clip을 OfflineAudioContext로 재현.
+10. 음성: 기존 lib.com.jatu.aside.connector.typecast.TypecastConnector 사용.
+    한국어 한준, 영어 아레스, 일본어 이노우에 다이치. EN은 보드게임 규칙/외국인의
+    시선, JA는 스고로쿠와 비교해 차이와 공동체 생활을 설명하는 별도 대본.
+    Typecast 기존 PEN 대본을 지우지 않고 두 단락을 덧붙이며 원래 prefix 동일 검증.
+    해당 UI를 통해 생성된 오디오와 문장별 길이를 보관한다. ElevenLabs 사용하지 않음.
+11. 출력: 이전 PIL 렌더러는 승인된 WebGL 붓/먹스밈을 재현하지 못하므로 사용하지
+    않는다. studio.js의 sumukExport.frame(t)로 같은 코드를 매 프레임 호출하고
+    WebCodecs AVC Annex B를30fps로 인코딩, OfflineAudioContext 믹스를 FFmpeg로 mux.
+    실시간 녹화가 아니므로 로딩/프레임 드롭/브라우저 UI가 영상에 들어가지 않는다.
+12. 검수: ffprobe에서1080x1920,30fps,66초,AVC/AAC 확인. 도입/인물/자막/끝 프레임
+    직접 확인, 음성 길이/무음/피크, 18자 제약, Typecast 출처와 기존 영상 보존 확인.
+
+13. 10편 확장(2026-10-25): 홈페이지1~10화는파일EP02~EP11이다. 2~10화는
+    prepare_series_directors.py의장면별수동인물마스크로얼굴→몸→다리→물건→배경을
+    다시편성했다. 공통인트로를복사하되인물/도구/배경을다른그림으로바꿔쓰지않는다.
+    author_series_content.py가KO/EN/JA별대본과18자이하의한줄자막을소유한다.
+    generate_series_typecast.py는기존81단락을보존하고27단락을추가한다.
+    prepare_series_sound.py는실제생성음성을Whisper시각으로검수/정렬하고,
+    align_narration_to_korean.py는영어·일본어의실제첫소리를각한국어판에맞춘다.
+    단순한pad값비교가아니라실제음성파형의무음끝(-40dB,100ms)을측정한다.
+    승인된1화한국어첫소리는약8.2279초이고외국어도여기에맞춘다. 한국어는다시만들지
+    않는다. 끝이넘칠때만음성을소폭조절하고자막시각도같이이동한다. 수정전MP4/음성은
+    versions/before-korean-onset과voice-before-korean-sync.m4a에남긴다.
+14. 홈페이지: i18n.js의KO/EN/JA사전과manifest.json의실제공개상태를사용한다.
+    메뉴/검색/분류/해설/재생목록/출처안내를번역하고, 선택언어를URL과localStorage에
+    유지한다. 언어를바꿀때재생위치를유지한다. 모바일은같은URL의반응형웹앱이다.
+    인트로포스터도공통Tj로바꿔옛한국어제목/옛CC출처가외국어화면에노출되지않게한다.
+    service worker는작은사이트파일만저장하고대용량영상/음악은자동저장하지않는다.
+15. 진행재개: production/{typecast,audio,narration-sync,render,catalogue}-progress.json을
+    확인한다. 파일유무만으로완료라고하지말고narration_sync와완전decode검사를통과한
+    manifest를확인한다. 실제완성된영상만publish_series_catalogue.py로공개한다.
+
+핵심 구현은 series/site/{studio,director,live-brush,brush-motion,calligraphy-portrait}.js,
+출력 엔진은 series/scripts/export_sumuk.cjs. 새 회차에는 원본/분리 레이어/semantic camera/
+경로/대본을 새로 만들고 이 방식을 적용한다. 기존 영상을 복제해 새 작품이라고 하지 않는다.
+
+{
+  "revision": "portrait-intro-v14 / scene-v15 / narration-sync-v16",
+  "canvas": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "intro_seconds": 6,
+  "write_seconds": [
+    1,
+    3.5
+  ],
+  "art_rect": [
+    0,
+    0,
+    1080,
+    1440
+  ],
+  "caption_top": 1374,
+  "caption_max_chars": 18,
+  "drawing_order": [
+    "each person: face → torso → legs",
+    "objects",
+    "background"
+  ],
+  "narration_sync": "EN/JA actual audible onset matched to the same episode Korean track; no voice during intro",
+  "audio_provider": "Typecast via existing lib connector",
+  "body_effects": false,
+  "renderer": "existing player Canvas + Three.js, fixed timestamps → WebCodecs AVC",
+  "historical_claim": "Uncho (attributed), not a verified pupil attribution"
+}

@@ -1,0 +1,24 @@
+{
+  "paused_by_user": false,
+  "stopped": [
+    {
+      "worker": "render",
+      "pid": 87279
+    },
+    {
+      "worker": "verify",
+      "pid": 6039
+    }
+  ],
+  "already_finished": [
+    "typecast",
+    "sound",
+    "catalogue",
+    "package",
+    "narration-sync"
+  ],
+  "site_kept_running": true,
+  "resumed_by_user": true,
+  "resume_scope": "EP3 approved SVG MP4; continue remaining series through homepage episode 10 in KO/EN/JA",
+  "revision": "vector-v17"
+}

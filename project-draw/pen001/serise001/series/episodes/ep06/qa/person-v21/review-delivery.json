@@ -1,0 +1,24 @@
+{
+  "editor": "http://127.0.0.1:5184/series/site/studio.html?ep=ep06&revision=person-v21",
+  "whole_person_wash_then_ink": true,
+  "first_person_completed_before_second": true,
+  "hand_paths_continue_from_sleeves": true,
+  "hair_directional_narrow_passes": true,
+  "hair_pass_counts": [
+    60,
+    59
+  ],
+  "maximum_new_hair_fraction": [
+    0.07216494845360824,
+    0.11316969553929668
+  ],
+  "saved_settings_unchanged": true,
+  "image_sha256": "d1d913340c3b78db34618affcfc63b568168ee7bfaed47d27a392123f971ec8f",
+  "working_reference_sha256": "4eeb98f703178545248be6132a828960dee673a3538810fd854094bc29ae2700",
+  "MP4_created": false,
+  "review_status": "awaiting-user",
+  "final_frame": "person21-complete.png",
+  "background_edge_touchups": "painted in background wash with explicit brush routes",
+  "hair_shortcut_buttons": true,
+  "lib_recipe_updated": true
+}

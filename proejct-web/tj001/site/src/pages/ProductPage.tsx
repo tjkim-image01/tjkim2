@@ -1,18 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { episodesOfItem } from "../data/episodes";
 import {
   STATUS_LABELS,
-  fmtPrice,
   groupName,
   isReserved,
   isSoldOut,
   itemImageUrl,
   productByCode,
-  thumb,
   useProducts,
 } from "../lib/products";
-import { getAdminToken } from "../lib/inventory";
 import { useCart } from "../lib/cart";
 import { ProductCard } from "../components/ProductCard";
 import { Bubble, Char, Stamp } from "../components/Chars";
@@ -20,11 +17,21 @@ import { Bubble, Char, Stamp } from "../components/Chars";
 export default function ProductPage() {
   const { code = "" } = useParams();
   const products = useProducts(false);
-  const p = productByCode(code, Boolean(getAdminToken()));
+  const p = productByCode(code, false);
   const nav = useNavigate();
-  const { add, has } = useCart();
+  const { add, remove, has } = useCart();
   const [img, setImg] = useState(0);
   const [zoom, setZoom] = useState(false);
+
+  useEffect(() => { setImg(0); setZoom(false); }, [code]);
+  useEffect(() => {
+    if (!zoom) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setZoom(false); };
+    window.addEventListener("keydown", onKey);
+    return () => { document.body.style.overflow = previous; window.removeEventListener("keydown", onKey); };
+  }, [zoom]);
 
   if (!p)
     return (
@@ -49,15 +56,10 @@ export default function ProductPage() {
         <div className="crumbs">
           <Link to="/shop">상품</Link> ›{" "}
           <Link to={`/shop?g=${p.group}`}>{groupName(p.group)}</Link> › {p.code}
-          {getAdminToken() && (
-            <Link to={`/admin?edit=${p.code}`} className="btn small yellow" style={{ marginLeft: 12 }}>
-              ✎ 재고·정보 수정
-            </Link>
-          )}
         </div>
         <div className="product-top">
           <div className="gallery">
-            <div className="gallery-main" onClick={() => setZoom(true)}>
+            <button type="button" className="gallery-main" aria-label="상품 사진 크게 보기" onClick={() => setZoom(true)}>
               <img src={itemImageUrl(p.images[img] || p.images[0])} alt={p.title} />
               {sold ? (
                 <Stamp text="판매완료" color="var(--ink)" className="pcard-stamp" rot={-10} />
@@ -68,7 +70,7 @@ export default function ProductPage() {
                   <Stamp text="영상에 나온 그 장" className="pcard-stamp" rot={-10} />
                 )
               )}
-            </div>
+            </button>
             <div className="gallery-thumbs">
               {p.images.map((f, i) => (
                 <button
@@ -94,9 +96,6 @@ export default function ProductPage() {
               <span className={`stock-pill big ${p.status}`}>
                 {STATUS_LABELS[p.status]} ({p.qty}점)
               </span>
-              {!p.visible && (
-                <span className="stock-pill big sold">숨김(비노출)</span>
-              )}
             </div>
             <h1 className="product-title">{p.title}</h1>
             <div className="product-en">{p.title_en}</div>
@@ -120,7 +119,6 @@ export default function ProductPage() {
               <dt>번호</dt>
               <dd>{p.code}</dd>
             </dl>
-            <div className="price big">{fmtPrice(p)}</div>
             <div className="product-cta">
               {sold ? (
                 <button type="button" className="btn big ink" disabled>
@@ -131,9 +129,10 @@ export default function ProductPage() {
                   <button
                     type="button"
                     className={`btn big red ${has(p.code) ? "done" : ""}`}
-                    onClick={() => add(p.code)}
+                    aria-pressed={has(p.code)}
+                    onClick={() => has(p.code) ? remove(p.code) : add(p.code)}
                   >
-                    {has(p.code) ? "담았음 ✓" : "담기"}
+                    {has(p.code) ? "빼기" : "담기"}
                   </button>
                   <button
                     type="button"
@@ -186,7 +185,8 @@ export default function ProductPage() {
         )}
       </div>
       {zoom && (
-        <div className="lightbox" onClick={() => setZoom(false)}>
+        <div className="lightbox" role="dialog" aria-modal="true" aria-label="상품 사진 확대" onClick={() => setZoom(false)}>
+          <button type="button" autoFocus className="lightbox-close" aria-label="확대 사진 닫기" onClick={() => setZoom(false)}>✕</button>
           <img src={itemImageUrl(p.images[img] || p.images[0])} alt="" />
         </div>
       )}

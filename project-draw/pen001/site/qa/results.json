@@ -1,0 +1,235 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ko",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ko",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ko",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ko",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "search_reset_category_video_filter": "ko"
+    },
+    {
+      "slideshow_keyboard_close": "ko"
+    },
+    {
+      "page": "work",
+      "lang": "ko",
+      "scrollWidth": 320,
+      "title": "다듬이질",
+      "width": 320
+    },
+    {
+      "page": "work",
+      "lang": "ko",
+      "scrollWidth": 390,
+      "title": "다듬이질",
+      "width": 390
+    },
+    {
+      "page": "work",
+      "lang": "ko",
+      "scrollWidth": 768,
+      "title": "다듬이질",
+      "width": 768
+    },
+    {
+      "page": "work",
+      "lang": "ko",
+      "scrollWidth": 1440,
+      "title": "다듬이질",
+      "width": 1440
+    },
+    {
+      "video": "ko",
+      "duration": 67.5,
+      "poster": "http://127.0.0.1:5185/series/episodes/ep03/art/covers-v18/ko.png",
+      "source": "http://127.0.0.1:5185/series/episodes/ep03/output/ep03-short-ko-v18-cover.mp4"
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "en",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "en",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "en",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "en",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "search_reset_category_video_filter": "en"
+    },
+    {
+      "slideshow_keyboard_close": "en"
+    },
+    {
+      "page": "work",
+      "lang": "en",
+      "scrollWidth": 320,
+      "title": "Beating cloth",
+      "width": 320
+    },
+    {
+      "page": "work",
+      "lang": "en",
+      "scrollWidth": 390,
+      "title": "Beating cloth",
+      "width": 390
+    },
+    {
+      "page": "work",
+      "lang": "en",
+      "scrollWidth": 768,
+      "title": "Beating cloth",
+      "width": 768
+    },
+    {
+      "page": "work",
+      "lang": "en",
+      "scrollWidth": 1440,
+      "title": "Beating cloth",
+      "width": 1440
+    },
+    {
+      "video": "en",
+      "duration": 67.5,
+      "poster": "http://127.0.0.1:5185/series/episodes/ep03/art/covers-v18/en.png",
+      "source": "http://127.0.0.1:5185/series/episodes/ep03/output/ep03-short-en-v18-cover.mp4"
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ja",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ja",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ja",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "page": "home",
+      "cards": 17,
+      "films": 10,
+      "lang": "ja",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "search_reset_category_video_filter": "ja"
+    },
+    {
+      "slideshow_keyboard_close": "ja"
+    },
+    {
+      "page": "work",
+      "lang": "ja",
+      "scrollWidth": 320,
+      "title": "布を打つ仕事",
+      "width": 320
+    },
+    {
+      "page": "work",
+      "lang": "ja",
+      "scrollWidth": 390,
+      "title": "布を打つ仕事",
+      "width": 390
+    },
+    {
+      "page": "work",
+      "lang": "ja",
+      "scrollWidth": 768,
+      "title": "布を打つ仕事",
+      "width": 768
+    },
+    {
+      "page": "work",
+      "lang": "ja",
+      "scrollWidth": 1440,
+      "title": "布を打つ仕事",
+      "width": 1440
+    },
+    {
+      "video": "ja",
+      "duration": 67.5,
+      "poster": "http://127.0.0.1:5185/series/episodes/ep03/art/covers-v18/ja.png",
+      "source": "http://127.0.0.1:5185/series/episodes/ep03/output/ep03-short-ja-v18-cover.mp4"
+    }
+  ],
+  "resolved_assets": 73,
+  "original_photo_widths": [
+    4031,
+    4030,
+    4030,
+    4030,
+    4030,
+    4030,
+    4030,
+    4030,
+    4031,
+    4031
+  ],
+  "video_range_requests": true
+}

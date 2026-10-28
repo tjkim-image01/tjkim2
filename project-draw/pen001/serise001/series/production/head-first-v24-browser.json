@@ -1,0 +1,162 @@
+[
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 미색 1",
+    "final_render_ms": 1764.4000000022352,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 64 / 844획",
+    "head_preview_time": 9.777824782447812,
+    "people": 4,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 844,
+    "version": 24,
+    "episode": "ep02"
+  },
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 나무빛 2",
+    "final_render_ms": 1726.699999999255,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 35 / 770획",
+    "head_preview_time": 11.136662130340529,
+    "people": 2,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 770,
+    "version": 24,
+    "episode": "ep03"
+  },
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 미색 1",
+    "final_render_ms": 2560.39999999851,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 27 / 1425획",
+    "head_preview_time": 8.131918852801133,
+    "people": 9,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 1425,
+    "version": 24,
+    "episode": "ep04"
+  },
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "몸 채색 · 붓을 들어 이동 · 다음 안료 나무빛 2",
+    "final_render_ms": 2516.39999999851,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 36 / 1262획",
+    "head_preview_time": 8.163442264137602,
+    "people": 7,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 1262,
+    "version": 24,
+    "episode": "ep05"
+  },
+  {
+    "color_review_buttons": 6,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 청록색",
+    "final_render_ms": 14897.699999999257,
+    "head_preview_label": "인물 1 · 전체 채색 후 선 정리 · 95 / 867획",
+    "head_preview_time": 11.016142857142858,
+    "people": 2,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 867,
+    "version": 24,
+    "episode": "ep06"
+  },
+  {
+    "color_review_buttons": 18,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 나무빛 3",
+    "final_render_ms": 1197.60000000149,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 43 / 722획",
+    "head_preview_time": 9.430903314847944,
+    "people": 3,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 722,
+    "version": 24,
+    "episode": "ep07"
+  },
+  {
+    "color_review_buttons": 10,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 미색 1",
+    "final_render_ms": 755.6999999992549,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 66 / 544획",
+    "head_preview_time": 10.585817360268134,
+    "people": 2,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 544,
+    "version": 24,
+    "episode": "ep08"
+  },
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 미색 1",
+    "final_render_ms": 1798.300000000745,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 55 / 1032획",
+    "head_preview_time": 9.703222567291425,
+    "people": 3,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 1032,
+    "version": 24,
+    "episode": "ep09"
+  },
+  {
+    "color_review_buttons": 19,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 나무빛 2",
+    "final_render_ms": 1988,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 126 / 1016획",
+    "head_preview_time": 10.972296781905742,
+    "people": 3,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 1016,
+    "version": 24,
+    "episode": "ep10"
+  },
+  {
+    "color_review_buttons": 18,
+    "current_pigment": "붓을 들어 이동 · 다음 안료 나무빛 2",
+    "final_render_ms": 1756.699999999255,
+    "head_preview_label": "인물 1 · 머리부터 몸까지 · 42 / 903획",
+    "head_preview_time": 11.527966828600348,
+    "people": 3,
+    "rewind_exact": true,
+    "source_size": [
+      4000,
+      2608
+    ],
+    "strokes": 903,
+    "version": 24,
+    "episode": "ep11"
+  }
+]

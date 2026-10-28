@@ -1,0 +1,618 @@
+[
+  {
+    "start": 0.0,
+    "end": 7.38,
+    "text": " Where are the dining chairs? Here, a low table meets people seated on the floor.",
+    "words": [
+      {
+        "text": " Where",
+        "start": 0.0,
+        "end": 0.42
+      },
+      {
+        "text": " are",
+        "start": 0.42,
+        "end": 0.84
+      },
+      {
+        "text": " the",
+        "start": 0.84,
+        "end": 1.1
+      },
+      {
+        "text": " dining",
+        "start": 1.1,
+        "end": 1.52
+      },
+      {
+        "text": " chairs?",
+        "start": 1.52,
+        "end": 2.2
+      },
+      {
+        "text": " Here,",
+        "start": 3.06,
+        "end": 3.44
+      },
+      {
+        "text": " a",
+        "start": 3.92,
+        "end": 4.14
+      },
+      {
+        "text": " low",
+        "start": 4.14,
+        "end": 4.46
+      },
+      {
+        "text": " table",
+        "start": 4.46,
+        "end": 5.0
+      },
+      {
+        "text": " meets",
+        "start": 5.0,
+        "end": 5.4
+      },
+      {
+        "text": " people",
+        "start": 5.4,
+        "end": 5.92
+      },
+      {
+        "text": " seated",
+        "start": 5.92,
+        "end": 6.42
+      },
+      {
+        "text": " on",
+        "start": 6.42,
+        "end": 6.8
+      },
+      {
+        "text": " the",
+        "start": 6.8,
+        "end": 6.98
+      },
+      {
+        "text": " floor.",
+        "start": 6.98,
+        "end": 7.38
+      }
+    ]
+  },
+  {
+    "start": 8.06,
+    "end": 17.02,
+    "text": " This small Korean table is called a soban. It could hold a meal and also carry the dishes into a room.",
+    "words": [
+      {
+        "text": " This",
+        "start": 8.06,
+        "end": 8.36
+      },
+      {
+        "text": " small",
+        "start": 8.36,
+        "end": 8.78
+      },
+      {
+        "text": " Korean",
+        "start": 8.78,
+        "end": 9.24
+      },
+      {
+        "text": " table",
+        "start": 9.24,
+        "end": 9.88
+      },
+      {
+        "text": " is",
+        "start": 9.88,
+        "end": 10.52
+      },
+      {
+        "text": " called",
+        "start": 10.52,
+        "end": 10.94
+      },
+      {
+        "text": " a",
+        "start": 10.94,
+        "end": 11.2
+      },
+      {
+        "text": " soban.",
+        "start": 11.2,
+        "end": 11.72
+      },
+      {
+        "text": " It",
+        "start": 12.32,
+        "end": 12.44
+      },
+      {
+        "text": " could",
+        "start": 12.44,
+        "end": 12.7
+      },
+      {
+        "text": " hold",
+        "start": 12.7,
+        "end": 13.04
+      },
+      {
+        "text": " a",
+        "start": 13.04,
+        "end": 13.24
+      },
+      {
+        "text": " meal",
+        "start": 13.24,
+        "end": 13.62
+      },
+      {
+        "text": " and",
+        "start": 13.62,
+        "end": 14.2
+      },
+      {
+        "text": " also",
+        "start": 14.2,
+        "end": 14.72
+      },
+      {
+        "text": " carry",
+        "start": 14.72,
+        "end": 15.2
+      },
+      {
+        "text": " the",
+        "start": 15.2,
+        "end": 15.46
+      },
+      {
+        "text": " dishes",
+        "start": 15.46,
+        "end": 15.86
+      },
+      {
+        "text": " into",
+        "start": 15.86,
+        "end": 16.34
+      },
+      {
+        "text": " a",
+        "start": 16.34,
+        "end": 16.6
+      },
+      {
+        "text": " room.",
+        "start": 16.6,
+        "end": 17.02
+      }
+    ]
+  },
+  {
+    "start": 17.44,
+    "end": 23.0,
+    "text": " Moved away after use, it suited a room serving more than one purpose.",
+    "words": [
+      {
+        "text": " Moved",
+        "start": 17.44,
+        "end": 17.92
+      },
+      {
+        "text": " away",
+        "start": 17.92,
+        "end": 18.28
+      },
+      {
+        "text": " after",
+        "start": 18.28,
+        "end": 18.84
+      },
+      {
+        "text": " use,",
+        "start": 18.84,
+        "end": 19.3
+      },
+      {
+        "text": " it",
+        "start": 19.6,
+        "end": 19.74
+      },
+      {
+        "text": " suited",
+        "start": 19.74,
+        "end": 20.18
+      },
+      {
+        "text": " a",
+        "start": 20.18,
+        "end": 20.48
+      },
+      {
+        "text": " room",
+        "start": 20.48,
+        "end": 20.74
+      },
+      {
+        "text": " serving",
+        "start": 20.74,
+        "end": 21.22
+      },
+      {
+        "text": " more",
+        "start": 21.22,
+        "end": 21.76
+      },
+      {
+        "text": " than",
+        "start": 21.76,
+        "end": 22.06
+      },
+      {
+        "text": " one",
+        "start": 22.06,
+        "end": 22.4
+      },
+      {
+        "text": " purpose.",
+        "start": 22.4,
+        "end": 23.0
+      }
+    ]
+  },
+  {
+    "start": 23.0,
+    "end": 27.82,
+    "text": " Look at the height of the bowls, the hands and the seated bodies.",
+    "words": [
+      {
+        "text": " Look",
+        "start": 23.0,
+        "end": 23.76
+      },
+      {
+        "text": " at",
+        "start": 23.76,
+        "end": 24.0
+      },
+      {
+        "text": " the",
+        "start": 24.0,
+        "end": 24.14
+      },
+      {
+        "text": " height",
+        "start": 24.14,
+        "end": 24.44
+      },
+      {
+        "text": " of",
+        "start": 24.44,
+        "end": 24.68
+      },
+      {
+        "text": " the",
+        "start": 24.68,
+        "end": 24.82
+      },
+      {
+        "text": " bowls,",
+        "start": 24.82,
+        "end": 25.34
+      },
+      {
+        "text": " the",
+        "start": 25.86,
+        "end": 26.02
+      },
+      {
+        "text": " hands",
+        "start": 26.02,
+        "end": 26.56
+      },
+      {
+        "text": " and",
+        "start": 26.56,
+        "end": 26.8
+      },
+      {
+        "text": " the",
+        "start": 26.8,
+        "end": 26.96
+      },
+      {
+        "text": " seated",
+        "start": 26.96,
+        "end": 27.3
+      },
+      {
+        "text": " bodies.",
+        "start": 27.3,
+        "end": 27.82
+      }
+    ]
+  },
+  {
+    "start": 28.36,
+    "end": 33.46,
+    "text": " A visitor might wonder how to sit as much as what was being served.",
+    "words": [
+      {
+        "text": " A",
+        "start": 28.36,
+        "end": 28.52
+      },
+      {
+        "text": " visitor",
+        "start": 28.52,
+        "end": 28.9
+      },
+      {
+        "text": " might",
+        "start": 28.9,
+        "end": 29.34
+      },
+      {
+        "text": " wonder",
+        "start": 29.34,
+        "end": 29.86
+      },
+      {
+        "text": " how",
+        "start": 29.86,
+        "end": 30.2
+      },
+      {
+        "text": " to",
+        "start": 30.2,
+        "end": 30.4
+      },
+      {
+        "text": " sit",
+        "start": 30.4,
+        "end": 30.8
+      },
+      {
+        "text": " as",
+        "start": 30.8,
+        "end": 31.38
+      },
+      {
+        "text": " much",
+        "start": 31.38,
+        "end": 31.72
+      },
+      {
+        "text": " as",
+        "start": 31.72,
+        "end": 31.94
+      },
+      {
+        "text": " what",
+        "start": 31.94,
+        "end": 32.2
+      },
+      {
+        "text": " was",
+        "start": 32.2,
+        "end": 32.46
+      },
+      {
+        "text": " being",
+        "start": 32.46,
+        "end": 32.8
+      },
+      {
+        "text": " served.",
+        "start": 32.8,
+        "end": 33.46
+      }
+    ]
+  },
+  {
+    "start": 34.06,
+    "end": 38.86,
+    "text": " This is one chosen scene rather than a picture of every household.",
+    "words": [
+      {
+        "text": " This",
+        "start": 34.06,
+        "end": 34.26
+      },
+      {
+        "text": " is",
+        "start": 34.26,
+        "end": 34.46
+      },
+      {
+        "text": " one",
+        "start": 34.46,
+        "end": 34.9
+      },
+      {
+        "text": " chosen",
+        "start": 34.9,
+        "end": 35.38
+      },
+      {
+        "text": " scene",
+        "start": 35.38,
+        "end": 35.98
+      },
+      {
+        "text": " rather",
+        "start": 35.98,
+        "end": 36.84
+      },
+      {
+        "text": " than",
+        "start": 36.84,
+        "end": 37.18
+      },
+      {
+        "text": " a",
+        "start": 37.18,
+        "end": 37.3
+      },
+      {
+        "text": " picture",
+        "start": 37.3,
+        "end": 37.64
+      },
+      {
+        "text": " of",
+        "start": 37.64,
+        "end": 37.96
+      },
+      {
+        "text": " every",
+        "start": 37.96,
+        "end": 38.32
+      },
+      {
+        "text": " household.",
+        "start": 38.32,
+        "end": 38.86
+      }
+    ]
+  },
+  {
+    "start": 39.58,
+    "end": 42.12,
+    "text": " The work is attributed to Uncho.",
+    "words": [
+      {
+        "text": " The",
+        "start": 39.58,
+        "end": 39.7
+      },
+      {
+        "text": " work",
+        "start": 39.7,
+        "end": 40.08
+      },
+      {
+        "text": " is",
+        "start": 40.08,
+        "end": 40.4
+      },
+      {
+        "text": " attributed",
+        "start": 40.4,
+        "end": 40.94
+      },
+      {
+        "text": " to",
+        "start": 40.94,
+        "end": 41.44
+      },
+      {
+        "text": " Uncho.",
+        "start": 41.44,
+        "end": 42.12
+      }
+    ]
+  },
+  {
+    "start": 42.7,
+    "end": 49.3,
+    "text": " From the TJ Kim Collection, a small piece of furniture helps us read the shape of a day.",
+    "words": [
+      {
+        "text": " From",
+        "start": 42.7,
+        "end": 42.98
+      },
+      {
+        "text": " the",
+        "start": 42.98,
+        "end": 43.18
+      },
+      {
+        "text": " TJ",
+        "start": 43.18,
+        "end": 43.62
+      },
+      {
+        "text": " Kim",
+        "start": 43.62,
+        "end": 44.04
+      },
+      {
+        "text": " Collection,",
+        "start": 44.04,
+        "end": 44.62
+      },
+      {
+        "text": " a",
+        "start": 45.06,
+        "end": 45.16
+      },
+      {
+        "text": " small",
+        "start": 45.16,
+        "end": 45.52
+      },
+      {
+        "text": " piece",
+        "start": 45.52,
+        "end": 45.9
+      },
+      {
+        "text": " of",
+        "start": 45.9,
+        "end": 46.1
+      },
+      {
+        "text": " furniture",
+        "start": 46.1,
+        "end": 46.6
+      },
+      {
+        "text": " helps",
+        "start": 46.6,
+        "end": 47.38
+      },
+      {
+        "text": " us",
+        "start": 47.38,
+        "end": 47.66
+      },
+      {
+        "text": " read",
+        "start": 47.66,
+        "end": 48.0
+      },
+      {
+        "text": " the",
+        "start": 48.0,
+        "end": 48.34
+      },
+      {
+        "text": " shape",
+        "start": 48.34,
+        "end": 48.66
+      },
+      {
+        "text": " of",
+        "start": 48.66,
+        "end": 48.9
+      },
+      {
+        "text": " a",
+        "start": 48.9,
+        "end": 49.02
+      },
+      {
+        "text": " day.",
+        "start": 49.02,
+        "end": 49.3
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "provider": "Typecast",
+  "connector": "/Users/jatu/app/model3d/lib/com/jatu/aside/connector/typecast.py",
+  "project": "https://studio.typecast.ai/text-to-speech/6ad0eb6480cf3c32a08d186c",
+  "actor": "이노우에 다이치",
+  "paragraph": 106,
+  "raw_duration": 44.0,
+  "raw_sha256": "406821d35eb028b92be97ce280127b23e91d37da8789ca5fe269869dc7cf1ddf"
+}

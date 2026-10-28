@@ -1,0 +1,64 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/content]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 펼치기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7] [focused]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJ Kim Collection\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n       …[+161 chars]"
+  - menu:
+    - menuitem [ref=e11]
+    - menuitem [ref=e12]
+    - menuitem [ref=e13]
+    - menuitem [ref=e14]
+    - menuitem [ref=e15]
+    - menuitem [ref=e16]
+    - menuitem [ref=e17]
+    - menuitem [ref=e18]
+    - menuitem [ref=e19]
+  - button [ref=e20]
+  - button [ref=e21]
+- main [ref=e22] [scrollable]:
+  - text: "새로운 콘텐츠 페이지를 둘러보세요."
+  - button "자세히 알아보기" [ref=e23]
+  - button [ref=e24]
+  - heading [level=1]: "콘텐츠"
+  - listitem:
+    - heading [level=2]:
+      - button "Shorts" [ref=e25]
+    - button "모두 보기" [ref=e26]
+    - button "이전" [ref=e27] [disabled]
+    - button "다음" [ref=e28] [disabled]
+    - generic [ref=e29]:
+      - heading "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory" [level=3]:
+        - link "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory, 조회수 없음, 댓글 없음, 비공개, 57초 " [ref=e30]: "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory"
+      - group: "2026. 10. 26."
+    - generic [ref=e31]:
+      - heading "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory" [level=3]:
+        - link "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory, 조회수 없음, 댓글 없음, 비공개, 2분 전 및 1분 8초" [ref=e32]: "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory"
+      - group: "2026. 10. 26."
+    - generic [ref=e33]:
+      - heading "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture" [level=3]:
+        - link "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture, 조회수 없음, 댓글 없음, 비공개, 3분 전 " [ref=e34]: "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture"
+      - group: "2026. 10. 26."
+    - generic [ref=e35]:
+      - heading "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture" [level=3]:
+        - link "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture, 조회수 22회, " [ref=e36]: "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture"
+      - group: "2026. 10. 25."
+      - group: "22 0"
+  - listitem:
+    - heading [level=2]: "크리에이터 도구 모음"
+    - button "동영상 업로드" [ref=e37]
+    - button "라이브 스트리밍 시작" [ref=e38]
+    - button "게시물 작성" [ref=e39]
+    - button "프로모션" [ref=e40]
+    - button "저장된 아이디어" [ref=e41]
+[ok | 61ms]
+repl > 

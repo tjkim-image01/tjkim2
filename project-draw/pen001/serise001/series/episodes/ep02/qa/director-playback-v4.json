@@ -1,0 +1,12 @@
+{
+  "frames": 171,
+  "medianFps": 58.8235294117647,
+  "slowFrameFps": 21.50537634408602,
+  "otherEpisode": {
+    "clock": "00:00 / 01:00",
+    "newBrushOptions": false,
+    "mp4Visible": true
+  },
+  "homeFirst": "http://127.0.0.1:5184/series/site/studio.html?ep=ep02&revision=director-v4",
+  "pass": true
+}

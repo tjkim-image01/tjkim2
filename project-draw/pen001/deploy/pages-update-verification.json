@@ -1,0 +1,30 @@
+{
+  "url": "https://tjkim-image01.github.io/pen001/",
+  "commit": "0f295b5fcd3b3b206bafd2fd8c4b4b8383d9894b",
+  "workflow": 40240361755,
+  "conclusion": "success",
+  "verified_at": "2026-10-25T22:29:49.919207+00:00",
+  "live_files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "81d68a01e1b0cb58dd06fa10354bfa46dc2b9efbcf7fa01fa4cf095102f0dbcc",
+      "matches_local": true
+    },
+    {
+      "file": "archive.js",
+      "status": 200,
+      "sha256": "815fe5e94a0fd4effa4fc9c41c4b761a14e48d83c99b1f96f371e4dfb3338a2d",
+      "matches_local": true
+    },
+    {
+      "file": "archive.css",
+      "status": 200,
+      "sha256": "a2fa50aa0a289d9ac66851d18b8826fd8cf504c84aaa791f9efd0922a17c570d",
+      "matches_local": true
+    }
+  ],
+  "film_section_before_gallery": true,
+  "mobile_grid_columns": 2,
+  "tablet_grid_columns": 3
+}

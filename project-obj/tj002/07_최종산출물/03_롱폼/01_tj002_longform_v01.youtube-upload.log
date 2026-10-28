@@ -1,28 +1,641 @@
-Aside CLI 1.26.1015.732 is available (current 1.26.1008.1938). Run: aside update
-account: u5 (jfktwo5@gmail.com)
-sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-16_iKBoFGXTe19gwYhu
-type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
-repl > 
-globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); const t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; return await attachBrowserTab(t.targetId); }; console.log('ok')
-ok
-[ok | 23ms]
-repl > 
-await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
-URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
-[ok | 51ms]
-repl > 
-await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
-CLOSED:0
-[ok | 832ms]
-repl > 
-await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
-ok
-[ok | 3831ms]
-repl > 
-await (async()=>{ const P = await globalThis.__att(); await P.locator('ytcp-uploads-dialog input[type=file][name=Filedata]').setInputFiles("./01_tj002_longform_v01.mp4"); console.log('ok') })()
-Error: Selector "ytcp-uploads-dialog input[type=file][name=Filedata]" not found
-    at #l (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3793:130)
-    at async #r (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3754:1435)
-    at async Cn.setInputFiles (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1014.2349/Aside%20Daemon.app/Contents/MacOS/aside-daemon:3754:3702)
-[error | 38ms]
-repl > 
+
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "01 tj002 longform v01\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "닫기" [ref=e41]
+  - tablist:
+    - tab "세부정보" [ref=e47] [selected]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - generic [ref=e51] [scrollable]:
+    - heading "세부정보" [level=1]
+    - button "세부정보 재사용" [ref=e52]
+    - text: "제목(필수 항목)"
+    - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e54] [focused]: "01 tj002 longform v01"
+    - button "A/B 테스팅" [ref=e55]
+    - status: "21/100"
+    - text: "설명"
+    - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e57]: "물건으로 읽는 역사, 티제이 김 컬렉션.\n엽서·고서·고지도·판화·기록물 속 시대와 사람들의 이야기를 전합니다.\n\n#티제이김컬렉션 #역사 #인문학"
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e58]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e59]
+    - button "동영상에서 선택" [ref=e60]
+    - button "A/B 테스팅" [ref=e61]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e62]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e63]:
+      - button "선택" [ref=e64]
+    - text: "시청자층 \n  아동용 동영상인가요? (필수사항)\n  \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e65]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e66]: "자세히 알아보기"
+    - radiogroup [ref=e67]:
+      - radio [ref=e68]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e69]
+      - radio "아니요, 아동용이 아닙니다" [ref=e70]
+    - button "연령 제한" [ref=e71]
+    - button "고급 설정 표시" [ref=e72]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크  링크 생성 중...파일 이름 01_tj002_longform_v01.mp4"
+  - text: "24% 업로드 중 ..."
+  - button "다음" [ref=e73]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47] [selected]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - generic [ref=e51] [scrollable]:
+    - heading "세부정보" [level=1]
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e58]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e59]
+    - button "동영상에서 선택" [ref=e60]
+    - button "A/B 테스팅" [ref=e61]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e62]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e63]:
+      - button "선택" [ref=e64]
+    - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e65]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e66]: "자세히 알아보기"
+    - radiogroup [ref=e67]:
+      - radio [ref=e68]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e69]
+      - radio "아니요, 아동용이 아닙니다" [ref=e70] [checked] [focused]
+    - button "연령 제한" [ref=e71]
+    - button "고급 설정 표시" [ref=e72]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e75]
+    - button "동영상 링크 복사" [ref=e76]
+    - text: "파일 이름 01_tj002_longform_v01.mp4"
+  - text: "36% 업로드 중 ..."
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47] [selected]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - generic [ref=e51] [scrollable]:
+    - heading "세부정보" [level=1]
+    - text: "설명"
+    - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e57]: "1950년 한국전쟁 3년 동안 유엔군이 뿌린 삐라 25억~40억 장(추산). 폭탄 탄피에 담긴 종이 2만 2,500장, 안전보장증서, 추석 삐라, 북한이 미군에게 보낸 영어 삐라, 맥아더의 라디오 광고 삐라, 그리고 1970년대 아이들이 파출소에 가져가 공책으로 바꾼 삐라까지. 티제이 김 컬렉션 삐라 100장으로 읽는 100년.\n\n00:00 삐라 주우면 공책 줬다\n00:35 종이 폭탄\n01:23 종이 한 장에 뭘 적었나\n02:07 반대편도 뿌렸다\n02:44 풍선, 그리고 공책\n03:20 멈췄다가, 다시\n03:42 하늘에서 떨어진 DM\n\n출처: 뉴스타파(2020-07-27) · 한국일보(2020-06-07) · RFA(2009-06-24) · 위키백과 · 티제이 김 컬렉션 실물\n\n#삐라 #한국전쟁 #심리전 #안전보장증서 #대북전단 #오물풍선 #티제이김컬렉션 #근현대사 #추억"
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e58]: "자세히 알아보기"
+    - button "업로드된 썸네일" [ref=e77]: "업로드 중..."
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e62]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e63]:
+      - button "선택" [ref=e64]
+    - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e65]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e66]: "자세히 알아보기"
+    - radiogroup [ref=e67]:
+      - radio [ref=e68]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e69]
+      - radio "아니요, 아동용이 아닙니다" [ref=e70] [checked]
+    - button "연령 제한" [ref=e71]
+    - button "고급 설정 표시" [ref=e72]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등"
+    - region "동영상 플레이어" [ref=e78]
+    - text: "동영상 업로드 중...동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e75]
+    - button "동영상 링크 복사" [ref=e76]
+    - text: "파일 이름 01_tj002_longform_v01.mp4"
+  - text: "44% 업로드 중 ..."
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47] [selected]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - generic [ref=e51] [scrollable]:
+    - heading "세부정보" [level=1]
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e58]: "자세히 알아보기"
+    - button "업로드된 썸네일" [ref=e77]: "업로드 중..."
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e62]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e63]:
+      - button "선택" [ref=e64]
+    - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e65]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e66]: "자세히 알아보기"
+    - radiogroup [ref=e67]:
+      - radio [ref=e68]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e69]
+      - radio "아니요, 아동용이 아닙니다" [ref=e70] [checked]
+    - button "연령 제한" [ref=e71]
+    - button "고급 설정 숨기기" [ref=e79] [focused]: "간략히 보기"
+    - text: "유료 프로모션"
+    - paragraph:
+      - text: "동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+      - link "자세히 알아보기" [ref=e80]
+    - radiogroup [ref=e81]:
+      - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e82]
+      - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e83]
+    - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?"
+    - list:
+      - listitem "실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦" [ref=e84]
+      - listitem "실제 사건 또는 장소의 영상을 변경" [ref=e85]
+      - listitem "실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성" [ref=e86]
+      - listitem "동영상의 주요 초점이 되는 음악 생성" [ref=e87]
+    - radio "예, AI가 사용되었습니다." [ref=e88]: "예"
+    - radio "아니요, AI를 사용하지 않았습니다." [ref=e89]: "아니요"
+    - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+    - link "예시 보기" [ref=e90]
+    - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+    - link "자세히 알아보기" [ref=e91]
+    - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+    - link "동영상 공동작업 자세히 알아보기" [ref=e92]: "자세히 알아보기"
+    - button "공동작업자 초대" [ref=e93]
+    - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+    - link "자동 챕터 자세히 알아보기" [ref=e94]: "자세히 알아보기"
+    - generic [ref=e95]:
+      - checkbox "자동 챕터 허용" [ref=e96] [checked]
+      - text: "자동 챕터 허용"
+    - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+    - link "자동 장소 자세히 알아보기" [ref=e97]: "자세히 알아보기"
+    - generic [ref=e98]:
+      - checkbox "장소 정보 자동 제공 허용" [ref=e99] [checked]
+      - text: "장소 정보 자동 제공 허용"
+    - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+    - generic [ref=e100]:
+      - checkbox "개념 설명 자동 제공 허용" [ref=e101] [checked]
+      - text: "개념 설명 자동 제공 허용"
+    - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+    - link "태그 자세히 알아보기" [ref=e102]: "자세히 알아보기"
+    - button "티제이 김 컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e103]:
+      - text: "티제이 김 컬렉션"
+      - button "삭제" [ref=e104]
+    - button "티제이김컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e105]:
+      - text: "티제이김컬렉션"
+      - button "삭제" [ref=e106]
+    - button "한국사. 수정하려면 Enter 키를 누르세요." [ref=e107]:
+      - text: "한국사"
+      - button "삭제" [ref=e108]
+    - button "역사. 수정하려면 Enter 키를 누르세요." [ref=e109]:
+      - text: "역사"
+      - button "삭제" [ref=e110]
+    - button "인문학. 수정하려면 Enter 키를 누르세요." [ref=e111]:
+      - text: "인문학"
+      - button "삭제" [ref=e112]
+    - button "컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e113]:
+      - text: "컬렉션"
+      - button "삭제" [ref=e114]
+    - textbox "태그" [ref=e115]
+    - button "모두 복사" [ref=e116]
+    - button "모두 삭제" [ref=e117]
+    - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      34/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+    - button [ref=e118]:
+      - button "동영상 언어 한국어" [ref=e119]
+    - button [ref=e120]:
+      - button "자막 면제 인증서 없음" [ref=e121]
+    - text: "녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+    - button [ref=e123]:
+      - button "녹화 날짜 없음" [ref=e124]
+    - button [ref=e125]:
+      - text: "동영상 위치"
+      - textbox "동영상 위치" [ref=e126] [placeholder="없음"]
+    - text: "라이선스"
+    - link "라이선스 유형" [ref=e127]
+    - text: "에 대해 알아보세요."
+    - button [ref=e128]:
+      - button "라이선스 표준 YouTube 라이선스" [ref=e129]
+    - generic [ref=e130]:
+      - checkbox "퍼가기 허용" [ref=e131] [checked]
+      - text: "퍼가기 허용"
+    - generic [ref=e133]:
+      - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e134] [checked]
+      - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+    - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다."
+    - link "콘텐츠 리믹스 자세히 알아보기" [ref=e135]: "자세히 알아보기"
+    - radiogroup [ref=e136]:
+      - radio "동영상 및 오디오 리믹스 허용" [ref=e137] [checked]
+      - radio "오디오 리믹스만 허용" [ref=e138]
+      - radio "리믹스 허용하지 않음" [ref=e139]
+    - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+    - button [ref=e140]:
+      - button "교육" [ref=e141]
+    - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+    - button [ref=e142]:
+      - button "댓글 켜짐" [ref=e143]
+    - button [ref=e144]:
+      - button "검토 기본" [ref=e145]
+    - button [ref=e146]:
+      - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e147]
+    - button [ref=e148]:
+      - button "정렬 기준 인기순" [ref=e149]
+    - generic [ref=e150]:
+      - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e151] [checked]
+      - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+    - region "동영상 플레이어" [ref=e78]
+    - text: "동영상 업로드 중...동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e75]
+    - button "동영상 링크 복사" [ref=e76]
+    - text: "파일 이름 01_tj002_longform_v01.mp4"
+  - text: "53% 업로드 중 ..."
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47] [selected]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - generic [ref=e51] [scrollable]:
+    - heading "세부정보" [level=1]
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e58]: "자세히 알아보기"
+    - button "업로드된 썸네일" [ref=e77]: "업로드 중..."
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e62]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e63]:
+      - button [ref=e64]
+    - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e65]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e66]: "자세히 알아보기"
+    - radiogroup [ref=e67]:
+      - radio [ref=e68]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e69]
+      - radio "아니요, 아동용이 아닙니다" [ref=e70] [checked]
+    - button "연령 제한" [ref=e71]
+    - text: "유료 프로모션"
+    - paragraph:
+      - text: "동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+      - link "자세히 알아보기" [ref=e80]
+    - radiogroup [ref=e81]:
+      - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e82]
+      - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e83]
+    - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?"
+    - list:
+      - listitem "실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦" [ref=e84]
+      - listitem "실제 사건 또는 장소의 영상을 변경" [ref=e85]
+      - listitem "실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성" [ref=e86]
+      - listitem "동영상의 주요 초점이 되는 음악 생성" [ref=e87]
+    - radio "예, AI가 사용되었습니다." [ref=e88]: "예"
+    - radio "아니요, AI를 사용하지 않았습니다." [ref=e89]: "아니요"
+    - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+    - link "예시 보기" [ref=e90]
+    - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+    - link "자세히 알아보기" [ref=e91]
+    - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+    - link "동영상 공동작업 자세히 알아보기" [ref=e92]: "자세히 알아보기"
+    - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+    - link "자동 챕터 자세히 알아보기" [ref=e94]: "자세히 알아보기"
+    - generic [ref=e95]:
+      - checkbox "자동 챕터 허용" [ref=e96] [checked]
+      - text: "자동 챕터 허용"
+    - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+    - link "자동 장소 자세히 알아보기" [ref=e97]: "자세히 알아보기"
+    - generic [ref=e98]:
+      - checkbox "장소 정보 자동 제공 허용" [ref=e99] [checked]
+      - text: "장소 정보 자동 제공 허용"
+    - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+    - generic [ref=e100]:
+      - checkbox "개념 설명 자동 제공 허용" [ref=e101] [checked]
+      - text: "개념 설명 자동 제공 허용"
+    - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+    - link "태그 자세히 알아보기" [ref=e102]: "자세히 알아보기"
+    - button "삐라. 수정하려면 Enter 키를 누르세요." [ref=e152]:
+      - text: "삐라"
+      - button "삭제" [ref=e153]
+    - button "삐라 주우면 공책. 수정하려면 Enter 키를 누르세요." [ref=e154]:
+      - text: "삐라 주우면 공책"
+      - button "삭제" [ref=e155]
+    - button "공책. 수정하려면 Enter 키를 누르세요." [ref=e156]:
+      - text: "공책"
+      - button "삭제" [ref=e157]
+    - button "한국전쟁. 수정하려면 Enter 키를 누르세요." [ref=e158]:
+      - text: "한국전쟁"
+      - button "삭제" [ref=e159]
+    - button "심리전. 수정하려면 Enter 키를 누르세요." [ref=e160]:
+      - text: "심리전"
+      - button "삭제" [ref=e161]
+    - button "안전보장증서. 수정하려면 Enter 키를 누르세요." [ref=e162]:
+      - text: "안전보장증서"
+      - button "삭제" [ref=e163]
+    - button "대북전단. 수정하려면 Enter 키를 누르세요." [ref=e164]:
+      - text: "대북전단"
+      - button "삭제" [ref=e165]
+    - button "대남전단. 수정하려면 Enter 키를 누르세요." [ref=e166]:
+      - text: "대남전단"
+      - button "삭제" [ref=e167]
+    - button "오물풍선. 수정하려면 Enter 키를 누르세요." [ref=e168]:
+      - text: "오물풍선"
+      - button "삭제" [ref=e169]
+    - button "전단지. 수정하려면 Enter 키를 누르세요." [ref=e170]:
+      - text: "전단지"
+      - button "삭제" [ref=e171]
+    - button "티제이 김 컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e172]:
+      - text: "티제이 김 컬렉션"
+      - button "삭제" [ref=e173]
+    - button "티제이김컬렉션. 수정하려면 Enter 키를 누르세요." [ref=e174]:
+      - text: "티제이김컬렉션"
+      - button "삭제" [ref=e175]
+    - button "근현대사. 수정하려면 Enter 키를 누르세요." [ref=e176]:
+      - text: "근현대사"
+      - button "삭제" [ref=e177]
+    - button "추억. 수정하려면 Enter 키를 누르세요." [ref=e178]:
+      - text: "추억"
+      - button "삭제" [ref=e179]
+    - button "Korean War. 수정하려면 Enter 키를 누르세요." [ref=e180]:
+      - text: "Korean War"
+      - button "삭제" [ref=e181]
+    - button "propaganda. 수정하려면 Enter 키를 누르세요." [ref=e182]:
+      - text: "propaganda"
+      - button "삭제" [ref=e183]
+    - textbox "태그" [ref=e115] [focused]
+    - button "모두 복사" [ref=e116]
+    - button "모두 삭제" [ref=e117]
+    - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      104/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+    - button [ref=e118]:
+      - button "동영상 언어 한국어" [ref=e119]
+    - button [ref=e120]:
+      - button "자막 면제 인증서 없음" [ref=e121]
+    - text: "녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+    - button [ref=e123]:
+      - button "녹화 날짜 없음" [ref=e124]
+    - button [ref=e125]:
+      - text: "동영상 위치"
+      - textbox "동영상 위치" [ref=e126] [placeholder="없음"]
+    - text: "라이선스"
+    - link "라이선스 유형" [ref=e127]
+    - text: "에 대해 알아보세요."
+    - button [ref=e128]:
+      - button "라이선스 표준 YouTube 라이선스" [ref=e129]
+    - generic [ref=e130]:
+      - checkbox "퍼가기 허용" [ref=e131] [checked]
+      - text: "퍼가기 허용"
+    - generic [ref=e133]:
+      - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e134] [checked]
+      - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+    - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다."
+    - link "콘텐츠 리믹스 자세히 알아보기" [ref=e135]: "자세히 알아보기"
+    - radiogroup [ref=e136]:
+      - radio "동영상 및 오디오 리믹스 허용" [ref=e137] [checked]
+      - radio "오디오 리믹스만 허용" [ref=e138]
+      - radio "리믹스 허용하지 않음" [ref=e139]
+    - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+    - button [ref=e140]:
+      - button "교육" [ref=e141]
+    - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+    - button [ref=e142]:
+      - button "댓글 켜짐" [ref=e143]
+    - button [ref=e144]:
+      - button "검토 기본" [ref=e145]
+    - button [ref=e146]:
+      - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e147]
+    - button [ref=e148]:
+      - button "정렬 기준 인기순" [ref=e149]
+    - generic [ref=e150]:
+      - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e151] [checked]
+      - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+    - region "동영상 플레이어" [ref=e78]
+    - text: "동영상 업로드 중...동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e75]
+    - button "동영상 링크 복사" [ref=e76]
+    - text: "파일 이름 01_tj002_longform_v01.mp4"
+  - text: "62% 업로드 중 ..."
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47]
+    - tab "동영상 요소" [ref=e48] [focused] [selected]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50]
+  - heading "동영상 요소" [level=1]
+  - text: "카드와 최종 화면을 사용하여 시청자에게 관련 동영상, 웹사이트, 클릭 유도 문구를 표시하세요."
+  - link "자세히 알아보기" [ref=e184]
+  - heading "자막" [level=3]
+  - text: "동영상에 자막을 추가하여 더 많은 시청자에게 다가가세요."
+  - button "추가" [ref=e185]
+  - heading "엔딩 화면" [level=3]
+  - text: "동영상이 끝날 때 관련 콘텐츠를 홍보합니다."
+  - button "동영상에서 가져오기" [ref=e186]
+  - button "추가" [ref=e187]
+  - heading "카드" [level=3]
+  - text: "동영상 재생 중에 관련 콘텐츠를 홍보합니다."
+  - button "추가" [ref=e188]
+  - heading "퀴즈" [level=3]
+  - text: "New 퀴즈를 추가해 동영상에서 시청자와 상호작용할 기회를 늘리세요."
+  - button "추가" [ref=e189]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e190]
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49] [focused] [selected]
+    - tab "공개 상태" [ref=e50]
+  - heading "검토" [level=1]
+  - text: "YouTube에서 동영상에 공개 상태를 제한할 수 있는 문제가 있는지 검사합니다. 그러면 동영상을 게시하기 전에 문제를 해결할 수 있습니다.\n    SD 처리가 완료될 때까지 검토가 실행되지 않습니다."
+  - link "자세히 알아보기" [ref=e191]
+  - heading "저작권" [level=2]
+  - text: "동영상에 저작권 보호 콘텐츠가 포함되어 있는지 확인합니다.\n      주의: 검사 결과는 확정적이지 않습니다. 동영상에 영향을 미치는 문제가 나중에 발생할 수도 있습니다."
+  - link "자세히 알아보기" [ref=e192]
+  - button "의견 보내기" [ref=e194]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e190]
+  - button "다음" [ref=e73]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50] [focused] [selected]
+  - generic [ref=e51] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e196]:
+      - radio "비공개" [ref=e197] [checked]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e198]
+      - radio "일부 공개" [ref=e199]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e200]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+      - generic [ref=e201]:
+        - checkbox "즉시 Premieres 동영상으로 설정" [ref=e202] [disabled]
+        - text: "즉시 Premieres 동영상으로 설정"
+    - generic [ref=e204]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e205]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e206]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e207]
+    - region "동영상 플레이어" [ref=e208]
+    - text: "곧 처리 시작됨 삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션 동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e209]
+    - button "동영상 링크 복사" [ref=e210]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e190]
+  - button "저장" [ref=e211]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50] [selected]
+  - generic [ref=e51] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e196]:
+      - radio "비공개" [ref=e197] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e198]
+      - radio "일부 공개" [ref=e199]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e200]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+      - generic [ref=e201]:
+        - checkbox "즉시 Premieres 동영상으로 설정" [ref=e202] [disabled]
+        - text: "즉시 Premieres 동영상으로 설정"
+    - generic [ref=e204]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e205]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e206]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e207]
+    - region "동영상 플레이어" [ref=e208]
+    - text: "곧 처리 시작됨 삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션 동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e209]
+    - button "동영상 링크 복사" [ref=e210]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e190]
+  - button "저장" [ref=e211]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e40]
+  - button "저장 후 닫기" [ref=e74]
+  - tablist:
+    - tab "세부정보" [ref=e47]
+    - tab "동영상 요소" [ref=e48]
+    - tab "검토" [ref=e49]
+    - tab "공개 상태" [ref=e50] [selected]
+  - generic [ref=e51] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e196]:
+      - radio "비공개" [ref=e197] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e198]
+      - radio "일부 공개" [ref=e199]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e200]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+      - generic [ref=e201]:
+        - checkbox "즉시 Premieres 동영상으로 설정" [ref=e202] [disabled]
+        - text: "즉시 Premieres 동영상으로 설정"
+    - generic [ref=e204]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e205]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e206]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e207]
+    - region "동영상 플레이어" [ref=e208]
+    - text: "동영상 처리 중...삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션 동영상 링크"
+    - link "https://youtu.be/mpULyHKSL9Y" [ref=e209]
+    - button "동영상 링크 복사" [ref=e210]
+  - text: "HD까지 처리 ... 3분 남음"
+  - button "뒤로" [ref=e190]
+  - button "저장" [ref=e211]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]
+
+FINAL CONTENT LIST VERIFICATION
+
+      - cell "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션개 선택" [ref=e644]:
+        - checkbox "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션개 선택" [ref=e646]
+      - cell:
+        - link [ref=e647]:
+          - image "동영상 미리보기 이미지: 삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션"
+          - text: "4:05"
+        - link "삐라 주우면 공책 줬다 — 하늘에서 떨어진 종이 100년 | 티제이 김 컬렉션" [ref=e648]
+        - text: "1950년 한국전쟁 3년 동안 유엔군이 뿌린 삐라 25억~40억 장(추산). 폭탄 탄피에 담긴 종이 2만 2,500장, 안전보장증서, 추석 삐라, 북한이 미군에게 보낸 영어 삐라, 맥아더의 라디오 광고 삐라, 그리고 1970년대 아이들이 파출소에 가져가 공책으로 바꾼 삐라까지. 티제이 김 컬렉션 삐라 100장으로 읽는 100년.\n\n00:00 삐라 주우면 공책 줬다\n00:35 종이 폭탄\n01:23 종이 한 장에 뭘 적었나\n02:07 반대편도 뿌렸다\n02:44 풍선, 그리고 공책\n03:20 멈췄다가, 다시\n03:42 하늘에서 떨어진 DM\n\n출처: 뉴스타파(2020-07-27) · 한국일보(2020-06-07) · RFA(2009-06-24) · 위키백과 · 티제이 김 컬렉션 실물\n\n#삐라 #한국전쟁 #심리전 #안전보장증서 #대북전단 #오물풍선 #티제이김컬렉션 #근현대사 #추억"
+      - cell:
+        - generic "—" [ref=e649]
+      - cell:
+        - generic "비공개" [ref=e650]
+      - cell "2026. 10. 21." [ref=e651]: "2026. 10. 21.\n     업로드됨"
+      - cell "0" [ref=e652]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e653]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e654]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e655]:
+      - button "30" [ref=e656]
+    - text: "2개 중 1~2"
+    - button "첫 페이지로 이동" [ref=e657] [disabled]
+    - button "이전 페이지로 이동" [ref=e658] [disabled]
+    - button "다음 페이지로 이동" [ref=e659] [disabled]
+    - button "마지막 페이지로 이동" [ref=e660] [disabled]
+- iframe:
+  - button "Open selection tools" [ref=f11e1]

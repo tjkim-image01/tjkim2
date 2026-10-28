@@ -26,6 +26,8 @@ var KEY_HEADER = 'Item No.';
 
 var PPIRA_STOCK_TAB = '삐라상점_재고';
 var PPIRA_INQ_TAB = '삐라상점_문의';
+var INQ_NOTIFY_EMAILS = ['tjkim.image01@gmail.com', 'tmeccatjkim@gmail.com'];
+var INQ_EMAIL_SUBJECT = '[삐라]  주문';
 
 var PPIRA_STOCK_HEADERS = [
   'Item No.',
@@ -633,6 +635,38 @@ function ppiraSubmitInquiry_(body) {
   var row = PPIRA_INQ_HEADERS.map(function (col) { return rowObj[col] || ''; });
   sh.appendRow(row);
   SpreadsheetApp.flush();
+
+  // 관리자 이메일 알림 발송 (tjkim.image01@gmail.com, tmeccatjkim@gmail.com)
+  try {
+    var subject = INQ_EMAIL_SUBJECT;
+    var mailBody = [
+      '★ 삐라 상점에 새로운 주문/문의가 접수되었습니다.',
+      '',
+      '■ 접수번호: ' + inquiryId,
+      '■ 접수일시: ' + now,
+      '■ 고객명: ' + name,
+      '■ 연락처: ' + contact,
+      '■ 합계금액: ' + (totalUsd || '문의'),
+      '',
+      '■ 주문/문의 품목:',
+      summary,
+      '',
+      '■ 고객 메모: ' + (memo || '(남긴 메모 없음)'),
+      '',
+      '----------------------------------------',
+      '▶ 어드민 문의함 바로가기: https://tjkim-image01.github.io/tjkim2/#/ppira',
+      '▶ 구글 시트 바로가기: https://docs.google.com/spreadsheets/d/' + prop_('SHEET_ID') + '/edit',
+    ].join('\n');
+
+    MailApp.sendEmail({
+      to: INQ_NOTIFY_EMAILS.join(', '),
+      subject: subject,
+      body: mailBody,
+    });
+  } catch (mailErr) {
+    Logger.log('이메일 발송 오류 (시트 저장은 정상 완료): ' + mailErr);
+  }
+
   return { ok: true, inquiryId: inquiryId, createdAt: now };
 }
 
@@ -769,7 +803,8 @@ function authorizeOnce() {
   var ss = sheet_();
   var n = ss.getSheets().length;
   var f = DriveApp.getFileById(ss.getId());
-  Logger.log('ok: ' + ss.getName() + ' tabs=' + n + ' updated=' + f.getLastUpdated());
+  var quota = MailApp.getRemainingDailyQuota();
+  Logger.log('ok: ' + ss.getName() + ' tabs=' + n + ' updated=' + f.getLastUpdated() + ' mailQuota=' + quota);
   return 'ok';
 }
 

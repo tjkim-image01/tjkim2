@@ -1,0 +1,23 @@
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "小さな膳がつくる距離 | 韓国のソバンと食卓のひととき #韓国文化개 선택" [ref=e1]:
+    - checkbox "小さな膳がつくる距離 | 韓国のソバンと食卓のひととき #韓国文化개 선택" [ref=e3]
+  - cell:
+    - link "1:08" [ref=e4]
+    - link "小さな膳がつくる距離 | 韓国のソバンと食卓のひととき #韓国文化" [ref=e5]
+    - text: "低い膳を囲む姿は、なじみ深く見えるかもしれません。\nこの小さな韓国の膳は、ソバンと呼ばれます。食事を載せ、そのまま部屋へ運ぶことにも使われました。片付ければ、部屋の使い方も変わります。\n\n日本の膳と同じと決めず、形と使い方を見てみましょう。器の高さ、手の位置、人々の距離をたどります。この一場面だけで、すべての家の食事を語ることはできません。\n\n所蔵品: APKC260507306 · 伝・ウンチョ作の風俗画\nTJ KIM コレクション所蔵\n音楽: Flow Music「墨色のリズム」／먹빛의 장단（AI生成音楽）\n映像: 所蔵画像に基づく描画演出およびAIによる画像整理・編集\n\n#ソバン #朝鮮時代 #風俗画 #韓国文化 #TJKimCollection"
+  - cell:
+    - generic "—" [ref=e6]
+  - cell:
+    - generic "비공개" [ref=e7]
+  - cell "2026. 10. 27." [ref=e8]: "2026. 10. 27.\n     업로드됨"
+  - cell "0" [ref=e9]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e10]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e11]: "0"
+[system] `page` navigated to: [죄송합니다.](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short) 
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UCRREust7LSVUVouPHwfsZ7w/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[2m[ok | 4702ms][0m

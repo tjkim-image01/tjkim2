@@ -1,0 +1,15 @@
+{
+  "episode": "ep02",
+  "language": "ko",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.03484472632408142,
+  "body_audio_rms": 0.11724422127008438,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

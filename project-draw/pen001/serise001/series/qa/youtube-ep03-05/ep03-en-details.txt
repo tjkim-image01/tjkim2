@@ -1,0 +1,80 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/goEGlOpaSi0/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e42]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e156]
+  - text: "동영상 미리보기 이미지: Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n       …[+362 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e115] [disabled]
+  - button "저장" [ref=e116] [disabled]
+  - button "옵션" [ref=e117]
+  - text: "제목(필수 항목)"
+  - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e119]: "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture"
+  - text: "설명"
+  - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e121]: "Before electric irons, how did people make a garment smooth?\nTwo women beat cloth on a low stone in a Korean practice called dadeumijil. Washed and starched fabric was pounded to smooth its surface.\n\nFollow the wooden beaters and the different angles of their arms. This genre painting brings the often unseen work behind a clean white garment into view.\n\nCollection item: APKC260507306 · genre painting attributed to Uncho\nFrom the TJ Kim Collection\nMusic: Flow Music, \"종이 위의 바람\" (AI-generated music)\nVisuals: drawing animation and AI cleanup based on a collection image\n\n#Dadeumijil #KoreanHistory #KoreanCulture #Joseon #TJKimCollection"
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e122]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e123]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e125]
+  - button "추천받기" [ref=e126]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e127]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e128]:
+    - button "선택" [ref=e129]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e130]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e131]: "자세히 알아보기"
+  - radiogroup [ref=e132]:
+    - radio [ref=e133]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e134]
+    - radio "아니요, 아동용이 아닙니다" [ref=e135] [checked]
+  - button "연령 제한" [ref=e136]
+  - button "고급 설정 표시" [ref=e137]: "자세히 보기"
+  - text: "유료 프로모션, 공동작업 등"
+  - region "동영상 플레이어" [ref=e138]:
+    - button "재생" [ref=e140]
+    - button "음소거" [ref=e141]
+    - slider "볼륨" [ref=e142]
+    - text: "0:00 / 1:08"
+    - button "전체 화면" [ref=e143]
+  - text: "동영상 링크"
+  - link "https://youtube.com/shorts/goEGlOpaSi0" [ref=e144]
+  - button "동영상 링크 복사" [ref=e145]
+  - text: "파일 이름 ep03-short-en-v18-cover.mp4 동영상 화질"
+  - generic [ref=e146]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e147]
+  - generic [ref=e148]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e149]
+  - button [ref=e150]:
+    - button "관련 동영상 없음" [ref=e151]
+  - button [ref=e153]:
+    - button [ref=e154]:
+      - button "자막" [ref=e155]
+[ok | 65ms]
+repl > 

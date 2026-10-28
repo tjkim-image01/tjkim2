@@ -1,0 +1,24 @@
+{
+  "wicking": {
+    "dryDuringWriting": 3317,
+    "wetDuringWriting": 3884,
+    "earlySpread": 0.27048711237167655,
+    "writeEnd": 3.5,
+    "blank": 0
+  },
+  "performance": {
+    "frames": 279,
+    "median": 16.69999999999709,
+    "clock": "00:04 / 01:06"
+  },
+  "preserved": {
+    "captionSize": "60",
+    "noBodyEffects": true,
+    "musicCount": 5,
+    "finish": "http://127.0.0.1:5184/series/episodes/ep02/audio/court-finish-v9.m4a"
+  },
+  "deterministicRewind": true,
+  "allVideosUnchanged": true,
+  "errors": [],
+  "pass": true
+}

@@ -1,0 +1,65 @@
+{
+  "episode": "ep07",
+  "strokes": 448,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "left_young_face",
+      "start": 0.8,
+      "end": 4.050906844857202
+    },
+    {
+      "key": "left_young_body",
+      "start": 4.066666666666666,
+      "end": 8.055316889250935
+    },
+    {
+      "key": "left_young_legs",
+      "start": 8.059259259259264,
+      "end": 11.080220887767135
+    },
+    {
+      "key": "rear_woman_face",
+      "start": 11.083950617283957,
+      "end": 14.34533212517539
+    },
+    {
+      "key": "rear_woman_body",
+      "start": 14.350617283950621,
+      "end": 18.33756621588402
+    },
+    {
+      "key": "rear_woman_legs",
+      "start": 18.343209876543206,
+      "end": 21.35533169876337
+    },
+    {
+      "key": "right_man_face",
+      "start": 21.367901234567896,
+      "end": 24.62983965697291
+    },
+    {
+      "key": "right_man_body",
+      "start": 24.63456790123456,
+      "end": 28.622426268434655
+    },
+    {
+      "key": "right_man_legs",
+      "start": 28.627160493827144,
+      "end": 31.646752351276156
+    },
+    {
+      "key": "objects",
+      "start": 31.651851851851834,
+      "end": 40.11692797510322
+    },
+    {
+      "key": "background",
+      "start": 40.12098765432098,
+      "end": 49.798606953808516
+    }
+  ],
+  "music": "flow-main",
+  "source_backup": "versions/before-series-v15"
+}

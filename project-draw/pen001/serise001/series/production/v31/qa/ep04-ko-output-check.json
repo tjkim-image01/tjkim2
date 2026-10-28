@@ -1,0 +1,15 @@
+{
+  "episode": "ep04",
+  "language": "ko",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.12804503738880157,
+  "body_audio_rms": 0.09121747314929962,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

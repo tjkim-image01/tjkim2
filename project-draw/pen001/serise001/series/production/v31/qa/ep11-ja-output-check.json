@@ -1,0 +1,15 @@
+{
+  "episode": "ep11",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.1148998886346817,
+  "body_audio_rms": 0.10868013650178909,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

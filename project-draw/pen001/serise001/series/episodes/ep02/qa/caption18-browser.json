@@ -1,0 +1,18 @@
+{
+  "caption": [
+    {
+      "text": "조선에선 뭘 하며 놀았을까요?",
+      "x": 540,
+      "y": 1212,
+      "font": "54px TJKimMyeongjo"
+    }
+  ],
+  "editorMax": 18,
+  "editorRows": 1,
+  "font": true,
+  "overflow": false,
+  "size": "54",
+  "rejectOver18": true,
+  "errors": [],
+  "pass": true
+}

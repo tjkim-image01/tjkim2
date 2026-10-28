@@ -1,0 +1,299 @@
+{
+  "url": "https://tjkim-image01.github.io/pen001/",
+  "published_asset_checks": [
+    {
+      "path": "/pen001/assets/photos/album-1.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-10.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-2.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-3.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-4.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-5.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-6.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-7.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-8.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/assets/photos/album-9.jpg",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/output/ep03-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/output/ep03-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep03/output/ep03-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/output/ep04-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/output/ep04-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep04/output/ep04-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/output/ep05-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/output/ep05-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep05/output/ep05-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/output/ep06-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/output/ep06-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep06/output/ep06-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/output/ep07-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/output/ep07-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep07/output/ep07-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/output/ep08-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/output/ep08-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep08/output/ep08-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/output/ep09-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/output/ep09-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep09/output/ep09-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/output/ep10-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/output/ep10-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep10/output/ep10-short-ko-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/art/covers-v18/en.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/art/covers-v18/ja.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/art/covers-v18/ko.png",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/output/ep11-short-en-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/output/ep11-short-ja-v18-cover.mp4",
+      "status": 200
+    },
+    {
+      "path": "/pen001/series/episodes/ep11/output/ep11-short-ko-v18-cover.mp4",
+      "status": 200
+    }
+  ],
+  "release_assets_verified": 3,
+  "public_original_photo_location_metadata_removed": true,
+  "public_original_photo_width": 4030,
+  "status": "complete",
+  "completed_at": "2026-10-26T07:14:14.861049+09:00",
+  "repository": "https://github.com/tjkim-image01/pen001",
+  "commit": "4ef012f6befe3d7a37bd3b2cef7a214545750e03",
+  "workflow": "https://github.com/tjkim-image01/pen001/actions/runs/40238835462",
+  "workflow_conclusion": "success",
+  "live_mobile_width": 390,
+  "live_mobile_scroll_width": 390,
+  "live_japanese_video_seconds": 67.5,
+  "browser_errors": [],
+  "static_settings_save_and_music_upload_persisted": true
+}

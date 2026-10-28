@@ -1,0 +1,12 @@
+{
+  "episode": "ep05",
+  "strokes": 220,
+  "wash": 130,
+  "initial_blank": true,
+  "duration": 60,
+  "draw_end": 49.8,
+  "source_resolution": [
+    1536,
+    1024
+  ]
+}

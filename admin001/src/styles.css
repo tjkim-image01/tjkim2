@@ -280,6 +280,12 @@ table.apps th { color: var(--ink-3); font-weight: 500; font-size: 12px; }
 .stats dd { margin: 0; }
 .candidate { display: flex; align-items: center; gap: 8px; padding: 3px 0; flex-wrap: wrap; }
 .cand-thumb { width: 36px; height: 36px; object-fit: cover; border-radius: 3px; }
+.image-roots { margin: 16px 0; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); }
+.image-roots summary { cursor: pointer; }
+.image-roots ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); column-gap: 24px; padding-left: 20px; }
+.image-roots li { margin: 6px 0; overflow-wrap: anywhere; }
+.image-roots input { flex: 1; min-width: 220px; }
+.drive-image-error { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 6px; color: var(--ink-3); background: var(--bg-sunken); font-size: 11px; }
 
 /* ---- 반응형 ---- */
 @media (max-width: 900px) {

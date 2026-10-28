@@ -1,0 +1,50 @@
+{
+  "episode": "ep08",
+  "strokes": 328,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "left_man_face",
+      "start": 0.8,
+      "end": 4.926514314313455
+    },
+    {
+      "key": "left_man_body",
+      "start": 4.934375000000005,
+      "end": 9.979497952945872
+    },
+    {
+      "key": "left_man_legs",
+      "start": 9.98750000000001,
+      "end": 13.813206379870415
+    },
+    {
+      "key": "right_man_face",
+      "start": 13.815625000000015,
+      "end": 17.940185836937005
+    },
+    {
+      "key": "right_man_body",
+      "start": 17.95000000000002,
+      "end": 22.99978471665442
+    },
+    {
+      "key": "right_man_legs",
+      "start": 23.00312500000003,
+      "end": 26.82337796191127
+    },
+    {
+      "key": "objects",
+      "start": 26.83125000000002,
+      "end": 37.54483027905481
+    },
+    {
+      "key": "background",
+      "start": 37.54999999999999,
+      "end": 49.77744024518219
+    }
+  ],
+  "music": "flow-night",
+  "source_backup": "versions/before-series-v15"
+}

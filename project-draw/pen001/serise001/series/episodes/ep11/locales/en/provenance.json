@@ -1,0 +1,9 @@
+{
+  "provider": "Typecast",
+  "connector": "/Users/jatu/app/model3d/lib/com/jatu/aside/connector/typecast.py",
+  "project": "https://studio.typecast.ai/text-to-speech/6ad0eb6480cf3c32a08d186c",
+  "actor": "아레스",
+  "paragraph": 98,
+  "raw_duration": 54.05,
+  "raw_sha256": "14e3903e6e92f29483a2e89a8a3b24722c59aa0e418f85175e245aeb87439cf1"
+}

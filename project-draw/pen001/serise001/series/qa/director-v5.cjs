@@ -1,0 +1,25 @@
+const puppeteer=require('/Users/jatu/.npm/_npx/0f94ee7615faf582/node_modules/puppeteer-core');
+const fs=require('fs'),crypto=require('crypto'),path=require('path');
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+(async()=>{const setting='episodes/ep02/config/player-settings.json',old=fs.existsSync(setting)?fs.readFileSync(setting):null;
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--autoplay-policy=no-user-gesture-required']});let report={},errors=[];
+try{const p=await b.newPage();p.on('pageerror',e=>errors.push(String(e)));await p.setViewport({width:1440,height:1100});
+await p.goto('http://127.0.0.1:5184/series/site/studio.html?ep=ep02&revision=director-v5',{waitUntil:'networkidle0'});await p.waitForFunction(()=>document.querySelector('#loading').hidden||document.querySelector('#loadLabel').textContent.includes('못했습니다'),{timeout:45000});
+if(!await p.$eval('#loading',e=>e.hidden))throw Error(await p.$eval('#loadLabel',e=>e.textContent));
+report.clock=await p.$eval('#clock',e=>e.value);if(!report.clock.endsWith('01:05'))throw Error(report.clock);
+const seek=async t=>p.$eval('#timeline',(el,t)=>{el.value=t;el.dispatchEvent(new Event('input',{bubbles:true}))},t);
+const pixels=async()=>p.$eval('#painting',el=>{const a=el.getContext('2d').getImageData(40,376,1000,800).data;let sum=0,nonpaper=0;for(let i=0;i<a.length;i+=4){sum+=a[i]+a[i+1]+a[i+2];if(a[i]<225||a[i+1]<225||a[i+2]<215)nonpaper++}return{sum,nonpaper}});
+const shot=async(t,name)=>{await seek(t);const png=await p.$eval('#painting',c=>c.toDataURL());fs.writeFileSync('episodes/ep02/qa/'+name+'.png',Buffer.from(png.split(',')[1],'base64'))};
+await seek(.5);report.blankFirstSecond=(await pixels()).nonpaper===0;if(!report.blankFirstSecond)throw Error('Opening is not blank');
+for(const [t,name]of [[1.5,'intro-close-15'],[2.5,'intro-follow-25'],[4.2,'intro-pullback-35'],[8.48,'person-face-close'],[9.8,'person-body-close'],[18,'rear-person-close'],[37,'front-woman-close'],[48,'background-return'],[61,'original-ending']])await shot(t,name);
+await seek(9.8);const first=await pixels();await seek(50);await seek(9.8);report.rewindDeterministic=JSON.stringify(first)===JSON.stringify(await pixels());if(!report.rewindDeterministic)throw Error('Scrubbing changes the picture');
+await p.select('#brushType','fine');await p.$eval('#inkBleed',e=>{e.value=0;e.dispatchEvent(new Event('input',{bubbles:true}))});await seek(18);const dry=await pixels();await p.$eval('#inkBleed',e=>{e.value=1;e.dispatchEvent(new Event('input',{bubbles:true}))});const wet=await pixels();report.bleedChangesEdge=dry.sum!==wet.sum;if(!report.bleedChangesEdge)throw Error('Bleed option has no effect');
+report.brushTypes=await p.$$eval('#brushType option',els=>els.map(e=>e.value));if(report.brushTypes.length!==5)throw Error('Expected auto plus four brushes');
+await p.click('#save');await p.waitForFunction(()=>document.querySelector('#saveState').textContent==='저장됨');report.persisted=JSON.parse(fs.readFileSync(setting));if(report.persisted.brushType!=='fine'||report.persisted.inkBleed!==1)throw Error('Brush setting not saved');
+await p.emulate(puppeteer.KnownDevices['iPhone 13']);await p.reload({waitUntil:'networkidle0'});await p.waitForFunction(()=>document.querySelector('#loading').hidden,{timeout:45000});await seek(9.8);await p.screenshot({path:'episodes/ep02/qa/director-mobile.png'});report.mobileOverflow=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);if(report.mobileOverflow)throw Error('Mobile overflow');
+report.audio=await p.evaluate(async()=>{const a=[document.querySelector('#audio'),document.querySelector('#musicAudio')];for(const t of a)if(t.readyState<1)await new Promise(resolve=>t.addEventListener('loadedmetadata',resolve,{once:true}));return a.map(t=>({duration:t.duration,src:t.currentSrc}))});if(report.audio.some(a=>Math.abs(a.duration-65)>.05))throw Error('Intro sound length mismatch');
+report.oldVideoLinksHidden=await p.evaluate(()=>document.querySelector('#finishLink').hidden&&document.querySelector('#mp4Link').hidden);if(!report.oldVideoLinksHidden)throw Error('Player must not offer an old video as its new result');
+report.errors=errors;if(errors.length)throw Error(errors.join('\n'));report.pass=true;
+}finally{if(old){fs.mkdirSync(path.dirname(setting),{recursive:true});fs.writeFileSync(setting,old)}else if(fs.existsSync(setting))fs.unlinkSync(setting);await b.close();fs.writeFileSync('episodes/ep02/qa/director-v5.json',JSON.stringify(report,null,2))}
+const before=JSON.parse(fs.readFileSync('episodes/ep02/qa/player-only-video-hashes.json'));for(const [ep,h]of Object.entries(before))if(hash(`episodes/${ep}/output/${ep}-short-60s.mp4`)!==h)throw Error('An MP4 changed: '+ep);report.allTenVideosUnchanged=true;fs.writeFileSync('episodes/ep02/qa/director-v5.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+})().catch(e=>{console.error(e);process.exitCode=1});

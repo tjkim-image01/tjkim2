@@ -1,0 +1,9 @@
+{
+  "episode": "ep05",
+  "language": "ko",
+  "prompt": "Edit this portrait cover into the final KOREAN edition, and correct the title position for cropped YouTube thumbnails. Preserve the exact warm hanji background, illustration, all people/animals, original poses, colors, instruments and objects. NO subject changes. Important layout correction: move the ENTIRE large headline and red subtitle substantially DOWN. On a 1080x1920 canvas leave the TOP 250 pixels completely FREE of any text. The top edge of the black headline must be at y=270 or lower; all headline lettering should fit between x=95 and985 and y=270 and720. Place the smaller red subtitle at about y=760. Keep all black title letters entirely inside this safe region so a centered 3:4 crop cutting the top240 pixels keeps the complete headline. Preserve the rich bold beautiful brush/display serif character and the warm ivory negative space, never add a banner or rectangle. Adjust lettering size modestly if necessary, but keep it strong and readable. Exact headline lines: \"비 오는\" / \"날의 조선\". Exact red subtitle: \"옷과 우산\". Remove the old headline/subtitle completely and use ONLY this edition's language for the main wording. Preserve small episode \"04\" and bottom \"TJ KIM COLLECTION\". Do not add guides or crop marks. Keep portrait9:16 framing and keep all main faces unobscured. One finished cover.",
+  "source_cover": "/Users/jatu/.codex/generated_images/01a170ca-7a5a-7622-a6a0-4da41a5bf71f/exec-f112e815-8837-4d35-9bd8-36fa62c89b90.png",
+  "generated_file": "/Users/jatu/.codex/generated_images/01a170ca-7a5a-7622-a6a0-4da41a5bf71f/exec-d040cbb7-f87d-4af5-8f16-c99bde59f4fb.png",
+  "tool": "built-in image_gen",
+  "safe_title_top": 250
+}

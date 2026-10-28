@@ -1,0 +1,3777 @@
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-28_iAvCLVxiPXUGGIJi
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+await (async()=>{ const t = (await listBrowserTabs()).find(t=>t.url.startsWith('https://studio.youtube.com/')); if(t) await attachBrowserTab(t.targetId); else await openTab('https://studio.youtube.com'); console.log((await snapshot(page,{interactive:true})).tree); })()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJ Kim Collection\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n       …[+161 chars]"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - button "뒤로" [ref=e23]
+  - text: "Shorts 동영상"
+  - generic "동영상" [ref=e24]
+  - generic "Shorts 동영상" [ref=e25]
+  - generic "라이브" [ref=e26]
+  - generic "게시물" [ref=e27]
+  - generic "재생목록" [ref=e28]
+  - generic "프로모션" [ref=e29]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e31] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e32]:
+          - checkbox "전체 선택" [ref=e34]
+        - columnheader "Shorts 동영상" [ref=e35]
+        - columnheader "알림" [ref=e36]
+        - columnheader "공개 상태" [ref=e37]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e38]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e39]: "조회수"
+        - columnheader "댓글" [ref=e40]
+    - row:
+      - cell "A quiet contest개 선택" [ref=e41]:
+        - checkbox "A quiet contest개 선택" [ref=e43]
+      - cell:
+        - link [ref=e44]
+        - link "A quiet contest" [ref=e45]
+        - text: "A chess player might recognize this concentration. But these lettered pieces belong to janggi, Korean chess. Each kind of piece moves by its own rules. The play…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e46]
+      - cell:
+        - generic "대기 중" [ref=e47]
+      - cell "2026. 10. 28." [ref=e48]: "2026. 10. 28.\n     업로드됨"
+      - cell "0" [ref=e49]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e50]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e51]: "0"
+    - row:
+      - cell "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen개 선택" [ref=e52]:
+        - checkbox "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen개 선택" [ref=e54]
+      - cell:
+        - link "동영상 미리보기 이미지: Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen " [ref=e55]
+        - link "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen" [ref=e56]
+        - text: "A concert does not always need a stage.\nTwo women sit close to a long wooden string instrument. Follow its body, its strings and the hands above them, and imagi…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e57]
+      - cell:
+        - generic "공개" [ref=e58]
+      - cell "2026. 10. 27." [ref=e59]: "2026. 10. 27.\n     게시일"
+      - cell "4" [ref=e60]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e61]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e62]: "0"
+    - row:
+      - cell "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture개 선택" [ref=e63]:
+        - checkbox "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture개 선택" [ref=e65]
+      - cell:
+        - link "동영상 미리보기 이미지: Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture 1:08" [ref=e66]
+        - link "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture" [ref=e67]
+        - text: "A low table meets people seated on the floor.\nThis small Korean table is called a soban. It could hold a meal and carry dishes into a room. Moved away after use…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e68]
+      - cell:
+        - generic "공개" [ref=e69]
+      - cell "2026. 10. 27." [ref=e70]: "2026. 10. 27.\n     게시일"
+      - cell "30" [ref=e71]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e72]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e73]: "0"
+    - row:
+      - cell "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e74]:
+        - checkbox "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e76]
+      - cell:
+        - link "동영상 미리보기 이미지: A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory 1:08" [ref=e77]
+        - link "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory" [ref=e78]
+        - text: "Rain changes a street, but it does not stop the day.\nSome people shelter under a roof while others keep moving. Look at the broad hats and the covers over a car…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e79]
+      - cell:
+        - generic "비공개" [ref=e80]
+      - cell "2026. 10. 26." [ref=e81]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e82]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e83]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e84]: "0"
+    - row:
+      - cell "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e85]:
+        - checkbox "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e87]
+      - cell:
+        - link "동영상 미리보기 이미지: A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory 1:08" [ref=e88]
+        - link "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory" [ref=e89]
+        - text: "What can a meal on the road tell us about daily life in Korea?\nUnder a thatched roof, people prepare and sell food. Bowls sit close to customers, while a carrie…[+339 chars]"
+      - cell:
+        - generic "—" [ref=e90]
+      - cell:
+        - generic "비공개" [ref=e91]
+      - cell "2026. 10. 26." [ref=e92]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e93]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e94]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e95]: "0"
+    - row:
+      - cell "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e96]:
+        - checkbox "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e98]
+      - cell:
+        - link "동영상 미리보기 이미지: Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture 1:08" [ref=e99]
+        - link "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture" [ref=e100]
+        - text: "Before electric irons, how did people make a garment smooth?\nTwo women beat cloth on a low stone in a Korean practice called dadeumijil. Washed and starched fab…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e101]
+      - cell:
+        - generic "비공개" [ref=e102]
+      - cell "2026. 10. 26." [ref=e103]: "2026. 10. 26.\n     업로드됨"
+      - cell "2" [ref=e104]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e105]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e106]: "0"
+    - row:
+      - cell "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e107]:
+        - checkbox "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e109]
+      - cell:
+        - link "동영상 미리보기 이미지: Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCult" [ref=e110]
+        - link "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture" [ref=e111]
+        - text: "How did people in Joseon-era Korea spend a day off?\nFour people sit around a low board. Today's star is yutnori.\n\nInstead of dice, players throw four wooden sti…[+339 chars]"
+      - cell:
+        - generic "—" [ref=e112]
+      - cell:
+        - generic "공개" [ref=e113]
+      - cell "2026. 10. 25." [ref=e114]: "2026. 10. 25.\n     게시일"
+      - cell "43" [ref=e115]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e116]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e117]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e118]:
+      - button "30" [ref=e119]
+    - text: "7개 중 1~7"
+    - button "첫 페이지로 이동" [ref=e120] [disabled]
+    - button "이전 페이지로 이동" [ref=e121] [disabled]
+    - button "다음 페이지로 이동" [ref=e122] [disabled]
+    - button "마지막 페이지로 이동" [ref=e123] [disabled]
+[ok | 280ms]
+repl > 
+await page.getByRole('button',{name:'만들기',exact:true}).click(); console.log((await snapshot(page,{selector:'[role=dialog]'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+[ok | 393ms]
+repl > 
+await page.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…) 
+[ok | 1591ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[ok | 31ms]
+repl > 
+console.log(await page.locator('input').evaluateAll(es=>es.map(e=>({type:e.type,name:e.name}))))
+[
+  { type: 'text', name: '' },
+  { type: 'text', name: '' },
+  { type: 'file', name: 'Filedata' }
+]
+[ok | 21ms]
+repl > 
+await page.locator('input[type=file][name=Filedata]').setInputFiles("./ep09-short-en-v31-cover.mp4"); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[ok | 56ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[ok | 26ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[ok | 90ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog [focused]:
+  - text: "동영상 업로드"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - text: "동영상 파일을 드래그 앤 드롭하여 업로드"
+  - button "파일 선택" [ref=e127] [disabled]
+  - paragraph:
+    - text: "YouTube에 동영상을 제출하면 YouTube"
+    - link "서비스 약관" [ref=e128]
+    - text: "및"
+    - link "커뮤니티 가이드" [ref=e129]
+    - text: "에 동의하게 됩니다."
+  - paragraph:
+    - text: "불법촬영물 게재시 삭제 조치되고 관련 법에 따라 처벌 받을 수 있습니다.\n    \n    동영상이 타인의 개인 정보 보호 또는 저작권을 침해하지 않는지 확인하세요."
+    - link "자세히 알아보기" [ref=e130]
+[ok | 43ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "ep09 short en v31 cover\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131] [selected]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134]
+  - generic [ref=e135] [scrollable]:
+    - heading "세부정보" [level=1]
+    - button "세부정보 재사용" [ref=e136]
+    - text: "제목(필수 항목)"
+    - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e138] [focused]: "ep09 short en v31 cover"
+    - status: "23/100"
+    - text: "설명"
+    - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e140]: "History, read through objects — TJ Kim Collection.\nStories of eras and people hidden in Korean postcards, rare books, antique maps, prints and records.\n\n#TJKimCollection #KoreanHistory #History"
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e141]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e142]
+    - button "동영상에서 선택" [ref=e144]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e145]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e146]:
+      - button "선택" [ref=e147]
+    - text: "시청자층 \n  아동용 동영상인가요? (필수사항)\n  \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e148]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e149]: "자세히 알아보기"
+    - radiogroup [ref=e150]:
+      - radio [ref=e151]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e152]
+      - radio "아니요, 아동용이 아닙니다" [ref=e153]
+    - button "연령 제한" [ref=e154]
+    - button "고급 설정 표시" [ref=e155]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e156]
+    - button "동영상 링크 복사" [ref=e157]
+    - text: "파일 이름 ep09-short-en-v31-cover.mp4"
+  - text: "4% 업로드 중 ..."
+  - button "다음" [ref=e158]
+[ok | 141ms]
+repl > 
+await (async()=>{const m=JSON.parse(await fs.readFile('./youtube-metadata.json','utf8')); await page.getByRole('textbox',{name:'동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)',exact:true}).fill(m.title); await page.getByRole('textbox',{name:'시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)',exact:true}).fill(m.description); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree);})()
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131] [selected]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134]
+  - generic [ref=e135] [scrollable]:
+    - heading "세부정보" [level=1]
+    - button "세부정보 재사용" [ref=e136]
+    - text: "제목(필수 항목)"
+    - textbox "동영상을 설명하는 제목 추가(채널을 멘션하려면 @ 입력)" [ref=e138]: "Food takes teamwork"
+    - text: "설명"
+    - textbox "시청자에게 동영상에 대해 설명해 주세요(채널을 멘션하려면 @ 입력)" [ref=e140] [focused]: "A good meal can depend on a well timed movement. Here, cooked grain is being pounded to make Korean rice cake. One worker brings a wooden mallet down while another turns and shapes the mass. Strength matters, but so does knowing when the other hand will move. Trace the bent back, the lifted arms, and the long handles. Another person and a passing dog make this a lived in workplace. A visitor might wonder about both the food and the tools used to make it. Look beyond the finished dish to the skill of working together. The painting is attributed to Uncho. From the TJ Kim Collection, the smallest pause between hands becomes part of the story.\n\nCollection: APKC260507306 · Korean genre painting, attributed to Uncho\nFrom the TJ KIM Collection\nMusic: Flow Music, “붓끝의 행진” (AI-generated music)\nVideo: A staged drawing sequence and AI-assisted image cleanup based on a collection image"
+    - status: "887/5000"
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e141]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e142]
+    - button "동영상에서 선택" [ref=e144]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e145]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e146]:
+      - button "선택" [ref=e147]
+    - text: "시청자층 \n  아동용 동영상인가요? (필수사항)\n  \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e148]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e149]: "자세히 알아보기"
+    - radiogroup [ref=e150]:
+      - radio [ref=e151]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e152]
+      - radio "아니요, 아동용이 아닙니다" [ref=e153]
+    - button "연령 제한" [ref=e154]
+    - button "고급 설정 표시" [ref=e155]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e156]
+    - button "동영상 링크 복사" [ref=e157]
+    - text: "파일 이름 ep09-short-en-v31-cover.mp4"
+  - text: "4% 업로드 중 ..."
+  - button "다음" [ref=e158]
+[ok | 213ms]
+repl > 
+await page.getByRole('radio',{name:'아니요, 아동용이 아닙니다',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131] [selected]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134]
+  - generic [ref=e135] [scrollable]:
+    - heading "세부정보" [level=1]
+    - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+    - link "썸네일 자세히 알아보기" [ref=e141]: "자세히 알아보기"
+    - button "파일 업로드" [ref=e142]
+    - button "동영상에서 선택" [ref=e144]
+    - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+    - link "재생목록 자세히 알아보기" [ref=e145]: "자세히 알아보기"
+    - button "재생목록 선택" [ref=e146]:
+      - button "선택" [ref=e147]
+    - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+    - link "아동용 콘텐츠란 무엇인가요?" [ref=e148]
+    - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e149]: "자세히 알아보기"
+    - radiogroup [ref=e150]:
+      - radio [ref=e151]:
+        - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+        - link "자세히 알아보기" [ref=e152]
+      - radio "아니요, 아동용이 아닙니다" [ref=e153] [checked] [focused]
+    - button "연령 제한" [ref=e154]
+    - button "고급 설정 표시" [ref=e155]: "자세히 보기"
+    - text: "유료 프로모션, 공동작업 등\n     동영상 업로드 중...동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e156]
+    - button "동영상 링크 복사" [ref=e157]
+    - text: "파일 이름 ep09-short-en-v31-cover.mp4"
+  - text: "4% 업로드 중 ..."
+  - button "다음" [ref=e158]
+[ok | 498ms]
+repl > 
+await page.getByRole('button',{name:'다음',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132] [focused] [selected]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134]
+  - heading "동영상 요소" [level=1]
+  - text: "카드와 최종 화면을 사용하여 시청자에게 관련 동영상, 웹사이트, 클릭 유도 문구를 표시하세요."
+  - link "자세히 알아보기" [ref=e159]
+  - heading "관련 동영상" [level=3]
+  - text: "동영상에 다른 동영상을 연결하세요."
+  - button "추가" [ref=e160]
+  - heading "자막" [level=3]
+  - text: "동영상에 자막을 추가하여 더 많은 시청자에게 다가가세요."
+  - button "추가" [ref=e161]
+  - text: "5% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "다음" [ref=e158]
+[ok | 395ms]
+repl > 
+await page.getByRole('button',{name:'다음',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133] [focused] [selected]
+    - tab "공개 상태" [ref=e134]
+  - heading "검토" [level=1]
+  - text: "YouTube에서 동영상에 공개 상태를 제한할 수 있는 문제가 있는지 검사합니다. 그러면 동영상을 게시하기 전에 문제를 해결할 수 있습니다.\n    SD 처리가 완료될 때까지 검토가 실행되지 않습니다."
+  - link "자세히 알아보기" [ref=e163]
+  - heading "저작권" [level=2]
+  - text: "동영상에 저작권 보호 콘텐츠가 포함되어 있는지 확인합니다.\n      주의: 검사 결과는 확정적이지 않습니다. 동영상에 영향을 미치는 문제가 나중에 발생할 수도 있습니다."
+  - link "자세히 알아보기" [ref=e164]
+  - button "의견 보내기" [ref=e166]
+  - text: "5% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "다음" [ref=e158]
+[ok | 397ms]
+repl > 
+await page.getByRole('button',{name:'다음',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [focused] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "5% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 427ms]
+repl > 
+await page.getByRole('radio',{name:'비공개',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "7% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 1605ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "9% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 46ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "11% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 97ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "11% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 45ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "13% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 70ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "15% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 51ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             저장 중..."
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "15% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "16% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "18% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "18% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 75ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "20% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 98ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "22% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 65ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "24% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 102ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "24% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 89ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "24% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 62ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "25% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 63ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "27% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "27% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 54ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "29% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 81ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "29% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 63ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "31% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 117ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "33% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 58ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "35% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 49ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "36% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 64ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "36% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 68ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "38% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 98ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "40% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 118ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "42% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 61ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "44% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 54ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "44% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 47ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "45% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 55ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "47% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 62ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "47% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 75ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "49% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 67ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "49% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "51% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 58ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "53% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 48ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "55% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 88ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "55% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 56ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "56% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 67ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "58% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 87ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "60% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 47ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "62% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 48ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "64% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 68ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "64% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 46ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "65% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "67% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 50ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "67% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 58ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "69% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 87ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "71% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 64ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "73% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 51ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "75% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 47ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "76% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "78% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 77ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "80% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 55ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "82% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 51ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "84% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 78ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "85% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 87ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "87% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 59ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "89% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 68ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "91% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 57ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "93% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 68ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "95% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 60ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "96% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 64ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "98% 업로드 중 ... 2분 남음"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 50ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "동영상 업로드 중...Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "100% 업로드 중 ..."
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 65ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "닫기" [ref=e125]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked] [focused]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "곧 처리 시작됨 Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e162]
+  - button "저장" [ref=e179]
+[ok | 67ms]
+repl > 
+await page.getByRole('button',{name:'저장',exact:true}).click(); console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "저장 후 닫기" [ref=e180] [disabled]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - progressbar
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "곧 처리 시작됨 Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e162] [disabled]
+  - button "저장" [ref=e179] [disabled]
+[ok | 952ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "저장 후 닫기" [ref=e180] [disabled]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - progressbar
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "곧 처리 시작됨 Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e162] [disabled]
+  - button "저장" [ref=e179] [disabled]
+[ok | 38ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+- dialog:
+  - text: "Food takes teamwork\n        \n        \n        \n          \n             비공개로 저장됨"
+  - button "의견 보내기" [ref=e124]
+  - button "저장 후 닫기" [ref=e180] [disabled]
+  - tablist:
+    - tab "세부정보" [ref=e131]
+    - tab "동영상 요소" [ref=e132]
+    - tab "검토" [ref=e133]
+    - tab "공개 상태" [ref=e134] [selected]
+  - progressbar
+  - generic [ref=e135] [scrollable]:
+    - heading "공개 상태" [level=1]
+    - text: "게시할 시기와 동영상을 볼 수 있는 사람을 선택하세요.\n  \n\n\n\n  \n    \n\n\n  \n    \n      \n        저장 또는 게시\n         동영상을  공개, 일부 공개  또는  비공개 로 설정합니다."
+    - radiogroup [ref=e168]:
+      - radio "비공개" [ref=e169] [checked]
+      - text: "나와 내가 선택한 사람만 내 동영상을 시청할 수 있습니다."
+      - button "비공개 공유" [ref=e170]
+      - radio "일부 공개" [ref=e171]
+      - text: "동영상 링크가 있으면 누구든 내 동영상을 볼 수 있습니다."
+      - radio "공개" [ref=e172]
+      - text: "누구나 내 동영상을 시청할 수 있습니다."
+    - generic [ref=e173]:
+      - text: "예약\n       동영상을  공개 로 설정할 날짜를 선택합니다."
+      - button "Click to expand" [ref=e174]
+    - heading "게시 전에 다음 사항을 확인하세요." [level=2]
+    - heading "이 동영상에 어린이가 등장하나요?" [level=3]
+    - text: "위해, 착취, 괴롭힘, 노동법 위반으로부터 미성년자를 보호하는 YouTube 정책을 준수해야 합니다."
+    - link "자세히 알아보기" [ref=e175]
+    - heading "콘텐츠 전반에 대한 가이드라인을 찾으시나요?" [level=3]
+    - text: "YouTube 커뮤니티 가이드는 문제를 예방하고 YouTube를 안전하고 활발한 커뮤니티로 유지할 수 있도록 도와줍니다."
+    - link "자세히 알아보기" [ref=e176]
+    - text: "곧 처리 시작됨 Food takes teamwork 동영상 링크"
+    - link "https://youtube.com/shorts/tcyjc0lhlBs" [ref=e177]
+    - button "동영상 링크 복사" [ref=e178]
+  - text: "업로드 완료 ... 곧 처리 시작됨"
+  - button "뒤로" [ref=e162] [disabled]
+  - button "저장" [ref=e179] [disabled]
+[ok | 55ms]
+repl > 
+console.log((await snapshot(page,{selector:'ytcp-uploads-dialog'})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%2…]
+[ok | 85ms]
+repl > 
+await (async()=>{const u=new URL(page.url());u.searchParams.delete('d');await page.goto(u.href);console.log((await snapshot(page,{selector:'ytcp-entity-page',interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - text: "TJ Kim Collection\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n          \n             \n              내 채널\n              \n            \n          \n          \n          \n             \n              TJ Kim Collection"
+  - menu:
+    - menuitem "대시보드" [ref=e11]
+    - menuitem "콘텐츠" [ref=e12]
+    - menuitem "분석" [ref=e13]
+    - menuitem "커뮤니티" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "콘텐츠 감지" [ref=e16]
+    - menuitem "수익 창출" [ref=e17]
+    - menuitem "맞춤설정" [ref=e18]
+    - menuitem "오디오 보관함" [ref=e19]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e22] [scrollable]:
+  - button "뒤로" [ref=e23]
+  - text: "Shorts 동영상"
+  - generic "동영상" [ref=e24]
+  - generic "Shorts 동영상" [ref=e25]
+  - generic "라이브" [ref=e26]
+  - generic "게시물" [ref=e27]
+  - generic "재생목록" [ref=e28]
+  - generic "프로모션" [ref=e29]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e31] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e32]:
+          - checkbox "전체 선택" [ref=e34]
+        - columnheader "Shorts 동영상" [ref=e35]
+        - columnheader "알림" [ref=e36]
+        - columnheader "공개 상태" [ref=e37]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e38]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e39]: "조회수"
+        - columnheader "댓글" [ref=e40]
+    - row:
+      - cell "Food takes teamwork개 선택" [ref=e41]:
+        - checkbox "Food takes teamwork개 선택" [ref=e43]
+      - cell:
+        - link [ref=e44]
+        - link "Food takes teamwork" [ref=e45]
+        - text: "곧 처리 시작됨"
+      - cell:
+        - generic "곧 검토가 시작됨" [ref=e46]
+      - cell:
+        - generic "대기 중" [ref=e47]
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell "A quiet contest개 선택" [ref=e48]:
+        - checkbox "A quiet contest개 선택" [ref=e50]
+      - cell:
+        - link "동영상 미리보기 이미지: A quiet contest 1:08" [ref=e51]
+        - link "A quiet contest" [ref=e52]
+        - text: "A chess player might recognize this concentration. But these lettered pieces belong to janggi, Korean chess. Each kind of piece moves by its own rules. The players must read the position and anticipate another move. Notice the lowered heads and the hands reaching toward the board. To a visitor, both the familiar contest and the unfamiliar pieces could be intriguing. You need not read every character to recognize the waiting and the thought. The picture preserves concentration rather than the fin"
+      - cell:
+        - generic "—" [ref=e53]
+      - cell:
+        - generic "비공개" [ref=e54]
+      - cell "2026. 10. 28." [ref=e55]: "2026. 10. 28.\n     업로드됨"
+      - cell "0" [ref=e56]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e57]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e58]: "0"
+    - row:
+      - cell "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen개 선택" [ref=e59]:
+        - checkbox "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen개 선택" [ref=e61]
+      - cell:
+        - link "동영상 미리보기 이미지: Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen " [ref=e62]
+        - link "Can You Hear a Silent Painting? | Music Without a Stage #KoreanCulture #korea #chosen" [ref=e63]
+        - text: "A concert does not always need a stage.\nTwo women sit close to a long wooden string instrument. Follow its body, its strings and the hands above them, and imagine a small musical moment inside a Korean room.\n\nThe painting is silent, yet the hands suggest music. Clothes alone cannot establish the figures' social position, and appearance alone does not identify the instrument. Look at the space between the figures and the window lines around them.\n\nCollection: APKC260507306 · Korean genre painting"
+      - cell:
+        - generic "—" [ref=e64]
+      - cell:
+        - generic "공개" [ref=e65]
+      - cell "2026. 10. 27." [ref=e66]: "2026. 10. 27.\n     게시일"
+      - cell "4" [ref=e67]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e68]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e69]: "0"
+    - row:
+      - cell "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture개 선택" [ref=e70]:
+        - checkbox "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture개 선택" [ref=e72]
+      - cell:
+        - link "동영상 미리보기 이미지: Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture 1:08" [ref=e73]
+        - link "Where Are the Dining Chairs? | A Korean Soban Table #KoreanCulture" [ref=e74]
+        - text: "A low table meets people seated on the floor.\nThis small Korean table is called a soban. It could hold a meal and carry dishes into a room. Moved away after use, it suited a room serving more than one purpose.\n\nLook at the height of the bowls, the hands and the seated bodies. This is one chosen scene rather than a picture of every household. A small piece of furniture helps us read the shape of a day.\n\nCollection: APKC260507306 · Korean genre painting, attributed to Uncho\nFrom the TJ KIM Collect"
+      - cell:
+        - generic "—" [ref=e75]
+      - cell:
+        - generic "공개" [ref=e76]
+      - cell "2026. 10. 27." [ref=e77]: "2026. 10. 27.\n     게시일"
+      - cell "30" [ref=e78]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e79]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e80]: "0"
+    - row:
+      - cell "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e81]:
+        - checkbox "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e83]
+      - cell:
+        - link "동영상 미리보기 이미지: A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory 1:08" [ref=e84]
+        - link "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory" [ref=e85]
+        - text: "Rain changes a street, but it does not stop the day.\nSome people shelter under a roof while others keep moving. Look at the broad hats and the covers over a carried load: clothing and everyday tools become ways to deal with the weather.\n\nBeyond the unfamiliar shapes are people working, resting and getting somewhere. This genre painting brings a rainy Korean street a little closer.\n\nCollection item: APKC260507306 · genre painting attributed to Uncho\nFrom the TJ Kim Collection\nMusic: Flow Music, \""
+      - cell:
+        - generic "—" [ref=e86]
+      - cell:
+        - generic "비공개" [ref=e87]
+      - cell "2026. 10. 26." [ref=e88]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e89]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e90]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e91]: "0"
+    - row:
+      - cell "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e92]:
+        - checkbox "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e94]
+      - cell:
+        - link "동영상 미리보기 이미지: A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory 1:08" [ref=e95]
+        - link "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory" [ref=e96]
+        - text: "What can a meal on the road tell us about daily life in Korea?\nUnder a thatched roof, people prepare and sell food. Bowls sit close to customers, while a carrier balances a broad tray on her head.\n\nThe exact dishes and type of shop cannot be identified from this picture alone. Follow the hands preparing food and the body carrying it: an unfamiliar shop becomes a place of familiar human effort.\n\nCollection item: APKC260507306 · genre painting attributed to Uncho\nFrom the TJ Kim Collection\nMusic:"
+      - cell:
+        - generic "—" [ref=e97]
+      - cell:
+        - generic "비공개" [ref=e98]
+      - cell "2026. 10. 26." [ref=e99]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e100]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e101]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e102]: "0"
+    - row:
+      - cell "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e103]:
+        - checkbox "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e105]
+      - cell:
+        - link "동영상 미리보기 이미지: Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture 1:08" [ref=e106]
+        - link "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture" [ref=e107]
+        - text: "Before electric irons, how did people make a garment smooth?\nTwo women beat cloth on a low stone in a Korean practice called dadeumijil. Washed and starched fabric was pounded to smooth its surface.\n\nFollow the wooden beaters and the different angles of their arms. This genre painting brings the often unseen work behind a clean white garment into view.\n\nCollection item: APKC260507306 · genre painting attributed to Uncho\nFrom the TJ Kim Collection\nMusic: Flow Music, \"종이 위의 바람\" (AI-generated music"
+      - cell:
+        - generic "—" [ref=e108]
+      - cell:
+        - generic "비공개" [ref=e109]
+      - cell "2026. 10. 26." [ref=e110]: "2026. 10. 26.\n     업로드됨"
+      - cell "2" [ref=e111]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e112]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e113]: "0"
+    - row:
+      - cell "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e114]:
+        - checkbox "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e116]
+      - cell:
+        - link "동영상 미리보기 이미지: Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCult" [ref=e117]
+        - link "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture" [ref=e118]
+        - text: "How did people in Joseon-era Korea spend a day off?\nFour people sit around a low board. Today's star is yutnori.\n\nInstead of dice, players throw four wooden sticks and move their pieces around the board, choosing routes and racing to bring every piece home. A lucky throw helps, but a smart choice matters too. Traditionally played around the Lunar New Year, the game brings families and neighbors together.\n\nFor 19th-century visitors to Korea, pictures like this were a window onto everyday life in"
+      - cell:
+        - generic "—" [ref=e119]
+      - cell:
+        - generic "공개" [ref=e120]
+      - cell "2026. 10. 25." [ref=e121]: "2026. 10. 25.\n     게시일"
+      - cell "43" [ref=e122]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e123]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e124]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e125]:
+      - button "30" [ref=e126]
+    - text: "8개 중 1~8"
+    - button "첫 페이지로 이동" [ref=e127] [disabled]
+    - button "이전 페이지로 이동" [ref=e128] [disabled]
+    - button "다음 페이지로 이동" [ref=e129] [disabled]
+    - button "마지막 페이지로 이동" [ref=e130] [disabled]
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [YouTube 스튜디오](https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[system] `page` navigated to: [채널 콘텐츠 - YouTube Studio](https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…) 
+[ok | 3187ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 29ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 34ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 45ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 32ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 78ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 95ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "곧 처리 시작됨"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 38ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 37ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 40ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 32ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 43ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 38ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 40ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 68ms]
+repl > 
+console.log((await snapshot(page,{selector:"ytcp-video-row:has(a[href=\"/video/tcyjc0lhlBs/edit\"])"})).tree)
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e41]:
+    - checkbox "Food takes teamwork개 선택" [ref=e43]
+  - cell:
+    - link [ref=e44]
+    - link "Food takes teamwork" [ref=e45]
+    - text: "HD까지 처리 ... 3분 남음"
+  - cell:
+    - generic "곧 검토가 시작됨" [ref=e46]
+  - cell:
+    - generic "대기 중" [ref=e47]
+  - cell
+  - cell
+  - cell
+[ok | 42ms]
+repl > 

@@ -1,0 +1,121 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- text: "채널 콘텐츠"
+- banner:
+  - button "메뉴 접기" [ref=e42]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e156]
+  - text: "동영상 미리보기 이미지: A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n      …[+346 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main:
+  - button "뒤로" [ref=e463]
+  - text: "Shorts 동영상"
+  - generic "동영상" [ref=e464]
+  - generic "Shorts 동영상" [ref=e465]
+  - generic "라이브" [ref=e466]
+  - generic "게시물" [ref=e467]
+  - generic "재생목록" [ref=e468]
+  - generic "프로모션" [ref=e469]
+  - table "동영상 목록":
+    - rowgroup:
+      - textbox "필터" [ref=e471] [placeholder="필터"]
+      - row "전체 선택 Shorts 동영상 알림 공개 상태 댓글":
+        - columnheader "전체 선택" [ref=e472]:
+          - checkbox "전체 선택" [ref=e474]
+        - columnheader "Shorts 동영상" [ref=e475]
+        - columnheader "알림" [ref=e476]
+        - columnheader "공개 상태" [ref=e477]
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 날짜" [ref=e478]: "날짜"
+        - columnheader:
+          - heading [level=3]:
+            - button "정렬 기준: 조회수" [ref=e479]: "조회수"
+        - columnheader "댓글" [ref=e480]
+    - row:
+      - cell "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e481]:
+        - checkbox "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory개 선택" [ref=e483]
+      - cell:
+        - link "동영상 미리보기 이미지: A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory 1:08" [ref=e484]
+        - link "A Rainy Day in Joseon Korea: Hats, Covers and Everyday Life #KoreanHistory" [ref=e485]
+        - text: "Rain changes a street, but it does not stop the day.\nSome people shelter under a roof while others keep moving. Look at the broad hats and the covers over a car…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e486]
+      - cell:
+        - generic "비공개" [ref=e487]
+      - cell "2026. 10. 26." [ref=e488]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e489]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e490]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e491]: "0"
+    - row:
+      - cell "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e492]:
+        - checkbox "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory개 선택" [ref=e494]
+      - cell:
+        - link "동영상 미리보기 이미지: A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory 1:08" [ref=e495]
+        - link "A Meal Along the Road: A Food Shop in Joseon Korea #KoreanHistory" [ref=e496]
+        - text: "What can a meal on the road tell us about daily life in Korea?\nUnder a thatched roof, people prepare and sell food. Bowls sit close to customers, while a carrie…[+339 chars]"
+      - cell:
+        - generic "—" [ref=e497]
+      - cell:
+        - generic "비공개" [ref=e498]
+      - cell "2026. 10. 26." [ref=e499]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e500]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e501]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e502]: "0"
+    - row:
+      - cell "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e503]:
+        - checkbox "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture개 선택" [ref=e505]
+      - cell:
+        - link "동영상 미리보기 이미지: Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture 1:08" [ref=e506]
+        - link "Before the Iron: How Koreans Smoothed Clothes | Dadeumijil #KoreanCulture" [ref=e507]
+        - text: "Before electric irons, how did people make a garment smooth?\nTwo women beat cloth on a low stone in a Korean practice called dadeumijil. Washed and starched fab…[+340 chars]"
+      - cell:
+        - generic "—" [ref=e508]
+      - cell:
+        - generic "비공개" [ref=e509]
+      - cell "2026. 10. 26." [ref=e510]: "2026. 10. 26.\n     업로드됨"
+      - cell "0" [ref=e511]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e512]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e513]: "0"
+    - row:
+      - cell "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e514]:
+        - checkbox "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture개 선택" [ref=e516]
+      - cell:
+        - link "동영상 미리보기 이미지: Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCult" [ref=e517]
+        - link "Joseon's Board Game: Yutnori, Korea's Game of Sticks and Strategy #yutnori #KoreanCulture" [ref=e518]
+        - text: "How did people in Joseon-era Korea spend a day off?\nFour people sit around a low board. Today's star is yutnori.\n\nInstead of dice, players throw four wooden sti…[+339 chars]"
+      - cell:
+        - generic "—" [ref=e519]
+      - cell:
+        - generic "공개" [ref=e520]
+      - cell "2026. 10. 25." [ref=e521]: "2026. 10. 25.\n     게시일"
+      - cell "22" [ref=e522]
+      - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e523]:
+        - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e524]: "0"
+    - text: "페이지당 행 수:"
+    - button [ref=e525]:
+      - button "30" [ref=e526]
+    - text: "4개 중 1~4"
+    - button "첫 페이지로 이동" [ref=e527] [disabled]
+    - button "이전 페이지로 이동" [ref=e528] [disabled]
+    - button "다음 페이지로 이동" [ref=e529] [disabled]
+    - button "마지막 페이지로 이동" [ref=e530] [disabled]
+[ok | 60ms]
+repl > 

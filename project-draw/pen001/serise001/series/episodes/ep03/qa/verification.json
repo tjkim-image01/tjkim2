@@ -1,0 +1,30 @@
+{
+  "id": "ep03",
+  "title": "옷을 두드리던 시간",
+  "file": "episodes/ep03/output/ep03-short-60s.mp4",
+  "sha256": "439192fc6fc9d605b8166a812016af0496d6457791272cef411b04b5f5821467",
+  "bytes": 30516218,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.7961453846153845,
+    "change": 12.028895897435897
+  },
+  "strokes": 249,
+  "asr_script_match": 0.9808695652173913,
+  "narration_end": 46.822750000000006,
+  "audio_rms_dbfs": -17.7418155670166,
+  "audio_peak_dbfs": -1.4299623763618674,
+  "music_rms_dbfs": -28.242801666259766,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

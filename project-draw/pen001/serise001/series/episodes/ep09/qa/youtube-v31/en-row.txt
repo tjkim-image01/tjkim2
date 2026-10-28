@@ -1,0 +1,18 @@
+- title: "채널 콘텐츠 - YouTube Studio" [url=https://studio.youtube.com/channel/UC_Etd3MCSdC1dPOicZ-Q7tw/videos/short?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%…]
+- row:
+  - cell "Food takes teamwork개 선택" [ref=e12]:
+    - checkbox "Food takes teamwork개 선택" [ref=e14]
+  - cell:
+    - link [ref=e15]:
+      - image "동영상 미리보기 이미지: Food takes teamwork"
+      - text: "1:08"
+    - link "Food takes teamwork" [ref=e16]
+    - text: "A good meal can depend on a well timed movement. Here, cooked grain is being pounded to make Korean rice cake. One worker brings a wooden mallet down while another turns and shapes the mass. Strength matters, but so does knowing when the other hand will move. Trace the bent back, the lifted arms, and the long handles. Another person and a passing dog make this a lived in workplace. A visitor might wonder about both the food and the tools used to make it. Look beyond the finished dish to the skil"
+  - cell:
+    - generic "—" [ref=e17]
+  - cell:
+    - generic "비공개" [ref=e18]
+  - cell "2026. 10. 28." [ref=e19]: "2026. 10. 28.\n     업로드됨"
+  - cell "0" [ref=e20]
+  - cell "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e21]:
+    - link "동영상에 0개의 댓글이 있습니다. 동영상 댓글 페이지" [ref=e22]: "0"

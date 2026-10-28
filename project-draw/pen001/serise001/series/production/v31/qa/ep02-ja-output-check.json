@@ -1,0 +1,15 @@
+{
+  "episode": "ep02",
+  "language": "ja",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.13456550240516663,
+  "body_audio_rms": 0.09758812934160233,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

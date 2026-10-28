@@ -1,0 +1,134 @@
+{
+  "strokes": 971,
+  "stages": [
+    {
+      "group": "left_woman",
+      "phase": "wash",
+      "start": 0.8,
+      "end": 8.4,
+      "strokes": 165,
+      "pigments": [
+        "blue",
+        "orange",
+        "ivory",
+        "skin",
+        "blush",
+        "ochre"
+      ]
+    },
+    {
+      "group": "left_woman",
+      "phase": "hair",
+      "start": 8.4,
+      "end": 12.600000000000001,
+      "strokes": 60,
+      "pigments": [
+        "ink"
+      ]
+    },
+    {
+      "group": "left_woman",
+      "phase": "ink",
+      "start": 12.600000000000001,
+      "end": 15.4,
+      "strokes": 89,
+      "pigments": [
+        "ink"
+      ]
+    },
+    {
+      "group": "right_woman",
+      "phase": "wash",
+      "start": 15.4,
+      "end": 23.0,
+      "strokes": 183,
+      "pigments": [
+        "green",
+        "pink",
+        "ivory",
+        "skin",
+        "blush",
+        "ochre",
+        "orange"
+      ]
+    },
+    {
+      "group": "right_woman",
+      "phase": "hair",
+      "start": 23.0,
+      "end": 27.200000000000003,
+      "strokes": 59,
+      "pigments": [
+        "ink"
+      ]
+    },
+    {
+      "group": "right_woman",
+      "phase": "ink",
+      "start": 27.200000000000003,
+      "end": 30.0,
+      "strokes": 77,
+      "pigments": [
+        "ink"
+      ]
+    },
+    {
+      "group": "objects",
+      "phase": "wash",
+      "start": 30,
+      "end": 35.8,
+      "strokes": 50,
+      "pigments": [
+        "ivory",
+        "wood",
+        "ochre",
+        "skin",
+        "orange",
+        "pink",
+        "blush"
+      ]
+    },
+    {
+      "group": "objects",
+      "phase": "ink",
+      "start": 35.8,
+      "end": 38.8,
+      "strokes": 20,
+      "pigments": [
+        "umber_ink"
+      ]
+    },
+    {
+      "group": "background",
+      "phase": "wash",
+      "start": 38.8,
+      "end": 47,
+      "strokes": 211,
+      "pigments": [
+        "ivory",
+        "ochre",
+        "skin",
+        "blue",
+        "green",
+        "orange",
+        "pink",
+        "blush"
+      ]
+    },
+    {
+      "group": "background",
+      "phase": "ink",
+      "start": 47,
+      "end": 49.8,
+      "strokes": 57,
+      "pigments": [
+        "umber_ink"
+      ]
+    }
+  ],
+  "rule": "one constant RGB pigment per stroke; texture and dilution in alpha only",
+  "color_change_lift_seconds": 0.13,
+  "approved_base_sha256": "d1d913340c3b78db34618affcfc63b568168ee7bfaed47d27a392123f971ec8f",
+  "MP4_created": false,
+  "saved_settings_unchanged": true
+}

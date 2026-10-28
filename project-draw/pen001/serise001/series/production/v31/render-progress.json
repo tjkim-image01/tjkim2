@@ -1,0 +1,101 @@
+{
+  "ep06-ko": {
+    "state": "complete",
+    "frames": 2025,
+    "elapsed": 198.67330000000075,
+    "file": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-ko-v31-cover.mp4"
+  },
+  "ep06-en": {
+    "state": "complete",
+    "frames": 2025,
+    "elapsed": 207.13780000000074,
+    "file": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-en-v31-cover.mp4"
+  },
+  "ep06-ja": {
+    "state": "complete",
+    "frames": 2025,
+    "elapsed": 214.31480000000076,
+    "file": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-ja-v31-cover.mp4"
+  },
+  "ep07-ko": {
+    "state": "queued"
+  },
+  "ep07-en": {
+    "state": "queued"
+  },
+  "ep07-ja": {
+    "state": "queued"
+  },
+  "ep08-ko": {
+    "state": "queued"
+  },
+  "ep08-en": {
+    "state": "queued"
+  },
+  "ep08-ja": {
+    "state": "queued"
+  },
+  "ep09-ko": {
+    "state": "queued"
+  },
+  "ep09-en": {
+    "state": "queued"
+  },
+  "ep09-ja": {
+    "state": "queued"
+  },
+  "ep10-ko": {
+    "state": "queued"
+  },
+  "ep10-en": {
+    "state": "queued"
+  },
+  "ep10-ja": {
+    "state": "queued"
+  },
+  "ep03-ko": {
+    "state": "queued"
+  },
+  "ep03-en": {
+    "state": "queued"
+  },
+  "ep03-ja": {
+    "state": "queued"
+  },
+  "ep02-ko": {
+    "state": "queued"
+  },
+  "ep02-en": {
+    "state": "queued"
+  },
+  "ep02-ja": {
+    "state": "queued"
+  },
+  "ep04-ko": {
+    "state": "queued"
+  },
+  "ep04-en": {
+    "state": "queued"
+  },
+  "ep04-ja": {
+    "state": "queued"
+  },
+  "ep05-ko": {
+    "state": "queued"
+  },
+  "ep05-en": {
+    "state": "queued"
+  },
+  "ep05-ja": {
+    "state": "queued"
+  },
+  "ep11-ko": {
+    "state": "queued"
+  },
+  "ep11-en": {
+    "state": "queued"
+  },
+  "ep11-ja": {
+    "state": "queued"
+  }
+}

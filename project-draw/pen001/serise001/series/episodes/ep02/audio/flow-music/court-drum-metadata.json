@@ -1,0 +1,49 @@
+{
+  "id": "2adede80-5821-4c15-926b-0749b41e898f",
+  "author_id": "81cc767c-e719-45b2-9df1-6bc07a2addcd",
+  "op_id": "25f11d9b-9038-503c-8572-aac3d9acb30c",
+  "op_type": "audio__create_song",
+  "duration": {
+    "status": "completed",
+    "value": "57.06666666666667"
+  },
+  "lyrics": {
+    "status": "completed",
+    "value": {
+      "id": "55161754-f78d-5b7f-9fa2-6a3cc8d6ba93",
+      "text": "[Instrumental]"
+    }
+  },
+  "lyrics_timing": {
+    "status": "not_requested"
+  },
+  "user_edited_lyrics_id": null,
+  "title": "궁중 북의 맺음",
+  "privacy": "unlisted",
+  "allow_public_use": true,
+  "has_vocals": null,
+  "has_cid_match": null,
+  "has_minor_vocals": null,
+  "image_id": "25f11d9b-9038-503c-8572-aac3d9acb30c",
+  "video_id": null,
+  "song_plan_id": null,
+  "created_at": "2026-10-25T10:17:53.380204Z",
+  "deleted_at": null,
+  "operation": {
+    "op_type": "audio__create_song",
+    "conversation_id": null,
+    "sound_prompt": "Korean traditional court large hide drum solo, single deep wooden barrel court buk jingo, short ending gesture dum da DUNG immediately at start, deep warm low wood and hide resonance, clean low final hit, no metal, no jing, no gong, no bells, acoustic room decay, isolated percussion sound effect",
+    "title": "궁중 북의 맺음",
+    "seed": null,
+    "lyrics_id": null
+  },
+  "is_favorite": false,
+  "preference_state": null,
+  "favorite_count": 0,
+  "play_count": 1,
+  "is_remix_eligible": true,
+  "audio_url": "https://storage.googleapis.com/producer-app-public/clips/2adede80-5821-4c15-926b-0749b41e898f.m4a",
+  "wav_url": "https://storage.googleapis.com/producer-app-public/clips/2adede80-5821-4c15-926b-0749b41e898f.wav",
+  "image_url": "https://storage.googleapis.com/producer-app-public/assets/25f11d9b-9038-503c-8572-aac3d9acb30c.jpg",
+  "video_url": null
+}

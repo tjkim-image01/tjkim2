@@ -1,0 +1,12 @@
+{
+  "episode": "ep06",
+  "language": "en",
+  "reference": "Korean actual audible onset",
+  "korean_first_audible": 9.7725,
+  "previous_first_audible": 8.377208,
+  "first_audible": 9.769104,
+  "difference": -0.0033960000000003987,
+  "tempo": 1,
+  "narration_end": 62.317896,
+  "intro_voice_free": true
+}

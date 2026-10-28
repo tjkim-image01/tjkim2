@@ -1,0 +1,21 @@
+{
+  "broken_links": [],
+  "zip_videos": 10,
+  "http": [
+    {
+      "url": "http://127.0.0.1:5184/series/site/",
+      "status": 200,
+      "bytes": "4446"
+    },
+    {
+      "url": "http://127.0.0.1:5184/series/research/sources.md",
+      "status": 200,
+      "bytes": "6164"
+    },
+    {
+      "url": "http://127.0.0.1:5184/series/output/TJ_KIM_FOLK_SHORTS_10.zip",
+      "status": 200,
+      "bytes": "281370200"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "url": "http://192.168.42.192:5185/",
+  "scope": "same Wi-Fi",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "path": "/work.html?id=cloth&lang=ko",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "path": "/assets/photos/album-3.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "path": "/series/episodes/ep03/output/ep03-short-ko-v18-cover.mp4",
+      "status": 200,
+      "type": "video/mp4"
+    },
+    {
+      "path": "/api/series-settings?episode=ep03",
+      "status": 200,
+      "type": "application/json; charset=utf-8"
+    }
+  ]
+}

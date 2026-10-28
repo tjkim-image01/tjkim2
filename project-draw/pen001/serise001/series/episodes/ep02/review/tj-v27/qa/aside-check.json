@@ -1,0 +1,9 @@
+{
+  "blank_dark_pixels": 0,
+  "cross_dark_pixels": 75258,
+  "stem_dark_pixels": 143847,
+  "complete_dark_pixels": 265218,
+  "j_ink_before_j_stroke": 0,
+  "final_pixel_difference": 0,
+  "rewind_exact": true
+}

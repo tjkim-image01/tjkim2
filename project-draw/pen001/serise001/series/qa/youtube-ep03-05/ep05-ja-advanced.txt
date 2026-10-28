@@ -1,0 +1,208 @@
+await (async()=>{console.log((await snapshot(page,{interactive:true})).tree)})()
+# note: interactive (clickable / focusable) elements only.
+- title: "동영상 세부정보 - YouTube Studio" [url=https://studio.youtube.com/video/PDvSryhrE28/edit]
+- text: "동영상 세부정보"
+- banner:
+  - button "메뉴 접기" [ref=e1]
+  - link "YouTube 스튜디오 대시보드" [ref=e2]
+  - button "검색" [ref=e3]
+  - button "도움말" [ref=e4]
+  - button "알림" [ref=e5]
+  - button "YouTube 스튜디오에 물어보기" [ref=e6]
+  - button "만들기" [ref=e7]
+  - button "Account" [ref=e8]
+- navigation:
+  - link "채널 콘텐츠" [ref=e549]
+  - text: "동영상 미리보기 이미지: 雨の日の朝鮮、傘だけが頼りだった？ 帽子と覆いに見る暮らしの知恵 #韓国文化\n\n\n    \n\n    \n    \n\n    \n       1:08\n    \n    \n  \n\n  \n  \n\n  \n  \n\n\n        \n        \n        \n        \n      …[+292 chars]"
+  - menu:
+    - menuitem "세부정보" [ref=e11]
+    - menuitem "분석" [ref=e12]
+    - menuitem "편집기" [ref=e13]
+    - menuitem "댓글" [ref=e14]
+    - menuitem "자막" [ref=e15]
+    - menuitem "소유권 주장" [ref=e16]
+    - menuitem "클립 및 Shorts 동영상" [ref=e17]
+  - button "설정" [ref=e20]
+  - button "의견 보내기" [ref=e21]
+- main [ref=e114] [scrollable]:
+  - heading "동영상 세부정보" [level=1]
+  - button "변경사항 실행취소" [ref=e551] [disabled]
+  - button "저장" [ref=e552] [disabled]
+  - button "옵션" [ref=e553]
+  - text: "썸네일 \n      눈에 띄고 시청자의 관심을 끄는 썸네일을 설정하세요."
+  - link "썸네일 자세히 알아보기" [ref=e558]: "자세히 알아보기"
+  - button "파일 업로드" [ref=e559]
+  - button "자동 생성된 미리보기 이미지 2 동영상에서 선택" [ref=e561]
+  - button "추천받기" [ref=e562]
+  - text: "재생목록 \n      동영상을 하나 이상의 재생목록에 추가하여 시청자를 위해 콘텐츠를 정리하세요."
+  - link "재생목록 자세히 알아보기" [ref=e563]: "자세히 알아보기"
+  - button "재생목록 선택" [ref=e564]:
+    - button "선택" [ref=e565]
+  - text: "시청자층 \n  이 동영상이 아동용이 아니라고 설정됨\n   크리에이터가 설정함 \n  모든 크리에이터는 위치에 상관없이 아동 온라인 개인정보 보호법(COPPA) 및 기타 법률을 준수해야 할 법적인 의무가 있습니다. 아동용 동영상인지 여부는 크리에이터가 지정해야 합니다."
+  - link "아동용 콘텐츠란 무엇인가요?" [ref=e566]
+  - link "동영상의 시청자층 설정 자세히 알아보기" [ref=e567]: "자세히 알아보기"
+  - radiogroup [ref=e568]:
+    - radio [ref=e569]:
+      - text: "예, 아동용입니다.\n          아동용 동영상에서는 개인 맞춤 광고 및 알림 등의 기능을 사용할 수 없습니다.\n  크리에이터가 아동용으로 설정한 동영상은 다른 아동용 동영상과 함께 추천될 가능성이 높습니다."
+      - link "자세히 알아보기" [ref=e570]
+    - radio "아니요, 아동용이 아닙니다" [ref=e571] [checked]
+  - button "연령 제한" [ref=e572]
+  - button "고급 설정 숨기기" [ref=e592] [focused]: "간략히 보기"
+  - text: "유료 프로모션\n \n    동영상에 간접 광고나 스폰서십과 같은 유료 프로모션이 포함된 경우 YouTube에 알려야 합니다. 그러면 YouTube에서 시청자에게 이를 알립니다."
+  - link "자세히 알아보기" [ref=e593]
+  - radiogroup [ref=e594]:
+    - radio "예, 동영상에 유료 프로모션이 포함되어 있습니다." [ref=e595]
+    - radio "아니요, 동영상에 유료 프로모션이 포함되어 있지 않습니다." [ref=e596]
+  - text: "브랜드 파트너십 \n      브랜드 파트너와 동영상 및 동영상 측정항목에 대한 액세스 권한을 공유하고 동영상 홍보를 허용하세요."
+  - link "자세히 알아보기" [ref=e597]
+  - button "액세스 코드 공유" [ref=e598]
+  - text: "AI 사용 다음과 같은 방식으로 AI를 사용하여 콘텐츠를 생성하거나 수정했나요?실제 인물이 말하거나 하지 않은 행동을 한 것처럼 보이게 만듦 실제 사건 또는 장소의 영상을 변경 실제로는 발생하지 않았으나 진짜처럼 보이는 장면을 생성 동영상의 주요 초점이 되는 음악 생성"
+  - radio "예, AI가 사용되었습니다." [ref=e599]: "예"
+  - radio "아니요, AI를 사용하지 않았습니다." [ref=e600]: "아니요"
+  - text: "YouTube 정책을 준수하려면 AI 사용에 관한 정보를 알려야 합니다. 여기에는 AI로 만들거나 편집한 사실적인 사운드 또는 시각 요소가 포함됩니다."
+  - link "예시 보기" [ref=e601]
+  - text: "'예'를 선택하면 콘텐츠에 라벨이 추가됩니다."
+  - link "자세히 알아보기" [ref=e602]
+  - text: "공동작업 \n      다른 크리에이터와 공동작업하여 시청자층을 늘리고 동영상의 도달범위를 다른 크리에이터의 시청자층으로 확대하세요."
+  - link "동영상 공동작업 자세히 알아보기" [ref=e603]: "자세히 알아보기"
+  - button "공동작업자 초대" [ref=e604]
+  - text: "자동 챕터 \n      챕터를 사용하면 동영상을 더 쉽게 시청할 수 있습니다. 동영상 설명에 챕터를 직접 만들어 자동 추천을 덮어쓸 수 있습니다."
+  - link "자동 챕터 자세히 알아보기" [ref=e605]: "자세히 알아보기"
+  - generic [ref=e606]:
+    - checkbox "자동 챕터 허용" [ref=e607] [checked]
+    - text: "자동 챕터 허용"
+  - text: "동영상 속 장소 \n      시청자가 동영상에 나온 주요 장소를 살펴볼 수 있도록 도와주세요. 식당, 상점과 같은 공공장소를 추천합니다. 내 현재 위치나 다른 개인 정보는 표시되지 않습니다."
+  - link "자동 장소 자세히 알아보기" [ref=e608]: "자세히 알아보기"
+  - generic [ref=e609]:
+    - checkbox "장소 정보 자동 제공 허용" [ref=e610] [checked]
+    - text: "장소 정보 자동 제공 허용"
+  - text: "개념 설명 자동 제공\n       실험 기능 시청자가 동영상을 나가지 않고도 생소한 용어를 이해하는 데 도움이 됩니다. 동영상에서 언급한 개념이 설명에 자동으로 표시될 수 있습니다."
+  - generic [ref=e611]:
+    - checkbox "개념 설명 자동 제공 허용" [ref=e612] [checked]
+    - text: "개념 설명 자동 제공 허용"
+  - text: "태그 \n    태그는 동영상의 콘텐츠에 일반적으로 맞춤법이 틀리는 단어가 있을 경우 유용합니다. 그 외에 시청자가 동영상을 찾는 데 있어 태그가 하는 역할은 제한적입니다."
+  - link "태그 자세히 알아보기" [ref=e613]: "자세히 알아보기"
+  - button "雨の日の朝鮮. 수정하려면 Enter 키를 누르세요." [ref=e614]:
+    - text: "雨の日の朝鮮"
+    - button "삭제" [ref=e615]
+  - button "朝鮮時代の暮らし. 수정하려면 Enter 키를 누르세요." [ref=e616]:
+    - text: "朝鮮時代の暮らし"
+    - button "삭제" [ref=e617]
+  - button "雨具. 수정하려면 Enter 키를 누르세요." [ref=e618]:
+    - text: "雨具"
+    - button "삭제" [ref=e619]
+  - button "雨をしのぐ知恵. 수정하려면 Enter 키를 누르세요." [ref=e620]:
+    - text: "雨をしのぐ知恵"
+    - button "삭제" [ref=e621]
+  - button "伝統の帽子. 수정하려면 Enter 키를 누르세요." [ref=e622]:
+    - text: "伝統の帽子"
+    - button "삭제" [ref=e623]
+  - button "笠. 수정하려면 Enter 키를 누르세요." [ref=e624]:
+    - text: "笠"
+    - button "삭제" [ref=e625]
+  - button "衣生活. 수정하려면 Enter 키를 누르세요." [ref=e626]:
+    - text: "衣生活"
+    - button "삭제" [ref=e627]
+  - button "韓服. 수정하려면 Enter 키를 누르세요." [ref=e628]:
+    - text: "韓服"
+    - button "삭제" [ref=e629]
+  - button "服装の歴史. 수정하려면 Enter 키를 누르세요." [ref=e630]:
+    - text: "服装の歴史"
+    - button "삭제" [ref=e631]
+  - button "天気と暮らし. 수정하려면 Enter 키를 누르세요." [ref=e632]:
+    - text: "天気と暮らし"
+    - button "삭제" [ref=e633]
+  - button "朝鮮時代. 수정하려면 Enter 키를 누르세요." [ref=e634]:
+    - text: "朝鮮時代"
+    - button "삭제" [ref=e635]
+  - button "朝鮮王朝. 수정하려면 Enter 키를 누르세요." [ref=e636]:
+    - text: "朝鮮王朝"
+    - button "삭제" [ref=e637]
+  - button "韓国史. 수정하려면 Enter 키를 누르세요." [ref=e638]:
+    - text: "韓国史"
+    - button "삭제" [ref=e639]
+  - button "韓国文化. 수정하려면 Enter 키를 누르세요." [ref=e640]:
+    - text: "韓国文化"
+    - button "삭제" [ref=e641]
+  - button "風俗画. 수정하려면 Enter 키를 누르세요." [ref=e642]:
+    - text: "風俗画"
+    - button "삭제" [ref=e643]
+  - button "韓国美術. 수정하려면 Enter 키를 누르세요." [ref=e644]:
+    - text: "韓国美術"
+    - button "삭제" [ref=e645]
+  - button "水墨画. 수정하려면 Enter 키를 누르세요." [ref=e646]:
+    - text: "水墨画"
+    - button "삭제" [ref=e647]
+  - button "歴史ショート. 수정하려면 Enter 키를 누르세요." [ref=e648]:
+    - text: "歴史ショート"
+    - button "삭제" [ref=e649]
+  - button "TJキム・コレクション. 수정하려면 Enter 키를 누르세요." [ref=e650]:
+    - text: "TJキム・コレクション"
+    - button "삭제" [ref=e651]
+  - textbox "태그" [ref=e652]
+  - button "모두 복사" [ref=e653]
+  - button "모두 삭제" [ref=e654]
+  - text: "각 태그의 뒤에 쉼표를 입력하세요.\n    \n      105/500\n     언어 및 자막 면제 인증서 동영상 언어와 자막 면제 인증서(필요한 경우)를 선택하세요."
+  - button [ref=e655]:
+    - button "동영상 언어 일본어" [ref=e656]
+  - button [ref=e657]:
+    - button "자막 면제 인증서 없음" [ref=e658]
+  - button [ref=e660]:
+    - button "제목 및 설명 언어 선택" [ref=e661]
+  - text: "다른 언어를 관리하려면"
+  - link "자막" [ref=e662]
+  - text: "으로 이동하세요.녹화 날짜 및 위치 동영상을 촬영한 시기와 위치를 추가합니다. 시청자는 위치별로 동영상을 검색할 수 있습니다."
+  - button [ref=e663]:
+    - button "녹화 날짜 없음" [ref=e664]
+  - button [ref=e665]:
+    - text: "동영상 위치"
+    - textbox "동영상 위치" [ref=e666] [placeholder="없음"]
+  - text: "라이선스"
+  - link "라이선스 유형" [ref=e667]
+  - text: "에 대해 알아보세요."
+  - button [ref=e668]:
+    - button "라이선스 표준 YouTube 라이선스" [ref=e669]
+  - generic [ref=e670]:
+    - checkbox "퍼가기 허용" [ref=e671] [checked]
+    - text: "퍼가기 허용"
+  - generic [ref=e673]:
+    - checkbox "구독 피드에 게시하고 구독자에게 알림 전송" [ref=e674] [checked]
+    - text: "구독 피드에 게시하고 구독자에게 알림 전송"
+  - text: "Shorts 리믹스 \n        다른 사용자가 이 동영상의 콘텐츠를 사용하여 Shorts 동영상을 만들 수 있도록 허용합니다. 리믹스를 허용하지 않으면 이 동영상에서 리믹스된 Shorts 동영상이 영구적으로 삭제됩니다."
+  - link "콘텐츠 리믹스 자세히 알아보기" [ref=e675]: "자세히 알아보기"
+  - radiogroup [ref=e676]:
+    - radio "동영상 및 오디오 리믹스 허용" [ref=e677] [checked]
+    - radio "오디오 리믹스만 허용" [ref=e678]
+  - text: "카테고리 시청자가 보다 쉽게 찾을 수 있도록 카테고리에 동영상을 추가하세요."
+  - button [ref=e679]:
+    - button "교육" [ref=e680]
+  - text: "댓글 및 평가 \n    댓글 표시 여부 및 방법을 선택하세요."
+  - button [ref=e681]:
+    - button "댓글 켜짐" [ref=e682]
+  - button [ref=e683]:
+    - button "검토 기본" [ref=e684]
+  - button [ref=e685]:
+    - button "댓글을 올릴 수 있는 사용자 모든 사용자" [ref=e686]
+  - button [ref=e687]:
+    - button "정렬 기준 인기순" [ref=e688]
+  - generic [ref=e689]:
+    - checkbox "동영상에 좋아요를 표시한 시청자 수 표시" [ref=e690] [checked]
+    - text: "동영상에 좋아요를 표시한 시청자 수 표시"
+  - text: "동영상 링크"
+  - button "동영상 링크 복사" [ref=e581]
+  - text: "파일 이름 ep05-short-ja-v18-cover.mp4 동영상 화질"
+  - generic [ref=e582]:
+    - img "표준 화질 완료"
+    - img "고화질 완료"
+  - text: "알림"
+  - generic "—" [ref=e583]
+  - generic [ref=e584]:
+    - text: "공개 상태\n        \n          \n            \n              \n             비공개"
+    - button "동영상 공개 상태 수정" [ref=e585]
+  - button [ref=e586]:
+    - button "관련 동영상 없음" [ref=e587]
+  - button [ref=e589]:
+    - button [ref=e590]:
+      - button "자막" [ref=e591]
+[ok | 118ms]
+repl > 

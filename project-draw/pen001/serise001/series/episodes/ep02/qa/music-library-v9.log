@@ -1,0 +1,16 @@
+{
+  pointPlayback: {
+    time: 29.836153,
+    paused: false,
+    duration: 174.5,
+    src: 'http://127.0.0.1:5184/series/music/flow-main-ready.m4a'
+  },
+  filmStayedPaused: true,
+  adoptedOffset: 29.9,
+  fullPlayback: { time: 0.00178, paused: false },
+  previewStopsWhenFilmPlays: true,
+  waveformOffset: 104.4,
+  mobileOverflow: false,
+  errors: [],
+  pass: true
+}

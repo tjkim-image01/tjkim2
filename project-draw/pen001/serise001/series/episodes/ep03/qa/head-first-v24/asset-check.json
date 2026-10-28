@@ -1,0 +1,37 @@
+{
+  "episode": "ep03",
+  "strokes": 770,
+  "single_RGB_assets_checked": 770,
+  "visible_asset_pixels": 12315688,
+  "people": [
+    {
+      "person": "left_woman",
+      "head": [
+        0.8,
+        4.988530653179984
+      ],
+      "body": [
+        5.120029357452962,
+        12.614298502936556
+      ],
+      "end": 18.515693900576963
+    },
+    {
+      "person": "right_woman",
+      "head": [
+        18.65600902385008,
+        23.091499243654958
+      ],
+      "body": [
+        23.223387693766664,
+        30.66322629297313
+      ],
+      "end": 36.79389892244557
+    }
+  ],
+  "minimum_reload_seconds": 0.1308955288055884,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "bb9715c4b241d73982b2a5806d777e07a2ef437cfd1367f44924fcacaf5fe429"
+}

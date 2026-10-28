@@ -1,0 +1,34 @@
+{
+  "uploadConversionAndCatalogue": true,
+  "invalidFileRejected": true,
+  "flow-calm": {
+    "duration": 154.3,
+    "firstSecondRmsDb": -29.5,
+    "quietestSecondDb": -35.3,
+    "secondsBelowMinus50": 0
+  },
+  "flow-main": {
+    "duration": 174.5,
+    "firstSecondRmsDb": -20.6,
+    "quietestSecondDb": -33.2,
+    "secondsBelowMinus50": 0
+  },
+  "flow-march": {
+    "duration": 160.9,
+    "firstSecondRmsDb": -18.4,
+    "quietestSecondDb": -31.4,
+    "secondsBelowMinus50": 0
+  },
+  "flow-night": {
+    "duration": 172.0,
+    "firstSecondRmsDb": -23.5,
+    "quietestSecondDb": -27.4,
+    "secondsBelowMinus50": 0
+  },
+  "flow-playful": {
+    "duration": 179.9,
+    "firstSecondRmsDb": -21.9,
+    "quietestSecondDb": -26.2,
+    "secondsBelowMinus50": 0
+  }
+}

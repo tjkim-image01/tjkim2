@@ -1,0 +1,281 @@
+{
+  "id": "ep11",
+  "number": 11,
+  "title": "물가에 모인 하루",
+  "hook": "세탁기 이전의 풍경",
+  "category": "일상·살림",
+  "album": 7,
+  "side": "right",
+  "duration": 66,
+  "byline": "운초 전칭 · TJ KIM 컬렉션",
+  "narration": [
+    "흰 천 한 장이 물가의 돌 위로 길게 펼쳐졌습니다. 붉은 저고리를 입은 여인은 한 손으로 천을 잡고, 다른 손에는 빨랫방망이를 들었습니다.",
+    "빨래를 물에 적시고 두드리고 헹구는 일. 세탁기와 집 안의 수도가 흔하지 않던 시절, 옷을 깨끗하게 하는 데에는 물가까지 오가는 발걸음과 손의 힘이 필요했습니다.",
+    "먼저 물과 돌의 경계를 그리고, 천이 젖어 늘어진 모양을 따라갑니다. 뒤쪽에서도 사람들이 일을 하고 있어, 빨래터가 한 사람만의 공간은 아니었음을 보여 줍니다.",
+    "외국인에게 이 풍경은 조선의 흰옷과 여성의 일상을 함께 설명하는 장면이었을 수 있습니다. 그러나 아름다운 물가와 고운 옷만 보면, 반복되는 노동의 무게를 놓치기 쉽습니다.",
+    "우리는 이제 옷의 색보다 손과 허리의 자세를 한 번 더 봅니다. 한 장의 풍속화에, 깨끗한 하루를 만들던 시간이 남아 있습니다."
+  ],
+  "voice_id": "S11",
+  "voice_text": "흰 천 한 장이 물가의 돌 위로 길게 펼쳐졌습니다. 붉은 저고리를 입은 여인은 한 손으로 천을 잡고, 다른 손에는 빨랫방망이를 들었습니다. 빨래를 물에 적시고 두드리고 헹구는 일. 세탁기와 집 안의 수도가 흔하지 않던 시절, 옷을 깨끗하게 하는 데에는 물가까지 오가는 발걸음과 손의 힘이 필요했습니다. 먼저 물과 돌의 경계를 그리고, 천이 젖어 늘어진 모양을 따라갑니다. 뒤쪽에서도 사람들이 일을 하고 있어, 빨래터가 한 사람만의 공간은 아니었음을 보여 줍니다. 외국인에게 이 풍경은 조선의 흰옷과 여성의 일상을 함께 설명하는 장면이었을 수 있습니다. 그러나 아름다운 물가와 고운 옷만 보면, 반복되는 노동의 무게를 놓치기 쉽습니다. 우리는 이제 옷의 색보다 손과 허리의 자세를 한 번 더 봅니다. 한 장의 풍속화에, 깨끗한 하루를 만들던 시간이 남아 있습니다.",
+  "voice_file": "S11.wav",
+  "video": "../episodes/ep11/output/ep11-short-60s.mp4",
+  "poster": "../episodes/ep11/art/poster.jpg",
+  "original": "../episodes/ep11/art/original-clean.png",
+  "source_photo": "../../../research/album-7.jpg",
+  "sources": [
+    {
+      "title": "기산 김준근 풍속화 소개 · 국사편찬위원회",
+      "url": "https://contents.history.go.kr/collection/level.do?levelId=mp_009_0030"
+    },
+    {
+      "title": "기산풍속도첩 · 서울역사박물관",
+      "url": "https://museum.seoul.go.kr/www/relic/RelicView.do?cdLanguage=KOR&mcseqno1=021945&mcseqno2=00000&mcsjgbnc=PS01003026001"
+    }
+  ],
+  "status": "ready",
+  "player_director": {
+    "intro_duration": 6,
+    "shots": [
+      {
+        "element": "front_woman",
+        "start": 0.8,
+        "end": 5.5097433862076635,
+        "box": [
+          539.0,
+          187.0,
+          829.0,
+          485.0
+        ]
+      },
+      {
+        "element": "front_woman",
+        "start": 5.5097433862076635,
+        "end": 19.530162613847153,
+        "box": [
+          539.0,
+          187.0,
+          829.0,
+          485.0
+        ]
+      },
+      {
+        "element": "rear_left",
+        "start": 19.530162613847153,
+        "end": 22.375437573144236,
+        "box": [
+          278.0,
+          173.5,
+          438.0,
+          303.5
+        ]
+      },
+      {
+        "element": "rear_left",
+        "start": 22.375437573144236,
+        "end": 27.552976774489704,
+        "box": [
+          278.0,
+          173.5,
+          438.0,
+          303.5
+        ]
+      },
+      {
+        "element": "rear_right",
+        "start": 27.552976774489704,
+        "end": 30.582066355076012,
+        "box": [
+          340.0,
+          145.0,
+          543.0,
+          280.0
+        ]
+      },
+      {
+        "element": "rear_right",
+        "start": 30.582066355076012,
+        "end": 36.8,
+        "box": [
+          340.0,
+          145.0,
+          543.0,
+          280.0
+        ]
+      },
+      {
+        "element": "objects",
+        "start": 36.8,
+        "end": 42.8,
+        "box": [
+          294.0,
+          95.0,
+          940.0,
+          569.0
+        ]
+      },
+      {
+        "element": "background",
+        "start": 42.8,
+        "end": 49.8,
+        "box": [
+          0,
+          0,
+          1000,
+          652
+        ]
+      }
+    ],
+    "brush_types": {
+      "fine": {
+        "label": "세필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "fine-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "medium": {
+        "label": "중필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "medium-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "large": {
+        "label": "대필",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "large-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      },
+      "flat": {
+        "label": "평붓",
+        "frames": 96,
+        "unique_frames": 96,
+        "atlas": "flat-atlas.png",
+        "width": 192,
+        "height": 288,
+        "columns": 12,
+        "rows": 8,
+        "anchor": [
+          62.4,
+          253.2
+        ]
+      }
+    },
+    "brush_frames": 96,
+    "viewport": [
+      0,
+      0,
+      1080,
+      1440
+    ],
+    "ink_bleed": 0.45,
+    "signature": "approved bitmap Tj v27 / angled close-up brush v29",
+    "signature_duration": 3.5,
+    "pressure_brush": {
+      "atlas": "pressure-atlas.png",
+      "width": 192,
+      "height": 288,
+      "anchor": [
+        62.4,
+        253.2
+      ],
+      "levels": 4,
+      "angles": 24
+    },
+    "caption_top": 1374,
+    "material": "fiber-height-wet-roughness-shader",
+    "caption_font_size": 60,
+    "brush_motion": "path-direction-speed-pressure-live-3d",
+    "intro_brush": "large-calligraphy-separate-tuft",
+    "intro_brush_scale": 9.04,
+    "intro_ink_bleed_multiplier": 2,
+    "brush_camera_reference": {
+      "intro": 3.6,
+      "painting": 5.14
+    },
+    "signature_canvas": [
+      1080,
+      1920
+    ],
+    "signature_approved": true,
+    "wet_ink_on_contact": true,
+    "signature_revision": 31,
+    "intro_brush_visible_from": 0
+  },
+  "player_music": {
+    "file": "../../../music/flow-calm-ready.m4a",
+    "title": "종이 위의 바람",
+    "source": "Google Flow Music original generation",
+    "hide_credit": true,
+    "effects_at": [
+      1,
+      1.35,
+      1.65,
+      1.93,
+      2.17,
+      2.38,
+      2.56,
+      2.73,
+      2.88,
+      3.02,
+      3.15,
+      3.27,
+      3.39,
+      3.5
+    ],
+    "separate_tracks": true,
+    "default_start": 5,
+    "default_offset": 0,
+    "intro_rim_file": "court-finish-v9.m4a",
+    "roll_file": "roll-v7.m4a",
+    "finish_instrument": "three-buk-inspired",
+    "gain_controls": true,
+    "finish_file": "court-finish-v9.m4a",
+    "finish_duration": 1.55,
+    "finish_at": 3.5,
+    "effects_scope": "intro-only"
+  },
+  "caption_style": "calm-myeongjo",
+  "caption_layout": {
+    "max_chars": 18,
+    "font_size": 54,
+    "top": 1374,
+    "one_line": true
+  },
+  "player_revision": "raster-v31",
+  "player_only": false,
+  "drawing_order": "각 인물 머리·얼굴 채색 → 몸 채색 → 세선 정리 → 다음 인물 → 물건 → 색별 배경",
+  "exports": {
+    "ko": "ep11-short-ko-v31-cover.mp4",
+    "en": "ep11-short-en-v31-cover.mp4",
+    "ja": "ep11-short-ja-v31-cover.mp4"
+  },
+  "cover_exports": {
+    "ko": "../episodes/ep11/art/covers-v18/ko.png",
+    "en": "../episodes/ep11/art/covers-v18/en.png",
+    "ja": "../episodes/ep11/art/covers-v18/ja.png"
+  },
+  "review_status": "approved-body-immediate-brush"
+}

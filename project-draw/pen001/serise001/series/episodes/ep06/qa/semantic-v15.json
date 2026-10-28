@@ -1,0 +1,50 @@
+{
+  "episode": "ep06",
+  "strokes": 395,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "left_woman_face",
+      "start": 0.8,
+      "end": 4.927651304265965
+    },
+    {
+      "key": "left_woman_body",
+      "start": 4.934375000000001,
+      "end": 9.984274488799478
+    },
+    {
+      "key": "left_woman_legs",
+      "start": 9.987500000000006,
+      "end": 13.810192394881529
+    },
+    {
+      "key": "right_woman_face",
+      "start": 13.815625000000013,
+      "end": 17.938883352473837
+    },
+    {
+      "key": "right_woman_body",
+      "start": 17.950000000000017,
+      "end": 22.99327375022965
+    },
+    {
+      "key": "right_woman_legs",
+      "start": 23.00312500000001,
+      "end": 26.82897578005892
+    },
+    {
+      "key": "objects",
+      "start": 26.831250000000015,
+      "end": 37.528300360312464
+    },
+    {
+      "key": "background",
+      "start": 37.550000000000004,
+      "end": 49.79820480044861
+    }
+  ],
+  "music": "flow-calm",
+  "source_backup": "versions/before-series-v15"
+}

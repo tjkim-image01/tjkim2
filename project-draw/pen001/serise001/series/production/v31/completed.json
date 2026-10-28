@@ -1,0 +1,244 @@
+{
+  "complete": true,
+  "episodes": 10,
+  "editions": 30,
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "intro_first_brush_seconds": 0,
+  "body_start_seconds": 6,
+  "body_seconds": 66,
+  "delivery_seconds": 67.5,
+  "EP06_background_target_pixels": 13187,
+  "EP06_early_background_pixels": 0,
+  "EP06_late_background_coverage": 1,
+  "EP06_first_frame_MAE": {
+    "ko": 0.9670302854938272,
+    "en": 0.9673011509773662,
+    "ja": 0.9671608153292182
+  },
+  "old_delivery_files_preserved": 60,
+  "other_body_json_and_all_saved_settings_narration_preserved": true,
+  "library_copies_identical": true,
+  "library_files": 31,
+  "outputs": [
+    {
+      "episode": "ep02",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep02/output/ep02-short-ko-v31-cover.mp4",
+      "sha256": "a96967bed98da9e08210d7c95ab43fe91f9daa7433edca38f486d3f29394fcba"
+    },
+    {
+      "episode": "ep02",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep02/output/ep02-short-en-v31-cover.mp4",
+      "sha256": "c0c07d9d2368c0b1605fbdfd199411a6a693aaf43db6cb4de8762b2bd4bdfb3f"
+    },
+    {
+      "episode": "ep02",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep02/output/ep02-short-ja-v31-cover.mp4",
+      "sha256": "55c8482b0ce875db6218ab5f4d23937e334ee005bacb3996e7a2dbfb5a4c371d"
+    },
+    {
+      "episode": "ep03",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep03/output/ep03-short-ko-v31-cover.mp4",
+      "sha256": "88b44014557d62441a1d1d1f0139ff8370582cb873eeec922525ceea510cb116"
+    },
+    {
+      "episode": "ep03",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep03/output/ep03-short-en-v31-cover.mp4",
+      "sha256": "9881a9fdd1a7fa5c3bb6cef8c874a73cab65bd654a6eb73347d5a2c4648a17f4"
+    },
+    {
+      "episode": "ep03",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep03/output/ep03-short-ja-v31-cover.mp4",
+      "sha256": "7bda8dd69f21ba5f1a4bc531259f961eee5077897df66eeece0b556d7b0606cc"
+    },
+    {
+      "episode": "ep04",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep04/output/ep04-short-ko-v31-cover.mp4",
+      "sha256": "f4f805efd5dccad73ed146b9452ff21ad0aeb4739dcf04be7ec4d19d2bd5b3b6"
+    },
+    {
+      "episode": "ep04",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep04/output/ep04-short-en-v31-cover.mp4",
+      "sha256": "a185a2017a00d75006aa2aa11983237bcbca87caff0926e4f7c1c2b47fa0ac96"
+    },
+    {
+      "episode": "ep04",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep04/output/ep04-short-ja-v31-cover.mp4",
+      "sha256": "a592d95189ef4953ad1c2c49db19163507a1f99db4c20e4c843d00b92674e84d"
+    },
+    {
+      "episode": "ep05",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep05/output/ep05-short-ko-v31-cover.mp4",
+      "sha256": "1c2a36f9ecef24ac8f84df89ebdd76893f1f1e0215b0ce7abc37e782cf62cade"
+    },
+    {
+      "episode": "ep05",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep05/output/ep05-short-en-v31-cover.mp4",
+      "sha256": "b22b00b85a6abbaa0a4670828f35f45e70cf39ee68e2935b434e1046821bc6e7"
+    },
+    {
+      "episode": "ep05",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep05/output/ep05-short-ja-v31-cover.mp4",
+      "sha256": "27a35df1697724dd1a640346bef203cabe1e69e78c5f584a23934b46c2bf0fee"
+    },
+    {
+      "episode": "ep06",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-ko-v31-cover.mp4",
+      "sha256": "5534edeaa18ff7e2cc7b41642eb32fcb44376933d29741605e3c861fb8fb546e"
+    },
+    {
+      "episode": "ep06",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-en-v31-cover.mp4",
+      "sha256": "5b9ab7855ede31f379eda871949feca552193ef0f85722fb44620c9e8d0914da"
+    },
+    {
+      "episode": "ep06",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep06/output/ep06-short-ja-v31-cover.mp4",
+      "sha256": "ebcdcbbfc7b91bb35f8f057edf075e1a7b9068332e2732060d3cc21ab747ca67"
+    },
+    {
+      "episode": "ep07",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-ko-v31-cover.mp4",
+      "sha256": "87cf4cda18c071619a4a8a41958322c00b862b7d685c687a58a771e0fa6c512e"
+    },
+    {
+      "episode": "ep07",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-en-v31-cover.mp4",
+      "sha256": "b2464eff4f6cbbe80487945a7337f02379860428f4a1a3e905ddec8eec38b8b5"
+    },
+    {
+      "episode": "ep07",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-ja-v31-cover.mp4",
+      "sha256": "5ea099811aac70381d01e00a487eba6c22ac8bc149793f61b3188efe35b3304c"
+    },
+    {
+      "episode": "ep08",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-ko-v31-cover.mp4",
+      "sha256": "f5cdefe152e7cd4cde4fd48b43692e096f48ca818946649591840a060a341824"
+    },
+    {
+      "episode": "ep08",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-en-v31-cover.mp4",
+      "sha256": "b97f448911e62facc55b27d7511a2bc83351e6cdae805dd46e51d83bdd300562"
+    },
+    {
+      "episode": "ep08",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep08/output/ep08-short-ja-v31-cover.mp4",
+      "sha256": "6324e7355e7b206e6cbaf5184f764bc12bd7cf2a6de3378a90a97e0691d4ce75"
+    },
+    {
+      "episode": "ep09",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep09/output/ep09-short-ko-v31-cover.mp4",
+      "sha256": "7e8a0f41a90c376f216b907f5cd1a5644830220dfab4ad83a94042eb9379b376"
+    },
+    {
+      "episode": "ep09",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep09/output/ep09-short-en-v31-cover.mp4",
+      "sha256": "8831827422a46b30dd9a4cfdd1ef4933983ece0b185ee3dddceba8e3e9b1af84"
+    },
+    {
+      "episode": "ep09",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep09/output/ep09-short-ja-v31-cover.mp4",
+      "sha256": "0046227cd86c503f0c4cdc00da968609b9b57a91fb2016cdb74ff89abbf4249a"
+    },
+    {
+      "episode": "ep10",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep10/output/ep10-short-ko-v31-cover.mp4",
+      "sha256": "d80272163207a2bf23273f5ea5cf4e3de966e1134a6fdac5445fd5bebc2bf963"
+    },
+    {
+      "episode": "ep10",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep10/output/ep10-short-en-v31-cover.mp4",
+      "sha256": "382ad5a2123639269e79ba1fb20430789ce978025eb73159fd573a28a177ae57"
+    },
+    {
+      "episode": "ep10",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep10/output/ep10-short-ja-v31-cover.mp4",
+      "sha256": "80fa89a1c40d8f872098767523a47af8c495cb8d87ffd32fe54508687b98941b"
+    },
+    {
+      "episode": "ep11",
+      "language": "ko",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep11/output/ep11-short-ko-v31-cover.mp4",
+      "sha256": "01d777deb6c8dfd5adbbbb8f955f04777c6979cc78ef535380211c73a102926d"
+    },
+    {
+      "episode": "ep11",
+      "language": "en",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep11/output/ep11-short-en-v31-cover.mp4",
+      "sha256": "34ddf5a121789fab5ef1a43e59b35182ecba9b1da5bf53a84381f563d01977b6"
+    },
+    {
+      "episode": "ep11",
+      "language": "ja",
+      "path": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep11/output/ep11-short-ja-v31-cover.mp4",
+      "sha256": "e11d603ce7b979d7b9079c8672e1d020a29dbaeb6a4d69cf55afa962de831428"
+    }
+  ],
+  "bundles": {
+    "ko": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_KO_10_v31.zip",
+      "bytes": 246176816,
+      "size_mb": 246,
+      "sha256": "65cbe91a203881ab209f6eab23c48e76fe9e2d1748584153eeae801cf01ceb76",
+      "episodes": 10,
+      "language": "ko",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "81164153912f0f9211e88bae09d27e4c7418b77e2522b9d88aec9203b4c920e9"
+    },
+    "en": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_EN_10_v31.zip",
+      "bytes": 246399796,
+      "size_mb": 246,
+      "sha256": "7cdcb781658a0e7d20a5df37ad9880297d1bee5b5d2244bcfd23a03edf1f7252",
+      "episodes": 10,
+      "language": "en",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "bfed04c71e7ee13625a33a679bd19b5bbf709cc96a4d73a63d06ebd3af7cf3e2"
+    },
+    "ja": {
+      "url": "../output/TJ_KIM_FOLK_SHORTS_JA_10_v31.zip",
+      "bytes": 248446410,
+      "size_mb": 248,
+      "sha256": "790a0bebb3e8435d5cdb388064752734308af588870270810ff7cc5c8c1f94d1",
+      "episodes": 10,
+      "language": "ja",
+      "revision": "raster-immediate-brush-v31",
+      "source_fingerprint": "75c116a8f5fc31ad36ebf2c969de95c814eccd95bc7c2240b5fc2fd04364a774"
+    }
+  },
+  "public_deployed": true,
+  "public_url": "https://tjkim-image01.github.io/pen001/",
+  "public_verification": "../../../deploy/pages-v31-verification.json",
+  "public_commit": "e9a4b6d51bf05b325898c4be3d90d3f7ae7d22e6"
+}

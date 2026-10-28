@@ -1,0 +1,1364 @@
+{
+  "revision": "localized-cover-v18",
+  "episodes": 10,
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "exports": [
+    {
+      "episode": "ep02",
+      "language": "ko",
+      "video": "../episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep02/art/covers-v18/ko.png",
+      "sha256": "592a51f3237b1f0607a4a42181fe8cebc78d2c3d7590df87ac56847c10f913c1",
+      "checks": {
+        "cover_last_frame_mae": 2.5942566872427983,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.06474537037037037,
+        "audio_correlation": 0.9998427106866271,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep02",
+      "language": "en",
+      "video": "../episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep02/art/covers-v18/en.png",
+      "sha256": "fa5c39385128cb136d613c9fe63887bfbdf69e772439db706001c02691c6d0b7",
+      "checks": {
+        "cover_last_frame_mae": 2.686550925925926,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.06213991769547325,
+        "audio_correlation": 0.99994893676551,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep02",
+      "language": "ja",
+      "video": "../episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep02/art/covers-v18/ja.png",
+      "sha256": "a32e53f12cc0cc3db2cd1c68f9f9f367d48f26390cde768c295a7d85adde0622",
+      "checks": {
+        "cover_last_frame_mae": 2.6190380658436214,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.06123713991769547,
+        "audio_correlation": 0.9997600092110365,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep03",
+      "language": "ko",
+      "video": "../episodes/ep03/output/ep03-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep03/art/covers-v18/ko.png",
+      "sha256": "69869527986748050b7e9c53d56ac37f0fa3a35ee90e2aa23889a4d483b5c850",
+      "checks": {
+        "cover_last_frame_mae": 2.5846013374485595,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.06726080246913581,
+        "audio_correlation": 0.9999318280960438,
+        "cover_silence_peak": 3.2756099699327024e-06
+      }
+    },
+    {
+      "episode": "ep03",
+      "language": "en",
+      "video": "../episodes/ep03/output/ep03-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep03/art/covers-v18/en.png",
+      "sha256": "9409284d34fc6c7c1fa180083341f0326e2429401a5a441fb2f62fa98da6749d",
+      "checks": {
+        "cover_last_frame_mae": 2.586144547325103,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.09869084362139918,
+        "audio_correlation": 0.9999140364588694,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep03",
+      "language": "ja",
+      "video": "../episodes/ep03/output/ep03-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep03/art/covers-v18/ja.png",
+      "sha256": "c4b90f6501438f396b1f67831c31e669b59a271329bc6a7beb0c54b0864bcd85",
+      "checks": {
+        "cover_last_frame_mae": 2.5441512345679014,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.09168724279835391,
+        "audio_correlation": 0.9996802370395319,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep04",
+      "language": "ko",
+      "video": "../episodes/ep04/output/ep04-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep04/art/covers-v18/ko.png",
+      "sha256": "e349f00b4f6dc9307770ec38b74107690c42a8e50d921e489e5b8600773f5724",
+      "checks": {
+        "cover_last_frame_mae": 2.7415020576131686,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.14027006172839507,
+        "audio_correlation": 0.9997663679662999,
+        "cover_silence_peak": 1.1697849231495638e-06
+      }
+    },
+    {
+      "episode": "ep04",
+      "language": "en",
+      "video": "../episodes/ep04/output/ep04-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep04/art/covers-v18/en.png",
+      "sha256": "57bd58692f220cc55b9d43c31fd80f599336ad4fbf7d7ecc8b806b25b9eb7bb4",
+      "checks": {
+        "cover_last_frame_mae": 2.8035493827160494,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.14384002057613168,
+        "audio_correlation": 0.9999573326818928,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep04",
+      "language": "ja",
+      "video": "../episodes/ep04/output/ep04-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep04/art/covers-v18/ja.png",
+      "sha256": "7e8afab302886b7f947ae71063f6f2155b033c2310aad3b3b28996b148ca376d",
+      "checks": {
+        "cover_last_frame_mae": 2.72613683127572,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.09559156378600824,
+        "audio_correlation": 0.9997876134458175,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep05",
+      "language": "ko",
+      "video": "../episodes/ep05/output/ep05-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep05/art/covers-v18/ko.png",
+      "sha256": "e7463e44b1dbef653b1c8aff3b568433b9457cd0971e1f6dc896dbeb37b7c3ce",
+      "checks": {
+        "cover_last_frame_mae": 2.4883050411522634,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.1533256172839506,
+        "audio_correlation": 0.9998891926376554,
+        "cover_silence_peak": 1.063451145455474e-05
+      }
+    },
+    {
+      "episode": "ep05",
+      "language": "en",
+      "video": "../episodes/ep05/output/ep05-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep05/art/covers-v18/en.png",
+      "sha256": "7d4ed61cdef8f8fc6c4fbb43b67dd7d43f228388b616f6318eac0b5726289ca4",
+      "checks": {
+        "cover_last_frame_mae": 2.551093106995885,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.10940586419753086,
+        "audio_correlation": 0.9999578422308695,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep05",
+      "language": "ja",
+      "video": "../episodes/ep05/output/ep05-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep05/art/covers-v18/ja.png",
+      "sha256": "08135bd0076d77062ee7aea54c9e022cb8a089f529b4bbfee7718fa9a292b0f6",
+      "checks": {
+        "cover_last_frame_mae": 2.5340612139917695,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.10465020576131687,
+        "audio_correlation": 0.9998030058818147,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep06",
+      "language": "ko",
+      "video": "../episodes/ep06/output/ep06-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep06/art/covers-v18/ko.png",
+      "sha256": "0b6293a51f4e19250d5b03abee52f43ddfe89b30d604e8df31c7effd067b4099",
+      "checks": {
+        "cover_last_frame_mae": 2.637178497942387,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.07210390946502057,
+        "audio_correlation": 0.9999412334465596,
+        "cover_silence_peak": 5.266600737741101e-07
+      }
+    },
+    {
+      "episode": "ep06",
+      "language": "en",
+      "video": "../episodes/ep06/output/ep06-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep06/art/covers-v18/en.png",
+      "sha256": "69edd3e0f9f143478894a6a7f14bd90576a6bf77df3593a351171b24ea3acc82",
+      "checks": {
+        "cover_last_frame_mae": 2.635108024691358,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.07393004115226337,
+        "audio_correlation": 0.9999649525789187,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep06",
+      "language": "ja",
+      "video": "../episodes/ep06/output/ep06-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep06/art/covers-v18/ja.png",
+      "sha256": "e6f1e76b11dc1dc650f4b2fd8f81b65cb2e41704bfb053e13b5d2cb8a6cfb2dc",
+      "checks": {
+        "cover_last_frame_mae": 2.6391203703703705,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.07033179012345679,
+        "audio_correlation": 0.9998290162672099,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep07",
+      "language": "ko",
+      "video": "../episodes/ep07/output/ep07-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep07/art/covers-v18/ko.png",
+      "sha256": "920a038958c17d525db84095a1ec4c0593fcfec3e0b80d7b18c782161d08f68f",
+      "checks": {
+        "cover_last_frame_mae": 2.4628703703703705,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.1123533950617284,
+        "audio_correlation": 0.9998552643483732,
+        "cover_silence_peak": 1.4193220749803004e-06
+      }
+    },
+    {
+      "episode": "ep07",
+      "language": "en",
+      "video": "../episodes/ep07/output/ep07-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep07/art/covers-v18/en.png",
+      "sha256": "ee0b1edf0b34c1ee832d215d4f56f964e5495f8cc09fb306e2a965614806b8cf",
+      "checks": {
+        "cover_last_frame_mae": 2.3980375514403294,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.11148405349794238,
+        "audio_correlation": 0.9999501757814683,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep07",
+      "language": "ja",
+      "video": "../episodes/ep07/output/ep07-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep07/art/covers-v18/ja.png",
+      "sha256": "4b48fc0f5b87c39ce913c748a93785a4243daf1fe4dcde46fe766fe3ce647f1b",
+      "checks": {
+        "cover_last_frame_mae": 2.4355581275720164,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.1131224279835391,
+        "audio_correlation": 0.9996902447178148,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep08",
+      "language": "ko",
+      "video": "../episodes/ep08/output/ep08-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep08/art/covers-v18/ko.png",
+      "sha256": "fe0fd051112055f805da8699bbcb7d7b1bc82321578e0d0652311173931ae88e",
+      "checks": {
+        "cover_last_frame_mae": 2.2254989711934154,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.08329218106995885,
+        "audio_correlation": 0.9998730351760081,
+        "cover_silence_peak": 2.4308675961037807e-07
+      }
+    },
+    {
+      "episode": "ep08",
+      "language": "en",
+      "video": "../episodes/ep08/output/ep08-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep08/art/covers-v18/en.png",
+      "sha256": "6ef19996c1d1da9998757dca60cec366716c238b607e47de5b4a9ccc9ceacb13",
+      "checks": {
+        "cover_last_frame_mae": 2.2067026748971195,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.08115740740740741,
+        "audio_correlation": 0.9999770090709654,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep08",
+      "language": "ja",
+      "video": "../episodes/ep08/output/ep08-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep08/art/covers-v18/ja.png",
+      "sha256": "cb20668918d5fd351bbad97e55e3dd847580850d8b6ce0042208b25947de3ef7",
+      "checks": {
+        "cover_last_frame_mae": 2.1686625514403293,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.08054526748971193,
+        "audio_correlation": 0.9996030242854471,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep09",
+      "language": "ko",
+      "video": "../episodes/ep09/output/ep09-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep09/art/covers-v18/ko.png",
+      "sha256": "77a337bb052b928ae2fd16041285a648b3aaa9d8721630b903100bd752c8ed72",
+      "checks": {
+        "cover_last_frame_mae": 2.4099022633744855,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.10676183127572017,
+        "audio_correlation": 0.9998672209261223,
+        "cover_silence_peak": 1.3906792446505278e-06
+      }
+    },
+    {
+      "episode": "ep09",
+      "language": "en",
+      "video": "../episodes/ep09/output/ep09-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep09/art/covers-v18/en.png",
+      "sha256": "661dc5fbade96c035c55f77caf74451274c4f7955e59242ced1a01b639356f18",
+      "checks": {
+        "cover_last_frame_mae": 2.5023173868312756,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.11156121399176955,
+        "audio_correlation": 0.9999680490987384,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep09",
+      "language": "ja",
+      "video": "../episodes/ep09/output/ep09-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep09/art/covers-v18/ja.png",
+      "sha256": "a4266150363ec7a831c0957e58ebecc5b05f183bd880375965feedbf41c83000",
+      "checks": {
+        "cover_last_frame_mae": 2.384341563786008,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.11141460905349794,
+        "audio_correlation": 0.9997835450964125,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep10",
+      "language": "ko",
+      "video": "../episodes/ep10/output/ep10-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep10/art/covers-v18/ko.png",
+      "sha256": "078bbf63542a0045255e66c917718d1453a06d9f3184a7303f9db838f81d25be",
+      "checks": {
+        "cover_last_frame_mae": 2.4167824074074074,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.16493569958847737,
+        "audio_correlation": 0.9999180928141331,
+        "cover_silence_peak": 7.693082011428487e-07
+      }
+    },
+    {
+      "episode": "ep10",
+      "language": "en",
+      "video": "../episodes/ep10/output/ep10-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep10/art/covers-v18/en.png",
+      "sha256": "c7cda0029e842703f4375150fd6e3bcca1ad4d612cf70956fc37b814b6e531f7",
+      "checks": {
+        "cover_last_frame_mae": 2.4923045267489714,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.1585005144032922,
+        "audio_correlation": 0.9999602206432694,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep10",
+      "language": "ja",
+      "video": "../episodes/ep10/output/ep10-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep10/art/covers-v18/ja.png",
+      "sha256": "4505d43c401fa6dab2f04909a0b5814a8e69264b855330765a28583ff7ba1da3",
+      "checks": {
+        "cover_last_frame_mae": 2.395347222222222,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.16011316872427983,
+        "audio_correlation": 0.999866615092027,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep11",
+      "language": "ko",
+      "video": "../episodes/ep11/output/ep11-short-ko-v18-cover.mp4",
+      "poster": "../episodes/ep11/art/covers-v18/ko.png",
+      "sha256": "6dc1a0ed78e838d6b36c50b5008c795ec523eb265170623d8d103540e922c42f",
+      "checks": {
+        "cover_last_frame_mae": 2.600516975308642,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.0657201646090535,
+        "audio_correlation": 0.9998897074294902,
+        "cover_silence_peak": 1.2486515288401279e-06
+      }
+    },
+    {
+      "episode": "ep11",
+      "language": "en",
+      "video": "../episodes/ep11/output/ep11-short-en-v18-cover.mp4",
+      "poster": "../episodes/ep11/art/covers-v18/en.png",
+      "sha256": "9da937f611a1f8820c6550c5f8140c68df7d7aba49a2157b6990cacf6fd00133",
+      "checks": {
+        "cover_last_frame_mae": 2.7402880658436213,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.06798611111111111,
+        "audio_correlation": 0.9999511782716414,
+        "cover_silence_peak": 0.0
+      }
+    },
+    {
+      "episode": "ep11",
+      "language": "ja",
+      "video": "../episodes/ep11/output/ep11-short-ja-v18-cover.mp4",
+      "poster": "../episodes/ep11/art/covers-v18/ja.png",
+      "sha256": "9fad29a116ecc19bbef859a6bb0011f5b1198a58dcbe44c552c8f5d6cd9efae2",
+      "checks": {
+        "cover_last_frame_mae": 2.747168209876543,
+        "first_body_frame_mae": 0.0,
+        "body_frame_mae": 0.061345164609053496,
+        "audio_correlation": 0.9995919426960805,
+        "cover_silence_peak": 0.0
+      }
+    }
+  ],
+  "cover_seconds": 1.5,
+  "body_seconds": 66,
+  "duration": 67.5,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "frames": 2025,
+  "body_audio_and_captions_shift_seconds": 1.5,
+  "previous_mp4s_preserved": true,
+  "language_archives": [
+    {
+      "language": "ko",
+      "url": "../output/TJ_KIM_FOLK_SHORTS_KO_10_v18.zip",
+      "bytes": 157401354,
+      "size_mb": 157,
+      "sha256": "4fa905cc6e39a60a70e2b2d88c24e874adf9ba383eba7f74a2892edc78db15c4",
+      "episodes": 10,
+      "revision": "localized-cover-v18",
+      "source_fingerprint": "ad2cab7b46e8a493bc32cdc4c57f05734bc0d67a9493e1c6ae53f68a03dcbdfb"
+    },
+    {
+      "language": "en",
+      "url": "../output/TJ_KIM_FOLK_SHORTS_EN_10_v18.zip",
+      "bytes": 156860358,
+      "size_mb": 157,
+      "sha256": "889fd7279a2e41e91d69d579422200bd953637d868d28d4d522ab593c1b1c5e6",
+      "episodes": 10,
+      "revision": "localized-cover-v18",
+      "source_fingerprint": "c794214a36489e0b0da4575267bce08e38bd3e9f5f89f026c6476bb9e19b0d1e"
+    },
+    {
+      "language": "ja",
+      "url": "../output/TJ_KIM_FOLK_SHORTS_JA_10_v18.zip",
+      "bytes": 158515909,
+      "size_mb": 159,
+      "sha256": "2d53bc5dee47db1a4282bf42620c6dc4077879f7d804551c5b851dd483cebc92",
+      "episodes": 10,
+      "revision": "localized-cover-v18",
+      "source_fingerprint": "2d69b8f9c205c236df40efad263c6ba479142a238851ca16edcc3013121842b5"
+    }
+  ],
+  "minimum_title_top": 304,
+  "body_qa": {
+    "renderer": "SVG vector-v17 for EP03–EP11; preserved approved EP02 v14",
+    "format": [
+      1080,
+      1920,
+      30,
+      66
+    ],
+    "exports": [
+      {
+        "episode": "ep02",
+        "language": "ko",
+        "file": "episodes/ep02/output/ep02-short-ko-v14.mp4",
+        "sha256": "c18d97cdf309e0674825859f628153c482c690d45acb6614ce6d584821458279",
+        "bytes": 19128011,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.7,
+        "decoded_mix_correlation": 0.9998376984793541,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep02",
+        "language": "en",
+        "file": "episodes/ep02/output/ep02-short-en-v14.mp4",
+        "sha256": "2ac09416adef5e1c5fd75035b4f77fca139072b2f4aeca69703bab8a9addd1c0",
+        "bytes": 18979900,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -3.1,
+        "decoded_mix_correlation": 0.9998649119310744,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep02",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 8.227896,
+          "previous_first_audible": 6.657708,
+          "first_audible": 8.229021,
+          "difference": 0.0011250000000000426,
+          "tempo": 1.04,
+          "narration_end": 64.066542,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep02",
+        "language": "ja",
+        "file": "episodes/ep02/output/ep02-short-ja-v14.mp4",
+        "sha256": "17958a221689f3fe1c478c588cd128097951d9bbe93b910286d19ba8f4b17ada",
+        "bytes": 19267417,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -1.9,
+        "decoded_mix_correlation": 0.9996892227818428,
+        "blank_initial_frame": true,
+        "caption_max_chars": 15,
+        "narration_sync": {
+          "episode": "ep02",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 8.227896,
+          "previous_first_audible": 8.419271,
+          "first_audible": 8.228292,
+          "difference": 0.000396000000000285,
+          "tempo": 1,
+          "narration_end": 59.575354,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep03",
+        "language": "ko",
+        "file": "episodes/ep03/output/ep03-short-ko-v17.mp4",
+        "sha256": "111e688e957714a7322f7d30d5f2867aa50bd3f14451c529d0330a57cd9bc59c",
+        "bytes": 17141577,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.4,
+        "decoded_mix_correlation": 0.9998046907895431,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep03",
+        "language": "en",
+        "file": "episodes/ep03/output/ep03-short-en-v17.mp4",
+        "sha256": "caad5f9f8024e97cca6d09f9667331e7efbcd9bd6755e8bd956dda1c6f2365fd",
+        "bytes": 17209553,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.4,
+        "decoded_mix_correlation": 0.999835484319832,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep03",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.870437,
+          "previous_first_audible": 8.341125,
+          "first_audible": 9.861729,
+          "difference": -0.008708000000000382,
+          "tempo": 1,
+          "narration_end": 62.389437,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep03",
+        "language": "ja",
+        "file": "episodes/ep03/output/ep03-short-ja-v17.mp4",
+        "sha256": "3aefda43b904fc812e19db5aeb6725228a3a6dd18ef98a49e38847116722b3d2",
+        "bytes": 17294836,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.8,
+        "decoded_mix_correlation": 0.9996955107071149,
+        "blank_initial_frame": true,
+        "caption_max_chars": 14,
+        "narration_sync": {
+          "episode": "ep03",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.870437,
+          "previous_first_audible": 8.423562,
+          "first_audible": 9.864875,
+          "difference": -0.005562000000001177,
+          "tempo": 1,
+          "narration_end": 62.38525,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep04",
+        "language": "ko",
+        "file": "episodes/ep04/output/ep04-short-ko-v17.mp4",
+        "sha256": "d4324eae8657fa9832e02d9eec86240ff98543148ab51b4041f65b14dceb0db7",
+        "bytes": 22351008,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.8,
+        "decoded_mix_correlation": 0.999772971277923,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep04",
+        "language": "en",
+        "file": "episodes/ep04/output/ep04-short-en-v17.mp4",
+        "sha256": "5560467d5f493eb9f6617e06779c7938051e3b0842bd198737b7ba2aeb2cb5e9",
+        "bytes": 22474814,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -3.4,
+        "decoded_mix_correlation": 0.9998918309469907,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep04",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 13.269542,
+          "previous_first_audible": 8.383167,
+          "first_audible": 13.266375,
+          "difference": -0.003166999999999476,
+          "tempo": 1.04,
+          "narration_end": 63.851687,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep04",
+        "language": "ja",
+        "file": "episodes/ep04/output/ep04-short-ja-v17.mp4",
+        "sha256": "7a1e9ce8bca18f8addf6ca682a35dc318ec169de91c4a09bdc60b194af287ed0",
+        "bytes": 22705815,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -3.9,
+        "decoded_mix_correlation": 0.9996471068546162,
+        "blank_initial_frame": true,
+        "caption_max_chars": 15,
+        "narration_sync": {
+          "episode": "ep04",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 13.269542,
+          "previous_first_audible": 8.30225,
+          "first_audible": 13.274021,
+          "difference": 0.0044789999999999,
+          "tempo": 1.03,
+          "narration_end": 63.936771,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep05",
+        "language": "ko",
+        "file": "episodes/ep05/output/ep05-short-ko-v17.mp4",
+        "sha256": "d3c67365de2b81b8a2c4c0986856b2584576baf8dd5f93dca137b9cdaf290806",
+        "bytes": 25895695,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.7,
+        "decoded_mix_correlation": 0.9997980648257938,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep05",
+        "language": "en",
+        "file": "episodes/ep05/output/ep05-short-en-v17.mp4",
+        "sha256": "dabc50e11d9a7495a3fcc5cc3d43824dde2066f8078fb2bc074a87751c0e08ad",
+        "bytes": 26058613,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -2.8,
+        "decoded_mix_correlation": 0.9999302793569049,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep05",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.23725,
+          "previous_first_audible": 8.301937,
+          "first_audible": 12.238979,
+          "difference": 0.0017290000000009798,
+          "tempo": 1.02,
+          "narration_end": 64.171521,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep05",
+        "language": "ja",
+        "file": "episodes/ep05/output/ep05-short-ja-v17.mp4",
+        "sha256": "d94c28037e66e8b8d4ffd9efcbd3381f704a34fb4aeb93451f8aa8bf0d70a654",
+        "bytes": 26100863,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -1.5,
+        "decoded_mix_correlation": 0.9996344139030126,
+        "blank_initial_frame": true,
+        "caption_max_chars": 14,
+        "narration_sync": {
+          "episode": "ep05",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.23725,
+          "previous_first_audible": 8.445167,
+          "first_audible": 12.234917,
+          "difference": -0.0023330000000001405,
+          "tempo": 1.01,
+          "narration_end": 64.115333,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep06",
+        "language": "ko",
+        "file": "episodes/ep06/output/ep06-short-ko-v17.mp4",
+        "sha256": "b10c58b6681f3c4bde768443c6364cb9176c1aee7dbeff41e5488dbd86aebf2e",
+        "bytes": 17545205,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -5.2,
+        "decoded_mix_correlation": 0.9997932390456811,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep06",
+        "language": "en",
+        "file": "episodes/ep06/output/ep06-short-en-v17.mp4",
+        "sha256": "a4d31422920399b3ba1e6a25c0761bdab13a6f6d1f9f0573d1d4fcc0963d0b81",
+        "bytes": 17679955,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -2.5,
+        "decoded_mix_correlation": 0.9999020029547654,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep06",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.7725,
+          "previous_first_audible": 8.377208,
+          "first_audible": 9.769104,
+          "difference": -0.0033960000000003987,
+          "tempo": 1,
+          "narration_end": 62.317896,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep06",
+        "language": "ja",
+        "file": "episodes/ep06/output/ep06-short-ja-v17.mp4",
+        "sha256": "d063ff00174910290b44f91aea979557ef454c6139ce25f366e304aeb7765654",
+        "bytes": 17781999,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -3.4,
+        "decoded_mix_correlation": 0.9996834093764525,
+        "blank_initial_frame": true,
+        "caption_max_chars": 14,
+        "narration_sync": {
+          "episode": "ep06",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.7725,
+          "previous_first_audible": 8.4695,
+          "first_audible": 9.764854,
+          "difference": -0.007646000000001152,
+          "tempo": 1,
+          "narration_end": 62.17125,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep07",
+        "language": "ko",
+        "file": "episodes/ep07/output/ep07-short-ko-v17.mp4",
+        "sha256": "6dce778b7edc37982fe7eb92da900c3e7f24ab121d88cda4fbee9a4125ca1ebc",
+        "bytes": 19959109,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.8,
+        "decoded_mix_correlation": 0.9997689087878079,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep07",
+        "language": "en",
+        "file": "episodes/ep07/output/ep07-short-en-v17.mp4",
+        "sha256": "0b97ac91daab96748c7373d2943fea124a041b0f28abb3c5e6ad8b6ea3124c5b",
+        "bytes": 20061235,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.3,
+        "decoded_mix_correlation": 0.9998813172731887,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep07",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.477583,
+          "previous_first_audible": 8.339917,
+          "first_audible": 9.475292,
+          "difference": -0.002290999999999599,
+          "tempo": 1,
+          "narration_end": 62.056875,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep07",
+        "language": "ja",
+        "file": "episodes/ep07/output/ep07-short-ja-v17.mp4",
+        "sha256": "2e6878b26d3bc779af9c68daac6013b18e888882e266109f6ecc4fb8f614454b",
+        "bytes": 20220717,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -2.8,
+        "decoded_mix_correlation": 0.9996292175649618,
+        "blank_initial_frame": true,
+        "caption_max_chars": 15,
+        "narration_sync": {
+          "episode": "ep07",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.477583,
+          "previous_first_audible": 8.381354,
+          "first_audible": 9.478167,
+          "difference": 0.0005839999999999179,
+          "tempo": 1,
+          "narration_end": 61.890458,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep08",
+        "language": "ko",
+        "file": "episodes/ep08/output/ep08-short-ko-v17.mp4",
+        "sha256": "ab57e4d01d8f4a05947b3302fa5d86165e157dabb105ae35cebc62975904a214",
+        "bytes": 15186344,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.9,
+        "decoded_mix_correlation": 0.999801490279319,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep08",
+        "language": "en",
+        "file": "episodes/ep08/output/ep08-short-en-v17.mp4",
+        "sha256": "a4b0b525ab5a45ae586959e55db967713a3e6571cb6ad5ebb75bd4967f310fef",
+        "bytes": 15215895,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -1.0,
+        "decoded_mix_correlation": 0.9998871011033336,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep08",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.936813,
+          "previous_first_audible": 8.381958,
+          "first_audible": 12.937625,
+          "difference": 0.0008119999999998129,
+          "tempo": 1.03,
+          "narration_end": 64.137167,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep08",
+        "language": "ja",
+        "file": "episodes/ep08/output/ep08-short-ja-v17.mp4",
+        "sha256": "e0fc053332a0a3b737f9b44447c82c5f5f4b568f7590cf49865ac4877b9fd64c",
+        "bytes": 15360614,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -1.7,
+        "decoded_mix_correlation": 0.9996015084679017,
+        "blank_initial_frame": true,
+        "caption_max_chars": 15,
+        "narration_sync": {
+          "episode": "ep08",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.936813,
+          "previous_first_audible": 8.343208,
+          "first_audible": 12.939562,
+          "difference": 0.0027489999999996684,
+          "tempo": 1.03,
+          "narration_end": 63.930604,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep09",
+        "language": "ko",
+        "file": "episodes/ep09/output/ep09-short-ko-v17.mp4",
+        "sha256": "f3deca328dafbc466a62318f090248317152c40c8af8886e2dc5498bf3c8d88e",
+        "bytes": 17836160,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.0,
+        "decoded_mix_correlation": 0.9998318547339642,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep09",
+        "language": "en",
+        "file": "episodes/ep09/output/ep09-short-en-v17.mp4",
+        "sha256": "7cc41ac9cc9a6445e1e407215af5bfe183d966a5b60782bcadbd93ccbbbf87bb",
+        "bytes": 17990035,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.6,
+        "decoded_mix_correlation": 0.9998869943135077,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep09",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.953292,
+          "previous_first_audible": 8.358604,
+          "first_audible": 9.947021,
+          "difference": -0.0062709999999999155,
+          "tempo": 1,
+          "narration_end": 62.728708,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep09",
+        "language": "ja",
+        "file": "episodes/ep09/output/ep09-short-ja-v17.mp4",
+        "sha256": "83b4bba9ff389da1fb5a3174e8414518c32295681aa748bf31cb7460b951a28b",
+        "bytes": 18119755,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.2,
+        "decoded_mix_correlation": 0.9996555681370127,
+        "blank_initial_frame": true,
+        "caption_max_chars": 14,
+        "narration_sync": {
+          "episode": "ep09",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 9.953292,
+          "previous_first_audible": 8.361187,
+          "first_audible": 9.946063,
+          "difference": -0.00722899999999882,
+          "tempo": 1,
+          "narration_end": 62.46925,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep10",
+        "language": "ko",
+        "file": "episodes/ep10/output/ep10-short-ko-v17.mp4",
+        "sha256": "09799cc383fc513d94e9040b657c0b0879b1bd296703392e9e3bf7ce7ef953e1",
+        "bytes": 19113060,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.6,
+        "decoded_mix_correlation": 0.9997989752172745,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep10",
+        "language": "en",
+        "file": "episodes/ep10/output/ep10-short-en-v17.mp4",
+        "sha256": "94a683cb8815c76d917a3f85f04cb99723ee658225e295455cb213b8555bc753",
+        "bytes": 19178241,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -2.7,
+        "decoded_mix_correlation": 0.9998980546498674,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep10",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.624937,
+          "previous_first_audible": 10.678729,
+          "first_audible": 12.616167,
+          "difference": -0.00876999999999839,
+          "tempo": 1,
+          "narration_end": 63.0225,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep10",
+        "language": "ja",
+        "file": "episodes/ep10/output/ep10-short-ja-v17.mp4",
+        "sha256": "86fa4613cebc7a3a135dcdc3bf11d64e86c670f35051fef53f89bca94c4a3a94",
+        "bytes": 19299647,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.4,
+        "decoded_mix_correlation": 0.9997477183243093,
+        "blank_initial_frame": true,
+        "caption_max_chars": 16,
+        "narration_sync": {
+          "episode": "ep10",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 12.624937,
+          "previous_first_audible": 8.310729,
+          "first_audible": 12.628,
+          "difference": 0.003063000000000926,
+          "tempo": 1.02,
+          "narration_end": 64.081375,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep11",
+        "language": "ko",
+        "file": "episodes/ep11/output/ep11-short-ko-v17.mp4",
+        "sha256": "2c8bdc5f86e6eb2ef22b734dbda6238fbce969cd323ea440205cd66c5cc8548d",
+        "bytes": 16249695,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.8,
+        "decoded_mix_correlation": 0.9997875989312116,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": null
+      },
+      {
+        "episode": "ep11",
+        "language": "en",
+        "file": "episodes/ep11/output/ep11-short-en-v17.mp4",
+        "sha256": "52c57b15d0800be7a4fcf7a02a45dbac66a7d9652ab9164b9077b1fd081cf143",
+        "bytes": 16320582,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.9,
+        "decoded_mix_correlation": 0.9999213270361605,
+        "blank_initial_frame": true,
+        "caption_max_chars": 18,
+        "narration_sync": {
+          "episode": "ep11",
+          "language": "en",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 13.084542,
+          "previous_first_audible": 8.333,
+          "first_audible": 13.086333,
+          "difference": 0.0017909999999989878,
+          "tempo": 1.04,
+          "narration_end": 63.967104,
+          "intro_voice_free": true
+        }
+      },
+      {
+        "episode": "ep11",
+        "language": "ja",
+        "file": "episodes/ep11/output/ep11-short-ja-v17.mp4",
+        "sha256": "ca310e1dc6060a355cfe944a6cead136160e4ada5af0cd8020dd7ec2a45dc6c9",
+        "bytes": 16496606,
+        "duration": 66,
+        "fps": 30,
+        "audio_peak_db": -4.8,
+        "decoded_mix_correlation": 0.9996621899994419,
+        "blank_initial_frame": true,
+        "caption_max_chars": 16,
+        "narration_sync": {
+          "episode": "ep11",
+          "language": "ja",
+          "reference": "Korean actual audible onset",
+          "korean_first_audible": 13.084542,
+          "previous_first_audible": 8.365729,
+          "first_audible": 13.085958,
+          "difference": 0.0014159999999989736,
+          "tempo": 1.02,
+          "narration_end": 64.144708,
+          "intro_voice_free": true
+        }
+      }
+    ],
+    "narration_reference": "Each episode Korean actual first audible narration; EN/JA differences below 0.08s",
+    "intro": {
+      "seconds": 6,
+      "voice_free": true
+    },
+    "captions": "One calm line; max18 characters including spaces/punctuation",
+    "provider": "Typecast via existing lib connector",
+    "body_sound_effects": false,
+    "jing": false,
+    "first_korean_unchanged": true,
+    "old_videos_unchanged": {
+      "ep02": true,
+      "ep03": true,
+      "ep04": true,
+      "ep05": true,
+      "ep06": true,
+      "ep07": true,
+      "ep08": true,
+      "ep09": true,
+      "ep10": true,
+      "ep11": true
+    },
+    "typecast_preservation": {
+      "original_prefix_unchanged": true,
+      "original_paragraphs": 81,
+      "appended": 27,
+      "last_ready": [
+        "ep11",
+        "ja"
+      ],
+      "completed": 27,
+      "total": 27
+    },
+    "narration_alignment": {
+      "completed": 20,
+      "total": 20,
+      "errors": {}
+    },
+    "workflow_sha256": "0ce7eb6a809f6f1eb284e4419a4a33235f4f534d67a7ba30a6fa387305bacccf"
+  },
+  "website_qa": {
+    "ok": true,
+    "checks": [
+      {
+        "page": "home",
+        "theme": "light",
+        "cards": 10,
+        "lang": "ko",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=ko",
+        "scrollWidth": 390,
+        "title": "그림으로 만나는\n조선의 하루",
+        "width": 390
+      },
+      {
+        "page": "home",
+        "theme": "dark",
+        "cards": 10,
+        "lang": "ko",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=ko",
+        "scrollWidth": 390,
+        "title": "그림으로 만나는\n조선의 하루",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ko",
+        "playlist": 10,
+        "scrollWidth": 320,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 320
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ko",
+        "playlist": 10,
+        "scrollWidth": 390,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ko",
+        "playlist": 10,
+        "scrollWidth": 768,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 768
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ko",
+        "playlist": 10,
+        "scrollWidth": 1440,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ko-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 1440
+      },
+      {
+        "page": "home",
+        "theme": "light",
+        "cards": 10,
+        "lang": "en",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=en",
+        "scrollWidth": 390,
+        "title": "Everyday Korea,\none brushstroke",
+        "width": 390
+      },
+      {
+        "page": "home",
+        "theme": "dark",
+        "cards": 10,
+        "lang": "en",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=en",
+        "scrollWidth": 390,
+        "title": "Everyday Korea,\none brushstroke",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "en",
+        "playlist": 10,
+        "scrollWidth": 320,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 320
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "en",
+        "playlist": 10,
+        "scrollWidth": 390,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "en",
+        "playlist": 10,
+        "scrollWidth": 768,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 768
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "en",
+        "playlist": 10,
+        "scrollWidth": 1440,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 1440
+      },
+      {
+        "page": "home",
+        "theme": "light",
+        "cards": 10,
+        "lang": "ja",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=ja",
+        "scrollWidth": 390,
+        "title": "絵で出会う\n朝鮮の一日",
+        "width": 390
+      },
+      {
+        "page": "home",
+        "theme": "dark",
+        "cards": 10,
+        "lang": "ja",
+        "primary": "http://127.0.0.1:5184/series/site/watch.html?ep=ep02&lang=ja",
+        "scrollWidth": 390,
+        "title": "絵で出会う\n朝鮮の一日",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ja",
+        "playlist": 10,
+        "scrollWidth": 320,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 320
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ja",
+        "playlist": 10,
+        "scrollWidth": 390,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 390
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ja",
+        "playlist": 10,
+        "scrollWidth": 768,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 768
+      },
+      {
+        "page": "watch",
+        "download": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4",
+        "duration": 67.5,
+        "lang": "ja",
+        "playlist": 10,
+        "scrollWidth": 1440,
+        "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-ja-v18-cover.mp4?revision=localized-cover-v18",
+        "width": 1440
+      },
+      {
+        "language_change_keeps_position": {
+          "source": "http://127.0.0.1:5184/series/episodes/ep02/output/ep02-short-en-v18-cover.mp4?revision=localized-cover-v18",
+          "time": 23.4
+        }
+      },
+      {
+        "next_keeps_language": {
+          "lang": "en",
+          "source": "http://127.0.0.1:5184/series/episodes/ep03/output/ep03-short-en-v18-cover.mp4?revision=localized-cover-v18",
+          "url": "http://127.0.0.1:5184/series/site/watch.html?ep=ep03&lang=en"
+        }
+      }
+    ]
+  },
+  "workflow_sha256": "618598d54547bf49bd7ff3e99a6b4035d2c11f090c4cb50bb04682bcedf16027"
+}

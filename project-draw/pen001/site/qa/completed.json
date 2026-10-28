@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-26T00:56:56.371622+09:00",
+  "local_url": "http://127.0.0.1:5185/",
+  "mobile_url": "http://192.168.42.192:5185/",
+  "original_photos": 10,
+  "mounted_paintings": 17,
+  "drawing_episodes": 10,
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "browser_checks": 33,
+  "resolved_assets": 73,
+  "touch": {
+    "ok": true,
+    "real_mobile_touch_input": true,
+    "pinch_scale": 2.5,
+    "drag_pan_pixels": 125,
+    "swipe_next_album": 4,
+    "page_errors": []
+  },
+  "video_language_change_keeps_position": 23.4,
+  "minimum_caption_contrast": 5.617,
+  "accessibility_automated_violations": 0
+}

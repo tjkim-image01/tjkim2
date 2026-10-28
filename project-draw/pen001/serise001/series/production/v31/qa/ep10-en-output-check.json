@@ -1,0 +1,15 @@
+{
+  "episode": "ep10",
+  "language": "en",
+  "cover_rms": 0.0,
+  "immediate_music_rms": 0.13165143132209778,
+  "body_audio_rms": 0.12264105677604675,
+  "frames_checked": [
+    0.5,
+    3.1,
+    13.5,
+    33.5,
+    65.5
+  ],
+  "passed": true
+}

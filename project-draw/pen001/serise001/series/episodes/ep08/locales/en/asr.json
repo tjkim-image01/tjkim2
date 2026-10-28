@@ -1,0 +1,580 @@
+[
+  {
+    "start": 0.0,
+    "end": 7.74,
+    "text": " A chess player might recognize this concentration, but these lettered pieces belong to janggi, Korean chess.",
+    "words": [
+      {
+        "text": " A",
+        "start": 0.0,
+        "end": 0.3
+      },
+      {
+        "text": " chess",
+        "start": 0.3,
+        "end": 0.48
+      },
+      {
+        "text": " player",
+        "start": 0.48,
+        "end": 0.9
+      },
+      {
+        "text": " might",
+        "start": 0.9,
+        "end": 1.16
+      },
+      {
+        "text": " recognize",
+        "start": 1.16,
+        "end": 1.78
+      },
+      {
+        "text": " this",
+        "start": 1.78,
+        "end": 2.24
+      },
+      {
+        "text": " concentration,",
+        "start": 2.24,
+        "end": 3.08
+      },
+      {
+        "text": " but",
+        "start": 3.48,
+        "end": 3.7
+      },
+      {
+        "text": " these",
+        "start": 3.7,
+        "end": 4.0
+      },
+      {
+        "text": " lettered",
+        "start": 4.0,
+        "end": 4.68
+      },
+      {
+        "text": " pieces",
+        "start": 4.68,
+        "end": 5.02
+      },
+      {
+        "text": " belong",
+        "start": 5.02,
+        "end": 5.56
+      },
+      {
+        "text": " to",
+        "start": 5.56,
+        "end": 5.88
+      },
+      {
+        "text": " janggi,",
+        "start": 5.88,
+        "end": 6.48
+      },
+      {
+        "text": " Korean",
+        "start": 6.82,
+        "end": 7.26
+      },
+      {
+        "text": " chess.",
+        "start": 7.26,
+        "end": 7.74
+      }
+    ]
+  },
+  {
+    "start": 8.3,
+    "end": 11.42,
+    "text": " Each kind of piece moves by its own rules.",
+    "words": [
+      {
+        "text": " Each",
+        "start": 8.3,
+        "end": 8.52
+      },
+      {
+        "text": " kind",
+        "start": 8.52,
+        "end": 8.84
+      },
+      {
+        "text": " of",
+        "start": 8.84,
+        "end": 9.04
+      },
+      {
+        "text": " piece",
+        "start": 9.04,
+        "end": 9.38
+      },
+      {
+        "text": " moves",
+        "start": 9.38,
+        "end": 10.04
+      },
+      {
+        "text": " by",
+        "start": 10.04,
+        "end": 10.38
+      },
+      {
+        "text": " its",
+        "start": 10.38,
+        "end": 10.62
+      },
+      {
+        "text": " own",
+        "start": 10.62,
+        "end": 10.92
+      },
+      {
+        "text": " rules.",
+        "start": 10.92,
+        "end": 11.42
+      }
+    ]
+  },
+  {
+    "start": 12.22,
+    "end": 16.7,
+    "text": " The players must read the position and anticipate another move.",
+    "words": [
+      {
+        "text": " The",
+        "start": 12.22,
+        "end": 12.38
+      },
+      {
+        "text": " players",
+        "start": 12.38,
+        "end": 12.74
+      },
+      {
+        "text": " must",
+        "start": 12.74,
+        "end": 13.06
+      },
+      {
+        "text": " read",
+        "start": 13.06,
+        "end": 13.52
+      },
+      {
+        "text": " the",
+        "start": 13.52,
+        "end": 13.76
+      },
+      {
+        "text": " position",
+        "start": 13.76,
+        "end": 14.2
+      },
+      {
+        "text": " and",
+        "start": 14.2,
+        "end": 14.9
+      },
+      {
+        "text": " anticipate",
+        "start": 14.9,
+        "end": 15.58
+      },
+      {
+        "text": " another",
+        "start": 15.58,
+        "end": 16.16
+      },
+      {
+        "text": " move.",
+        "start": 16.16,
+        "end": 16.7
+      }
+    ]
+  },
+  {
+    "start": 17.36,
+    "end": 21.64,
+    "text": " Notice the lowered heads and the hands reaching toward the board.",
+    "words": [
+      {
+        "text": " Notice",
+        "start": 17.36,
+        "end": 17.86
+      },
+      {
+        "text": " the",
+        "start": 17.86,
+        "end": 18.2
+      },
+      {
+        "text": " lowered",
+        "start": 18.2,
+        "end": 18.52
+      },
+      {
+        "text": " heads",
+        "start": 18.52,
+        "end": 19.04
+      },
+      {
+        "text": " and",
+        "start": 19.04,
+        "end": 19.6
+      },
+      {
+        "text": " the",
+        "start": 19.6,
+        "end": 19.74
+      },
+      {
+        "text": " hands",
+        "start": 19.74,
+        "end": 20.2
+      },
+      {
+        "text": " reaching",
+        "start": 20.2,
+        "end": 20.6
+      },
+      {
+        "text": " toward",
+        "start": 20.6,
+        "end": 21.0
+      },
+      {
+        "text": " the",
+        "start": 21.0,
+        "end": 21.28
+      },
+      {
+        "text": " board.",
+        "start": 21.28,
+        "end": 21.64
+      }
+    ]
+  },
+  {
+    "start": 22.12,
+    "end": 27.5,
+    "text": " To a visitor, both the familiar contest and the unfamiliar pieces could be intriguing.",
+    "words": [
+      {
+        "text": " To",
+        "start": 22.12,
+        "end": 22.3
+      },
+      {
+        "text": " a",
+        "start": 22.3,
+        "end": 22.5
+      },
+      {
+        "text": " visitor,",
+        "start": 22.5,
+        "end": 22.82
+      },
+      {
+        "text": " both",
+        "start": 23.12,
+        "end": 23.26
+      },
+      {
+        "text": " the",
+        "start": 23.26,
+        "end": 23.54
+      },
+      {
+        "text": " familiar",
+        "start": 23.54,
+        "end": 23.96
+      },
+      {
+        "text": " contest",
+        "start": 23.96,
+        "end": 24.48
+      },
+      {
+        "text": " and",
+        "start": 24.48,
+        "end": 25.04
+      },
+      {
+        "text": " the",
+        "start": 25.04,
+        "end": 25.18
+      },
+      {
+        "text": " unfamiliar",
+        "start": 25.18,
+        "end": 25.7
+      },
+      {
+        "text": " pieces",
+        "start": 25.7,
+        "end": 26.36
+      },
+      {
+        "text": " could",
+        "start": 26.36,
+        "end": 26.74
+      },
+      {
+        "text": " be",
+        "start": 26.74,
+        "end": 26.96
+      },
+      {
+        "text": " intriguing.",
+        "start": 26.96,
+        "end": 27.5
+      }
+    ]
+  },
+  {
+    "start": 27.5,
+    "end": 33.2,
+    "text": " You need not read every character to recognize the waiting and the thought.",
+    "words": [
+      {
+        "text": " You",
+        "start": 27.5,
+        "end": 28.28
+      },
+      {
+        "text": " need",
+        "start": 28.28,
+        "end": 28.58
+      },
+      {
+        "text": " not",
+        "start": 28.58,
+        "end": 28.84
+      },
+      {
+        "text": " read",
+        "start": 28.84,
+        "end": 29.26
+      },
+      {
+        "text": " every",
+        "start": 29.26,
+        "end": 29.58
+      },
+      {
+        "text": " character",
+        "start": 29.58,
+        "end": 30.14
+      },
+      {
+        "text": " to",
+        "start": 30.14,
+        "end": 30.4
+      },
+      {
+        "text": " recognize",
+        "start": 30.4,
+        "end": 31.06
+      },
+      {
+        "text": " the",
+        "start": 31.06,
+        "end": 31.44
+      },
+      {
+        "text": " waiting",
+        "start": 31.44,
+        "end": 31.86
+      },
+      {
+        "text": " and",
+        "start": 31.86,
+        "end": 32.56
+      },
+      {
+        "text": " the",
+        "start": 32.56,
+        "end": 32.74
+      },
+      {
+        "text": " thought.",
+        "start": 32.74,
+        "end": 33.2
+      }
+    ]
+  },
+  {
+    "start": 33.74,
+    "end": 38.0,
+    "text": " The picture preserves concentration rather than the final result.",
+    "words": [
+      {
+        "text": " The",
+        "start": 33.74,
+        "end": 33.8
+      },
+      {
+        "text": " picture",
+        "start": 33.8,
+        "end": 34.24
+      },
+      {
+        "text": " preserves",
+        "start": 34.24,
+        "end": 34.98
+      },
+      {
+        "text": " concentration",
+        "start": 34.98,
+        "end": 35.92
+      },
+      {
+        "text": " rather",
+        "start": 35.92,
+        "end": 36.52
+      },
+      {
+        "text": " than",
+        "start": 36.52,
+        "end": 36.84
+      },
+      {
+        "text": " the",
+        "start": 36.84,
+        "end": 37.0
+      },
+      {
+        "text": " final",
+        "start": 37.0,
+        "end": 37.36
+      },
+      {
+        "text": " result.",
+        "start": 37.36,
+        "end": 38.0
+      }
+    ]
+  },
+  {
+    "start": 38.46,
+    "end": 40.36,
+    "text": " The work is attributed to Uncho.",
+    "words": [
+      {
+        "text": " The",
+        "start": 38.46,
+        "end": 38.56
+      },
+      {
+        "text": " work",
+        "start": 38.56,
+        "end": 38.86
+      },
+      {
+        "text": " is",
+        "start": 38.86,
+        "end": 39.1
+      },
+      {
+        "text": " attributed",
+        "start": 39.1,
+        "end": 39.58
+      },
+      {
+        "text": " to",
+        "start": 39.58,
+        "end": 39.9
+      },
+      {
+        "text": " Uncho.",
+        "start": 39.9,
+        "end": 40.36
+      }
+    ]
+  },
+  {
+    "start": 40.84,
+    "end": 47.82,
+    "text": " From the TJ Kim collection, a quiet game lets strangers share a familiar human moment.",
+    "words": [
+      {
+        "text": " From",
+        "start": 40.84,
+        "end": 41.02
+      },
+      {
+        "text": " the",
+        "start": 41.02,
+        "end": 41.18
+      },
+      {
+        "text": " TJ",
+        "start": 41.18,
+        "end": 41.58
+      },
+      {
+        "text": " Kim",
+        "start": 41.58,
+        "end": 42.02
+      },
+      {
+        "text": " collection,",
+        "start": 42.02,
+        "end": 42.6
+      },
+      {
+        "text": " a",
+        "start": 43.06,
+        "end": 43.14
+      },
+      {
+        "text": " quiet",
+        "start": 43.14,
+        "end": 43.56
+      },
+      {
+        "text": " game",
+        "start": 43.56,
+        "end": 44.12
+      },
+      {
+        "text": " lets",
+        "start": 44.12,
+        "end": 44.42
+      },
+      {
+        "text": " strangers",
+        "start": 44.42,
+        "end": 45.02
+      },
+      {
+        "text": " share",
+        "start": 45.02,
+        "end": 45.58
+      },
+      {
+        "text": " a",
+        "start": 45.58,
+        "end": 46.06
+      },
+      {
+        "text": " familiar",
+        "start": 46.06,
+        "end": 46.58
+      },
+      {
+        "text": " human",
+        "start": 46.58,
+        "end": 47.24
+      },
+      {
+        "text": " moment.",
+        "start": 47.24,
+        "end": 47.82
+      }
+    ]
+  }
+]

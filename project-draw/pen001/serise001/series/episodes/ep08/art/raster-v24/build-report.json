@@ -1,0 +1,414 @@
+{
+  "episode": "ep08",
+  "strokes": 544,
+  "people": [
+    {
+      "key": "left_man",
+      "name": "인물 1",
+      "head_start": 0.8,
+      "body_start": 4.571423793762977,
+      "details_start": 14.99361246685431,
+      "end": 18.557227066203616
+    },
+    {
+      "key": "right_man",
+      "name": "인물 2",
+      "head_start": 18.687227066203615,
+      "body_start": 23.25485613883032,
+      "details_start": 32.11490808859479,
+      "end": 36.8
+    }
+  ],
+  "coverage": [
+    {
+      "group": "left_man",
+      "stage": "head",
+      "pigment": "paint_00",
+      "coverage": 0.99873
+    },
+    {
+      "group": "left_man",
+      "stage": "head",
+      "pigment": "paint_02",
+      "coverage": 0.99695
+    },
+    {
+      "group": "left_man",
+      "stage": "head",
+      "pigment": "paint_04",
+      "coverage": 1.0
+    },
+    {
+      "group": "left_man",
+      "stage": "head",
+      "pigment": "paint_07",
+      "coverage": 1.0
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_00",
+      "coverage": 0.99989
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 0.98726
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 0.99593
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_05",
+      "coverage": 0.9979
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_06",
+      "coverage": 0.99856
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_08",
+      "coverage": 0.99395
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_11",
+      "coverage": 0.99112
+    },
+    {
+      "group": "left_man",
+      "stage": "body",
+      "pigment": "paint_12",
+      "coverage": 0.99603
+    },
+    {
+      "group": "right_man",
+      "stage": "head",
+      "pigment": "paint_00",
+      "coverage": 0.9844
+    },
+    {
+      "group": "right_man",
+      "stage": "head",
+      "pigment": "paint_02",
+      "coverage": 0.99818
+    },
+    {
+      "group": "right_man",
+      "stage": "head",
+      "pigment": "paint_04",
+      "coverage": 1.0
+    },
+    {
+      "group": "right_man",
+      "stage": "head",
+      "pigment": "paint_14",
+      "coverage": 1.0
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_00",
+      "coverage": 0.99927
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_01",
+      "coverage": 1.0
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_02",
+      "coverage": 0.99485
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_03",
+      "coverage": 0.99818
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_04",
+      "coverage": 0.9969
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_05",
+      "coverage": 0.99332
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_06",
+      "coverage": 0.988
+    },
+    {
+      "group": "right_man",
+      "stage": "body",
+      "pigment": "paint_07",
+      "coverage": 0.99217
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_00",
+      "coverage": 1.0
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_01",
+      "coverage": 0.98046
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_02",
+      "coverage": 0.85047
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_03",
+      "coverage": 0.96876
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_04",
+      "coverage": 0.99332
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_05",
+      "coverage": 0.91394
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_06",
+      "coverage": 0.73779
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_07",
+      "coverage": 0.99437
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_09",
+      "coverage": 0.99265
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_10",
+      "coverage": 0.99611
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_13",
+      "coverage": 0.99059
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_14",
+      "coverage": 1.0
+    },
+    {
+      "group": "objects",
+      "stage": "objects",
+      "pigment": "paint_15",
+      "coverage": 0.9959
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_00",
+      "coverage": 1.0
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_01",
+      "coverage": 0.9941
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_02",
+      "coverage": 0.94949
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_03",
+      "coverage": 0.93305
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_05",
+      "coverage": 0.7907
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_06",
+      "coverage": 0.96188
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_08",
+      "coverage": 0.8645
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_11",
+      "coverage": 0.81855
+    },
+    {
+      "group": "background",
+      "stage": "background",
+      "pigment": "paint_12",
+      "coverage": 1.0
+    }
+  ],
+  "background_color_passes": [
+    {
+      "pigment_id": "paint_00",
+      "name": "미색 1",
+      "rgb": [
+        246,
+        243,
+        231
+      ],
+      "start": 43.0,
+      "end": 46.36388778067375,
+      "strokes": 4
+    },
+    {
+      "pigment_id": "paint_01",
+      "name": "미색 2",
+      "rgb": [
+        236,
+        231,
+        215
+      ],
+      "start": 46.56388778067375,
+      "end": 47.17629766521868,
+      "strokes": 3
+    },
+    {
+      "pigment_id": "paint_02",
+      "name": "살구빛 3",
+      "rgb": [
+        248,
+        218,
+        178
+      ],
+      "start": 47.37629766521868,
+      "end": 47.454731985496345,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_03",
+      "name": "미색 4",
+      "rgb": [
+        209,
+        221,
+        219
+      ],
+      "start": 47.65473198549635,
+      "end": 47.776628299586406,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_05",
+      "name": "청록빛 6",
+      "rgb": [
+        188,
+        209,
+        212
+      ],
+      "start": 47.97662829958641,
+      "end": 48.04691677572714,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_06",
+      "name": "청록빛 7",
+      "rgb": [
+        163,
+        197,
+        208
+      ],
+      "start": 48.24691677572714,
+      "end": 48.32159812368383,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_08",
+      "name": "청록빛 9",
+      "rgb": [
+        144,
+        186,
+        202
+      ],
+      "start": 48.52159812368383,
+      "end": 48.59654888497253,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_11",
+      "name": "청록빛 12",
+      "rgb": [
+        120,
+        170,
+        192
+      ],
+      "start": 48.79654888497253,
+      "end": 48.84922296190183,
+      "strokes": 1
+    },
+    {
+      "pigment_id": "paint_12",
+      "name": "청록빛 13",
+      "rgb": [
+        81,
+        152,
+        181
+      ],
+      "start": 49.04922296190183,
+      "end": 49.11630311037955,
+      "strokes": 1
+    }
+  ],
+  "source_sha256": "b3deed426a4a1823d83fabca3ed8b0ac898b65d1f342d5b16223ef30b933c721",
+  "settings_sha256": "674daabe4071955c772d3c1929b35a3de2079a320539ed96805fe41b7d9af664",
+  "settings_unchanged": true,
+  "MP4_created": false
+}

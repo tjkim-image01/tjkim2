@@ -1,0 +1,114 @@
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_tTY7YmwA4ZM5HubG
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; if (!t) { const p = await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(6000); return p; } const p = await attachBrowserTab(t.targetId); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } return p; }; console.log('ok')
+ok
+[ok | 14ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+✔︎ Opened a new tab and set it active: tabs[0], page → 죄송합니다. (https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA)
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 6659ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 847ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Role selector not found: role:button[name=%EB%A7%8C%EB%93%A4%EA%B8%B0]
+    at #u (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5573:254)
+    at async #r (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5532:1412)
+    at async jn.click (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5532:1903)
+[error | 31ms]
+repl > 
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_pCq3PT7HA4ybQn9v
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; if (!t) { const p = await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(6000); return p; } const p = await attachBrowserTab(t.targetId); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } return p; }; console.log('ok')
+ok
+[ok | 9ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 8829ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 843ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: Role selector not found: role:button[name=%EB%A7%8C%EB%93%A4%EA%B8%B0]
+    at #u (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5573:254)
+    at async #r (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5532:1412)
+    at async jn.click (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:5532:1903)
+[error | 44ms]
+repl > 
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_zA499cJUsRboqoBD
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; if (!t) { const p = await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(6000); return p; } const p = await attachBrowserTab(t.targetId); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } if ((await p.title()).includes('죄송') || (await p.content()).includes('권한이 없습니다')) {   await p.goto('https://www.youtube.com/channel_switcher?next=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000);   try { await p.getByRole('option', { name: /티제이 김 컬렉션/ }).click(); await sleep(5000); } catch(e){} } return p; }; console.log('ok')
+ok
+[ok | 9ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+✔︎ Opened a new tab and set it active: tabs[0], page → 죄송합니다. (https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA)
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 6698ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 7729ms]
+repl > 
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_ToEhA5irNqcTlZl0
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; let p = t ? await attachBrowserTab(t.targetId) : await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } if ((await p.title()).includes('죄송') || (await p.content()).includes('권한이 없습니다')) {   await p.goto('https://www.youtube.com/channel_switcher?next=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000);   try { await p.getByRole('button', { name: '취소' }).click(); await sleep(1000); } catch(e){}   try { await p.getByRole('option', { name: /티제이 김 컬렉션/ }).click(); await sleep(5000); } catch(e){}   if (!p.url().includes('studio.youtube.com')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } } return p; }; console.log('ok')
+ok
+[ok | 8ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+✔︎ Opened a new tab and set it active: tabs[0], page → 죄송합니다. (https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA)
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 14764ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 15823ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const btn = P.getByRole('button', { name: /만들기|Create/i }).or(P.locator('#create-icon, ytcp-button#create-button, [aria-label*="만들기"]')); await btn.first().waitFor({ state: 'visible', timeout: 20000 }); await btn.first().click(); await sleep(800); const upItem = P.getByRole('menuitem', { name: /동영상 업로드|Upload video/i }).or(P.locator('tp-yt-paper-item:has-text("동영상 업로드"), #text-item-0')); await upItem.first().waitFor({ state: 'visible', timeout: 10000 }); await upItem.first().click(); await sleep(2000); console.log('ok') })()
+TypeError: not a function
+    at <anonymous> (repl.js:1:116)
+[error | 14543ms]
+repl > 
+Aside CLI 1.26.1023.1115 is available (current 1.26.1008.1938). Run: aside update
+account: u5 (jfktwo5@gmail.com)
+sessionDir: /Users/jatu/.aside/u/5/sessions/2026-10-25_8PmiVhnDvRVwmzbS
+type 'help' for usage, 'state' to inspect tool state, 'exit' to quit
+repl > 
+globalThis.__att = async()=>{ const ts=(await listBrowserTabs()).filter(t=>t.url.startsWith('https://studio.youtube.com/')); let t=ts.find(t=>t.url.includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA'))||ts.find(t=>!/\/video\//.test(t.url))||ts[0]; let p = t ? await attachBrowserTab(t.targetId) : await openTab('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000); if (!p.url().includes('/channel/UC-gAXUw8Au-q7WgW6ud_KbA')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } if ((await p.title()).includes('죄송') || (await p.content()).includes('권한이 없습니다')) {   await p.goto('https://www.youtube.com/channel_switcher?next=https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(4000);   try { await p.getByRole('button', { name: '취소' }).click(); await sleep(1000); } catch(e){}   try { await p.getByRole('option', { name: /티제이 김 컬렉션/ }).click(); await sleep(5000); } catch(e){}   if (!p.url().includes('studio.youtube.com')) { await p.goto('https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA'); await sleep(5000); } } return p; }; console.log('ok')
+ok
+[ok | 13ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); console.log('URL:'+P.url()) })()
+URL:https://studio.youtube.com/channel/UC-gAXUw8Au-q7WgW6ud_KbA
+[ok | 8793ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); const n = await P.evaluate(() => { let k = 0; for (const d of document.querySelectorAll('tp-yt-paper-dialog, [role=dialog]')) { const rc = d.getBoundingClientRect(); if (!rc.width || !rc.height || getComputedStyle(d).visibility === 'hidden') continue; const b = [...d.querySelectorAll('button, ytcp-button')].find(x => x.innerText.trim() === '닫기'); if (b) { b.click(); k++; } } return k; }); await sleep(800); console.log('CLOSED:' + n) })()
+CLOSED:0
+[ok | 5844ms]
+repl > 
+await (async()=>{ const P = await globalThis.__att(); await P.getByRole('button',{name:'만들기',exact:true}).click(); await sleep(800); await P.getByRole('menuitem',{name:'동영상 업로드',exact:true}).click(); await sleep(2000); console.log('ok') })()
+Error: CDP command timeout: Input.dispatchMouseEvent
+    at Timeout._onTimeout (file:///Users/jatu/Library/Application%20Support/Aside/AsideDaemon/mac-arm64/1.26.1024.24/Aside%20Daemon.app/Contents/MacOS/aside-daemon:2686:6687)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+[error | 66254ms]
+repl > 

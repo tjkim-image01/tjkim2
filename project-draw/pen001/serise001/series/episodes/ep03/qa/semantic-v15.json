@@ -1,0 +1,50 @@
+{
+  "episode": "ep03",
+  "strokes": 360,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "left_woman_face",
+      "start": 0.8,
+      "end": 4.904170512924828
+    },
+    {
+      "key": "left_woman_body",
+      "start": 4.934374999999996,
+      "end": 9.978786662593016
+    },
+    {
+      "key": "left_woman_legs",
+      "start": 9.987499999999994,
+      "end": 13.800469288543205
+    },
+    {
+      "key": "right_woman_face",
+      "start": 13.815624999999994,
+      "end": 17.93666163032461
+    },
+    {
+      "key": "right_woman_body",
+      "start": 17.94999999999999,
+      "end": 22.990382501781955
+    },
+    {
+      "key": "right_woman_legs",
+      "start": 23.003124999999986,
+      "end": 26.808842611595825
+    },
+    {
+      "key": "objects",
+      "start": 26.831249999999986,
+      "end": 37.52141268609948
+    },
+    {
+      "key": "background",
+      "start": 37.549999999999976,
+      "end": 49.798064052201546
+    }
+  ],
+  "music": "flow-calm",
+  "source_backup": "versions/before-series-v15"
+}

@@ -1,0 +1,65 @@
+{
+  "episode": "ep11",
+  "strokes": 398,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "front_woman_face",
+      "start": 0.8,
+      "end": 5.511246018263723
+    },
+    {
+      "key": "front_woman_body",
+      "start": 5.541935483870957,
+      "end": 11.329083631214296
+    },
+    {
+      "key": "front_woman_legs",
+      "start": 11.33763440860213,
+      "end": 15.717779931500448
+    },
+    {
+      "key": "rear_left_face",
+      "start": 15.728315412186355,
+      "end": 16.859452969323087
+    },
+    {
+      "key": "rear_left_body",
+      "start": 16.869892473118256,
+      "end": 18.61363347528213
+    },
+    {
+      "key": "rear_left_legs",
+      "start": 18.626164874551943,
+      "end": 19.57623462356209
+    },
+    {
+      "key": "rear_right_face",
+      "start": 19.59211469534047,
+      "end": 20.718472706011326
+    },
+    {
+      "key": "rear_right_body",
+      "start": 20.733691756272368,
+      "end": 22.48038198339421
+    },
+    {
+      "key": "rear_right_legs",
+      "start": 22.489964157706055,
+      "end": 23.447518055554323
+    },
+    {
+      "key": "objects",
+      "start": 23.455913978494586,
+      "end": 35.73408061703602
+    },
+    {
+      "key": "background",
+      "start": 35.74982078853041,
+      "end": 49.79818924007485
+    }
+  ],
+  "music": "flow-calm",
+  "source_backup": "versions/before-series-v15"
+}

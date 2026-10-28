@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/scripts/prepare_series_sound.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SOUND_REJECTED ep03/ko ('Missing collection tail', 'ep03', 'ko', '줍니다소리는들리지않아도두사람이맞추는박자를상상해봅니다이그림은운초의작품으로전합니다tjkimcollection에서오래된하루를다시만납니다')
+/Users/jatu/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+SOUND_REJECTED ep03/ko Command '['ffmpeg', '-hide_banner', '-i', '/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep03/locales/ko/raw.wav', '-af', 'silencedetect=noise=-37dB:d=.10', '-f', 'null', '-']' returned non-zero exit status 234.
+SOUND_REJECTED ep03/en Command '['ffmpeg', '-hide_banner', '-i', '/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep03/locales/en/raw.wav', '-af', 'silencedetect=noise=-37dB:d=.10', '-f', 'null', '-']' returned non-zero exit status 234.
+/Users/jatu/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+SOUND_READY ep03 ko 0.928 ends 59.97
+SOUND_READY ep03 en 0.998 ends 61.14
+SOUND_READY ep03 ja 0.918 ends 61.12
+SOUND_READY ep04 ko 0.92 ends 56.42
+SOUND_READY ep04 en 0.995 ends 61.12
+SOUND_READY ep04 ja 0.889 ends 61.14
+SOUND_READY ep05 ko 0.954 ends 55.19
+SOUND_READY ep05 en 0.993 ends 61.27
+SOUND_READY ep05 ja 0.87 ends 61.11
+SOUND_READY ep06 ko 0.949 ends 56.91
+SOUND_READY ep06 en 0.994 ends 61.13
+SOUND_READY ep06 ja 0.898 ends 61.11
+SOUND_READY ep07 ko 0.955 ends 55.85
+SOUND_READY ep07 en 1.0 ends 61.13
+SOUND_READY ep07 ja 0.871 ends 61.13
+SOUND_READY ep08 ko 0.933 ends 55.94
+SOUND_READY ep08 en 1.0 ends 61.11
+SOUND_READY ep08 ja 0.866 ends 61.13
+SOUND_READY ep09 ko 0.958 ends 56.52
+SOUND_READY ep09 en 0.998 ends 61.15
+SOUND_READY ep09 ja 0.9 ends 61.11
+SOUND_READY ep10 ko 0.909 ends 56.45
+SOUND_READY ep10 en 1.0 ends 61.13
+SOUND_READY ep10 ja 0.85 ends 61.11
+SOUND_READY ep11 ko 0.937 ends 56.63
+SOUND_READY ep11 en 0.994 ends 61.28
+SOUND_READY ep11 ja 0.88 ends 61.13
+SOUND_SERIES_COMPLETE

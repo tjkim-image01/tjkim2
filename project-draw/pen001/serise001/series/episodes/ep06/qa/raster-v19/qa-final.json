@@ -1,0 +1,14 @@
+{
+  "blank_initial": true,
+  "no_completion_fill": true,
+  "completion_changed_pixels": 0,
+  "rewind_exact": true,
+  "working_size": [
+    4000,
+    2608
+  ],
+  "has_vector_paint": false,
+  "loaded_svg": false,
+  "median_frame_ms": 12.5,
+  "p95_frame_ms": 15.200000017881393
+}

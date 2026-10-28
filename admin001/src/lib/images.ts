@@ -1,97 +1,52 @@
-/**
- * Drive 이미지 색인 — 서버(Apps Script)가 이미지폴더 탭의 루트를 하나씩 순회해 준 결과를
- * 합쳐 폴더명/파일명을 Item No.와 대조한다. 결과는 IndexedDB에 둔다.
- */
-
+/** Recursive Drive indexes support both product folders and year folders. */
 import { get as idbGet, set as idbSet } from 'idb-keyval'
-import { normalizeKey } from '../data/parse'
-import { folderImages, imageIndexRoot, imageIndexRoots, type FolderImage } from './api'
+import { folderImages, imageIndexRoot, imageIndexRoots, type FolderImage, type IndexRoot } from './api'
+import { driveId, type ImageIndex } from './image-match'
+import { scanImageRoots } from './image-index'
 
+export { driveId, findCandidates, itemImages, imagesInLinkedFolder } from './image-match'
+export type { ImageIndex, Candidate } from './image-match'
 export type { FolderImage }
 
 const INDEX_KEY = 'admin001.image-index'
+const ROOTS_KEY = 'admin001.local-image-roots'
+export const IMAGE_ARCHIVE_ID = '1oQ55NzBeK_7ZttxFoazJD0Q16iz3fCXB'
 
-export interface ImageIndex {
-  builtAt: number
-  fileCount: number
-  folderCount: number
-  truncatedRoots: string[]
-  /** normalizeKey(폴더명) → 폴더 목록 */
-  byFolderKey: Record<string, { folderId: string; folderName: string; path: string; count: number }[]>
-  /** normalizeKey(파일명) → 파일 목록 */
-  byFileKey: Record<string, { id: string; name: string; folderId: string; folderName: string }[]>
-}
-
-export async function readImageIndex(): Promise<ImageIndex | null> {
+export function localImageRoots(): IndexRoot[] {
   try {
-    return ((await idbGet(INDEX_KEY)) as ImageIndex | undefined) ?? null
+    const saved: unknown = JSON.parse(localStorage.getItem(ROOTS_KEY) ?? '[]')
+    return Array.isArray(saved) ? saved.filter((root): root is IndexRoot =>
+      root && typeof root.id === 'string' && driveId(root.id) === root.id && typeof root.name === 'string',
+    ) : []
   } catch {
-    return null
+    return []
   }
 }
 
-export async function buildImageIndex(onProgress: (msg: string) => void): Promise<ImageIndex> {
-  onProgress('이미지 루트 폴더 확인 중…')
-  const roots = await imageIndexRoots()
-  if (roots.length === 0) throw new Error('이미지폴더 탭에 사용 중인 루트가 없습니다')
-  const byFolderKey: ImageIndex['byFolderKey'] = {}
-  const byFileKey: ImageIndex['byFileKey'] = {}
-  const truncatedRoots: string[] = []
-  let fileCount = 0
-  let folderCount = 0
-  for (let i = 0; i < roots.length; i++) {
-    const root = roots[i]
-    onProgress(`${i + 1}/${roots.length} ${root.name} 순회 중…`)
-    const result = await imageIndexRoot(root.id)
-    if (result.truncated) truncatedRoots.push(root.name)
-    const folderById = new Map(result.folders.map((f) => [f.id, f]))
-    const counts = new Map<string, number>()
-    for (const file of result.files) {
-      counts.set(file.folderId, (counts.get(file.folderId) ?? 0) + 1)
-      const key = normalizeKey(file.name, true)
-      if (key) (byFileKey[key] ??= []).push({ id: file.id, name: file.name, folderId: file.folderId, folderName: folderById.get(file.folderId)?.name ?? '' })
-    }
-    for (const folder of result.folders) {
-      const key = normalizeKey(folder.name)
-      const count = counts.get(folder.id) ?? 0
-      if (!key || count === 0) continue
-      ;(byFolderKey[key] ??= []).push({ folderId: folder.id, folderName: folder.name, path: folder.path, count })
-      folderCount++
-    }
-    fileCount += result.files.length
-  }
-  const index: ImageIndex = { builtAt: Date.now(), fileCount, folderCount, truncatedRoots, byFolderKey, byFileKey }
+export function saveLocalImageRoots(roots: IndexRoot[]) {
+  localStorage.setItem(ROOTS_KEY, JSON.stringify(roots))
+}
+
+export async function readImageIndex(): Promise<ImageIndex> {
+  const cached = await idbGet<ImageIndex>(INDEX_KEY).catch(() => undefined)
   try {
-    await idbSet(INDEX_KEY, index)
-  } catch {
-    /* 무시 */
+    const response = await fetch(`${import.meta.env.BASE_URL}drive-image-index.json`, { cache: 'no-cache' })
+    if (!response.ok) throw new Error(`이미지 목록을 읽지 못했습니다 (${response.status})`)
+    const published = await response.json() as ImageIndex
+    if (published.version !== 2 || !published.byFileKey) throw new Error('이미지 목록 형식이 올바르지 않습니다')
+    return cached?.version === 2 && cached.builtAt > published.builtAt ? cached : published
+  } catch (error) {
+    if (cached?.version === 2) return cached
+    throw error
   }
+}
+
+export async function buildImageIndex(onProgress: (msg: string) => void, configuredRoots?: IndexRoot[]): Promise<ImageIndex> {
+  onProgress('이미지 상위 폴더 확인 중…')
+  const roots = configuredRoots ?? [...await imageIndexRoots(), ...localImageRoots()]
+  const index = await scanImageRoots(roots, imageIndexRoot, onProgress)
+  await idbSet(INDEX_KEY, index)
   return index
-}
-
-export interface Candidate {
-  folderId: string
-  folderName: string
-  path: string
-  matchType: 'folder' | 'filename'
-  fileIds: string[]
-}
-
-export function findCandidates(index: ImageIndex, itemCode: string): Candidate[] {
-  const key = normalizeKey(itemCode)
-  const out: Candidate[] = []
-  for (const f of index.byFolderKey[key] ?? []) {
-    out.push({ folderId: f.folderId, folderName: f.folderName, path: f.path, matchType: 'folder', fileIds: [] })
-  }
-  const files = index.byFileKey[key] ?? []
-  const grouped = new Map<string, Candidate>()
-  for (const f of files) {
-    if (out.some((c) => c.folderId === f.folderId)) continue
-    const c = grouped.get(f.folderId) ?? { folderId: f.folderId, folderName: f.folderName, path: f.folderName, matchType: 'filename' as const, fileIds: [] }
-    c.fileIds.push(f.id)
-    grouped.set(f.folderId, c)
-  }
-  return [...out, ...grouped.values()]
 }
 
 export function listFolderImages(folderId: string): Promise<FolderImage[]> {

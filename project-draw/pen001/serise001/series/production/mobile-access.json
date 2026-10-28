@@ -1,0 +1,6 @@
+{
+  "host": "192.168.42.192",
+  "port": 5184,
+  "url": "http://192.168.42.192:5184/series/site/?lang=ko",
+  "scope": "same Wi-Fi local web app"
+}

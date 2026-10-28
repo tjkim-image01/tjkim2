@@ -1,0 +1,33 @@
+{
+  "postContactDiffusion": {
+    "at35": {
+      "n": 26359,
+      "sum": 193822358
+    },
+    "at42": {
+      "n": 27550,
+      "sum": 193722290
+    }
+  },
+  "oldCreditOutsideCanvasGone": true,
+  "oldCreditCanvasPixels": 0,
+  "playback": {
+    "audio": [
+      {
+        "t": 5.648454,
+        "paused": false
+      },
+      {
+        "t": 5.648454,
+        "paused": false
+      }
+    ],
+    "frames": 343,
+    "median": 16.699999999999818,
+    "clock": "00:05 / 01:05"
+  },
+  "otherEpisodeStillHasCC": true,
+  "otherEpisodeDuration": "00:00 / 01:00",
+  "allTenMP4Unchanged": true,
+  "pass": true
+}

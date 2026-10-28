@@ -1,0 +1,21 @@
+{
+  "blankStart": true,
+  "drawDuration": 50,
+  "fadeSeconds": 4,
+  "midpoint": "원본과 겹치는 중 · 50%",
+  "ending": "소장 원본 · 테두리 정리본",
+  "blend": {
+    "midpointError": 0.20226702508960573,
+    "finalDifference": 35.348491908330615
+  },
+  "music": {
+    "voiceTime": 11.461981,
+    "musicTime": 11.462006,
+    "voiceVolume": 0.8,
+    "musicVolume": 0.8,
+    "musicError": null,
+    "musicSource": "http://127.0.0.1:5184/audio/music-bed-v3.m4a"
+  },
+  "independentMusicVolume": true,
+  "creditsCorner": "bottom-left, 18px, all 60s"
+}

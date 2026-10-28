@@ -1,0 +1,23 @@
+[
+  {
+    "language": "ko",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-ko-v31-cover.mp4",
+    "sha256": "87cf4cda18c071619a4a8a41958322c00b862b7d685c687a58a771e0fa6c512e",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/upload/ep07_youtube_ko_v31.md",
+    "visibility": "private"
+  },
+  {
+    "language": "en",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-en-v31-cover.mp4",
+    "sha256": "b2464eff4f6cbbe80487945a7337f02379860428f4a1a3e905ddec8eec38b8b5",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/upload/ep07_youtube_en_v31.md",
+    "visibility": "private"
+  },
+  {
+    "language": "ja",
+    "video": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/output/ep07-short-ja-v31-cover.mp4",
+    "sha256": "5ea099811aac70381d01e00a487eba6c22ac8bc149793f61b3188efe35b3304c",
+    "metadata": "/Users/jatu/app/tjkim2/project-draw/pen001/serise001/series/episodes/ep07/upload/ep07_youtube_ja_v31.md",
+    "visibility": "private"
+  }
+]

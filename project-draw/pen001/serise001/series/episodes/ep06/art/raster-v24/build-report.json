@@ -1,0 +1,26 @@
+{
+  "episode": "ep06",
+  "people": [
+    {
+      "key": "left_woman",
+      "name": "인물 1",
+      "head_start": 0.8,
+      "body_start": 5.0,
+      "details_start": 11.200000000000001,
+      "end": 15.4
+    },
+    {
+      "key": "right_woman",
+      "name": "인물 2",
+      "head_start": 15.4,
+      "body_start": 19.6,
+      "details_start": 25.8,
+      "end": 30.0
+    }
+  ],
+  "strokes": 867,
+  "settings_unchanged": true,
+  "settings_sha256": "9eb6ff141b5162db21ba468112be77191dfffe6e97bf0e4306f2aa8ec82a467d",
+  "background_and_objects_preserved": true,
+  "MP4_created": false
+}

@@ -1,0 +1,20 @@
+{
+  "context": "running",
+  "status": "해설·음악 재생 중",
+  "tracks": [
+    {
+      "id": "audio",
+      "muted": false,
+      "paused": false,
+      "peak_rms": 0.1339249430575761,
+      "time": 40.132699
+    },
+    {
+      "id": "musicAudio",
+      "muted": false,
+      "paused": false,
+      "peak_rms": 0.023330513653321727,
+      "time": 45.144266
+    }
+  ]
+}

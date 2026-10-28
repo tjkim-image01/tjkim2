@@ -1,0 +1,30 @@
+{
+  "id": "ep09",
+  "title": "두 사람이 맞추는 박자",
+  "file": "episodes/ep09/output/ep09-short-60s.mp4",
+  "sha256": "69b23d7d6b2726307a2d99d2fe889d373359d79ff725880a3c2e0ae207498f56",
+  "bytes": 24852358,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.5320923076923076,
+    "change": 10.589765128205128
+  },
+  "strokes": 213,
+  "asr_script_match": 0.988313856427379,
+  "narration_end": 48.193188000000006,
+  "audio_rms_dbfs": -18.121179580688477,
+  "audio_peak_dbfs": -1.413116666110137,
+  "music_rms_dbfs": -28.41240119934082,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

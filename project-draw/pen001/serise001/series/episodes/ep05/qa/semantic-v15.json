@@ -1,0 +1,120 @@
+{
+  "episode": "ep05",
+  "strokes": 471,
+  "no_global_guides": true,
+  "blank_initial": true,
+  "groups": [
+    {
+      "key": "front_carrier_face",
+      "start": 0.8,
+      "end": 3.4998393543275164
+    },
+    {
+      "key": "front_carrier_body",
+      "start": 3.519424460431649,
+      "end": 6.831966598037271
+    },
+    {
+      "key": "front_carrier_legs",
+      "start": 6.843165467625887,
+      "end": 9.354156834895585
+    },
+    {
+      "key": "front_seated_face",
+      "start": 9.36115107913667,
+      "end": 12.068204048935197
+    },
+    {
+      "key": "front_seated_body",
+      "start": 12.08057553956832,
+      "end": 15.394438344726446
+    },
+    {
+      "key": "front_seated_legs",
+      "start": 15.404316546762562,
+      "end": 17.90187096358267
+    },
+    {
+      "key": "front_right_face",
+      "start": 17.922302158273347,
+      "end": 20.63716608338709
+    },
+    {
+      "key": "front_right_body",
+      "start": 20.641726618704997,
+      "end": 23.954835496853175
+    },
+    {
+      "key": "front_right_legs",
+      "start": 23.965467625899233,
+      "end": 26.471195254939804
+    },
+    {
+      "key": "door_sitting_face",
+      "start": 26.483453237410014,
+      "end": 27.13515731168244
+    },
+    {
+      "key": "door_sitting_body",
+      "start": 27.13812949640282,
+      "end": 28.13632685966455
+    },
+    {
+      "key": "door_sitting_legs",
+      "start": 28.14532374100713,
+      "end": 28.695231251781937
+    },
+    {
+      "key": "door_standing_face",
+      "start": 28.6992805755395,
+      "end": 29.352082075962237
+    },
+    {
+      "key": "door_standing_body",
+      "start": 29.3539568345323,
+      "end": 30.3586544346963
+    },
+    {
+      "key": "door_standing_legs",
+      "start": 30.36115107913661,
+      "end": 30.91038083882309
+    },
+    {
+      "key": "rear_small_face",
+      "start": 30.915107913668987,
+      "end": 31.56395635204335
+    },
+    {
+      "key": "rear_small_body",
+      "start": 31.56978417266179,
+      "end": 32.56493570937069
+    },
+    {
+      "key": "rear_small_legs",
+      "start": 32.576978417266105,
+      "end": 33.12686960551435
+    },
+    {
+      "key": "rear_cloaked_body",
+      "start": 33.13093525179849,
+      "end": 34.13443107174065
+    },
+    {
+      "key": "rear_cloaked_legs",
+      "start": 34.13812949640282,
+      "end": 34.685955066498465
+    },
+    {
+      "key": "objects",
+      "start": 34.69208633093519,
+      "end": 41.72276669066895
+    },
+    {
+      "key": "background",
+      "start": 41.74244604316541,
+      "end": 49.79856489327025
+    }
+  ],
+  "music": "flow-night",
+  "source_backup": "versions/before-series-v15"
+}

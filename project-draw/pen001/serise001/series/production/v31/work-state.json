@@ -1,0 +1,21 @@
+{
+  "latest_user_requests": [
+    "EP06: remove the wall-board stripes beside both right sleeves from figures and paint them during the final background stage",
+    "Remove white-paper gap now: visible brush from first post-cover frame, writing 0-3.5s, body/audio clocks unchanged"
+  ],
+  "intermediate_v30_editions": 30,
+  "final_revision": 31,
+  "common_intro_ready": true,
+  "ep06_semantic_qa": "13187 target pixels: zero before background, all visible after background",
+  "servers": {
+    "archive": 5185,
+    "v30": 5186,
+    "v31": 5187
+  },
+  "pending": [],
+  "notes": "v30 publisher and finalizer were intentionally stopped when user requested v31 corrections. v30 output QA still running or complete. Existing v18/v30 files preserved.",
+  "complete": true,
+  "final_report": "production/v31/completed.json",
+  "verified_mp4s": 30,
+  "verified_bundles": 3
+}

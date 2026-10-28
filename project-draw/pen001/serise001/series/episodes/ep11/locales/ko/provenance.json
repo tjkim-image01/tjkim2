@@ -1,0 +1,9 @@
+{
+  "provider": "Typecast",
+  "connector": "/Users/jatu/app/model3d/lib/com/jatu/aside/connector/typecast.py",
+  "project": "https://studio.typecast.ai/text-to-speech/6ad0eb6480cf3c32a08d186c",
+  "actor": "한준",
+  "paragraph": 89,
+  "raw_duration": 31.6,
+  "raw_sha256": "b1524da37194e3c18809af8cabf5ebdde7847d2ee78e7292053682cef02338c6"
+}

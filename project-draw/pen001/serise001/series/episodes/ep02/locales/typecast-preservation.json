@@ -1,0 +1,20 @@
+{
+  "provider": "Typecast",
+  "connector": "lib/com/jatu/aside/connector/typecast.py",
+  "project": "https://studio.typecast.ai/text-to-speech/6ad0eb6480cf3c32a08d186c",
+  "account": "u9",
+  "original_prefix_unchanged": true,
+  "original_paragraphs": 79,
+  "new_paragraphs": 2,
+  "offset": 79,
+  "actors": {
+    "en": "아레스",
+    "ja": "이노우에 다이치"
+  },
+  "original_language_restored": "한국어",
+  "japanese_rejection": "Initial Korean-language-forced preview was incomplete; retained under ja/rejected-language-setting. Accepted auto-language narration is 45.5 seconds and full-text ASR verified.",
+  "accepted_raw_sha256": {
+    "en": "4e1ccbe8efedf24d079147de85c243894d1beda499b720cfe47ca2eecfdf58f1",
+    "ja": "d1a30bbbae8b3d6a3d46823f408ec10c0abe6c92391ffef0087434998ba6ad83"
+  }
+}

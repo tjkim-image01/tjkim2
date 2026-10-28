@@ -1,0 +1,18 @@
+{
+  "clickAt": 48676.900000002235,
+  "locale": "en",
+  "musicStart": 0,
+  "signals": {
+    "audio": {
+      "delay_ms": 8236.199999999255,
+      "media_time": 8.046843,
+      "rms": 0.03848432811736208
+    },
+    "musicAudio": {
+      "delay_ms": 81.09999999776483,
+      "media_time": 9.075463,
+      "rms": 0.0007579071407351262
+    }
+  },
+  "voiceSource": "http://127.0.0.1:5185/series/episodes/ep03/locales/en/voice-director.m4a?sync=korean-onset-v16"
+}

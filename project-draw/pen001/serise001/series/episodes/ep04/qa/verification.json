@@ -1,0 +1,30 @@
+{
+  "id": "ep04",
+  "title": "길 위의 밥 한 끼",
+  "file": "episodes/ep04/output/ep04-short-60s.mp4",
+  "sha256": "e92e39fa65482824ceec2d3f06a2ace57c69d5d0c8820c55ea1f5af05f0b4f90",
+  "bytes": 33325935,
+  "duration": 60,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 1440,
+  "full_decode_pass": true,
+  "blank_intro": true,
+  "rewind_deterministic": true,
+  "pen_lift_static": true,
+  "overlap": {
+    "start": 52,
+    "end": 56,
+    "midpoint_error": 1.8478351282051282,
+    "change": 14.113855897435897
+  },
+  "strokes": 248,
+  "asr_script_match": 0.9668874172185431,
+  "narration_end": 48.195688000000004,
+  "audio_rms_dbfs": -17.868894577026367,
+  "audio_peak_dbfs": -1.6230073105404954,
+  "music_rms_dbfs": -28.431671142578125,
+  "collection_credit_voice": true,
+  "music_credit": "CC BY 4.0 with title, creator, source and license URLs, editing notice; bottom-left all 60 seconds"
+}

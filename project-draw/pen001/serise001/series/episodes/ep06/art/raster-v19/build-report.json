@@ -1,0 +1,65 @@
+{
+  "episode": "ep06",
+  "native_ai_size": [
+    1536,
+    1024
+  ],
+  "working_size": [
+    4000,
+    2608
+  ],
+  "strokes": 749,
+  "groups": [
+    {
+      "group": "left_woman_face",
+      "strokes": 43,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.99743
+    },
+    {
+      "group": "left_woman_body",
+      "strokes": 60,
+      "wash_coverage": 0.99999,
+      "ink_coverage": 0.99015
+    },
+    {
+      "group": "left_woman_legs",
+      "strokes": 54,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.99106
+    },
+    {
+      "group": "right_woman_face",
+      "strokes": 41,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.99694
+    },
+    {
+      "group": "right_woman_body",
+      "strokes": 49,
+      "wash_coverage": 0.99994,
+      "ink_coverage": 0.9858
+    },
+    {
+      "group": "right_woman_legs",
+      "strokes": 58,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.98748
+    },
+    {
+      "group": "objects",
+      "strokes": 95,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.99031
+    },
+    {
+      "group": "background",
+      "strokes": 349,
+      "wash_coverage": 1.0,
+      "ink_coverage": 0.9749
+    }
+  ],
+  "MP4_created": false,
+  "SVG_rendering": false,
+  "saved_settings_unchanged": true
+}

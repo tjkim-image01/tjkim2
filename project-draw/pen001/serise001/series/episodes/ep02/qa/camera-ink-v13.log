@@ -1,0 +1,16 @@
+{
+  mainClose: { w: 800.8449138410228, h: 640.6759310728182, transform: 1 },
+  mainWide: { w: 168.1774319066148, h: 134.54194552529185, transform: 1 },
+  mainScaleRatio: 4.761904761904762,
+  introClose: { w: 1766.3999999999999, h: 1413.12, transform: 1 },
+  introWide: { w: 529.9200000000001, h: 423.93600000000004, transform: 1 },
+  ink: {
+    old100: { hash: 1324469563, n: 408740 },
+    new50: { hash: 1324469563, n: 408740 },
+    old45: { hash: -980997077, n: 300765 },
+    new45: { hash: 820291902, n: 389702 }
+  },
+  allVideosUnchanged: true,
+  errors: [],
+  pass: true
+}

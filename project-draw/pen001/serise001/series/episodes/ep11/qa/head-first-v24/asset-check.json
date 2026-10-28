@@ -1,0 +1,49 @@
+{
+  "episode": "ep11",
+  "strokes": 903,
+  "single_RGB_assets_checked": 903,
+  "visible_asset_pixels": 12123431,
+  "people": [
+    {
+      "person": "front_woman",
+      "head": [
+        0.8,
+        5.378531037957878
+      ],
+      "body": [
+        5.5097433862076635,
+        12.624507097069769
+      ],
+      "end": 19.527532254289092
+    },
+    {
+      "person": "rear_left",
+      "head": [
+        19.660162613847152,
+        22.240612509528898
+      ],
+      "body": [
+        22.375437573144236,
+        25.421747344965993
+      ],
+      "end": 27.548444242418775
+    },
+    {
+      "person": "rear_right",
+      "head": [
+        27.682976774489703,
+        30.44772701104225
+      ],
+      "body": [
+        30.582066355076012,
+        33.960181808469024
+      ],
+      "end": 36.79161494290108
+    }
+  ],
+  "minimum_reload_seconds": 0.130518549022419,
+  "settings_unchanged": true,
+  "no_SVG": true,
+  "no_MP4_created": true,
+  "painting_sha256": "dd1fd1b439cda33e99935f7fadbf7cb70a08f6d4563852d929dfa27aac914331"
+}

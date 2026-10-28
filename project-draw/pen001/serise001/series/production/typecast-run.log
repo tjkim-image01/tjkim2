@@ -1,0 +1,87 @@
+APPENDED 27 PRESERVED 81 OFFSET 81
+ACTOR ep03 ko 한준
+ACTOR ep04 ko 한준
+ACTOR ep05 ko 한준
+ACTOR ep06 ko 한준
+ACTOR ep07 ko 한준
+ACTOR ep08 ko 한준
+ACTOR ep09 ko 한준
+ACTOR ep10 ko 한준
+ACTOR ep11 ko 한준
+ACTOR ep03 en 아레스
+ACTOR ep04 en 아레스
+ACTOR ep05 en 아레스
+ACTOR ep06 en 아레스
+ACTOR ep07 en 아레스
+ACTOR ep08 en 아레스
+ACTOR ep09 en 아레스
+ACTOR ep10 en 아레스
+ACTOR ep11 en 아레스
+ACTOR ep03 ja 이노우에 다이치
+ACTOR ep04 ja 이노우에 다이치
+ACTOR ep05 ja 이노우에 다이치
+ACTOR ep06 ja 이노우에 다이치
+ACTOR ep07 ja 이노우에 다이치
+ACTOR ep08 ja 이노우에 다이치
+ACTOR ep09 ja 이노우에 다이치
+ACTOR ep10 ja 이노우에 다이치
+ACTOR ep11 ja 이노우에 다이치
+EXISTS ep03 ko
+READY ep04 ko 31.4
+APPENDED 27 PRESERVED 81 OFFSET 81
+ACTOR ep03 ko 한준
+ACTOR ep04 ko 한준
+ACTOR ep05 ko 한준
+ACTOR ep06 ko 한준
+ACTOR ep07 ko 한준
+ACTOR ep08 ko 한준
+ACTOR ep09 ko 한준
+ACTOR ep10 ko 한준
+ACTOR ep11 ko 한준
+ACTOR ep03 en 아레스
+ACTOR ep04 en 아레스
+ACTOR ep05 en 아레스
+ACTOR ep06 en 아레스
+ACTOR ep07 en 아레스
+ACTOR ep08 en 아레스
+ACTOR ep09 en 아레스
+ACTOR ep10 en 아레스
+ACTOR ep11 en 아레스
+ACTOR ep03 ja 이노우에 다이치
+ACTOR ep04 ja 이노우에 다이치
+ACTOR ep05 ja 이노우에 다이치
+ACTOR ep06 ja 이노우에 다이치
+ACTOR ep07 ja 이노우에 다이치
+ACTOR ep08 ja 이노우에 다이치
+ACTOR ep09 ja 이노우에 다이치
+ACTOR ep10 ja 이노우에 다이치
+ACTOR ep11 ja 이노우에 다이치
+EXISTS ep03 ko
+EXISTS ep04 ko
+READY ep05 ko 30.35
+READY ep06 ko 31.85
+READY ep07 ko 30.9
+READY ep08 ko 31.0
+READY ep09 ko 31.5
+READY ep10 ko 31.45
+READY ep11 ko 31.6
+READY ep03 en 52.35
+READY ep04 en 46.55
+READY ep05 en 55.6
+READY ep06 en 48.25
+READY ep07 en 49.7
+READY ep08 en 48.0
+READY ep09 en 52.75
+READY ep10 en 50.9
+READY ep11 en 54.05
+READY ep03 ja 44.55
+READY ep04 ja 41.8
+READY ep05 ja 42.75
+READY ep06 ja 42.1
+READY ep07 ja 41.3
+READY ep08 ja 40.4
+READY ep09 ja 40.9
+READY ep10 ja 44.0
+READY ep11 ja 42.95
+TYPECAST_SERIES_COMPLETE
+LANGUAGE_RESTORED 한국어
